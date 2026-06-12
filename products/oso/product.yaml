@@ -1,0 +1,34 @@
+schema_version: 2
+name: Oso
+aliases: [Oso for Agents]
+vendor:
+  value: Oso
+  source: { url: https://www.osohq.com/, tier: official, title: Oso for Agents homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://www.osohq.com/
+description:
+  value: "Oso: Discovers shadow AI agents across endpoints and browsers, monitors agent sessions through an edge proxy, and alerts on unsanctioned usage and sensitive data."
+  source: { url: https://www.osohq.com/docs/oso-for-agents/overview, tier: official, title: Oso for Agents overview documentation, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.osohq.com/docs/oso-for-agents/integrations/edge-proxy, tier: official, title: Oso edge proxy documentation, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.osohq.com/, tier: official, title: Oso for Agents homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Oso documentation.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, detect]
+    maturity: primary
+    note: Inventories AI agents across endpoints, browsers, and network traffic via EDR scans, a browser extension, and an edge proxy; admins mark agents allowed or disallowed and Oso alerts when unsanctioned agents are detected.
+    source: { url: https://www.osohq.com/docs/oso-for-agents/shadow-ai, tier: official, title: Oso shadow AI documentation, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: primary
+    note: Captures prompts, completions, and tool calls for monitored agent sessions and scans them with built-in and custom patterns for secrets and PII such as API keys and credentials.
+    source: { url: https://www.osohq.com/docs/oso-for-agents/alerts, tier: official, title: Oso alerts documentation, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: identify }

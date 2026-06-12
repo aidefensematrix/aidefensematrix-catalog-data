@@ -1,0 +1,36 @@
+schema_version: 2
+name: Miggo
+vendor:
+  value: Miggo Security
+  source: { url: https://www.miggo.io/news, tier: official, title: Miggo news page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.miggo.io
+description:
+  value: "Miggo: Runtime AI defense that maps agents, models, tools, and MCP integrations into an AI-BOM, detects prompt injection and agent hijacking, and enforces guardrails on AI behavior."
+  source: { url: https://www.miggo.io/runtime-defense-platform-for-applications-ai-and-agents, tier: official, title: Miggo runtime defense platform page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.miggo.io/why-adr, tier: official, title: Miggo deployment page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.miggo.io/news, tier: official, title: Miggo news page, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Miggo documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Builds a runtime AI-BOM that maps active agents, models, tools, frameworks, and MCP integrations from real execution, exposes shadow AI drift, and enforces guardrails on model usage, tool access, and data permissions while detecting anomalous agent behavior and unauthorized tool chaining.
+    source: { url: https://www.miggo.io/use-cases/ai-runtime-observability, tier: official, title: Miggo AI runtime observability use case, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect, respond]
+    maturity: primary
+    note: AIDR monitors prompts and model interactions at runtime, detecting manipulation such as prompt injection, model misuse, and unauthorized data access, then contains incidents with a forensic chain from user input to agent decision to system action.
+    source: { url: https://www.miggo.io/runtime-defense-platform-for-applications-ai-and-agents, tier: official, title: Miggo runtime defense platform page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-model
+    functions: [detect]
+    maturity: secondary
+    note: Detects model supply chain compromise, including malicious model files and hidden payloads that execute when external models load into production workflows, plus unapproved model usage and unsafe execution patterns.
+    source: { url: https://www.miggo.io/use-cases/agentic-detection-response-for-ai-applications, tier: official, title: Miggo agentic detection and response use case, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-orchestration-tools, function: detect }

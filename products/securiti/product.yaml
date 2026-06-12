@@ -1,0 +1,32 @@
+schema_version: 2
+name: Securiti
+vendor:
+  value: Securiti
+  source: { url: https://securiti.ai/, tier: official, title: Securiti Data and AI security, accessed: 2026-06-09, origin: reviewed }
+aliases: [Securiti AI, Securiti Data Command Center]
+url: https://securiti.ai/
+description:
+  value: Data and AI security command center that discovers and classifies sensitive data across the enterprise and runs context-aware LLM firewalls over AI prompts, retrieval, and responses.
+  source: { url: https://securiti.ai/, tier: official, title: Securiti Data and AI security, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://securiti.ai/, tier: official, title: Securiti Data and AI security, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://securiti.ai/, tier: official, title: Securiti Data and AI security, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Securiti documentation.
+matrix_coverage:
+  - asset: training-data
+    functions: [identify, protect]
+    maturity: primary
+    note: Discovers and classifies sensitive data across cloud and SaaS, including shadow assets, and governs how that data is used in AI.
+    source: { url: https://securiti.ai/dspm/, tier: official, title: Securiti Data Security Posture Management, accessed: 2026-06-09, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Context-aware LLM firewalls inspect prompts, retrieval, and responses to protect AI interactions.
+    source: { url: https://securiti.ai/, tier: official, title: Securiti Data and AI security, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: training-data, function: protect }

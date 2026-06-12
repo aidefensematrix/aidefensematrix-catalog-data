@@ -1,0 +1,33 @@
+schema_version: 2
+name: Clutch
+vendor:
+  value: Clutch Security
+  source: { url: https://www.clutch.security/platform, tier: official, title: Clutch platform overview, accessed: 2026-06-07, origin: reviewed }
+url: https://www.clutch.security
+description:
+  value: "Identity security platform for non-human identities, AI agents, and secrets: discovery, governance, posture and risk management, and threat detection and response across cloud, SaaS, and on-prem."
+  source: { url: https://www.clutch.security/platform, tier: official, title: Clutch platform overview, accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.clutch.security/platform, tier: official, title: Clutch platform architecture, accessed: 2026-06-07, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.securityweek.com/clutch-security-raises-20-million-for-non-human-identity-protection-platform/, tier: press, title: Clutch Security raises 20 million Series A, accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-07
+changelog:
+  - date: 2026-06-07
+    summary: Verified details from primary and press sources and recorded the Series A funding and founding.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect, respond]
+    maturity: primary
+    note: "Discovers and inventories non-human identities and AI agents, manages their lifecycle, scores posture and risk, and detects and responds to threats."
+    source: { url: https://www.clutch.security/nhi/discovery, tier: official, title: Clutch discovery and inventory, accessed: 2026-06-07, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [identify, protect]
+    maturity: secondary
+    note: "Discovers and contextualizes secrets such as API keys, tokens, and certificates across the environment."
+    source: { url: https://www.securityweek.com/clutch-security-raises-20-million-for-non-human-identity-protection-platform/, tier: press, title: Clutch protects API keys tokens certificates secrets, accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: identify }

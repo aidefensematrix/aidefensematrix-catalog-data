@@ -1,0 +1,40 @@
+schema_version: 2
+name: Natoma
+vendor:
+  value: Natoma
+  source: { url: https://natoma.ai/platform, tier: official, title: Natoma platform, accessed: 2026-06-09, origin: reviewed }
+aliases: [Natoma MCP Gateway]
+url: https://natoma.ai/platform
+description:
+  value: Governed MCP gateway that treats AI agents as non-human identities, enforcing identity-aware authorization and per-tool policy over agent access to tools, with shadow-AI discovery and audit.
+  source: { url: https://natoma.ai/platform, tier: official, title: Natoma platform, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://natoma.ai/platform, tier: official, title: Natoma platform, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://www.snowflake.com/en/news/press-releases/snowflake-announces-intent-to-acquire-natoma-providing-secure-connectivity-for-the-agentic-enterprise/, tier: official, title: Snowflake to acquire Natoma, accessed: 2026-06-09, origin: reviewed }
+acquisition:
+  acquirer: Snowflake
+  announced: 2026-05-27
+  pending_close: true
+  post_acquisition_status: folded
+  source: { url: https://www.snowflake.com/en/news/press-releases/snowflake-announces-intent-to-acquire-natoma-providing-secure-connectivity-for-the-agentic-enterprise/, tier: official, title: Snowflake to acquire Natoma, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from Natoma documentation; recorded the Snowflake acquisition announced in May 2026, pending close.
+  - date: 2026-06-13
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: primary
+    note: Authenticates AI agents and enforces identity-aware, attribute-based authorization with delegated permissions and Cedar policy, plus a full audit trail of every tool call.
+    source: { url: https://natoma.ai/, tier: official, title: Natoma agent authorization, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify]
+    maturity: secondary
+    note: Provides a hosted gateway for MCP servers and tools, discovers shadow AI and unmanaged MCP connections, and controls which tools each agent may call.
+    source: { url: https://natoma.ai/platform, tier: official, title: Natoma platform, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: protect }

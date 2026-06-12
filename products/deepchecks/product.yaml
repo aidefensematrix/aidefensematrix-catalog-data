@@ -1,0 +1,43 @@
+schema_version: 2
+name: Deepchecks
+aliases: [Deepchecks LLM Evaluation]
+vendor:
+  value: Deepchecks
+  source: { url: https://www.deepchecks.com/, tier: official, title: Deepchecks homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://www.deepchecks.com/
+description:
+  value: "Deepchecks: AI testing, observability, and monitoring platform that evaluates prompts, models, and agents and tracks LLM app quality in production."
+  source: { url: https://www.deepchecks.com/, tier: official, title: Deepchecks homepage, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.deepchecks.com/, tier: official, title: Deepchecks homepage, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://www.calcalistech.com/ctechnews/article/hku7df9jfg, tier: press, title: CTech on the Check Point acquisition of Deepchecks, accessed: 2026-06-10, origin: reviewed }
+acquisition:
+  acquirer: Check Point Software Technologies
+  announced: 2026-05-19
+  post_acquisition_status: unknown
+  pending_close: true
+  source: { url: https://www.checkpoint.com/press-releases/check-point-launches-agentic-network-security-orchestration-platform-turning-months-of-manual-policy-work-into-minutes-of-verified-action/, tier: official, title: Check Point press release noting the Deepchecks definitive agreement, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Deepchecks documentation; recorded the Check Point acquisition of the Deepchecks team and intellectual property announced in May 2026 with the close still pending.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: primary
+    note: Monitors deployed LLM applications in production by sampling interactions and tracking annotation trends and property scores to detect degradation automatically. Scoring is offline evaluation with no documented inline blocking.
+    source: { url: https://llmdocs.deepchecks.com/docs/set-up-production-monitoring, tier: official, title: Deepchecks production monitoring documentation, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-model
+    functions: [detect]
+    maturity: secondary
+    note: The pentest environment generates curated adversarial prompts covering prompt injection, jailbreaks, PII extraction, and bias triggers, runs the LLM pipeline against them, and scores whether the attacks succeeded.
+    source: { url: https://llmdocs.deepchecks.com/docs/pentesting-your-llm-pipeline, tier: official, title: Deepchecks LLM pentesting documentation, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: Evaluates each layer of an agentic pipeline independently, scoring individual agents, tools, and LLM calls to isolate underperforming or failing components.
+    source: { url: https://llmdocs.deepchecks.com/docs/agent-evaluation-use-case, tier: official, title: Deepchecks agent evaluation documentation, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: detect }

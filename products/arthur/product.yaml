@@ -1,0 +1,32 @@
+schema_version: 2
+name: Arthur
+vendor:
+  value: Arthur AI
+  source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI platform, accessed: 2026-06-09, origin: reviewed }
+aliases: [Arthur Shield]
+url: https://www.arthur.ai/
+description:
+  value: AI lifecycle platform with built-in guardrails that screen AI interactions for misuse, off-brand content, and unsafe prompts and responses, plus monitoring for models and agents.
+  source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI platform, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI platform, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI platform, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Arthur AI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Built-in guardrails screen AI interactions to protect applications against misuse, off-brand content, and unsafe prompts and responses.
+    source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI built-in guardrails, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: secondary
+    note: Monitors models and agent applications across the AI lifecycle, surfacing performance and reliability issues.
+    source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI platform, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

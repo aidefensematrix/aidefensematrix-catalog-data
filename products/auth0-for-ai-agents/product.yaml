@@ -1,0 +1,29 @@
+schema_version: 2
+name: Auth0 for AI Agents
+vendor:
+  value: Okta
+  source: { url: https://auth0.com/ai, tier: official, title: Auth0 for AI Agents, accessed: 2026-06-09, origin: reviewed }
+aliases: [Auth for GenAI]
+url: https://auth0.com/ai
+description:
+  value: "Auth0 for AI Agents: Identity and access for AI agents, with dedicated agent identities, a Token Vault for third-party API tokens, async user authorization, and fine-grained authorization for RAG."
+  source: { url: https://auth0.com/ai, tier: official, title: Auth0 for AI Agents, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://auth0.com/ai, tier: official, title: Auth0 for AI Agents, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://auth0.com/ai, tier: official, title: Auth0 for AI Agents, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Auth0 documentation. Productized and renamed from the earlier Auth for GenAI developer preview.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: primary
+    note: Gives AI agents dedicated identities and brokered access. A Token Vault stores and refreshes third-party API tokens, asynchronous authorization gets user approval for agent actions, and fine-grained authorization (Auth0 FGA) limits what RAG retrieval can reach.
+    source: { url: https://auth0.com/ai, tier: official, title: Auth0 for AI Agents, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: protect }

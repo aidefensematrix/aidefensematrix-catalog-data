@@ -1,0 +1,31 @@
+schema_version: 2
+name: AIShield
+vendor:
+  value: Bosch
+  source: { url: https://www.boschaishield.com/, tier: official, title: AIShield homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://www.boschaishield.com/
+description:
+  value: "AIShield: Bosch product line pairing AISpectra model vulnerability scanning and red teaming with Guardian runtime guardrails and an ML firewall for GenAI and ML apps."
+  source: { url: https://www.boschaishield.com/, tier: official, title: AIShield homepage, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.boschaishield.com/products/aishield-aispectra/, tier: official, title: AIShield AISpectra product page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.boschaishield.com/, tier: official, title: AIShield homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the AIShield documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, detect, protect]
+    maturity: primary
+    note: AISpectra discovers models and notebooks across cloud platforms and CI/CD pipelines and runs vulnerability assessments and red teaming against ML models and LLMs; Guardian ML Firewall shields deployed models from extraction, evasion, and poisoning attempts with real-time intrusion detection.
+    source: { url: https://www.boschaishield.com/products/aishield-aispectra/, tier: official, title: AIShield AISpectra product page, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Guardian GenAI Guardrails screen LLM inputs and outputs in real time, mitigating prompt injection, jailbreaks, and sensitive data exposure with content filtering and PII anonymization.
+    source: { url: https://www.boschaishield.com/products/aishield-guardian/, tier: official, title: AIShield Guardian product page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-model, function: detect }

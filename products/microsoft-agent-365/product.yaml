@@ -1,0 +1,34 @@
+schema_version: 2
+name: Microsoft Agent 365
+aliases: [Agent 365]
+vendor:
+  value: Microsoft
+  source: { url: https://www.microsoft.com/en-us/microsoft-agent-365, tier: official, title: Microsoft Agent 365 product page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.microsoft.com/en-us/microsoft-agent-365
+description:
+  value: "Microsoft Agent 365: Control plane that inventories AI agents in a registry, assigns them Entra identities with conditional access, and adds Defender posture and threat detection."
+  source: { url: https://www.microsoft.com/en-us/microsoft-agent-365, tier: official, title: Microsoft Agent 365 product page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.microsoft.com/en-us/microsoft-agent-365, tier: official, title: Microsoft Agent 365 product page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://techcommunity.microsoft.com/blog/microsoft_365blog/microsoft-365-e7-and-agent-365-are-now-generally-available/4516295, tier: official, title: Microsoft 365 E7 and Agent 365 general availability announcement, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Microsoft documentation.
+  - date: 2026-06-13
+    summary: Refined primary function.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, govern, protect]
+    maturity: primary
+    note: Visibility into all agent identities, including shadow agents; Entra Agent ID extends conditional access and identity protection from users to agents; governance ensures agents have responsible sponsors and that access does not persist longer than needed.
+    source: { url: https://learn.microsoft.com/en-us/security/security-for-ai/agent-365-security, tier: official, title: Microsoft Learn on securing AI agents with Agent 365, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [detect, protect]
+    maturity: secondary
+    note: Microsoft Defender provides agent security posture management to find misconfigurations, detects suspicious agent activity, blocks malicious tool invocations in real time, and collects agent observability logs for threat hunting.
+    source: { url: https://learn.microsoft.com/en-us/security/security-for-ai/agent-365-security, tier: official, title: Microsoft Learn on securing AI agents with Agent 365, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: identify }

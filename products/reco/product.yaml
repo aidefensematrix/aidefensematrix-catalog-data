@@ -1,0 +1,40 @@
+schema_version: 2
+name: Reco
+vendor:
+  value: Reco
+  source: { url: https://www.reco.ai/, tier: official, title: Reco homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://www.reco.ai/
+description:
+  value: "Reco: SaaS security platform that discovers shadow AI tools and AI agents, monitors agent permissions and behavior, and governs generative AI usage across enterprise apps."
+  source: { url: https://www.reco.ai/agentic-ai-security, tier: official, title: Reco agentic AI security page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.reco.ai/platform/application-discovery, tier: official, title: Reco application discovery page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.reco.ai/, tier: official, title: Reco homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Reco documentation.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+  - date: 2026-06-13
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-workload-platforms
+    functions: [identify]
+    maturity: primary
+    note: Discovers shadow AI tools and embedded AI features across SaaS apps and supports security teams in assessing generative AI usage across the enterprise.
+    source: { url: https://www.reco.ai/agentic-ai-security, tier: official, title: Reco agentic AI security page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [identify, detect]
+    maturity: primary
+    note: Maps every AI agent to an owner and a risk score, flags overpermissioned and orphaned agent identities, supports least privilege across the agent fleet, and surfaces policy violations.
+    source: { url: https://www.reco.ai/, tier: official, title: Reco homepage, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [identify, detect]
+    maturity: secondary
+    note: Tracks information movement from SaaS apps to unauthorized AI systems and monitors what employees share with AI platforms, classifying exposure risk by data sensitivity.
+    source: { url: https://www.reco.ai/use-cases/shadow-ai-discovery, tier: official, title: Reco shadow AI discovery use case, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: identify }

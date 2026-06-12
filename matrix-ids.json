@@ -1,0 +1,14 @@
+{
+  "_comment": "Canonical AI Defense Matrix identifiers — the source of truth for this data repo. The validator checks every product's matrix_coverage and primary_cell against these. matrix-drift.yml watches them weekly against the companion's published artifact (https://aidefensematrix.com/ai-defense-matrix.yaml).",
+  "asset_ids": [
+    "ai-workload-platforms",
+    "ai-orchestration-tools",
+    "ai-generated-code",
+    "ai-gateways-routers",
+    "ai-model",
+    "training-data",
+    "runtime-ai-data",
+    "ai-agent-identities"
+  ],
+  "function_ids": ["govern", "identify", "protect", "detect", "respond", "recover"]
+}

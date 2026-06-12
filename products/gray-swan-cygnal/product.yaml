@@ -1,0 +1,32 @@
+schema_version: 2
+name: Gray Swan Cygnal
+aliases: [Cygnal]
+vendor:
+  value: Gray Swan AI
+  source: { url: https://www.grayswan.ai/solutions/platform/cygnal, tier: official, title: Gray Swan Cygnal product page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.grayswan.ai/solutions/platform/cygnal
+description:
+  value: "Gray Swan Cygnal: Inline runtime guardrail that screens prompts, model responses, and agent tool calls, blocking prompt injection, jailbreaks, and unsafe outputs against custom policies."
+  source: { url: https://www.grayswan.ai/solutions/platform/cygnal, tier: official, title: Gray Swan Cygnal product page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted, hybrid]
+  source: { url: https://www.grayswan.ai/solutions/platform/cygnal, tier: official, title: Gray Swan Cygnal product page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://docs.grayswan.ai/cygnal/creating-completions, tier: official, title: Gray Swan Cygnal API documentation, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Gray Swan AI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Sits inline between users and the model, classifying adversarial inputs and unsafe outputs in real time. Blocks policy violations with a refusal message, while a separate monitor endpoint returns violation scores for detection without blocking.
+    source: { url: https://www.grayswan.ai/solutions/platform/cygnal, tier: official, title: Gray Swan Cygnal product page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: secondary
+    note: Monitors agent tool calls at runtime and flags agentic risk patterns such as unauthorized tool use, scope violations, and injections delivered through tool output or retrieved content.
+    source: { url: https://www.grayswan.ai/solutions/platform/cygnal, tier: official, title: Gray Swan Cygnal product page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

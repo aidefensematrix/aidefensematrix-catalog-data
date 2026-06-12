@@ -1,0 +1,32 @@
+schema_version: 2
+name: Alation
+vendor:
+  value: Alation
+  source: { url: https://www.alation.com/solutions/artificial-intelligence/, tier: official, title: Alation AI Governance, accessed: 2026-06-09, origin: reviewed }
+aliases: [Alation AI Governance, Alation Data Intelligence Platform]
+url: https://www.alation.com/solutions/artificial-intelligence/
+description:
+  value: Data intelligence platform with AI governance that inventories AI models, agents, and tools, traces their data lineage, and curates trusted, compliant data for AI development.
+  source: { url: https://www.alation.com/solutions/artificial-intelligence/, tier: official, title: Alation AI Governance, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.alation.com/solutions/artificial-intelligence/, tier: official, title: Alation AI Governance, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.alation.com/solutions/artificial-intelligence/, tier: official, title: Alation AI Governance, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Alation AI Governance documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, govern]
+    maturity: primary
+    note: Documents and governs AI models with model cards, end-to-end AI lineage, and centralized compliance for auditability.
+    source: { url: https://www.alation.com/news-and-press/alation-ai-governance-solution/, tier: official, title: Alation AI Governance launch, accessed: 2026-06-09, origin: reviewed }
+  - asset: training-data
+    functions: [identify]
+    maturity: secondary
+    note: Discovers, tags, and quality-flags the data feeding AI models so teams can validate it before training.
+    source: { url: https://www.alation.com/news-and-press/alation-ai-governance-solution/, tier: official, title: Alation AI Governance launch, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-model, function: govern }

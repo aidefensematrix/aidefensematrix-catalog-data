@@ -1,0 +1,37 @@
+schema_version: 2
+name: Bonfy ACS
+aliases: [Bonfy Adaptive Content Security]
+vendor:
+  value: Bonfy.AI
+  source: { url: https://blog.bonfy.ai/news-room/press-release-bonfy.ai-launches-from-stealth-to-guard-against-genai-risks-with-adaptive-content-security-platform, tier: official, title: Bonfy.AI launch press release, accessed: 2026-06-10, origin: reviewed }
+url: https://www.bonfy.ai/product
+description:
+  value: "Bonfy ACS: Inspects content moving through email, SaaS apps, Copilot, and AI agents, blocking or redacting sensitive data, with MCP server guardrails for agents and shadow AI detection."
+  source: { url: https://www.bonfy.ai/product, tier: official, title: Bonfy ACS product page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.bonfy.ai/product, tier: official, title: Bonfy ACS product page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://blog.bonfy.ai/news-room/press-release-bonfy-unveils-first-data-security-platform-for-ai-agents-shadow-ai-and-enterprise-genai-workflows, tier: official, title: Bonfy ACS 2.0 press release, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Bonfy.AI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Applies entity-aware analysis to data entering prompts, content leaving via email or AI outputs, and data agents process. Contextual Data Enforcement intercepts AI retrieval requests and blocks, redacts, or flags sensitive content before it reaches AI clients like Claude or Copilot Studio.
+    source: { url: https://www.bonfy.ai/product, tier: official, title: Bonfy ACS product page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [detect, protect]
+    maturity: secondary
+    note: Ships an MCP server, API, and agent framework support that agents call during reasoning to evaluate content against policy, enabling workflows to revise, redact, block, or route output for review before data reaches external services.
+    source: { url: https://www.bonfy.ai/use-case-agentic-data-security, tier: official, title: Bonfy agentic data security use case, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-workload-platforms
+    functions: [identify, detect]
+    maturity: secondary
+    note: A browser extension performs content-aware inspection of web interactions, detects unsanctioned AI usage, maps which AI destinations are in use and what data flows to them, and can warn users or block actions based on policy.
+    source: { url: https://www.bonfy.ai/use-case-shadow-ai-security, tier: official, title: Bonfy shadow AI security use case, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

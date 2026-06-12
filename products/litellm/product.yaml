@@ -1,0 +1,33 @@
+schema_version: 2
+name: LiteLLM
+vendor:
+  value: BerriAI
+  source: { url: https://www.litellm.ai/, tier: official, title: LiteLLM, accessed: 2026-06-09, origin: reviewed }
+url: https://www.litellm.ai/
+description:
+  value: "LiteLLM: Open-source AI gateway and proxy for 100+ LLM providers, adding virtual-key RBAC, budgets, rate limits, guardrails (PII masking, prompt-injection), and enterprise SSO and audit logs."
+  source: { url: https://www.litellm.ai/, tier: official, title: LiteLLM, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [self-hosted, saas]
+  source: { url: https://www.litellm.ai/, tier: official, title: LiteLLM, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.litellm.ai/, tier: official, title: LiteLLM, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the LiteLLM documentation.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [identify, protect]
+    maturity: primary
+    note: Routes 100+ LLM providers behind virtual keys with per-team and per-key budgets, rate limits, and RBAC. The enterprise tier adds SSO, audit logs, secret management, and key rotation.
+    source: { url: https://www.litellm.ai/enterprise, tier: official, title: LiteLLM Enterprise, accessed: 2026-06-09, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Configurable guardrails screen prompts and responses for PII (Presidio masking and blocking) and prompt injection, with pre-call and post-call moderation hooks.
+    source: { url: https://docs.litellm.ai/docs/proxy/guardrails/quick_start, tier: official, title: LiteLLM Guardrails Quick Start, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-gateways-routers, function: protect }

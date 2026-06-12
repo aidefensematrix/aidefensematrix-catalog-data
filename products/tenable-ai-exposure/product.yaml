@@ -1,0 +1,37 @@
+schema_version: 2
+name: Tenable AI Exposure
+aliases: [Tenable One AI Exposure]
+vendor:
+  value: Tenable
+  source: { url: https://www.tenable.com/products/ai-exposure, tier: official, title: Tenable AI Exposure product page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.tenable.com/products/ai-exposure
+description:
+  value: "Tenable AI Exposure: Discovers how employees and agents use AI platforms, surfaces shadow AI and misconfigurations, detects attacks such as prompt injection, and enforces AI acceptable use policies."
+  source: { url: https://www.tenable.com/products/ai-exposure, tier: official, title: Tenable AI Exposure product page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.tenable.com/blog/tenable-one-ai-exposure-secure-ai-usage-at-scale, tier: official, title: Tenable AI Exposure availability blog post, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://docs.tenable.com/release-notes/Content/ai-exposure/2026.htm, tier: official, title: Tenable AI Exposure 2026 release notes, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Tenable documentation.
+matrix_coverage:
+  - asset: ai-workload-platforms
+    functions: [identify, govern]
+    maturity: primary
+    note: Discovers how employees and agents interact with AI platforms such as ChatGPT Enterprise and Microsoft Copilot, finds unsafe platform settings and third-party integrations, and enforces AI acceptable use policies.
+    source: { url: https://www.tenable.com/products/ai-exposure, tier: official, title: Tenable AI Exposure product page, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect, identify]
+    maturity: primary
+    note: The Explorer page inspects messages in user AI sessions to identify potential data exfiltration or sharing of sensitive information with AI models; the Issues page surfaces detected policy breaches and security gaps.
+    source: { url: https://docs.tenable.com/release-notes/Content/ai-exposure/2026.htm, tier: official, title: Tenable AI Exposure 2026 release notes, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [identify]
+    maturity: secondary
+    note: The Inventory page tracks users, deployed AI agents, and AI memories; AI agent assets carry risk scores in Tenable Exposure Management.
+    source: { url: https://docs.tenable.com/release-notes/Content/ai-exposure/2026.htm, tier: official, title: Tenable AI Exposure 2026 release notes, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-workload-platforms, function: identify }

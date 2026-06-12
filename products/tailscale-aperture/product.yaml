@@ -1,0 +1,39 @@
+schema_version: 2
+name: Tailscale Aperture
+aliases: [Aperture]
+vendor:
+  value: Tailscale
+  source: { url: https://tailscale.com/docs/aperture, tier: official, title: Tailscale Aperture documentation, accessed: 2026-06-10, origin: reviewed }
+url: https://tailscale.com/use-cases/securing-ai
+description:
+  value: "Tailscale Aperture: AI gateway that authenticates users and agents with Tailscale identity, keeps provider API keys centralized, and tracks LLM usage and spend."
+  source: { url: https://tailscale.com/docs/aperture, tier: official, title: Tailscale Aperture documentation, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://tailscale.com/blog/aperture-self-serve, tier: official, title: Tailscale Aperture self-serve announcement, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://tailscale.com/docs/aperture, tier: official, title: Tailscale Aperture documentation, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Tailscale documentation.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [protect]
+    maturity: primary
+    note: Centralized AI gateway that secures, monitors, and routes LLM requests to providers such as OpenAI, Anthropic, and Google. Tailscale identity authenticates users in place of distributed API keys, with controls over reachable models and per-user spending limits.
+    source: { url: https://tailscale.com/docs/aperture, tier: official, title: Tailscale Aperture documentation, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    note: Dashboards and session logs provide visibility into LLM requests and token usage across the organization, with usage data export, including S3 log export, for monitoring and review.
+    source: { url: https://tailscale.com/docs/aperture, tier: official, title: Tailscale Aperture documentation, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: Identifies connecting users and coding agents such as Claude Code, Codex, and Gemini CLI through Tailscale identities, tying LLM usage to the identity that generated each request rather than shared API keys.
+    source: { url: https://tailscale.com/use-cases/securing-ai, tier: official, title: Tailscale securing AI use case, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-gateways-routers, function: protect }

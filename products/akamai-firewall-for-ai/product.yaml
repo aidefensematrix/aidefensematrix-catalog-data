@@ -1,0 +1,32 @@
+schema_version: 2
+name: Akamai Firewall for AI
+aliases: [Firewall for AI]
+vendor:
+  value: Akamai
+  source: { url: https://www.akamai.com/products/firewall-for-ai, tier: official, title: Akamai Firewall for AI product page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.akamai.com/products/firewall-for-ai
+description:
+  value: "Akamai Firewall for AI: Inspects LLM prompts and responses at the edge or via API, blocking prompt injection, toxic output, and sensitive data exposure."
+  source: { url: https://www.akamai.com/products/firewall-for-ai, tier: official, title: Akamai Firewall for AI product page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.akamai.com/products/firewall-for-ai, tier: official, title: Akamai Firewall for AI product page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.akamai.com/products/firewall-for-ai, tier: official, title: Akamai Firewall for AI product page, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Akamai documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Applies guardrails to both inputs and outputs, detecting and blocking prompt injection, jailbreaks, and harmful queries in real time while filtering model responses for toxic content and sensitive data leakage.
+    source: { url: https://www.akamai.com/products/firewall-for-ai, tier: official, title: Akamai Firewall for AI product page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-model
+    functions: [protect]
+    maturity: secondary
+    note: Detects and blocks unauthorized queries and large-scale data scraping attempts that aim to extract proprietary model knowledge, mitigating model theft and data exfiltration.
+    source: { url: https://techdocs.akamai.com/cloud-security/docs/protect-your-ai-apps, tier: official, title: Akamai TechDocs on protecting AI apps, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

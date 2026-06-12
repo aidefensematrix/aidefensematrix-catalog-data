@@ -1,0 +1,34 @@
+schema_version: 2
+name: TraceForce
+vendor:
+  value: TraceForce
+  source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: reviewed }
+url: https://traceforce.ai/
+description:
+  value: "TraceForce: Endpoint AI security posture management that discovers the AI tools, agents, MCP servers, and skills running on devices, scores context-aware risk, and automates remediation."
+  source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [ISO 27001, SOC 2 Type 1]
+  source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the TraceForce documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: primary
+    note: Endpoint agents discover the AI tools, MCP servers, and skills running locally on each device and flag risk from how AI is actually used, with automated remediation into the existing security stack.
+    source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [identify]
+    maturity: secondary
+    note: Inventories the AI agents operating on managed devices as part of endpoint AI discovery.
+    source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-orchestration-tools, function: identify }

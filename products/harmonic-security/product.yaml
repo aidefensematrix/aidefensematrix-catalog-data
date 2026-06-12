@@ -1,0 +1,31 @@
+schema_version: 2
+name: Harmonic Security
+vendor:
+  value: Harmonic Security
+  source: { url: https://www.harmonic.security/, tier: official, title: Harmonic Security homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://www.harmonic.security/
+description:
+  value: "Harmonic Security: Monitors employee and agent AI usage via a browser extension and desktop client, detecting sensitive data in prompts and coaching or blocking risky sharing in real time."
+  source: { url: https://www.harmonic.security/, tier: official, title: Harmonic Security homepage, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.harmonic.security/, tier: official, title: Harmonic Security homepage, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.harmonic.security/, tier: official, title: Harmonic Security homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Harmonic Security documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Inspects employee prompts on the device via browser extension and desktop client, identifies shadow AI tools in use, and makes inline decisions in under 200 ms to warn, coach, or block sensitive data sharing.
+    source: { url: https://www.harmonic.security/, tier: official, title: Harmonic Security homepage, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: secondary
+    note: Harmonic Command provides visibility into AI agents acting through MCP servers and applies inline interventions that coach the user or agent when sensitive data is about to leave the business.
+    source: { url: https://www.harmonic.security/products/command, tier: official, title: Harmonic Command product page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

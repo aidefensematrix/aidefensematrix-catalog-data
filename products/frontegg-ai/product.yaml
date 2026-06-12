@@ -1,0 +1,33 @@
+schema_version: 2
+name: Frontegg.ai
+vendor:
+  value: Frontegg
+  source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-06-10, origin: reviewed }
+url: https://frontegg.com/product/frontegg-ai
+description:
+  value: "Frontegg.ai: Identity management for AI agent builders, with user authentication, least-privilege authorization, token rotation, and managed OAuth tokens for third-party tool access."
+  source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Frontegg documentation. Frontegg.ai is in public beta and free to all users per the vendor product page.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: primary
+    note: Provides the identity layer for agent products, with multi-tenant user onboarding, least-privilege authorization, and managed third-party OAuth tokens with token rotation, so agents act with scoped refreshable credentials.
+    source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: secondary
+    note: The AgentLink companion product creates a hosted MCP server that translates SaaS APIs into MCP tools, enforces agent-specific guardrails on every action, and keeps audit trails plus analytics of agent tool usage and anomalies.
+    source: { url: https://frontegg.com/product/agentlink, tier: official, title: AgentLink by Frontegg product page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: protect }

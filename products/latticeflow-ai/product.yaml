@@ -1,0 +1,31 @@
+schema_version: 2
+name: LatticeFlow AI
+vendor:
+  value: LatticeFlow AI
+  source: { url: https://latticeflow.ai/company/about, tier: official, title: LatticeFlow AI about page, accessed: 2026-06-10, origin: reviewed }
+url: https://latticeflow.ai/platform
+description:
+  value: "LatticeFlow AI: AI governance platform that discovers AI systems, runs technical evaluations and automated red-team security scans, and maps evidence to 20+ compliance frameworks."
+  source: { url: https://latticeflow.ai/platform, tier: official, title: LatticeFlow AI platform page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://latticeflow.ai/platform, tier: official, title: LatticeFlow AI platform page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://latticeflow.ai/, tier: official, title: LatticeFlow AI homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the LatticeFlow AI documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [govern, identify, detect]
+    maturity: primary
+    note: Discovers AI assets, runs 100+ evaluations mapped to 20+ frameworks such as the EU AI Act and NIST, scans for vulnerabilities via automated red-teaming aligned with OWASP and MITRE, and continuously monitors risk for audit-ready governance evidence.
+    source: { url: https://latticeflow.ai/platform, tier: official, title: LatticeFlow AI platform page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [govern]
+    maturity: secondary
+    note: Discovers, evaluates, and governs risk for autonomous agentic AI systems alongside foundation models and custom generative AI applications.
+    source: { url: https://latticeflow.ai/use-cases/our-use-cases, tier: official, title: LatticeFlow AI use cases page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-model, function: govern }

@@ -1,0 +1,36 @@
+schema_version: 2
+name: Cranium
+vendor:
+  value: Cranium AI
+  source: { url: https://cranium.ai/, tier: official, title: Cranium homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://cranium.ai/
+description:
+  value: "Cranium: Platform that discovers and inventories enterprise AI systems, generates AI bills of materials, red teams models, and maps risks to regulations such as the EU AI Act and NIST AI RMF."
+  source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://cranium.ai/platform/cranium-arena/, tier: official, title: Cranium Arena, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://cranium.ai/, tier: official, title: Cranium homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Cranium documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, govern, detect]
+    maturity: primary
+    note: Sensors discover internal and third-party AI systems; the platform auto-generates AI BOMs, runs agent-based red teaming via Cranium Arena, and maps systems to the EU AI Act, NIST AI RMF, and ISO frameworks.
+    source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-workload-platforms
+    functions: [identify, detect]
+    maturity: secondary
+    note: CloudSensor integrates with cloud environments to discover security alerts, monitor unauthorized changes, and assess role-based access controls; Detect AI scans internal environments for shadow AI.
+    source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [identify]
+    maturity: secondary
+    note: AgentSensor gives visibility into the agentic layer, automatically detecting AI agents, the tools they invoke, and other agents in the network.
+    source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-model, function: identify }

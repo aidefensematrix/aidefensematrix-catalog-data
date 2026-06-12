@@ -1,0 +1,36 @@
+schema_version: 2
+name: Credo AI
+vendor:
+  value: Credo AI
+  source: { url: https://www.credo.ai/product, tier: official, title: Credo AI Governance Platform, accessed: 2026-06-07, origin: reviewed }
+url: https://www.credo.ai
+description:
+  value: "AI governance platform that inventories AI systems, runs risk assessments, and maps controls to policy packs for the EU AI Act, NIST AI RMF, and ISO 42001."
+  source: { url: https://www.credo.ai/product, tier: official, title: Credo AI Governance Platform, accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.credo.ai/product, tier: official, title: Credo AI Governance Platform, accessed: 2026-06-07, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.businesswire.com/news/home/20240730411517/en/Credo-AI-Announces-%2421-Million-in-New-Capital-Grows-Leadership-Team-to-Match-the-Rapid-Pace-of-AI-Innovation-Emerges-as-the-Standard-of-Responsible-AI-Governance, tier: press, title: Credo AI announces 21 million in new capital, accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-07
+changelog:
+  - date: 2026-06-07
+    summary: Replaced seed stub with sourced details and matrix coverage from primary and press sources.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [govern, identify]
+    maturity: primary
+    note: Centralized registry of AI apps and agents with governance workflows and approval gates.
+    source: { url: https://www.credo.ai/product, tier: official, title: AI Registry and Discovery, accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-model
+    functions: [govern, identify]
+    maturity: primary
+    note: Model inventory and risk assessment against policy packs and standards.
+    source: { url: https://www.credo.ai/product, tier: official, title: Compliance and Policy Engine, accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [govern]
+    maturity: secondary
+    note: Agent registry with agent cards covering purpose, tools, data sources, and guardrails.
+    source: { url: https://www.credo.ai/product, tier: official, title: Agent Registry, accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: ai-orchestration-tools, function: govern }

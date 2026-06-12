@@ -1,0 +1,32 @@
+schema_version: 2
+name: Unity Catalog
+vendor:
+  value: Databricks
+  source: { url: https://www.databricks.com/product/unity-catalog, tier: official, title: Databricks Unity Catalog, accessed: 2026-06-09, origin: reviewed }
+aliases: [Databricks Unity Catalog, Models in Unity Catalog]
+url: https://www.databricks.com/product/unity-catalog
+description:
+  value: Unified governance layer for Databricks data and AI that manages models, agent tools, and MCP connections as access-controlled objects, with fine-grained policies, column-level lineage, and audit.
+  source: { url: https://www.databricks.com/product/unity-catalog, tier: official, title: Databricks Unity Catalog, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.databricks.com/product/unity-catalog, tier: official, title: Databricks Unity Catalog, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.databricks.com/product/unity-catalog, tier: official, title: Databricks Unity Catalog, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Databricks Unity Catalog documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, protect, govern]
+    maturity: primary
+    note: Manages registered ML models, agent-tool functions, and MCP connections as securable objects with grant and revoke privileges, lineage, and audit.
+    source: { url: https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/ai-governance, tier: official, title: Unity Catalog AI governance, accessed: 2026-06-09, origin: reviewed }
+  - asset: training-data
+    functions: [identify, protect]
+    maturity: secondary
+    note: Applies fine-grained, attribute-based access policies with row and column filters and PII autoclassification to the data that feeds models, with end-to-end lineage.
+    source: { url: https://www.databricks.com/product/unity-catalog, tier: official, title: Databricks Unity Catalog, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-model, function: govern }

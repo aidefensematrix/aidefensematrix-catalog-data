@@ -1,0 +1,36 @@
+schema_version: 2
+name: Runlayer
+vendor:
+  value: Runlayer
+  source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.runlayer.com/
+description:
+  value: "Runlayer: MCP security gateway that vets servers and skills, screens each tool call for threats, and ties agent access to enterprise SSO with audit logs."
+  source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Runlayer documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [protect, detect, govern]
+    maturity: primary
+    note: Gateway and private registry for MCP servers, skills, and agents. Scans each server release for vulnerabilities and permission drift before approval, screens calls in real time for tool poisoning, rug pulls, and command injection, and keeps complete audit trails.
+    source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [govern, protect]
+    maturity: secondary
+    note: Replaces personal API keys with SSO, SCIM, and group sync through Okta or Entra, applying conditional access, revocation, and fine-grained permissions to user, team, and agent connections to MCP servers.
+    source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect, protect]
+    maturity: secondary
+    note: Multi-tier detectors inspect tool-call traffic in real time and flag policy, compliance, and data-leak risks before requests reach downstream tools.
+    source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-orchestration-tools, function: protect }

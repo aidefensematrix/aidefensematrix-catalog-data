@@ -1,0 +1,32 @@
+schema_version: 2
+name: Portkey
+vendor:
+  value: Portkey
+  source: { url: https://portkey.ai/features/ai-gateway, tier: official, title: Portkey AI Gateway, accessed: 2026-06-09, origin: reviewed }
+aliases: [Portkey AI Gateway]
+url: https://portkey.ai
+description:
+  value: AI gateway and control plane that routes requests across many LLM providers and runs guardrails on inputs and outputs to catch prompt injection, PII leaks, and unsafe content.
+  source: { url: https://portkey.ai/features/ai-gateway, tier: official, title: Portkey AI Gateway, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://portkey.ai/features/ai-gateway, tier: official, title: Portkey AI Gateway, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://portkey.ai/features/ai-gateway, tier: official, title: Portkey AI Gateway, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from Portkey product documentation.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Routes traffic to many LLM providers with input and output guardrails and request-level observability.
+    source: { url: https://portkey.ai/features/ai-gateway, tier: official, title: Portkey AI Gateway, accessed: 2026-06-09, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Guardrails check prompts and responses for prompt injection, PII, and unsafe content.
+    source: { url: https://portkey.ai/features/guardrails, tier: official, title: Portkey Guardrails, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-gateways-routers, function: protect }

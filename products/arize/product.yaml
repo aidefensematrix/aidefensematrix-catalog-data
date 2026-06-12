@@ -1,0 +1,32 @@
+schema_version: 2
+name: Arize
+vendor:
+  value: Arize AI
+  source: { url: https://arize.com/llm-evaluation/production-llm-evaluation/, tier: official, title: Arize production LLM evaluation, accessed: 2026-06-09, origin: reviewed }
+aliases: [Arize AX]
+url: https://arize.com
+description:
+  value: AI observability and evaluation platform with run-time guardrails that screen LLM inputs and outputs, blocking jailbreaks, prompt injection, and PII while flagging hallucinated or unsafe responses.
+  source: { url: https://arize.com/llm-evaluation/production-llm-evaluation/, tier: official, title: Arize production LLM evaluation, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://arize.com/llm-evaluation/production-llm-evaluation/, tier: official, title: Arize production LLM evaluation, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://arize.com/llm-evaluation/production-llm-evaluation/, tier: official, title: Arize production LLM evaluation, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Arize documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Run-time guardrails screen LLM inputs and outputs, blocking jailbreaks, prompt injection, and PII and correcting toxic or hallucinated responses.
+    source: { url: https://arize.com/docs/ax/security-and-settings/llm-security/guardrails, tier: official, title: Arize AX guardrails, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: Evaluations score LLM and agent application outputs in production to flag hallucinations, low quality, and unsafe responses.
+    source: { url: https://arize.com/llm-evaluation/production-llm-evaluation/, tier: official, title: Arize production LLM evaluation, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

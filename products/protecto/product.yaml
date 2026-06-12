@@ -1,0 +1,32 @@
+schema_version: 2
+name: Protecto
+vendor:
+  value: Protecto
+  source: { url: https://www.protecto.ai/, tier: official, title: Protecto context security for agentic AI, accessed: 2026-06-09, origin: reviewed }
+aliases: []
+url: https://www.protecto.ai/
+description:
+  value: Context security for agentic AI that sits between enterprise data and AI systems, applying role-based access and dynamic masking so agents see only the data each user is permitted at inference.
+  source: { url: https://www.protecto.ai/, tier: official, title: Protecto context security for agentic AI, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.protecto.ai/, tier: official, title: Protecto context security for agentic AI, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.protecto.ai/, tier: official, title: Protecto context security for agentic AI, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Protecto documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Sits between enterprise data and LLMs, agents, and MCP pipelines, applying dynamic masking at inference and keeping a full audit trail of who accessed what.
+    source: { url: https://www.protecto.ai/, tier: official, title: Protecto context security for agentic AI, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: Role-based access for AI agents, so each agent exposes only the data the requesting user is permitted to see.
+    source: { url: https://www.protecto.ai/, tier: official, title: Protecto RBAC for AI agents, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

@@ -1,0 +1,29 @@
+schema_version: 2
+name: Token Security
+vendor:
+  value: Token Security
+  source: { url: https://www.token.security/, tier: official, title: Token Security platform, accessed: 2026-06-09, origin: reviewed }
+aliases: [Token]
+url: https://www.token.security/
+description:
+  value: Security platform for AI agents and non-human identities that discovers and inventories them, maps their access and risk, and enforces intent-based least-privilege.
+  source: { url: https://www.token.security/, tier: official, title: Token Security platform, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.token.security/, tier: official, title: Token Security platform, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.token.security/, tier: official, title: Token Security platform, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Token Security documentation.
+  - date: 2026-06-12
+    summary: Refined matrix coverage and primary function.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect]
+    maturity: primary
+    note: Discovers and inventories AI agents and non-human identities, maps their access and risk, and enforces intent-based least-privilege so each agent has only the permissions its purpose needs.
+    source: { url: https://www.token.security/, tier: official, title: Token Security platform, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: identify }

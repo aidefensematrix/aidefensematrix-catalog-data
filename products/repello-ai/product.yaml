@@ -1,0 +1,32 @@
+schema_version: 2
+name: Repello AI
+vendor:
+  value: Repello AI
+  source: { url: https://repello.ai/, tier: official, title: Repello AI platform, accessed: 2026-06-09, origin: reviewed }
+aliases: [Repello, ARTEMIS]
+url: https://repello.ai/
+description:
+  value: Enterprise AI security and red-teaming platform that discovers AI assets, runs adversarial attack simulations against models and apps, and adds runtime protection and MCP visibility.
+  source: { url: https://repello.ai/, tier: official, title: Repello AI platform, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://repello.ai/, tier: official, title: Repello AI platform, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://repello.ai/, tier: official, title: Repello AI platform, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Repello AI documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, detect]
+    maturity: primary
+    note: Discovers AI assets and runs ARTEMIS adversarial attack simulations against models and applications across RAG and agent workflows.
+    source: { url: https://repello.ai/, tier: official, title: Repello AI red teaming and inventory, accessed: 2026-06-09, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: ARGUS adds AI runtime security, and an MCP gateway provides visibility into MCP traffic.
+    source: { url: https://repello.ai/, tier: official, title: Repello AI runtime security, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-model, function: detect }

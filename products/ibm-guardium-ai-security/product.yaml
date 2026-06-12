@@ -1,0 +1,31 @@
+schema_version: 2
+name: IBM Guardium AI Security
+vendor:
+  value: IBM
+  source: { url: https://www.ibm.com/support/pages/node/7232204, tier: official, title: IBM Guardium AI Security SaaS product lifecycle, accessed: 2026-06-10, origin: reviewed }
+url: https://www.ibm.com/products/guardium-ai-security
+description:
+  value: "IBM Guardium AI Security: Discovers shadow AI and agents, runs posture checks and automated pen tests on models, and screens prompts with an AI firewall."
+  source: { url: https://www.ibm.com/new/announcements/unlock-trustworthy-ai-with-integrated-governance-and-security, tier: official, title: IBM announcement on integrated AI governance and security, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.ibm.com/support/pages/node/7232204, tier: official, title: IBM Guardium AI Security SaaS product lifecycle, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.ibm.com/support/pages/node/7232204, tier: official, title: IBM Guardium AI Security SaaS product lifecycle, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the IBM documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, detect, govern]
+    maturity: primary
+    note: Discovers AI models and shadow AI, including agents, across cloud environments, code repositories, and embedded systems. AI SPM detects vulnerabilities and misconfigurations with automated penetration tests, and maps compliance across frameworks such as the EU AI Act and ISO 42001.
+    source: { url: https://www.ibm.com/new/announcements/unlock-trustworthy-ai-with-integrated-governance-and-security, tier: official, title: IBM announcement on integrated AI governance and security, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: An AI firewall applies custom security policies that analyze input and output prompts, providing real-time protection against malicious prompts, code injection, sensitive data exposure, and data leakage.
+    source: { url: https://newsroom.ibm.com/2025-06-18-ibm-introduces-industry-first-software-to-unify-agentic-governance-and-security, tier: official, title: IBM newsroom on unified agentic governance and security, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-model, function: detect }

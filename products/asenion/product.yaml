@@ -1,0 +1,36 @@
+schema_version: 2
+name: Asenion
+vendor:
+  value: Asenion
+  source: { url: https://asenion.ai/ai-governance-platform, tier: official, title: Asenion AI Governance Platform for Enterprise, accessed: 2026-06-09, origin: reviewed }
+aliases: [Fairly AI, Anch.AI]
+url: https://asenion.ai
+description:
+  value: "Asenion: AI trust, risk, and security management platform that continuously assesses, tests, and governs AI models and agents against the EU AI Act, ISO/IEC 42001, and NIST AI RMF."
+  source: { url: https://asenion.ai/ai-governance-platform, tier: official, title: Asenion AI Governance Platform for Enterprise, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://asenion.ai/ai-governance-platform, tier: official, title: Asenion AI Governance Platform for Enterprise, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://asenion.ai/ai-governance-platform, tier: official, title: Asenion AI Governance Platform for Enterprise, accessed: 2026-06-09, origin: reviewed }
+renamed_from:
+  name: Fairly AI
+  date: 2025-06-18
+  source: { url: https://asenion.ai/blog/fairly-ai-acquires-anch-ai-to-create-asenion, tier: official, title: Fairly AI acquires Anch.AI to launch Asenion, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Asenion documentation. Formerly Fairly AI, which acquired Anch.AI and rebranded to Asenion, announced 2025-06-18.
+matrix_coverage:
+  - asset: ai-model
+    functions: [govern]
+    maturity: primary
+    note: Continuously assesses and governs AI models for risk and regulatory compliance across the lifecycle, with automated controls mapped to the EU AI Act, ISO/IEC 42001, and NIST AI RMF.
+    source: { url: https://asenion.ai/ai-governance-platform, tier: official, title: Asenion AI Governance Platform for Enterprise, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [govern]
+    maturity: secondary
+    note: Extends the same assessment and governance controls to AI systems and agents at the application and orchestration layer.
+    source: { url: https://asenion.ai/ai-governance-platform, tier: official, title: Asenion AI Governance Platform for Enterprise, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-model, function: govern }

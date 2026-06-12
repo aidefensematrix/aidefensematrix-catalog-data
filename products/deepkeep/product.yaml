@@ -1,0 +1,36 @@
+schema_version: 2
+name: DeepKeep
+vendor:
+  value: DeepKeep
+  source: { url: https://www.deepkeep.ai/about, tier: official, title: DeepKeep about page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.deepkeep.ai/
+description:
+  value: "DeepKeep: AI security platform with a runtime AI firewall, automated red teaming, and model scanning for LLM and computer vision systems."
+  source: { url: https://www.deepkeep.ai/, tier: official, title: DeepKeep homepage, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.deepkeep.ai/capabilities/ai-firewall, tier: official, title: DeepKeep AI firewall page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.deepkeep.ai/, tier: official, title: DeepKeep homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the DeepKeep documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: The AI Firewall inspects prompts and responses in real time and can block, redact, or alert on prompt injection, jailbreaks, data leakage, and unsafe outputs, deployed inline or out-of-band.
+    source: { url: https://www.deepkeep.ai/capabilities/ai-firewall, tier: official, title: DeepKeep AI firewall page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-model
+    functions: [identify, detect]
+    maturity: primary
+    note: Model scanning combines multi-engine static analysis with dynamic testing to surface embedded malware, vulnerable dependencies, tampering, and unsafe behaviors, and builds model inventories using SBOM and MLBOM frameworks.
+    source: { url: https://www.deepkeep.ai/capabilities/model-scanning, tier: official, title: DeepKeep model scanning page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: Automated red teaming continuously simulates prompt injection, jailbreak, and data leakage attacks against custom AI applications and agents, with findings tied to remediation guidance and firewall guardrail updates.
+    source: { url: https://www.deepkeep.ai/capabilities/ai-red-teaming, tier: official, title: DeepKeep AI red teaming page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

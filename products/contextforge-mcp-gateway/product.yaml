@@ -1,0 +1,34 @@
+schema_version: 2
+name: ContextForge MCP Gateway
+aliases: [ContextForge, MCP Context Forge]
+vendor:
+  value: IBM
+  source: { url: https://github.com/IBM/mcp-context-forge, tier: official, title: ContextForge MCP Gateway repository, accessed: 2026-06-10, origin: reviewed }
+url: https://github.com/IBM/mcp-context-forge
+description:
+  value: "ContextForge MCP Gateway: Open-source IBM gateway, registry, and proxy that fronts MCP, A2A, and REST tools with centralized authentication, guardrail plugins, and governance controls."
+  source: { url: https://github.com/IBM/mcp-context-forge, tier: official, title: ContextForge MCP Gateway repository, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://github.com/IBM/mcp-context-forge, tier: official, title: ContextForge MCP Gateway repository, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://github.com/IBM/mcp-context-forge, tier: official, title: ContextForge MCP Gateway repository, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the IBM ContextForge documentation.
+  - date: 2026-06-13
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [protect]
+    maturity: primary
+    note: Federates MCP, A2A, and REST tool servers behind one authenticated endpoint with JWT and OAuth controls, role-based access control across global, team, and personal scopes, resource visibility flags, scoped API tokens, and rate limits. Permission checks default to deny on error.
+    source: { url: https://ibm.github.io/mcp-context-forge/architecture/security-features/, tier: official, title: ContextForge security features documentation, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Plugin hooks before and after prompt, tool, and resource calls apply PII detection and masking, content moderation, deny lists, and secrets detection to data flowing through the gateway, with an optional external OPA policy integration.
+    source: { url: https://ibm.github.io/mcp-context-forge/architecture/security-features/, tier: official, title: ContextForge security features documentation, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-orchestration-tools, function: protect }

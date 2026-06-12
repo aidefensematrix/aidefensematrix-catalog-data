@@ -1,0 +1,37 @@
+schema_version: 2
+name: Citadel AI
+aliases: [Citadel Lens, Lens for LLMs]
+vendor:
+  value: Citadel AI
+  source: { url: https://citadel-ai.com/about/, tier: official, title: Citadel AI about page, accessed: 2026-06-10, origin: reviewed }
+url: https://citadel-ai.com
+description:
+  value: "Citadel AI: Maker of Citadel Lens, which tests AI models and datasets against industry standards and generates AI compliance reports for regulations such as the EU AI Act."
+  source: { url: https://citadel-ai.com/products/lens/, tier: official, title: Citadel Lens product page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://citadel-ai.com/products/lens/, tier: official, title: Citadel Lens product page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://citadel-ai.com/, tier: official, title: Citadel AI homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Citadel AI website.
+matrix_coverage:
+  - asset: ai-model
+    functions: [detect, govern]
+    maturity: primary
+    note: Citadel Lens runs customizable test suites that check AI models against industry standards across data slices and robustness scenarios, and generates compliance reports against AI regulations such as the EU AI Act and ISO standards.
+    source: { url: https://citadel-ai.com/products/lens/, tier: official, title: Citadel Lens product page, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    note: Lens for LLMs evaluates LLM application outputs with built-in metrics for factual consistency, toxicity, and jailbreak detection. Evaluation and monitoring only, with no documented inline blocking guardrail.
+    source: { url: https://citadel-ai.com/news/2024/09/30/lens-for-llms-launch/, tier: official, title: Lens for LLMs launch announcement, accessed: 2026-06-10, origin: reviewed }
+  - asset: training-data
+    functions: [detect]
+    maturity: secondary
+    note: Lens test suites also evaluate datasets against industry standards and generate dataset reports alongside model reports.
+    source: { url: https://citadel-ai.com/products/lens/, tier: official, title: Citadel Lens product page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-model, function: detect }

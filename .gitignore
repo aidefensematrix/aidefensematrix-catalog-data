@@ -1,0 +1,33 @@
+# Astro build output
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Claude Code plan-mode scratch (not part of the catalog)
+Plans/
+
+# Defend against accidental npm usage after pnpm migration
+package-lock.json
+
+# pnpm log output
+pnpm-debug.log*

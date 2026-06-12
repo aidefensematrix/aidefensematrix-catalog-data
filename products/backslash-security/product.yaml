@@ -1,0 +1,31 @@
+schema_version: 2
+name: Backslash Security
+vendor:
+  value: Backslash Security
+  source: { url: https://www.backslash.security/about, tier: official, title: Backslash Security about page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.backslash.security/
+description:
+  value: "Backslash Security: Secures AI coding agents on developer workstations with MCP server vetting, vibe coding guardrails, and real-time monitoring of agentic activity."
+  source: { url: https://www.backslash.security/agentic-endpoint-security, tier: official, title: Backslash agentic endpoint security page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://docs.backslash.security/docs/deployment, tier: official, title: Backslash deployment documentation, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.backslash.security/, tier: official, title: Backslash Security homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Backslash Security documentation.
+matrix_coverage:
+  - asset: ai-generated-code
+    functions: [protect, detect, govern]
+    maturity: primary
+    note: Centralized guardrails on developer workstations restrict unapproved models, private accounts, and unsafe configurations for AI coding agents, with real-time detection of prompt injection, data exfiltration, and anomalous agent behavior in vibe coding workflows.
+    source: { url: https://www.backslash.security/agentic-endpoint-security, tier: official, title: Backslash agentic endpoint security page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, protect]
+    maturity: primary
+    note: Vets, allowlists, and monitors MCP servers at the tool level, blocking unsafe or malicious components; a visibility graph inventories agents, MCPs, skills, hooks, and plugins, and the public MCP Server Security Hub maintains a risk database covering tens of thousands of MCP servers.
+    source: { url: https://mcp.backslash.security/, tier: official, title: Backslash MCP Server Security Hub, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-generated-code, function: protect }

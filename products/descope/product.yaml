@@ -1,0 +1,29 @@
+schema_version: 2
+name: Descope
+vendor:
+  value: Descope
+  source: { url: https://www.descope.com/use-cases/ai, tier: official, title: Descope Agentic Identity Hub, accessed: 2026-06-09, origin: reviewed }
+aliases: [Descope Agentic Identity Hub]
+url: https://www.descope.com/use-cases/ai
+description:
+  value: Identity platform for AI agents and MCP servers that authenticates agents with scoped OAuth tokens, brokers their credentials to external tools, and governs and audits what each agent may do.
+  source: { url: https://www.descope.com/use-cases/ai, tier: official, title: Descope Agentic Identity Hub, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.descope.com/use-cases/ai, tier: official, title: Descope Agentic Identity Hub, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.descope.com/use-cases/ai, tier: official, title: Descope Agentic Identity Hub, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Descope Agentic Identity Hub documentation.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect]
+    maturity: primary
+    note: Acts as an OAuth 2.1 authorization server for AI agents and MCP servers, issuing scoped tokens, brokering credentials to downstream tools, and enforcing per-tool scopes with a full audit trail of agent actions.
+    source: { url: https://docs.descope.com/agentic-identity-hub, tier: official, title: Descope Agentic Identity Hub documentation, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: protect }

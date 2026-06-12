@@ -1,0 +1,40 @@
+schema_version: 2
+name: Lakera
+vendor:
+  value: Lakera
+  source: { url: https://www.lakera.ai/lakera-guard, tier: official, title: Lakera Guard product page, accessed: 2026-06-07, origin: reviewed }
+url: https://www.lakera.ai
+description:
+  value: Runtime guardrails plus adversarial testing for LLM and agent apps, screening prompts, responses, and tool calls for prompt injection, jailbreaks, and data leakage.
+  source: { url: https://www.lakera.ai/lakera-guard, tier: official, title: Lakera Guard product page, accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://docs.lakera.ai/guard, tier: official, title: Lakera Guard deployment options, accessed: 2026-06-07, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://cxotoday.com/press-release/check-point-software-technologies-completes-acquisition-of-lakera-to-secure-the-worlds-ai-transformation/, tier: press, title: Check Point completes acquisition of Lakera, accessed: 2026-06-07, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2, GDPR]
+  source: { url: https://www.lakera.ai/security, tier: official, title: Lakera security and privacy overview, accessed: 2026-06-08, origin: reviewed }
+acquisition:
+  acquirer: Check Point Software Technologies
+  announced: 2025-09-16
+  post_acquisition_status: standalone
+  source: { url: https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/, tier: official, title: Check Point to acquire Lakera (announcement), accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-08
+changelog:
+  - date: 2026-06-07
+    summary: Verified details from primary sources and recorded the Check Point acquisition.
+  - date: 2026-06-08
+    summary: Added compliance attestations (SOC 2 and GDPR) with a source.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Inline screening of prompts, responses, and agent tool calls.
+    source: { url: https://docs.lakera.ai/guard, tier: official, title: Lakera Guard defenses, accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: primary
+    source: { url: https://www.lakera.ai/lakera-guard, tier: official, accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

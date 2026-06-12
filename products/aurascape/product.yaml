@@ -1,0 +1,31 @@
+schema_version: 2
+name: Aurascape
+vendor:
+  value: Aurascape
+  source: { url: https://aurascape.ai/company/, tier: official, title: Aurascape company page, accessed: 2026-06-10, origin: reviewed }
+url: https://aurascape.ai/
+description:
+  value: "Aurascape: AI security platform that discovers AI apps and agents, inspects prompts and responses inline, and applies data protection and threat prevention policies to enterprise AI activity."
+  source: { url: https://aurascape.ai/product/, tier: official, title: Aurascape product overview, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://aurascape.ai/discover-and-monitor-ai/, tier: official, title: Aurascape AI discovery and monitoring page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://aurascape.ai/resources/blog/ai-security-platform-launch-blog/, tier: official, title: Aurascape platform launch blog post, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Aurascape documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Inspects full prompts and responses inline, classifies and fingerprints sensitive data in real time, and blocks risky activity. Detects phishing, social engineering, and malicious code generation in AI responses before they reach users.
+    source: { url: https://aurascape.ai/product/, tier: official, title: Aurascape product overview, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, protect]
+    maturity: secondary
+    note: Discovers sanctioned and unsanctioned AI apps, copilots, and agents with risk scoring. Maps MCP servers and tool connections, tests agents for prompt injection and data leakage before production, and enforces runtime guardrails and MCP gateway controls on tool use.
+    source: { url: https://aurascape.ai/product/, tier: official, title: Aurascape product overview, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

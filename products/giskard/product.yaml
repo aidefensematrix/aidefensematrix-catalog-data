@@ -1,0 +1,27 @@
+schema_version: 2
+name: Giskard
+vendor:
+  value: Giskard
+  source: { url: https://www.giskard.ai/, tier: official, title: Giskard AI red teaming and LLM security, accessed: 2026-06-09, origin: reviewed }
+aliases: []
+url: https://www.giskard.ai/
+description:
+  value: Open-source and commercial AI testing platform that red-teams LLMs and ML models with adversarial probes for prompt injection, hallucination, and sensitive-information disclosure.
+  source: { url: https://www.giskard.ai/, tier: official, title: Giskard AI red teaming and LLM security, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.giskard.ai/, tier: official, title: Giskard AI red teaming and LLM security, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.giskard.ai/, tier: official, title: Giskard AI red teaming and LLM security, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Giskard documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [detect]
+    maturity: primary
+    note: Red-teams LLMs and ML models with adversarial probes, detecting prompt injection, hallucination, and sensitive-information disclosure.
+    source: { url: https://www.giskard.ai/, tier: official, title: Giskard AI red teaming and LLM security, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-model, function: detect }

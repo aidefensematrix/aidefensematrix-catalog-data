@@ -1,0 +1,36 @@
+schema_version: 2
+name: Aqua Secure AI
+vendor:
+  value: Aqua Security
+  source: { url: https://www.aquasec.com/news/full-lifecycle-security-for-ai-applications/, tier: official, title: Aqua Secure AI launch press release, accessed: 2026-06-10, origin: reviewed }
+url: https://www.aquasec.com/solutions/ai-application-security/
+description:
+  value: "Aqua Secure AI: Lifecycle protection for AI apps in the Aqua Platform, spanning code scanning, AI service posture checks, runtime threat detection, and prompt defense for cloud native workloads."
+  source: { url: https://www.aquasec.com/news/full-lifecycle-security-for-ai-applications/, tier: official, title: Aqua Secure AI launch press release, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://github.com/aquasecurity/deployments, tier: official, title: Aqua Security deployments repository, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.aquasec.com/solutions/ai-application-security/, tier: official, title: Aqua AI application security solution page, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Aqua Security documentation.
+matrix_coverage:
+  - asset: ai-workload-platforms
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Runtime detection and response for AI threats identifies unsafe AI usage, detects suspicious activity, and stops malicious activity in cloud native AI workloads without code changes; AI-SPM configuration checks assess the posture of cloud-based AI services.
+    source: { url: https://www.aquasec.com/news/full-lifecycle-security-for-ai-applications/, tier: official, title: Aqua Secure AI launch press release, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Prompt-level runtime protection detects prompt injection, jailbreaks, and risky model behavior, enforcing policy in real time and blocking post-compromise activity without additional agents, code changes, or SDKs.
+    source: { url: https://www.aquasec.com/solutions/ai-application-security/, tier: official, title: Aqua AI application security solution page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-model
+    functions: [identify]
+    maturity: secondary
+    note: Discovers which AI models, platforms, and versions are running, where they are used, and whether usage aligns with policy, monitoring in real time at the application layer across SaaS, managed, and self-hosted AI workloads.
+    source: { url: https://www.aquasec.com/solutions/ai-application-security/, tier: official, title: Aqua AI application security solution page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-workload-platforms, function: protect }

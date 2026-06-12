@@ -1,0 +1,31 @@
+schema_version: 2
+name: Dreadnode
+vendor:
+  value: Dreadnode
+  source: { url: https://dreadnode.io/company/newsroom/dreadnode-v2-security-agent-infrastructure-platform, tier: official, title: "Dreadnode Launches 2.0 (company announcement)", accessed: 2026-06-10, origin: reviewed }
+url: https://docs.dreadnode.io/ai-red-teaming/
+description:
+  value: "Dreadnode: AI red teaming tooling that probes foundation models and agentic AI systems for security and safety risks."
+  source: { url: https://docs.dreadnode.io/ai-red-teaming/, tier: official, title: "AI Red Teaming overview", accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://dreadnode.io/pricing/, tier: official, title: "Dreadnode pricing (managed SaaS and on-prem deployment)", accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://dreadnode.io/company/newsroom/dreadnode-v2-security-agent-infrastructure-platform, tier: official, title: "Dreadnode 2.0 general availability March 2026", accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: "Added to the catalog from the Dreadnode documentation."
+matrix_coverage:
+  - asset: ai-model
+    functions: [detect]
+    maturity: primary
+    note: "AI Red Teaming probes foundation models and traditional ML models with 45+ attack strategies including jailbreaks and adversarial algorithms, mapping findings to OWASP MITRE ATLAS and NIST AI RMF."
+    source: { url: https://docs.dreadnode.io/ai-red-teaming/reference/attacks/, tier: official, title: "Attacks Reference (45+ attack strategies)", accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: "Custom Targets red teams agentic systems including agent loops RAG pipelines and AI applications not just standard model endpoints."
+    source: { url: https://docs.dreadnode.io/ai-red-teaming/custom-endpoints/, tier: official, title: "Custom Targets (red team any AI system)", accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-model, function: detect }

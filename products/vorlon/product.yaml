@@ -1,0 +1,31 @@
+schema_version: 2
+name: Vorlon
+vendor:
+  value: Vorlon
+  source: { url: https://vorlon.io/, tier: official, title: Vorlon agentic ecosystem security platform, accessed: 2026-06-10, origin: reviewed }
+url: https://vorlon.io/
+description:
+  value: "Vorlon: AI Agent Flight Recorder and Action Center capture a cross-application forensic audit trail of agent actions, surface behavioral anomaly findings, and route coordinated response."
+  source: { url: https://vorlon.io/ai-security/ai-agent-flight-recorder-action-center/, tier: official, title: Vorlon AI Agent Flight Recorder and Action Center announcement, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://vorlon.io/, tier: official, title: Vorlon agentic ecosystem security platform, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://vorlon.io/vorlon-announces-launch-ai-agent-flight-recorder-action-center, tier: official, title: Vorlon launch press release, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Vorlon documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [detect, respond]
+    maturity: primary
+    note: The Flight Recorder stitches each agent action across connected apps into a queryable forensic record; the Action Center flags behavioral anomalies against agent usage patterns, routes findings to owners, and tracks remediation through SIEM, SOAR, and ITSM workflows.
+    source: { url: https://vorlon.io/ai-security/ai-agent-flight-recorder-action-center/, tier: official, title: Vorlon AI Agent Flight Recorder and Action Center announcement, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    note: Monitors data-in-motion between AI agents, SaaS apps, and integrations, detecting anomalous access to sensitive data using data-layer context.
+    source: { url: https://vorlon.io/, tier: official, title: Vorlon agentic ecosystem security platform, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: detect }

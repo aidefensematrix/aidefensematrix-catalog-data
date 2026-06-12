@@ -1,0 +1,32 @@
+schema_version: 2
+name: Netskope
+vendor:
+  value: Netskope
+  source: { url: https://www.netskope.com/products/securing-generative-ai, tier: official, title: Securing Generative AI with Netskope One, accessed: 2026-06-09, origin: reviewed }
+aliases: [Netskope One, SkopeAI]
+url: https://www.netskope.com/products/securing-generative-ai
+description:
+  value: Cloud security platform that discovers generative-AI use including shadow AI and inspects prompts and responses inline, applying DLP and guardrails to block data leakage and AI threats.
+  source: { url: https://www.netskope.com/products/securing-generative-ai, tier: official, title: Securing Generative AI with Netskope One, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.netskope.com/products/securing-generative-ai, tier: official, title: Securing Generative AI with Netskope One, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.netskope.com/products/securing-generative-ai, tier: official, title: Securing Generative AI with Netskope One, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Netskope generative AI security documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Discovers generative-AI and shadow-AI use and inspects prompts and responses inline with DLP and guardrails to block sensitive-data leakage.
+    source: { url: https://www.netskope.com/products/securing-generative-ai, tier: official, title: Securing Generative AI with Netskope One, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-model
+    functions: [identify, detect]
+    maturity: secondary
+    note: Assesses the risk of generative-AI apps and MCP servers and runs automated red-team testing of private LLMs to find vulnerabilities.
+    source: { url: https://www.netskope.com/products/ai-security, tier: official, title: Netskope AI Security, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

@@ -1,0 +1,32 @@
+schema_version: 2
+name: Pillar
+vendor:
+  value: Pillar Security
+  source: { url: https://www.pillar.security/platform, tier: official, title: Pillar Security Platform, accessed: 2026-06-09, origin: reviewed }
+aliases: [Pillar Security]
+url: https://www.pillar.security/platform
+description:
+  value: AI security platform for the agentic workforce that inventories agents, models, and MCP servers, red-teams them, and runs adaptive runtime guardrails to block prompt attacks and data egress.
+  source: { url: https://www.pillar.security/platform, tier: official, title: Pillar Security Platform, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.pillar.security/platform, tier: official, title: Pillar Security Platform, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.pillar.security/platform, tier: official, title: Pillar Security Platform, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Pillar Security platform documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Adaptive runtime guardrails inspect AI inputs and outputs, detect malicious intent, and use taint analysis to block PII and secret egress in real time.
+    source: { url: https://www.pillar.security/platform, tier: official, title: Pillar Security Platform, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: secondary
+    note: Discovers and inventories agents, models, MCP servers, and tools including shadow AI, maps the permissions and connections of each agent, and red-teams them for exploitable flaws.
+    source: { url: https://www.pillar.security/platform/ai-discovery-posture, tier: official, title: Pillar AI Discovery and Posture, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

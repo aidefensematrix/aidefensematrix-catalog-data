@@ -1,0 +1,44 @@
+schema_version: 2
+name: Robust Intelligence
+vendor:
+  value: Cisco
+  source: { url: https://www.cisco.com/site/us/en/products/security/ai-defense/robust-intelligence-is-part-of-cisco/index.html, tier: official, title: "Robust Intelligence is now part of Cisco", accessed: 2026-06-07, origin: reviewed }
+url: https://www.cisco.com/site/us/en/products/security/ai-defense/index.html
+description:
+  value: "Algorithmic red teaming and runtime guardrails for AI models and apps: tests models against attacks and screens prompts, responses, and agent workflows. Now part of Cisco AI Defense."
+  source: { url: https://www.cisco.com/site/us/en/products/security/ai-defense/robust-intelligence-is-part-of-cisco/index.html, tier: official, title: "Robust Intelligence is now part of Cisco", accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.cisco.com/c/en/us/products/collateral/security/ai-defense/ai-defense-ds.html, tier: official, title: "Cisco AI Defense data sheet (cloud, VPC, on-premises)", accessed: 2026-06-07, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://www.cisco.com/site/us/en/products/security/ai-defense/robust-intelligence-is-part-of-cisco/index.html, tier: official, title: "Robust Intelligence is now part of Cisco", accessed: 2026-06-07, origin: reviewed }
+acquisition:
+  acquirer: Cisco
+  announced: 2024-08-26
+  post_acquisition_status: folded
+  new_name: Cisco AI Defense
+  source: { url: https://blogs.cisco.com/news/fortifying-the-future-of-security-for-ai-cisco-announces-intent-to-acquire-robust-intelligence, tier: official, title: "Cisco announces intent to acquire Robust Intelligence (with completion update)", accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-07
+    summary: "Verified details from Cisco primary sources and recorded the Cisco acquisition and integration into AI Defense."
+  - date: 2026-06-09
+    summary: "Recorded the post-acquisition product name (Cisco AI Defense)."
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, protect]
+    maturity: primary
+    note: "Algorithmic red teaming validates models against attack techniques, with runtime guardrails enforcing protection."
+    source: { url: https://www.cisco.com/site/us/en/products/security/ai-defense/ai-model-application-validation/index.html, tier: official, title: "AI Model and Application Validation", accessed: 2026-06-07, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: "AI runtime guardrails screen prompts, responses, and agent workflows."
+    source: { url: https://www.cisco.com/c/en/us/products/collateral/security/ai-defense/ai-defense-ds.html, tier: official, title: "Cisco AI Defense data sheet (runtime protection)", accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: adjacent
+    note: "Supply chain scanning of model files, repositories, and MCP servers and tools."
+    source: { url: https://www.cisco.com/c/en/us/products/collateral/security/ai-defense/ai-defense-ds.html, tier: official, title: "Cisco AI Defense data sheet (supply chain scanning)", accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: ai-model, function: protect }

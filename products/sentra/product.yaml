@@ -1,0 +1,28 @@
+schema_version: 2
+name: Sentra
+vendor:
+  value: Sentra
+  source: { url: https://www.sentra.io/product, tier: official, title: Sentra Platform Overview, accessed: 2026-06-09, origin: reviewed }
+url: https://www.sentra.io/
+description:
+  value: "Sentra: Agentless DSPM that discovers, classifies, and governs sensitive data across the estate, including the training sets, RAG stores, and Copilot and Bedrock data that AI applications touch."
+  source: { url: https://www.sentra.io/product, tier: official, title: Sentra Platform Overview, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.sentra.io/product, tier: official, title: Sentra Platform Overview, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.sentra.io/product, tier: official, title: Sentra Platform Overview, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Sentra documentation.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: training-data
+    functions: [identify, detect]
+    maturity: primary
+    note: Discovers and classifies sensitive data across cloud and on-prem at petabyte scale without copying it out of the environment, controls access to it, and adds data detection and response across the datasets AI and Copilot or Bedrock can reach.
+    source: { url: https://www.sentra.io/product, tier: official, title: Sentra Platform Overview, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: training-data, function: identify }

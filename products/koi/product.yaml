@@ -1,0 +1,37 @@
+schema_version: 2
+name: Koi
+aliases: [Koi Security]
+vendor:
+  value: Koi
+  source: { url: https://www.koi.ai/, tier: official, title: Koi homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://www.koi.ai/
+description:
+  value: "Koi: Endpoint security for software supply chains that inventories, risk-scores, and gates installs of MCP servers, AI models, AI agents, extensions, and packages by policy."
+  source: { url: https://www.koi.ai/, tier: official, title: Koi homepage, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.koi.ai/, tier: official, title: Koi homepage, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-koi-to-secure-the-agentic-endpoint, tier: official, title: Palo Alto Networks completed acquisition press release, accessed: 2026-06-10, origin: reviewed }
+acquisition:
+  acquirer: Palo Alto Networks
+  announced: 2026-02-17
+  post_acquisition_status: standalone
+  source: { url: https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-announces-intent-to-acquire-koi-to-secure-the-agentic-endpoint, tier: official, title: Palo Alto Networks intent-to-acquire press release, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Koi website; recorded the Palo Alto Networks acquisition announced 2026-02-17 and completed 2026-04-14 with Koi remaining a standalone offering.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [govern, identify, protect, detect]
+    maturity: primary
+    note: Discovers and inventories MCP servers, AI agents, and extensions across endpoints, risk-scores them with the Wings engine, gates risky installs by policy, and detects malicious activity after install.
+    source: { url: https://www.koi.ai/, tier: official, title: Koi homepage, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-model
+    functions: [govern, protect]
+    maturity: secondary
+    note: The Wings engine and Supply Chain Gateway vet AI models from registries such as Hugging Face, scanning actual code and blocking risky model installs before they reach endpoints.
+    source: { url: https://www.koi.ai/, tier: official, title: Koi homepage, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-orchestration-tools, function: protect }

@@ -1,0 +1,27 @@
+schema_version: 2
+name: Akeyless
+vendor:
+  value: Akeyless
+  source: { url: https://www.akeyless.io, tier: official, title: Akeyless identity security, accessed: 2026-06-09, origin: reviewed }
+aliases: [Akeyless Security, Akeyless Platform]
+url: https://www.akeyless.io
+description:
+  value: Identity security platform for machines and AI agents that issues just-in-time, vaultless secrets and certificates so agents authenticate without hardcoded credentials and act under runtime control.
+  source: { url: https://www.akeyless.io, tier: official, title: Akeyless identity security, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.akeyless.io, tier: official, title: Akeyless identity security, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.akeyless.io, tier: official, title: Akeyless identity security, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Akeyless documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect]
+    maturity: primary
+    note: Secures AI agents as non-human identities with vaultless, just-in-time secrets and certificates, removing hardcoded credentials and tracking agent access at runtime.
+    source: { url: https://www.akeyless.io/blog/secure-enterprise-ai-with-unified-secrets-non-human-identity-management/, tier: official, title: Akeyless secure enterprise AI, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: protect }

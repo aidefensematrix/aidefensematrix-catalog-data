@@ -1,0 +1,36 @@
+schema_version: 2
+name: Promptfoo
+vendor:
+  value: Promptfoo
+  source: { url: https://www.promptfoo.dev/, tier: official, title: Promptfoo, accessed: 2026-06-09, origin: reviewed }
+url: https://www.promptfoo.dev/
+description:
+  value: "Promptfoo: Open-source CLI and library for evaluating and red-teaming LLM applications, generating application-specific attacks such as prompt injections, jailbreaks, and data and PII leaks."
+  source: { url: https://www.promptfoo.dev/, tier: official, title: Promptfoo, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://github.com/promptfoo/promptfoo, tier: official, title: Promptfoo repository, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://www.promptfoo.dev/blog/promptfoo-joining-openai/, tier: official, title: Promptfoo is joining OpenAI, accessed: 2026-06-09, origin: reviewed }
+acquisition:
+  acquirer: OpenAI
+  announced: 2026-03-09
+  post_acquisition_status: standalone
+  source: { url: https://www.promptfoo.dev/blog/promptfoo-joining-openai/, tier: official, title: Promptfoo is joining OpenAI, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Promptfoo documentation. Recorded the OpenAI acquisition announced in March 2026 and since completed, with the product staying open source.
+matrix_coverage:
+  - asset: ai-model
+    functions: [detect]
+    maturity: primary
+    note: Automated red teaming simulates real users and generates application-specific attacks, including direct and indirect prompt injections, jailbreaks tailored to deployed guardrails, data and PII leaks, and toxic content generation.
+    source: { url: https://www.promptfoo.dev/, tier: official, title: Promptfoo, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: Red teaming targets agents and RAG applications and surfaces insecure tool use and business rule violations. Declarative evaluations benchmark prompts, models, and applications during development.
+    source: { url: https://www.promptfoo.dev/, tier: official, title: Promptfoo, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-model, function: detect }

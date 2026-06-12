@@ -1,0 +1,32 @@
+schema_version: 2
+name: Orca
+vendor:
+  value: Orca Security
+  source: { url: https://orca.security/platform/ai-security-posture-management/, tier: official, title: Orca AI-SPM, accessed: 2026-06-09, origin: reviewed }
+aliases: [Orca Cloud Security Platform, Orca AI-SPM]
+url: https://orca.security/platform/ai-security-posture-management/
+description:
+  value: Agentless AI security posture management in the Orca cloud platform that discovers AI models including shadow AI, inventories them, and flags misconfigurations and exposed data.
+  source: { url: https://orca.security/platform/ai-security-posture-management/, tier: official, title: Orca AI-SPM, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://orca.security/platform/ai-security-posture-management/, tier: official, title: Orca AI-SPM, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://orca.security/platform/ai-security-posture-management/, tier: official, title: Orca AI-SPM, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Orca AI-SPM documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, detect]
+    maturity: primary
+    note: Agentlessly discovers and inventories managed and shadow AI models in an AI and ML bill of materials, and flags model misconfigurations and exposed AI service keys.
+    source: { url: https://orca.security/platform/ai-security-posture-management/, tier: official, title: Orca AI-SPM, accessed: 2026-06-09, origin: reviewed }
+  - asset: training-data
+    functions: [identify, detect]
+    maturity: secondary
+    note: Detects sensitive data in AI models and training data and surfaces data-poisoning risk from editable or replaceable training data.
+    source: { url: https://orca.security/resources/press-releases/orca-ai-chatbot-ai-spm-detections/, tier: official, title: Orca AI-SPM detections, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-model, function: identify }

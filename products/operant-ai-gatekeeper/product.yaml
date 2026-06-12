@@ -1,0 +1,37 @@
+schema_version: 2
+name: Operant AI Gatekeeper
+aliases: [AI Gatekeeper]
+vendor:
+  value: Operant AI
+  source: { url: https://www.operant.ai/art-kubed/announcing-ai-gatekeeper, tier: official, title: Operant AI Gatekeeper announcement, accessed: 2026-06-10, origin: reviewed }
+url: https://www.operant.ai/platform/ai-gatekeeper
+description:
+  value: "Operant AI Gatekeeper: Runtime defense that secures live AI apps and agentic workflows, addressing data leakage and rogue agents with in-line redaction and MCP threat blocking."
+  source: { url: https://www.operant.ai/art-kubed/announcing-ai-gatekeeper, tier: official, title: Operant AI Gatekeeper announcement, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [self-hosted, hybrid]
+  source: { url: https://www.operant.ai/art-kubed/announcing-ai-gatekeeper, tier: official, title: Operant AI Gatekeeper announcement, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.operant.ai/art-kubed/announcing-ai-gatekeeper, tier: official, title: Operant AI Gatekeeper announcement, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Operant AI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Detects and blocks prompt injections and unauthenticated or unauthorized AI behavior in real time across live AI applications and agents, with in-line enforcement and auto-redaction rather than offline scoring.
+    source: { url: https://www.operant.ai/platform/ai-gatekeeper, tier: official, title: Operant AI Gatekeeper product page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: primary
+    note: Covers Model Context Protocol tooling with detection and access control, defending agent tools built on MCP frameworks across both the runtime and API access layers.
+    source: { url: https://www.operant.ai/platform/ai-gatekeeper, tier: official, title: Operant AI Gatekeeper product page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [protect, detect]
+    maturity: secondary
+    note: Applies trust scoring and fine-grained, identity-aware enforcement to AI non-human identities so only verified entities operate within agentic systems.
+    source: { url: https://www.operant.ai/platform/ai-gatekeeper, tier: official, title: Operant AI Gatekeeper product page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

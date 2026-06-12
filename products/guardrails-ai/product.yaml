@@ -1,0 +1,27 @@
+schema_version: 2
+name: Guardrails AI
+aliases: [Guardrails]
+vendor:
+  value: Guardrails AI
+  source: { url: https://www.guardrailsai.com/, tier: official, title: Guardrails AI, accessed: 2026-06-09, origin: reviewed }
+url: https://www.guardrailsai.com/
+description:
+  value: "Guardrails AI: Open-source Python framework that wraps LLM calls in input and output guards, applying validators from the Guardrails Hub to detect and mitigate risks in prompts and responses."
+  source: { url: https://github.com/guardrails-ai/guardrails, tier: official, title: Guardrails repository, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://github.com/guardrails-ai/guardrails, tier: official, title: Guardrails repository, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.guardrailsai.com/, tier: official, title: Guardrails AI, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Guardrails AI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Validators from the Guardrails Hub combine into input and output guards that intercept LLM inputs and outputs and act on failures, with options to block or raise exceptions. A standalone server exposes guards over a REST API.
+    source: { url: https://github.com/guardrails-ai/guardrails, tier: official, title: Guardrails repository, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

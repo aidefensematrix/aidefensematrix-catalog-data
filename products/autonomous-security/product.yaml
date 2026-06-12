@@ -1,0 +1,36 @@
+schema_version: 2
+name: Autonomous Security
+aliases: [MCPTotal]
+vendor:
+  value: Autonomous Security
+  source: { url: https://a16y.ai/about, tier: official, title: Autonomous Security about page, accessed: 2026-06-10, origin: reviewed }
+url: https://a16y.ai/
+renamed_from:
+  name: MCPTotal
+  date: 2026-05-21
+  source: { url: https://a16y.ai/blog/from-mcptotal-to-autonomous-security-a-name-for-the-ai-era, tier: official, title: Autonomous Security rebrand announcement, accessed: 2026-06-10, origin: reviewed }
+description:
+  value: "Autonomous Security: Secures AI agents at the endpoint with an MCP gateway, a vetted MCP catalog, sandboxed MCP hosting, and a centralized token vault."
+  source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://a16y.ai/blog/from-mcptotal-to-autonomous-security-a-name-for-the-ai-era, tier: official, title: Autonomous Security rebrand announcement, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Autonomous Security documentation; the vendor rebranded from MCPTotal in May 2026.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [govern, identify, protect, detect]
+    maturity: primary
+    note: Discovers installed agents and MCP servers across workstations, hosts MCP servers in sandboxed cloud workspaces backed by a vetted pre-scanned catalog, intercepts MCP traffic to block prompt injection and rogue MCP servers, and enforces centralized runtime policies with audit trails.
+    source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: A centralized token vault stores the credentials that agents and MCP connections use, moving secrets out of local files and environment variables on developer machines.
+    source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-orchestration-tools, function: protect }
