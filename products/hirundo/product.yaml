@@ -1,0 +1,31 @@
+schema_version: 2
+name: Hirundo
+vendor:
+  value: Hirundo
+  source: { url: https://www.hirundo.io/about, tier: official, title: Hirundo about page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.hirundo.io/
+description:
+  value: "Hirundo: Machine unlearning that removes memorized PII, jailbreak vulnerabilities, and biased behaviors from trained models without retraining."
+  source: { url: https://www.hirundo.io/, tier: official, title: Hirundo homepage, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.hirundo.io/dataset-optimization, tier: official, title: Hirundo dataset QA page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.hirundo.io/, tier: official, title: Hirundo homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Hirundo documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [detect, respond, recover]
+    maturity: primary
+    note: Discovers model weaknesses such as jailbreak susceptibility and memorized PII in trained models, then unlearns them by modifying the responsible parameters, returning a corrected model without full retraining.
+    source: { url: https://www.hirundo.io/ai-team, tier: official, title: Hirundo machine unlearning for AI teams page, accessed: 2026-06-10, origin: reviewed }
+  - asset: training-data
+    functions: [detect, respond]
+    maturity: secondary
+    note: Dataset QA surfaces faulty and mislabeled training data for vision and other non-generative models, and unlearning removes the influence of that data without retraining.
+    source: { url: https://www.hirundo.io/dataset-optimization, tier: official, title: Hirundo dataset QA page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-model, function: respond }

@@ -1,0 +1,31 @@
+schema_version: 2
+name: Adversa AI
+vendor:
+  value: Adversa AI
+  source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed }
+url: https://adversa.ai/ai-red-teaming-agentic-ai/
+description:
+  value: "Adversa AI: Continuous AI red teaming platform for custom AI agents that tests for vulnerability classes across agents, models, and MCP, re-scanning on every model, prompt, or tool update."
+  source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Adversa AI documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: primary
+    note: Continuous red teaming engineered for proprietary AI agents, covering more than 60 vulnerability classes across the agent, model, and MCP layers, with re-scans triggered by every model, prompt, or tool update and remediation playbooks in real time.
+    source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-model
+    functions: [detect]
+    maturity: secondary
+    note: Autonomous red teaming campaigns cover the OWASP LLM and agentic AI Top 10 lists and run on every model update and prompt change.
+    source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-orchestration-tools, function: detect }

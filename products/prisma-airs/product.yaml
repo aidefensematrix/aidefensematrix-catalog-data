@@ -1,0 +1,36 @@
+schema_version: 2
+name: Prisma AIRS
+vendor:
+  value: Palo Alto Networks
+  source: { url: https://www.paloaltonetworks.com/prisma/prisma-ai-runtime-security, tier: official, title: Prisma AIRS product page, accessed: 2026-06-07, origin: reviewed }
+url: https://www.paloaltonetworks.com/prisma/prisma-ai-runtime-security
+description:
+  value: "Palo Alto Networks’ AI security platform; its AI Runtime Security inspects prompts and responses inline to block prompt injection, data leakage, and unsafe model output."
+  source: { url: https://www.paloaltonetworks.com/prisma/prisma-ai-runtime-security, tier: official, title: Prisma AIRS product page, accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://docs.paloaltonetworks.com/ai-runtime-security/administration/prisma-airs-overview, tier: official, title: Prisma AIRS overview, accessed: 2026-06-07, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-introduces-prisma-airs--the-foundation-on-which-ai-security-thrives, tier: official, title: Palo Alto introduces Prisma AIRS, accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-07
+changelog:
+  - date: 2026-06-07
+    summary: Verified details; product line built in part on acquired Protect AI technology.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Inline inspection of prompts and responses for injection, leakage, and unsafe output.
+    source: { url: https://www.paloaltonetworks.com/resources/datasheets/ai-runtime-security, tier: official, accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-gateways-routers
+    functions: [protect]
+    maturity: primary
+    note: API and network intercept for AI traffic.
+    source: { url: https://docs.paloaltonetworks.com/ai-runtime-security/administration/prisma-airs-overview, tier: official, accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-model
+    functions: [identify]
+    maturity: secondary
+    note: Model scanning via integrated Protect AI technology.
+    source: { url: https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-completes-acquisition-of-protect-ai, tier: official, accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

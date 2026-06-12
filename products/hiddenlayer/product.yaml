@@ -1,0 +1,41 @@
+schema_version: 2
+name: HiddenLayer
+vendor:
+  value: HiddenLayer
+  source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: One Platform, Four Modules", accessed: 2026-06-07, origin: reviewed }
+url: https://hiddenlayer.com
+description:
+  value: "AI security platform with four modules: model supply-chain scanning, real-time runtime monitoring of prompts and responses, automated red teaming, and AI asset discovery."
+  source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: One Platform, Four Modules", accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://hiddenlayer.com/aisec-platform/, tier: official, title: "HiddenLayer AISec Platform: Airgapped and sensitive environments", accessed: 2026-06-07, origin: reviewed }
+status:
+  value: active
+  source: { url: https://hiddenlayer.com/company/, tier: official, title: HiddenLayer About Us, accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-07
+changelog:
+  - date: 2026-06-07
+    summary: Verified details from primary sources and replaced the seed stub.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, protect]
+    maturity: primary
+    note: Static scanning of models before deployment for malware, tampering, and backdoors, with an AI Bill of Materials per scan.
+    source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: AI Supply Chain Security", accessed: 2026-06-07, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Real-time input and output monitoring that can block prompts to the model or responses to the user.
+    source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: AI Runtime Security", accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [protect, detect]
+    maturity: secondary
+    note: Agentic and MCP protection within the runtime module.
+    source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: AI Runtime Security", accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify]
+    maturity: secondary
+    note: Automated discovery and inventory of AI assets, applications, datasets, and dependencies.
+    source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: AI Discovery", accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: ai-model, function: protect }

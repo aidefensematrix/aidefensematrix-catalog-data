@@ -1,0 +1,32 @@
+schema_version: 2
+name: WitnessAI
+vendor:
+  value: WitnessAI
+  source: { url: https://witness.ai/, tier: official, title: WitnessAI platform, accessed: 2026-06-09, origin: reviewed }
+aliases: [Witness Protect]
+url: https://witness.ai/
+description:
+  value: Network-level AI security and governance platform that discovers AI apps, agents, and MCP servers, enforces use policies, and runs an AI firewall that blocks prompt injection and jailbreaks.
+  source: { url: https://witness.ai/, tier: official, title: WitnessAI platform, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://witness.ai/, tier: official, title: WitnessAI platform, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://witness.ai/, tier: official, title: WitnessAI platform, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the WitnessAI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: The Witness Protect AI firewall inspects prompts and responses bidirectionally, blocking prompt injection and jailbreaks and filtering outputs before users or agents act on them.
+    source: { url: https://witness.ai/protect/, tier: official, title: WitnessAI Protect, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: secondary
+    note: Discovers AI apps, agents, and MCP servers across the network without endpoint agents, and logs all AI activity for governance.
+    source: { url: https://witness.ai/, tier: official, title: WitnessAI platform, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

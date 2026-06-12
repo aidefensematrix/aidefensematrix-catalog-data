@@ -1,0 +1,39 @@
+schema_version: 2
+name: Lunar MCPX
+aliases: [MCPX]
+vendor:
+  value: Lunar.dev
+  source: { url: https://docs.lunar.dev/mcpx/, tier: official, title: Lunar MCPX documentation, accessed: 2026-06-10, origin: reviewed }
+url: https://www.lunar.dev/product/mcp
+description:
+  value: "Lunar MCPX: Self-hosted MCP gateway that aggregates MCP servers behind one endpoint and applies per-agent access control, OAuth and API key authentication, and tool hardening."
+  source: { url: https://docs.lunar.dev/mcpx/architecture, tier: official, title: Lunar MCPX architecture documentation, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://www.lunar.dev/, tier: official, title: Lunar.dev homepage, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://github.com/TheLunarCompany/lunar, tier: official, title: Lunar repository on GitHub, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Lunar.dev documentation.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: primary
+    note: MCP gateway routes agent tool calls to MCP servers through one endpoint with per-agent access control, tool groups, hardened tool variants, and OAuth and API key auth; audit logs record tool usage and configuration changes.
+    source: { url: https://docs.lunar.dev/mcpx/, tier: official, title: Lunar MCPX documentation, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [identify, protect]
+    maturity: secondary
+    note: Agent inventory gives a centralized view of every agent connecting through the gateway; the enterprise edition adds centralized user, authentication, and access management over MCP servers and tools.
+    source: { url: https://docs.lunar.dev/mcpx/enterprise_features, tier: official, title: Lunar MCPX enterprise features documentation, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: The enterprise edition inspects MCP requests and responses inline to redact sensitive data before it leaves the deployment environment.
+    source: { url: https://www.lunar.dev/product/mcp, tier: official, title: Lunar MCP gateway product page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-orchestration-tools, function: protect }

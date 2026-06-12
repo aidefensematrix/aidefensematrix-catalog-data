@@ -1,0 +1,32 @@
+schema_version: 2
+name: Lasso Security
+vendor:
+  value: Lasso Security
+  source: { url: https://www.lasso.security/, tier: official, title: Lasso Security platform, accessed: 2026-06-09, origin: reviewed }
+aliases: [Lasso]
+url: https://www.lasso.security/
+description:
+  value: Platform that discovers and inventories AI agents and applications, red-teams them, and enforces policy inline at the proxy, API, or gateway to protect AI interactions at runtime.
+  source: { url: https://www.lasso.security/, tier: official, title: Lasso Security platform, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.lasso.security/, tier: official, title: Lasso Security platform, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.lasso.security/, tier: official, title: Lasso Security platform, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Lasso Security documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Enforces policy inline at the proxy, API, or AI gateway, protecting AI interactions at runtime.
+    source: { url: https://www.lasso.security/, tier: official, title: Lasso Security runtime enforcement, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify]
+    maturity: secondary
+    note: Discovers and inventories AI agents and applications in an AI bill of materials, mapping their models, prompts, tools, and guardrails.
+    source: { url: https://www.lasso.security/, tier: official, title: Lasso Security discovery and AI-BOM, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

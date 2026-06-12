@@ -1,0 +1,32 @@
+schema_version: 2
+name: Palo Alto AI-SPM
+vendor:
+  value: Palo Alto Networks
+  source: { url: https://www.paloaltonetworks.com/prisma/cloud/ai-spm, tier: official, title: Prisma Cloud AI-SPM, accessed: 2026-06-09, origin: reviewed }
+aliases: [Prisma Cloud AI-SPM, AI Security Posture Management]
+url: https://www.paloaltonetworks.com/prisma/cloud/ai-spm
+description:
+  value: AI security posture management in Prisma Cloud that discovers and inventories AI models and applications, classifies sensitive training and inference data, and flags data exposure and model risk.
+  source: { url: https://www.paloaltonetworks.com/prisma/cloud/ai-spm, tier: official, title: Prisma Cloud AI-SPM, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.paloaltonetworks.com/prisma/cloud/ai-spm, tier: official, title: Prisma Cloud AI-SPM, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.paloaltonetworks.com/prisma/cloud/ai-spm, tier: official, title: Prisma Cloud AI-SPM, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Prisma Cloud AI-SPM documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, detect]
+    maturity: primary
+    note: Discovers and inventories deployed AI models and their cloud resources, surfaces shadow and unauthorized models, and flags misconfigured or overprivileged models and supply-chain vulnerabilities.
+    source: { url: https://www.paloaltonetworks.com/prisma/cloud/ai-spm, tier: official, title: Prisma Cloud AI-SPM, accessed: 2026-06-09, origin: reviewed }
+  - asset: training-data
+    functions: [identify, detect]
+    maturity: secondary
+    note: Classifies where sensitive data lives in training and reference data and monitors data flows for exposure and poisoning risk.
+    source: { url: https://www.paloaltonetworks.com/blog/cloud-security/ai-spm/, tier: official, title: AI-SPM now generally available, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-model, function: identify }

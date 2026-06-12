@@ -1,0 +1,39 @@
+schema_version: 2
+name: Knostic Kirin
+vendor:
+  value: Knostic
+  source: { url: https://www.knostic.ai/ai-coding-security-solution-kirin, tier: official, title: "AI Coding Security Solution | Kirin by Knostic", accessed: 2026-06-11, origin: reviewed }
+aliases: [Kirin]
+url: https://www.getkirin.com
+description:
+  value: "Security for AI coding assistants such as Cursor, Copilot, and Claude Code that inspects MCP connections in real time, monitors IDE extensions and plugins, and blocks risky components."
+  source: { url: https://www.knostic.ai/ai-coding-security-solution-kirin, tier: official, title: "AI Coding Security Solution | Kirin by Knostic", accessed: 2026-06-11, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.getkirin.com, tier: official, title: "Kirin | Security Platform for AI Coding Assistants", accessed: 2026-06-11, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.getkirin.com, tier: official, title: "Kirin | Security Platform for AI Coding Assistants", accessed: 2026-06-11, origin: reviewed }
+last_reviewed: 2026-06-11
+changelog:
+  - date: 2026-06-07
+    summary: Verified details and sources; set the product name to Knostic Kirin (company Knostic) and corrected the URL and category.
+  - date: 2026-06-11
+    summary: Corrected the entry to describe Kirin, the Knostic product that secures AI coding assistants. The previous text described the separate Knostic knowledge-security platform.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: "Inspects MCP connections in real time and monitors IDE extensions and plugins, blocking untrusted or risky components."
+    source: { url: https://www.knostic.ai/ai-coding-security-solution-kirin, tier: official, title: "Catch compromised MCP servers, stop vulnerable plugins", accessed: 2026-06-11, origin: reviewed }
+  - asset: ai-generated-code
+    functions: [protect, detect]
+    maturity: secondary
+    note: "In-IDE guardrails and real-time dependency scanning flag vulnerable or malicious libraries in AI-assisted coding."
+    source: { url: https://www.knostic.ai/ai-coding-security-solution-kirin, tier: official, title: "Key capabilities of the Kirin coding security solution", accessed: 2026-06-11, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: "Redacts and guards sensitive data inside the IDE against prompt injection and oversharing."
+    source: { url: https://www.getkirin.com, tier: official, title: "Kirin guards sensitive data inside the IDE", accessed: 2026-06-11, origin: reviewed }
+primary_cell: { asset: ai-orchestration-tools, function: protect }

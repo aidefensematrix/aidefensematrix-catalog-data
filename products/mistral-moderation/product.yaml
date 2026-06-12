@@ -1,0 +1,31 @@
+schema_version: 2
+name: Mistral Moderation
+vendor:
+  value: Mistral AI
+  source: { url: https://docs.mistral.ai/, tier: official, title: Mistral AI documentation home, accessed: 2026-06-10, origin: reviewed }
+url: https://docs.mistral.ai/capabilities/guardrailing/
+description:
+  value: "Mistral Moderation: Classifier service that scores prompts and responses across policy categories and applies blocking guardrails in Mistral API requests."
+  source: { url: https://docs.mistral.ai/capabilities/guardrailing/, tier: official, title: Mistral AI moderation and guardrailing documentation, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://docs.mistral.ai/capabilities/guardrailing/, tier: official, title: Mistral AI moderation and guardrailing documentation, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://docs.mistral.ai/capabilities/guardrailing/, tier: official, title: Mistral AI moderation and guardrailing documentation, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Mistral AI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: The moderation service classifies raw text and conversational content across policy categories including jailbreaking, while custom guardrails declared in chat completions and conversations requests enforce per-category thresholds and block violating content with a 403 response.
+    source: { url: https://docs.mistral.ai/capabilities/guardrailing/, tier: official, title: Mistral AI moderation and guardrailing documentation, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: secondary
+    note: Agent-level guardrails attach moderation rules to an agent at creation time, and all conversations using that agent automatically inherit the configured thresholds and blocking action.
+    source: { url: https://docs.mistral.ai/capabilities/guardrailing/, tier: official, title: Mistral AI moderation and guardrailing documentation, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

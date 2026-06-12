@@ -1,0 +1,37 @@
+schema_version: 2
+name: Cycode
+aliases: [Cycode ADLC Security]
+vendor:
+  value: Cycode
+  source: { url: https://cycode.com/adlc-security/, tier: official, title: Cycode ADLC security product page, accessed: 2026-06-10, origin: reviewed }
+url: https://cycode.com/adlc-security/
+description:
+  value: "Cycode: Agentic development security that inventories AI models, MCP servers, and code assistants across repositories and applies IDE and CLI guardrails to AI coding agents."
+  source: { url: https://cycode.com/adlc-security/, tier: official, title: Cycode ADLC security product page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://cycode.com/trust/, tier: official, title: Cycode security and trust page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://cycode.com/press/cycode-unveils-agentic-development-security-platform/, tier: official, title: Cycode agentic development security platform press release, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Cycode documentation.
+matrix_coverage:
+  - asset: ai-generated-code
+    functions: [protect, detect]
+    maturity: primary
+    note: AI Guardrails use AI hooks and a Cycode MCP server in the IDE and CLI to intercept prompts, file reads, and tool calls before sensitive data reaches external AI services, and validate coding agent outputs before commit.
+    source: { url: https://cycode.com/adlc-security/, tier: official, title: Cycode ADLC security product page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-model
+    functions: [identify]
+    maturity: primary
+    note: The AI Bill of Materials inventories machine learning models detected in repositories, whether self-hosted or referenced from model hubs, as part of a continuously updated AI and ML inventory.
+    source: { url: https://cycode.com/blog/mapping-shadow-ai-sdlc-visibility/, tier: official, title: Cycode blog on mapping AI tools in the SDLC, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify]
+    maturity: secondary
+    note: AIBOM discovery also catalogs MCP integrations, AI code assistants, LLM gateways, and orchestration frameworks found across the software factory, mapped to repositories and Cycode Projects.
+    source: { url: https://cycode.com/blog/mapping-shadow-ai-sdlc-visibility/, tier: official, title: Cycode blog on mapping AI tools in the SDLC, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-generated-code, function: protect }

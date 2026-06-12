@@ -1,0 +1,27 @@
+schema_version: 2
+name: Checkmarx
+vendor:
+  value: Checkmarx
+  source: { url: https://checkmarx.com/product/checkmarx-one-assist/, tier: official, title: Checkmarx One Assist, accessed: 2026-06-09, origin: reviewed }
+aliases: [Checkmarx One, Checkmarx One Assist]
+url: https://checkmarx.com/product/checkmarx-one-assist/
+description:
+  value: Application security platform whose Developer Assist secures AI-generated code in real time inside the IDE, detecting SAST, SCA, secret, and IaC flaws and applying validated fixes before commit.
+  source: { url: https://checkmarx.com/product/checkmarx-one-assist/, tier: official, title: Checkmarx One Assist, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://checkmarx.com/product/checkmarx-one-assist/, tier: official, title: Checkmarx One Assist, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://checkmarx.com/product/checkmarx-one-assist/, tier: official, title: Checkmarx One Assist, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Checkmarx One Assist documentation.
+matrix_coverage:
+  - asset: ai-generated-code
+    functions: [protect, detect]
+    maturity: primary
+    note: Developer Assist secures AI-generated code as it is written in the IDE, detecting SAST, SCA, secret, IaC, and container flaws and applying validated fixes before commit, alongside Copilot, Cursor, and Windsurf.
+    source: { url: https://checkmarx.com/product/checkmarx-one-assist/, tier: official, title: Checkmarx One Assist, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-generated-code, function: protect }

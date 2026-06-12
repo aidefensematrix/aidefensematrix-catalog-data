@@ -1,0 +1,37 @@
+schema_version: 2
+name: Confident AI
+aliases: [DeepEval, DeepTeam]
+vendor:
+  value: Confident AI
+  source: { url: https://www.confident-ai.com/, tier: official, title: Confident AI homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://www.confident-ai.com
+description:
+  value: "Confident AI: AI quality and LLM evaluation platform from the creators of DeepEval, with the DeepTeam framework adding red teaming and production input and output guardrails."
+  source: { url: https://www.confident-ai.com/, tier: official, title: Confident AI homepage, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.confident-ai.com/, tier: official, title: Confident AI homepage, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.confident-ai.com/, tier: official, title: Confident AI homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Confident AI and DeepTeam documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [detect, protect]
+    maturity: primary
+    note: DeepTeam guardrails evaluate LLM system inputs and outputs for malicious intent and unsafe behavior, with input guards blocking malicious prompts before they reach the model and output guards stopping unsafe responses before they reach users, covering prompt injection and toxicity.
+    source: { url: https://www.trydeepteam.com/docs/guardrails-introduction, tier: official, title: DeepTeam guardrails introduction, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-model
+    functions: [detect]
+    maturity: primary
+    note: DeepTeam red teaming simulates jailbreaking, prompt injection, and multi-turn exploitation attacks to uncover model vulnerabilities such as bias, PII leakage, and prompt leakage, drawing on more than 50 vulnerability types.
+    source: { url: https://github.com/confident-ai/deepteam, tier: official, title: DeepTeam repository on GitHub, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: Red teaming extends to AI agents, RAG pipelines, and chatbots, probing agentic vulnerabilities such as goal theft, recursive hijacking, excessive agency, and tool orchestration abuse.
+    source: { url: https://github.com/confident-ai/deepteam, tier: official, title: DeepTeam repository on GitHub, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: detect }

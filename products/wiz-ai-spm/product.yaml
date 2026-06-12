@@ -1,0 +1,44 @@
+schema_version: 2
+name: Wiz AI-SPM
+vendor:
+  value: Wiz
+  source: { url: https://www.wiz.io/solutions/ai-spm, tier: official, title: Wiz AI-SPM solution page, accessed: 2026-06-07, origin: reviewed }
+url: https://www.wiz.io/solutions/ai-spm
+description:
+  value: Agentless AI security posture management that discovers AI pipelines, models, and data across clouds, then surfaces misconfigurations and attack paths to AI services.
+  source: { url: https://www.wiz.io/solutions/ai-spm, tier: official, title: Wiz AI-SPM solution page, accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.wiz.io/solutions/ai-spm, tier: official, accessed: 2026-06-07, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/wiz-acquisition/, tier: official, title: Google completes acquisition of Wiz, accessed: 2026-06-07, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type II, SOC 3, ISO 27001, ISO 27017, ISO 27018, ISO 27701, PCI DSS v4.0.1, HIPAA]
+  source: { url: https://www.wiz.io/trust-center, tier: official, title: Wiz Public Trust Center, accessed: 2026-06-08, origin: reviewed }
+acquisition:
+  acquirer: Google (Alphabet)
+  announced: 2026-03-11
+  post_acquisition_status: standalone
+  source: { url: https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/wiz-acquisition/, tier: official, title: Google completes acquisition of Wiz, accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-08
+changelog:
+  - date: 2026-06-07
+    summary: Verified details and recorded the completed Google acquisition (March 2026).
+  - date: 2026-06-08
+    summary: Added compliance attestations from the Wiz public trust center with a source.
+matrix_coverage:
+  - asset: ai-workload-platforms
+    functions: [identify]
+    maturity: primary
+    note: Agentless discovery and posture for AI services and pipelines.
+    source: { url: https://www.wiz.io/solutions/ai-spm, tier: official, accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-model
+    functions: [identify]
+    maturity: secondary
+    source: { url: https://www.wiz.io/solutions/ai-spm, tier: official, accessed: 2026-06-07, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [identify]
+    maturity: secondary
+    source: { url: https://www.wiz.io/solutions/ai-spm, tier: official, accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: ai-workload-platforms, function: identify }

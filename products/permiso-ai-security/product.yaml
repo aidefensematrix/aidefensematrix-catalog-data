@@ -1,0 +1,31 @@
+schema_version: 2
+name: Permiso AI Security
+vendor:
+  value: Permiso Security
+  source: { url: https://permiso.io/ai-security, tier: official, title: Permiso AI security product page, accessed: 2026-06-10, origin: reviewed }
+url: https://permiso.io/ai-security
+description:
+  value: "Permiso AI Security: Capability of the Permiso identity platform that discovers AI agents, attributes runs and tool calls to identities, and detects anomalous agent behavior in real time."
+  source: { url: https://permiso.io/ai-security, tier: official, title: Permiso AI security product page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://permiso.io/product, tier: official, title: Permiso product page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://securityboulevard.com/2026/05/permiso-security-adds-ability-to-discover-and-secure-ai-agents/, tier: press, title: Security Boulevard on Permiso AI agent security launch, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Permiso documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, detect, respond]
+    maturity: primary
+    note: Discovers AI agents in cloud workloads and code repositories, attributes every run, event, and tool call to a human, non-human, or AI identity through the Universal Identity Graph, detects anomalous agent behavior, and enforces containment including kill switches.
+    source: { url: https://permiso.io/ai-security, tier: official, title: Permiso AI security product page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: secondary
+    note: Monitors MCP invocations and tool calls tied to agent identities; the SandyClaw sandbox analyzes agent skills before they run in the environment, recording actions, tool calls, and downstream requests.
+    source: { url: https://permiso.io/ai-security, tier: official, title: Permiso AI security product page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: detect }

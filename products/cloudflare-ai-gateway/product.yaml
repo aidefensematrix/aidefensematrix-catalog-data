@@ -1,0 +1,31 @@
+schema_version: 2
+name: Cloudflare AI Gateway
+vendor:
+  value: Cloudflare
+  source: { url: https://developers.cloudflare.com/ai-gateway/, tier: official, title: Cloudflare AI Gateway overview, accessed: 2026-06-09, origin: reviewed }
+url: https://www.cloudflare.com/products/ai-gateway/
+description:
+  value: Hosted gateway that proxies application traffic to LLM providers, adding guardrails to flag or block harmful prompts and responses, plus rate limiting, caching, and usage analytics.
+  source: { url: https://developers.cloudflare.com/ai-gateway/, tier: official, title: Cloudflare AI Gateway overview, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://developers.cloudflare.com/ai-gateway/, tier: official, title: Cloudflare AI Gateway overview, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://developers.cloudflare.com/ai-gateway/, tier: official, title: Cloudflare AI Gateway overview, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Cloudflare AI Gateway documentation.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Proxies AI traffic with guardrails, rate limiting, and usage analytics for visibility and control.
+    source: { url: https://developers.cloudflare.com/ai-gateway/, tier: official, title: Cloudflare AI Gateway overview, accessed: 2026-06-09, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Guardrails inspect prompts and responses in real time and flag or block harmful content.
+    source: { url: https://developers.cloudflare.com/ai-gateway/features/guardrails/, tier: official, title: AI Gateway Guardrails, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-gateways-routers, function: protect }

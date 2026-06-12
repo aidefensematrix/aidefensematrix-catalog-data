@@ -1,0 +1,32 @@
+schema_version: 2
+name: Cyera
+vendor:
+  value: Cyera
+  source: { url: https://www.cyera.com/, tier: official, title: Cyera AI security platform, accessed: 2026-06-09, origin: reviewed }
+aliases: [Cyera AI Guardian]
+url: https://www.cyera.com/
+description:
+  value: Data security platform that discovers and classifies sensitive data across the enterprise, surfaces shadow AI, controls what data AI can reach, and prevents sensitive-data leakage to AI in real time.
+  source: { url: https://www.cyera.com/, tier: official, title: Cyera AI security platform, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.cyera.com/, tier: official, title: Cyera AI security platform, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.cyera.com/, tier: official, title: Cyera AI security platform, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Cyera documentation.
+matrix_coverage:
+  - asset: training-data
+    functions: [identify, protect]
+    maturity: primary
+    note: Discovers and classifies sensitive data across cloud and SaaS, surfaces shadow AI, and controls which data AI applications and agents can reach.
+    source: { url: https://www.cyera.com/platform/dspm, tier: official, title: Cyera Data Security Posture Management, accessed: 2026-06-09, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Prevents sensitive-data leakage to AI in the moment through AI-aware data-loss controls.
+    source: { url: https://www.cyera.com/, tier: official, title: Cyera AI security platform, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: training-data, function: protect }

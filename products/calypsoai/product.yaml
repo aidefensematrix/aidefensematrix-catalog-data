@@ -1,0 +1,39 @@
+schema_version: 2
+name: CalypsoAI
+aliases: [F5 AI Guardrails, F5 AI Red Team, F5 AI Gateway]
+vendor:
+  value: F5
+  source: { url: https://www.f5.com/products/ai-guardrails, tier: official, title: F5 AI Guardrails product page, accessed: 2026-06-07, origin: reviewed }
+url: https://www.f5.com/products/ai-guardrails
+description:
+  value: "Inference-layer AI security pairing runtime guardrails against prompt injection, jailbreaks, and data leakage with red teaming at scale."
+  source: { url: https://www.f5.com/products/ai-guardrails, tier: official, title: F5 AI Guardrails product page, accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.f5.com/company/blog/self-hosting-vs-models-as-a-service, tier: official, title: F5 ADSP runtime deployment options, accessed: 2026-06-07, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://www.f5.com/company/blog/what-are-ai-guardrails, tier: official, title: "F5 completes acquisition of CalypsoAI, introduces F5 AI Guardrails and F5 AI Red Team", accessed: 2026-06-07, origin: reviewed }
+acquisition:
+  acquirer: F5
+  announced: 2025-09-11
+  post_acquisition_status: rebranded
+  source: { url: https://www.f5.com/company/news/press-releases/f5-to-acquire-calypsoai-to-bring-advanced-ai-guardrails-to-large-enterprises, tier: official, title: F5 to acquire CalypsoAI (announcement), accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-07
+changelog:
+  - date: 2026-06-07
+    summary: "Verified details from primary sources and recorded the F5 acquisition and rebrand to F5 AI Guardrails and F5 AI Red Team."
+  - date: 2026-06-10
+    summary: "Noted that F5 merged its separate AI Gateway product into AI Guardrails, which now carries the model-routing capability; f5.com redirects the AI Gateway page here."
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: "Inline guardrails screen prompts and responses for prompt injection, jailbreaks, and sensitive data flows."
+    source: { url: https://www.f5.com/products/ai-guardrails, tier: official, title: F5 AI Guardrails real-time protection, accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, protect]
+    maturity: primary
+    note: "Red teaming hunts vulnerabilities across AI models, applications, and agents."
+    source: { url: https://www.f5.com/products/ai-red-team, tier: official, title: F5 AI Red Team product page, accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

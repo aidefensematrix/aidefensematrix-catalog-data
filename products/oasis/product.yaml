@@ -1,0 +1,35 @@
+schema_version: 2
+name: Oasis
+vendor:
+  value: Oasis Security
+  source: { url: https://www.oasis.security/product, tier: official, title: Oasis NHI Security Cloud product overview, accessed: 2026-06-07, origin: reviewed }
+url: https://www.oasis.security
+description:
+  value: "Non-human identity management platform that discovers, governs, and enforces least-privilege access for service accounts, secrets, and AI agents across hybrid cloud."
+  source: { url: https://www.oasis.security/product, tier: official, title: Oasis NHI Security Cloud product overview, accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.oasis.security/product, tier: official, title: "Oasis product overview (connects to cloud, SaaS, and on-prem environments)", accessed: 2026-06-07, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.securityweek.com/oasis-security-raises-120-million-for-agentic-access-management/, tier: press, title: "Oasis Security raises 120 million for agentic access management", accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-07
+changelog:
+  - date: 2026-06-07
+    summary: "Replaced seed stub with sourced details; set category to agent-security; recorded the 120 million Series B."
+  - date: 2026-06-12
+    summary: Refined matrix coverage and primary function.
+  - date: 2026-06-13
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: "Discovers AI agent and non-human identities, ties them to owners, and enforces least-privilege, policy-driven lifecycle controls."
+    source: { url: https://www.oasis.security/ai, tier: official, title: "Oasis: Govern your agentic AI adoption", accessed: 2026-06-07, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    note: "Threat and anomaly detection over agent and identity activity, with continuous audit and policy enforcement."
+    source: { url: https://www.oasis.security/ai, tier: official, title: "Oasis: Continuous audit and policy enforcement", accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: protect }

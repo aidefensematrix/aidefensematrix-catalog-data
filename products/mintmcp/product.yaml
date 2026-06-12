@@ -1,0 +1,36 @@
+schema_version: 2
+name: MintMCP
+vendor:
+  value: MintMCP
+  source: { url: https://www.mintmcp.com/, tier: official, title: MintMCP homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://www.mintmcp.com/
+description:
+  value: "MintMCP: Managed MCP gateway that authenticates AI clients to MCP servers, enforces access policies, and logs every tool call for audit."
+  source: { url: https://docs.mintmcp.com/, tier: official, title: MintMCP documentation introduction, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://docs.mintmcp.com/, tier: official, title: MintMCP documentation introduction, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.mintmcp.com/, tier: official, title: MintMCP homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the MintMCP documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [protect, govern, detect]
+    maturity: primary
+    note: Enterprise MCP gateway between AI clients and MCP servers that handles authentication, enforces access policies, and logs every tool call; admins curate a catalog of approved servers with preconfigured credentials, role-based tool sets, and centralized credential management.
+    source: { url: https://docs.mintmcp.com/, tier: official, title: MintMCP documentation introduction, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [govern, protect]
+    maturity: secondary
+    note: Applies enterprise SSO and RBAC controls to MCP access with fine-grained permissions and instant revocation; API keys stay within the gateway so AI clients never hold them.
+    source: { url: https://www.mintmcp.com/security-governance, tier: official, title: MintMCP security and governance page, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    note: Exports activity logs covering tool invocations, prompt submissions, and gateway requests to SIEM or observability platforms in real time over the OpenTelemetry Logs protocol.
+    source: { url: https://www.mintmcp.com/docs/siem-export, tier: official, title: MintMCP SIEM export documentation, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-orchestration-tools, function: protect }

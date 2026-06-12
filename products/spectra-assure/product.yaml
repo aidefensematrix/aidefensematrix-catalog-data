@@ -1,0 +1,26 @@
+schema_version: 2
+name: Spectra Assure
+vendor:
+  value: ReversingLabs
+  source: { url: https://www.reversinglabs.com/products/spectra-assure, tier: official, title: Spectra Assure product page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.reversinglabs.com/products/spectra-assure
+description:
+  value: "Spectra Assure: Scans AI and ML model files for malicious code as part of software supply chain analysis and lists detected models in an ML-BOM."
+  source: { url: https://docs.secure.software/concepts/model-testing, tier: official, title: Spectra Assure AI model scanning documentation, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://docs.secure.software/portal/, tier: official, title: Spectra Assure Portal documentation, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.reversinglabs.com/products/spectra-assure, tier: official, title: Spectra Assure product page, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the ReversingLabs documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [detect, identify]
+    maturity: primary
+    note: Identifies AI and ML model files in analyzed software by format signature, scans them with malware analysis to assess whether models are safe to use, and lists discovered models as components in an ML-BOM within the SAFE report.
+    source: { url: https://docs.secure.software/concepts/model-testing, tier: official, title: Spectra Assure AI model scanning documentation, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-model, function: detect }

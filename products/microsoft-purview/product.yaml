@@ -1,0 +1,34 @@
+schema_version: 2
+name: Microsoft Purview
+vendor:
+  value: Microsoft
+  source: { url: https://learn.microsoft.com/en-us/purview/ai-microsoft-purview, tier: official, title: Microsoft Purview data security for AI, accessed: 2026-06-09, origin: reviewed }
+aliases: [Purview, Microsoft Purview DSPM for AI]
+url: https://www.microsoft.com/en-us/security/business/microsoft-purview
+description:
+  value: Data security posture management for AI in Microsoft Purview that discovers sensitive data in AI prompts and responses, enforces data-loss policies on generative AI use, and flags risky AI activity.
+  source: { url: https://learn.microsoft.com/en-us/purview/ai-microsoft-purview, tier: official, title: Microsoft Purview data security for AI, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://learn.microsoft.com/en-us/purview/ai-microsoft-purview, tier: official, title: Microsoft Purview data security for AI, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://learn.microsoft.com/en-us/purview/ai-microsoft-purview, tier: official, title: Microsoft Purview data security for AI, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Microsoft Purview documentation.
+  - date: 2026-06-10
+    summary: Updated the official product URL after Microsoft retired the prior page path.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Discovers sensitive data in AI prompts and responses, applies data-loss-prevention policies that warn or block sensitive content sent to generative AI apps, and detects risky AI interactions.
+    source: { url: https://learn.microsoft.com/en-us/purview/ai-microsoft-purview, tier: official, title: Microsoft Purview data security for AI, accessed: 2026-06-09, origin: reviewed }
+  - asset: training-data
+    functions: [identify, protect]
+    maturity: secondary
+    note: Data risk assessments find and help remediate oversharing of the sensitive organizational content that generative AI apps can surface.
+    source: { url: https://learn.microsoft.com/en-us/purview/dspm-for-ai, tier: official, title: Microsoft Purview DSPM for AI, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

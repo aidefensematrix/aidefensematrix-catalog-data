@@ -1,0 +1,38 @@
+schema_version: 2
+name: Trust3 AI
+vendor:
+  value: Trust3 AI
+  source: { url: https://www.prnewswire.com/news-releases/meet-trust3-ai-the-next-chapter-for-privacera-in-data-and-ai-governance-302707659.html, tier: press, title: "Meet Trust3 AI: The Next Chapter for Privacera in Data and AI Governance", accessed: 2026-06-09, origin: reviewed }
+aliases: [Privacera, Privacera AI Governance, PAIG]
+url: https://trust3.ai/
+description:
+  value: "Trust3 AI: Unified data and AI access governance platform that secures data across cloud and on-premises environments and governs autonomous AI agents."
+  source: { url: https://www.prnewswire.com/news-releases/meet-trust3-ai-the-next-chapter-for-privacera-in-data-and-ai-governance-302707659.html, tier: press, title: "Meet Trust3 AI: The Next Chapter for Privacera in Data and AI Governance", accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://privacera.com/products/ai-governance/, tier: official, title: Privacera AI Governance, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://trust3.ai/, tier: official, title: Trust3 AI, accessed: 2026-06-09, origin: reviewed }
+renamed_from:
+  name: Privacera
+  date: 2026-03-09
+  source: { url: https://www.prnewswire.com/news-releases/meet-trust3-ai-the-next-chapter-for-privacera-in-data-and-ai-governance-302707659.html, tier: press, title: "Meet Trust3 AI: The Next Chapter for Privacera in Data and AI Governance", accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Privacera AI Governance documentation; noted the Trust3 AI rebrand.
+  - date: 2026-06-09
+    summary: Re-slugged from privacera to trust3-ai and recorded the rename to Trust3 AI, announced 2026-03-09.
+matrix_coverage:
+  - asset: training-data
+    functions: [identify, protect]
+    maturity: primary
+    note: Scans and classifies fine-tuning and RAG data and filters vector-database and RAG queries so each user inherits the access controls of the source systems.
+    source: { url: https://privacera.com/newsroom/press-releases/privacera-enhances-ai-governance-solution-with-new-access-control-and-data-filtering-functionality-for-vector-db-rag/, tier: official, title: Privacera vector DB and RAG access control, accessed: 2026-06-09, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Applies real-time controls to generative AI prompts and responses with end-to-end observability and audit.
+    source: { url: https://privacera.com/products/ai-governance/, tier: official, title: Privacera AI Governance, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: training-data, function: protect }

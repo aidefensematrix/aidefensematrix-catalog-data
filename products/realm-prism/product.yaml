@@ -1,0 +1,32 @@
+schema_version: 2
+name: Realm Prism
+aliases: [Prism]
+vendor:
+  value: Realm Labs
+  source: { url: https://www.realmlabs.ai/platform-overview, tier: official, title: Realm Labs platform overview, accessed: 2026-06-10, origin: reviewed }
+url: https://www.realmlabs.ai/platform-overview
+description:
+  value: "Realm Prism: Runtime observability that inspects model internals during inference to detect hallucinations, prompt injection, and policy drift in production AI calls."
+  source: { url: https://www.realmlabs.ai/security-grc, tier: official, title: Realm Labs security and GRC, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://www.realmlabs.ai/platform-overview, tier: official, title: Realm Labs platform overview, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.realmlabs.ai/resources/realm-labs-rsac-innovation-sandbox-finalist, tier: official, title: Realm Labs RSAC Innovation Sandbox finalist announcement, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Realm Labs documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [detect]
+    maturity: primary
+    note: Deep Neural Inspection maps model internals and reads activity during inference, catching drift, manipulation, and silent failures while they are still inside the inference loop rather than judging output strings after the fact.
+    source: { url: https://www.realmlabs.ai/platform-overview, tier: official, title: Realm Labs platform overview, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: primary
+    note: Prism observes every production model call and flags failures that emerge from model reasoning, including hallucination, deception, policy drift, jailbreak success, and prompt injection attempts that input and output filters miss.
+    source: { url: https://www.realmlabs.ai/security-grc, tier: official, title: Realm Labs security and GRC, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-model, function: detect }

@@ -1,0 +1,27 @@
+schema_version: 2
+name: AWS Bedrock Guardrails
+vendor:
+  value: Amazon Web Services
+  source: { url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html, tier: official, title: Amazon Bedrock Guardrails documentation, accessed: 2026-06-09, origin: reviewed }
+aliases: [Bedrock Guardrails, Amazon Bedrock Guardrails]
+url: https://aws.amazon.com/bedrock/guardrails/
+description:
+  value: Configurable safety layer for generative AI applications that filters harmful content, detects prompt-injection attacks, redacts PII, blocks denied topics, and flags ungrounded responses.
+  source: { url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html, tier: official, title: Amazon Bedrock Guardrails documentation, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://aws.amazon.com/bedrock/guardrails/, tier: official, title: Amazon Bedrock Guardrails, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://aws.amazon.com/bedrock/guardrails/, tier: official, title: Amazon Bedrock Guardrails, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Amazon Bedrock Guardrails documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Inspects prompts and model responses to filter harmful content, prompt attacks, PII, and ungrounded output.
+    source: { url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html, tier: official, title: Amazon Bedrock Guardrails documentation, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

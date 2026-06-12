@@ -1,0 +1,27 @@
+schema_version: 2
+name: garak
+aliases: ["Generative AI Red-teaming and Assessment Kit"]
+vendor:
+  value: NVIDIA
+  source: { url: https://github.com/NVIDIA/garak, tier: official, title: garak repository, accessed: 2026-06-09, origin: reviewed }
+url: https://github.com/NVIDIA/garak
+description:
+  value: "garak: Open-source LLM vulnerability scanner from NVIDIA that probes models for prompt injection, jailbreaks, data leakage, toxicity, and misinformation using static, dynamic, and adaptive probes."
+  source: { url: https://github.com/NVIDIA/garak, tier: official, title: garak repository, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://github.com/NVIDIA/garak, tier: official, title: garak repository, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://github.com/NVIDIA/garak, tier: official, title: garak repository, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the garak documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [detect]
+    maturity: primary
+    note: Combines static, dynamic, and adaptive probes, including DAN-style jailbreaks, encoding-based prompt injection, adversarial suffixes, and training-data replay, with per-probe detectors and reporting harnesses.
+    source: { url: https://github.com/NVIDIA/garak, tier: official, title: garak repository, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-model, function: detect }

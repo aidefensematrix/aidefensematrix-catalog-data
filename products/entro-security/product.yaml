@@ -1,0 +1,29 @@
+schema_version: 2
+name: Entro Security
+vendor:
+  value: Entro Security
+  source: { url: https://entro.security/, tier: official, title: Entro Security platform, accessed: 2026-06-09, origin: reviewed }
+aliases: [Entro]
+url: https://entro.security/
+description:
+  value: Security platform for AI agents and non-human identities that discovers them, monitors agent behavior and intent for threats, and attributes each identity to a human owner.
+  source: { url: https://entro.security/, tier: official, title: Entro Security platform, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://entro.security/, tier: official, title: Entro Security platform, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://entro.security/, tier: official, title: Entro Security platform, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Entro Security documentation.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, detect]
+    maturity: primary
+    note: Discovers AI agents, non-human identities, and their secrets, continuously monitors agent behavior and intent for anomalies and threats, and attributes each identity to a human owner.
+    source: { url: https://entro.security/, tier: official, title: Entro Security platform, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: detect }

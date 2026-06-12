@@ -1,0 +1,45 @@
+name: Correction
+description: Report an inaccurate or stale detail in a product entry
+title: "Correction: <product>"
+labels: [correction]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the catalog accurate. A correction needs a source that supports the corrected value. If you can edit the file yourself, a pull request is even faster to review.
+  - type: input
+    id: product
+    attributes:
+      label: Product
+      description: The entry's directory name under `products/`, or the product name.
+      placeholder: lakera
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: Name the field and the current value that is inaccurate or stale.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What it should say
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Supporting source URL
+      description: A page that supports the corrected value. Comparative or efficacy claims need an independent source (press, research, or regulatory), not vendor marketing.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation
+      description: Do you work for, or compete with, the vendor of this product? See CONTRIBUTING.md.
+      placeholder: No affiliation
+    validations:
+      required: true

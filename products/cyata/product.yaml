@@ -1,0 +1,33 @@
+schema_version: 2
+name: Cyata
+vendor:
+  value: Cyata
+  source: { url: https://cyata.ai/, tier: official, title: Cyata homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://cyata.ai
+description:
+  value: "Cyata: Agentic identity control plane that discovers AI agents across SaaS and cloud environments, records each agent interaction for forensics, and enforces least-privilege access policies."
+  source: { url: https://cyata.ai/, tier: official, title: Cyata homepage, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://cyata.ai/, tier: official, title: Cyata homepage, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://www.securityweek.com/check-point-announces-trio-of-acquisitions-amid-solid-2025-earnings-beat/, tier: press, title: SecurityWeek on the Check Point acquisitions, accessed: 2026-06-10, origin: reviewed }
+acquisition:
+  acquirer: Check Point Software Technologies
+  announced: 2026-02-12
+  post_acquisition_status: standalone
+  source: { url: https://www.calcalistech.com/ctechnews/article/rjnbhfipwl, tier: press, title: CTech on Check Point acquiring Cyclops and Cyata, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Cyata documentation; recorded the Check Point acquisition announced in February 2026.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Maps AI agents across SaaS, cloud, and identity infrastructure, including shadow, orphaned, and overly privileged agents; logs every agent interaction for audit and forensics; assigns dynamic identities and enforces least-privilege policy on agent access.
+    source: { url: https://cyata.ai/, tier: official, title: Cyata homepage, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: identify }

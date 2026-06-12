@@ -1,0 +1,27 @@
+schema_version: 2
+name: Mindgard
+vendor:
+  value: Mindgard
+  source: { url: https://mindgard.ai/ai-security-platform, tier: official, title: Mindgard AI Security Platform, accessed: 2026-06-09, origin: reviewed }
+aliases: [Mindgard AI Security Platform]
+url: https://mindgard.ai/ai-security-platform
+description:
+  value: Automated AI red-teaming platform that maps the AI attack surface and continuously tests models and agents for prompt injection, jailbreak, and model-manipulation flaws.
+  source: { url: https://mindgard.ai/ai-security-platform, tier: official, title: Mindgard AI Security Platform, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://mindgard.ai/ai-security-platform, tier: official, title: Mindgard AI Security Platform, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://mindgard.ai/ai-security-platform, tier: official, title: Mindgard AI Security Platform, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Mindgard documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, detect]
+    maturity: primary
+    note: Maps the AI attack surface including shadow AI, then runs continuous automated red teaming that chains attack techniques across multi-step interactions to find prompt injection, jailbreak, and model-manipulation flaws.
+    source: { url: https://mindgard.ai/automated-ai-red-teaming, tier: official, title: Mindgard automated AI red teaming, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-model, function: detect }

@@ -1,0 +1,31 @@
+schema_version: 2
+name: Mend AI
+vendor:
+  value: Mend.io
+  source: { url: https://www.mend.io/mend-ai/, tier: official, title: Mend AI product page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.mend.io/mend-ai/
+description:
+  value: "Mend AI: Discovers and inventories AI components in applications, assesses their risks, enforces AI policies, and red teams AI behavior for issues like prompt injection."
+  source: { url: https://www.mend.io/mend-ai/, tier: official, title: Mend AI product page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://docs.mend.io/platform/latest/mend-ai-overview, tier: official, title: Mend AI overview documentation, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.mend.io/mend-ai/, tier: official, title: Mend AI product page, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Mend.io documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, detect, govern]
+    maturity: primary
+    note: Builds a continuously updated inventory of AI models and frameworks, including shadow AI, ties risks to models, runs automated red teaming tests for prompt injection, context leakage, and data exfiltration, and enforces AI governance policies via a policy engine.
+    source: { url: https://www.mend.io/mend-ai/, tier: official, title: Mend AI product page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify]
+    maturity: secondary
+    note: AI-BOM discovery extends beyond models to MCPs and RAG pipelines, inventorying orchestration components alongside frameworks in SPDX and CycloneDX machine-readable formats.
+    source: { url: https://www.mend.io/ai-bom/, tier: official, title: Mend.io AI-BOM management page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-model, function: identify }

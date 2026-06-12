@@ -1,0 +1,31 @@
+schema_version: 2
+name: LlamaFirewall
+vendor:
+  value: Meta
+  source: { url: https://github.com/meta-llama/PurpleLlama, tier: official, title: PurpleLlama repository on GitHub, accessed: 2026-06-10, origin: reviewed }
+url: https://meta-llama.github.io/PurpleLlama/LlamaFirewall/
+description:
+  value: "LlamaFirewall: Open-source guardrail framework from Meta that scans LLM apps and agents with PromptGuard 2, AlignmentCheck, and CodeShield scanners."
+  source: { url: https://github.com/meta-llama/PurpleLlama/blob/main/LlamaFirewall/README.md, tier: official, title: LlamaFirewall README in the PurpleLlama repository, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://meta-llama.github.io/PurpleLlama/LlamaFirewall/, tier: official, title: LlamaFirewall documentation site, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://github.com/meta-llama/PurpleLlama, tier: official, title: PurpleLlama repository on GitHub, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Meta LlamaFirewall documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: PromptGuard 2 classifies user inputs and untrusted content for direct prompt injection and jailbreaks while AlignmentCheck audits agent chain-of-thought reasoning in real time for goal hijacking and indirect injection; the framework detects and mitigates these risks inline.
+    source: { url: https://github.com/meta-llama/PurpleLlama/blob/main/LlamaFirewall/README.md, tier: official, title: LlamaFirewall README in the PurpleLlama repository, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-generated-code
+    functions: [detect]
+    maturity: secondary
+    note: CodeShield applies Semgrep and regex-based static analysis to LLM-generated code in real time, flagging insecure code across eight programming languages.
+    source: { url: https://github.com/meta-llama/PurpleLlama/blob/main/LlamaFirewall/README.md, tier: official, title: LlamaFirewall README in the PurpleLlama repository, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

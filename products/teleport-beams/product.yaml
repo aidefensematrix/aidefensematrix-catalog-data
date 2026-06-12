@@ -1,0 +1,32 @@
+schema_version: 2
+name: Teleport Beams
+aliases: [Beams]
+vendor:
+  value: Teleport
+  source: { url: https://goteleport.com/about/newsroom/press-releases/teleport-launches-beams-trusted-agent-runtimes-for-infrastructure/, tier: official, title: Teleport Beams launch press release, accessed: 2026-06-10, origin: reviewed }
+url: https://www.beams.run/
+description:
+  value: "Teleport Beams: Runs AI agents in isolated Firecracker micro-VMs with built-in identity, per-beam access policy, and audited access to infrastructure and inference services."
+  source: { url: https://www.beams.run/, tier: official, title: Teleport Beams product page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.beams.run/, tier: official, title: Teleport Beams product page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.beams.run/, tier: official, title: Teleport Beams product page, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Teleport Beams product page and launch press release.
+matrix_coverage:
+  - asset: ai-workload-platforms
+    functions: [protect, detect]
+    maturity: primary
+    note: Runs each agent in an isolated Firecracker micro-VM with an ephemeral filesystem wiped at session end and policy-controlled egress to allowlisted domains; every access event is recorded immutably for audit visibility into what agents reach.
+    source: { url: https://www.beams.run/, tier: official, title: Teleport Beams product page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: primary
+    note: Issues a short-lived identity certificate to each beam, scoped to the services it may reach, so agents authenticate to infrastructure and inference endpoints without static secrets; access policy is enforced per beam at the proxy.
+    source: { url: https://www.beams.run/, tier: official, title: Teleport Beams product page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-workload-platforms, function: protect }

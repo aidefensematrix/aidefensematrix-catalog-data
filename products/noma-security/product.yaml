@@ -1,0 +1,34 @@
+schema_version: 2
+name: Noma Security
+vendor:
+  value: Noma Security
+  source: { url: https://noma.security, tier: official, title: Noma Security homepage, accessed: 2026-06-07, origin: reviewed }
+url: https://noma.security
+description:
+  value: An enterprise platform that discovers, governs, and protects AI and AI agents across the enterprise, spanning homegrown AI, SaaS agents, and coding assistants.
+  source: { url: https://noma.security, tier: official, title: Noma Security homepage, accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://noma.security/platform/aispm/, tier: official, title: Noma deployment options, accessed: 2026-06-07, origin: reviewed }
+status:
+  value: active
+  source: { url: https://noma.security, tier: official, title: Noma Security (independent), accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-07
+changelog:
+  - date: 2026-06-07
+    summary: Verified details; independent as of review, with a Series B announced in July 2025.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Discovery, posture, and runtime protection for autonomous agents and MCP servers.
+    source: { url: https://noma.security/solutions/ai-agent-security/, tier: official, accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: primary
+    source: { url: https://noma.security/platform/, tier: official, accessed: 2026-06-07, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    source: { url: https://noma.security/platform/aispm/, tier: official, accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: protect }

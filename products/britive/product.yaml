@@ -1,0 +1,28 @@
+schema_version: 2
+name: Britive
+vendor:
+  value: Britive
+  source: { url: https://www.britive.com/platform/agentic-ai-identity-security, tier: official, title: Britive agentic AI identity security page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.britive.com/platform/agentic-ai-identity-security
+description:
+  value: "Britive: Extends cloud PAM to AI agent identities with just-in-time ephemeral credentials, zero standing privileges, and runtime on-behalf-of policy enforcement."
+  source: { url: https://www.britive.com/platform/agentic-ai-identity-security, tier: official, title: Britive agentic AI identity security page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.britive.com/platform/agentic-ai-identity-security, tier: official, title: Britive agentic AI identity security page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.britive.com/platform/agentic-ai-identity-security, tier: official, title: Britive agentic AI identity security page, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Britive documentation.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [protect, detect]
+    maturity: primary
+    note: Issues ephemeral JIT credentials so agents hold zero standing privileges; an MCP tool broker evaluates each tool request at runtime and on-behalf-of policies tie agent actions back to human privilege boundaries; trust scoring and SIEM telemetry surface anomalous agent behavior.
+    source: { url: https://www.britive.com/platform/agentic-ai-identity-security, tier: official, title: Britive agentic AI identity security page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: protect }

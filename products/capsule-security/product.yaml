@@ -1,0 +1,36 @@
+schema_version: 2
+name: Capsule Security
+vendor:
+  value: Capsule Security
+  source: { url: https://www.capsulesecurity.io/, tier: official, title: Capsule Security homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://www.capsulesecurity.io/
+description:
+  value: "Capsule Security: Runtime security layer that discovers enterprise AI agents, observes their behavior, and blocks unsafe or risky actions before execution."
+  source: { url: https://www.capsulesecurity.io/, tier: official, title: Capsule Security homepage, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.capsulesecurity.io/, tier: official, title: Capsule Security homepage, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.securityweek.com/capsule-security-emerges-from-stealth-with-7-million-in-funding/, tier: press, title: SecurityWeek on the Capsule Security launch, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Capsule Security documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Agentless discovery inventories agents across home-grown systems plus SaaS and endpoint environments; Agent Identity Control tracks ownership and least privilege; Runtime Protection detects and blocks unsafe or risky agent behavior before actions execute.
+    source: { url: https://www.capsulesecurity.io/, tier: official, title: Capsule Security homepage, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect, protect]
+    maturity: primary
+    note: Watches agent reasoning and interactions at runtime to catch manipulation and stop data exfiltration; intervenes inline to correct anomalous or unsafe activity without disrupting the AI.
+    source: { url: https://www.securityweek.com/capsule-security-emerges-from-stealth-with-7-million-in-funding/, tier: press, title: SecurityWeek on the Capsule Security launch, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: secondary
+    note: Secures agents built on platforms such as Copilot Studio and Salesforce Agentforce plus coding agents like Cursor; the Agent Security Graph maps relationships among agents, tools, and data to reveal risky paths and control gaps.
+    source: { url: https://www.capsulesecurity.io/, tier: official, title: Capsule Security homepage, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: protect }

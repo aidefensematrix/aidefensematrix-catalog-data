@@ -1,0 +1,32 @@
+schema_version: 2
+name: Zscaler
+vendor:
+  value: Zscaler
+  source: { url: https://www.zscaler.com/products-and-solutions/ai-access-security, tier: official, title: Zscaler AI Access Security, accessed: 2026-06-09, origin: reviewed }
+aliases: [Zscaler AI Access Security, Zscaler Zero Trust Exchange]
+url: https://www.zscaler.com/products-and-solutions/ai-access-security
+description:
+  value: Zero-trust platform that uncovers shadow AI, classifies and moderates AI prompts and responses inline, and enforces DLP to block sensitive data from leaving for generative-AI apps and tools.
+  source: { url: https://www.zscaler.com/products-and-solutions/ai-access-security, tier: official, title: Zscaler AI Access Security, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.zscaler.com/products-and-solutions/ai-access-security, tier: official, title: Zscaler AI Access Security, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.zscaler.com/products-and-solutions/ai-access-security, tier: official, title: Zscaler AI Access Security, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Zscaler AI security documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Uncovers shadow AI, classifies and moderates prompt and response content inline, and enforces inline DLP to block sensitive data from leaving for AI apps.
+    source: { url: https://www.zscaler.com/products-and-solutions/ai-access-security, tier: official, title: Zscaler AI Access Security, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-model
+    functions: [detect]
+    maturity: secondary
+    note: Combines automated red teaming and dynamic risk assessment to identify vulnerabilities in AI applications.
+    source: { url: https://www.zscaler.com/products-and-solutions/ai-security, tier: official, title: Zscaler AI Security, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

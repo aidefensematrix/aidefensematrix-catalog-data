@@ -1,0 +1,37 @@
+schema_version: 2
+name: BigID
+vendor:
+  value: BigID
+  source: { url: https://bigid.com/, tier: official, title: BigID data security and AI governance, accessed: 2026-06-09, origin: reviewed }
+aliases: [BigID DSPM]
+url: https://bigid.com/
+description:
+  value: Enterprise data security platform that discovers and classifies sensitive data, finds shadow AI, secures the data pipeline for AI training, and governs AI access and risk.
+  source: { url: https://bigid.com/, tier: official, title: BigID data security and AI governance, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://bigid.com/, tier: official, title: BigID data security and AI governance, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://bigid.com/, tier: official, title: BigID data security and AI governance, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the BigID documentation.
+matrix_coverage:
+  - asset: training-data
+    functions: [identify, protect]
+    maturity: primary
+    note: Discovers and classifies sensitive data across many sources, finds shadow AI and unauthorized data use, and cleanses and secures the data pipeline that feeds AI training.
+    source: { url: https://bigid.com/, tier: official, title: BigID data security and AI governance, accessed: 2026-06-09, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Governs employee AI access by labeling data, applying guardrails, intercepting risky prompts, and enforcing role-based access.
+    source: { url: https://bigid.com/, tier: official, title: BigID data security and AI governance, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-model
+    functions: [identify, detect]
+    maturity: secondary
+    note: AI security posture management assesses AI risk and flags model and agent vulnerabilities and unusual access.
+    source: { url: https://bigid.com/, tier: official, title: BigID data security and AI governance, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: training-data, function: protect }

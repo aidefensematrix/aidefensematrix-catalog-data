@@ -1,0 +1,32 @@
+schema_version: 2
+name: Kong
+vendor:
+  value: Kong Inc.
+  source: { url: https://konghq.com/products/kong-ai-gateway, tier: official, title: Kong AI Gateway, accessed: 2026-06-09, origin: reviewed }
+aliases: [Kong AI Gateway]
+url: https://konghq.com/products/kong-ai-gateway
+description:
+  value: AI gateway that proxies traffic to many LLM providers and governs it with prompt guards, PII sanitization, and content-safety policies that screen requests and responses.
+  source: { url: https://konghq.com/products/kong-ai-gateway, tier: official, title: Kong AI Gateway, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas, self-hosted, hybrid]
+  source: { url: https://developer.konghq.com/ai-gateway/, tier: official, title: Kong AI Gateway documentation, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://konghq.com/products/kong-ai-gateway, tier: official, title: Kong AI Gateway, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Kong AI Gateway documentation.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Proxies traffic to many LLM providers and enforces allow and deny lists, prompt guards, and content-safety policies, with visibility over AI usage.
+    source: { url: https://developer.konghq.com/ai-gateway/, tier: official, title: Kong AI Gateway documentation, accessed: 2026-06-09, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Plugins inspect prompts and responses, redacting PII and filtering unsafe or off-topic content before it reaches a model or user.
+    source: { url: https://developer.konghq.com/ai-gateway/, tier: official, title: Kong AI Gateway documentation, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-gateways-routers, function: protect }

@@ -1,0 +1,36 @@
+schema_version: 2
+name: Straiker
+vendor:
+  value: Straiker
+  source: { url: https://www.straiker.ai/products, tier: official, title: Straiker products overview, accessed: 2026-06-07, origin: reviewed }
+url: https://www.straiker.ai
+description:
+  value: "AI-native security for agentic apps and AI agents, pairing offensive red-team testing with runtime guardrails that detect and block prompt injection, data exfiltration, and agent manipulation."
+  source: { url: https://www.straiker.ai/products, tier: official, title: Straiker products overview, accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.straiker.ai/products/defend-ai, tier: official, title: Straiker Defend AI deployment, accessed: 2026-06-07, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.securityweek.com/ai-security-firm-straiker-emerges-from-stealth-with-21m-in-funding/, tier: press, title: "Straiker emerges from stealth with 21M in funding", accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-07
+changelog:
+  - date: 2026-06-07
+    summary: "Verified details from primary and press sources; mapped the Discover, Ascend, and Defend modules to matrix coverage."
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: "Discover AI inventories agents and tools; Defend AI screens agentic app traffic inline."
+    source: { url: https://www.straiker.ai/products/discover-ai, tier: official, title: Straiker Discover AI product page, accessed: 2026-06-07, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: "Defend AI guardrails inspect prompts, responses, and tool calls and block threats at runtime."
+    source: { url: https://www.straiker.ai/products/defend-ai, tier: official, title: Straiker Defend AI product page, accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [identify, detect]
+    maturity: secondary
+    note: "Ascend AI tests for identity exploitation; Discover AI maps agent connections and posture."
+    source: { url: https://www.straiker.ai/products/ascend-ai, tier: official, title: Straiker Ascend AI product page, accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

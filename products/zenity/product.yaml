@@ -1,0 +1,38 @@
+schema_version: 2
+name: Zenity
+vendor:
+  value: Zenity
+  source: { url: https://zenity.io/, tier: official, title: Zenity homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://zenity.io/platform
+description:
+  value: "Zenity: Secures enterprise AI agents with discovery, posture management, and runtime detection and response across agent platforms."
+  source: { url: https://zenity.io/platform, tier: official, title: Zenity AI security platform overview, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://zenity.io/company/trust-center, tier: official, title: Zenity trust center, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://zenity.io/, tier: official, title: Zenity homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Zenity documentation.
+  - date: 2026-06-12
+    summary: Refined matrix coverage and primary function.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify]
+    maturity: primary
+    note: AISPM discovers agents across environments, evaluates configuration and permission risk, and enforces guardrails before agents run, with an inventory of ownership, permissions, and integrations.
+    source: { url: https://zenity.io/platform/ai-security-posture-management, tier: official, title: Zenity AI security posture management, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect, protect]
+    maturity: primary
+    note: AIDR monitors step-level agent execution at runtime, detects direct and indirect prompt injection, and blocks sensitive data leakage through agent conversations, tool calls, and memory.
+    source: { url: https://zenity.io/platform/ai-security-platform/aidr, tier: official, title: Zenity AI detection and response, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: secondary
+    note: MCP security provides visibility into MCP connections, blocks unauthorized agent actions, and enforces security policies over MCP-enabled agents.
+    source: { url: https://zenity.io/use-cases/risk-type/mcp, tier: official, title: Zenity MCP security use case, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: identify }

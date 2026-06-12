@@ -1,0 +1,50 @@
+name: New product suggestion
+description: Suggest a product the catalog does not list yet
+title: "New product: <name>"
+labels: [new-product]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. The catalog lists real, shipping products that secure AI systems. Standards and frameworks (NIST, ISO, OWASP, MITRE) are out of scope. A pull request with a full entry is even better; see CONTRIBUTING.md.
+  - type: input
+    id: name
+    attributes:
+      label: Product name
+      description: The product, as named on the vendor's own site. The company name goes in the next field.
+    validations:
+      required: true
+  - type: input
+    id: vendor
+    attributes:
+      label: Vendor
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official product URL
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Why it is in scope
+      description: What the product protects (models, training data, runtime AI data, AI-generated code, orchestration tools) and how it secures AI rather than merely using AI.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Pages that support the description and coverage. For an open-source project, include the repository and adoption evidence.
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation
+      description: Do you work for, or compete with, this vendor? See CONTRIBUTING.md.
+      placeholder: No affiliation
+    validations:
+      required: true

@@ -1,0 +1,31 @@
+schema_version: 2
+name: Qualys TotalAI
+vendor:
+  value: Qualys
+  source: { url: https://blog.qualys.com/product-tech/2024/12/05/secure-your-generative-investments-qualys-advances-enterprise-trurisk-platform-with-qualys-totalai-to-protect-your-llm-investments, tier: official, title: Qualys TotalAI launch announcement, accessed: 2026-06-10, origin: reviewed }
+url: https://www.qualys.com/apps/totalai/
+description:
+  value: "Qualys TotalAI: Discovers and inventories AI and LLM workloads, then scans models for jailbreak, prompt injection, and other OWASP LLM Top 10 risks."
+  source: { url: https://blog.qualys.com/product-tech/2025/12/11/totalai-ai-security-onboarding-and-risk-insights, tier: official, title: Qualys TotalAI onboarding and risk insights, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://docs.qualys.com/en/ta/latest/introduction/introduction.htm, tier: official, title: Qualys TotalAI getting started documentation, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://blog.qualys.com/product-tech/2024/12/05/secure-your-generative-investments-qualys-advances-enterprise-trurisk-platform-with-qualys-totalai-to-protect-your-llm-investments, tier: official, title: Qualys TotalAI launch announcement, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Qualys documentation.
+matrix_coverage:
+  - asset: ai-workload-platforms
+    functions: [identify, detect]
+    maturity: primary
+    note: Discovers and inventories AI workloads, including software packages and GPU hardware, across production and development environments, and applies AI-specific vulnerability detections prioritized with TruRisk to harden the underlying infrastructure.
+    source: { url: https://blog.qualys.com/product-tech/2024/12/05/secure-your-generative-investments-qualys-advances-enterprise-trurisk-platform-with-qualys-totalai-to-protect-your-llm-investments, tier: official, title: Qualys TotalAI launch announcement, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-model
+    functions: [detect]
+    maturity: primary
+    note: Scans onboarded LLM models for jailbreak susceptibility, prompt injection, bias, unsafe output, and other risks mapped to the OWASP LLM Top 10, with reporting aligned to MITRE ATLAS.
+    source: { url: https://blog.qualys.com/product-tech/2025/12/11/totalai-ai-security-onboarding-and-risk-insights, tier: official, title: Qualys TotalAI onboarding and risk insights, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-workload-platforms, function: identify }

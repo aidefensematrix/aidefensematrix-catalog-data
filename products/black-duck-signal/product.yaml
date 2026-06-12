@@ -1,0 +1,26 @@
+schema_version: 2
+name: Black Duck Signal
+vendor:
+  value: Black Duck
+  source: { url: https://news.blackduck.com/2026-03-23-Black-Duck-Signal-Sets-a-New-Standard-for-Securing-AI-Generated-Code, tier: official, title: Black Duck Signal general availability announcement, accessed: 2026-06-10, origin: reviewed }
+url: https://www.blackduck.com/signal-ai-appsec.html
+description:
+  value: "Black Duck Signal: Agentic application security solution that detects and fixes flaws in AI-generated code via MCP integrations with coding assistants and pipelines."
+  source: { url: https://news.blackduck.com/2026-03-23-Black-Duck-Signal-Sets-a-New-Standard-for-Securing-AI-Generated-Code, tier: official, title: Black Duck Signal general availability announcement, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.npmjs.com/package/@black-duck/mcp-server, tier: official, title: Black Duck MCP server package, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://news.blackduck.com/2026-03-23-Black-Duck-Signal-Sets-a-New-Standard-for-Securing-AI-Generated-Code, tier: official, title: Black Duck Signal general availability announcement, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Black Duck documentation.
+matrix_coverage:
+  - asset: ai-generated-code
+    functions: [detect, protect]
+    maturity: primary
+    note: Agentic scans run inside AI coding workflows via MCP for assistants such as Claude Code and GitHub Copilot, detecting security defects in new code and applying verified fixes before commit; exploitability analysis filters noise.
+    source: { url: https://www.blackduck.com/signal-ai-appsec.html, tier: official, title: Black Duck Signal product page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-generated-code, function: detect }

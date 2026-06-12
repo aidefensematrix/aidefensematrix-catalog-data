@@ -1,0 +1,32 @@
+name: Link check
+
+# Weekly check that catalog source/product URLs still resolve. SSRF-guarded
+# (refuses non-http(s) and private/loopback/link-local/metadata targets). Never
+# runs in PR CI. Opens an issue listing dead links; never blocks contributors.
+on:
+  schedule:
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
+      - run: pnpm install --frozen-lockfile --ignore-scripts
+      - id: links
+        run: node scripts/check-links.mjs
+      - if: steps.links.outputs.dead != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BODY: ${{ steps.links.outputs.dead }}
+        run: gh issue create --title "Dead links detected in catalog" --body "$BODY" || true

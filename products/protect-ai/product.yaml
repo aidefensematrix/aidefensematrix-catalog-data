@@ -1,0 +1,49 @@
+schema_version: 2
+name: Protect AI
+vendor:
+  value: Protect AI
+  source: { url: https://protectai.com, tier: official, title: Protect AI platform, accessed: 2026-06-07, origin: reviewed }
+url: https://protectai.com
+description:
+  value: "A unified platform that secures the AI lifecycle: model scanning (Guardian), automated red teaming (Recon), and runtime protection (Layer)."
+  source: { url: https://protectai.com, tier: official, title: Protect AI platform, accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://protectai.com/guardian, tier: official, title: Guardian CI/CD scanning, accessed: 2026-06-07, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-completes-acquisition-of-protect-ai, tier: official, title: Palo Alto completes Protect AI acquisition, accessed: 2026-06-07, origin: reviewed }
+acquisition:
+  acquirer: Palo Alto Networks
+  acquirer_slug: prisma-airs
+  announced: 2025-07-22
+  post_acquisition_status: folded
+  new_name: Prisma AIRS
+  source: { url: https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-completes-acquisition-of-protect-ai, tier: official, title: Palo Alto completes Protect AI acquisition, accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-07
+    summary: Verified details and recorded the Palo Alto Networks acquisition and fold into Prisma AIRS.
+  - date: 2026-06-09
+    summary: Recorded the post-acquisition product name (Prisma AIRS).
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, protect]
+    maturity: primary
+    note: Guardian scans models from registries and hubs for unsafe code and threats.
+    source: { url: https://protectai.com/guardian, tier: official, accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: primary
+    note: Recon runs automated red teaming against AI applications and agents.
+    source: { url: https://protectai.com/recon, tier: official, accessed: 2026-06-07, origin: reviewed }
+  - asset: training-data
+    functions: [detect]
+    maturity: secondary
+    source: { url: https://protectai.com/guardian, tier: official, accessed: 2026-06-07, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    note: Layer adds runtime protection for LLM applications.
+    source: { url: https://protectai.com/layer, tier: official, accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: ai-model, function: protect }

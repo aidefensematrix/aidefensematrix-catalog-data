@@ -1,0 +1,26 @@
+schema_version: 2
+name: Einstein Trust Layer
+vendor:
+  value: Salesforce
+  source: { url: https://developer.salesforce.com/docs/einstein/genai/guide/trust.html, tier: official, title: Einstein Trust Layer in the Agentforce developer guide, accessed: 2026-06-10, origin: reviewed }
+url: https://developer.salesforce.com/docs/einstein/genai/guide/trust.html
+description:
+  value: "Einstein Trust Layer: Guardrails between Salesforce applications and LLMs that mask sensitive data, detect toxic output, maintain audit trails, and enforce zero data retention with LLM providers."
+  source: { url: https://developer.salesforce.com/docs/einstein/genai/guide/trust.html, tier: official, title: Einstein Trust Layer in the Agentforce developer guide, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.salesforce.com/artificial-intelligence/trusted-ai/, tier: official, title: Salesforce trusted AI page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.salesforce.com/artificial-intelligence/trusted-ai/, tier: official, title: Salesforce trusted AI page, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Salesforce documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Masks sensitive data such as social security numbers before prompts reach LLM providers, runs toxicity detection on LLM generations, and records an audit trail of AI interactions, with zero data retention agreements covering third-party LLM partners.
+    source: { url: https://developer.salesforce.com/docs/einstein/genai/guide/trust.html, tier: official, title: Einstein Trust Layer in the Agentforce developer guide, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

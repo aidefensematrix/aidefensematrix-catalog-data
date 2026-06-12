@@ -1,0 +1,37 @@
+schema_version: 2
+name: Onyx
+aliases: [Onyx Platform]
+vendor:
+  value: Onyx Security
+  source: { url: https://onyx.security/blog/introducing-onyx-security-the-secure-ai-control-plane-for-enterprises, tier: official, title: Onyx Security launch announcement, accessed: 2026-06-10, origin: reviewed }
+url: https://onyx.security/
+description:
+  value: "Onyx: Control plane that discovers sanctioned and shadow AI agents, monitors prompts and agent actions in real time, and enforces security and governance policies across enterprise AI use."
+  source: { url: https://onyx.security/, tier: official, title: Onyx Security homepage, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted, hybrid]
+  source: { url: https://onyx.security/platform, tier: official, title: Onyx platform page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://onyx.security/blog/introducing-onyx-security-the-secure-ai-control-plane-for-enterprises, tier: official, title: Onyx Security launch announcement, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Onyx Security documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [govern, identify, detect, respond]
+    maturity: primary
+    note: Discovers sanctioned and shadow AI agents across the enterprise, monitors agent activity in real time with anomaly detection and session replay, applies natural language policy controls aligned to frameworks such as the EU AI Act, and remediates issues through the Guardian Agent supervisory AI.
+    source: { url: https://onyx.security/platform, tier: official, title: Onyx platform page, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Provides visibility into every AI prompt and response across the stack and protects prompts, responses, and agent actions in real time against prompt injection, jailbreaks, data exfiltration, and adversarial manipulation.
+    source: { url: https://onyx.security/platform, tier: official, title: Onyx platform page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-model
+    functions: [identify]
+    maturity: secondary
+    note: Detects shadow AI usage and unapproved model deployments, identifies supply chain risks in agents, MCP servers, models, and AI assets, and spots vulnerabilities in agents and models with automated red teaming.
+    source: { url: https://onyx.security/platform, tier: official, title: Onyx platform page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-orchestration-tools, function: identify }

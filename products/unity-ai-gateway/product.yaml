@@ -1,0 +1,34 @@
+schema_version: 2
+name: Unity AI Gateway
+aliases: [Databricks Unity AI Gateway, Mosaic AI Gateway]
+vendor:
+  value: Databricks
+  source: { url: https://www.databricks.com/product/artificial-intelligence/ai-gateway, tier: official, title: Databricks Unity AI Gateway product page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.databricks.com/product/artificial-intelligence/ai-gateway
+description:
+  value: "Unity AI Gateway: Governance layer for model serving on Databricks with guardrails that filter PII and unsafe content, plus permissions, rate limits, request logging, and usage tracking."
+  source: { url: https://www.databricks.com/product/artificial-intelligence/ai-gateway, tier: official, title: Databricks Unity AI Gateway product page, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://docs.databricks.com/aws/en/ai-gateway/overview-serving-endpoints, tier: official, title: Unity AI Gateway serving endpoints documentation, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.databricks.com/product/artificial-intelligence/ai-gateway, tier: official, title: Databricks Unity AI Gateway product page, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Databricks documentation. Formerly documented as Mosaic AI Gateway; AI Guardrails are in public preview and the redesigned gateway experience is in beta.
+  - date: 2026-06-12
+    summary: Refined matrix coverage and primary function.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [protect, detect]
+    maturity: primary
+    note: Manages and monitors access to model serving endpoints with permissions, rate limits, usage tracking through system tables, fallbacks, and traffic splitting across model backends.
+    source: { url: https://docs.databricks.com/aws/en/ai-gateway/overview-serving-endpoints, tier: official, title: Unity AI Gateway serving endpoints documentation, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: AI Guardrails enforce safety filtering against harmful content and block or mask PII detected in endpoint requests and responses, with inference tables logging payloads for audit.
+    source: { url: https://docs.databricks.com/aws/en/ai-gateway/configure-ai-gateway-endpoints, tier: official, title: Unity AI Gateway endpoint configuration documentation, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-gateways-routers, function: protect }

@@ -1,0 +1,31 @@
+schema_version: 2
+name: Fiddler AI
+vendor:
+  value: Fiddler
+  source: { url: https://www.fiddler.ai/, tier: official, title: Fiddler AI homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://www.fiddler.ai
+description:
+  value: "Fiddler AI: Observability and guardrails platform for LLM and agent applications that scores prompts and responses and blocks harmful content, PII leaks, and hallucinations in real time."
+  source: { url: https://docs.fiddler.ai/product-guide/llm-monitoring/guardrails, tier: official, title: Fiddler Guardrails documentation, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.fiddler.ai/pricing, tier: official, title: Fiddler pricing page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.fiddler.ai/, tier: official, title: Fiddler AI homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Fiddler documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Fiddler Guardrails screen prompts and responses in real time, blocking harmful or jailbreaking content across eleven safety dimensions, detecting and redacting PII and PHI, and flagging hallucinated RAG responses.
+    source: { url: https://docs.fiddler.ai/product-guide/llm-monitoring/guardrails, tier: official, title: Fiddler Guardrails documentation, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: Agentic observability traces multi-agent systems through OpenTelemetry and framework integrations, evaluating and monitoring agent behavior for safety and quality in development and production.
+    source: { url: https://www.fiddler.ai/agentic-observability, tier: official, title: Fiddler agentic observability page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

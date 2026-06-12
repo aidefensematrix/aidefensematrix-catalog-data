@@ -1,0 +1,38 @@
+schema_version: 2
+name: Pangea
+vendor:
+  value: Pangea
+  source: { url: https://pangea.cloud/services/prompt-guard/, tier: official, title: Pangea Prompt Guard, accessed: 2026-06-09, origin: reviewed }
+aliases: [Pangea AI Guard, Pangea Prompt Guard, Pangea AI Detection and Response]
+url: https://pangea.cloud
+description:
+  value: AI security guardrails that inspect prompts, responses, and agent activity to block prompt injection, redact sensitive data, and stop malicious content across LLM and agent traffic.
+  source: { url: https://pangea.cloud/services/prompt-guard/, tier: official, title: Pangea Prompt Guard, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://pangea.cloud/services/prompt-guard/, tier: official, title: Pangea Prompt Guard, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-pangea-to-secure-every-layer-of-enterprise-ai/, tier: official, title: CrowdStrike to acquire Pangea, accessed: 2026-06-09, origin: reviewed }
+acquisition:
+  acquirer: CrowdStrike
+  announced: 2025-09-16
+  post_acquisition_status: folded
+  new_name: CrowdStrike Falcon AIDR
+  source: { url: https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-pangea-to-secure-every-layer-of-enterprise-ai/, tier: official, title: CrowdStrike to acquire Pangea, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from Pangea documentation; recorded the CrowdStrike acquisition announced in September 2025.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Inspects prompts and responses to detect prompt injection, redact sensitive data, and block malicious content.
+    source: { url: https://pangea.cloud/services/prompt-guard/, tier: official, title: Pangea Prompt Guard, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [protect, detect]
+    maturity: secondary
+    note: Guards agent activity with pre-plan, pre-tool, and post-tool checks and runtime monitoring.
+    source: { url: https://pangea.cloud/docs/ai-guard, tier: official, title: Pangea AI Guard, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

@@ -1,0 +1,31 @@
+schema_version: 2
+name: OpenAI Guardrails
+vendor:
+  value: OpenAI
+  source: { url: https://github.com/openai/openai-guardrails-python, tier: official, title: OpenAI Guardrails Python repository, accessed: 2026-06-10, origin: reviewed }
+url: https://guardrails.openai.com/
+description:
+  value: "OpenAI Guardrails: Safety framework that validates LLM app inputs and outputs with configurable checks, plus open-weight gpt-oss-safeguard policy classifiers."
+  source: { url: https://openai.github.io/openai-guardrails-python/, tier: official, title: OpenAI Guardrails Python documentation, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://github.com/openai/openai-guardrails-python, tier: official, title: OpenAI Guardrails Python repository, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://github.com/openai/openai-guardrails-python, tier: official, title: OpenAI Guardrails Python repository, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the OpenAI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Built-in checks screen prompts and model outputs inline through drop-in OpenAI client wrappers, covering moderation, jailbreak detection, PII detection, URL filtering, hallucination detection, off-topic prompts, and custom LLM-based checks configured via a no-code wizard.
+    source: { url: https://github.com/openai/openai-guardrails-python, tier: official, title: OpenAI Guardrails Python repository, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: secondary
+    note: GuardrailAgent applies configured checks to OpenAI Agents SDK agents and raises input and output tripwire exceptions that halt the run when a check fires.
+    source: { url: https://github.com/openai/openai-guardrails-python, tier: official, title: OpenAI Guardrails Python repository, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

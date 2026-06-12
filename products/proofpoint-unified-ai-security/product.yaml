@@ -1,0 +1,32 @@
+schema_version: 2
+name: Proofpoint Unified AI Security
+aliases: [Proofpoint AI Access Security, Proofpoint Agentic AI Security, Proofpoint AI MCP Security, Acuvity]
+vendor:
+  value: Proofpoint
+  source: { url: https://www.proofpoint.com/us/platform/ai-security, tier: official, title: Proofpoint unified AI security platform page, accessed: 2026-06-10, origin: reviewed }
+url: https://www.proofpoint.com/us/platform/ai-security
+description:
+  value: "Proofpoint Unified AI Security: Runtime visibility and policy enforcement for employee GenAI use, autonomous agents, and MCP servers, built on the acquired Acuvity technology."
+  source: { url: https://www.proofpoint.com/us/newsroom/press-releases/proofpoint-acquires-acuvity-deliver-ai-security-and-governance-across, tier: official, title: Proofpoint press release on the Acuvity acquisition, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [hybrid]
+  source: { url: https://www.proofpoint.com/us/products/ai-mcp-security, tier: official, title: Proofpoint AI MCP security product page, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.proofpoint.com/us/platform/ai-security, tier: official, title: Proofpoint unified AI security platform page, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Proofpoint documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: AI Access Security discovers AI tools in use across the enterprise, inspects employee AI interactions at runtime, enforces context-aware policies on prompts and outputs, and records audit evidence of AI usage.
+    source: { url: https://www.proofpoint.com/us/platform/ai-security, tier: official, title: Proofpoint unified AI security platform page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Agentic AI Security applies intent-based detection and behavioral anomaly detection to agent workflows; AI MCP Security discovers shadow MCP servers and enforces authentication and content inspection at the MCP boundary, backed by a registry of approved servers.
+    source: { url: https://www.proofpoint.com/us/platform/ai-security, tier: official, title: Proofpoint unified AI security platform page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

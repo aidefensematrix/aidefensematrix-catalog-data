@@ -1,0 +1,38 @@
+schema_version: 2
+name: Aim Security
+aliases: [Aim AI Firewall, Cato AI Security]
+vendor:
+  value: Aim Security
+  source: { url: https://www.catonetworks.com/news/cato-acquires-aim-security-to-extend-sase-leadership-and-secure-enterprise-ai-transformation/, tier: official, title: Cato Networks acquires Aim Security, accessed: 2026-06-09, origin: reviewed }
+url: https://www.catonetworks.com/platform/ai-security-for-applications/
+description:
+  value: "Aim Security: AI security platform that secures employee use of public AI applications, shields private AI apps and agents with an AI firewall, and covers the AI development lifecycle with AI-SPM."
+  source: { url: https://www.catonetworks.com/news/cato-acquires-aim-security-to-extend-sase-leadership-and-secure-enterprise-ai-transformation/, tier: official, title: Cato Networks acquires Aim Security, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.catonetworks.com/news/cato-acquires-aim-security-to-extend-sase-leadership-and-secure-enterprise-ai-transformation/, tier: official, title: Cato Networks acquires Aim Security, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://www.catonetworks.com/news/cato-acquires-aim-security-to-extend-sase-leadership-and-secure-enterprise-ai-transformation/, tier: official, title: Cato Networks acquires Aim Security, accessed: 2026-06-09, origin: reviewed }
+acquisition:
+  acquirer: Cato Networks
+  announced: 2025-09-03
+  post_acquisition_status: folded
+  new_name: Cato AI Security
+  source: { url: https://www.catonetworks.com/news/cato-acquires-aim-security-to-extend-sase-leadership-and-secure-enterprise-ai-transformation/, tier: official, title: Cato Networks acquires Aim Security, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the Cato Networks documentation. Recorded the Cato Networks acquisition announced in September 2025, with Aim folded into the Cato SASE Cloud Platform as its AI security pillar.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Discovers shadow AI usage and monitors and protects end-user interactions with public AI applications and agents, while the Aim AI Firewall secures internal AI applications and agents against runtime attacks and enforces policy on interactions between users, agents, and models.
+    source: { url: https://www.catonetworks.com/news/cato-acquires-aim-security-to-extend-sase-leadership-and-secure-enterprise-ai-transformation/, tier: official, title: Cato Networks acquires Aim Security, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-model
+    functions: [identify]
+    maturity: secondary
+    note: AI security posture management covers the AI development lifecycle, from training ML models to building custom AI agents, with continuous discovery.
+    source: { url: https://www.catonetworks.com/news/cato-acquires-aim-security-to-extend-sase-leadership-and-secure-enterprise-ai-transformation/, tier: official, title: Cato Networks acquires Aim Security, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

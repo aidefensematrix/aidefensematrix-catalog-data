@@ -1,0 +1,32 @@
+schema_version: 2
+name: Immuta
+vendor:
+  value: Immuta
+  source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed }
+aliases: [Immuta Data Security Platform]
+url: https://www.immuta.com/solutions/data-security-ai/
+description:
+  value: Data security platform that discovers and classifies sensitive data, enforces attribute-based access policies and masking at the data layer for AI and RAG workloads, and monitors data usage for risk.
+  source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Immuta data security documentation.
+matrix_coverage:
+  - asset: training-data
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Discovers and classifies sensitive data and enforces attribute-based access controls and masking at the data layer for RAG and AI workloads, monitoring queries for unusual access.
+    source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: Vends short-lived, attribute-based database roles to AI agents so a prompt-injected agent stays bound to its permitted data, and access can be revoked instantly.
+    source: { url: https://www.immuta.com/agentic-data-access/, tier: official, title: Immuta Agentic Data Access, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: training-data, function: protect }

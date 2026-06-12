@@ -1,0 +1,29 @@
+schema_version: 2
+name: WorkOS AuthKit
+aliases: [AuthKit]
+vendor:
+  value: WorkOS
+  source: { url: https://workos.com/mcp, tier: official, title: WorkOS secure auth for MCP servers, accessed: 2026-06-09, origin: reviewed }
+url: https://workos.com/mcp
+description:
+  value: "WorkOS AuthKit: OAuth 2.1 authorization server for MCP applications that handles agent authorization flows and token validation, enabling fine-grained authorization for agentic workflows."
+  source: { url: https://workos.com/mcp, tier: official, title: WorkOS secure auth for MCP servers, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://workos.com/mcp, tier: official, title: WorkOS secure auth for MCP servers, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://workos.com/mcp, tier: official, title: WorkOS secure auth for MCP servers, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Added to the catalog from the WorkOS documentation.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: primary
+    note: Acts as the OAuth 2.1 authorization server for MCP applications, handling the authorization flows while the MCP server validates the issued tokens, with fine-grained authorization for agentic applications and workflows.
+    source: { url: https://workos.com/mcp, tier: official, title: WorkOS secure auth for MCP servers, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: protect }

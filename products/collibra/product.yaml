@@ -1,0 +1,32 @@
+schema_version: 2
+name: Collibra
+vendor:
+  value: Collibra
+  source: { url: https://www.collibra.com/products/ai-governance, tier: official, title: Collibra AI Governance, accessed: 2026-06-09, origin: reviewed }
+aliases: [Collibra AI Governance, Collibra AI Command Center]
+url: https://www.collibra.com/products/ai-governance
+description:
+  value: Data and AI governance platform that governs AI models, use cases, and agents across their lifecycle, ties them to trusted lineage-tracked data, and enforces compliance and data policies.
+  source: { url: https://www.collibra.com/products/ai-governance, tier: official, title: Collibra AI Governance, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.collibra.com/products/ai-governance, tier: official, title: Collibra AI Governance, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.collibra.com/products/ai-governance, tier: official, title: Collibra AI Governance, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Collibra AI Governance documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, govern]
+    maturity: primary
+    note: Registers, monitors, and governs AI models across their lifecycle with documentation and lineage, integrating with ML platforms such as SageMaker, Bedrock, and MLflow.
+    source: { url: https://www.collibra.com/blog/collibra-ai-model-governance-one-place-to-govern-all-your-models, tier: official, title: Collibra AI Model Governance, accessed: 2026-06-09, origin: reviewed }
+  - asset: training-data
+    functions: [identify, protect]
+    maturity: secondary
+    note: Grounds AI in trusted, lineage-tracked data and protects sensitive data such as PII through integrated data access and privacy policies.
+    source: { url: https://www.collibra.com/products/ai-governance, tier: official, title: Collibra AI Governance, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-model, function: govern }

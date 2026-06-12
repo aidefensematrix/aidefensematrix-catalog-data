@@ -1,0 +1,38 @@
+schema_version: 2
+name: LayerX
+aliases: [LayerX Security]
+vendor:
+  value: LayerX Security
+  source: { url: https://layerxsecurity.com/, tier: official, title: LayerX homepage, accessed: 2026-06-10, origin: reviewed }
+url: https://layerxsecurity.com/
+description:
+  value: "LayerX: Browser-extension control of employee AI use that discovers shadow AI tools, applies DLP to prompts and file transfers, and enforces identity-based access policies."
+  source: { url: https://layerxsecurity.com/, tier: official, title: LayerX homepage, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://layerxsecurity.com/, tier: official, title: LayerX homepage, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://www.akamai.com/newsroom/press-release/akamai-technologies-announces-intent-to-acquire-layerx-advancing-its-workforce-security-strategy-with-ai-usage-control, tier: official, title: Akamai intent-to-acquire press release, accessed: 2026-06-10, origin: reviewed }
+acquisition:
+  acquirer: Akamai
+  announced: 2026-05-14
+  post_acquisition_status: folded
+  pending_close: true
+  source: { url: https://www.akamai.com/newsroom/press-release/akamai-technologies-announces-intent-to-acquire-layerx-advancing-its-workforce-security-strategy-with-ai-usage-control, tier: official, title: Akamai intent-to-acquire press release, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the LayerX use-case documentation; Akamai announced a definitive agreement to acquire LayerX on 2026-05-14, with the close expected in the third quarter of 2026.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: GenAI DLP monitors prompts and responses with conversational context and restricts text input, copy and paste, and file uploads of sensitive data before it reaches AI tools and AI-enabled SaaS applications.
+    source: { url: https://layerxsecurity.com/use-cases/ai-dlp/, tier: official, title: LayerX AI DLP use case, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, protect]
+    maturity: secondary
+    note: Shadow AI discovery detects every AI app in use whether sanctioned, unsanctioned, or embedded in SaaS platforms, maps the accounts behind each tool, and lets security teams enforce responsible AI usage policies across channels.
+    source: { url: https://layerxsecurity.com/use-cases/shadow-ai-discovery/, tier: official, title: LayerX shadow AI discovery use case, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

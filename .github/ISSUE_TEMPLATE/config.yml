@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Private or legal matters (Zeltser Security Corp)
+    url: https://zeltser.com
+    about: To reach Zeltser Security Corp privately, including legal notices and confidential reports, use the contact information at zeltser.com.
+  - name: Private or legal matters (Cyber Defense Matrix LLC)
+    url: https://www.linkedin.com/company/cyber-defense-matrix
+    about: To reach Cyber Defense Matrix LLC privately, including legal notices and confidential reports, message the Cyber Defense Matrix page on LinkedIn.
+  - name: Security vulnerabilities
+    url: https://github.com/aidefensematrix/aidefensematrix-catalog-data/security/advisories/new
+    about: Report vulnerabilities privately through GitHub Security Advisories, never in a public issue.

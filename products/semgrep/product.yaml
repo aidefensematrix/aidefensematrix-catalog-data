@@ -1,0 +1,27 @@
+schema_version: 2
+name: Semgrep
+vendor:
+  value: Semgrep
+  source: { url: https://semgrep.dev/products/semgrep-code/, tier: official, title: Semgrep Code, accessed: 2026-06-09, origin: reviewed }
+aliases: [Semgrep Code, Semgrep Multimodal, Semgrep Guardian]
+url: https://semgrep.dev/products/semgrep-code/
+description:
+  value: Static analysis platform that scans code regardless of who or what wrote it, with a Guardian mode and Multimodal AI that find and help fix vulnerabilities in AI-generated code as it lands.
+  source: { url: https://semgrep.dev/products/semgrep-code/, tier: official, title: Semgrep Code, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://semgrep.dev/products/semgrep-code/, tier: official, title: Semgrep Code, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://semgrep.dev/products/semgrep-code/, tier: official, title: Semgrep Code, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Semgrep Code documentation.
+matrix_coverage:
+  - asset: ai-generated-code
+    functions: [detect, protect]
+    maturity: primary
+    note: Scans AI-generated code as it is written and combines static analysis with AI reasoning (Multimodal) to find vulnerabilities and suggest fixes in pull requests, with Cursor and Claude Code plugins.
+    source: { url: https://semgrep.dev/products/semgrep-code/, tier: official, title: Semgrep Code, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-generated-code, function: detect }

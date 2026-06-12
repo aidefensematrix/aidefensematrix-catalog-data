@@ -1,0 +1,32 @@
+schema_version: 2
+name: Datadog LLM Observability
+vendor:
+  value: Datadog
+  source: { url: https://docs.datadoghq.com/llm_observability/, tier: official, title: Datadog LLM Observability documentation, accessed: 2026-06-09, origin: reviewed }
+aliases: [LLM Observability, Datadog Agent Observability]
+url: https://www.datadoghq.com/product/llm-observability/
+description:
+  value: Observability for LLM and agent applications that traces prompts, responses, and tool calls, with evaluations that flag prompt injection, unsafe output, and exposure of sensitive data.
+  source: { url: https://docs.datadoghq.com/llm_observability/, tier: official, title: Datadog LLM Observability documentation, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://docs.datadoghq.com/llm_observability/, tier: official, title: Datadog LLM Observability documentation, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://docs.datadoghq.com/llm_observability/, tier: official, title: Datadog LLM Observability documentation, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Datadog LLM Observability documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [detect, protect]
+    maturity: primary
+    note: Evaluations inspect prompts and responses to flag prompt injection, unsafe output, and PII exposure, and a Sensitive Data Scanner integration redacts sensitive data.
+    source: { url: https://docs.datadoghq.com/llm_observability/evaluations/, tier: official, title: Datadog LLM Observability evaluations, accessed: 2026-06-09, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: secondary
+    note: Auto-instruments frameworks such as LangChain to trace agent workflows across model calls, retrieval, and tool calls, surfacing failures and anomalies.
+    source: { url: https://docs.datadoghq.com/llm_observability/, tier: official, title: Datadog LLM Observability documentation, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: detect }

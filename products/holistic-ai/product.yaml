@@ -1,0 +1,27 @@
+schema_version: 2
+name: Holistic AI
+vendor:
+  value: Holistic AI
+  source: { url: https://www.holisticai.com/ai-governance-platform, tier: official, title: Holistic AI Governance Platform, accessed: 2026-06-09, origin: reviewed }
+aliases: [Holistic AI Governance Platform]
+url: https://www.holisticai.com/ai-governance-platform
+description:
+  value: AI governance platform that discovers AI systems including shadow AI, audits models and LLMs for bias, robustness, and data leakage, and enforces regulatory compliance across the AI lifecycle.
+  source: { url: https://www.holisticai.com/ai-governance-platform, tier: official, title: Holistic AI Governance Platform, accessed: 2026-06-09, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.holisticai.com/ai-governance-platform, tier: official, title: Holistic AI Governance Platform, accessed: 2026-06-09, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.holisticai.com/ai-governance-platform, tier: official, title: Holistic AI Governance Platform, accessed: 2026-06-09, origin: reviewed }
+last_reviewed: 2026-06-09
+changelog:
+  - date: 2026-06-09
+    summary: Enriched from the Holistic AI documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, detect, govern]
+    maturity: primary
+    note: Discovers and inventories AI systems including shadow AI, audits models and LLMs for bias, hallucination, data leakage, toxicity, and robustness, and enforces continuous compliance with audit trails.
+    source: { url: https://www.holisticai.com/ai-governance-platform, tier: official, title: Holistic AI Governance Platform, accessed: 2026-06-09, origin: reviewed }
+primary_cell: { asset: ai-model, function: govern }

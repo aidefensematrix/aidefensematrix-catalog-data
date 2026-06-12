@@ -1,0 +1,45 @@
+name: Removal request or dispute
+description: Dispute an entry or ask for a status change or removal
+title: "Dispute: <product>"
+labels: [removal-or-dispute]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to dispute how an entry describes a product, to report a lifecycle change (acquired, renamed, merged, discontinued), or to request removal. GOVERNANCE.md explains the lifecycle conventions and when an entry is removed. For confidential or legal matters, contact the operators at zeltser.com for Zeltser Security Corp or through the Cyber Defense Matrix page on LinkedIn for Cyber Defense Matrix LLC, instead of opening a public issue.
+  - type: input
+    id: product
+    attributes:
+      label: Product
+      description: The entry's directory name under `products/`, or the product name.
+    validations:
+      required: true
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to this product
+      options:
+        - Vendor representative
+        - Competitor
+        - User or customer
+        - No relationship
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Outcome you are asking for
+      options:
+        - Correct the entry
+        - Record a lifecycle change (acquired, renamed, merged, discontinued)
+        - Remove the entry
+        - Publish a vendor response
+    validations:
+      required: true
+  - type: textarea
+    id: grounds
+    attributes:
+      label: Grounds
+      description: What is wrong or what changed, with a URL to a source that supports it.
+    validations:
+      required: true

@@ -1,0 +1,41 @@
+schema_version: 2
+name: Highflame
+aliases: [Javelin]
+vendor:
+  value: Highflame
+  source: { url: https://highflame.com/highflame-platform, tier: official, title: Highflame platform page, accessed: 2026-06-10, origin: reviewed }
+url: https://highflame.com/
+renamed_from:
+  name: Javelin
+  date: 2026-02-13
+  source: { url: https://github.com/BerriAI/litellm/pull/21132, tier: other, title: LiteLLM rebranding PR for Highflame Guardrails formerly Javelin, accessed: 2026-06-10, origin: reviewed }
+description:
+  value: "Highflame: Secures AI agents with centralized gateway policy controls, multi-turn runtime guardrails, and MCP server scanning via its Ramparts scanner."
+  source: { url: https://highflame.com/, tier: official, title: Highflame homepage, accessed: 2026-06-10, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://highflame.com/, tier: official, title: Highflame homepage, accessed: 2026-06-10, origin: reviewed }
+status:
+  value: active
+  source: { url: https://highflame.com/, tier: official, title: Highflame homepage, accessed: 2026-06-10, origin: reviewed }
+last_reviewed: 2026-06-10
+changelog:
+  - date: 2026-06-10
+    summary: Added to the catalog from the Highflame product pages; the vendor rebranded from Javelin in early 2026.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [protect, govern]
+    maturity: primary
+    note: Acts as a centralized control layer across LLM, MCP, A2A, and A2P interactions, enforcing Cedar-based access, safety, and compliance policies inline and generating audit-ready reports for governance.
+    source: { url: https://highflame.com/highflame-platform, tier: official, title: Highflame platform page, accessed: 2026-06-10, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Multi-turn guardrail models inspect prompts and responses in conversation context, detecting and blocking malicious inputs such as prompt injection across the conversation lifecycle.
+    source: { url: https://highflame.com/javelin-security, tier: official, title: Highflame guardrail security models page, accessed: 2026-06-10, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Centralizes how agents reach MCP servers and tools with policy enforcement, runtime inspection, and visibility into agent activity; the open-source Ramparts scanner finds vulnerabilities in MCP servers and agent skills.
+    source: { url: https://highflame.com/mcpsecurity, tier: official, title: Highflame MCP security page, accessed: 2026-06-10, origin: reviewed }
+primary_cell: { asset: ai-gateways-routers, function: protect }

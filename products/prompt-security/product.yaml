@@ -1,0 +1,45 @@
+schema_version: 2
+name: Prompt Security
+vendor:
+  value: Prompt Security
+  source: { url: https://prompt.security, tier: official, title: Prompt Security platform overview, accessed: 2026-06-07, origin: reviewed }
+url: https://prompt.security
+description:
+  value: Runtime GenAI security that screens employee AI use, homegrown LLM apps, and agents for prompt injection, data leakage, and shadow AI, with inline blocking and redaction.
+  source: { url: https://prompt.security, tier: official, title: Prompt Security platform overview, accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://prompt.security, tier: official, title: "Prompt Security: Cloud or self-hosted deployment", accessed: 2026-06-07, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://www.tipranks.com/news/company-announcements/sentinelone-completes-acquisition-of-prompt-security, tier: press, title: SentinelOne completes acquisition of Prompt Security, accessed: 2026-06-07, origin: reviewed }
+acquisition:
+  acquirer: SentinelOne
+  announced: 2025-08-05
+  post_acquisition_status: folded
+  source: { url: https://www.sentinelone.com/press/sentinelone-to-acquire-prompt-security-to-advance-genai-security/, tier: official, title: SentinelOne to acquire Prompt Security (announcement), accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-07
+changelog:
+  - date: 2026-06-07
+    summary: Enriched from primary sources and recorded the SentinelOne acquisition.
+  - date: 2026-06-09
+    summary: Removed the acquirer_slug cross-reference, since SentinelOne has no catalog entry of its own.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Inline screening of prompts and responses for prompt injection, jailbreaks, and data leakage, with blocking and redaction.
+    source: { url: https://prompt.security, tier: official, title: Prompt Security runtime AI security, accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: primary
+    note: Protection for homegrown LLM applications via API, SDKs, and a centralized gateway.
+    source: { url: https://prompt.security, tier: official, title: "Prompt Security: Homegrown AI apps", accessed: 2026-06-07, origin: reviewed }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: Agent runtime controls and MCP gateway security over what agents can do.
+    source: { url: https://prompt.security, tier: official, title: "Prompt Security: AI agent security", accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: runtime-ai-data, function: protect }

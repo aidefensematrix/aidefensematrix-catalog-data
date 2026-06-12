@@ -1,0 +1,35 @@
+name: Vendor response
+description: Submit a vendor's short response for its product entry
+title: "Vendor response: <product>"
+labels: [vendor-response]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A vendor may submit a short response, which the product page shows verbatim. The maintainer publishes a response only after confirming it comes from the vendor, so submit from a GitHub account publicly associated with the vendor or note below how the maintainer can confirm through your corporate email domain. GOVERNANCE.md describes the convention.
+  - type: input
+    id: product
+    attributes:
+      label: Product
+      description: The entry's directory name under `products/`, or the product name.
+    validations:
+      required: true
+  - type: textarea
+    id: response
+    attributes:
+      label: Response text
+      description: Shown verbatim on the product page. Between 10 and 1500 characters, plain text, no angle brackets.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Supporting URL (optional)
+      description: A page the response refers to, if any.
+  - type: input
+    id: verification
+    attributes:
+      label: How to verify you represent the vendor
+      description: For example, your role and corporate email domain, or a public team page that lists you.
+    validations:
+      required: true

@@ -1,0 +1,33 @@
+schema_version: 2
+name: Astrix
+vendor:
+  value: Astrix Security
+  source: { url: https://astrix.security/product/, tier: official, title: Astrix product overview, accessed: 2026-06-07, origin: reviewed }
+url: https://astrix.security
+description:
+  value: "Identity security platform that discovers, secures, and governs AI agents and non-human identities, with posture management and non-human ITDR."
+  source: { url: https://astrix.security/product/, tier: official, title: Astrix product overview, accessed: 2026-06-07, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://astrix.security/product/ai-agent-discovery/, tier: official, title: Astrix agentless onboarding, accessed: 2026-06-07, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.inforisktoday.com/astrixs-45m-series-b-targets-non-human-identity-security-a-27006, tier: press, title: Astrix Series B funding, accessed: 2026-06-07, origin: reviewed }
+last_reviewed: 2026-06-07
+changelog:
+  - date: 2026-06-07
+    summary: Verified details from primary sources and recorded the Series B funding.
+  - date: 2026-06-12
+    summary: Refined matrix coverage.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect, respond]
+    maturity: primary
+    note: "Agentless discovery and inventory of agents and non-human identities, posture and lifecycle management, and non-human ITDR for detection and response."
+    source: { url: https://astrix.security/product/, tier: official, title: Astrix product overview, accessed: 2026-06-07, origin: reviewed }
+  - asset: runtime-ai-data
+    functions: [identify, detect]
+    maturity: secondary
+    note: "Discovers and monitors secrets and credentials inside and outside vaults that agents and non-human identities use at runtime."
+    source: { url: https://astrix.security/use-cases/non-human-itdr/, tier: official, title: Astrix non-human ITDR, accessed: 2026-06-07, origin: reviewed }
+primary_cell: { asset: ai-agent-identities, function: identify }
