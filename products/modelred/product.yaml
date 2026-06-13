@@ -1,0 +1,27 @@
+schema_version: 2
+name: ModelRed
+aliases: []
+url: https://modelred.ai/
+vendor:
+  value: ModelRed
+  source: { url: https://modelred.ai/, tier: official, title: ModelRed AI Security and Red Teaming Platform, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "ModelRed: Red-teaming platform for LLMs, agents, and RAG pipelines that catches jailbreaks, prompt injection, data leaks, and unsafe behavior before deployment."
+  source: { url: https://modelred.ai/, tier: official, title: ModelRed AI Security and Red Teaming Platform, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://modelred.ai/, tier: official, title: ModelRed AI Security and Red Teaming Platform, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://modelred.ai/, tier: official, title: ModelRed AI Security and Red Teaming Platform, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the ModelRed documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [detect]
+    maturity: primary
+    note: Continuous adversarial testing of LLMs, agents, and RAG pipelines to catch jailbreaks, prompt injection, data leaks, and unsafe behavior before deployment.
+    source: { url: https://modelred.ai/, tier: official, title: ModelRed AI Security and Red Teaming Platform, accessed: 2026-06-13, origin: reviewed, quote: "Catch jailbreaks, prompt injections, data leaks, and unsafe behavior before your users do." }
+primary_cell: { asset: ai-model, function: detect }
