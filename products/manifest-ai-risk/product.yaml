@@ -1,0 +1,32 @@
+schema_version: 2
+name: Manifest AI Risk
+aliases: [AIBOM, Manifest Cyber, Manifest]
+url: https://www.manifestcyber.com/ai-risk
+vendor:
+  value: Manifest
+  source: { url: https://www.manifestcyber.com/aibom, tier: official, title: Manifest AI Bill of Materials, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Manifest AI Risk: AI bill-of-materials platform that discovers models and datasets, tracks provenance and vulnerabilities, and turns AIBOMs into governance and compliance evidence."
+  source: { url: https://www.manifestcyber.com/aibom, tier: official, title: Manifest AI Bill of Materials, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.manifestcyber.com/aibom, tier: official, title: Manifest AI Bill of Materials, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.manifestcyber.com/aibom, tier: official, title: Manifest AI Bill of Materials, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Manifest AI Bill of Materials documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, govern]
+    maturity: primary
+    note: Discovers and inventories models with provenance and vulnerability tracking; the AIBOM serves as the governance artifact and compliance evidence.
+    source: { url: https://www.manifestcyber.com/aibom, tier: official, title: Manifest AI Bill of Materials, accessed: 2026-06-13, origin: reviewed, quote: "We help organizations make AIBOMs actionable through a continuous, integrated approach. This practical path turns AIBOMs from a static inventory into a dynamic governance capability." }
+  - asset: training-data
+    functions: [identify, govern]
+    maturity: secondary
+    note: The AIBOM extends coverage to datasets, documenting their provenance alongside models for compliance.
+    source: { url: https://www.manifestcyber.com/aibom, tier: official, title: Manifest AI Bill of Materials, accessed: 2026-06-13, origin: reviewed, quote: "AIBOMs go further by including datasets and models, the core of AI systems." }
+primary_cell: { asset: ai-model, function: govern }
