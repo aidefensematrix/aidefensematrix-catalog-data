@@ -112,7 +112,13 @@ function checkSource(slug, label, source) {
   if (!source.accessed) err(slug, `${label} source is missing an accessed date`);
   else checkDate(slug, `${label} source.accessed`, source.accessed);
   if (source.title !== undefined) checkLen(slug, `${label} source.title`, source.title, 2, 160);
-  const extraKeys = Object.keys(source).filter((k) => !['url', 'tier', 'title', 'accessed', 'origin'].includes(k));
+  // Optional verbatim supporting line (claim-to-source audit trail). Length parity
+  // with the site schema's freeText(10, 300); angle-bracket gate like other prose.
+  if (source.quote !== undefined) {
+    checkLen(slug, `${label} source.quote`, source.quote, 10, 300);
+    checkNoAngleBrackets(slug, `${label} source.quote`, source.quote);
+  }
+  const extraKeys = Object.keys(source).filter((k) => !['url', 'tier', 'title', 'accessed', 'origin', 'quote'].includes(k));
   if (extraKeys.length)
     err(slug, `${label} source has unexpected keys (${extraKeys.join(', ')}) — likely an unquoted comma in the title; wrap the value in quotes`);
   // Provenance lock. Origin is mandatory and explicit so the review state of every
@@ -191,6 +197,10 @@ for (const slug of productDirs) {
   // each listed attestation also runs the angle-bracket gate.
   if (p.compliance_attestations) {
     checkSourced(slug, 'compliance_attestations', p.compliance_attestations);
+    // Warn-only (never blocks a PR): a quote is the claim-to-source anchor for the
+    // attestation list — the line on the cited page that names these certifications.
+    if (p.compliance_attestations.source && p.compliance_attestations.source.quote === undefined)
+      warn(slug, 'compliance_attestations source has no quote — add the line on the cited page that lists these attestations');
     checkNoAngleBrackets(slug, 'compliance_attestations source.title', p.compliance_attestations.source?.title);
     if (Array.isArray(p.compliance_attestations.value))
       p.compliance_attestations.value.forEach((a, i) => {
@@ -284,6 +294,11 @@ for (const slug of productDirs) {
   if (Array.isArray(p.matrix_coverage)) {
     p.matrix_coverage.forEach((c, i) => {
       checkSource(slug, `matrix_coverage[${i}]`, c.source);
+      // Warn-only (never blocks a PR): the quote anchors WHY this cell is claimed —
+      // the sentence on the page that shows the capability. It is the burden-of-
+      // evidence a reviewer uses to adjudicate the asset/function mapping.
+      if (c.source && c.source.quote === undefined)
+        warn(slug, `matrix_coverage[${i}] source has no quote — add the line on the cited page that supports this asset/function mapping`);
       checkNoAngleBrackets(slug, `matrix_coverage[${i}].note`, c.note);
       checkNoAngleBrackets(slug, `matrix_coverage[${i}] source.title`, c.source?.title);
       if (hasSuperlative(c.note)) err(slug, `matrix_coverage[${i}].note contains a marketing superlative`);

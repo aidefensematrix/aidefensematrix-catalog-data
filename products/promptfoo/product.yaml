@@ -27,10 +27,10 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: Automated red teaming simulates real users and generates application-specific attacks, including direct and indirect prompt injections, jailbreaks tailored to deployed guardrails, data and PII leaks, and toxic content generation.
-    source: { url: https://www.promptfoo.dev/, tier: official, title: Promptfoo, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.promptfoo.dev/, tier: official, title: Promptfoo, accessed: 2026-06-09, origin: reviewed, quote: "Promptfoo simulates real users to uncover application-specific vulnerabilities" }
   - asset: ai-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: Red teaming targets agents and RAG applications and surfaces insecure tool use and business rule violations. Declarative evaluations benchmark prompts, models, and applications during development.
-    source: { url: https://www.promptfoo.dev/, tier: official, title: Promptfoo, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.promptfoo.dev/, tier: official, title: Promptfoo, accessed: 2026-06-09, origin: reviewed, quote: "Automated red teaming for agents & RAGs" }
 primary_cell: { asset: ai-model, function: detect }
