@@ -1,0 +1,32 @@
+schema_version: 2
+name: Lineaje UnifAI
+aliases: [UnifAI]
+url: https://www.lineaje.com/unifai
+vendor:
+  value: Lineaje
+  source: { url: https://www.lineaje.com/unifai, tier: official, title: Lineaje UnifAI, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Lineaje UnifAI: AI policy orchestrator that discovers AI inventory, derives security and compliance policies, and enforces them with runtime guardrails for agentic AI applications."
+  source: { url: https://www.lineaje.com/unifai, tier: official, title: Lineaje UnifAI, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.lineaje.com/unifai, tier: official, title: Lineaje UnifAI, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.lineaje.com/unifai, tier: official, title: Lineaje UnifAI, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Lineaje UnifAI documentation; the product was introduced in 2026.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, govern, protect]
+    maturity: primary
+    note: Discovers the AI inventory of agentic applications, derives security and compliance policies, and enforces them with built-in runtime guardrails.
+    source: { url: https://www.lineaje.com/unifai, tier: official, title: Lineaje UnifAI, accessed: 2026-06-13, origin: reviewed, quote: "provides security teams, engineering management, and GRC team a centralized governance platform that ensures Agentic AI applications consistently and continuously meet evolving corporate and compliance standards" }
+  - asset: ai-model
+    functions: [identify, govern]
+    maturity: secondary
+    note: Continuously discovers AI models in the inventory and applies the derived security and governance policies.
+    source: { url: https://www.lineaje.com/unifai, tier: official, title: Lineaje UnifAI, accessed: 2026-06-13, origin: reviewed, quote: "Autonomously Derives AI Policies for Security, Development and GRC" }
+primary_cell: { asset: ai-orchestration-tools, function: govern }

@@ -1,0 +1,32 @@
+schema_version: 2
+name: Cloudsmith ML Model Registry
+aliases: [Cloudsmith]
+url: https://cloudsmith.com/product/ml-model-registry
+vendor:
+  value: Cloudsmith
+  source: { url: https://www.dbta.com/Editorial/News-Flashes/Cloudsmith-Releases-ML-Model-Registry-to-Support-Enterprise-Governance-and-Security-for-Models-and-Datasets-171320.aspx, tier: press, title: Cloudsmith releases ML Model Registry, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Cloudsmith ML Model Registry: Registry for ML models and datasets that proxies Hugging Face artifacts and applies enterprise policy to quarantine, block, or approve them before use."
+  source: { url: https://www.dbta.com/Editorial/News-Flashes/Cloudsmith-Releases-ML-Model-Registry-to-Support-Enterprise-Governance-and-Security-for-Models-and-Datasets-171320.aspx, tier: press, title: Cloudsmith releases ML Model Registry, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.dbta.com/Editorial/News-Flashes/Cloudsmith-Releases-ML-Model-Registry-to-Support-Enterprise-Governance-and-Security-for-Models-and-Datasets-171320.aspx, tier: press, title: Cloudsmith releases ML Model Registry, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.dbta.com/Editorial/News-Flashes/Cloudsmith-Releases-ML-Model-Registry-to-Support-Enterprise-Governance-and-Security-for-Models-and-Datasets-171320.aspx, tier: press, title: Cloudsmith releases ML Model Registry, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the launch coverage; the ML Model Registry is in early access.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, protect, govern]
+    maturity: primary
+    note: Registry of record for ML models that proxies Hugging Face artifacts, surfaces security and compliance signals, and enforces policy to quarantine, block, or approve them before use.
+    source: { url: https://www.dbta.com/Editorial/News-Flashes/Cloudsmith-Releases-ML-Model-Registry-to-Support-Enterprise-Governance-and-Security-for-Models-and-Datasets-171320.aspx, tier: press, title: Cloudsmith releases ML Model Registry, accessed: 2026-06-13, origin: reviewed, quote: "security and compliance data is made available to Enterprise Policy Management (EPM), enabling organizations to apply consistent policies before artifacts are used in development or production" }
+  - asset: training-data
+    functions: [identify, govern]
+    maturity: secondary
+    note: Extends the same registry, provenance, and policy controls to datasets alongside models.
+    source: { url: https://www.dbta.com/Editorial/News-Flashes/Cloudsmith-Releases-ML-Model-Registry-to-Support-Enterprise-Governance-and-Security-for-Models-and-Datasets-171320.aspx, tier: press, title: Cloudsmith releases ML Model Registry, accessed: 2026-06-13, origin: reviewed, quote: "extending enterprise-grade governance and security to the machine learning models and datasets" }
+primary_cell: { asset: ai-model, function: govern }
