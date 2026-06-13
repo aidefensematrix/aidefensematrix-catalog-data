@@ -1,0 +1,27 @@
+schema_version: 2
+name: JFrog Xray
+aliases: []
+url: https://docs.jfrog.com/security/docs/detect-malicious-ai-models
+vendor:
+  value: JFrog
+  source: { url: https://docs.jfrog.com/security/docs/detect-malicious-ai-models, tier: official, title: JFrog Xray Detect Malicious AI Models, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "JFrog Xray: Scans machine-learning models uploaded to public repositories such as Hugging Face for malicious code and security risks before they enter the software supply chain."
+  source: { url: https://docs.jfrog.com/security/docs/detect-malicious-ai-models, tier: official, title: JFrog Xray Detect Malicious AI Models, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://docs.jfrog.com/security/docs/detect-malicious-ai-models, tier: official, title: JFrog Xray Detect Malicious AI Models, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://docs.jfrog.com/security/docs/detect-malicious-ai-models, tier: official, title: JFrog Xray Detect Malicious AI Models, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the JFrog Xray malicious-AI-model detection documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [detect, identify]
+    maturity: primary
+    note: Xray automatically scans ML models from public repositories such as Hugging Face for malicious code and security risks. Flagged models can be managed in the JFrog AI Catalog registry.
+    source: { url: https://docs.jfrog.com/security/docs/detect-malicious-ai-models, tier: official, title: JFrog Xray Detect Malicious AI Models, accessed: 2026-06-13, origin: reviewed, quote: "JFrog's Xray detects malicious machine learning models based on artifact scanning." }
+primary_cell: { asset: ai-model, function: detect }

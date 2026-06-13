@@ -1,0 +1,27 @@
+schema_version: 2
+name: SailPoint Agent Identity Security
+aliases: []
+url: https://www.sailpoint.com/products/agent-identity-security
+vendor:
+  value: SailPoint
+  source: { url: https://www.sailpoint.com/products/agent-identity-security, tier: official, title: SailPoint Agent Identity Security, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "SailPoint Agent Identity Security: Governs AI agents as first-class identities, aggregating them across clouds and agent platforms, aligning ownership with role changes, and reviewing their access."
+  source: { url: https://www.sailpoint.com/products/agent-identity-security, tier: official, title: SailPoint Agent Identity Security, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.sailpoint.com/products/agent-identity-security, tier: official, title: SailPoint Agent Identity Security, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.sailpoint.com/products/agent-identity-security, tier: official, title: SailPoint Agent Identity Security, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the SailPoint Agent Identity Security documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, govern]
+    maturity: primary
+    note: Aggregates AI agents across clouds and agent platforms as governed identities, aligns ownership with role changes, and reviews and revokes their access.
+    source: { url: https://www.sailpoint.com/products/agent-identity-security, tier: official, title: SailPoint Agent Identity Security, accessed: 2026-06-13, origin: reviewed, quote: "Agent Identity Security brings AI agents, their users, and the tools they access together in one governed view." }
+primary_cell: { asset: ai-agent-identities, function: govern }
