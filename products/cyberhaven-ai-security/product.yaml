@@ -1,0 +1,32 @@
+schema_version: 2
+name: Cyberhaven AI Security
+aliases: [Agentic AI Security]
+url: https://www.cyberhaven.com/product/ai-security
+vendor:
+  value: Cyberhaven
+  source: { url: https://www.cyberhaven.com/product/ai-security, tier: official, title: Cyberhaven AI Security, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Cyberhaven AI Security: Endpoint agent that inventories AI tools and agents, monitors their execution, and uses data lineage to block, warn, or redact sensitive data across prompts and responses."
+  source: { url: https://www.cyberhaven.com/product/ai-security, tier: official, title: Cyberhaven AI Security, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.cyberhaven.com/product/ai-security, tier: official, title: Cyberhaven AI Security, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.cyberhaven.com/product/ai-security, tier: official, title: Cyberhaven AI Security, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Cyberhaven AI Security documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, detect]
+    maturity: primary
+    note: Endpoint agent continuously inventories AI tools, coding assistants, agent frameworks, and MCP servers, and reconstructs the execution lifecycle of each agent interaction.
+    source: { url: https://www.cyberhaven.com/product/ai-security, tier: official, title: Cyberhaven AI Security, accessed: 2026-06-13, origin: reviewed, quote: "Cyberhaven uses an endpoint agent to continuously inventory AI tools as they appear across the organization, including mainstream SaaS generative AI applications, coding assistants running in IDEs and CLIs, open-source agent frameworks, and Model Context Protocol (MCP) servers." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Uses data lineage to block, warn, or redact sensitive data in real time across prompts, responses, and downstream flows, based on data context and tool risk.
+    source: { url: https://www.cyberhaven.com/product/ai-security, tier: official, title: Cyberhaven AI Security, accessed: 2026-06-13, origin: reviewed, quote: "Cyberhaven can block, warn, or redact in real time based on data context and the risk score of the tool involved. Enforcement operates across the full agentic workflow, including prompts, responses, and downstream data flows." }
+primary_cell: { asset: ai-agent-identities, function: identify }

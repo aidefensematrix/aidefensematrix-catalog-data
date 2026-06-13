@@ -1,0 +1,27 @@
+schema_version: 2
+name: Trend Vision One AI Application Security
+aliases: [AI Guard, AI Scanner]
+url: https://www.trendmicro.com/en/business/ai/security-ai-stacks/ai-applications.html
+vendor:
+  value: Trend Micro
+  source: { url: https://www.trendmicro.com/en/business/ai/security-ai-stacks/ai-applications.html, tier: official, title: Trend Vision One AI Application Security, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Trend Vision One AI Application Security: Scans LLM applications for vulnerabilities before deployment and guards them at runtime, blocking prompt injection, data leakage, and unsafe output."
+  source: { url: https://www.trendmicro.com/en/business/ai/security-ai-stacks/ai-applications.html, tier: official, title: Trend Vision One AI Application Security, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.trendmicro.com/en/business/ai/security-ai-stacks/ai-applications.html, tier: official, title: Trend Vision One AI Application Security, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.trendmicro.com/en/business/ai/security-ai-stacks/ai-applications.html, tier: official, title: Trend Vision One AI Application Security, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Trend Vision One AI Application Security documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: AI Scanner finds vulnerabilities in LLM applications before deployment, and AI Guard provides real-time runtime threat defense in a continuous scan, protect, and validate loop.
+    source: { url: https://www.trendmicro.com/en/business/ai/security-ai-stacks/ai-applications.html, tier: official, title: Trend Vision One AI Application Security, accessed: 2026-06-13, origin: reviewed, quote: "The solution integrates an AI Scanner for proactive vulnerability detection and an AI Guard for real-time threat defense in a continuous Security Loop" }
+primary_cell: { asset: ai-orchestration-tools, function: protect }

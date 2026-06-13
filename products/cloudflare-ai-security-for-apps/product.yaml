@@ -1,0 +1,27 @@
+schema_version: 2
+name: Cloudflare AI Security for Apps
+aliases: [Firewall for AI]
+url: https://www.cloudflare.com/application-services/products/ai-security-for-apps/
+vendor:
+  value: Cloudflare
+  source: { url: https://www.cloudflare.com/application-services/products/ai-security-for-apps/, tier: official, title: Cloudflare AI Security for Apps, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Cloudflare AI Security for Apps: WAF protection for LLM-powered apps that discovers AI endpoints and detects and mitigates prompt injection, data exposure, and unbounded consumption."
+  source: { url: https://www.cloudflare.com/application-services/products/ai-security-for-apps/, tier: official, title: Cloudflare AI Security for Apps, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.cloudflare.com/application-services/products/ai-security-for-apps/, tier: official, title: Cloudflare AI Security for Apps, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.cloudflare.com/application-services/products/ai-security-for-apps/, tier: official, title: Cloudflare AI Security for Apps, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Cloudflare AI Security for Apps documentation; the product was formerly named Firewall for AI.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Built into the WAF in front of LLM-powered apps, discovering AI endpoints and detecting and mitigating prompt injection, sensitive-data exposure, and unbounded consumption. Threat detection is an Enterprise add-on.
+    source: { url: https://www.cloudflare.com/application-services/products/ai-security-for-apps/, tier: official, title: Cloudflare AI Security for Apps, accessed: 2026-06-13, origin: reviewed, quote: "AI Security for Apps provides advanced detection and mitigation of threats such as prompt injections, PII exposure, and toxic topics." }
+primary_cell: { asset: ai-gateways-routers, function: protect }
