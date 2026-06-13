@@ -20,7 +20,7 @@ changelog:
     summary: Added to the catalog from the Tenable documentation.
 matrix_coverage:
   - asset: ai-workload-platforms
-    functions: [identify, govern]
+    functions: [identify]
     maturity: primary
     note: Discovers how employees and agents interact with AI platforms such as ChatGPT Enterprise and Microsoft Copilot, finds unsafe platform settings and third-party integrations, and enforces AI acceptable use policies.
     source: { url: https://www.tenable.com/products/ai-exposure, tier: official, title: Tenable AI Exposure product page, accessed: 2026-06-10, origin: reviewed }

@@ -19,7 +19,7 @@ changelog:
     summary: Added to the catalog from the Backslash Security documentation.
 matrix_coverage:
   - asset: ai-generated-code
-    functions: [protect, detect, govern]
+    functions: [protect, detect]
     maturity: primary
     note: Centralized guardrails on developer workstations restrict unapproved models, private accounts, and unsafe configurations for AI coding agents, with real-time detection of prompt injection, data exfiltration, and anomalous agent behavior in vibe coding workflows.
     source: { url: https://www.backslash.security/agentic-endpoint-security, tier: official, title: Backslash agentic endpoint security page, accessed: 2026-06-10, origin: reviewed }

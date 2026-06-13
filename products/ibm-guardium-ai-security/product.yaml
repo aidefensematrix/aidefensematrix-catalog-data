@@ -19,7 +19,7 @@ changelog:
     summary: Added to the catalog from the IBM documentation.
 matrix_coverage:
   - asset: ai-model
-    functions: [identify, detect, govern]
+    functions: [identify, detect]
     maturity: primary
     note: Discovers AI models and shadow AI, including agents, across cloud environments, code repositories, and embedded systems. AI SPM detects vulnerabilities and misconfigurations with automated penetration tests, and maps compliance across frameworks such as the EU AI Act and ISO 42001.
     source: { url: https://www.ibm.com/new/announcements/unlock-trustworthy-ai-with-integrated-governance-and-security, tier: official, title: IBM announcement on integrated AI governance and security, accessed: 2026-06-10, origin: reviewed }

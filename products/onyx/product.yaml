@@ -20,7 +20,7 @@ changelog:
     summary: Added to the catalog from the Onyx Security documentation.
 matrix_coverage:
   - asset: ai-orchestration-tools
-    functions: [govern, identify, detect, respond]
+    functions: [identify, detect, respond]
     maturity: primary
     note: Discovers sanctioned and shadow AI agents across the enterprise, monitors agent activity in real time with anomaly detection and session replay, applies natural language policy controls aligned to frameworks such as the EU AI Act, and remediates issues through the Guardian Agent supervisory AI.
     source: { url: https://onyx.security/platform, tier: official, title: Onyx platform page, accessed: 2026-06-10, origin: reviewed }

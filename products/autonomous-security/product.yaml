@@ -24,7 +24,7 @@ changelog:
     summary: Added to the catalog from the Autonomous Security documentation; the vendor rebranded from MCPTotal in May 2026.
 matrix_coverage:
   - asset: ai-orchestration-tools
-    functions: [govern, identify, protect, detect]
+    functions: [identify, protect, detect]
     maturity: primary
     note: Discovers installed agents and MCP servers across workstations, hosts MCP servers in sandboxed cloud workspaces backed by a vetted pre-scanned catalog, intercepts MCP traffic to block prompt injection and rogue MCP servers, and enforces centralized runtime policies with audit trails.
     source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-06-10, origin: reviewed }

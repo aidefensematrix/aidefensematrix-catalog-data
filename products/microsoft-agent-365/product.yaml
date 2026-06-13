@@ -22,9 +22,9 @@ changelog:
     summary: Refined primary function.
 matrix_coverage:
   - asset: ai-agent-identities
-    functions: [identify, govern, protect]
+    functions: [identify, protect]
     maturity: primary
-    note: Visibility into all agent identities, including shadow agents; Entra Agent ID extends conditional access and identity protection from users to agents; governance ensures agents have responsible sponsors and that access does not persist longer than needed.
+    note: Visibility into all agent identities, including shadow agents; Entra Agent ID extends conditional access and identity protection from users to agents, ensuring agents have responsible sponsors and that access does not persist longer than needed.
     source: { url: https://learn.microsoft.com/en-us/security/security-for-ai/agent-365-security, tier: official, title: Microsoft Learn on securing AI agents with Agent 365, accessed: 2026-06-10, origin: reviewed }
   - asset: ai-orchestration-tools
     functions: [detect, protect]

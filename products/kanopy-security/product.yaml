@@ -34,8 +34,8 @@ matrix_coverage:
     note: Adaptive guardrails monitor agent actions at runtime, detect prompt injection and manipulation attempts, and stop sensitive data from leaving approved paths in real time, with coverage for Microsoft Copilot Studio environments.
     source: { url: https://kanopysecurity.com/ai-governance/adaptive-agents-security/, tier: official, title: Kanopy adaptive agent security page, accessed: 2026-06-10, origin: reviewed }
   - asset: ai-orchestration-tools
-    functions: [identify, govern]
+    functions: [identify]
     maturity: secondary
-    note: Surfaces shadow copilots, unmanaged integrations, and ungoverned agent experiments inside agent-building platforms such as Copilot Studio, and applies governance policies and audit trails across the agent lifecycle.
+    note: Surfaces shadow copilots, unmanaged integrations, and ungoverned agent experiments inside agent-building platforms such as Copilot Studio, and applies access and security policies with audit trails across the agent lifecycle.
     source: { url: https://kanopysecurity.com/solutions/copilot-studio-security/, tier: official, title: Kanopy Copilot Studio security page, accessed: 2026-06-10, origin: reviewed }
 primary_cell: { asset: ai-agent-identities, function: identify }

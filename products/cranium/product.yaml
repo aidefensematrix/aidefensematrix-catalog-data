@@ -19,7 +19,7 @@ changelog:
     summary: Added to the catalog from the Cranium documentation.
 matrix_coverage:
   - asset: ai-model
-    functions: [identify, govern, detect]
+    functions: [identify, detect]
     maturity: primary
     note: Sensors discover internal and third-party AI systems; the platform auto-generates AI BOMs, runs agent-based red teaming via Cranium Arena, and maps systems to the EU AI Act, NIST AI RMF, and ISO frameworks.
     source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-06-10, origin: reviewed }
