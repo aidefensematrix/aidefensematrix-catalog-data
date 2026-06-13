@@ -1,0 +1,27 @@
+schema_version: 2
+name: Sonatype Repository Firewall
+aliases: []
+url: https://www.sonatype.com/products/sonatype-repository-firewall
+vendor:
+  value: Sonatype
+  source: { url: https://www.sonatype.com/products/language-support/hugging-face, tier: official, title: Sonatype Hugging Face model support, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Sonatype Repository Firewall: Identifies and blocks malicious open-source components before they enter development, with Hugging Face support extending that protection to AI/ML models."
+  source: { url: https://www.sonatype.com/products/language-support/hugging-face, tier: official, title: Sonatype Hugging Face model support, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.sonatype.com/products/language-support/hugging-face, tier: official, title: Sonatype Hugging Face model support, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.sonatype.com/products/language-support/hugging-face, tier: official, title: Sonatype Hugging Face model support, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Sonatype Hugging Face model support documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, protect]
+    maturity: primary
+    note: Hugging Face support brings Repository Firewall to AI/ML models, identifying and blocking malicious models before they enter development environments.
+    source: { url: https://www.sonatype.com/products/language-support/hugging-face, tier: official, title: Sonatype Hugging Face model support, accessed: 2026-06-13, origin: reviewed, quote: "Identify and block malicious AI models from entering development with Sonatype Repository Firewall." }
+primary_cell: { asset: ai-model, function: protect }

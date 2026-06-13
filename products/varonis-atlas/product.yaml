@@ -1,0 +1,37 @@
+schema_version: 2
+name: Varonis Atlas
+aliases: [Varonis AI Security]
+url: https://www.varonis.com/platform/ai-security
+vendor:
+  value: Varonis
+  source: { url: https://www.varonis.com/platform/ai-security, tier: official, title: Varonis AI Security (Atlas), accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Varonis Atlas: AI security platform that inventories AI and shadow AI, tests AI systems for prompt injection and other vulnerabilities, and enforces runtime guardrails via an in-path AI gateway."
+  source: { url: https://www.varonis.com/platform/ai-security, tier: official, title: Varonis AI Security (Atlas), accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.varonis.com/platform/ai-security, tier: official, title: Varonis AI Security (Atlas), accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.varonis.com/platform/ai-security, tier: official, title: Varonis AI Security (Atlas), accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Varonis AI Security documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Inventories AI systems including shadow AI, monitors AI usage, and enforces runtime guardrails via an in-path AI gateway across chatbots, custom LLMs, MCP, and agentic frameworks.
+    source: { url: https://www.varonis.com/platform/ai-security, tier: official, title: Varonis AI Security (Atlas), accessed: 2026-06-13, origin: reviewed, quote: "Varonis Atlas is an end-to-end AI security platform that helps organizations discover AI risk, remediate vulnerabilities, enforce runtime guardrails, and govern AI usage across the entire AI lifecycle." }
+  - asset: ai-model
+    functions: [identify, detect]
+    maturity: secondary
+    note: AI security posture management and AI pen testing scan AI agents, chatbots, and models for vulnerabilities and misconfigurations.
+    source: { url: https://www.varonis.com/platform/ai-security, tier: official, title: Varonis AI Security (Atlas), accessed: 2026-06-13, origin: reviewed, quote: "Proactively stress test your AI systems for vulnerabilities like prompt injection and jailbreaks." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: The AI gateway inspects prompts and model responses in real time to detect and block sensitive-data leakage and malicious use.
+    source: { url: https://www.varonis.com/platform/ai-security, tier: official, title: Varonis AI Security (Atlas), accessed: 2026-06-13, origin: reviewed, quote: "Enforce real-time policies that prevent sensitive data leakage and block malicious and non-compliant use of any AI asset." }
+primary_cell: { asset: ai-orchestration-tools, function: protect }
