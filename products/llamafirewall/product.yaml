@@ -22,10 +22,10 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: PromptGuard 2 classifies user inputs and untrusted content for direct prompt injection and jailbreaks while AlignmentCheck audits agent chain-of-thought reasoning in real time for goal hijacking and indirect injection; the framework detects and mitigates these risks inline.
-    source: { url: https://github.com/meta-llama/PurpleLlama/blob/main/LlamaFirewall/README.md, tier: official, title: LlamaFirewall README in the PurpleLlama repository, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://github.com/meta-llama/PurpleLlama/blob/main/LlamaFirewall/README.md, tier: official, title: LlamaFirewall README in the PurpleLlama repository, accessed: 2026-06-10, origin: reviewed, quote: "LlamaFirewall is a framework designed to detect and mitigate AI centric security risks, supporting multiple layers of inputs and outputs, such as typical LLM chat and more advanced multi-step agentic operations." }
   - asset: ai-generated-code
     functions: [detect]
     maturity: secondary
     note: CodeShield applies Semgrep and regex-based static analysis to LLM-generated code in real time, flagging insecure code across eight programming languages.
-    source: { url: https://github.com/meta-llama/PurpleLlama/blob/main/LlamaFirewall/README.md, tier: official, title: LlamaFirewall README in the PurpleLlama repository, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://github.com/meta-llama/PurpleLlama/blob/main/LlamaFirewall/README.md, tier: official, title: LlamaFirewall README in the PurpleLlama repository, accessed: 2026-06-10, origin: reviewed, quote: "A static analysis engine that examines LLM-generated code for security issues in real time." }
 primary_cell: { asset: runtime-ai-data, function: protect }

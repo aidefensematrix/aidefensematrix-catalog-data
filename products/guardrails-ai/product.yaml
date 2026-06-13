@@ -23,5 +23,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Validators from the Guardrails Hub combine into input and output guards that intercept LLM inputs and outputs and act on failures, with options to block or raise exceptions. A standalone server exposes guards over a REST API.
-    source: { url: https://github.com/guardrails-ai/guardrails, tier: official, title: Guardrails repository, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://github.com/guardrails-ai/guardrails, tier: official, title: Guardrails repository, accessed: 2026-06-09, origin: reviewed, quote: "Guardrails runs Input/Output Guards in your application that detect, quantify and mitigate the presence of specific types of risks." }
 primary_cell: { asset: runtime-ai-data, function: protect }

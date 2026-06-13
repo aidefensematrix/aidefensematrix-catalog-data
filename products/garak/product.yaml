@@ -23,5 +23,5 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: Combines static, dynamic, and adaptive probes, including DAN-style jailbreaks, encoding-based prompt injection, adversarial suffixes, and training-data replay, with per-probe detectors and reporting harnesses.
-    source: { url: https://github.com/NVIDIA/garak, tier: official, title: garak repository, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://github.com/NVIDIA/garak, tier: official, title: garak repository, accessed: 2026-06-09, origin: reviewed, quote: "garak probes for hallucination, data leakage, prompt injection, misinformation, toxicity generation, jailbreaks, and many other weaknesses." }
 primary_cell: { asset: ai-model, function: detect }

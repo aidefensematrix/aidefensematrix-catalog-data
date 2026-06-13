@@ -23,10 +23,10 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Input, retrieval, and output rails can reject or mask user prompts, retrieved chunks, and model responses. The built-in guardrail library adds self-check moderation, hallucination detection, jailbreak and injection detection, and NVIDIA content and topic safety models.
-    source: { url: https://github.com/NVIDIA-NeMo/Guardrails, tier: official, title: NeMo Guardrails repository, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://github.com/NVIDIA-NeMo/Guardrails, tier: official, title: NeMo Guardrails repository, accessed: 2026-06-09, origin: reviewed, quote: "The NeMo Guardrails library enables developers building LLM-based applications to add programmable guardrails between the application code and the LLM." }
   - asset: ai-orchestration-tools
     functions: [protect]
     maturity: secondary
     note: Execution rails screen the input and output of the custom actions and tools that an LLM calls, and the guardrail catalog includes agentic security checks.
-    source: { url: https://docs.nvidia.com/nemo/guardrails/latest/index.html, tier: official, title: NVIDIA NeMo Guardrails Library Developer Guide, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://docs.nvidia.com/nemo/guardrails/latest/index.html, tier: official, title: NVIDIA NeMo Guardrails Library Developer Guide, accessed: 2026-06-09, origin: reviewed, quote: "It intercepts inputs and outputs, applies configurable safety checks, and blocks or modifies content based on defined policies." }
 primary_cell: { asset: runtime-ai-data, function: protect }
