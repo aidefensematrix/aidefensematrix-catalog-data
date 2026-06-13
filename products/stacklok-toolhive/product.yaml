@@ -1,0 +1,27 @@
+schema_version: 2
+name: Stacklok ToolHive
+aliases: []
+url: https://stacklok.com/toolhive
+vendor:
+  value: Stacklok
+  source: { url: https://stacklok.com/toolhive, tier: official, title: Stacklok ToolHive MCP platform, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Stacklok ToolHive: Enterprise MCP platform deployed in your private cloud that adds back-end authentication, authorization, network isolation, and encrypted secrets for MCP servers."
+  source: { url: https://stacklok.com/toolhive, tier: official, title: Stacklok ToolHive MCP platform, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://stacklok.com/toolhive, tier: official, title: Stacklok ToolHive MCP platform, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://stacklok.com/toolhive, tier: official, title: Stacklok ToolHive MCP platform, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Stacklok ToolHive documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Adds back-end authentication, authorization, network isolation, and token exchanges to MCP, lets admins permission and pre-configure servers, and manages secrets in an encrypted vault.
+    source: { url: https://stacklok.com/toolhive, tier: official, title: Stacklok ToolHive MCP platform, accessed: 2026-06-13, origin: reviewed, quote: "an MCP platform also addresses back-end authentication, authorization, network isolation, token exchanges and other advanced features" }
+primary_cell: { asset: ai-orchestration-tools, function: protect }

@@ -1,0 +1,27 @@
+schema_version: 2
+name: Tray.ai Agent Gateway
+aliases: [Agent Gateway for MCP]
+url: https://tray.ai/platform/agent-gateway/
+vendor:
+  value: Tray.ai
+  source: { url: https://tray.ai/platform/agent-gateway/, tier: official, title: Tray.ai Agent Gateway for MCP, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Tray.ai Agent Gateway: Enterprise MCP gateway that versions and publishes MCP servers and tools on a governed path, enforces access policies and permissions, and audits every call."
+  source: { url: https://tray.ai/platform/agent-gateway/, tier: official, title: Tray.ai Agent Gateway for MCP, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://tray.ai/platform/agent-gateway/, tier: official, title: Tray.ai Agent Gateway for MCP, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://tray.ai/platform/agent-gateway/, tier: official, title: Tray.ai Agent Gateway for MCP, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Tray.ai Agent Gateway documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Spins up, versions, publishes, and deprecates MCP servers on a managed path, enforces access policies and permissions, and provides centralized visibility and audit across deployed MCP.
+    source: { url: https://tray.ai/platform/agent-gateway/, tier: official, title: Tray.ai Agent Gateway for MCP, accessed: 2026-06-13, origin: reviewed, quote: "Spin up, version, publish, and deprecate MCP Servers on a governed path. IT approves what gets built, enforces policies, and retires servers safely" }
+primary_cell: { asset: ai-orchestration-tools, function: protect }
