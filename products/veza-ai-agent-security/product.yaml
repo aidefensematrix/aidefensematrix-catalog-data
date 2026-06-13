@@ -1,0 +1,27 @@
+schema_version: 2
+name: Veza AI Agent Security
+aliases: []
+url: https://veza.com/product/ai-agent-security/
+vendor:
+  value: Veza
+  source: { url: https://veza.com/product/ai-agent-security/, tier: official, title: Veza AI Agent Security, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Veza AI Agent Security: Discovers AI agents and MCP servers across the enterprise, maps their access and human owners, and enforces least-privilege policies to reduce AI agent risk."
+  source: { url: https://veza.com/product/ai-agent-security/, tier: official, title: Veza AI Agent Security, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://veza.com/product/ai-agent-security/, tier: official, title: Veza AI Agent Security, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://veza.com/product/ai-agent-security/, tier: official, title: Veza AI Agent Security, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Veza AI Agent Security documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Discovers AI agents and MCP servers, maps their data and application access and human owners, enforces least-privilege policies, and supports continuous compliance and audit readiness.
+    source: { url: https://veza.com/product/ai-agent-security/, tier: official, title: Veza AI Agent Security, accessed: 2026-06-13, origin: reviewed, quote: "Instantly understand what data and applications the AI agents have access to, map human owners, and visualize audit trails to establish robust AI Security Posture Management (AISPM)." }
+primary_cell: { asset: ai-agent-identities, function: identify }
