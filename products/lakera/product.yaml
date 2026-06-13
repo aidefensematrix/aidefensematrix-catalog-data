@@ -32,7 +32,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Inline screening of prompts, responses, and agent tool calls.
-    source: { url: https://docs.lakera.ai/guard, tier: official, title: Lakera Guard defenses, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://docs.lakera.ai/guard, tier: official, title: Lakera Guard defenses, accessed: 2026-06-07, origin: reviewed, quote: "AI Guardrails will screen LLM interactions and flag for mitigating action if the following threats are detected" }
   - asset: ai-orchestration-tools
     functions: [protect, detect]
     maturity: primary

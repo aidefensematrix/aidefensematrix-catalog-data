@@ -4,7 +4,7 @@ Thank you for helping build an honest, useful catalog. It is a best-effort, sour
 
 ## The rules that matter most
 
-1. **Every detail needs a trusted source.** Each detail carries a `source` with a URL and an `accessed` date. The source must actually support the specific detail. Cite the exact page, not the homepage.
+1. **Every detail needs a trusted source.** Each detail carries a `source` with a URL and an `accessed` date. The source must actually support the specific detail. Cite the exact page, not the homepage. A source may also carry an optional `quote`: the verbatim supporting line from that page, in the page's own words (up to 300 characters). It is optional, but it is the clearest way to show *why* a matrix-coverage cell or a compliance attestation is claimed, and it lets a reviewer confirm the mapping without re-opening the page.
 2. **Vendor marketing is the weakest source.** A vendor's own site is fine for descriptive details (what it is, how it deploys). It is not enough for comparative or efficacy claims ("faster", "more accurate", "the only"), which need an independent source (press, research, or regulatory).
 3. **Write in your own words.** No copied marketing copy. A direct quote must be short, in quotation marks, and attributed.
 4. **No superlatives.** "The first / only / best / most" are positioning claims, not verifiable details. The validator rejects them.
