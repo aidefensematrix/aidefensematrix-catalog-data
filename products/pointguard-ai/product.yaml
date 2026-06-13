@@ -1,0 +1,32 @@
+schema_version: 2
+name: PointGuard AI
+aliases: [AppSOC]
+url: https://pointguardai.com/
+vendor:
+  value: PointGuard AI
+  source: { url: https://pointguardai.com/, tier: official, title: PointGuard AI Application Security and Governance, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "PointGuard AI: Security platform for AI agents, MCP, and models that discovers AI, runs adversarial testing and posture management, and enforces runtime guardrails via an MCP security gateway."
+  source: { url: https://pointguardai.com/, tier: official, title: PointGuard AI Application Security and Governance, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://pointguardai.com/, tier: official, title: PointGuard AI Application Security and Governance, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://pointguardai.com/, tier: official, title: PointGuard AI Application Security and Governance, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the PointGuard AI documentation; the product was formerly named AppSOC.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Discovers AI agents and MCP, enforces runtime guardrails via the Agent Control Plane and MCP Security Gateway, and applies centralized policy enforcement across the AI stack.
+    source: { url: https://pointguardai.com/, tier: official, title: PointGuard AI Application Security and Governance, accessed: 2026-06-13, origin: reviewed, quote: "The PointGuard AI Security Platform delivers comprehensive protection for AI agents, MCP infrastructure, models, and data through the Agent Control Plane, the zero-trust MCP Security Gateway, integrated Runtime Guardrails" }
+  - asset: ai-model
+    functions: [identify, detect]
+    maturity: secondary
+    note: Adaptive red teaming and security posture management test agents and models for prompt injection, jailbreaks, and misconfigurations before deployment.
+    source: { url: https://pointguardai.com/, tier: official, title: PointGuard AI Application Security and Governance, accessed: 2026-06-13, origin: reviewed, quote: "Adaptive red teaming simulates real-world attacks against agents, models, MCP integrations, and tool workflows to uncover weaknesses before deployment." }
+primary_cell: { asset: ai-orchestration-tools, function: protect }

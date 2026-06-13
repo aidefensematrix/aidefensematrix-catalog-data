@@ -1,0 +1,27 @@
+schema_version: 2
+name: Xygeni DevAI
+aliases: []
+url: https://xygeni.io/dev-ai/
+vendor:
+  value: Xygeni
+  source: { url: https://xygeni.io/dev-ai/, tier: official, title: Xygeni DevAI, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Xygeni DevAI: In-IDE agentic AppSec copilot that scans AI-generated and human-written code in real time for vulnerabilities, secrets, and unsafe APIs, and delivers automated fixes."
+  source: { url: https://xygeni.io/dev-ai/, tier: official, title: Xygeni DevAI, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://xygeni.io/dev-ai/, tier: official, title: Xygeni DevAI, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://xygeni.io/dev-ai/, tier: official, title: Xygeni DevAI, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Xygeni DevAI documentation.
+matrix_coverage:
+  - asset: ai-generated-code
+    functions: [protect, detect]
+    maturity: primary
+    note: In-IDE scanning of AI-generated and human-written code for vulnerabilities, secrets, and unsafe APIs, with automated fixes delivered as developers type.
+    source: { url: https://xygeni.io/dev-ai/, tier: official, title: Xygeni DevAI, accessed: 2026-06-13, origin: reviewed, quote: "DevAI runs continuously as developers type. It performs incremental SAST scanning, detects vulnerable patterns, exposed secrets, and unsafe APIs, including in AI-generated code, and explains the real attack path behind each finding." }
+primary_cell: { asset: ai-generated-code, function: detect }
