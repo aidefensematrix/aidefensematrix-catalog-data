@@ -19,12 +19,12 @@ changelog:
     summary: Added to the catalog from the MintMCP documentation.
 matrix_coverage:
   - asset: ai-orchestration-tools
-    functions: [protect, govern, detect]
+    functions: [protect, detect]
     maturity: primary
     note: Enterprise MCP gateway between AI clients and MCP servers that handles authentication, enforces access policies, and logs every tool call; admins curate a catalog of approved servers with preconfigured credentials, role-based tool sets, and centralized credential management.
     source: { url: https://docs.mintmcp.com/, tier: official, title: MintMCP documentation introduction, accessed: 2026-06-10, origin: reviewed }
   - asset: ai-agent-identities
-    functions: [govern, protect]
+    functions: [protect]
     maturity: secondary
     note: Applies enterprise SSO and RBAC controls to MCP access with fine-grained permissions and instant revocation; API keys stay within the gateway so AI clients never hold them.
     source: { url: https://www.mintmcp.com/security-governance, tier: official, title: MintMCP security and governance page, accessed: 2026-06-10, origin: reviewed }

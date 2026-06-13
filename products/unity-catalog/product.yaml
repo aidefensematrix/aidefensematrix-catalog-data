@@ -20,7 +20,7 @@ changelog:
     summary: Enriched from the Databricks Unity Catalog documentation.
 matrix_coverage:
   - asset: ai-model
-    functions: [identify, protect, govern]
+    functions: [identify, protect]
     maturity: primary
     note: Manages registered ML models, agent-tool functions, and MCP connections as securable objects with grant and revoke privileges, lineage, and audit.
     source: { url: https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/ai-governance, tier: official, title: Unity Catalog AI governance, accessed: 2026-06-09, origin: reviewed }
@@ -29,4 +29,4 @@ matrix_coverage:
     maturity: secondary
     note: Applies fine-grained, attribute-based access policies with row and column filters and PII autoclassification to the data that feeds models, with end-to-end lineage.
     source: { url: https://www.databricks.com/product/unity-catalog, tier: official, title: Databricks Unity Catalog, accessed: 2026-06-09, origin: reviewed }
-primary_cell: { asset: ai-model, function: govern }
+primary_cell: { asset: ai-model, function: identify }

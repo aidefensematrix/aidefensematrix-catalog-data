@@ -24,7 +24,7 @@ matrix_coverage:
     note: Agent Guardrails enforces policy inline at the prompt, retrieval, tool, and output boundaries, with rewrite, block, or escalate decisions and injection filtering across text, image, and audio inputs.
     source: { url: https://www.enkryptai.com/product/agent-guardrails, tier: official, title: Enkrypt AI Agent Guardrails product page, accessed: 2026-06-10, origin: reviewed }
   - asset: ai-model
-    functions: [detect, govern]
+    functions: [detect]
     maturity: primary
     note: Agent Red Teaming runs adversarial tests against models, agents, RAG systems, and tools, covering prompt injection and jailbreaks, with CI/CD regression suites and compliance mapping to NIST, OWASP, and the EU AI Act.
     source: { url: https://www.enkryptai.com/product/agent-red-teaming, tier: official, title: Enkrypt AI Agent Red Teaming product page, accessed: 2026-06-10, origin: reviewed }

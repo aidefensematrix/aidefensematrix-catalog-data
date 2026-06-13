@@ -21,7 +21,7 @@ changelog:
     summary: Refined matrix coverage and primary function.
 matrix_coverage:
   - asset: ai-orchestration-tools
-    functions: [identify, govern]
+    functions: [identify]
     maturity: primary
     note: Discovers agents across cloud, code, and endpoint environments and maps each agent configuration, including tool and MCP connections, plugins, system prompts, and models, with findings mapped to OWASP, NIST, ISO 42001, and the EU AI Act.
     source: { url: https://www.geordie.ai/product, tier: official, title: Geordie agent security platform, accessed: 2026-06-10, origin: reviewed }

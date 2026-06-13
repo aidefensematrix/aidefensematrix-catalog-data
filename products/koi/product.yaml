@@ -25,12 +25,12 @@ changelog:
     summary: Added to the catalog from the Koi website; recorded the Palo Alto Networks acquisition announced 2026-02-17 and completed 2026-04-14 with Koi remaining a standalone offering.
 matrix_coverage:
   - asset: ai-orchestration-tools
-    functions: [govern, identify, protect, detect]
+    functions: [identify, protect, detect]
     maturity: primary
     note: Discovers and inventories MCP servers, AI agents, and extensions across endpoints, risk-scores them with the Wings engine, gates risky installs by policy, and detects malicious activity after install.
     source: { url: https://www.koi.ai/, tier: official, title: Koi homepage, accessed: 2026-06-10, origin: reviewed }
   - asset: ai-model
-    functions: [govern, protect]
+    functions: [protect]
     maturity: secondary
     note: The Wings engine and Supply Chain Gateway vet AI models from registries such as Hugging Face, scanning actual code and blocking risky model installs before they reach endpoints.
     source: { url: https://www.koi.ai/, tier: official, title: Koi homepage, accessed: 2026-06-10, origin: reviewed }

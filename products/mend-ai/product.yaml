@@ -19,9 +19,9 @@ changelog:
     summary: Added to the catalog from the Mend.io documentation.
 matrix_coverage:
   - asset: ai-model
-    functions: [identify, detect, govern]
+    functions: [identify, detect]
     maturity: primary
-    note: Builds a continuously updated inventory of AI models and frameworks, including shadow AI, ties risks to models, runs automated red teaming tests for prompt injection, context leakage, and data exfiltration, and enforces AI governance policies via a policy engine.
+    note: Builds a continuously updated inventory of AI models and frameworks, including shadow AI, ties risks to models, runs automated red teaming tests for prompt injection, context leakage, and data exfiltration.
     source: { url: https://www.mend.io/mend-ai/, tier: official, title: Mend AI product page, accessed: 2026-06-10, origin: reviewed }
   - asset: ai-orchestration-tools
     functions: [identify]

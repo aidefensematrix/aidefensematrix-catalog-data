@@ -24,9 +24,9 @@ changelog:
     summary: Added to the catalog from the Highflame product pages; the vendor rebranded from Javelin in early 2026.
 matrix_coverage:
   - asset: ai-gateways-routers
-    functions: [protect, govern]
+    functions: [protect]
     maturity: primary
-    note: Acts as a centralized control layer across LLM, MCP, A2A, and A2P interactions, enforcing Cedar-based access, safety, and compliance policies inline and generating audit-ready reports for governance.
+    note: Acts as a centralized control layer across LLM, MCP, A2A, and A2P interactions, enforcing Cedar-based access, safety, and compliance policies inline and generating audit-ready reports.
     source: { url: https://highflame.com/highflame-platform, tier: official, title: Highflame platform page, accessed: 2026-06-10, origin: reviewed }
   - asset: runtime-ai-data
     functions: [protect, detect]

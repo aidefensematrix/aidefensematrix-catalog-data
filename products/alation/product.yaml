@@ -20,13 +20,13 @@ changelog:
     summary: Enriched from the Alation AI Governance documentation.
 matrix_coverage:
   - asset: ai-model
-    functions: [identify, govern]
+    functions: [identify]
     maturity: primary
-    note: Documents and governs AI models with model cards, end-to-end AI lineage, and centralized compliance for auditability.
+    note: Documents and inventories AI models with model cards, end-to-end AI lineage, and compliance evidence for auditability.
     source: { url: https://www.alation.com/news-and-press/alation-ai-governance-solution/, tier: official, title: Alation AI Governance launch, accessed: 2026-06-09, origin: reviewed }
   - asset: training-data
     functions: [identify]
     maturity: secondary
     note: Discovers, tags, and quality-flags the data feeding AI models so teams can validate it before training.
     source: { url: https://www.alation.com/news-and-press/alation-ai-governance-solution/, tier: official, title: Alation AI Governance launch, accessed: 2026-06-09, origin: reviewed }
-primary_cell: { asset: ai-model, function: govern }
+primary_cell: { asset: ai-model, function: identify }

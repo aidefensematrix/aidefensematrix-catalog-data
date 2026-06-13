@@ -19,7 +19,7 @@ changelog:
     summary: Added to the catalog from the Dynamo AI documentation.
 matrix_coverage:
   - asset: runtime-ai-data
-    functions: [protect, detect, govern]
+    functions: [protect, detect]
     maturity: primary
     note: Lightweight guardrail models screen LLM inputs and outputs in real time for prompt injection, jailbreaks, PII leakage, toxicity, and hallucinations, with block or sanitize actions; compliance teams author custom policies in natural language and audit flagged LLM usage in production.
     source: { url: https://docs.dynamo.ai/docs/DynamoGuard/Overview, tier: official, title: DynamoGuard overview documentation, accessed: 2026-06-10, origin: reviewed }
