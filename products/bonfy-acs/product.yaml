@@ -23,15 +23,15 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Applies entity-aware analysis to data entering prompts, content leaving via email or AI outputs, and data agents process. Contextual Data Enforcement intercepts AI retrieval requests and blocks, redacts, or flags sensitive content before it reaches AI clients like Claude or Copilot Studio.
-    source: { url: https://www.bonfy.ai/product, tier: official, title: Bonfy ACS product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.bonfy.ai/product, tier: official, title: Bonfy ACS product page, accessed: 2026-06-10, origin: reviewed, quote: "Bonfy ACS solves the needs for data in motion and data at rest risks, and provides the options to use the solution either inline, offline, and/or in retrospective modes." }
   - asset: ai-orchestration-tools
     functions: [detect, protect]
     maturity: secondary
     note: Ships an MCP server, API, and agent framework support that agents call during reasoning to evaluate content against policy, enabling workflows to revise, redact, block, or route output for review before data reaches external services.
-    source: { url: https://www.bonfy.ai/use-case-agentic-data-security, tier: official, title: Bonfy agentic data security use case, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.bonfy.ai/use-case-agentic-data-security, tier: official, title: Bonfy agentic data security use case, accessed: 2026-06-10, origin: reviewed, quote: "Secure the full agent lifecycle: inputs, outputs, and data-in-use inspection via MCP." }
   - asset: ai-workload-platforms
     functions: [identify, detect]
     maturity: secondary
     note: A browser extension performs content-aware inspection of web interactions, detects unsanctioned AI usage, maps which AI destinations are in use and what data flows to them, and can warn users or block actions based on policy.
-    source: { url: https://www.bonfy.ai/use-case-shadow-ai-security, tier: official, title: Bonfy shadow AI security use case, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.bonfy.ai/use-case-shadow-ai-security, tier: official, title: Bonfy shadow AI security use case, accessed: 2026-06-10, origin: reviewed, quote: "Detect Shadow AI usage patterns across users, teams, and locations" }
 primary_cell: { asset: runtime-ai-data, function: protect }

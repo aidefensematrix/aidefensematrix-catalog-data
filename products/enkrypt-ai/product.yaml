@@ -25,15 +25,15 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Agent Guardrails enforces policy inline at the prompt, retrieval, tool, and output boundaries, with rewrite, block, or escalate decisions and injection filtering across text, image, and audio inputs.
-    source: { url: https://www.enkryptai.com/product/agent-guardrails, tier: official, title: Enkrypt AI Agent Guardrails product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.enkryptai.com/product/agent-guardrails, tier: official, title: Enkrypt AI Agent Guardrails product page, accessed: 2026-06-10, origin: reviewed, quote: "Real-time control for Agents and AI systems that take action" }
   - asset: ai-model
     functions: [detect]
     maturity: primary
     note: Agent Red Teaming runs adversarial tests against models, agents, RAG systems, and tools, covering prompt injection and jailbreaks, with CI/CD regression suites and compliance mapping to NIST, OWASP, and the EU AI Act.
-    source: { url: https://www.enkryptai.com/product/agent-red-teaming, tier: official, title: Enkrypt AI Agent Red Teaming product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.enkryptai.com/product/agent-red-teaming, tier: official, title: Enkrypt AI Agent Red Teaming product page, accessed: 2026-06-10, origin: reviewed, quote: "Red team multimodal and multilingual agents" }
   - asset: ai-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: MCP Gateway, an open-source control plane, sits inline between agents and MCP servers to approve, modify, or block tool calls, enforcing least privilege and producing an audit evidence trail.
-    source: { url: https://www.enkryptai.com/product/mcp-gateway, tier: official, title: Enkrypt AI MCP Gateway product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.enkryptai.com/product/mcp-gateway, tier: official, title: Enkrypt AI MCP Gateway product page, accessed: 2026-06-10, origin: reviewed, quote: "Enkrypt AI MCP Gateway is open source and sits inline between agents and MCP servers to approve, modify, or block tool calls" }
 primary_cell: { asset: runtime-ai-data, function: protect }

@@ -22,15 +22,15 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: TrustGate is a distributed AI gateway that fronts model providers with routing, rate limiting, threat detection, and plugin-based security controls; core gateway functionality is available under an open-source license.
-    source: { url: https://neuraltrust.ai/ai-gateway, tier: official, title: NeuralTrust AI gateway page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://neuraltrust.ai/ai-gateway, tier: official, title: NeuralTrust AI gateway page, accessed: 2026-06-10, origin: reviewed, quote: "NeuralTrust is a high-performance, distributed AI gateway that outperforms all alternatives on the market in both execution speed and detection accuracy." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Prompt Guard and the Generative Application Firewall detect and block prompt injection, jailbreaks, and multimodal attacks in real time; sensitive data masking blocks or redacts PII and credentials in prompts and responses.
-    source: { url: https://neuraltrust.ai/prompt-guard, tier: official, title: NeuralTrust Prompt Guard page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://neuraltrust.ai/prompt-guard, tier: official, title: NeuralTrust Prompt Guard page, accessed: 2026-06-10, origin: reviewed, quote: "Detect and block hidden jailbreaks embedded in images, audio, or non-text inputs before they execute." }
   - asset: ai-model
     functions: [detect]
     maturity: primary
     note: Automated red teaming runs a continuously updated adversarial attack catalog informed by OWASP and MITRE ATLAS research, with domain-specific test generation and scheduled reruns when the model or knowledge base changes.
-    source: { url: https://neuraltrust.ai/red-teaming, tier: official, title: NeuralTrust red teaming page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://neuraltrust.ai/red-teaming, tier: official, title: NeuralTrust red teaming page, accessed: 2026-06-10, origin: reviewed, quote: "Use a continuously updated catalog of adversarial attacks, including OWASP, MITRE ATLAS, and our own research." }
 primary_cell: { asset: ai-gateways-routers, function: protect }
