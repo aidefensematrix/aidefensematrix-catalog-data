@@ -33,5 +33,5 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: secondary
     note: Data risk assessments find and help remediate oversharing of the sensitive organizational content that generative AI apps can surface.
-    source: { url: https://learn.microsoft.com/en-us/purview/dspm-for-ai, tier: official, title: Microsoft Purview DSPM for AI, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://learn.microsoft.com/en-us/purview/dspm-for-ai, tier: official, title: Microsoft Purview DSPM for AI, accessed: 2026-06-09, origin: reviewed, quote: "This scan identifies items as potentially overshared if they have a sharing link for external or anonymous users, and also shows any applied sensitivity label and the owner of each item." }
 primary_cell: { asset: runtime-ai-data, function: protect }

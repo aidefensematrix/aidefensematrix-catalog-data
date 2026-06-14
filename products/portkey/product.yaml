@@ -31,5 +31,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: secondary
     note: Guardrails check prompts and responses for prompt injection, PII, and unsafe content.
-    source: { url: https://portkey.ai/features/guardrails, tier: official, title: Portkey Guardrails, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://portkey.ai/features/guardrails, tier: official, title: Portkey Guardrails, accessed: 2026-06-09, origin: reviewed, quote: "Prevent sensitive data leaks and unreliable responses with real-time output guardrails." }
 primary_cell: { asset: ai-gateways-routers, function: protect }

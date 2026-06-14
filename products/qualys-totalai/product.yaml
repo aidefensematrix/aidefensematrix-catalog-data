@@ -25,10 +25,10 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: primary
     note: Discovers and inventories AI workloads, including software packages and GPU hardware, across production and development environments, and applies AI-specific vulnerability detections prioritized with TruRisk to harden the underlying infrastructure.
-    source: { url: https://blog.qualys.com/product-tech/2024/12/05/secure-your-generative-investments-qualys-advances-enterprise-trurisk-platform-with-qualys-totalai-to-protect-your-llm-investments, tier: official, title: Qualys TotalAI launch announcement, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://blog.qualys.com/product-tech/2024/12/05/secure-your-generative-investments-qualys-advances-enterprise-trurisk-platform-with-qualys-totalai-to-protect-your-llm-investments, tier: official, title: Qualys TotalAI launch announcement, accessed: 2026-06-10, origin: reviewed, quote: "Qualys TotalAI enables organizations to discover, inventory, and protect AI workloads across development and production environments." }
   - asset: ai-model
     functions: [detect]
     maturity: primary
     note: Scans onboarded LLM models for jailbreak susceptibility, prompt injection, bias, unsafe output, and other risks mapped to the OWASP LLM Top 10, with reporting aligned to MITRE ATLAS.
-    source: { url: https://blog.qualys.com/product-tech/2025/12/11/totalai-ai-security-onboarding-and-risk-insights, tier: official, title: Qualys TotalAI onboarding and risk insights, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://blog.qualys.com/product-tech/2025/12/11/totalai-ai-security-onboarding-and-risk-insights, tier: official, title: Qualys TotalAI onboarding and risk insights, accessed: 2026-06-10, origin: reviewed, quote: "It provides continuous security testing that helps teams understand how these systems behave in real environments." }
 primary_cell: { asset: ai-workload-platforms, function: identify }

@@ -28,7 +28,7 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: primary
     note: Issues OAuth 2.1 tokens to AI agents, enforces access policy on every MCP request, and brokers credentials so agents never hold them, with visibility into every access attempt.
-    source: { url: https://aembit.io/blog/aembit-iam-for-agentic-ai-is-now-generally-available/, tier: official, title: Aembit IAM for Agentic AI is GA, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://aembit.io/blog/aembit-iam-for-agentic-ai-is-now-generally-available/, tier: official, title: Aembit IAM for Agentic AI is GA, accessed: 2026-06-09, origin: reviewed, quote: "Blended Identity also enforces per-user credential isolation." }
   - asset: ai-orchestration-tools
     functions: [protect]
     maturity: secondary

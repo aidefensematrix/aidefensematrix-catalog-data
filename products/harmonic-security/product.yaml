@@ -25,7 +25,7 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Inspects employee prompts on the device via browser extension and desktop client, identifies shadow AI tools in use, and makes inline decisions in under 200 ms to warn, coach, or block sensitive data sharing.
-    source: { url: https://www.harmonic.security/, tier: official, title: Harmonic Security homepage, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.harmonic.security/, tier: official, title: Harmonic Security homepage, accessed: 2026-06-10, origin: reviewed, quote: "Harmonic Security delivers AI Governance and Control (AIGC), the intelligent control layer that secures and enables the AI-First workforce." }
   - asset: ai-orchestration-tools
     functions: [identify, detect]
     maturity: secondary

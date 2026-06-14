@@ -26,5 +26,5 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: primary
     note: Secures AI agents as non-human identities with vaultless, just-in-time secrets and certificates, removing hardcoded credentials and tracking agent access at runtime.
-    source: { url: https://www.akeyless.io/blog/secure-enterprise-ai-with-unified-secrets-non-human-identity-management/, tier: official, title: Akeyless secure enterprise AI, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.akeyless.io/blog/secure-enterprise-ai-with-unified-secrets-non-human-identity-management/, tier: official, title: Akeyless secure enterprise AI, accessed: 2026-06-09, origin: reviewed, quote: "Akeyless provides unified secrets and machine identity management, tokenization, and PAM capabilities needed to secure enterprise AI." }
 primary_cell: { asset: ai-agent-identities, function: protect }
