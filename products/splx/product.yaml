@@ -16,6 +16,7 @@ status:
   source: { url: https://www.zscaler.com/press/zscaler-secures-enterprise-ai-lifecycle-acquisition-innovative-ai-security-pioneer-splx, tier: official, title: Zscaler acquires SPLX, accessed: 2026-06-14, origin: reviewed }
 acquisition:
   acquirer: Zscaler
+  acquirer_slug: zscaler
   announced: 2025-11-03
   post_acquisition_status: standalone
   source: { url: https://www.zscaler.com/press/zscaler-secures-enterprise-ai-lifecycle-acquisition-innovative-ai-security-pioneer-splx, tier: official, title: Zscaler acquires SPLX, accessed: 2026-06-14, origin: reviewed }
