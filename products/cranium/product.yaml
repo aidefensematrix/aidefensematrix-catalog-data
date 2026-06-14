@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://cranium.ai/, tier: official, title: Cranium homepage, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://cranium.ai/resources/press-release/cranium-is-now-soc-2-type-2-compliant/, tier: official, title: Cranium SOC 2 Type 2, accessed: 2026-06-13, origin: reviewed, quote: "Cranium has a positive SOC 2 Type 2 attestation report" }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
