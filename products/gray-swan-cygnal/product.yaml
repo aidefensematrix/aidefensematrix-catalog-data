@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://docs.grayswan.ai/cygnal/creating-completions, tier: official, title: Gray Swan Cygnal API documentation, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, Cyber Essentials]
+  source: { url: https://trust.grayswan.ai/, tier: official, title: Gray Swan Trust Center, accessed: 2026-06-13, origin: reviewed, quote: "SOC 2 Type 2" }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10

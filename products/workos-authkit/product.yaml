@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://workos.com/mcp, tier: official, title: WorkOS secure auth for MCP servers, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://workos.com/security, tier: official, title: WorkOS Security, accessed: 2026-06-13, origin: reviewed, quote: "SOC 2 Type 2 certified" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09

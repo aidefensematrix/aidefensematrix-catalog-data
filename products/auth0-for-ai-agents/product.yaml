@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://auth0.com/ai, tier: official, title: Auth0 for AI Agents, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, CSA STAR Level 2]
+  source: { url: https://www.okta.com/blog/2023/03/okta-achieves-fedrampr-high-authorization/, tier: official, title: Okta certifications and attestations, accessed: 2026-06-13, origin: reviewed, quote: "industry-standard service certifications and attestations like ISO/IEC 27001, SOC 2 Type II, and CSA STAR Level 2" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09

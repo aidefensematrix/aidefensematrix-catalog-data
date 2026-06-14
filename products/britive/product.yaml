@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.britive.com/platform/agentic-ai-identity-security, tier: official, title: Britive agentic AI identity security page, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, CSA STAR Level 1]
+  source: { url: https://www.britive.com/go/britive-security-architecture-design, tier: official, title: Britive Security Architecture, accessed: 2026-06-13, origin: reviewed, quote: "Britive has maintained SOC2 Type 2 certification since early in our company history. This is verified annually by an independent audit firm." }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10

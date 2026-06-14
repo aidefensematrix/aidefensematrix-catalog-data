@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.beams.run/, tier: official, title: Teleport Beams product page, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, HIPAA]
+  source: { url: https://goteleport.com/security/, tier: official, title: Teleport Security, accessed: 2026-06-13, origin: reviewed, quote: "We maintain SOC 2 Type II, ISO 27001, and HIPAA Security Rule compliance for our cloud and self-hosted products" }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
