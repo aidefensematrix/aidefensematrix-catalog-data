@@ -1,0 +1,32 @@
+schema_version: 2
+name: Google Agent Gateway
+aliases: [Agent Gateway]
+url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview
+vendor:
+  value: Google
+  source: { url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview, tier: official, title: Google Agent Gateway overview, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Google Agent Gateway: Governs agent-to-agent and agent-to-tool traffic by enforcing least-privilege access policies and inspecting MCP and A2A protocol traffic, with integrated Model Armor guardrails."
+  source: { url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview, tier: official, title: Google Agent Gateway overview, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview, tier: official, title: Google Agent Gateway overview, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview, tier: official, title: Google Agent Gateway overview, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Google Cloud documentation; the feature is in public preview per the documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: primary
+    note: Acts as the network entry and exit point for agent interactions, enforcing least-privilege access policies across agent-to-agent and agent-to-tool connections and parsing MCP request attributes to authorize access to specific tools, with Model Armor guardrails against MCP prompt injection.
+    source: { url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview, tier: official, title: Google Agent Gateway overview, accessed: 2026-06-13, origin: reviewed, quote: "Configure and enforce consistent access policies across diverse agent runtimes and deployment models, ensuring enforcement of least-privilege permissions for agents at runtime." }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: Uses each agent identity as the principal for authorization decisions and secures agent-to-tool connectivity with automatic mTLS handshakes and OAuth 2.0 handling.
+    source: { url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview, tier: official, title: Google Agent Gateway overview, accessed: 2026-06-13, origin: reviewed, quote: "Automatically handles mTLS handshakes and termination to ensure encrypted connectivity between agents and tools without developer effort." }
+primary_cell: { asset: ai-orchestration-tools, function: protect }
