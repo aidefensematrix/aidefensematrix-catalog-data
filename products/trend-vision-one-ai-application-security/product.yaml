@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.trendmicro.com/en/business/ai/security-ai-stacks/ai-applications.html, tier: official, title: Trend Vision One AI Application Security, accessed: 2026-06-13, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, ISO 27017, PCI DSS]
+  source: { url: https://www.trendmicro.com/en_us/about/trust-center/compliance.html, tier: official, title: Trend Micro Trust Center compliance, accessed: 2026-06-13, origin: reviewed, quote: "Trend has undergone a SOC 2 Type II audit, which outlines the internal controls we use to safeguard customer data and how well those controls are operating." }
 last_reviewed: 2026-06-13
 changelog:
   - date: 2026-06-13

@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://developers.cloudflare.com/ai-gateway/, tier: official, title: Cloudflare AI Gateway overview, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, ISO 27701, PCI DSS]
+  source: { url: https://www.cloudflare.com/trust-hub/, tier: official, title: Cloudflare Trust Hub, accessed: 2026-06-13, origin: reviewed, quote: "Explore our posture around ISO 27001, ISO 27701, PCI DSS, SOC 2 Type II, and others" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09

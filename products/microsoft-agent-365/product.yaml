@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://techcommunity.microsoft.com/blog/microsoft_365blog/microsoft-365-e7-and-agent-365-are-now-generally-available/4516295, tier: official, title: Microsoft 365 E7 and Agent 365 general availability announcement, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701]
+  source: { url: https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-soc-2, tier: official, title: Microsoft Azure SOC 2 compliance offering, accessed: 2026-06-13, origin: reviewed, quote: "see the Azure SOC 2 Type 2 attestation report or Cloud services in audit scope" }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
