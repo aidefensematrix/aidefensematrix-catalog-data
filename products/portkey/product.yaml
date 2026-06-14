@@ -16,7 +16,7 @@ status:
   source: { url: https://portkey.ai/features/ai-gateway, tier: official, title: Portkey AI Gateway, accessed: 2026-06-09, origin: reviewed }
 compliance_attestations:
   value: [SOC 2, ISO 27001, HIPAA, GDPR]
-  source: { url: https://portkey.ai/docs/product/enterprise-offering/security-portkey, tier: official, title: Portkey Security, accessed: 2026-06-13, origin: reviewed, quote: "Our platform is compliant with leading security standards, including SOC2, ISO27001, GDPR, and HIPAA." }
+  source: { url: https://portkey.ai/docs/product/enterprise-offering/security-portkey, tier: official, title: Portkey Security, accessed: 2026-06-13, origin: reviewed, quote: "Our platform is compliant with leading security standards, including SOC2, ISO27001, GDPR, and HIPAA" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09

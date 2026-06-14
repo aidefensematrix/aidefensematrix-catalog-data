@@ -16,7 +16,7 @@ status:
   source: { url: https://bigid.com/, tier: official, title: BigID data security and AI governance, accessed: 2026-06-09, origin: reviewed }
 compliance_attestations:
   value: [SOC 2, SOC 3, CSA STAR Level 1, PCI DSS]
-  source: { url: https://bigid.com/certifications-and-assessments/, tier: official, title: BigID Certifications and Assessments, accessed: 2026-06-13, origin: reviewed, quote: "BigID is SOC 2 (System and Organization Controls 2) certified" }
+  source: { url: https://bigid.com/certifications-and-assessments/, tier: official, title: BigID Certifications and Assessments, accessed: 2026-06-13, origin: reviewed, quote: "BigID is SOC 2" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
