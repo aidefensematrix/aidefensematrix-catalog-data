@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://vorlon.io/vorlon-announces-launch-ai-agent-flight-recorder-action-center, tier: official, title: Vorlon launch press release, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://vorlon.io/trust, tier: official, title: Vorlon Trust, accessed: 2026-06-13, origin: reviewed, quote: "If you require a copy of our SOC 2 Type II audit report, please fill out the request form." }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10

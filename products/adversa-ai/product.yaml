@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001]
+  source: { url: https://adversa.ai/security-trust/, tier: official, title: Adversa AI Security and Trust, accessed: 2026-06-13, origin: reviewed, quote: "SOC 2 Type II" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09

@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.confident-ai.com/, tier: official, title: Confident AI homepage, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://www.confident-ai.com/, tier: official, title: Confident AI, accessed: 2026-06-13, origin: reviewed, quote: "Confident AI is SOC 2 Type II compliant and offers both cloud and on-prem deployment." }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10

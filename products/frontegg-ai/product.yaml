@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701]
+  source: { url: https://frontegg.com/trust-center, tier: official, title: Frontegg Trust Center, accessed: 2026-06-13, origin: reviewed, quote: "Frontegg complies with world-class compliance and security standards, including SOC 2 Type II and ISO 27001." }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10

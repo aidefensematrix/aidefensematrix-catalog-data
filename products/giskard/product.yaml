@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.giskard.ai/, tier: official, title: Giskard AI red teaming and LLM security, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://www.giskard.ai/, tier: official, title: Giskard, accessed: 2026-06-13, origin: reviewed, quote: "we offer native GDPR adherence alongside SOC 2 Type II and HIPAA compliance" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
