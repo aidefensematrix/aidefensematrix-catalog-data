@@ -1,0 +1,35 @@
+schema_version: 2
+name: White Circle
+aliases: []
+url: https://whitecircle.ai/
+vendor:
+  value: White Circle
+  source: { url: https://whitecircle.ai/, tier: official, title: White Circle, accessed: 2026-06-14, origin: reviewed }
+description:
+  value: "White Circle: AI control layer that red-teams AI for failures, applies custom low-latency guardrails to block prompt injection and unsafe outputs, and monitors AI interactions for abuse and drift."
+  source: { url: https://whitecircle.ai/, tier: official, title: White Circle, accessed: 2026-06-14, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://whitecircle.ai/, tier: official, title: White Circle, accessed: 2026-06-14, origin: reviewed }
+status:
+  value: active
+  source: { url: https://whitecircle.ai/, tier: official, title: White Circle, accessed: 2026-06-14, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, HIPAA]
+  source: { url: https://whitecircle.ai/, tier: official, title: White Circle, accessed: 2026-06-14, origin: reviewed, quote: "SOC 2 Type II & HIPAA Compliant" }
+last_reviewed: 2026-06-14
+changelog:
+  - date: 2026-06-14
+    summary: Added to the catalog from the White Circle documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Applies custom low-latency guardrails that block prompt injection, unsafe outputs, and sensitive-data leakage, and monitors AI inputs and outputs for harmful content, abuse, and model drift.
+    source: { url: https://whitecircle.ai/, tier: official, title: White Circle, accessed: 2026-06-14, origin: reviewed, quote: "Safeguard your app with custom low-latency guardrails" }
+  - asset: ai-model
+    functions: [detect]
+    maturity: secondary
+    note: Automatically red-teams AI systems to surface failures such as jailbreaks and prompt injection before deployment.
+    source: { url: https://whitecircle.ai/, tier: official, title: White Circle, accessed: 2026-06-14, origin: reviewed, quote: "Automatically red team your AI to find every failure" }
+primary_cell: { asset: runtime-ai-data, function: protect }
