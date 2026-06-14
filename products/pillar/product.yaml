@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.pillar.security/platform, tier: official, title: Pillar Security Platform, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://www.pillar.security/, tier: official, title: Pillar Security, accessed: 2026-06-13, origin: reviewed, quote: "SOC 2 Type II audit and adherence to strict security standards ensure data protection and system reliability" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09

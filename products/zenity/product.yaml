@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://zenity.io/, tier: official, title: Zenity homepage, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, ISO 27701, GDPR]
+  source: { url: https://zenity.io/company/trust-center, tier: official, title: Zenity Trust Center, accessed: 2026-06-13, origin: reviewed, quote: "Achieving SOC 2 Type II certification validates that we have achieved our goal of security and privacy" }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
