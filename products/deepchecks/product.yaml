@@ -29,7 +29,7 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: Monitors deployed LLM applications in production by sampling interactions and tracking annotation trends and property scores to detect degradation automatically. Scoring is offline evaluation with no documented inline blocking.
-    source: { url: https://llmdocs.deepchecks.com/docs/set-up-production-monitoring, tier: official, title: Deepchecks production monitoring documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://llmdocs.deepchecks.com/docs/set-up-production-monitoring, tier: official, title: Deepchecks production monitoring documentation, accessed: 2026-06-10, origin: reviewed, quote: "Deepchecks can monitor its quality in production over time - tracking annotation trends, property scores, and detecting degradation automatically." }
   - asset: ai-model
     functions: [detect]
     maturity: secondary
@@ -39,5 +39,5 @@ matrix_coverage:
     functions: [detect]
     maturity: secondary
     note: Evaluates each layer of an agentic pipeline independently, scoring individual agents, tools, and LLM calls to isolate underperforming or failing components.
-    source: { url: https://llmdocs.deepchecks.com/docs/agent-evaluation-use-case, tier: official, title: Deepchecks agent evaluation documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://llmdocs.deepchecks.com/docs/agent-evaluation-use-case, tier: official, title: Deepchecks agent evaluation documentation, accessed: 2026-06-10, origin: reviewed, quote: "an end-to-end testing and evaluation pipeline that takes you from a deployed agent to a full diagnostic report." }
 primary_cell: { asset: runtime-ai-data, function: detect }

@@ -25,10 +25,10 @@ matrix_coverage:
     functions: [protect]
     maturity: primary
     note: Federates MCP, A2A, and REST tool servers behind one authenticated endpoint with JWT and OAuth controls, role-based access control across global, team, and personal scopes, resource visibility flags, scoped API tokens, and rate limits. Permission checks default to deny on error.
-    source: { url: https://ibm.github.io/mcp-context-forge/architecture/security-features/, tier: official, title: ContextForge security features documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://ibm.github.io/mcp-context-forge/architecture/security-features/, tier: official, title: ContextForge security features documentation, accessed: 2026-06-10, origin: reviewed, quote: "applies the validator to tool names, URLs, resource URIs, descriptions, prompts, and JSON payloads, trimming or rejecting unsafe values before they hit business logic." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary
     note: Plugin hooks before and after prompt, tool, and resource calls apply PII detection and masking, content moderation, deny lists, and secrets detection to data flowing through the gateway, with an optional external OPA policy integration.
-    source: { url: https://ibm.github.io/mcp-context-forge/architecture/security-features/, tier: official, title: ContextForge security features documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://ibm.github.io/mcp-context-forge/architecture/security-features/, tier: official, title: ContextForge security features documentation, accessed: 2026-06-10, origin: reviewed, quote: "Content filters (PII, harmful content, markdown cleanup), output length guards, regex filters, and SQL sanitizers run as pre/post hooks to block malicious prompt/tool/resource usage." }
 primary_cell: { asset: ai-orchestration-tools, function: protect }

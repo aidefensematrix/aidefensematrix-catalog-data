@@ -22,5 +22,5 @@ matrix_coverage:
     functions: [detect, identify]
     maturity: primary
     note: Identifies AI and ML model files in analyzed software by format signature, scans them with malware analysis to assess whether models are safe to use, and lists discovered models as components in an ML-BOM within the SAFE report.
-    source: { url: https://docs.secure.software/concepts/model-testing, tier: official, title: Spectra Assure AI model scanning documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://docs.secure.software/concepts/model-testing, tier: official, title: Spectra Assure AI model scanning documentation, accessed: 2026-06-10, origin: reviewed, quote: "In addition to malware scanning, the enhanced SAFE report captures results from simulated attacks, edge-case scenarios, and adversarial prompts, showing how the model performs under stress." }
 primary_cell: { asset: ai-model, function: detect }

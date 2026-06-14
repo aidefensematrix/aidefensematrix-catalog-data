@@ -25,5 +25,5 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: primary
     note: Acts as an OAuth 2.1 authorization server for AI agents and MCP servers, issuing scoped tokens, brokering credentials to downstream tools, and enforcing per-tool scopes with a full audit trail of agent actions.
-    source: { url: https://docs.descope.com/agentic-identity-hub, tier: official, title: Descope Agentic Identity Hub documentation, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://docs.descope.com/agentic-identity-hub, tier: official, title: Descope Agentic Identity Hub documentation, accessed: 2026-06-09, origin: reviewed, quote: "It covers every agent that calls your APIs, every tool your agents use, and every credential those tools need." }
 primary_cell: { asset: ai-agent-identities, function: protect }

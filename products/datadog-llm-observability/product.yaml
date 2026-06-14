@@ -28,5 +28,5 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: secondary
     note: Auto-instruments frameworks such as LangChain to trace agent workflows across model calls, retrieval, and tool calls, surfacing failures and anomalies.
-    source: { url: https://docs.datadoghq.com/llm_observability/, tier: official, title: Datadog LLM Observability documentation, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://docs.datadoghq.com/llm_observability/, tier: official, title: Datadog LLM Observability documentation, accessed: 2026-06-09, origin: reviewed, quote: "you can monitor, troubleshoot, and evaluate your LLM-powered applications, such as chatbots." }
 primary_cell: { asset: runtime-ai-data, function: detect }
