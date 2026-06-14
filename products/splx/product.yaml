@@ -1,0 +1,37 @@
+schema_version: 2
+name: SPLX
+aliases: []
+url: https://splx.ai/
+vendor:
+  value: SPLX
+  source: { url: https://splx.ai/, tier: official, title: SPLX, accessed: 2026-06-14, origin: reviewed }
+description:
+  value: "SPLX: End-to-end platform to test, protect, and govern AI systems that discovers AI assets into an AI-BOM, runs automated red teaming, and applies runtime security across the AI lifecycle."
+  source: { url: https://splx.ai/, tier: official, title: SPLX, accessed: 2026-06-14, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://splx.ai/, tier: official, title: SPLX, accessed: 2026-06-14, origin: reviewed }
+status:
+  value: acquired
+  source: { url: https://www.zscaler.com/press/zscaler-secures-enterprise-ai-lifecycle-acquisition-innovative-ai-security-pioneer-splx, tier: official, title: Zscaler acquires SPLX, accessed: 2026-06-14, origin: reviewed }
+acquisition:
+  acquirer: Zscaler
+  announced: 2025-11-03
+  post_acquisition_status: standalone
+  source: { url: https://www.zscaler.com/press/zscaler-secures-enterprise-ai-lifecycle-acquisition-innovative-ai-security-pioneer-splx, tier: official, title: Zscaler acquires SPLX, accessed: 2026-06-14, origin: reviewed }
+last_reviewed: 2026-06-14
+changelog:
+  - date: 2026-06-14
+    summary: Added to the catalog from the SPLX documentation; recorded the Zscaler acquisition announced 2025-11-03 with SPLX operating as a standalone offering.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, detect, protect]
+    maturity: primary
+    note: Discovers AI models, workflows, and MCP servers into an AI-BOM, continuously red-teams AI systems for vulnerabilities, and applies runtime security and governance across the AI lifecycle.
+    source: { url: https://splx.ai/, tier: official, title: SPLX, accessed: 2026-06-14, origin: reviewed, quote: "From red teaming and runtime security to governance and remediation, SPLX delivers full-stack security tooling needed to safely build, deploy, and scale AI systems." }
+  - asset: ai-orchestration-tools
+    functions: [identify]
+    maturity: secondary
+    note: Discovers and inventories AI models, workflows, MCP servers, and guardrails into a complete AI-BOM.
+    source: { url: https://splx.ai/platform, tier: official, title: SPLX Platform, accessed: 2026-06-14, origin: reviewed, quote: "Unify discovery of models, AI workflows, MCP servers, and guardrails into a complete AI-BOM" }
+primary_cell: { asset: ai-model, function: detect }

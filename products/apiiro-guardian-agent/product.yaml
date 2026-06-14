@@ -1,0 +1,27 @@
+schema_version: 2
+name: Apiiro Guardian Agent
+aliases: [Apiiro AI Threat Modeling]
+url: https://apiiro.com/blog/apiiro-guardian-agent/
+vendor:
+  value: Apiiro
+  source: { url: https://apiiro.com/blog/apiiro-guardian-agent/, tier: official, title: Apiiro Guardian Agent, accessed: 2026-06-14, origin: reviewed }
+description:
+  value: "Apiiro Guardian Agent: AI AppSec agent that grounds AI coding agents in the app architecture and generates AI threat models to prevent vulnerable or non-compliant code before it is written."
+  source: { url: https://apiiro.com/blog/apiiro-guardian-agent/, tier: official, title: Apiiro Guardian Agent, accessed: 2026-06-14, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://apiiro.com/blog/apiiro-guardian-agent/, tier: official, title: Apiiro Guardian Agent, accessed: 2026-06-14, origin: reviewed }
+status:
+  value: active
+  source: { url: https://apiiro.com/blog/apiiro-guardian-agent/, tier: official, title: Apiiro Guardian Agent, accessed: 2026-06-14, origin: reviewed }
+last_reviewed: 2026-06-14
+changelog:
+  - date: 2026-06-14
+    summary: Added to the catalog from the Apiiro Guardian Agent documentation.
+matrix_coverage:
+  - asset: ai-generated-code
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Grounds AI coding agents in the application architecture, generates architecture-aware AI threat models, enriches coding prompts to prevent vulnerable or non-compliant AI-generated code, and detects drift between design intent and code.
+    source: { url: https://apiiro.com/blog/apiiro-guardian-agent/, tier: official, title: Apiiro Guardian Agent, accessed: 2026-06-14, origin: reviewed, quote: "Preventing Vulnerable and Non-Compliant Code from Ever Being Created" }
+primary_cell: { asset: ai-generated-code, function: protect }
