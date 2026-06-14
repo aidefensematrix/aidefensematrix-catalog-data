@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://aws.amazon.com/bedrock/guardrails/, tier: official, title: Amazon Bedrock Guardrails, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, SOC 3, ISO 27001, PCI DSS, FedRAMP]
+  source: { url: https://aws.amazon.com/compliance/services-in-scope/FedRAMP/, tier: official, title: AWS Services in Scope FedRAMP, accessed: 2026-06-13, origin: reviewed, quote: "FedRAMP authorization for Amazon Bedrock serverless models includes secure transmission, execution environment, access controls, encryption, and monitoring capabilities." }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09

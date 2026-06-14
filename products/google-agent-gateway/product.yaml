@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview, tier: official, title: Google Agent Gateway overview, accessed: 2026-06-13, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2, SOC 3, ISO 27001, ISO 27018, ISO 27701, PCI DSS]
+  source: { url: https://cloud.google.com/security/compliance/soc-2, tier: official, title: Google Cloud SOC 2 compliance, accessed: 2026-06-13, origin: reviewed, quote: "Gemini Code Assist Gemini Enterprise (including Agentspace)" }
 last_reviewed: 2026-06-13
 changelog:
   - date: 2026-06-13

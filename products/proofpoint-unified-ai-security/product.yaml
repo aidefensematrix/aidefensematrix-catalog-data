@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.proofpoint.com/us/platform/ai-security, tier: official, title: Proofpoint unified AI security platform page, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2, ISO 27001, ISO 42001]
+  source: { url: https://www.proofpoint.com/us/legal/trust/product-certifications, tier: official, title: Proofpoint Product Certifications, accessed: 2026-06-13, origin: reviewed, quote: "Proofpoint achieved ISO 42001 certification for its AIMS that supports the in-scope solutions identified in the certificate." }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10

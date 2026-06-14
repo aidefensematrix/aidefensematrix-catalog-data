@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://cloud.google.com/security/products/model-armor, tier: official, title: Google Model Armor, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2, SOC 3, ISO 27001, ISO 27017, ISO 27018, ISO 27701, PCI DSS]
+  source: { url: https://cloud.google.com/security/compliance/soc-2, tier: official, title: Google Cloud SOC 2 compliance, accessed: 2026-06-13, origin: reviewed, quote: "Migration Center Model Armor Network Connectivity Center" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
