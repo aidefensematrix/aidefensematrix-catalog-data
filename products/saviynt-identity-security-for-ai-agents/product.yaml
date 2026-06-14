@@ -1,0 +1,35 @@
+schema_version: 2
+name: Saviynt Identity Security for AI Agents
+aliases: [Saviynt Identity Security for AI]
+url: https://saviynt.com/products/identity-security-for-ai
+vendor:
+  value: Saviynt
+  source: { url: https://saviynt.com/products/identity-security-for-ai, tier: official, title: Saviynt Identity Security for AI, accessed: 2026-06-14, origin: reviewed }
+description:
+  value: "Saviynt Identity Security for AI Agents: Identity control plane that discovers AI agents and MCP servers, governs their lifecycle and ownership, and enforces real-time authorization for agent access."
+  source: { url: https://saviynt.com/products/identity-security-for-ai, tier: official, title: Saviynt Identity Security for AI, accessed: 2026-06-14, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://saviynt.com/products/identity-security-for-ai, tier: official, title: Saviynt Identity Security for AI, accessed: 2026-06-14, origin: reviewed }
+status:
+  value: active
+  source: { url: https://saviynt.com/products/identity-security-for-ai, tier: official, title: Saviynt Identity Security for AI, accessed: 2026-06-14, origin: reviewed }
+compliance_attestations:
+  value: [FedRAMP Moderate, SOC 1 Type 2, SOC 2 Type 2, ISO 27001, ISO 27017, PCI DSS]
+  source: { url: https://saviynt.com/trust-compliance-security, tier: official, title: Saviynt Trust and Security Center, accessed: 2026-06-14, origin: reviewed, quote: "SOC 2 Type II Audit Report" }
+last_reviewed: 2026-06-14
+changelog:
+  - date: 2026-06-14
+    summary: Added to the catalog from the Saviynt Identity Security for AI documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, govern, protect]
+    maturity: primary
+    note: Discovers and inventories AI agents, governs their lifecycle and human ownership with audit-ready compliance, and enforces real-time authorization for agent access to applications and data from one control plane.
+    source: { url: https://saviynt.com/products/identity-security-for-ai, tier: official, title: Saviynt Identity Security for AI, accessed: 2026-06-14, origin: reviewed, quote: "Discover. Govern. Protect AI agents from a single control plane." }
+  - asset: ai-orchestration-tools
+    functions: [identify, protect]
+    maturity: secondary
+    note: Discovers the MCP servers and tools agents use and gates agent access to them through the Agent Access Gateway.
+    source: { url: https://saviynt.com/products/identity-security-for-ai, tier: official, title: Saviynt Identity Security for AI, accessed: 2026-06-14, origin: reviewed, quote: "Automatically discover agents across the entire AI ecosystem, including MCP servers and tools, with actionable risk insights." }
+primary_cell: { asset: ai-agent-identities, function: govern }

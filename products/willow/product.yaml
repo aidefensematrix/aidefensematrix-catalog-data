@@ -1,0 +1,32 @@
+schema_version: 2
+name: Willow
+aliases: [Webrix]
+url: https://withwillow.ai/
+vendor:
+  value: Willow
+  source: { url: https://withwillow.ai/, tier: official, title: Willow, accessed: 2026-06-14, origin: reviewed }
+description:
+  value: "Willow: Identity and access layer for AI agents that discovers every agent, tool, and MCP server, issues each a governed scoped credential tied to a real user, and logs and contains their activity."
+  source: { url: https://withwillow.ai/, tier: official, title: Willow, accessed: 2026-06-14, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://withwillow.ai/, tier: official, title: Willow, accessed: 2026-06-14, origin: reviewed }
+status:
+  value: active
+  source: { url: https://withwillow.ai/, tier: official, title: Willow, accessed: 2026-06-14, origin: reviewed }
+last_reviewed: 2026-06-14
+changelog:
+  - date: 2026-06-14
+    summary: Added to the catalog from the Willow documentation (formerly Webrix).
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Discovers every AI agent, tool, and MCP server including unapproved ones, issues each agent a governed scoped credential tied to a real user with role-based least-privilege, and logs and contains agent activity with an org-wide kill switch.
+    source: { url: https://withwillow.ai/platform/identity-access, tier: official, title: Willow Identity and Access, accessed: 2026-06-14, origin: reviewed, quote: "Each agent receives a governed credential, scoped, time-bound, tied to a real user. Provision, suspend, and audit agents individually." }
+  - asset: ai-orchestration-tools
+    functions: [protect]
+    maturity: secondary
+    note: Provides a governed MCP gateway that brokers a single approved connection between agents and the tools they use.
+    source: { url: https://withwillow.ai/, tier: official, title: Willow, accessed: 2026-06-14, origin: reviewed, quote: "One governed connection to any tool." }
+primary_cell: { asset: ai-agent-identities, function: protect }

@@ -1,0 +1,32 @@
+schema_version: 2
+name: Keycard
+aliases: []
+url: https://keycard.ai/
+vendor:
+  value: Keycard
+  source: { url: https://keycard.ai/, tier: official, title: Keycard, accessed: 2026-06-14, origin: reviewed }
+description:
+  value: "Keycard: Control plane for AI agent access that gives each agent an identity and issues short-lived, scoped per-call credentials through runtime policy, logging every authorization decision."
+  source: { url: https://keycard.ai/, tier: official, title: Keycard, accessed: 2026-06-14, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://keycard.ai/, tier: official, title: Keycard, accessed: 2026-06-14, origin: reviewed }
+status:
+  value: active
+  source: { url: https://keycard.ai/, tier: official, title: Keycard, accessed: 2026-06-14, origin: reviewed }
+last_reviewed: 2026-06-14
+changelog:
+  - date: 2026-06-14
+    summary: Added to the catalog from the Keycard documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Gives each AI agent its own identity and issues short-lived, scoped credentials per tool, API, and data request through runtime policy, blocking disallowed actions and recording every authorization decision.
+    source: { url: https://keycard.ai/docs, tier: official, title: Keycard Docs, accessed: 2026-06-14, origin: reviewed, quote: "Every agent gets an identity. Every tool call gets a credential. Every action gets a log." }
+  - asset: ai-orchestration-tools
+    functions: [protect]
+    maturity: secondary
+    note: Adds OAuth-based authentication to MCP servers and agent-to-agent calls so each tool call is tied to a verified identity, scoped to explicit permissions, and logged.
+    source: { url: https://keycard.ai/docs, tier: official, title: Keycard Docs, accessed: 2026-06-14, origin: reviewed, quote: "Add OAuth-based authentication to a custom MCP server so every tool call is tied to a verified user, scoped to explicit permissions, and logged for audit." }
+primary_cell: { asset: ai-agent-identities, function: protect }

@@ -1,0 +1,27 @@
+schema_version: 2
+name: Pomerium
+aliases: []
+url: https://www.pomerium.com/secure-ai-agent-access
+vendor:
+  value: Pomerium
+  source: { url: https://www.pomerium.com/secure-ai-agent-access, tier: official, title: Pomerium Secure AI Agent Access, accessed: 2026-06-14, origin: reviewed }
+description:
+  value: "Pomerium: Self-hosted, policy-driven access control that brokers identity-aware, context-based, least-privilege access for AI agents and LLM systems in place of static credentials."
+  source: { url: https://www.pomerium.com/secure-ai-agent-access, tier: official, title: Pomerium Secure AI Agent Access, accessed: 2026-06-14, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://www.pomerium.com/secure-ai-agent-access, tier: official, title: Pomerium Secure AI Agent Access, accessed: 2026-06-14, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.pomerium.com/secure-ai-agent-access, tier: official, title: Pomerium Secure AI Agent Access, accessed: 2026-06-14, origin: reviewed }
+last_reviewed: 2026-06-14
+changelog:
+  - date: 2026-06-14
+    summary: Added to the catalog from the Pomerium documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: primary
+    note: Brokers identity-aware, context-based, least-privilege access for AI agents and LLM systems, replacing static long-lived credentials with policy-driven scoped access enforced in the customer environment.
+    source: { url: https://www.pomerium.com/secure-ai-agent-access, tier: official, title: Pomerium Secure AI Agent Access, accessed: 2026-06-14, origin: reviewed, quote: "Policy-driven, self-hosted access control for agents, scripts, and LLM systems." }
+primary_cell: { asset: ai-agent-identities, function: protect }
