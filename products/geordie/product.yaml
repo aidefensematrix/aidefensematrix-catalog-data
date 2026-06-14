@@ -5,7 +5,7 @@ vendor:
   source: { url: https://www.geordie.ai/, tier: official, title: Geordie AI homepage, accessed: 2026-06-10, origin: reviewed }
 url: https://www.geordie.ai/
 description:
-  value: "Geordie: Agent security and governance platform that discovers AI agents, maps their tools and MCP connections, audits behavior, and applies real-time controls through its Beam engine."
+  value: "Geordie: Agent security platform that discovers AI agents, maps their tools and MCP connections, audits behavior, and applies real-time controls through its Beam engine."
   source: { url: https://www.geordie.ai/, tier: official, title: Geordie AI homepage, accessed: 2026-06-10, origin: reviewed }
 deployment:
   value: [saas]
@@ -19,6 +19,8 @@ changelog:
     summary: Added to the catalog from the Geordie AI documentation.
   - date: 2026-06-12
     summary: Refined matrix coverage and primary function.
+  - date: 2026-06-14
+    summary: Refined product description wording.
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [identify]

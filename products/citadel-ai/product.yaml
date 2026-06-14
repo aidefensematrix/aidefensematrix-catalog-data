@@ -16,11 +16,13 @@ status:
   source: { url: https://citadel-ai.com/, tier: official, title: Citadel AI homepage, accessed: 2026-06-10, origin: reviewed }
 compliance_attestations:
   value: [ISO 27001]
-  source: { url: https://trust.citadel-ai.com/, tier: official, title: Citadel AI Trust Center, accessed: 2026-06-13, origin: reviewed, quote: "ISO 27001:2022" }
+  source: { url: https://trust.citadel-ai.com/, tier: official, title: Citadel AI Trust Center, accessed: 2026-06-13, origin: reviewed, quote: "Our information security systems are ISO 27001:2022 certified, and we work with Vanta to ensure the continuous compliance of our security measures." }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Citadel AI website.
+  - date: 2026-06-14
+    summary: Updated compliance attestation source quote.
 matrix_coverage:
   - asset: ai-model
     functions: [detect]

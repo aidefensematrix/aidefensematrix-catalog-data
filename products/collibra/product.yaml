@@ -6,7 +6,7 @@ vendor:
 aliases: [Collibra AI Governance, Collibra AI Command Center]
 url: https://www.collibra.com/products/ai-governance
 description:
-  value: Data and AI governance platform that governs AI models, use cases, and agents across their lifecycle, ties them to trusted lineage-tracked data, and enforces compliance and data policies.
+  value: Data and AI catalog that inventories AI models, use cases, and agents across their lifecycle, ties them to trusted lineage-tracked data, and maps them to compliance and data policies.
   source: { url: https://www.collibra.com/products/ai-governance, tier: official, title: Collibra AI Governance, accessed: 2026-06-09, origin: reviewed }
 deployment:
   value: [saas]
@@ -18,6 +18,8 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Enriched from the Collibra AI Governance documentation.
+  - date: 2026-06-14
+    summary: Refined product description wording.
 matrix_coverage:
   - asset: ai-model
     functions: [identify]

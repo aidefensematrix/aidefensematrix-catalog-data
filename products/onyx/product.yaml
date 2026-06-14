@@ -6,7 +6,7 @@ vendor:
   source: { url: https://onyx.security/blog/introducing-onyx-security-the-secure-ai-control-plane-for-enterprises, tier: official, title: Onyx Security launch announcement, accessed: 2026-06-10, origin: reviewed }
 url: https://onyx.security/
 description:
-  value: "Onyx: Control plane that discovers sanctioned and shadow AI agents, monitors prompts and agent actions in real time, and enforces security and governance policies across enterprise AI use."
+  value: "Onyx: Control plane that discovers sanctioned and shadow AI agents, monitors prompts and agent actions in real time, and enforces security policies across enterprise AI use."
   source: { url: https://onyx.security/, tier: official, title: Onyx Security homepage, accessed: 2026-06-10, origin: reviewed }
 deployment:
   value: [saas, self-hosted, hybrid]
@@ -18,6 +18,8 @@ last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Onyx Security documentation.
+  - date: 2026-06-14
+    summary: Refined product description wording.
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [identify, detect, respond]

@@ -6,7 +6,7 @@ vendor:
 aliases: [Alation AI Governance, Alation Data Intelligence Platform]
 url: https://www.alation.com/solutions/artificial-intelligence/
 description:
-  value: Data intelligence platform with AI governance that inventories AI models, agents, and tools, traces their data lineage, and curates trusted, compliant data for AI development.
+  value: Data intelligence platform that inventories AI models, agents, and tools, traces their data lineage, and curates trusted, compliant data for AI development.
   source: { url: https://www.alation.com/solutions/artificial-intelligence/, tier: official, title: Alation AI Governance, accessed: 2026-06-09, origin: reviewed }
 deployment:
   value: [saas]
@@ -18,6 +18,8 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Enriched from the Alation AI Governance documentation.
+  - date: 2026-06-14
+    summary: Refined product description wording.
 matrix_coverage:
   - asset: ai-model
     functions: [identify]

@@ -6,7 +6,7 @@ vendor:
 aliases: [Databricks Unity Catalog, Models in Unity Catalog]
 url: https://www.databricks.com/product/unity-catalog
 description:
-  value: Unified governance layer for Databricks data and AI that manages models, agent tools, and MCP connections as access-controlled objects, with fine-grained policies, column-level lineage, and audit.
+  value: Unified catalog layer for Databricks data and AI that manages models, agent tools, and MCP connections as access-controlled objects, with fine-grained policies, column-level lineage, and audit.
   source: { url: https://www.databricks.com/product/unity-catalog, tier: official, title: Databricks Unity Catalog, accessed: 2026-06-09, origin: reviewed }
 deployment:
   value: [saas]
@@ -18,6 +18,8 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Enriched from the Databricks Unity Catalog documentation.
+  - date: 2026-06-14
+    summary: Refined product description wording.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, protect]
