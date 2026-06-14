@@ -1,0 +1,32 @@
+schema_version: 2
+name: Knostic GenAI Knowledge Security
+aliases: [GenAI Knowledge Security Platform, Knostic Knowledge Security]
+url: https://www.knostic.ai/the-genai-knowledge-security-platform
+vendor:
+  value: Knostic
+  source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed }
+description:
+  value: "Knostic GenAI Knowledge Security: Detects where AI assistants like Copilot, Glean, and Gemini overshare sensitive knowledge and enforces need-to-know access controls on their answers."
+  source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed }
+last_reviewed: 2026-06-13
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Knostic documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [detect, protect]
+    maturity: primary
+    note: Simulates enterprise user queries against Copilot, Glean, and Gemini to find inference-based oversharing where the assistant recombines data across security boundaries, then applies role-based access policies and automated labeling to constrain what the assistant answers.
+    source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed, quote: "Identifies inference-based exposures where AI combines data inappropriately across security boundaries." }
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: secondary
+    note: Audits enterprise AI assistants including Copilot, Glean, and Gemini, mapping their knowledge-access patterns and producing an audit trail of inferred access for safe rollout.
+    source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed, quote: "Ensure safe rollout of Copilot, Glean, and Gemini enterprise-wide with granular control over AI answers." }
+primary_cell: { asset: runtime-ai-data, function: detect }
