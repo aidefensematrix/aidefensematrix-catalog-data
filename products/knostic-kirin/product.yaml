@@ -25,15 +25,15 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: "Inspects MCP connections in real time and monitors IDE extensions and plugins, blocking untrusted or risky components."
-    source: { url: https://www.knostic.ai/ai-coding-security-solution-kirin, tier: official, title: "Catch compromised MCP servers, stop vulnerable plugins", accessed: 2026-06-11, origin: reviewed }
+    source: { url: https://www.knostic.ai/ai-coding-security-solution-kirin, tier: official, title: "Catch compromised MCP servers, stop vulnerable plugins", accessed: 2026-06-11, origin: reviewed, quote: "Kirin continuously monitors IDE extensions and plugins, detecting vulnerabilities and blocking untrusted or risky components before they impact your workflow." }
   - asset: ai-generated-code
     functions: [protect, detect]
     maturity: secondary
     note: "In-IDE guardrails and real-time dependency scanning flag vulnerable or malicious libraries in AI-assisted coding."
-    source: { url: https://www.knostic.ai/ai-coding-security-solution-kirin, tier: official, title: "Key capabilities of the Kirin coding security solution", accessed: 2026-06-11, origin: reviewed }
+    source: { url: https://www.knostic.ai/ai-coding-security-solution-kirin, tier: official, title: "Key capabilities of the Kirin coding security solution", accessed: 2026-06-11, origin: reviewed, quote: "By validating MCP servers and extensions, scanning dependencies, and blocking unsafe actions in real time inside the IDE." }
   - asset: runtime-ai-data
     functions: [protect]
     maturity: secondary
     note: "Redacts and guards sensitive data inside the IDE against prompt injection and oversharing."
-    source: { url: https://www.getkirin.com, tier: official, title: "Kirin guards sensitive data inside the IDE", accessed: 2026-06-11, origin: reviewed }
+    source: { url: https://www.getkirin.com, tier: official, title: "Kirin guards sensitive data inside the IDE", accessed: 2026-06-11, origin: reviewed, quote: "Kirin automatically redacts and guards sensitive data inside your IDE." }
 primary_cell: { asset: ai-orchestration-tools, function: protect }
