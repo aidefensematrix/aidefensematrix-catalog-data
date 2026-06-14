@@ -22,15 +22,15 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: The AI Firewall inspects prompts and responses in real time and can block, redact, or alert on prompt injection, jailbreaks, data leakage, and unsafe outputs, deployed inline or out-of-band.
-    source: { url: https://www.deepkeep.ai/capabilities/ai-firewall, tier: official, title: DeepKeep AI firewall page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.deepkeep.ai/capabilities/ai-firewall, tier: official, title: DeepKeep AI firewall page, accessed: 2026-06-10, origin: reviewed, quote: "If something violates your standards, we block or redact it before it causes harm." }
   - asset: ai-model
     functions: [identify, detect]
     maturity: primary
     note: Model scanning combines multi-engine static analysis with dynamic testing to surface embedded malware, vulnerable dependencies, tampering, and unsafe behaviors, and builds model inventories using SBOM and MLBOM frameworks.
-    source: { url: https://www.deepkeep.ai/capabilities/model-scanning, tier: official, title: DeepKeep model scanning page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.deepkeep.ai/capabilities/model-scanning, tier: official, title: DeepKeep model scanning page, accessed: 2026-06-10, origin: reviewed, quote: "Scan models before deployment, so you can identify threats early and avoid surprises later." }
   - asset: ai-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: Automated red teaming continuously simulates prompt injection, jailbreak, and data leakage attacks against custom AI applications and agents, with findings tied to remediation guidance and firewall guardrail updates.
-    source: { url: https://www.deepkeep.ai/capabilities/ai-red-teaming, tier: official, title: DeepKeep AI red teaming page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.deepkeep.ai/capabilities/ai-red-teaming, tier: official, title: DeepKeep AI red teaming page, accessed: 2026-06-10, origin: reviewed, quote: "With DeepKeep, you can automatically test your applications, agents and models under real-world conditions without relying on manual red teaming cycles." }
 primary_cell: { asset: runtime-ai-data, function: protect }

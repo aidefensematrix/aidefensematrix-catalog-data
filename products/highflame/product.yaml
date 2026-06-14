@@ -27,15 +27,15 @@ matrix_coverage:
     functions: [protect]
     maturity: primary
     note: Acts as a centralized control layer across LLM, MCP, A2A, and A2P interactions, enforcing Cedar-based access, safety, and compliance policies inline and generating audit-ready reports.
-    source: { url: https://highflame.com/highflame-platform, tier: official, title: Highflame platform page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://highflame.com/highflame-platform, tier: official, title: Highflame platform page, accessed: 2026-06-10, origin: reviewed, quote: "Secure every interaction - from LLM prompts to MCP tools and agent-to-agent (A2A) through a unified, identity-aware control layer." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Multi-turn guardrail models inspect prompts and responses in conversation context, detecting and blocking malicious inputs such as prompt injection across the conversation lifecycle.
-    source: { url: https://highflame.com/javelin-security, tier: official, title: Highflame guardrail security models page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://highflame.com/javelin-security, tier: official, title: Highflame guardrail security models page, accessed: 2026-06-10, origin: reviewed, quote: "These models are designed for real-time enforcement and to maintain conversational context, enabling detection of sophisticated, multi-turn attacks and real-time conversation threat scoring." }
   - asset: ai-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Centralizes how agents reach MCP servers and tools with policy enforcement, runtime inspection, and visibility into agent activity; the open-source Ramparts scanner finds vulnerabilities in MCP servers and agent skills.
-    source: { url: https://highflame.com/mcpsecurity, tier: official, title: Highflame MCP security page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://highflame.com/mcpsecurity, tier: official, title: Highflame MCP security page, accessed: 2026-06-10, origin: reviewed, quote: "Highflame MCP Security provides centralized MCP server management with policy enforcement, runtime inspection, and complete visibility into agent activity." }
 primary_cell: { asset: ai-gateways-routers, function: protect }
