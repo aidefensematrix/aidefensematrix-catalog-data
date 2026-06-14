@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.enkryptai.com/, tier: official, title: Enkrypt AI homepage, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://www.enkryptai.com/blog/enkrypt-ai-announces-soc-2-type-2-compliance-certification, tier: official, title: Enkrypt AI SOC 2 Type 2 certification, accessed: 2026-06-13, origin: reviewed, quote: "Enkrypt AI is proud to announce our SOC 2 Type 2 compliance certification." }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10

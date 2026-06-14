@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.fiddler.ai/, tier: official, title: Fiddler AI homepage, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, HIPAA]
+  source: { url: https://www.fiddler.ai/security, tier: official, title: Fiddler AI Security, accessed: 2026-06-13, origin: reviewed, quote: "Fiddler is in compliance with the U.S. Health Insurance and Accountability Act (HIPAA)." }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
