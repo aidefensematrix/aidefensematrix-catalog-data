@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://blog.qualys.com/product-tech/2024/12/05/secure-your-generative-investments-qualys-advances-enterprise-trurisk-platform-with-qualys-totalai-to-protect-your-llm-investments, tier: official, title: Qualys TotalAI launch announcement, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [FedRAMP Moderate]
+  source: { url: https://blog.qualys.com/product-tech/2026/05/05/qualys-totalai-achieves-fedramp-moderate-fedramp-certified-class-c-authorization, tier: official, title: Qualys TotalAI FedRAMP Moderate authorization, accessed: 2026-06-13, origin: reviewed, quote: "Qualys TotalAI is now FedRAMP Moderate Authorized and available on the Qualys Cloud Platform" }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10

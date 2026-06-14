@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.sonatype.com/products/language-support/hugging-face, tier: official, title: Sonatype Hugging Face model support, accessed: 2026-06-13, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://www.sonatype.com/security-at-sonatype, tier: official, title: Security at Sonatype, accessed: 2026-06-13, origin: reviewed, quote: "SOC 2 Type II Reports" }
 last_reviewed: 2026-06-13
 changelog:
   - date: 2026-06-13
