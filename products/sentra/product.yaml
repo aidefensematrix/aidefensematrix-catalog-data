@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.sentra.io/product, tier: official, title: Sentra Platform Overview, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, TX-RAMP Level 2, GDPR]
+  source: { url: https://trust.sentra.io/, tier: official, title: Sentra Trust Center, accessed: 2026-06-13, origin: reviewed, quote: "SOC 2 Type 2" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
