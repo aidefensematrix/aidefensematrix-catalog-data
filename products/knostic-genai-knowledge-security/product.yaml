@@ -14,10 +14,15 @@ deployment:
 status:
   value: active
   source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://security.knostic.ai/, tier: official, title: Knostic Trust Center, accessed: 2026-06-13, origin: reviewed, quote: "SOC 2 Type 2" }
 last_reviewed: 2026-06-13
 changelog:
   - date: 2026-06-13
     summary: Added to the catalog from the Knostic documentation.
+  - date: 2026-06-13
+    summary: Added a company-level SOC 2 Type 2 attestation cited to the Knostic trust center.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [detect, protect]
