@@ -25,7 +25,7 @@ matrix_coverage:
     functions: [identify]
     maturity: primary
     note: Registers and monitors AI models across their lifecycle with documentation and lineage, integrating with ML platforms such as SageMaker, Bedrock, and MLflow.
-    source: { url: https://www.collibra.com/blog/collibra-ai-model-governance-one-place-to-govern-all-your-models, tier: official, title: Collibra AI Model Governance, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.collibra.com/blog/collibra-ai-model-governance-one-place-to-govern-all-your-models, tier: official, title: Collibra AI Model Governance, accessed: 2026-06-09, origin: reviewed, quote: "a centralized capability to register, monitor and govern models across their lifecycle." }
   - asset: training-data
     functions: [identify, protect]
     maturity: secondary

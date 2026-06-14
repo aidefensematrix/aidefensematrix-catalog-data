@@ -25,10 +25,10 @@ matrix_coverage:
     functions: [govern, identify, detect]
     maturity: primary
     note: Discovers AI assets, runs 100+ evaluations mapped to 20+ frameworks such as the EU AI Act and NIST, scans for vulnerabilities via automated red-teaming aligned with OWASP and MITRE, and continuously monitors risk for audit-ready governance evidence.
-    source: { url: https://latticeflow.ai/platform, tier: official, title: LatticeFlow AI platform page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://latticeflow.ai/platform, tier: official, title: LatticeFlow AI platform page, accessed: 2026-06-10, origin: reviewed, quote: "AI Atlas provides packaged evaluation solutions organized by governance framework, red-teaming category, or use case." }
   - asset: ai-orchestration-tools
     functions: [govern]
     maturity: secondary
     note: Discovers, evaluates, and governs risk for autonomous agentic AI systems alongside foundation models and custom generative AI applications.
-    source: { url: https://latticeflow.ai/use-cases/our-use-cases, tier: official, title: LatticeFlow AI use cases page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://latticeflow.ai/use-cases/our-use-cases, tier: official, title: LatticeFlow AI use cases page, accessed: 2026-06-10, origin: reviewed, quote: "Control your AI Risk by evaluating and monitoring against frameworks with the deepest technical controls, producing audit-ready evidence you can trust for compliance, risk, and board-level decisions." }
 primary_cell: { asset: ai-model, function: govern }

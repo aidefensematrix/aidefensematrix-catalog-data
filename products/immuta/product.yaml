@@ -23,7 +23,7 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovers and classifies sensitive data and enforces attribute-based access controls and masking at the data layer for RAG and AI workloads, monitoring queries for unusual access.
-    source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed, quote: "Unifying data discovery, policy enforcement, activity monitoring, and auditing in a single, integrated plane makes it easy to mitigate risk without slowing the pace of AI innovation." }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary

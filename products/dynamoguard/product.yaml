@@ -22,7 +22,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Lightweight guardrail models screen LLM inputs and outputs in real time for prompt injection, jailbreaks, PII leakage, toxicity, and hallucinations, with block or sanitize actions; compliance teams author custom policies in natural language and audit flagged LLM usage in production.
-    source: { url: https://docs.dynamo.ai/docs/DynamoGuard/Overview, tier: official, title: DynamoGuard overview documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://docs.dynamo.ai/docs/DynamoGuard/Overview, tier: official, title: DynamoGuard overview documentation, accessed: 2026-06-10, origin: reviewed, quote: "DynamoGuard leverages a set of lightweight guardrail models to detect policy violations in LLM inputs and outputs in real-time." }
   - asset: ai-orchestration-tools
     functions: [protect, detect]
     maturity: secondary

@@ -33,5 +33,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: Gates and brokers agent access to custom and third-party MCP servers and the enterprise systems behind them.
-    source: { url: https://aembit.io/iam-for-agentic-ai/, tier: official, title: Aembit IAM for Agentic AI, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://aembit.io/iam-for-agentic-ai/, tier: official, title: Aembit IAM for Agentic AI, accessed: 2026-06-09, origin: reviewed, quote: "Everything you need to govern AI agent access to MCP servers, from user authentication through to per-request credential exchange and audit logging." }
 primary_cell: { asset: ai-agent-identities, function: protect }

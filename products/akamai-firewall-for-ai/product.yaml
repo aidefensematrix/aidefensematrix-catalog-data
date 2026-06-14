@@ -23,7 +23,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Applies guardrails to both inputs and outputs, detecting and blocking prompt injection, jailbreaks, and harmful queries in real time while filtering model responses for toxic content and sensitive data leakage.
-    source: { url: https://www.akamai.com/products/firewall-for-ai, tier: official, title: Akamai Firewall for AI product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.akamai.com/products/firewall-for-ai, tier: official, title: Akamai Firewall for AI product page, accessed: 2026-06-10, origin: reviewed, quote: "Detect and block prompt injections, jailbreaks, and harmful queries before they reach your AI model." }
   - asset: ai-model
     functions: [protect]
     maturity: secondary

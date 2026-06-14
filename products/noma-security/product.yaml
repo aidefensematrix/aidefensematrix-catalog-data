@@ -29,9 +29,9 @@ matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [identify, detect]
     maturity: primary
-    source: { url: https://noma.security/platform/, tier: official, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://noma.security/platform/, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "Continuous discovery, testing, and protection across models, datasets, agents, and pipelines." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: secondary
-    source: { url: https://noma.security/platform/aispm/, tier: official, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://noma.security/platform/aispm/, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "Enterprise-grade AI Security Posture Management (AISPM) that continuously discovers, assesses, and governs every AI asset across your environment." }
 primary_cell: { asset: ai-agent-identities, function: protect }

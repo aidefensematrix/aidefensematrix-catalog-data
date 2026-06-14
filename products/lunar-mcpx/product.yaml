@@ -25,7 +25,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: MCP gateway routes agent tool calls to MCP servers through one endpoint with per-agent access control, tool groups, hardened tool variants, and OAuth and API key auth; audit logs record tool usage and configuration changes.
-    source: { url: https://docs.lunar.dev/mcpx/, tier: official, title: Lunar MCPX documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://docs.lunar.dev/mcpx/, tier: official, title: Lunar MCPX documentation, accessed: 2026-06-10, origin: reviewed, quote: "MCPX provides a single point of control with full visibility into all traffic and enforceable policies on how tools are accessed, configured, and used." }
   - asset: ai-agent-identities
     functions: [identify, protect]
     maturity: secondary
@@ -35,5 +35,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: The enterprise edition inspects MCP requests and responses inline to redact sensitive data before it leaves the deployment environment.
-    source: { url: https://www.lunar.dev/product/mcp, tier: official, title: Lunar MCP gateway product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.lunar.dev/product/mcp, tier: official, title: Lunar MCP gateway product page, accessed: 2026-06-10, origin: reviewed, quote: "It intercepts, authenticates, and governs traffic using policies defined by the organization." }
 primary_cell: { asset: ai-orchestration-tools, function: protect }

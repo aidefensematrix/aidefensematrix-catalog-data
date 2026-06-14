@@ -32,5 +32,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: secondary
     note: The AgentLink companion product creates a hosted MCP server that translates SaaS APIs into MCP tools, enforces agent-specific guardrails on every action, and keeps audit trails plus analytics of agent tool usage and anomalies.
-    source: { url: https://frontegg.com/product/agentlink, tier: official, title: AgentLink by Frontegg product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://frontegg.com/product/agentlink, tier: official, title: AgentLink by Frontegg product page, accessed: 2026-06-10, origin: reviewed, quote: "AgentLink is a low-code communications and control layer that lets you embrace this new entry point into your product without the risk." }
 primary_cell: { asset: ai-agent-identities, function: protect }

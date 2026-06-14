@@ -31,5 +31,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: Provides in-line protection for agent interactions across agent platforms and frameworks such as Vertex and LangChain.
-    source: { url: https://cloud.google.com/security/products/model-armor, tier: official, title: Google Model Armor, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://cloud.google.com/security/products/model-armor, tier: official, title: Google Model Armor, accessed: 2026-06-09, origin: reviewed, quote: "Model Armor now offers in-line protection for Gemini Enterprise Agent Platform, Langchain, and more." }
 primary_cell: { asset: runtime-ai-data, function: protect }

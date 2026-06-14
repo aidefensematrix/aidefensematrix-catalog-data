@@ -27,15 +27,15 @@ matrix_coverage:
     functions: [identify]
     maturity: primary
     note: AISPM discovers agents across environments, evaluates configuration and permission risk, and enforces guardrails before agents run, with an inventory of ownership, permissions, and integrations.
-    source: { url: https://zenity.io/platform/ai-security-posture-management, tier: official, title: Zenity AI security posture management, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://zenity.io/platform/ai-security-posture-management, tier: official, title: Zenity AI security posture management, accessed: 2026-06-10, origin: reviewed, quote: "It discovers agents across environments, evaluates configuration and permission risk, and enforces secure-by-design guardrails enabling safe AI adoption without slowing teams down." }
   - asset: runtime-ai-data
     functions: [detect, protect]
     maturity: primary
     note: AIDR monitors step-level agent execution at runtime, detects direct and indirect prompt injection, and blocks sensitive data leakage through agent conversations, tool calls, and memory.
-    source: { url: https://zenity.io/platform/ai-security-platform/aidr, tier: official, title: Zenity AI detection and response, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://zenity.io/platform/ai-security-platform/aidr, tier: official, title: Zenity AI detection and response, accessed: 2026-06-10, origin: reviewed, quote: "AIDR enables security teams to detect and stop risky behavior before it impacts systems or data." }
   - asset: ai-orchestration-tools
     functions: [protect, detect]
     maturity: secondary
     note: MCP security provides visibility into MCP connections, blocks unauthorized agent actions, and enforces security policies over MCP-enabled agents.
-    source: { url: https://zenity.io/use-cases/risk-type/mcp, tier: official, title: Zenity MCP security use case, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://zenity.io/use-cases/risk-type/mcp, tier: official, title: Zenity MCP security use case, accessed: 2026-06-10, origin: reviewed, quote: "Zenity delivers MCP security with full visibility, real-time policy enforcement, and instant threat containment, securing every MCP-enabled AI agent." }
 primary_cell: { asset: ai-agent-identities, function: identify }
