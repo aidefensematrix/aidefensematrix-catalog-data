@@ -27,5 +27,5 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: primary
     note: Discovers and classifies sensitive data across cloud and on-prem at petabyte scale without copying it out of the environment, controls access to it, and adds data detection and response across the datasets AI and Copilot or Bedrock can reach.
-    source: { url: https://www.sentra.io/product, tier: official, title: Sentra Platform Overview, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.sentra.io/product, tier: official, title: Sentra Platform Overview, accessed: 2026-06-09, origin: reviewed, quote: "Continuous discovery, classification, hygiene, and access governance - at petabyte scale, in your environment." }
 primary_cell: { asset: training-data, function: identify }

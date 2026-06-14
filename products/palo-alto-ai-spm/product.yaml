@@ -26,10 +26,10 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: primary
     note: Discovers and inventories deployed AI models and their cloud resources, surfaces shadow and unauthorized models, and flags misconfigured or overprivileged models and supply-chain vulnerabilities.
-    source: { url: https://www.paloaltonetworks.com/prisma/cloud/ai-spm, tier: official, title: Prisma Cloud AI-SPM, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.paloaltonetworks.com/prisma/cloud/ai-spm, tier: official, title: Prisma Cloud AI-SPM, accessed: 2026-06-09, origin: reviewed, quote: "Discover all AI applications, models and associated resources." }
   - asset: training-data
     functions: [identify, detect]
     maturity: secondary
     note: Classifies where sensitive data lives in training and reference data and monitors data flows for exposure and poisoning risk.
-    source: { url: https://www.paloaltonetworks.com/blog/cloud-security/ai-spm/, tier: official, title: AI-SPM now generally available, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.paloaltonetworks.com/blog/cloud-security/ai-spm/, tier: official, title: AI-SPM now generally available, accessed: 2026-06-09, origin: reviewed, quote: "AI-SPM tools provide visibility into the AI model lifecycle, from data ingestion and training to deployment." }
 primary_cell: { asset: ai-model, function: identify }
