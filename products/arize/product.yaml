@@ -26,7 +26,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Run-time guardrails screen LLM inputs and outputs, blocking jailbreaks, prompt injection, and PII and correcting toxic or hallucinated responses.
-    source: { url: https://arize.com/docs/ax/security-and-settings/llm-security/guardrails, tier: official, title: Arize AX guardrails, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://arize.com/docs/ax/security-and-settings/llm-security/guardrails, tier: official, title: Arize AX guardrails, accessed: 2026-06-09, origin: reviewed, quote: "Failed messages trigger corrective actions such as default responses, retries, or blocking outputs entirely." }
   - asset: ai-orchestration-tools
     functions: [detect]
     maturity: secondary

@@ -24,10 +24,10 @@ matrix_coverage:
     functions: [identify, protect, detect, respond]
     maturity: primary
     note: "Agentless discovery and inventory of agents and non-human identities, posture and lifecycle management, and non-human ITDR for detection and response."
-    source: { url: https://astrix.security/product/, tier: official, title: Astrix product overview, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://astrix.security/product/, tier: official, title: Astrix product overview, accessed: 2026-06-07, origin: reviewed, quote: "Identify and remediate AI agents and NHIs with excessive privileges, vulnerable configurations, abnormal activity, and policy violations." }
   - asset: runtime-ai-data
     functions: [identify, detect]
     maturity: secondary
     note: "Discovers and monitors secrets and credentials inside and outside vaults that agents and non-human identities use at runtime."
-    source: { url: https://astrix.security/use-cases/non-human-itdr/, tier: official, title: Astrix non-human ITDR, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://astrix.security/use-cases/non-human-itdr/, tier: official, title: Astrix non-human ITDR, accessed: 2026-06-07, origin: reviewed, quote: "Detect and respond to suspicious NHI activity" }
 primary_cell: { asset: ai-agent-identities, function: identify }

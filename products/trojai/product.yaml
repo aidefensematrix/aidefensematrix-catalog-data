@@ -22,15 +22,15 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: TrojAI Detect runs automated red teaming with more than 150 built-in security and safety tests, finding model weaknesses such as prompt injection, data leakage, and PII exposure before deployment.
-    source: { url: https://troj.ai/products/detect, tier: official, title: TrojAI Detect product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://troj.ai/products/detect, tier: official, title: TrojAI Detect product page, accessed: 2026-06-10, origin: reviewed, quote: "Find security weaknesses in your AI, ML, and GenAI models before they can be exploited." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: TrojAI Defend is a runtime AI firewall that monitors, alerts, blocks, redacts, and logs, filtering inputs and outputs to AI applications to stop prompt injection, sensitive information disclosure, and other adversarial attacks.
-    source: { url: https://troj.ai/products/defend, tier: official, title: TrojAI Defend product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://troj.ai/products/defend, tier: official, title: TrojAI Defend product page, accessed: 2026-06-10, origin: reviewed, quote: "Stop malicious attacks and prevent data loss and data leaks by securing the inputs and outputs of your AI applications with real-time monitoring and protection." }
   - asset: ai-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: TrojAI Defend for MCP applies MCP-specific policies that inspect, audit, and enforce security on MCP traffic in real time, blocking unregistered or rogue servers in agentic workflows.
-    source: { url: https://troj.ai/products/defend-mcp, tier: official, title: TrojAI Defend for MCP product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://troj.ai/products/defend-mcp, tier: official, title: TrojAI Defend for MCP product page, accessed: 2026-06-10, origin: reviewed, quote: "Secure agentic AI workflows by giving security teams the visibility, policy control, and run-time protection needed to secure Model Context Protocol (MCP) deployments." }
 primary_cell: { asset: runtime-ai-data, function: protect }

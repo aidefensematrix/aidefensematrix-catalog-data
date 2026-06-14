@@ -26,10 +26,10 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: primary
     note: Discovers and classifies sensitive data across cloud and SaaS, surfaces shadow AI, and controls which data AI applications and agents can reach.
-    source: { url: https://www.cyera.com/platform/dspm, tier: official, title: Cyera Data Security Posture Management, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.cyera.com/platform/dspm, tier: official, title: Cyera Data Security Posture Management, accessed: 2026-06-09, origin: reviewed, quote: "Uncover sensitive data across structured and unstructured sources, including what's unique to your business." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary
     note: Prevents sensitive-data leakage to AI in the moment through AI-aware data-loss controls.
-    source: { url: https://www.cyera.com/, tier: official, title: Cyera AI security platform, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.cyera.com/, tier: official, title: Cyera AI security platform, accessed: 2026-06-09, origin: reviewed, quote: "One platform to secure AI - from data to access to real-time protection." }
 primary_cell: { asset: training-data, function: protect }

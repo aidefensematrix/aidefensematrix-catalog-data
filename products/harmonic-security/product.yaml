@@ -30,5 +30,5 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: secondary
     note: Harmonic Command provides visibility into AI agents acting through MCP servers and applies inline interventions that coach the user or agent when sensitive data is about to leave the business.
-    source: { url: https://www.harmonic.security/products/command, tier: official, title: Harmonic Command product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.harmonic.security/products/command, tier: official, title: Harmonic Command product page, accessed: 2026-06-10, origin: reviewed, quote: "Harmonic Command gives security teams complete visibility into how employees and agents use AI, plus the controls to ensure tools are used safely." }
 primary_cell: { asset: runtime-ai-data, function: protect }

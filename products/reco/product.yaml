@@ -29,12 +29,12 @@ matrix_coverage:
     functions: [identify]
     maturity: primary
     note: Discovers shadow AI tools and embedded AI features across SaaS apps and supports security teams in assessing generative AI usage across the enterprise.
-    source: { url: https://www.reco.ai/agentic-ai-security, tier: official, title: Reco agentic AI security page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.reco.ai/agentic-ai-security, tier: official, title: Reco agentic AI security page, accessed: 2026-06-10, origin: reviewed, quote: "Reco Dynamic SaaS Security empowers security teams to identify, assess, and govern generative AI usage across the enterprise" }
   - asset: ai-agent-identities
     functions: [identify, detect]
     maturity: primary
     note: Maps every AI agent to an owner and a risk score, flags overpermissioned and orphaned agent identities, supports least privilege across the agent fleet, and surfaces policy violations.
-    source: { url: https://www.reco.ai/, tier: official, title: Reco homepage, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.reco.ai/, tier: official, title: Reco homepage, accessed: 2026-06-10, origin: reviewed, quote: "Know exactly what every agent in your environment can access, who owns it, and where the risk is." }
   - asset: runtime-ai-data
     functions: [identify, detect]
     maturity: secondary

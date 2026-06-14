@@ -22,7 +22,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Enterprise MCP gateway between AI clients and MCP servers that handles authentication, enforces access policies, and logs every tool call; admins curate a catalog of approved servers with preconfigured credentials, role-based tool sets, and centralized credential management.
-    source: { url: https://docs.mintmcp.com/, tier: official, title: MintMCP documentation introduction, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://docs.mintmcp.com/, tier: official, title: MintMCP documentation introduction, accessed: 2026-06-10, origin: reviewed, quote: "It sits between your AI clients and MCP servers, handling authentication, logging every tool call, and enforcing access policies." }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
@@ -32,5 +32,5 @@ matrix_coverage:
     functions: [detect]
     maturity: secondary
     note: Exports activity logs covering tool invocations, prompt submissions, and gateway requests to SIEM or observability platforms in real time over the OpenTelemetry Logs protocol.
-    source: { url: https://www.mintmcp.com/docs/siem-export, tier: official, title: MintMCP SIEM export documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.mintmcp.com/docs/siem-export, tier: official, title: MintMCP SIEM export documentation, accessed: 2026-06-10, origin: reviewed, quote: "Each log record contains one or more tool calls that were intercepted by the agent hook." }
 primary_cell: { asset: ai-orchestration-tools, function: protect }

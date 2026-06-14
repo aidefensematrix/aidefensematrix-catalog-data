@@ -22,15 +22,15 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: "Discover AI inventories agents and tools; Defend AI screens agentic app traffic inline."
-    source: { url: https://www.straiker.ai/products/discover-ai, tier: official, title: Straiker Discover AI product page, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.straiker.ai/products/discover-ai, tier: official, title: Straiker Discover AI product page, accessed: 2026-06-07, origin: reviewed, quote: "Discover AI Enables AI agent discovery, tool monitoring, and MCP visibility to support governance and security at scale." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: "Defend AI guardrails inspect prompts, responses, and tool calls and block threats at runtime."
-    source: { url: https://www.straiker.ai/products/defend-ai, tier: official, title: Straiker Defend AI product page, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.straiker.ai/products/defend-ai, tier: official, title: Straiker Defend AI product page, accessed: 2026-06-07, origin: reviewed, quote: "Detect and block prompt injection, data exfiltration, and agent manipulation in coding agents, productivity agents, and custom-built AI agents." }
   - asset: ai-agent-identities
     functions: [identify, detect]
     maturity: secondary
     note: "Ascend AI tests for identity exploitation; Discover AI maps agent connections and posture."
-    source: { url: https://www.straiker.ai/products/ascend-ai, tier: official, title: Straiker Ascend AI product page, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.straiker.ai/products/ascend-ai, tier: official, title: Straiker Ascend AI product page, accessed: 2026-06-07, origin: reviewed, quote: "Close the loop between offensive discovery and defensive monitoring across every SDLC stage of your agent lifecycle." }
 primary_cell: { asset: runtime-ai-data, function: protect }

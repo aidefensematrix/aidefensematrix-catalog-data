@@ -27,10 +27,10 @@ matrix_coverage:
     functions: [identify, protect, detect, respond]
     maturity: primary
     note: "Discovers and inventories non-human identities and AI agents, manages their lifecycle, scores posture and risk, and detects and responds to threats."
-    source: { url: https://www.clutch.security/nhi/discovery, tier: official, title: Clutch discovery and inventory, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.clutch.security/nhi/discovery, tier: official, title: Clutch discovery and inventory, accessed: 2026-06-07, origin: reviewed, quote: "With Clutch, you can finally see the full picture of your digital Non-Human Identity ecosystem, enabling you to secure your NHIs everywhere" }
   - asset: runtime-ai-data
     functions: [identify, protect]
     maturity: secondary
     note: "Discovers and contextualizes secrets such as API keys, tokens, and certificates across the environment."
-    source: { url: https://www.securityweek.com/clutch-security-raises-20-million-for-non-human-identity-protection-platform/, tier: press, title: Clutch protects API keys tokens certificates secrets, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.securityweek.com/clutch-security-raises-20-million-for-non-human-identity-protection-platform/, tier: press, title: Clutch protects API keys tokens certificates secrets, accessed: 2026-06-07, origin: reviewed, quote: "The platform takes a zero trust approach to machine identities, validating their usage in real time, identifying static credentials and rendering exposed secrets useless to attackers." }
 primary_cell: { asset: ai-agent-identities, function: identify }
