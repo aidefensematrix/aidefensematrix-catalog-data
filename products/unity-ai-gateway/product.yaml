@@ -6,20 +6,22 @@ vendor:
   source: { url: https://www.databricks.com/product/artificial-intelligence/ai-gateway, tier: official, title: Databricks Unity AI Gateway product page, accessed: 2026-06-10, origin: reviewed }
 url: https://www.databricks.com/product/artificial-intelligence/ai-gateway
 description:
-  value: "Unity AI Gateway: Governance layer for model serving on Databricks with guardrails that filter PII and unsafe content, plus permissions, rate limits, request logging, and usage tracking."
-  source: { url: https://www.databricks.com/product/artificial-intelligence/ai-gateway, tier: official, title: Databricks Unity AI Gateway product page, accessed: 2026-06-10, origin: reviewed }
+  value: "Unity AI Gateway: Databricks control plane governing access to LLM endpoints, coding agents, and MCP servers, with guardrails for PII and unsafe content, plus permissions, rate limits, and logging."
+  source: { url: https://www.databricks.com/product/artificial-intelligence/ai-gateway, tier: official, title: Databricks Unity AI Gateway product page, accessed: 2026-06-14, origin: reviewed }
 deployment:
   value: [saas]
   source: { url: https://docs.databricks.com/aws/en/ai-gateway/overview-serving-endpoints, tier: official, title: Unity AI Gateway serving endpoints documentation, accessed: 2026-06-10, origin: reviewed }
 status:
   value: active
   source: { url: https://www.databricks.com/product/artificial-intelligence/ai-gateway, tier: official, title: Databricks Unity AI Gateway product page, accessed: 2026-06-10, origin: reviewed }
-last_reviewed: 2026-06-10
+last_reviewed: 2026-06-14
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Databricks documentation. Formerly documented as Mosaic AI Gateway; AI Guardrails are in public preview and the redesigned gateway experience is in beta.
   - date: 2026-06-12
     summary: Refined matrix coverage and primary function.
+  - date: 2026-06-14
+    summary: Refreshed description and added MCP-server coverage; product is in beta.
 matrix_coverage:
   - asset: ai-gateways-routers
     functions: [protect, detect]
@@ -31,4 +33,9 @@ matrix_coverage:
     maturity: secondary
     note: AI Guardrails enforce safety filtering against harmful content and block or mask PII detected in endpoint requests and responses, with inference tables logging payloads for audit.
     source: { url: https://docs.databricks.com/aws/en/ai-gateway/configure-ai-gateway-endpoints, tier: official, title: Unity AI Gateway endpoint configuration documentation, accessed: 2026-06-10, origin: reviewed, quote: "Guardrails prevent the model from interacting with unsafe and harmful content that is detected in model inputs and outputs." }
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: secondary
+    note: Governs MCP servers as the enterprise control plane, with centralized view and management of all MCP servers, access control through Unity Catalog permissions and managed-OAuth credentials, and activity monitoring across servers.
+    source: { url: https://docs.databricks.com/aws/en/generative-ai/agent-framework/mcp, tier: official, title: Model Context Protocol (MCP) on Databricks, accessed: 2026-06-14, origin: reviewed, quote: "MCP servers are governed through Unity AI Gateway, the enterprise control plane that governs access and monitors activity across MCP servers and LLM endpoints." }
 primary_cell: { asset: ai-gateways-routers, function: protect }
