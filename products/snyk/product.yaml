@@ -26,7 +26,7 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: primary
     note: Snyk Studio guides AI coding assistants and Snyk Code scans to find and fix issues in AI-generated code at inception.
-    source: { url: https://snyk.io/solutions/secure-at-inception-for-ai/, tier: official, title: Secure at Inception for AI, accessed: 2026-06-08, origin: reviewed }
+    source: { url: https://snyk.io/solutions/secure-at-inception-for-ai/, tier: official, title: Secure at Inception for AI, accessed: 2026-06-08, origin: reviewed, quote: "Snyk Studio integrates directly into AI assistants to proactively guide the AI to produce secure, high-quality code from the start, powered by Snyk Code and Snyk Open Source." }
   - asset: ai-orchestration-tools
     functions: [identify]
     maturity: secondary

@@ -26,7 +26,7 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Routes traffic to many LLM providers with input and output guardrails and request-level observability.
-    source: { url: https://portkey.ai/features/ai-gateway, tier: official, title: Portkey AI Gateway, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://portkey.ai/features/ai-gateway, tier: official, title: Portkey AI Gateway, accessed: 2026-06-09, origin: reviewed, quote: "Connect, manage, and secure AI interactions across 3000+ LLMs with centralized control, real-time monitoring, and enterprise-grade governance." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary
