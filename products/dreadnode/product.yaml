@@ -22,10 +22,10 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: "AI Red Teaming probes foundation models and traditional ML models with 45+ attack strategies including jailbreaks and adversarial algorithms, mapping findings to OWASP MITRE ATLAS and NIST AI RMF."
-    source: { url: https://docs.dreadnode.io/ai-red-teaming/reference/attacks/, tier: official, title: "Attacks Reference (45+ attack strategies)", accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://docs.dreadnode.io/ai-red-teaming/reference/attacks/, tier: official, title: "Attacks Reference (45+ attack strategies)", accessed: 2026-06-10, origin: reviewed, quote: "Dreadnode provides 45+ attack strategies across four categories: LLM jailbreaks, advanced adversarial algorithms, image adversarial attacks, and multimodal probing." }
   - asset: ai-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: "Custom Targets red teams agentic systems including agent loops RAG pipelines and AI applications not just standard model endpoints."
-    source: { url: https://docs.dreadnode.io/ai-red-teaming/custom-endpoints/, tier: official, title: "Custom Targets (red team any AI system)", accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://docs.dreadnode.io/ai-red-teaming/custom-endpoints/, tier: official, title: "Custom Targets (red team any AI system)", accessed: 2026-06-10, origin: reviewed, quote: "You can test any AI system that accepts text input and returns text output: Azure OpenAI deployments, custom agent APIs, RAG pipelines, self-hosted models, multi-turn conversational agents, and more." }
 primary_cell: { asset: ai-model, function: detect }

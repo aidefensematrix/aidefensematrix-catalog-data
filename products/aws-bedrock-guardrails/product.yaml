@@ -23,5 +23,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Inspects prompts and model responses to filter harmful content, prompt attacks, PII, and ungrounded output.
-    source: { url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html, tier: official, title: Amazon Bedrock Guardrails documentation, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails.html, tier: official, title: Amazon Bedrock Guardrails documentation, accessed: 2026-06-09, origin: reviewed, quote: "Amazon Bedrock Guardrails offers a consistent user experience to help detect and filter undesirable content and protect sensitive information that might be present in user inputs or model responses." }
 primary_cell: { asset: runtime-ai-data, function: protect }

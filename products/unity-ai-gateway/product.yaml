@@ -25,10 +25,10 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Manages and monitors access to model serving endpoints with permissions, rate limits, usage tracking through system tables, fallbacks, and traffic splitting across model backends.
-    source: { url: https://docs.databricks.com/aws/en/ai-gateway/overview-serving-endpoints, tier: official, title: Unity AI Gateway serving endpoints documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://docs.databricks.com/aws/en/ai-gateway/overview-serving-endpoints, tier: official, title: Unity AI Gateway serving endpoints documentation, accessed: 2026-06-10, origin: reviewed, quote: "Unity AI Gateway for serving endpoints, which governs and monitors access to supported generative AI models and their associated model-serving endpoints." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary
     note: AI Guardrails enforce safety filtering against harmful content and block or mask PII detected in endpoint requests and responses, with inference tables logging payloads for audit.
-    source: { url: https://docs.databricks.com/aws/en/ai-gateway/configure-ai-gateway-endpoints, tier: official, title: Unity AI Gateway endpoint configuration documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://docs.databricks.com/aws/en/ai-gateway/configure-ai-gateway-endpoints, tier: official, title: Unity AI Gateway endpoint configuration documentation, accessed: 2026-06-10, origin: reviewed, quote: "Guardrails prevent the model from interacting with unsafe and harmful content that is detected in model inputs and outputs." }
 primary_cell: { asset: ai-gateways-routers, function: protect }

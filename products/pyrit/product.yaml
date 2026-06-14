@@ -18,10 +18,12 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the PyRIT documentation.
+  - date: 2026-06-13
+    summary: Updated the model coverage citation to the PyRIT repository and added a source quote.
 matrix_coverage:
   - asset: ai-model
     functions: [detect]
     maturity: primary
     note: Runs single-turn and multi-turn attack strategies such as Crescendo, TAP, and Skeleton Key against generative AI targets, with standardized scenarios covering content harms and data leakage and flexible scoring of responses.
-    source: { url: https://microsoft.github.io/PyRIT/, tier: official, title: PyRIT documentation, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://github.com/microsoft/PyRIT, tier: official, title: PyRIT repository, accessed: 2026-06-13, origin: reviewed, quote: "The Python Risk Identification Tool for generative AI (PyRIT) is an open source framework built to empower security professionals and engineers to proactively identify risks in generative AI systems." }
 primary_cell: { asset: ai-model, function: detect }
