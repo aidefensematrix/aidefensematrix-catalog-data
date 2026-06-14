@@ -30,5 +30,5 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: Captures prompts, completions, and tool calls for monitored agent sessions and scans them with built-in and custom patterns for secrets and PII such as API keys and credentials.
-    source: { url: https://www.osohq.com/docs/oso-for-agents/alerts, tier: official, title: Oso alerts documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.osohq.com/docs/oso-for-agents/alerts, tier: official, title: Oso alerts documentation, accessed: 2026-06-10, origin: reviewed, quote: "Oso monitors agent activity and generates alerts when it detects unsanctioned usage or sensitive data." }
 primary_cell: { asset: ai-agent-identities, function: identify }

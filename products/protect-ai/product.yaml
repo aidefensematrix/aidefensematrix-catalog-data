@@ -40,7 +40,7 @@ matrix_coverage:
   - asset: training-data
     functions: [detect]
     maturity: secondary
-    source: { url: https://protectai.com/guardian, tier: official, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://protectai.com/guardian, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "identifying deserialization, architectural backdoors, and runtime threats across all major model formats." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: secondary
