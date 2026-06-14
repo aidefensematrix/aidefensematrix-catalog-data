@@ -31,12 +31,12 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: primary
     note: Guardian scans models from registries and hubs for unsafe code and threats.
-    source: { url: https://protectai.com/guardian, tier: official, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://protectai.com/guardian, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "Protect your most sensitive intellectual property with distributed, on-premises, and local scanning." }
   - asset: ai-orchestration-tools
     functions: [identify, detect]
     maturity: primary
     note: Recon runs automated red teaming against AI applications and agents.
-    source: { url: https://protectai.com/recon, tier: official, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://protectai.com/recon, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "Using trained LLMs as detectors, Recon delivers accuracy, not just coverage, to ensure your systems remain protected against a wide range of evolving vulnerabilities with limited false positives." }
   - asset: training-data
     functions: [detect]
     maturity: secondary
@@ -45,5 +45,5 @@ matrix_coverage:
     functions: [detect]
     maturity: secondary
     note: Layer adds runtime protection for LLM applications.
-    source: { url: https://protectai.com/layer, tier: official, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://protectai.com/layer, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "Rather than only monitoring prompts and outputs, Layer tracks the entire conversation flow, including tools, function calls, downstream workflows, multi-turn attacks, and metadata." }
 primary_cell: { asset: ai-model, function: protect }

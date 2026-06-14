@@ -25,12 +25,12 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Inline inspection of prompts and responses for injection, leakage, and unsafe output.
-    source: { url: https://www.paloaltonetworks.com/resources/datasheets/ai-runtime-security, tier: official, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.paloaltonetworks.com/resources/datasheets/ai-runtime-security, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "Beat back prompt injections, malicious code, toxic content, sensitive data leaks, resource overload, hallucination attacks and more." }
   - asset: ai-gateways-routers
     functions: [protect]
     maturity: primary
     note: API and network intercept for AI traffic.
-    source: { url: https://docs.paloaltonetworks.com/ai-runtime-security/administration/prisma-airs-overview, tier: official, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://docs.paloaltonetworks.com/ai-runtime-security/administration/prisma-airs-overview, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "Prisma AIRS protects all AI and traditional applications, agents, models, and datasets enterprises build or use." }
   - asset: ai-model
     functions: [identify]
     maturity: secondary

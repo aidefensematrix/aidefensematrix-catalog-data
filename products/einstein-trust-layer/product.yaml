@@ -22,5 +22,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Masks sensitive data such as social security numbers before prompts reach LLM providers, runs toxicity detection on LLM generations, and records an audit trail of AI interactions, with zero data retention agreements covering third-party LLM partners.
-    source: { url: https://developer.salesforce.com/docs/einstein/genai/guide/trust.html, tier: official, title: Einstein Trust Layer in the Agentforce developer guide, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://developer.salesforce.com/docs/einstein/genai/guide/trust.html, tier: official, title: Einstein Trust Layer in the Agentforce developer guide, accessed: 2026-06-10, origin: reviewed, quote: "The Einstein Trust Layer includes protections for your data and your users when interfacing with LLMs." }
 primary_cell: { asset: runtime-ai-data, function: protect }
