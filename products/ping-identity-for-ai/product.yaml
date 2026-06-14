@@ -1,0 +1,27 @@
+schema_version: 2
+name: Ping Identity for AI
+aliases: [Identity for AI]
+url: https://www.pingidentity.com/en/solution/agentic-ai-identity.html
+vendor:
+  value: Ping Identity
+  source: { url: https://www.pingidentity.com/en/solution/agentic-ai-identity.html, tier: official, title: Ping Identity for AI, accessed: 2026-06-14, origin: reviewed }
+description:
+  value: "Ping Identity for AI: Runtime identity for AI agents that onboards them as a first-class identity type, enforces real-time authorization on every action, and detects and risk-scores agents at runtime."
+  source: { url: https://www.pingidentity.com/en/solution/agentic-ai-identity.html, tier: official, title: Ping Identity for AI, accessed: 2026-06-14, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.pingidentity.com/en/solution/agentic-ai-identity.html, tier: official, title: Ping Identity for AI, accessed: 2026-06-14, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.pingidentity.com/en/solution/agentic-ai-identity.html, tier: official, title: Ping Identity for AI, accessed: 2026-06-14, origin: reviewed }
+last_reviewed: 2026-06-14
+changelog:
+  - date: 2026-06-14
+    summary: Added to the catalog from the Ping Identity for AI documentation; generally available per the vendor announcement.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Onboards AI agents as a first-class identity type, enforces contextual real-time authorization on every agent action through Agent IAM Core and the Agent Gateway, and detects and risk-scores agents at runtime via Agent Detection.
+    source: { url: https://www.pingidentity.com/en/solution/agentic-ai-identity.html, tier: official, title: Ping Identity for AI, accessed: 2026-06-14, origin: reviewed, quote: "Give AI agents trusted identities, real-time authorization, and human oversight" }
+primary_cell: { asset: ai-agent-identities, function: protect }

@@ -1,0 +1,27 @@
+schema_version: 2
+name: AstraSync
+aliases: [KYA, Know Your Agent]
+url: https://astrasync.ai/
+vendor:
+  value: AstraSync
+  source: { url: https://astrasync.ai/, tier: official, title: AstraSync KYA Platform, accessed: 2026-06-14, origin: reviewed }
+description:
+  value: "AstraSync: Know Your Agent platform that registers AI agents as verifiable identities with cryptographic credentials and permission boundaries, plus continuously updated trust scores for verification."
+  source: { url: https://astrasync.ai/, tier: official, title: AstraSync KYA Platform, accessed: 2026-06-14, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://astrasync.ai/, tier: official, title: AstraSync KYA Platform, accessed: 2026-06-14, origin: reviewed }
+status:
+  value: active
+  source: { url: https://astrasync.ai/, tier: official, title: AstraSync KYA Platform, accessed: 2026-06-14, origin: reviewed }
+last_reviewed: 2026-06-14
+changelog:
+  - date: 2026-06-14
+    summary: Added to the catalog from the AstraSync documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify]
+    maturity: primary
+    note: Registers AI agents as verifiable identities with cryptographic credentials and permission boundaries, and maintains continuously updated trust scores so counterparties can verify an agent before and during deployment.
+    source: { url: https://astrasync.ai/docs, tier: official, title: AstraSync KYA Documentation, accessed: 2026-06-14, origin: reviewed, quote: "enterprise-grade identity verification and trust management for AI agents and developers" }
+primary_cell: { asset: ai-agent-identities, function: identify }

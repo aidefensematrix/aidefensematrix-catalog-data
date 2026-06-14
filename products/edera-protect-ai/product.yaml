@@ -1,0 +1,27 @@
+schema_version: 2
+name: Edera Protect AI
+aliases: [Edera for GPUs]
+url: https://edera.dev/protect-ai
+vendor:
+  value: Edera
+  source: { url: https://edera.dev/protect-ai, tier: official, title: Edera Protect AI, accessed: 2026-06-14, origin: reviewed }
+description:
+  value: "Edera Protect AI: Hardened runtime that isolates each AI agent and model workload in its own dedicated-kernel sandbox and partitions shared GPUs, so a compromised workload cannot reach the host."
+  source: { url: https://edera.dev/protect-ai, tier: official, title: Edera Protect AI, accessed: 2026-06-14, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://edera.dev/protect-ai, tier: official, title: Edera Protect AI, accessed: 2026-06-14, origin: reviewed }
+status:
+  value: active
+  source: { url: https://edera.dev/protect-ai, tier: official, title: Edera Protect AI, accessed: 2026-06-14, origin: reviewed }
+last_reviewed: 2026-06-14
+changelog:
+  - date: 2026-06-14
+    summary: Added to the catalog from the Edera Protect AI documentation.
+matrix_coverage:
+  - asset: ai-workload-platforms
+    functions: [protect]
+    maturity: primary
+    note: Runs each AI agent or model workload in its own hardware-isolated sandbox with a dedicated Linux kernel, containing a compromised workload to its zone so it cannot reach the host or other tenants, and partitions shared GPUs across workloads.
+    source: { url: https://edera.dev/use-case/ai-agent-sandboxing, tier: official, title: Edera AI Agent Sandboxing, accessed: 2026-06-14, origin: reviewed, quote: "A compromised agent stays in its zone. Your other agents keep running. Your host is unreachable." }
+primary_cell: { asset: ai-workload-platforms, function: protect }
