@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.businesswire.com/news/home/20240730411517/en/Credo-AI-Announces-%2421-Million-in-New-Capital-Grows-Leadership-Team-to-Match-the-Rapid-Pace-of-AI-Innovation-Emerges-as-the-Standard-of-Responsible-AI-Governance, tier: press, title: Credo AI announces 21 million in new capital, accessed: 2026-06-07, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://www.credo.ai/legal/soc-2-type-ii-compliance, tier: official, title: Credo AI SOC 2 Type II compliance, accessed: 2026-06-13, origin: reviewed, quote: "Credo AI has received a SOC 2 Type II report demonstrating that our product has been reviewed and has met all requirements" }
 last_reviewed: 2026-06-07
 changelog:
   - date: 2026-06-07

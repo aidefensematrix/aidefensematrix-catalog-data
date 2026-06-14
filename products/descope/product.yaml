@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.descope.com/use-cases/ai, tier: official, title: Descope Agentic Identity Hub, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, FedRAMP High, CSA STAR Level 2]
+  source: { url: https://www.descope.com/security-compliance, tier: official, title: Descope Security and Compliance, accessed: 2026-06-13, origin: reviewed, quote: "Yes, Descope is FedRAMP High Authorized." }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09

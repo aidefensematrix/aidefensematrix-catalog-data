@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.akeyless.io, tier: official, title: Akeyless identity security, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, FIPS 140-3, PCI DSS]
+  source: { url: https://www.akeyless.io/trust-center/, tier: official, title: Akeyless Trust Center, accessed: 2026-06-13, origin: reviewed, quote: "Akeyless is proud to maintain world-class compliance and security standards, including FIPS 140-3, SOC 2 Type II, ISO 27001, PCI DSS compliance and DORA." }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09

@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://latticeflow.ai/, tier: official, title: LatticeFlow AI homepage, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 1]
+  source: { url: https://latticeflow.ai/news/latticeflow-ai-achieving-soc-2-type-1-attestation, tier: official, title: LatticeFlow AI SOC 2 Type 1 attestation, accessed: 2026-06-13, origin: reviewed, quote: "LatticeFlow AI is now SOC 2 Type 1 attested, with Type 2 readiness already underway." }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10

@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://aembit.io/blog/aembit-iam-for-agentic-ai-is-now-generally-available/, tier: official, title: Aembit IAM for Agentic AI is GA, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001]
+  source: { url: https://aembit.io/blog/aembit-achieves-iso-27001-certification/, tier: official, title: Aembit ISO 27001 and SOC 2 Type II certification, accessed: 2026-06-13, origin: reviewed, quote: "With both ISO 27001 and SOC 2 Type II certifications in place" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
