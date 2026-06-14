@@ -26,7 +26,7 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovers generative-AI and shadow-AI use and inspects prompts and responses inline with DLP and guardrails to block sensitive-data leakage.
-    source: { url: https://www.netskope.com/products/securing-generative-ai, tier: official, title: Securing Generative AI with Netskope One, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.netskope.com/products/securing-generative-ai, tier: official, title: Securing Generative AI with Netskope One, accessed: 2026-06-09, origin: reviewed, quote: "Netskope One DSPM identifies and flags at-risk data across SaaS, IaaS, PaaS, and on-prem sources." }
   - asset: ai-model
     functions: [identify, detect]
     maturity: secondary

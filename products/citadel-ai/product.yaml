@@ -28,7 +28,7 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: Citadel Lens runs customizable test suites that check AI models against industry standards across data slices and robustness scenarios, and generates compliance reports against AI regulations such as the EU AI Act and ISO standards.
-    source: { url: https://citadel-ai.com/products/lens/, tier: official, title: Citadel Lens product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://citadel-ai.com/products/lens/, tier: official, title: Citadel Lens product page, accessed: 2026-06-10, origin: reviewed, quote: "Citadel Lens provides powerful explainability features to understand AI models." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: secondary

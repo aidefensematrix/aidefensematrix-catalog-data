@@ -27,7 +27,7 @@ matrix_coverage:
     functions: [detect, protect]
     maturity: primary
     note: Watches agent reasoning and interactions at runtime to catch manipulation and stop data exfiltration; intervenes inline to correct anomalous or unsafe activity without disrupting the AI.
-    source: { url: https://www.securityweek.com/capsule-security-emerges-from-stealth-with-7-million-in-funding/, tier: press, title: SecurityWeek on the Capsule Security launch, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.securityweek.com/capsule-security-emerges-from-stealth-with-7-million-in-funding/, tier: press, title: SecurityWeek on the Capsule Security launch, accessed: 2026-06-10, origin: reviewed, quote: "The Tel Aviv-based company's solution provides visibility into agents' actions and intervenes at runtime to correct anomalous or unsafe activities." }
   - asset: ai-orchestration-tools
     functions: [identify, detect]
     maturity: secondary

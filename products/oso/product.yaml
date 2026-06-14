@@ -25,7 +25,7 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: primary
     note: Inventories AI agents across endpoints, browsers, and network traffic via EDR scans, a browser extension, and an edge proxy; admins mark agents allowed or disallowed and Oso alerts when unsanctioned agents are detected.
-    source: { url: https://www.osohq.com/docs/oso-for-agents/shadow-ai, tier: official, title: Oso shadow AI documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.osohq.com/docs/oso-for-agents/shadow-ai, tier: official, title: Oso shadow AI documentation, accessed: 2026-06-10, origin: reviewed, quote: "Oso continuously discovers AI agent usage across your organization and flags agents that have been marked as disallowed." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: primary

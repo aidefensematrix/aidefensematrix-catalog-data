@@ -26,10 +26,10 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: AI Access Security discovers AI tools in use across the enterprise, inspects employee AI interactions at runtime, enforces context-aware policies on prompts and outputs, and records audit evidence of AI usage.
-    source: { url: https://www.proofpoint.com/us/platform/ai-security, tier: official, title: Proofpoint unified AI security platform page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.proofpoint.com/us/platform/ai-security, tier: official, title: Proofpoint unified AI security platform page, accessed: 2026-06-10, origin: reviewed, quote: "Runtime visibility helps security teams determine whether AI activity aligns with business policies, user intent, and data protection requirements." }
   - asset: ai-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Agentic AI Security applies intent-based detection and behavioral anomaly detection to agent workflows; AI MCP Security discovers shadow MCP servers and enforces authentication and content inspection at the MCP boundary, backed by a registry of approved servers.
-    source: { url: https://www.proofpoint.com/us/platform/ai-security, tier: official, title: Proofpoint unified AI security platform page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.proofpoint.com/us/platform/ai-security, tier: official, title: Proofpoint unified AI security platform page, accessed: 2026-06-10, origin: reviewed, quote: "Runtime visibility helps security teams determine whether AI activity aligns with business policies, user intent, and data protection requirements." }
 primary_cell: { asset: runtime-ai-data, function: protect }

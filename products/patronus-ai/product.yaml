@@ -22,7 +22,7 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: Point-in-time guardrail evaluators flag prompt injection, toxicity, PII, and harmful or hallucinated content in LLM inputs and outputs, leaving the blocking decision to the application.
-    source: { url: https://www.patronus.ai/ai-reliability/ai-guardrails, tier: official, title: Patronus AI Guardrails, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.patronus.ai/ai-reliability/ai-guardrails, tier: official, title: Patronus AI Guardrails, accessed: 2026-06-09, origin: reviewed, quote: "Patronus offers a suite of evaluators for various types of point-in-time guardrail implementations, including toxicity and harmful advice detection, prompt injection prevention, and more." }
   - asset: ai-orchestration-tools
     functions: [detect]
     maturity: secondary

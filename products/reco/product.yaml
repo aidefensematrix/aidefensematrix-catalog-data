@@ -39,5 +39,5 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: secondary
     note: Tracks information movement from SaaS apps to unauthorized AI systems and monitors what employees share with AI platforms, classifying exposure risk by data sensitivity.
-    source: { url: https://www.reco.ai/use-cases/shadow-ai-discovery, tier: official, title: Reco shadow AI discovery use case, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.reco.ai/use-cases/shadow-ai-discovery, tier: official, title: Reco shadow AI discovery use case, accessed: 2026-06-10, origin: reviewed, quote: "Reco provides complete visibility into how shadow AI tools access and potentially expose sensitive information." }
 primary_cell: { asset: ai-agent-identities, function: identify }

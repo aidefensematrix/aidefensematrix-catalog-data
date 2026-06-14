@@ -26,7 +26,7 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: "Discovers AI agent and non-human identities, ties them to owners, and enforces least-privilege, policy-driven lifecycle controls."
-    source: { url: https://www.oasis.security/ai, tier: official, title: "Oasis: Govern your agentic AI adoption", accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.oasis.security/ai, tier: official, title: "Oasis: Govern your agentic AI adoption", accessed: 2026-06-07, origin: reviewed, quote: "By identifying and enforcing boundaries on delegated permissions, you can prevent unintentional exposure, such as an AI agent accessing entire storage systems via OAuth." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: secondary
