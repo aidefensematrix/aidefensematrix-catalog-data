@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.pingidentity.com/en/solution/agentic-ai-identity.html, tier: official, title: Ping Identity for AI, accessed: 2026-06-14, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 22301]
+  source: { url: https://docs.pingidentity.com/pingoneaic/latest/product-information/security-compliance.html, tier: official, title: PingOne Advanced Identity Cloud Security and compliance, accessed: 2026-06-14, origin: reviewed, quote: "Ping Identity is SOC 2 Type 2-certified." }
 last_reviewed: 2026-06-14
 changelog:
   - date: 2026-06-14
