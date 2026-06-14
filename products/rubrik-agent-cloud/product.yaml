@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://siliconangle.com/2026/06/09/rubrik-brings-agent-cloud-claude-launches-rubrik-ai-automate-recovery/, tier: press, title: SiliconANGLE on Rubrik Agent Cloud for Claude, accessed: 2026-06-10, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, SOC 1 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, ISO 42001, HIPAA, HITRUST, GDPR]
+  source: { url: https://www.rubrik.com/compliance-program, tier: official, title: Rubrik Security Compliance Program, accessed: 2026-06-13, origin: reviewed, quote: "Rubrik is among the first companies globally to be certified for establishing a responsible Artificial Intelligence Management System (AIMS)." }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10

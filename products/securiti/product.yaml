@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://securiti.ai/, tier: official, title: Securiti Data and AI security, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, ISO 27701]
+  source: { url: https://securiti.ai/security/, tier: official, title: Securiti Security and Compliance, accessed: 2026-06-13, origin: reviewed, quote: "Securiti is SOC2 Type II certified." }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
