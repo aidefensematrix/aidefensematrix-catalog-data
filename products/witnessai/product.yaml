@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://witness.ai/, tier: official, title: WitnessAI platform, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://witness.ai/blog/witnessai-completes-soc-2-type-ii-attestation/, tier: official, title: WitnessAI SOC 2 Type II attestation, accessed: 2026-06-13, origin: reviewed, quote: "WitnessAI has completed its SOC 2 Type II audit" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09

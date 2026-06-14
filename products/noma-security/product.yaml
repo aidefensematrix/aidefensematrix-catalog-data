@@ -13,6 +13,9 @@ deployment:
 status:
   value: active
   source: { url: https://noma.security, tier: official, title: Noma Security (independent), accessed: 2026-06-07, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, HIPAA, GDPR]
+  source: { url: https://trust.noma.security/, tier: official, title: Noma Security Trust Center, accessed: 2026-06-13, origin: reviewed, quote: "A SOC 2 Type II audit is performed annually by an independent third-party auditor." }
 last_reviewed: 2026-06-07
 changelog:
   - date: 2026-06-07

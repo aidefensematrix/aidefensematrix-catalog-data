@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://checkmarx.com/product/checkmarx-one-assist/, tier: official, title: Checkmarx One Assist, accessed: 2026-06-09, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, GDPR]
+  source: { url: https://checkmarx.com/trust/, tier: official, title: Checkmarx Trust, accessed: 2026-06-13, origin: reviewed, quote: "Checkmarx undergoes an independent SOC 2 Type II audit annually." }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
