@@ -34,5 +34,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: secondary
     note: Applies real-time controls to generative AI prompts and responses with end-to-end observability and audit.
-    source: { url: https://privacera.com/products/ai-governance/, tier: official, title: Privacera AI Governance, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://privacera.com/products/ai-governance/, tier: official, title: Privacera AI Governance, accessed: 2026-06-09, origin: reviewed, quote: "Full-fidelity traces with real-time drift and injection detection One-click audit evidence for EU AI Act, HIPAA, NIST 03 / SECURE Authorize every action." }
 primary_cell: { asset: training-data, function: protect }

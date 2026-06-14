@@ -26,7 +26,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Enforces policy inline at the proxy, API, or AI gateway, protecting AI interactions at runtime.
-    source: { url: https://www.lasso.security/, tier: official, title: Lasso Security runtime enforcement, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.lasso.security/, tier: official, title: Lasso Security runtime enforcement, accessed: 2026-06-09, origin: reviewed, quote: "It offers robust observation and protection for sensitive data and enables fast remediation and real-time response." }
   - asset: ai-orchestration-tools
     functions: [identify]
     maturity: secondary

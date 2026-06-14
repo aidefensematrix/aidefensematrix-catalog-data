@@ -25,5 +25,5 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: primary
     note: Discovers shadow AI usage, local agents, and exposed credentials such as unencrypted SSH keys and plaintext .env files across endpoints and browsers, maps AI usage to users and devices, and vaults and governs human, agent, and machine credentials under shared policy controls.
-    source: { url: https://1password.com/press/2026/mar/1password-unified-access, tier: official, title: 1Password Unified Access launch press release, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://1password.com/press/2026/mar/1password-unified-access, tier: official, title: 1Password Unified Access launch press release, accessed: 2026-06-10, origin: reviewed, quote: "The 1Password Unified Access platform discovers and secures identities and credentials, authorizes access continuously, and audits actions across human and AI agents." }
 primary_cell: { asset: ai-agent-identities, function: protect }

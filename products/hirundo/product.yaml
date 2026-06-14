@@ -27,5 +27,5 @@ matrix_coverage:
     functions: [detect, respond]
     maturity: secondary
     note: Dataset QA surfaces faulty and mislabeled training data for vision and other non-generative models, and unlearning removes the influence of that data without retraining.
-    source: { url: https://www.hirundo.io/dataset-optimization, tier: official, title: Hirundo dataset QA page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.hirundo.io/dataset-optimization, tier: official, title: Hirundo dataset QA page, accessed: 2026-06-10, origin: reviewed, quote: "Find underlying data issues and actionable insights on how to solve them." }
 primary_cell: { asset: ai-model, function: respond }

@@ -26,10 +26,10 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Uncovers shadow AI, classifies and moderates prompt and response content inline, and enforces inline DLP to block sensitive data from leaving for AI apps.
-    source: { url: https://www.zscaler.com/products-and-solutions/ai-access-security, tier: official, title: Zscaler AI Access Security, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.zscaler.com/products-and-solutions/ai-access-security, tier: official, title: Zscaler AI Access Security, accessed: 2026-06-09, origin: reviewed, quote: "Explore new Zscaler innovations for AI discovery, red teaming automation, and runtime protection-built for governance and compliance." }
   - asset: ai-model
     functions: [detect]
     maturity: secondary
     note: Combines automated red teaming and dynamic risk assessment to identify vulnerabilities in AI applications.
-    source: { url: https://www.zscaler.com/products-and-solutions/ai-security, tier: official, title: Zscaler AI Security, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.zscaler.com/products-and-solutions/ai-security, tier: official, title: Zscaler AI Security, accessed: 2026-06-09, origin: reviewed, quote: "AI red teaming tests and secures AI systems, especially large language models (LLMs), by simulating real-world attacks and vulnerabilities like prompt injection or data poisoning." }
 primary_cell: { asset: runtime-ai-data, function: protect }

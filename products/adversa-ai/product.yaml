@@ -25,10 +25,10 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: Continuous red teaming engineered for proprietary AI agents, covering more than 60 vulnerability classes across the agent, model, and MCP layers, with re-scans triggered by every model, prompt, or tool update and remediation playbooks in real time.
-    source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed, quote: "Compare results across scans to track security posture over time." }
   - asset: ai-model
     functions: [detect]
     maturity: secondary
     note: Autonomous red teaming campaigns cover the OWASP LLM and agentic AI Top 10 lists and run on every model update and prompt change.
-    source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed, quote: "We test the foundation model specifically within the context of your application to prevent jailbreaks, data exfiltration, or context poisoning." }
 primary_cell: { asset: ai-orchestration-tools, function: detect }

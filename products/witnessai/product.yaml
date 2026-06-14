@@ -26,10 +26,10 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: The Witness Protect AI firewall inspects prompts and responses bidirectionally, blocking prompt injection and jailbreaks and filtering outputs before users or agents act on them.
-    source: { url: https://witness.ai/protect/, tier: official, title: WitnessAI Protect, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://witness.ai/protect/, tier: official, title: WitnessAI Protect, accessed: 2026-06-09, origin: reviewed, quote: "Block Adversarial Attacks Detect and mitigate prompt injections, jailbreaks, and other AI-specific threats before they compromise your business." }
   - asset: ai-orchestration-tools
     functions: [identify, detect]
     maturity: secondary
     note: Discovers AI apps, agents, and MCP servers across the network without endpoint agents, and logs all AI activity for governance.
-    source: { url: https://witness.ai/, tier: official, title: WitnessAI platform, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://witness.ai/, tier: official, title: WitnessAI platform, accessed: 2026-06-09, origin: reviewed, quote: "The ability to see every AI interaction across our global workforce has transformed our security posture." }
 primary_cell: { asset: runtime-ai-data, function: protect }

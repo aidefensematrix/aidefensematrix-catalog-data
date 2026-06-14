@@ -28,5 +28,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: Vends short-lived, attribute-based database roles to AI agents so a prompt-injected agent stays bound to its permitted data, and access can be revoked instantly.
-    source: { url: https://www.immuta.com/agentic-data-access/, tier: official, title: Immuta Agentic Data Access, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.immuta.com/agentic-data-access/, tier: official, title: Immuta Agentic Data Access, accessed: 2026-06-09, origin: reviewed, quote: "Whether you add 1 agent or 100, they all automatically follow the same enterprise guardrails without a single additional database role being manually created." }
 primary_cell: { asset: training-data, function: protect }

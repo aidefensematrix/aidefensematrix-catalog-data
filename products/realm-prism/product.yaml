@@ -23,10 +23,10 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: Deep Neural Inspection maps model internals and reads activity during inference, catching drift, manipulation, and silent failures while they are still inside the inference loop rather than judging output strings after the fact.
-    source: { url: https://www.realmlabs.ai/platform-overview, tier: official, title: Realm Labs platform overview, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.realmlabs.ai/platform-overview, tier: official, title: Realm Labs platform overview, accessed: 2026-06-10, origin: reviewed, quote: "DNI inspects against OpenAI, Anthropic, Gemini, and self-hosted models out of the same instance." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: primary
     note: Prism observes every production model call and flags failures that emerge from model reasoning, including hallucination, deception, policy drift, jailbreak success, and prompt injection attempts that input and output filters miss.
-    source: { url: https://www.realmlabs.ai/security-grc, tier: official, title: Realm Labs security and GRC, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.realmlabs.ai/security-grc, tier: official, title: Realm Labs security and GRC, accessed: 2026-06-10, origin: reviewed, quote: "Realm gives you runtime visibility, real-time enforcement, and the audit-grade evidence your board and your regulators ask for." }
 primary_cell: { asset: ai-model, function: detect }

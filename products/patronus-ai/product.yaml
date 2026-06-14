@@ -27,5 +27,5 @@ matrix_coverage:
     functions: [detect]
     maturity: secondary
     note: The same evaluators check the inputs and outputs of individual components in an agentic LLM pipeline.
-    source: { url: https://www.patronus.ai/ai-reliability/ai-guardrails, tier: official, title: Patronus AI Guardrails, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.patronus.ai/ai-reliability/ai-guardrails, tier: official, title: Patronus AI Guardrails, accessed: 2026-06-09, origin: reviewed, quote: "Patronus offers a suite of evaluators for various types of point-in-time guardrail implementations, including toxicity and harmful advice detection, prompt injection prevention, and more." }
 primary_cell: { asset: runtime-ai-data, function: detect }

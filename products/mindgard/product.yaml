@@ -23,5 +23,5 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: primary
     note: Maps the AI attack surface including shadow AI, then runs continuous automated red teaming that chains attack techniques across multi-step interactions to find prompt injection, jailbreak, and model-manipulation flaws.
-    source: { url: https://mindgard.ai/automated-ai-red-teaming, tier: official, title: Mindgard automated AI red teaming, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://mindgard.ai/automated-ai-red-teaming, tier: official, title: Mindgard automated AI red teaming, accessed: 2026-06-09, origin: reviewed, quote: "Automated AI Red Teaming Tool - Mindgard Platform Platform Research Led." }
 primary_cell: { asset: ai-model, function: detect }

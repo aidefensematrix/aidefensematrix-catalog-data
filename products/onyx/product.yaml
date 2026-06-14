@@ -25,15 +25,15 @@ matrix_coverage:
     functions: [identify, detect, respond]
     maturity: primary
     note: Discovers sanctioned and shadow AI agents across the enterprise, monitors agent activity in real time with anomaly detection and session replay, applies natural language policy controls aligned to frameworks such as the EU AI Act, and remediates issues through the Guardian Agent supervisory AI.
-    source: { url: https://onyx.security/platform, tier: official, title: Onyx platform page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://onyx.security/platform, tier: official, title: Onyx platform page, accessed: 2026-06-10, origin: reviewed, quote: "Integrates with browser, AI platforms, CNAPP, SASE, and EDR discovery sources so nothing is invisible." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Provides visibility into every AI prompt and response across the stack and protects prompts, responses, and agent actions in real time against prompt injection, jailbreaks, data exfiltration, and adversarial manipulation.
-    source: { url: https://onyx.security/platform, tier: official, title: Onyx platform page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://onyx.security/platform, tier: official, title: Onyx platform page, accessed: 2026-06-10, origin: reviewed, quote: "Protect your AI systems and the data they touch from prompt injection, jailbreaks, data exfiltration, and adversarial manipulation in real time, without disrupting workflows." }
   - asset: ai-model
     functions: [identify]
     maturity: secondary
     note: Detects shadow AI usage and unapproved model deployments, identifies supply chain risks in agents, MCP servers, models, and AI assets, and spots vulnerabilities in agents and models with automated red teaming.
-    source: { url: https://onyx.security/platform, tier: official, title: Onyx platform page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://onyx.security/platform, tier: official, title: Onyx platform page, accessed: 2026-06-10, origin: reviewed, quote: "Integrates with browser, AI platforms, CNAPP, SASE, and EDR discovery sources so nothing is invisible." }
 primary_cell: { asset: ai-orchestration-tools, function: identify }

@@ -31,5 +31,5 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: secondary
     note: Assesses the risk of generative-AI apps and MCP servers and runs automated red-team testing of private LLMs to find vulnerabilities.
-    source: { url: https://www.netskope.com/products/ai-security, tier: official, title: Netskope AI Security, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.netskope.com/products/ai-security, tier: official, title: Netskope AI Security, accessed: 2026-06-09, origin: reviewed, quote: "Automate risk assessment of genAI apps and MCP servers, secure data, and automate vulnerability testing for private LLMs." }
 primary_cell: { asset: runtime-ai-data, function: protect }

@@ -25,10 +25,10 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: primary
     note: Manages registered ML models, agent-tool functions, and MCP connections as securable objects with grant and revoke privileges, lineage, and audit.
-    source: { url: https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/ai-governance, tier: official, title: Unity Catalog AI governance, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/ai-governance, tier: official, title: Unity Catalog AI governance, accessed: 2026-06-09, origin: reviewed, quote: "You can grant and revoke access to the following AI assets using standard Unity Catalog privileges: Models : Registered ML models in Unity Catalog." }
   - asset: training-data
     functions: [identify, protect]
     maturity: secondary
     note: Applies fine-grained, attribute-based access policies with row and column filters and PII autoclassification to the data that feeds models, with end-to-end lineage.
-    source: { url: https://www.databricks.com/product/unity-catalog, tier: official, title: Databricks Unity Catalog, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.databricks.com/product/unity-catalog, tier: official, title: Databricks Unity Catalog, accessed: 2026-06-09, origin: reviewed, quote: "More about data and AI catalog Fine-Grained Access Controls Define dynamic data access policies based on data attributes and tags at the row and column levels." }
 primary_cell: { asset: ai-model, function: identify }

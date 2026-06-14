@@ -22,15 +22,15 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Runtime detection and response for AI threats identifies unsafe AI usage, detects suspicious activity, and stops malicious activity in cloud native AI workloads without code changes; AI-SPM configuration checks assess the posture of cloud-based AI services.
-    source: { url: https://www.aquasec.com/news/full-lifecycle-security-for-ai-applications/, tier: official, title: Aqua Secure AI launch press release, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.aquasec.com/news/full-lifecycle-security-for-ai-applications/, tier: official, title: Aqua Secure AI launch press release, accessed: 2026-06-10, origin: reviewed, quote: "This latest enhancement builds on that foundation, making the Aqua Platform the only cloud native security solution offering full lifecycle protection for AI workloads from code commit to runtime." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary
     note: Prompt-level runtime protection detects prompt injection, jailbreaks, and risky model behavior, enforcing policy in real time and blocking post-compromise activity without additional agents, code changes, or SDKs.
-    source: { url: https://www.aquasec.com/solutions/ai-application-security/, tier: official, title: Aqua AI application security solution page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.aquasec.com/solutions/ai-application-security/, tier: official, title: Aqua AI application security solution page, accessed: 2026-06-10, origin: reviewed, quote: "Protect it with Secure AI Defend the Runtime Layer Defend the Runtime Layer Others Miss Stop prompt-based AI threats and post-compromise activity where AI applications actually run." }
   - asset: ai-model
     functions: [identify]
     maturity: secondary
     note: Discovers which AI models, platforms, and versions are running, where they are used, and whether usage aligns with policy, monitoring in real time at the application layer across SaaS, managed, and self-hosted AI workloads.
-    source: { url: https://www.aquasec.com/solutions/ai-application-security/, tier: official, title: Aqua AI application security solution page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.aquasec.com/solutions/ai-application-security/, tier: official, title: Aqua AI application security solution page, accessed: 2026-06-10, origin: reviewed, quote: "Apply assurance policies based on the OWASP Top 10 LLM Risks to strengthen your LLM security posture during development." }
 primary_cell: { asset: ai-workload-platforms, function: protect }

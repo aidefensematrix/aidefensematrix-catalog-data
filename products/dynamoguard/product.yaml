@@ -27,5 +27,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: secondary
     note: Dynamo AgentWarden evaluates AI agents and MCP tools for risky tool combinations and enforces allow, deny, or human approval decisions per tool call at the agent-tool boundary in real time.
-    source: { url: https://www.dynamo.ai/agentwarden, tier: official, title: Dynamo AgentWarden product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.dynamo.ai/agentwarden, tier: official, title: Dynamo AgentWarden product page, accessed: 2026-06-10, origin: reviewed, quote: "Policy configurations are version-controlled with delta tracking between evaluation cycles and a full approval audit trail for every policy change." }
 primary_cell: { asset: runtime-ai-data, function: protect }

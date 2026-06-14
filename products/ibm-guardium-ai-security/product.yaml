@@ -27,5 +27,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: An AI firewall applies custom security policies that analyze input and output prompts, providing real-time protection against malicious prompts, code injection, sensitive data exposure, and data leakage.
-    source: { url: https://newsroom.ibm.com/2025-06-18-ibm-introduces-industry-first-software-to-unify-agentic-governance-and-security, tier: official, title: IBM newsroom on unified agentic governance and security, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://newsroom.ibm.com/2025-06-18-ibm-introduces-industry-first-software-to-unify-agentic-governance-and-security, tier: official, title: IBM newsroom on unified agentic governance and security, accessed: 2026-06-10, origin: reviewed, quote: "And to help mitigate risks such as code injection, sensitive data exposure, and data leakage, the tool enables users to define custom security policies that analyze both input and output prompts." }
 primary_cell: { asset: ai-model, function: detect }

@@ -23,5 +23,5 @@ matrix_coverage:
     functions: [identify, detect, govern]
     maturity: primary
     note: Discovers and inventories AI systems including shadow AI, audits models and LLMs for bias, hallucination, data leakage, toxicity, and robustness, and enforces continuous compliance with audit trails.
-    source: { url: https://www.holisticai.com/ai-governance-platform, tier: official, title: Holistic AI Governance Platform, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.holisticai.com/ai-governance-platform, tier: official, title: Holistic AI Governance Platform, accessed: 2026-06-09, origin: reviewed, quote: "Identify risk and bias, enforce regulatory compliance, and monitor continuously." }
 primary_cell: { asset: ai-model, function: govern }

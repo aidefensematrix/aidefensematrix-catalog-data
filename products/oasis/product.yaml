@@ -31,5 +31,5 @@ matrix_coverage:
     functions: [detect]
     maturity: secondary
     note: "Threat and anomaly detection over agent and identity activity, with continuous audit and policy enforcement."
-    source: { url: https://www.oasis.security/ai, tier: official, title: "Oasis: Continuous audit and policy enforcement", accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.oasis.security/ai, tier: official, title: "Oasis: Continuous audit and policy enforcement", accessed: 2026-06-07, origin: reviewed, quote: "Continuous Audit & Policy Enforcement Oasis continuously enforces AI usage policies with real-time detection and alerting." }
 primary_cell: { asset: ai-agent-identities, function: protect }

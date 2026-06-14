@@ -26,10 +26,10 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Sits between enterprise data and LLMs, agents, and MCP pipelines, applying dynamic masking at inference and keeping a full audit trail of who accessed what.
-    source: { url: https://www.protecto.ai/, tier: official, title: Protecto context security for agentic AI, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.protecto.ai/, tier: official, title: Protecto context security for agentic AI, accessed: 2026-06-09, origin: reviewed, quote: "It detects sensitive information, masks it in real time, enforces who sees what, and logs everything." }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
     note: Role-based access for AI agents, so each agent exposes only the data the requesting user is permitted to see.
-    source: { url: https://www.protecto.ai/, tier: official, title: Protecto RBAC for AI agents, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.protecto.ai/, tier: official, title: Protecto RBAC for AI agents, accessed: 2026-06-09, origin: reviewed, quote: "It detects sensitive information, masks it in real time, enforces who sees what, and logs everything." }
 primary_cell: { asset: runtime-ai-data, function: protect }

@@ -28,7 +28,7 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovers sensitive data in AI prompts and responses, applies data-loss-prevention policies that warn or block sensitive content sent to generative AI apps, and detects risky AI interactions.
-    source: { url: https://learn.microsoft.com/en-us/purview/ai-microsoft-purview, tier: official, title: Microsoft Purview data security for AI, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://learn.microsoft.com/en-us/purview/ai-microsoft-purview, tier: official, title: Microsoft Purview data security for AI, accessed: 2026-06-09, origin: reviewed, quote: "The solution helps identify and remediate inappropriate communications, such as sharing sensitive information, harassment, threats, and adult content." }
   - asset: training-data
     functions: [identify, protect]
     maturity: secondary

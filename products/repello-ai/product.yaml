@@ -23,10 +23,10 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: primary
     note: Discovers AI assets and runs ARTEMIS adversarial attack simulations against models and applications across RAG and agent workflows.
-    source: { url: https://repello.ai/, tier: official, title: Repello AI red teaming and inventory, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://repello.ai/, tier: official, title: Repello AI red teaming and inventory, accessed: 2026-06-09, origin: reviewed, quote: "Build a complete AI Bill of Materials (AI BOM) and get complete visibility into your deployed AI assets and agentic workflows to understand the application graph and threat model." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary
     note: ARGUS adds AI runtime security, and an MCP gateway provides visibility into MCP traffic.
-    source: { url: https://repello.ai/, tier: official, title: Repello AI runtime security, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://repello.ai/, tier: official, title: Repello AI runtime security, accessed: 2026-06-09, origin: reviewed, quote: "ARGUS provides multi-lingual and multi-modal guardrails that evolve with your AI systems, delivering real-time monitoring and blocking threats." }
 primary_cell: { asset: ai-model, function: detect }

@@ -22,7 +22,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Gateway and private registry for MCP servers, skills, and agents. Scans each server release for vulnerabilities and permission drift before approval, screens calls in real time for tool poisoning, rug pulls, and command injection, and keeps complete audit trails.
-    source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed, quote: "02 Every call protected in real time Multi-tier security detectors catching policy, compliance, and data-leak risks before they reach your tools." }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
@@ -32,5 +32,5 @@ matrix_coverage:
     functions: [detect, protect]
     maturity: secondary
     note: Multi-tier detectors inspect tool-call traffic in real time and flag policy, compliance, and data-leak risks before requests reach downstream tools.
-    source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed, quote: "02 Every call protected in real time Multi-tier security detectors catching policy, compliance, and data-leak risks before they reach your tools." }
 primary_cell: { asset: ai-orchestration-tools, function: protect }

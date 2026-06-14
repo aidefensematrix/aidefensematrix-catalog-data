@@ -38,5 +38,5 @@ matrix_coverage:
     functions: [detect]
     maturity: secondary
     note: Lens test suites also evaluate datasets against industry standards and generate dataset reports alongside model reports.
-    source: { url: https://citadel-ai.com/products/lens/, tier: official, title: Citadel Lens product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://citadel-ai.com/products/lens/, tier: official, title: Citadel Lens product page, accessed: 2026-06-10, origin: reviewed, quote: "After testing, Lens automatically creates reports: model quality reports, data quality reports, ISO technical reports, process reports, and more." }
 primary_cell: { asset: ai-model, function: detect }

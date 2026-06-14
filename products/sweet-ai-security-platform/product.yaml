@@ -23,15 +23,15 @@ matrix_coverage:
     functions: [detect, protect]
     maturity: primary
     note: AIDR routes AI agent traffic through the Sweet AI Gateway to analyze prompts and block malicious operations such as prompt injection, applying guardrail policies and behavioral baselines that flag deviations in agent activity.
-    source: { url: https://www.sweet.security/ai-security-platform-aisp, tier: official, title: Sweet AI Security Platform product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.sweet.security/ai-security-platform-aisp, tier: official, title: Sweet AI Security Platform product page, accessed: 2026-06-10, origin: reviewed, quote: "Through its unified platform, Sweet ensures continuous visibility, provides runtime intelligence, and empowers policy-based control that ensures guardrails and allows AI developers to innovate fast." }
   - asset: ai-agent-identities
     functions: [identify, protect]
     maturity: primary
     note: Discovers every AI agent in the environment, including shadow and unmanaged ones, and manages agent permissions with least privilege, blast radius analysis, auditing, and operation-level policy enforcement linked to an MCP gateway.
-    source: { url: https://www.sweet.security/ai-security-platform-aisp, tier: official, title: Sweet AI Security Platform product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.sweet.security/ai-security-platform-aisp, tier: official, title: Sweet AI Security Platform product page, accessed: 2026-06-10, origin: reviewed, quote: "Through its unified platform, Sweet ensures continuous visibility, provides runtime intelligence, and empowers policy-based control that ensures guardrails and allows AI developers to innovate fast." }
   - asset: ai-model
     functions: [identify]
     maturity: secondary
     note: Builds an AI BOM that tracks public and fine-tuned models with origin and version details, while AI-SPM posture checks monitor AI components for misconfigurations, exposed endpoints, and vulnerabilities.
-    source: { url: https://www.sweet.security/ai-security-platform-aisp, tier: official, title: Sweet AI Security Platform product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.sweet.security/ai-security-platform-aisp, tier: official, title: Sweet AI Security Platform product page, accessed: 2026-06-10, origin: reviewed, quote: "Solution Sweet delivers full-lifecycle AI security from the level of the language model to agent execution in production systems." }
 primary_cell: { asset: runtime-ai-data, function: detect }

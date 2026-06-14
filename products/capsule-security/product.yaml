@@ -22,7 +22,7 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Agentless discovery inventories agents across home-grown systems plus SaaS and endpoint environments; Agent Identity Control tracks ownership and least privilege; Runtime Protection detects and blocks unsafe or risky agent behavior before actions execute.
-    source: { url: https://www.capsulesecurity.io/, tier: official, title: Capsule Security homepage, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.capsulesecurity.io/, tier: official, title: Capsule Security homepage, accessed: 2026-06-10, origin: reviewed, quote: "Runtime Monitoring Gain live visibility into agent actions before risks escalate AI Agent access controls and permissions carry inherent risk." }
   - asset: runtime-ai-data
     functions: [detect, protect]
     maturity: primary
@@ -32,5 +32,5 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: secondary
     note: Secures agents built on platforms such as Copilot Studio and Salesforce Agentforce plus coding agents like Cursor; the Agent Security Graph maps relationships among agents, tools, and data to reveal risky paths and control gaps.
-    source: { url: https://www.capsulesecurity.io/, tier: official, title: Capsule Security homepage, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.capsulesecurity.io/, tier: official, title: Capsule Security homepage, accessed: 2026-06-10, origin: reviewed, quote: "Capsule monitors agents continuously as they reason, call tools, and execute actions, detecting issues in real time." }
 primary_cell: { asset: ai-agent-identities, function: protect }

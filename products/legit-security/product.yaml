@@ -22,15 +22,15 @@ matrix_coverage:
     functions: [identify]
     maturity: primary
     note: The AI Security Command Center keeps a real-time inventory of AI models active across development, adds reputational data for each model, and flags low-reputation or unapproved models even when developers attempt to bypass security controls.
-    source: { url: https://www.legitsecurity.com/ai-visibility, tier: official, title: Legit AI Security Command Center page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.legitsecurity.com/ai-visibility, tier: official, title: Legit AI Security Command Center page, accessed: 2026-06-10, origin: reviewed, quote: "Legit's AI Security Command Center provides an immediate, real-time inventory of all active models that helps identify policy violations even when developers attempt to circumvent security controls." }
   - asset: ai-orchestration-tools
     functions: [identify]
     maturity: secondary
     note: Inventories MCP servers and AI coding assistants alongside models, surfacing shadow MCP servers that create unmonitored pathways for data exposure and unauthorized AI agent actions, with associated risks tracked per component.
-    source: { url: https://www.legitsecurity.com/ai-visibility, tier: official, title: Legit AI Security Command Center page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.legitsecurity.com/ai-visibility, tier: official, title: Legit AI Security Command Center page, accessed: 2026-06-10, origin: reviewed, quote: "With Legit's AI Security Command Center, you get comprehensive visibility into developer AI tools for security." }
   - asset: ai-generated-code
     functions: [protect, detect]
     maturity: primary
     note: VibeGuard integrates with AI IDEs and code assistants such as Cursor and GitHub Copilot, analyzes AI-generated code in real time before commit, restricts which files assistants can access, and blocks untrusted models and secrets exposure to AI systems.
-    source: { url: https://www.legitsecurity.com/security-governance-for-ai-generated-code-legit-vibeguard, tier: official, title: Legit VibeGuard page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.legitsecurity.com/security-governance-for-ai-generated-code-legit-vibeguard, tier: official, title: Legit VibeGuard page, accessed: 2026-06-10, origin: reviewed, quote: "Legit VibeGuard analyzes newly generated code in real-time to detect, fix & prevent vulnerabilities, and governs the fleet of AI coding agents to prevent attacks." }
 primary_cell: { asset: ai-model, function: identify }

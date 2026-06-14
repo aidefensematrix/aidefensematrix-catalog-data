@@ -23,5 +23,5 @@ matrix_coverage:
     functions: [detect, protect]
     maturity: primary
     note: Scans AI-generated code as it is written and combines static analysis with AI reasoning (Multimodal) to find vulnerabilities and suggest fixes in pull requests, with Cursor and Claude Code plugins.
-    source: { url: https://semgrep.dev/products/semgrep-code/, tier: official, title: Semgrep Code, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://semgrep.dev/products/semgrep-code/, tier: official, title: Semgrep Code, accessed: 2026-06-09, origin: reviewed, quote: "Unique organizational context is applied to both rule-based and AI-powered scans, delivering high-signal findings for classic security flaws and complex logic issues alike." }
 primary_cell: { asset: ai-generated-code, function: detect }
