@@ -9,11 +9,14 @@ description:
   value: "Willow: Identity and access layer for AI agents that discovers every agent, tool, and MCP server, issues each a governed scoped credential tied to a real user, and logs and contains their activity."
   source: { url: https://withwillow.ai/, tier: official, title: Willow, accessed: 2026-06-14, origin: reviewed }
 deployment:
-  value: [saas]
-  source: { url: https://withwillow.ai/, tier: official, title: Willow, accessed: 2026-06-14, origin: reviewed }
+  value: [saas, self-hosted]
+  source: { url: https://withwillow.ai/blog/meet-willow-formerly-webrix, tier: official, title: Meet Willow (Formerly Webrix), accessed: 2026-06-14, origin: reviewed }
 status:
   value: active
   source: { url: https://withwillow.ai/, tier: official, title: Willow, accessed: 2026-06-14, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2]
+  source: { url: https://withwillow.ai/blog/meet-willow-formerly-webrix, tier: official, title: Meet Willow (Formerly Webrix), accessed: 2026-06-14, origin: reviewed, quote: "SSO with Okta and Azure AD. RBAC. SCIM. SOC 2." }
 last_reviewed: 2026-06-14
 changelog:
   - date: 2026-06-14
