@@ -36,5 +36,5 @@ matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [protect, detect]
     maturity: primary
-    source: { url: https://www.lakera.ai/lakera-guard, tier: official, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.lakera.ai/lakera-guard, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "Control outputs and data Controls what comes out, applying policy-based detection and redaction to prevent sensitive data exposure." }
 primary_cell: { asset: runtime-ai-data, function: protect }

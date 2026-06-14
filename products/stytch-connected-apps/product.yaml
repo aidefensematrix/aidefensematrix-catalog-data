@@ -28,5 +28,5 @@ matrix_coverage:
     functions: [protect]
     maturity: primary
     note: Authorizes AI agent and MCP workflows against an existing auth stack, presenting permissions in scoped groupings for user consent, limiting grants to permissions the user already holds, and restricting which apps and agents members may connect through allowlists.
-    source: { url: https://stytch.com/connected-apps, tier: official, title: Stytch Connected Apps, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://stytch.com/connected-apps, tier: official, title: Stytch Connected Apps, accessed: 2026-06-09, origin: reviewed, quote: "Org-wide policy enforcement : Define allowlists that restrict which third-party apps and AI agents members can connect to, ensuring only approved tools gain access." }
 primary_cell: { asset: ai-agent-identities, function: protect }

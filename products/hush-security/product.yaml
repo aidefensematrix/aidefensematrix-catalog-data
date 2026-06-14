@@ -24,10 +24,10 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: primary
     note: Continuously discovers AI agents, maps the tools and systems each agent can reach, and enforces just-in-time identity-based policy-controlled access for agents in place of static keys and embedded credentials, with runtime control of over-privileged or orphaned agents.
-    source: { url: https://www.hush.security/solutions/discover-every-agent-understand-every-action-control-what-happens-next/, tier: official, title: Hush Security agentic AI governance solution page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.hush.security/solutions/discover-every-agent-understand-every-action-control-what-happens-next/, tier: official, title: Hush Security agentic AI governance solution page, accessed: 2026-06-10, origin: reviewed, quote: "We automatically find AI agents, map the tools and systems they can access, and surface the risky combinations that create real exposure." }
   - asset: ai-orchestration-tools
     functions: [identify]
     maturity: secondary
     note: Discovers MCP servers, tool connectors, and agent-to-tool integrations across cloud, SaaS, and on-prem environments, and controls risky toolchain combinations and blind agent-to-tool access at runtime.
-    source: { url: https://www.hush.security/solutions/discover-every-agent-understand-every-action-control-what-happens-next/, tier: official, title: Hush Security agentic AI governance solution page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.hush.security/solutions/discover-every-agent-understand-every-action-control-what-happens-next/, tier: official, title: Hush Security agentic AI governance solution page, accessed: 2026-06-10, origin: reviewed, quote: "We automatically find AI agents, map the tools and systems they can access, and surface the risky combinations that create real exposure." }
 primary_cell: { asset: ai-agent-identities, function: protect }

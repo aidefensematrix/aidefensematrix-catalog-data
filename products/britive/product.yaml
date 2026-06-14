@@ -27,5 +27,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Issues ephemeral JIT credentials so agents hold zero standing privileges; an MCP tool broker evaluates each tool request at runtime and on-behalf-of policies tie agent actions back to human privilege boundaries; trust scoring and SIEM telemetry surface anomalous agent behavior.
-    source: { url: https://www.britive.com/platform/agentic-ai-identity-security, tier: official, title: Britive agentic AI identity security page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.britive.com/platform/agentic-ai-identity-security, tier: official, title: Britive agentic AI identity security page, accessed: 2026-06-10, origin: reviewed, quote: "Continuously evaluate policies based on attributes (ABAC) and permissions (PBAC) to enforce JIT, least-privileged access by default." }
 primary_cell: { asset: ai-agent-identities, function: protect }

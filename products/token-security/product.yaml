@@ -28,5 +28,5 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: primary
     note: Discovers and inventories AI agents and non-human identities, maps their access and risk, and enforces intent-based least-privilege so each agent has only the permissions its purpose needs.
-    source: { url: https://www.token.security/, tier: official, title: Token Security platform, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.token.security/, tier: official, title: Token Security platform, accessed: 2026-06-09, origin: reviewed, quote: "We can now automatically identify and control custom GPT agents running in our environment and ensure the required security level." }
 primary_cell: { asset: ai-agent-identities, function: identify }

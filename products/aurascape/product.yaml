@@ -22,10 +22,10 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Inspects full prompts and responses inline, classifies and fingerprints sensitive data in real time, and blocks risky activity. Detects phishing, social engineering, and malicious code generation in AI responses before they reach users.
-    source: { url: https://aurascape.ai/product/, tier: official, title: Aurascape product overview, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://aurascape.ai/product/, tier: official, title: Aurascape product overview, accessed: 2026-06-10, origin: reviewed, quote: "Aurascape evaluates intent, access, and data flow in real time to enforce your usage policies automatically." }
   - asset: ai-orchestration-tools
     functions: [identify, protect]
     maturity: secondary
     note: Discovers sanctioned and unsanctioned AI apps, copilots, and agents with risk scoring. Maps MCP servers and tool connections, tests agents for prompt injection and data leakage before production, and enforces runtime guardrails and MCP gateway controls on tool use.
-    source: { url: https://aurascape.ai/product/, tier: official, title: Aurascape product overview, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://aurascape.ai/product/, tier: official, title: Aurascape product overview, accessed: 2026-06-10, origin: reviewed, quote: "With inline visibility and control across AI apps, MCP tools, and custom agents, teams can move faster without losing security." }
 primary_cell: { asset: runtime-ai-data, function: protect }

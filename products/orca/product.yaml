@@ -26,7 +26,7 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: primary
     note: Agentlessly discovers and inventories managed and shadow AI models in an AI and ML bill of materials, and flags model misconfigurations and exposed AI service keys.
-    source: { url: https://orca.security/platform/ai-security-posture-management/, tier: official, title: Orca AI-SPM, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://orca.security/platform/ai-security-posture-management/, tier: official, title: Orca AI-SPM, accessed: 2026-06-09, origin: reviewed, quote: "Discover exposed access keys Orca detects when keys and tokens to AI services and software packages are unsafely exposed in code repositories." }
   - asset: training-data
     functions: [identify, detect]
     maturity: secondary

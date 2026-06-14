@@ -28,15 +28,15 @@ matrix_coverage:
     functions: [protect]
     maturity: primary
     note: Centralized AI gateway that secures, monitors, and routes LLM requests to providers such as OpenAI, Anthropic, and Google. Tailscale identity authenticates users in place of distributed API keys, with controls over reachable models and per-user spending limits.
-    source: { url: https://tailscale.com/docs/aperture, tier: official, title: Tailscale Aperture documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://tailscale.com/docs/aperture, tier: official, title: Tailscale Aperture documentation, accessed: 2026-06-10, origin: reviewed, quote: "Aperture by Tailscale is a centralized AI gateway that secures, monitors, and routes LLM requests across your organization." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: secondary
     note: Dashboards and session logs provide visibility into LLM requests and token usage across the organization, with usage data export, including S3 log export, for monitoring and review.
-    source: { url: https://tailscale.com/docs/aperture, tier: official, title: Tailscale Aperture documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://tailscale.com/docs/aperture, tier: official, title: Tailscale Aperture documentation, accessed: 2026-06-10, origin: reviewed, quote: "Aperture by Tailscale is a centralized AI gateway that secures, monitors, and routes LLM requests across your organization." }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
     note: Identifies connecting users and coding agents such as Claude Code, Codex, and Gemini CLI through Tailscale identities, tying LLM usage to the identity that generated each request rather than shared API keys.
-    source: { url: https://tailscale.com/use-cases/securing-ai, tier: official, title: Tailscale securing AI use case, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://tailscale.com/use-cases/securing-ai, tier: official, title: Tailscale securing AI use case, accessed: 2026-06-10, origin: reviewed, quote: "Access by identity, not shared credentials Authenticate with Tailscale's network identity, not credentials you need to distribute and manually rotate that may leak." }
 primary_cell: { asset: ai-gateways-routers, function: protect }

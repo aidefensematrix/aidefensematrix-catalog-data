@@ -31,15 +31,15 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Inline screening of prompts and responses for prompt injection, jailbreaks, and data leakage, with blocking and redaction.
-    source: { url: https://prompt.security, tier: official, title: Prompt Security runtime AI security, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://prompt.security, tier: official, title: Prompt Security runtime AI security, accessed: 2026-06-07, origin: reviewed, quote: "Whether you're evaluating popular AI tools or assessing MCP servers, our platform provides transparent risk scores, parameter breakdowns, and certification status checks." }
   - asset: ai-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: Protection for homegrown LLM applications via API, SDKs, and a centralized gateway.
-    source: { url: https://prompt.security, tier: official, title: "Prompt Security: Homegrown AI apps", accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://prompt.security, tier: official, title: "Prompt Security: Homegrown AI apps", accessed: 2026-06-07, origin: reviewed, quote: "Whether you're evaluating popular AI tools or assessing MCP servers, our platform provides transparent risk scores, parameter breakdowns, and certification status checks." }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
     note: Agent runtime controls and MCP gateway security over what agents can do.
-    source: { url: https://prompt.security, tier: official, title: "Prompt Security: AI agent security", accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://prompt.security, tier: official, title: "Prompt Security: AI agent security", accessed: 2026-06-07, origin: reviewed, quote: "Meet compliance AI Agent Foundry WAITLIST Secure, governed instance for all your AI agents." }
 primary_cell: { asset: runtime-ai-data, function: protect }

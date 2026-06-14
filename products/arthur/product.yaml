@@ -28,5 +28,5 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: secondary
     note: Monitors models and agent applications across the AI lifecycle, surfacing performance and reliability issues.
-    source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI platform, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI platform, accessed: 2026-06-09, origin: reviewed, quote: "Evaluate Performance Across the AI Lifecycle Gain visibility and reliability of your model through continuous evals." }
 primary_cell: { asset: runtime-ai-data, function: protect }

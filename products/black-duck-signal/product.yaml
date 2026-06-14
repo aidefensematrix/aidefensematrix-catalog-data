@@ -22,5 +22,5 @@ matrix_coverage:
     functions: [detect, protect]
     maturity: primary
     note: Agentic scans run inside AI coding workflows via MCP for assistants such as Claude Code and GitHub Copilot, detecting security defects in new code and applying verified fixes before commit; exploitability analysis filters noise.
-    source: { url: https://www.blackduck.com/signal-ai-appsec.html, tier: official, title: Black Duck Signal product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.blackduck.com/signal-ai-appsec.html, tier: official, title: Black Duck Signal product page, accessed: 2026-06-10, origin: reviewed, quote: "Secure code in any language Signal's LLM-based analysis detects code defects in any language, from COBOL to Java to Rust, so you stay secure even when adopting the latest programming language." }
 primary_cell: { asset: ai-generated-code, function: detect }

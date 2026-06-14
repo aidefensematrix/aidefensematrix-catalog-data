@@ -28,5 +28,5 @@ matrix_coverage:
     functions: [protect]
     maturity: primary
     note: Acts as the OAuth 2.1 authorization server for MCP applications, handling the authorization flows while the MCP server validates the issued tokens, with fine-grained authorization for agentic applications and workflows.
-    source: { url: https://workos.com/mcp, tier: official, title: WorkOS secure auth for MCP servers, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://workos.com/mcp, tier: official, title: WorkOS secure auth for MCP servers, accessed: 2026-06-09, origin: reviewed, quote: "This enables fine-grained authorization for agentic applications and workflows." }
 primary_cell: { asset: ai-agent-identities, function: protect }

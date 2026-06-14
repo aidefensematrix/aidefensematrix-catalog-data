@@ -23,15 +23,15 @@ matrix_coverage:
     functions: [govern, protect, detect, respond]
     maturity: primary
     note: The policy engine evaluates every governed agent tool call against YAML, OPA, or Cedar rules with fail-closed deny and approval workflows; the MCP Security Gateway detects tool poisoning, drift, and hidden instructions, with privilege rings, a kill switch, and Merkle audit logs.
-    source: { url: https://github.com/microsoft/agent-governance-toolkit, tier: official, title: Agent Governance Toolkit repository, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://github.com/microsoft/agent-governance-toolkit, tier: official, title: Agent Governance Toolkit repository, accessed: 2026-06-10, origin: reviewed, quote: "safe_tool evaluates your YAML policy on every call, logs the decision, and raises GovernanceDenied if the action is blocked." }
   - asset: ai-agent-identities
     functions: [identify, protect]
     maturity: secondary
     note: The AgentMesh identity layer issues agent credentials over SPIFFE, DID, and mTLS with trust scoring and delegation chains, and Shadow AI Discovery locates unregistered agents across processes, configs, and repositories.
-    source: { url: https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/, tier: official, title: Microsoft Open Source Blog on the Agent Governance Toolkit, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents/, tier: official, title: Microsoft Open Source Blog on the Agent Governance Toolkit, accessed: 2026-06-10, origin: reviewed, quote: "It is the first toolkit to address all 10 OWASP agentic AI risks with deterministic, sub-millisecond policy enforcement." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: adjacent
     note: The PromptDefense evaluator and the agt red-team scan command audit prompt files for injection across twelve vectors as an offline check rather than an inline guardrail.
-    source: { url: https://github.com/microsoft/agent-governance-toolkit, tier: official, title: Agent Governance Toolkit repository, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://github.com/microsoft/agent-governance-toolkit, tier: official, title: Agent Governance Toolkit repository, accessed: 2026-06-10, origin: reviewed, quote: "safe_tool evaluates your YAML policy on every call, logs the decision, and raises GovernanceDenied if the action is blocked." }
 primary_cell: { asset: ai-orchestration-tools, function: protect }

@@ -28,10 +28,10 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovers and inventories MCP servers, AI agents, and extensions across endpoints, risk-scores them with the Wings engine, gates risky installs by policy, and detects malicious activity after install.
-    source: { url: https://www.koi.ai/, tier: official, title: Koi homepage, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.koi.ai/, tier: official, title: Koi homepage, accessed: 2026-06-10, origin: reviewed, quote: "Know if it's safe Wings continuously evaluates code, behavior, ownership changes, and update channels, adjusting risk in real time." }
   - asset: ai-model
     functions: [protect]
     maturity: secondary
     note: The Wings engine and Supply Chain Gateway vet AI models from registries such as Hugging Face, scanning actual code and blocking risky model installs before they reach endpoints.
-    source: { url: https://www.koi.ai/, tier: official, title: Koi homepage, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.koi.ai/, tier: official, title: Koi homepage, accessed: 2026-06-10, origin: reviewed, quote: "Approvals, cooldowns, and allow/block lists enforced automatically Detect malicious activity Detect malware, sideloading, and risky update channels post-install." }
 primary_cell: { asset: ai-orchestration-tools, function: protect }

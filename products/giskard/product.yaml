@@ -26,5 +26,5 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: Red-teams LLMs and ML models with adversarial probes, detecting prompt injection, hallucination, and sensitive-information disclosure.
-    source: { url: https://www.giskard.ai/, tier: official, title: Giskard AI red teaming and LLM security, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.giskard.ai/, tier: official, title: Giskard AI red teaming and LLM security, accessed: 2026-06-09, origin: reviewed, quote: "It provides an intuitive UI, powerful APIs, and seamless workflow integration for production-ready evaluation." }
 primary_cell: { asset: ai-model, function: detect }

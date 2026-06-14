@@ -26,5 +26,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Developer Assist secures AI-generated code as it is written in the IDE, detecting SAST, SCA, secret, IaC, and container flaws and applying validated fixes before commit, alongside Copilot, Cursor, and Windsurf.
-    source: { url: https://checkmarx.com/product/checkmarx-one-assist/, tier: official, title: Checkmarx One Assist, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://checkmarx.com/product/checkmarx-one-assist/, tier: official, title: Checkmarx One Assist, accessed: 2026-06-09, origin: reviewed, quote: "They apply organizational policies, analyze context from repositories and scans, generate secure code changes, and help enforce standards across development and pipelines." }
 primary_cell: { asset: ai-generated-code, function: protect }

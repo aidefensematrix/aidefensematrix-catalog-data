@@ -25,10 +25,10 @@ matrix_coverage:
     functions: [identify]
     maturity: primary
     note: Documents and inventories AI models with model cards, end-to-end AI lineage, and compliance evidence for auditability.
-    source: { url: https://www.alation.com/news-and-press/alation-ai-governance-solution/, tier: official, title: Alation AI Governance launch, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.alation.com/news-and-press/alation-ai-governance-solution/, tier: official, title: Alation AI Governance launch, accessed: 2026-06-09, origin: reviewed, quote: "Auditable AI Lineage and Traceability: Alation delivers end-to-end lineage from datasets to AI models, offering full visibility into the AI lifecycle." }
   - asset: training-data
     functions: [identify]
     maturity: secondary
     note: Discovers, tags, and quality-flags the data feeding AI models so teams can validate it before training.
-    source: { url: https://www.alation.com/news-and-press/alation-ai-governance-solution/, tier: official, title: Alation AI Governance launch, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.alation.com/news-and-press/alation-ai-governance-solution/, tier: official, title: Alation AI Governance launch, accessed: 2026-06-09, origin: reviewed, quote: "Auditable AI Lineage and Traceability: Alation delivers end-to-end lineage from datasets to AI models, offering full visibility into the AI lifecycle." }
 primary_cell: { asset: ai-model, function: identify }

@@ -28,5 +28,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: Detects and blocks unauthorized queries and large-scale data scraping attempts that aim to extract proprietary model knowledge, mitigating model theft and data exfiltration.
-    source: { url: https://techdocs.akamai.com/cloud-security/docs/protect-your-ai-apps, tier: official, title: Akamai TechDocs on protecting AI apps, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://techdocs.akamai.com/cloud-security/docs/protect-your-ai-apps, tier: official, title: Akamai TechDocs on protecting AI apps, accessed: 2026-06-10, origin: reviewed, quote: "Firewall for AI closes the security gap that exists between your app and its LLM model." }
 primary_cell: { asset: runtime-ai-data, function: protect }

@@ -30,15 +30,15 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: primary
     note: "Algorithmic red teaming validates models against attack techniques, with runtime guardrails enforcing protection."
-    source: { url: https://www.cisco.com/site/us/en/products/security/ai-defense/ai-model-application-validation/index.html, tier: official, title: "AI Model and Application Validation", accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.cisco.com/site/us/en/products/security/ai-defense/ai-model-application-validation/index.html, tier: official, title: "AI Model and Application Validation", accessed: 2026-06-07, origin: reviewed, quote: "AI Validation automatically generates guardrails tailored to the specific vulnerabilities found in each model, thereby improving their effectiveness." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: "AI runtime guardrails screen prompts, responses, and agent workflows."
-    source: { url: https://www.cisco.com/c/en/us/products/collateral/security/ai-defense/ai-defense-ds.html, tier: official, title: "Cisco AI Defense data sheet (runtime protection)", accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.cisco.com/c/en/us/products/collateral/security/ai-defense/ai-defense-ds.html, tier: official, title: "Cisco AI Defense data sheet (runtime protection)", accessed: 2026-06-07, origin: reviewed, quote: "This enables detection and blocking of unsafe agent behaviors such as unauthorized tool usage, harmful action chains, memory poisoning attempts, and other agent-driven risks." }
   - asset: ai-orchestration-tools
     functions: [identify, detect]
     maturity: adjacent
     note: "Supply chain scanning of model files, repositories, and MCP servers and tools."
-    source: { url: https://www.cisco.com/c/en/us/products/collateral/security/ai-defense/ai-defense-ds.html, tier: official, title: "Cisco AI Defense data sheet (supply chain scanning)", accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.cisco.com/c/en/us/products/collateral/security/ai-defense/ai-defense-ds.html, tier: official, title: "Cisco AI Defense data sheet (supply chain scanning)", accessed: 2026-06-07, origin: reviewed, quote: "AI Cloud Visibility automatically detects MCP servers and agent processes alongside models and applications." }
 primary_cell: { asset: ai-model, function: protect }

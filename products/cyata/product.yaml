@@ -29,5 +29,5 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Maps AI agents across SaaS, cloud, and identity infrastructure, including shadow, orphaned, and overly privileged agents; logs every agent interaction for audit and forensics; assigns dynamic identities and enforces least-privilege policy on agent access.
-    source: { url: https://cyata.ai/, tier: official, title: Cyata homepage, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://cyata.ai/, tier: official, title: Cyata homepage, accessed: 2026-06-10, origin: reviewed, quote: "Cyata doesn't replace your NHI we extend it into the agent era with real-time posture, observability, and access control." }
 primary_cell: { asset: ai-agent-identities, function: identify }

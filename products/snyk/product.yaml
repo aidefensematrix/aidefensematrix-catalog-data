@@ -31,10 +31,10 @@ matrix_coverage:
     functions: [identify]
     maturity: secondary
     note: Scans MCP servers for vulnerabilities such as tool poisoning, using technology from the Invariant Labs acquisition.
-    source: { url: https://snyk.io/news/snyk-acquires-invariant-labs-to-accelerate-agentic-ai-security-innovation/, tier: official, title: Snyk acquires Invariant Labs, accessed: 2026-06-08, origin: reviewed }
+    source: { url: https://snyk.io/news/snyk-acquires-invariant-labs-to-accelerate-agentic-ai-security-innovation/, tier: official, title: Snyk acquires Invariant Labs, accessed: 2026-06-08, origin: reviewed, quote: "The company's unique methods take into account contextual information, static scans of agent tools and implementations, runtime information, human annotations, and incident databases." }
   - asset: ai-agent-identities
     functions: [protect, detect]
     maturity: secondary
     note: Runtime guardrails enforce policy on AI agent behavior, restricting data flow and tool access and flagging anomalous decisions.
-    source: { url: https://snyk.io/news/snyk-acquires-invariant-labs-to-accelerate-agentic-ai-security-innovation/, tier: official, title: Snyk acquires Invariant Labs, accessed: 2026-06-08, origin: reviewed }
+    source: { url: https://snyk.io/news/snyk-acquires-invariant-labs-to-accelerate-agentic-ai-security-innovation/, tier: official, title: Snyk acquires Invariant Labs, accessed: 2026-06-08, origin: reviewed, quote: "For example, unauthorized data exfiltration to AI agents executing unintended actions, and threats like MCP vulnerabilities are already appearing in production." }
 primary_cell: { asset: ai-generated-code, function: protect }

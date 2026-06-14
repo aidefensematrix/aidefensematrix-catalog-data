@@ -30,7 +30,7 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: secondary
     note: Agent inventory gives a centralized view of every agent connecting through the gateway; the enterprise edition adds centralized user, authentication, and access management over MCP servers and tools.
-    source: { url: https://docs.lunar.dev/mcpx/enterprise_features, tier: official, title: Lunar MCPX enterprise features documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://docs.lunar.dev/mcpx/enterprise_features, tier: official, title: Lunar MCPX enterprise features documentation, accessed: 2026-06-10, origin: reviewed, quote: "The control plane and admin UI have visibility only into secret names and key names, never the secret values themselves." }
   - asset: runtime-ai-data
     functions: [protect]
     maturity: secondary

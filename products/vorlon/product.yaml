@@ -30,5 +30,5 @@ matrix_coverage:
     functions: [detect]
     maturity: secondary
     note: Monitors data-in-motion between AI agents, SaaS apps, and integrations, detecting anomalous access to sensitive data using data-layer context.
-    source: { url: https://vorlon.io/, tier: official, title: Vorlon agentic ecosystem security platform, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://vorlon.io/, tier: official, title: Vorlon agentic ecosystem security platform, accessed: 2026-06-10, origin: reviewed, quote: "AI Agentic Runtime Security Block threats, mask sensitive data in transit, and restrict agent access in real time." }
 primary_cell: { asset: ai-agent-identities, function: detect }

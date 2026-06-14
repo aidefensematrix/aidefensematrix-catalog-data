@@ -25,5 +25,5 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: primary
     note: Discovers AI agents, non-human identities, and their secrets, continuously monitors agent behavior and intent for anomalies and threats, and attributes each identity to a human owner.
-    source: { url: https://entro.security/, tier: official, title: Entro Security platform, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://entro.security/, tier: official, title: Entro Security platform, accessed: 2026-06-09, origin: reviewed, quote: "Request a Demo Entro is the first platform to unify security for AI agents, NHIs, and secrets - delivering full visibility, ownership attribution, and real-time detection of anomalies." }
 primary_cell: { asset: ai-agent-identities, function: detect }

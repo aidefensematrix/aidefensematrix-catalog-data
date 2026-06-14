@@ -31,10 +31,10 @@ matrix_coverage:
     functions: [detect, protect]
     maturity: primary
     note: Keeps an auditable record of every prompt, plan, response, and tool invocation with behavioral baselining and anomaly detection; the Beam engine intervenes at the agent level in real time with deterministic controls.
-    source: { url: https://www.geordie.ai/, tier: official, title: Geordie AI homepage, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.geordie.ai/, tier: official, title: Geordie AI homepage, accessed: 2026-06-10, origin: reviewed, quote: "Behavioral observability Geordie provides a continuous, auditable record of every prompt, plan, response, and tool invocation, with behavioral baselining and anomaly detection built in." }
   - asset: ai-agent-identities
     functions: [identify]
     maturity: secondary
     note: Maps agent permissions, user mappings, and system access, and updates the picture as connections and authorizations change.
-    source: { url: https://www.geordie.ai/product, tier: official, title: Geordie agent security platform, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.geordie.ai/product, tier: official, title: Geordie agent security platform, accessed: 2026-06-10, origin: reviewed, quote: "Discovery requires no reconfiguration or instrumentation of your existing agents." }
 primary_cell: { asset: ai-orchestration-tools, function: identify }

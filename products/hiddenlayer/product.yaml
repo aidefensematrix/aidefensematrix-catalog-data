@@ -22,20 +22,20 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: primary
     note: Static scanning of models before deployment for malware, tampering, and backdoors, with an AI Bill of Materials per scan.
-    source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: AI Supply Chain Security", accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: AI Supply Chain Security", accessed: 2026-06-07, origin: reviewed, quote: "AI Discovery enables automatic model scanning as models are discovered, as well as displaying asset relationships that maps how assets are connected to each other in a top down hierarchical view." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Real-time input and output monitoring that can block prompts to the model or responses to the user.
-    source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: AI Runtime Security", accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: AI Runtime Security", accessed: 2026-06-07, origin: reviewed, quote: "AI Runtime Security detects malicious input prompts and undesired output, and can block content from being sent to the LLM or returned to the user." }
   - asset: ai-agent-identities
     functions: [protect, detect]
     maturity: secondary
     note: Agentic and MCP protection within the runtime module.
-    source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: AI Runtime Security", accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: AI Runtime Security", accessed: 2026-06-07, origin: reviewed, quote: "AI Runtime Security detects malicious input prompts and undesired output, and can block content from being sent to the LLM or returned to the user." }
   - asset: ai-orchestration-tools
     functions: [identify]
     maturity: secondary
     note: Automated discovery and inventory of AI assets, applications, datasets, and dependencies.
-    source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: AI Discovery", accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: AI Discovery", accessed: 2026-06-07, origin: reviewed, quote: "AI Discovery enables automatic model scanning as models are discovered, as well as displaying asset relationships that maps how assets are connected to each other in a top down hierarchical view." }
 primary_cell: { asset: ai-model, function: protect }

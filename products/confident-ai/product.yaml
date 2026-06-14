@@ -26,7 +26,7 @@ matrix_coverage:
     functions: [detect, protect]
     maturity: primary
     note: DeepTeam guardrails evaluate LLM system inputs and outputs for malicious intent and unsafe behavior, with input guards blocking malicious prompts before they reach the model and output guards stopping unsafe responses before they reach users, covering prompt injection and toxicity.
-    source: { url: https://www.trydeepteam.com/docs/guardrails-introduction, tier: official, title: DeepTeam guardrails introduction, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.trydeepteam.com/docs/guardrails-introduction, tier: official, title: DeepTeam guardrails introduction, accessed: 2026-06-10, origin: reviewed, quote: "deepteam 's comprehensive suite of guardrails acts as binary metrics to evaluate end-to-end LLM system inputs and output for malicious intent, unsafe behavior, and security vulnerabilities." }
   - asset: ai-model
     functions: [detect]
     maturity: primary

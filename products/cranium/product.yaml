@@ -25,15 +25,15 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: primary
     note: Sensors discover internal and third-party AI systems; the platform auto-generates AI BOMs, runs agent-based red teaming via Cranium Arena, and maps systems to the EU AI Act, NIST AI RMF, and ISO frameworks.
-    source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-06-10, origin: reviewed, quote: "Cranium uses CodeSensor, Detect AI, and CloudSensor to scan code, environments, and cloud infrastructure-identifying every AI model, dataset, or system in use across your organization." }
   - asset: ai-workload-platforms
     functions: [identify, detect]
     maturity: secondary
     note: CloudSensor integrates with cloud environments to discover security alerts, monitor unauthorized changes, and assess role-based access controls; Detect AI scans internal environments for shadow AI.
-    source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-06-10, origin: reviewed, quote: "Arena simulates adversarial attacks using agent-based testing and live threat intel-so you can proactively identify vulnerabilities before attackers do." }
   - asset: ai-agent-identities
     functions: [identify]
     maturity: secondary
     note: AgentSensor gives visibility into the agentic layer, automatically detecting AI agents, the tools they invoke, and other agents in the network.
-    source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-06-10, origin: reviewed, quote: "Arena simulates adversarial attacks using agent-based testing and live threat intel-so you can proactively identify vulnerabilities before attackers do." }
 primary_cell: { asset: ai-model, function: identify }

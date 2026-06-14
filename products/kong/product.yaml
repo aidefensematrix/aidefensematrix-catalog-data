@@ -23,10 +23,10 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Proxies traffic to many LLM providers and enforces allow and deny lists, prompt guards, and content-safety policies, with visibility over AI usage.
-    source: { url: https://developer.konghq.com/ai-gateway/, tier: official, title: Kong AI Gateway documentation, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://developer.konghq.com/ai-gateway/, tier: official, title: Kong AI Gateway documentation, accessed: 2026-06-09, origin: reviewed, quote: "AI Gateway addresses these challenges with a high-performance control plane that secures, governs, and observes AI-native systems end to end." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary
     note: Plugins inspect prompts and responses, redacting PII and filtering unsafe or off-topic content before it reaches a model or user.
-    source: { url: https://developer.konghq.com/ai-gateway/, tier: official, title: Kong AI Gateway documentation, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://developer.konghq.com/ai-gateway/, tier: official, title: Kong AI Gateway documentation, accessed: 2026-06-09, origin: reviewed, quote: "It also provides built-in PII sanitization, automatically detecting and redacting sensitive data across 20 categories and 9 languages." }
 primary_cell: { asset: ai-gateways-routers, function: protect }

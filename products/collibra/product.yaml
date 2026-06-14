@@ -30,5 +30,5 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: secondary
     note: Grounds AI in trusted, lineage-tracked data and protects sensitive data such as PII through integrated data access and privacy policies.
-    source: { url: https://www.collibra.com/products/ai-governance, tier: official, title: Collibra AI Governance, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.collibra.com/products/ai-governance, tier: official, title: Collibra AI Governance, accessed: 2026-06-09, origin: reviewed, quote: "With templates for the EU AI Act, NIST AI RMF and custom assessments, teams can document risk levels, controls, performance metrics and required approvals." }
 primary_cell: { asset: ai-model, function: identify }

@@ -32,13 +32,13 @@ matrix_coverage:
     functions: [identify]
     maturity: primary
     note: Agentless discovery and posture for AI services and pipelines.
-    source: { url: https://www.wiz.io/solutions/ai-spm, tier: official, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.wiz.io/solutions/ai-spm, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "AI Discovery & Inventory Discover and catalog AI models, agents and services across PaaS platforms, SaaS AI applications, and custom deployments." }
   - asset: ai-model
     functions: [identify]
     maturity: secondary
-    source: { url: https://www.wiz.io/solutions/ai-spm, tier: official, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.wiz.io/solutions/ai-spm, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "AI Discovery & Inventory Discover and catalog AI models, agents and services across PaaS platforms, SaaS AI applications, and custom deployments." }
   - asset: runtime-ai-data
     functions: [identify]
     maturity: secondary
-    source: { url: https://www.wiz.io/solutions/ai-spm, tier: official, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.wiz.io/solutions/ai-spm, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "AI Service Catalog Understand how AI services connect across applications, infrastructure, and data sources." }
 primary_cell: { asset: ai-workload-platforms, function: identify }

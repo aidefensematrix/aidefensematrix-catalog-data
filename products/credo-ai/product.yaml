@@ -25,15 +25,15 @@ matrix_coverage:
     functions: [govern, identify]
     maturity: primary
     note: Centralized registry of AI apps and agents with governance workflows and approval gates.
-    source: { url: https://www.credo.ai/product, tier: official, title: AI Registry and Discovery, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.credo.ai/product, tier: official, title: AI Registry and Discovery, accessed: 2026-06-07, origin: reviewed, quote: "AI oversight has moved beyond principles into a discipline requiring centralized inventory, risk management, and continuous monitoring." }
   - asset: ai-model
     functions: [govern, identify]
     maturity: primary
     note: Model inventory and risk assessment against policy packs and standards.
-    source: { url: https://www.credo.ai/product, tier: official, title: Compliance and Policy Engine, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.credo.ai/product, tier: official, title: Compliance and Policy Engine, accessed: 2026-06-07, origin: reviewed, quote: "AI oversight has moved beyond principles into a discipline requiring centralized inventory, risk management, and continuous monitoring." }
   - asset: ai-agent-identities
     functions: [govern]
     maturity: secondary
     note: Agent registry with agent cards covering purpose, tools, data sources, and guardrails.
-    source: { url: https://www.credo.ai/product, tier: official, title: Agent Registry, accessed: 2026-06-07, origin: reviewed }
+    source: { url: https://www.credo.ai/product, tier: official, title: Agent Registry, accessed: 2026-06-07, origin: reviewed, quote: "Continuous evaluation of agent traces to detect policy violations, drift, and unsafe behavior, with human-in-the-loop escalation." }
 primary_cell: { asset: ai-orchestration-tools, function: govern }

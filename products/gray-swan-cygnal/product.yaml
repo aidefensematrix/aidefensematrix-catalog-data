@@ -26,10 +26,10 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Sits inline between users and the model, classifying adversarial inputs and unsafe outputs in real time. Blocks policy violations with a refusal message, while a separate monitor endpoint returns violation scores for detection without blocking.
-    source: { url: https://www.grayswan.ai/solutions/platform/cygnal, tier: official, title: Gray Swan Cygnal product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.grayswan.ai/solutions/platform/cygnal, tier: official, title: Gray Swan Cygnal product page, accessed: 2026-06-10, origin: reviewed, quote: "Cygnal monitors every prompt, response, and tool-call at runtime, blocking threats in real time with the lowest bypass rate in the industry." }
   - asset: ai-orchestration-tools
     functions: [protect, detect]
     maturity: secondary
     note: Monitors agent tool calls at runtime and flags agentic risk patterns such as unauthorized tool use, scope violations, and injections delivered through tool output or retrieved content.
-    source: { url: https://www.grayswan.ai/solutions/platform/cygnal, tier: official, title: Gray Swan Cygnal product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.grayswan.ai/solutions/platform/cygnal, tier: official, title: Gray Swan Cygnal product page, accessed: 2026-06-10, origin: reviewed, quote: "Cygnal monitors every prompt, response, and tool-call at runtime, blocking threats in real time with the lowest bypass rate in the industry." }
 primary_cell: { asset: runtime-ai-data, function: protect }

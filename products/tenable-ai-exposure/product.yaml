@@ -26,15 +26,15 @@ matrix_coverage:
     functions: [identify]
     maturity: primary
     note: Discovers how employees and agents interact with AI platforms such as ChatGPT Enterprise and Microsoft Copilot, finds unsafe platform settings and third-party integrations, and enforces AI acceptable use policies.
-    source: { url: https://www.tenable.com/products/ai-exposure, tier: official, title: Tenable AI Exposure product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.tenable.com/products/ai-exposure, tier: official, title: Tenable AI Exposure product page, accessed: 2026-06-10, origin: reviewed, quote: "It delivers visibility, context, and control to manage AI risk from enterprise AI platforms, so you can govern AI use, enforce policies, and prevent exposures." }
   - asset: runtime-ai-data
     functions: [detect, identify]
     maturity: primary
     note: The Explorer page inspects messages in user AI sessions to identify potential data exfiltration or sharing of sensitive information with AI models; the Issues page surfaces detected policy breaches and security gaps.
-    source: { url: https://docs.tenable.com/release-notes/Content/ai-exposure/2026.htm, tier: official, title: Tenable AI Exposure 2026 release notes, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://docs.tenable.com/release-notes/Content/ai-exposure/2026.htm, tier: official, title: Tenable AI Exposure 2026 release notes, accessed: 2026-06-10, origin: reviewed, quote: "This release introduces the following features to monitor AI usage, identify data leakage, and manage security risks." }
   - asset: ai-agent-identities
     functions: [identify]
     maturity: secondary
     note: The Inventory page tracks users, deployed AI agents, and AI memories; AI agent assets carry risk scores in Tenable Exposure Management.
-    source: { url: https://docs.tenable.com/release-notes/Content/ai-exposure/2026.htm, tier: official, title: Tenable AI Exposure 2026 release notes, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://docs.tenable.com/release-notes/Content/ai-exposure/2026.htm, tier: official, title: Tenable AI Exposure 2026 release notes, accessed: 2026-06-10, origin: reviewed, quote: "Tenable AI Exposure provides visibility and governance for your organization's AI environment." }
 primary_cell: { asset: ai-workload-platforms, function: identify }

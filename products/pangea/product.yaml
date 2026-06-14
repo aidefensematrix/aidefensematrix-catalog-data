@@ -29,10 +29,10 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Inspects prompts and responses to detect prompt injection, redact sensitive data, and block malicious content.
-    source: { url: https://pangea.cloud/services/prompt-guard/, tier: official, title: Pangea Prompt Guard, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://pangea.cloud/services/prompt-guard/, tier: official, title: Pangea Prompt Guard, accessed: 2026-06-09, origin: reviewed, quote: "Organizations can confidently deploy AI, knowing that the guardrails are working behind the scenes to catch threats and prevent data exposure." }
   - asset: ai-agent-identities
     functions: [protect, detect]
     maturity: secondary
     note: Guards agent activity with pre-plan, pre-tool, and post-tool checks and runtime monitoring.
-    source: { url: https://pangea.cloud/docs/ai-guard, tier: official, title: Pangea AI Guard, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://pangea.cloud/docs/ai-guard, tier: official, title: Pangea AI Guard, accessed: 2026-06-09, origin: reviewed, quote: "The pangea_prompt_guard recipe used here has the Malicious Prompt detector enabled, with its action set to Block ." }
 primary_cell: { asset: runtime-ai-data, function: protect }

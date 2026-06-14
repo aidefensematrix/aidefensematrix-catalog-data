@@ -33,5 +33,5 @@ matrix_coverage:
     functions: [detect, protect]
     maturity: secondary
     note: Microsoft Defender provides agent security posture management to find misconfigurations, detects suspicious agent activity, blocks malicious tool invocations in real time, and collects agent observability logs for threat hunting.
-    source: { url: https://learn.microsoft.com/en-us/security/security-for-ai/agent-365-security, tier: official, title: Microsoft Learn on securing AI agents with Agent 365, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://learn.microsoft.com/en-us/security/security-for-ai/agent-365-security, tier: official, title: Microsoft Learn on securing AI agents with Agent 365, accessed: 2026-06-10, origin: reviewed, quote: "Secure Access Service Edge (SASE) - Monitor and block malicious and non-compliant network traffic from agents running on user devices, including Copilot Studio agents." }
 primary_cell: { asset: ai-agent-identities, function: identify }

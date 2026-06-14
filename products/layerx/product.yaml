@@ -29,10 +29,10 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: GenAI DLP monitors prompts and responses with conversational context and restricts text input, copy and paste, and file uploads of sensitive data before it reaches AI tools and AI-enabled SaaS applications.
-    source: { url: https://layerxsecurity.com/use-cases/ai-dlp/, tier: official, title: LayerX AI DLP use case, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://layerxsecurity.com/use-cases/ai-dlp/, tier: official, title: LayerX AI DLP use case, accessed: 2026-06-10, origin: reviewed, quote: "Apply data classification and labelling to detect sensitive files, and automatically block unauthorized sharing." }
   - asset: ai-orchestration-tools
     functions: [identify, protect]
     maturity: secondary
     note: Shadow AI discovery detects every AI app in use whether sanctioned, unsanctioned, or embedded in SaaS platforms, maps the accounts behind each tool, and lets security teams enforce responsible AI usage policies across channels.
-    source: { url: https://layerxsecurity.com/use-cases/shadow-ai-discovery/, tier: official, title: LayerX shadow AI discovery use case, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://layerxsecurity.com/use-cases/shadow-ai-discovery/, tier: official, title: LayerX shadow AI discovery use case, accessed: 2026-06-10, origin: reviewed, quote: "This provides security teams with complete visibility into all data being shared with AI tools, without missing anything." }
 primary_cell: { asset: runtime-ai-data, function: protect }
