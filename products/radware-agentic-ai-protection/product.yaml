@@ -1,0 +1,27 @@
+schema_version: 2
+name: Radware Agentic AI Protection
+aliases: []
+url: https://www.radware.com/products/agentic-ai-protection/
+vendor:
+  value: Radware
+  source: { url: https://www.globenewswire.com/news-release/2026/02/03/3230818/8980/en/Radware-Unveils-Agentic-AI-Protection-Solution-to-Shield-Enterprises-from-New-Agentic-Threats.html, tier: press, title: Radware Unveils Agentic AI Protection Solution, accessed: 2026-06-14, origin: reviewed }
+description:
+  value: "Radware Agentic AI Protection: Agentic security posture management that discovers AI agents and uses runtime behavioral analysis to detect and block prompt injection, tool misuse, and rogue agents."
+  source: { url: https://www.globenewswire.com/news-release/2026/02/03/3230818/8980/en/Radware-Unveils-Agentic-AI-Protection-Solution-to-Shield-Enterprises-from-New-Agentic-Threats.html, tier: press, title: Radware Unveils Agentic AI Protection Solution, accessed: 2026-06-14, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.globenewswire.com/news-release/2026/02/03/3230818/8980/en/Radware-Unveils-Agentic-AI-Protection-Solution-to-Shield-Enterprises-from-New-Agentic-Threats.html, tier: press, title: Radware Unveils Agentic AI Protection Solution, accessed: 2026-06-14, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.globenewswire.com/news-release/2026/02/03/3230818/8980/en/Radware-Unveils-Agentic-AI-Protection-Solution-to-Shield-Enterprises-from-New-Agentic-Threats.html, tier: press, title: Radware Unveils Agentic AI Protection Solution, accessed: 2026-06-14, origin: reviewed }
+last_reviewed: 2026-06-14
+changelog:
+  - date: 2026-06-14
+    summary: Added to the catalog from the Radware Agentic AI Protection announcement.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, detect, protect]
+    maturity: primary
+    note: Discovers AI agents and the tools they access, then applies runtime behavioral analysis to detect and mitigate prompt injection, tool misuse, and rogue or compromised agents.
+    source: { url: https://www.globenewswire.com/news-release/2026/02/03/3230818/8980/en/Radware-Unveils-Agentic-AI-Protection-Solution-to-Shield-Enterprises-from-New-Agentic-Threats.html, tier: press, title: Radware Unveils Agentic AI Protection Solution, accessed: 2026-06-14, origin: reviewed, quote: "using external, algorithmic behavioral analysis to identify malicious intent and misuse in real time" }
+primary_cell: { asset: ai-agent-identities, function: detect }

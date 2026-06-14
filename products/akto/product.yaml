@@ -1,0 +1,37 @@
+schema_version: 2
+name: Akto
+aliases: []
+url: https://www.akto.io/ai-security
+vendor:
+  value: Akto
+  source: { url: https://www.akto.io/ai-security, tier: official, title: Akto AI Security, accessed: 2026-06-14, origin: reviewed }
+description:
+  value: "Akto: AI security platform for LLMs, agents, and MCPs that discovers AI agents and APIs, red-teams them, and detects and blocks prompt injection, data leakage, and real-time agent abuse."
+  source: { url: https://www.akto.io/ai-security, tier: official, title: Akto AI Security, accessed: 2026-06-14, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.akto.io/ai-security, tier: official, title: Akto AI Security, accessed: 2026-06-14, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.akto.io/ai-security, tier: official, title: Akto AI Security, accessed: 2026-06-14, origin: reviewed }
+last_reviewed: 2026-06-14
+changelog:
+  - date: 2026-06-14
+    summary: Added to the catalog from the Akto AI Security documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [detect, protect]
+    maturity: primary
+    note: Detects and prevents prompt injection, data leakage, and unsafe AI interactions across LLMs, agents, and GenAI applications.
+    source: { url: https://www.akto.io/ai-security, tier: official, title: Akto AI Security, accessed: 2026-06-14, origin: reviewed, quote: "Detect and prevent prompt injections, data leakage, and unsafe AI interactions across your entire AI stack" }
+  - asset: ai-agent-identities
+    functions: [identify, detect]
+    maturity: secondary
+    note: Auto-discovers AI agents including shadow ones, classifies their behaviors and PII exposure, and detects and stops agent loops and unauthorized tool calls.
+    source: { url: https://www.akto.io/ai-security, tier: official, title: Akto AI Security, accessed: 2026-06-14, origin: reviewed, quote: "Auto-detect APIs interacting with AI Agents, including hidden and shadow ones." }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: Red-teams agent and MCP integrations with thousands of probes for injection, escalation, data leakage, and tool misuse, runnable in CI/CD.
+    source: { url: https://www.akto.io/ai-security, tier: official, title: Akto AI Security, accessed: 2026-06-14, origin: reviewed, quote: "Run 4000+ probes covering injection, escalation, data leakage, and tool misuse." }
+primary_cell: { asset: runtime-ai-data, function: detect }

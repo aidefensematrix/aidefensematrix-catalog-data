@@ -1,0 +1,27 @@
+schema_version: 2
+name: Cerbos
+aliases: []
+url: https://www.cerbos.dev/
+vendor:
+  value: Cerbos
+  source: { url: https://www.cerbos.dev/, tier: official, title: Cerbos, accessed: 2026-06-14, origin: reviewed }
+description:
+  value: "Cerbos: Authorization platform that enforces fine-grained, contextual, continuous access policies for AI agents and MCP servers, defining and revoking what each agent can access at runtime."
+  source: { url: https://www.cerbos.dev/, tier: official, title: Cerbos, accessed: 2026-06-14, origin: reviewed }
+deployment:
+  value: [self-hosted, saas]
+  source: { url: https://www.cerbos.dev/, tier: official, title: Cerbos, accessed: 2026-06-14, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.cerbos.dev/, tier: official, title: Cerbos, accessed: 2026-06-14, origin: reviewed }
+last_reviewed: 2026-06-14
+changelog:
+  - date: 2026-06-14
+    summary: Added to the catalog from the Cerbos documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: primary
+    note: Enforces fine-grained, contextual authorization for AI agents and MCP servers, defining what each agent can access before it goes live and revoking that access through policy at runtime.
+    source: { url: https://www.cerbos.dev/, tier: official, title: Cerbos, accessed: 2026-06-14, origin: reviewed, quote: "Define AI agent and MCP boundaries before they go live. Revoke access in seconds through policy." }
+primary_cell: { asset: ai-agent-identities, function: protect }
