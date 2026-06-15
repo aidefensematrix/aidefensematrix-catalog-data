@@ -1,0 +1,31 @@
+schema_version: 2
+name: Pluto Security
+vendor:
+  value: Pluto Security
+  source: { url: https://pluto.security/, tier: official, title: Pluto Security homepage, accessed: 2026-06-15, origin: reviewed }
+url: https://pluto.security/
+description:
+  value: "Pluto Security: AI workspace security platform that agentlessly discovers the AI builders, agents, and MCP tools employees use, scores their risk, and enforces guardrails on AI building activity."
+  source: { url: https://innovatecybersecurity.com/press/pluto-security-wins-inaugural-best-emerging-technology-award-at-2026-innovate-cybersecurity-summit/, tier: press, title: Pluto Security company description, accessed: 2026-06-15, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://innovatecybersecurity.com/press/pluto-security-wins-inaugural-best-emerging-technology-award-at-2026-innovate-cybersecurity-summit/, tier: press, title: Pluto Security agentless deployment, accessed: 2026-06-15, origin: reviewed }
+status:
+  value: active
+  source: { url: https://pluto.security/, tier: official, title: Pluto Security homepage, accessed: 2026-06-15, origin: reviewed }
+last_reviewed: 2026-06-15
+changelog:
+  - date: 2026-06-15
+    summary: Added to the catalog from the Pluto Security documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Connects agentlessly to existing security and infrastructure systems to discover which AI builders, agents, MCP servers, plugins, and IDEs are in use, scores their risk, and enforces real-time guardrails on AI building activity.
+    source: { url: https://innovatecybersecurity.com/press/pluto-security-wins-inaugural-best-emerging-technology-award-at-2026-innovate-cybersecurity-summit/, tier: press, title: Pluto Security capabilities, accessed: 2026-06-15, origin: reviewed, quote: "Pluto connects agentlessly to existing security and infrastructure systems to uncover which AI builders are in use" }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    note: Integrates with Claude Enterprise through the Anthropic Compliance API so security and compliance teams can monitor and risk-score enterprise AI assistant activity inside Pluto.
+    source: { url: https://pluto.security/blog/claude-enterprise-meets-ai-security-platform/, tier: official, title: Pluto Claude Enterprise integration, accessed: 2026-06-15, origin: reviewed, quote: "Security and compliance teams can now monitor Claude Enterprise activity directly in Pluto" }
+primary_cell: { asset: ai-orchestration-tools, function: identify }
