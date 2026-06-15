@@ -1,0 +1,30 @@
+schema_version: 2
+name: Arnica
+aliases: [Arnie AI, Arnie]
+url: https://www.arnica.io/
+vendor:
+  value: Arnica
+  source: { url: https://www.arnica.io/, tier: official, title: Arnica, accessed: 2026-06-15, origin: reviewed }
+description:
+  value: "Arnica: Application-security product whose Arnie AI enforces version-controlled secure-coding rules inside AI coding agents at generation and scans AI-generated code with an AI-augmented SAST engine."
+  source: { url: https://www.arnica.io/, tier: official, title: Arnica, accessed: 2026-06-15, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.arnica.io/company/security, tier: official, title: Arnica security, accessed: 2026-06-15, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.arnica.io/, tier: official, title: Arnica, accessed: 2026-06-15, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001]
+  source: { url: https://www.arnica.io/announcement/arnica-achieves-soc2-type-2-iso27001-compliance, tier: official, title: "Arnica achieves SOC2 Type 2 & ISO27001 compliance", accessed: 2026-06-15, origin: reviewed, quote: "Arnica achieves SOC2 Type 2 & ISO27001 compliance" }
+last_reviewed: 2026-06-15
+changelog:
+  - date: 2026-06-15
+    summary: Added to the catalog from the Arnica documentation.
+matrix_coverage:
+  - asset: ai-generated-code
+    functions: [protect, detect]
+    maturity: primary
+    note: Arnie AI enforces version-controlled secure-coding rules inside AI coding agents (Copilot, Cursor, Claude Code) to prevent insecure code at generation, and its AI SAST engine scans AI-generated code to detect vulnerabilities across repositories and branches.
+    source: { url: https://www.arnica.io/, tier: official, title: Arnica, accessed: 2026-06-15, origin: reviewed, quote: "inject your security policy directly into Copilot, Cursor, and Claude Code at the point of generation. Then, AI SAST scans for meaning and intent, and developer-native workflows means the right owner gets the right fix at the right time" }
+primary_cell: { asset: ai-generated-code, function: protect }
