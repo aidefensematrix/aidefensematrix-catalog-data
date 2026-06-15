@@ -1,0 +1,34 @@
+schema_version: 2
+name: SurePath AI
+vendor:
+  value: SurePath AI
+  source: { url: https://www.surepath.ai/, tier: official, title: SurePath AI homepage, accessed: 2026-06-15, origin: reviewed }
+url: https://www.surepath.ai/
+description:
+  value: "SurePath AI: Workforce GenAI governance platform that inspects prompts and responses, redacts sensitive data, controls access to public and private models, and logs AI interactions for audit."
+  source: { url: https://www.surepath.ai/platform, tier: official, title: SurePath AI platform, accessed: 2026-06-15, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.surepath.ai/platform, tier: official, title: SurePath AI platform, accessed: 2026-06-15, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.surepath.ai/, tier: official, title: SurePath AI homepage, accessed: 2026-06-15, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 1]
+  source: { url: https://www.surepath.ai/blog/soc-2-type-1-certified, tier: official, title: SurePath AI SOC 2 Type 1 certification, accessed: 2026-06-15, origin: reviewed, quote: "SurePath AI is SOC 2 Type 1 Certified" }
+last_reviewed: 2026-06-15
+changelog:
+  - date: 2026-06-15
+    summary: Added to the catalog from the SurePath AI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Inspects AI inputs and outputs in real time and redacts sensitive information before it reaches models, agents, or connected systems, then logs every interaction across public and private models to provide audit trails.
+    source: { url: https://www.surepath.ai/platform, tier: official, title: SurePath AI platform, accessed: 2026-06-15, origin: reviewed, quote: "Our system acts as a smart filter across all AI interactions by inspecting inputs and outputs in real time. It identifies and redacts sensitive information, ensuring teams get the answers they need without exposing data to models, agents, or connected systems." }
+  - asset: ai-gateways-routers
+    functions: [identify, protect]
+    maturity: secondary
+    note: Captures AI traffic at the network level without endpoint agents to reveal which AI services are in use, and enforces role- and group-based access policies controlling which models, tools, and data each user can reach.
+    source: { url: https://www.surepath.ai/platform, tier: official, title: SurePath AI platform, accessed: 2026-06-15, origin: reviewed, quote: "A flexible policy system enforces granular, group-based controls across models, agents, tools, and applications so you control what AI can access, what it can do, and how it interacts with your data." }
+primary_cell: { asset: runtime-ai-data, function: protect }
