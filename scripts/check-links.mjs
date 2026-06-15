@@ -2,7 +2,9 @@
 // Weekly link check over catalog source/product URLs. SSRF-guarded: refuses
 // non-http(s) and private/loopback/link-local/metadata targets, and does NOT
 // auto-follow redirects into them (redirect: manual). Read-only, non-blocking;
-// writes `dead` to $GITHUB_OUTPUT only when reachable-but-broken links are found.
+// writes `dead` to $GITHUB_OUTPUT only for unambiguously-gone links (404/410, or
+// a DNS/connection failure). Bot walls and rate limits (401/403/429, 5xx, 400)
+// are logged as "unverified" but never reported as dead — see classify() below.
 
 import { readFileSync, readdirSync, existsSync, statSync, appendFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -56,39 +58,58 @@ for (const slug of selected) {
   try { collect(slug, parse(readFileSync(f, 'utf8'))); } catch { /* validate.mjs reports parse errors */ }
 }
 
+// A link check running from a CI datacenter IP can prove a link is GONE (404/410,
+// or a DNS/connection failure) but cannot prove a bot-walled link is ALIVE:
+// 401/403/429 and 5xx are access, rate-limit, or transient responses, and 400 is
+// often a picky CDN rejecting a non-browser request — none mean the page is gone.
+// So only unambiguous "gone" signals land in `dead` (which opens an issue);
+// everything else is logged as "unverified" and never blocks.
+const DEAD_STATUS = new Set([404, 410]);
+const LINK_UA = 'aidefensematrix-catalog-linkcheck/1.0';
+const BROWSER_UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const get = (url, ua, method = 'GET') =>
+  fetch(url, { method, redirect: 'manual', signal: AbortSignal.timeout(15000), headers: { 'user-agent': ua } });
+
+// Returns null if the link is alive, else { dead } or { unverified } with a line.
+async function classify(url, tag) {
+  try {
+    const head = await get(url, LINK_UA, 'HEAD');
+    if (head.status >= 200 && head.status < 400) return null;                  // alive
+    if (DEAD_STATUS.has(head.status)) return { dead: `${url} (HTTP ${head.status}) — ${tag}` };
+    // 405 / bot wall / rate limit / transient: fall through to a browser-like GET.
+  } catch { /* network error on HEAD — fall through to the browser-like GET retry */ }
+  try {
+    const res = await get(url, BROWSER_UA, 'GET');
+    if (res.status >= 200 && res.status < 400) return null;                    // alive
+    if (DEAD_STATUS.has(res.status)) return { dead: `${url} (HTTP ${res.status}) — ${tag}` };
+    return { unverified: `${url} (HTTP ${res.status}) — ${tag}` };             // bot wall / rate limit / transient
+  } catch (e) {
+    if (e.name === 'TimeoutError') return { unverified: `${url} (timeout) — ${tag}` };
+    return { dead: `${url} (${e.name || 'fetch error'}) — ${tag}` };           // DNS / connection failure
+  }
+}
+
 const dead = [];
+const unverified = [];
 const blocked = [];
 for (const [url, slugs] of urls) {
   let u;
   try { u = new URL(url); } catch { dead.push(`${url} (invalid URL) — ${[...slugs].join(', ')}`); continue; }
   if (u.protocol !== 'http:' && u.protocol !== 'https:') { blocked.push(`${url} (non-http)`); continue; }
   if (isBlockedHost(u.hostname)) { blocked.push(`${url} (blocked host)`); continue; }
-  try {
-    let res = await fetch(url, { method: 'HEAD', redirect: 'manual', signal: AbortSignal.timeout(15000), headers: { 'user-agent': 'aidefensematrix-catalog-linkcheck/1.0' } });
-    // Some hosts (npm, bot-walled CDNs) reject HEAD with 403/405 while GET works;
-    // retry those with GET before declaring the link dead.
-    if (res.status === 403 || res.status === 405) {
-      res = await fetch(url, { method: 'GET', redirect: 'manual', signal: AbortSignal.timeout(15000), headers: { 'user-agent': 'aidefensematrix-catalog-linkcheck/1.0' } });
-    }
-    // 2xx and 3xx (redirect, not auto-followed) are considered alive.
-    if (res.status >= 400) dead.push(`${url} (HTTP ${res.status}) — ${[...slugs].join(', ')}`);
-  } catch (e) {
-    // Some docs hosts stall connections from non-browser user agents (observed on
-    // docs.fortinet.com). Retry once with a browser-like UA before declaring death.
-    try {
-      const res = await fetch(url, { method: 'GET', redirect: 'manual', signal: AbortSignal.timeout(15000), headers: { 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36' } });
-      if (res.status >= 400) dead.push(`${url} (HTTP ${res.status}) — ${[...slugs].join(', ')}`);
-    } catch {
-      dead.push(`${url} (${e.name === 'TimeoutError' ? 'timeout' : 'fetch error'}) — ${[...slugs].join(', ')}`);
-    }
-  }
+  const r = await classify(url, [...slugs].join(', '));
+  if (r?.dead) dead.push(r.dead);
+  else if (r?.unverified) unverified.push(r.unverified);
+  await sleep(250); // politeness gap; avoids self-inflicted 429s on rate-limited hosts
 }
 
 if (blocked.length) console.log(`Refused ${blocked.length} SSRF-unsafe URL(s):\n  ${blocked.join('\n  ')}`);
+if (unverified.length) console.log(`Could not verify ${unverified.length} link(s) — bot wall, rate limit, or transient; not reported as dead:\n  ${unverified.join('\n  ')}`);
 if (dead.length) {
   const body = `Dead or unreachable catalog links:\n- ${dead.join('\n- ')}`;
   console.log(body);
   setOut('dead', body);
 } else {
-  console.log(`All ${urls.size} catalog links resolved.`);
+  console.log(`All reachable catalog links resolved (${urls.size} checked, ${unverified.length} unverified).`);
 }
