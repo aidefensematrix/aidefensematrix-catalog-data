@@ -1,0 +1,30 @@
+schema_version: 2
+name: Sonar AI Code Assurance
+vendor:
+  value: Sonar
+  source: { url: https://www.sonarsource.com/solutions/ai/ai-code-assurance/, tier: official, title: AI Code Assurance, accessed: 2026-06-23, origin: reviewed }
+aliases: [Sonar, SonarQube, SonarQube Cloud, SonarQube Server, AI CodeFix]
+url: https://www.sonarsource.com/solutions/ai/ai-code-assurance/
+description:
+  value: "Sonar AI Code Assurance: SonarQube workflow that tags AI-generated code and holds it to an AI-qualified quality gate, with AI CodeFix offering one-click fixes for the issues found."
+  source: { url: https://www.sonarsource.com/solutions/ai/ai-code-assurance/, tier: official, title: AI Code Assurance, accessed: 2026-06-23, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.sonarsource.com/solutions/ai/ai-code-assurance/, tier: official, title: AI Code Assurance, accessed: 2026-06-23, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.sonarsource.com/solutions/ai/ai-code-assurance/, tier: official, title: AI Code Assurance, accessed: 2026-06-23, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://www.sonarsource.com/company/press-releases/sonar-achieves-soc-2-type-ii-compliance/, tier: official, title: Sonar Achieves SOC 2 Type II Compliance, accessed: 2026-06-23, origin: reviewed, quote: "today announced that it has achieved Service and Organization Controls (SOC) 2 Type II compliance, a gold standard in data security and operational excellence" }
+last_reviewed: 2026-06-23
+changelog:
+  - date: 2026-06-23
+    summary: Added to the catalog from the Sonar AI Code Assurance documentation.
+matrix_coverage:
+  - asset: ai-generated-code
+    functions: [protect, detect]
+    maturity: primary
+    note: AI Code Assurance tags AI-generated code and runs it through an AI-qualified quality gate that enforces quality and security standards before it reaches production, with AI CodeFix proposing one-click fixes for the issues found.
+    source: { url: https://www.sonarsource.com/solutions/ai/ai-code-assurance/, tier: official, title: AI Code Assurance, accessed: 2026-06-23, origin: reviewed, quote: "By enforcing high standards of quality and security, it guides developers through a thorough validation process, ensuring AI generated code is fully understood and verified before reaching production" }
+primary_cell: { asset: ai-generated-code, function: protect }
