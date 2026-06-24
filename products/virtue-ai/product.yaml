@@ -1,0 +1,36 @@
+schema_version: 2
+name: Virtue AI
+url: https://www.virtueai.com/
+vendor:
+  value: Virtue AI
+  source: { url: https://www.virtueai.com/, tier: official, title: Virtue AI, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Virtue AI: AI security platform that red-teams models and agents, applies real-time guardrails to prompts and responses, and screens agent tool calls and MCP servers for unsafe actions."
+  source: { url: https://www.virtueai.com/, tier: official, title: Virtue AI, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.virtueai.com/, tier: official, title: Virtue AI, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.virtueai.com/, tier: official, title: Virtue AI, accessed: 2026-06-24, origin: reviewed }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Virtue AI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: VirtueGuard applies real-time multimodal guardrails that inspect prompts and responses and block harmful or out-of-policy content across text, image, audio, video, and code.
+    source: { url: https://www.virtueai.com/virtueguard, tier: official, title: VirtueGuard, accessed: 2026-06-24, origin: reviewed, quote: "VirtueGuard is VirtueAI’s family of real-time AI security models and policy guardrails designed to keep inputs and outputs secure." }
+  - asset: ai-agent-identities
+    functions: [protect, detect]
+    maturity: primary
+    note: AgentSuite-Blue judges every agent tool call and blocks unsafe or out-of-policy actions before they execute (ActionGuard), and scans MCP tools and source for injections and data-leakage paths (MCP Guard).
+    source: { url: https://www.virtueai.com/agentsuite, tier: official, title: AgentSuite, accessed: 2026-06-24, origin: reviewed, quote: "Prevent unsafe, malicious, or out-of-policy actions before they execute. ActionGuard judges every tool call in full context, catches multi-step attacks, and enforces compliance frameworks like the EU AI Act and FINRA" }
+  - asset: ai-model
+    functions: [detect]
+    maturity: secondary
+    note: VirtueRed runs continuous automated red-teaming against AI models and chatbots to surface vulnerabilities and produce audit-ready evidence.
+    source: { url: https://www.virtueai.com/virtuered, tier: official, title: VirtueRed, accessed: 2026-06-24, origin: reviewed, quote: "Uncover hidden risks early and generate audit-ready evidence for security and compliance reviews." }
+primary_cell: { asset: runtime-ai-data, function: protect }

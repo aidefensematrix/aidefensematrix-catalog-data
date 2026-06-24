@@ -1,0 +1,34 @@
+schema_version: 2
+name: Corridor
+url: https://www.corridor.dev/
+vendor:
+  value: Corridor Security
+  source: { url: https://www.corridor.dev/, tier: official, title: Corridor, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Corridor: Secures AI-generated code at generation through an MCP server and agent hooks in Cursor, Claude Code, and Copilot, plus automated PR security reviews and org-wide AI-code visibility."
+  source: { url: https://www.corridor.dev/, tier: official, title: Corridor, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://docs.corridor.dev/administration/whitelist, tier: official, title: Corridor documentation, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.corridor.dev/, tier: official, title: Corridor, accessed: 2026-06-24, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type I]
+  source: { url: https://trust.corridor.dev/, tier: official, title: Corridor Trust Center, accessed: 2026-06-24, origin: reviewed, quote: "Corridor SOC 2 Type I 04.01.26.pdf" }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Corridor documentation.
+matrix_coverage:
+  - asset: ai-generated-code
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: An MCP server and agent hooks scan AI coding-tool edits in real time to block insecure code at generation (protect), automated reviews flag vulnerabilities on every pull request (detect), and a dashboard tracks AI-generated code across tools and developers (identify).
+    source: { url: https://www.corridor.dev/, tier: official, title: Corridor, accessed: 2026-06-24, origin: reviewed, quote: "Corridor’s MCP server and agent hooks integrate directly with your coding tools, preventing vulnerabilities before they’re even written." }
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: secondary
+    note: Discovers and monitors the MCP servers developers connect to AI coding tools and surfaces security-policy violations across the organization.
+    source: { url: https://www.corridor.dev/, tier: official, title: Corridor, accessed: 2026-06-24, origin: reviewed, quote: "Monitor MCP servers and security policy violations" }
+primary_cell: { asset: ai-generated-code, function: protect }
