@@ -1,0 +1,35 @@
+schema_version: 2
+name: Skyflow for GenAI
+aliases: [Skyflow LLM Privacy Vault]
+url: https://www.skyflow.com/product/skyflow-for-genai
+vendor:
+  value: Skyflow
+  source: { url: https://www.skyflow.com/product/skyflow-for-genai, tier: official, title: Skyflow for GenAI, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Skyflow for GenAI: De-identifies and tokenizes sensitive data across training, RAG, and inference, then re-identifies it for authorized users at runtime, so plaintext PII never reaches an LLM."
+  source: { url: https://www.skyflow.com/product/skyflow-for-genai, tier: official, title: Skyflow for GenAI, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.skyflow.com/security, tier: official, title: Skyflow security, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.skyflow.com/product/skyflow-for-genai, tier: official, title: Skyflow for GenAI, accessed: 2026-06-24, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type II, ISO 27001:2022, PCI DSS Level 1]
+  source: { url: https://www.skyflow.com/security, tier: official, title: Skyflow security, accessed: 2026-06-24, origin: reviewed, quote: "ISO 27001:2022 Certified SOC 2 Type II Certified PCI DSS Level 1 Certified GDPR Assessed and Compliant HIPAA Assessed and Eligible" }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Skyflow documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: primary
+    note: De-identifies and tokenizes sensitive PII in prompts, RAG context, and inference so plaintext never reaches the model, then detokenizes for authorized users through fine-grained runtime access controls.
+    source: { url: https://www.skyflow.com/product/skyflow-for-genai, tier: official, title: Skyflow for GenAI, accessed: 2026-06-24, origin: reviewed, quote: "Detect and redact sensitive data and intellectual property automatically during data collection, model training, fine-tuning, RAG, and inference. Easily re-identify the data for use." }
+  - asset: training-data
+    functions: [protect]
+    maturity: secondary
+    note: Excludes or de-identifies sensitive data in datasets used for model training and fine-tuning so private data is not retained by the model.
+    source: { url: https://www.skyflow.com/post/generative-ai-data-privacy-skyflow-llm-privacy-vault, tier: official, title: Generative AI data privacy with Skyflow LLM Privacy Vault, accessed: 2026-06-24, origin: reviewed, quote: "Skyflow enables privacy-safe model training by excluding sensitive data from datasets used in the model training process." }
+primary_cell: { asset: runtime-ai-data, function: protect }
