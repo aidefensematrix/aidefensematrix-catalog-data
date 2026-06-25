@@ -1,0 +1,40 @@
+schema_version: 2
+name: Permit.io AI Access Control
+aliases: [Permit MCP Gateway]
+url: https://www.permit.io/ai-access-control
+vendor:
+  value: Permit.io
+  source: { url: https://www.permit.io/ai-access-control, tier: official, title: Permit.io AI Access Control page, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Permit.io AI Access Control: Authorization for AI agents that assigns machine identities, enforces fine-grained access and consent on agent actions and RAG data, and authorizes every MCP tool call."
+  source: { url: https://www.permit.io/ai-access-control, tier: official, title: Permit.io AI Access Control page, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://docs.permit.io/permit-mcp-gateway/overview, tier: official, title: Permit MCP Gateway overview, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.permit.io/ai-access-control, tier: official, title: Permit.io AI Access Control page, accessed: 2026-06-24, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type II]
+  source: { url: https://www.permit.io/ai-access-control, tier: official, title: Permit.io AI Access Control page, accessed: 2026-06-24, origin: reviewed, quote: "SOC 2 Type II" }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Permit.io documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect]
+    maturity: primary
+    note: Assigns machine identities to AI agents and enforces per-agent authorization and consent over their access to tools and resources, with humans delegating bounded authority.
+    source: { url: https://www.permit.io/ai-access-control, tier: official, title: Permit.io AI Access Control page, accessed: 2026-06-24, origin: reviewed, quote: "Assign machine identities to AI agents to track and manage their access to external tools and resources." }
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: secondary
+    note: An MCP gateway proxy authorizes every agent tool call against fine-grained policy, blocks denied calls before they reach the server, and logs each decision.
+    source: { url: https://docs.permit.io/permit-mcp-gateway/overview, tier: official, title: Permit MCP Gateway overview, accessed: 2026-06-24, origin: reviewed, quote: "every tool call is checked against policy; denied calls are blocked before reaching the upstream server" }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: Applies attribute-based access control to RAG queries with pre-query and post-query filtering to prevent unauthorized AI access to retrieved data.
+    source: { url: https://www.permit.io/ai-access-control, tier: official, title: Permit.io AI Access Control page, accessed: 2026-06-24, origin: reviewed, quote: "Prevent unauthorized AI data access by applying attribute-based access control (ABAC) on RAG queries." }
+primary_cell: { asset: ai-agent-identities, function: protect }

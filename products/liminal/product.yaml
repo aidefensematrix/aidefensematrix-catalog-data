@@ -1,0 +1,35 @@
+schema_version: 2
+name: Liminal
+aliases: [Liminal AI]
+url: https://www.liminal.ai/platform
+vendor:
+  value: Liminal
+  source: { url: https://www.liminal.ai/platform, tier: official, title: Liminal platform page, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Liminal: GenAI data-protection gateway that intercepts prompts to any model, detects PII, PHI, and IP, masks or redacts it before the prompt leaves, and rehydrates protected terms in responses."
+  source: { url: https://www.liminal.ai/platform, tier: official, title: Liminal platform page, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.liminal.ai/platform, tier: official, title: Liminal platform page, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.liminal.ai/platform, tier: official, title: Liminal platform page, accessed: 2026-06-24, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 1, SOC 2 Type 2]
+  source: { url: https://www.liminal.ai/platform, tier: official, title: Liminal platform page, accessed: 2026-06-24, origin: reviewed, quote: "HIPAA Compliant SOC 2 Type 1 SOC 2 Type 2" }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Liminal documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Detects PII, PHI, PCI, and organization-specific data in prompts before submission to any model, masks or redacts it per policy, and rehydrates protected terms in returned outputs.
+    source: { url: https://www.liminal.ai/platform, tier: official, title: Liminal platform page, accessed: 2026-06-24, origin: reviewed, quote: "Outputs are reviewed upon return, and the protected terms are rehydrated back to their submission state." }
+  - asset: ai-gateways-routers
+    functions: [protect]
+    maturity: secondary
+    note: Acts as a centralized multi-model gateway routing employee AI traffic and enforcing data-security policy and access privileges on every interaction.
+    source: { url: https://www.liminal.ai/platform, tier: official, title: Liminal platform page, accessed: 2026-06-24, origin: reviewed, quote: "Confidently enforce data security policies and access privileges in conversations with any generative AI model." }
+primary_cell: { asset: runtime-ai-data, function: protect }
