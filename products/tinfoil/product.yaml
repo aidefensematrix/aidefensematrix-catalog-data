@@ -1,0 +1,35 @@
+schema_version: 2
+name: Tinfoil
+aliases: []
+url: https://www.tinfoil.sh/inference
+vendor:
+  value: Tinfoil
+  source: { url: https://www.tinfoil.sh/, tier: official, title: Tinfoil homepage, accessed: 2026-06-25, origin: reviewed }
+description:
+  value: "Tinfoil: Verifiably-private AI inference run inside hardware secure enclaves so prompts, responses, and model weights stay confidential from the provider, with an OpenAI-compatible API."
+  source: { url: https://www.tinfoil.sh/inference, tier: official, title: Tinfoil inference page, accessed: 2026-06-25, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.tinfoil.sh/inference, tier: official, title: Tinfoil inference page, accessed: 2026-06-25, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.tinfoil.sh/, tier: official, title: Tinfoil homepage, accessed: 2026-06-25, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2]
+  source: { url: https://trust.tinfoil.sh, tier: official, title: Tinfoil trust center, accessed: 2026-06-25, origin: reviewed, quote: "SOC 2 Compliant" }
+last_reviewed: 2026-06-25
+changelog:
+  - date: 2026-06-25
+    summary: Added to the catalog from the Tinfoil documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: primary
+    note: Processes prompts and responses inside hardware secure enclaves that even the provider cannot access, keeping inference data confidential and verifiable through remote attestation.
+    source: { url: https://docs.tinfoil.sh/introduction, tier: official, title: Tinfoil documentation introduction, accessed: 2026-06-25, origin: reviewed, quote: "User request data is processed inside secure enclaves that even Tinfoil cannot access, giving you hardware-enforced privacy that is verifiable via remote attestation." }
+  - asset: ai-model
+    functions: [protect]
+    maturity: secondary
+    note: Loads and runs model weights inside the secure enclave so they are not exposed to the host or other parties during inference.
+    source: { url: https://www.tinfoil.sh/, tier: official, title: Tinfoil homepage, accessed: 2026-06-25, origin: reviewed, quote: "the auditor brings the eval, the lab brings its weights, and both get cryptographic proof of exactly what ran, without the weights ever leaving the enclave." }
+primary_cell: { asset: runtime-ai-data, function: protect }

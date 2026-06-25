@@ -1,0 +1,35 @@
+schema_version: 2
+name: Cloaked AI
+aliases: [ironcore-alloy]
+url: https://ironcorelabs.com/products/cloaked-ai/
+vendor:
+  value: IronCore Labs
+  source: { url: https://ironcorelabs.com/products/cloaked-ai/, tier: official, title: Cloaked AI product page, accessed: 2026-06-25, origin: reviewed }
+description:
+  value: "Cloaked AI: IronCore Labs SDK that applies searchable, data-in-use encryption to AI vector embeddings so RAG and vector-search apps run on protected sensitive data."
+  source: { url: https://ironcorelabs.com/products/cloaked-ai/, tier: official, title: Cloaked AI product page, accessed: 2026-06-25, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://ironcorelabs.com/products/cloaked-ai/, tier: official, title: Cloaked AI product page, accessed: 2026-06-25, origin: reviewed }
+status:
+  value: active
+  source: { url: https://github.com/IronCoreLabs/ironcore-alloy, tier: official, title: ironcore-alloy GitHub repository, accessed: 2026-06-25, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2]
+  source: { url: https://ironcorelabs.com/trust-center/, tier: official, title: IronCore Labs trust center, accessed: 2026-06-25, origin: reviewed, quote: "we are SOC 2 certified" }
+last_reviewed: 2026-06-25
+changelog:
+  - date: 2026-06-25
+    summary: Added to the catalog from the IronCore Labs documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: primary
+    note: Applies searchable, distance-preserving encryption to vector embeddings so they stay encrypted in the vector database yet remain usable for nearest-neighbor search at RAG and inference time.
+    source: { url: https://ironcorelabs.com/products/cloaked-ai/, tier: official, title: Cloaked AI product page, accessed: 2026-06-25, origin: reviewed, quote: "Unleash generative AI projects that use private data by protecting sensitive vector embeddings with searchable data-in-use encryption." }
+  - asset: training-data
+    functions: [protect]
+    maturity: secondary
+    note: Encrypts the embedded source data converted into vectors so the sensitive data feeding AI and RAG workflows is protected against embedding-inversion attacks.
+    source: { url: https://ironcorelabs.com/products/cloaked-ai/, tier: official, title: Cloaked AI product page, accessed: 2026-06-25, origin: reviewed, quote: "Protects your AI data while allowing GenAI workflows" }
+primary_cell: { asset: runtime-ai-data, function: protect }

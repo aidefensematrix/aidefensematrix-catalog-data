@@ -1,0 +1,32 @@
+schema_version: 2
+name: Opaque
+aliases: [OPAQUE]
+url: https://www.opaque.co/product
+vendor:
+  value: Opaque Systems
+  source: { url: https://www.opaque.co/company, tier: official, title: Opaque company page, accessed: 2026-06-25, origin: reviewed }
+description:
+  value: "Opaque: Confidential AI platform that runs AI agents and workloads inside hardware-attested confidential VMs in your cloud, keeping data encrypted in memory during processing."
+  source: { url: https://www.opaque.co/product, tier: official, title: Opaque product page, accessed: 2026-06-25, origin: reviewed }
+deployment:
+  value: [hybrid]
+  source: { url: https://www.opaque.co/product, tier: official, title: Opaque product page, accessed: 2026-06-25, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.opaque.co/, tier: official, title: Opaque homepage, accessed: 2026-06-25, origin: reviewed }
+last_reviewed: 2026-06-25
+changelog:
+  - date: 2026-06-25
+    summary: Added to the catalog from the Opaque documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: primary
+    note: Keeps sensitive AI data encrypted in memory throughout processing inside a hardware-backed trusted execution environment, so data in use stays protected during workload execution.
+    source: { url: https://www.opaque.co/product, tier: official, title: Opaque product page, accessed: 2026-06-25, origin: reviewed, quote: "Keeps data encrypted in memory during processing" }
+  - asset: ai-workload-platforms
+    functions: [protect]
+    maturity: secondary
+    note: Runs containerized AI workloads and agents inside confidential computing infrastructure in the customer cloud, with verifiable runtime guarantees for data privacy and policy enforcement.
+    source: { url: https://www.opaque.co/product, tier: official, title: Opaque product page, accessed: 2026-06-25, origin: reviewed, quote: "OPAQUE is a Confidential AI platform that runs inside your cloud and provides verifiable runtime guarantees for data privacy and policy enforcement for all your AI agents and workflows." }
+primary_cell: { asset: runtime-ai-data, function: protect }

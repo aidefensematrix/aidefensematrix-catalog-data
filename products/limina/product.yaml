@@ -1,0 +1,36 @@
+schema_version: 2
+name: Limina
+aliases: [Private AI]
+url: https://www.getlimina.ai/en/products/data-de-identification
+vendor:
+  value: Limina
+  source: { url: https://www.getlimina.ai/en/about-us, tier: official, title: Limina about page, accessed: 2026-06-25, origin: reviewed }
+description:
+  value: "Limina: PII, PHI, and PCI detection and redaction that de-identifies text, images, and audio before it reaches a model, via API or a self-hosted container."
+  source: { url: https://www.getlimina.ai/en/products/data-de-identification, tier: official, title: Limina data de-identification page, accessed: 2026-06-25, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.getlimina.ai/en/products/data-de-identification, tier: official, title: Limina data de-identification page, accessed: 2026-06-25, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.getlimina.ai/en/blog/private-ai-rebrands-limina-sensitive-data-privacy, tier: official, title: Private AI rebrands to Limina, accessed: 2026-06-25, origin: reviewed }
+renamed_from:
+  name: Private AI
+  date: 2026-03-05
+  source: { url: https://www.getlimina.ai/en/blog/private-ai-rebrands-limina-sensitive-data-privacy, tier: official, title: Private AI rebrands to Limina, accessed: 2026-06-25, origin: reviewed }
+last_reviewed: 2026-06-25
+changelog:
+  - date: 2026-06-25
+    summary: Added to the catalog from the Limina documentation.
+matrix_coverage:
+  - asset: training-data
+    functions: [protect]
+    maturity: primary
+    note: De-identifies sensitive data by redacting, pseudonymizing, or replacing it with synthetic values before it feeds AI, analytics, and research pipelines, processed inside the customer environment.
+    source: { url: https://www.getlimina.ai/en/products/data-de-identification, tier: official, title: Limina data de-identification page, accessed: 2026-06-25, origin: reviewed, quote: "Turn your most restricted data into fuel for AI, analytics, and research with data de-identification that works inside your own environment" }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: Redacts PII in LLM prompts before they reach a model and re-identifies the responses, keeping confidential data out of inference calls.
+    source: { url: https://docs.getlimina.ai/configuration-and-operations/advanced-features/llms.md, tier: official, title: Limina LLM workflow docs, accessed: 2026-06-25, origin: reviewed, quote: "This ensures confidential information remains safe while interacting with AI models" }
+primary_cell: { asset: training-data, function: protect }

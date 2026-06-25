@@ -1,0 +1,37 @@
+schema_version: 2
+name: DataKrypto FHEnom for AI
+aliases: [FHEnom for AI]
+url: https://www.datakrypto.ai/
+vendor:
+  value: DataKrypto
+  source: { url: https://www.datakrypto.ai/, tier: official, title: DataKrypto FHEnom for AI page, accessed: 2026-06-25, origin: reviewed }
+description:
+  value: "DataKrypto FHEnom for AI: Fully-homomorphic-encryption framework that keeps AI model weights, embeddings, and user data encrypted in ciphertext through training, inference, and deployment."
+  source: { url: https://www.datakrypto.ai/, tier: official, title: DataKrypto FHEnom for AI page, accessed: 2026-06-25, origin: reviewed }
+deployment:
+  value: [hybrid]
+  source: { url: https://www.datakrypto.ai/, tier: official, title: DataKrypto FHEnom for AI page, accessed: 2026-06-25, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.datakrypto.ai/, tier: official, title: DataKrypto FHEnom for AI page, accessed: 2026-06-25, origin: reviewed }
+last_reviewed: 2026-06-25
+changelog:
+  - date: 2026-06-25
+    summary: Added to the catalog from the DataKrypto documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [protect]
+    maturity: primary
+    note: Encrypts model weights, parameters, and architecture with fully homomorphic encryption so they stay in ciphertext in memory and on GPU cores throughout execution.
+    source: { url: https://www.datakrypto.ai/, tier: official, title: DataKrypto FHEnom for AI page, accessed: 2026-06-25, origin: reviewed, quote: "Model weights, parameters, and architecture are encrypted using FHE. Existing pre-trained models or new foundation models can be encrypted and deployed to any infrastructure" }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: Encrypts prompts and queries at the trust boundary with an ephemeral session key and computes on ciphertext, returning inference outputs in encrypted form.
+    source: { url: https://www.datakrypto.ai/, tier: official, title: DataKrypto FHEnom for AI page, accessed: 2026-06-25, origin: reviewed, quote: "Prompts and queries are encrypted at the trust boundary using an ephemeral session key. Data never leaves your logical control in plaintext." }
+  - asset: training-data
+    functions: [protect]
+    maturity: secondary
+    note: Keeps user data and embeddings in ciphertext across training, inference, and deployment, enabling direct computation on encrypted embeddings.
+    source: { url: https://datakrypto.ai/datakrypto-unveils-ai-security-breakthrough-fhenom-for-ai-safeguards-encrypted-data-and-models-with-homomorphic-encryption/, tier: press, title: DataKrypto unveils FHEnom for AI, accessed: 2026-06-25, origin: reviewed, quote: "FHE enables direct computation on encrypted embeddings, keeping both model weights and user data protected in ciphertext throughout processing" }
+primary_cell: { asset: ai-model, function: protect }
