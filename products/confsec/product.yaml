@@ -1,0 +1,32 @@
+schema_version: 2
+name: CONFSEC
+aliases: [Confident Security, OpenPCC]
+url: https://confident.security/
+vendor:
+  value: Confident Security
+  source: { url: https://confident.security/, tier: official, title: Confident Security homepage, accessed: 2026-06-25, origin: reviewed }
+description:
+  value: "CONFSEC: Verifiably-private inference API from Confident Security that wraps prompts, outputs, and logs in encryption and attestation so the operator cannot read them."
+  source: { url: https://confident.security/tech, tier: official, title: Confident Security technology page, accessed: 2026-06-25, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://confident.security/pricing, tier: official, title: Confident Security pricing, accessed: 2026-06-25, origin: reviewed }
+status:
+  value: active
+  source: { url: https://confident.security/pricing, tier: official, title: Confident Security pricing, accessed: 2026-06-25, origin: reviewed }
+last_reviewed: 2026-06-25
+changelog:
+  - date: 2026-06-25
+    summary: Added to the catalog from the Confident Security documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: primary
+    note: Keeps prompts, outputs, and logs confidential through encryption and attestation, so prompts are never logged, retained, used for training, or sent to third parties.
+    source: { url: https://confident.security/tech, tier: official, title: Confident Security technology page, accessed: 2026-06-25, origin: reviewed, quote: "Prompts are never logged or retained" }
+  - asset: ai-gateways-routers
+    functions: [protect]
+    maturity: secondary
+    note: Sits in front of AI models as a verifiably-private inference API, routing requests through Oblivious HTTP so operators cannot link or read individual requests.
+    source: { url: https://confident.security/, tier: official, title: Confident Security homepage, accessed: 2026-06-25, origin: reviewed, quote: "Verifiably-private Inference API" }
+primary_cell: { asset: runtime-ai-data, function: protect }

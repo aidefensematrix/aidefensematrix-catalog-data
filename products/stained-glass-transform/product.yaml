@@ -1,0 +1,27 @@
+schema_version: 2
+name: Stained Glass Transform
+aliases: [SGT]
+url: https://protopia.ai/stained-glass-transform/
+vendor:
+  value: Protopia AI
+  source: { url: https://protopia.ai/stained-glass-transform/, tier: official, title: Stained Glass Transform product page, accessed: 2026-06-25, origin: reviewed }
+description:
+  value: "Stained Glass Transform: Protopia AI inference privacy layer that converts prompts and inputs into stochastic representations so raw data is never in plaintext on shared GPU infrastructure."
+  source: { url: https://protopia.ai/stained-glass-transform/, tier: official, title: Stained Glass Transform product page, accessed: 2026-06-25, origin: reviewed }
+deployment:
+  value: [hybrid]
+  source: { url: https://protopia.ai/partner-aws/, tier: official, title: Protopia AI on AWS, accessed: 2026-06-25, origin: reviewed }
+status:
+  value: active
+  source: { url: https://protopia.ai/stained-glass-transform/, tier: official, title: Stained Glass Transform product page, accessed: 2026-06-25, origin: reviewed }
+last_reviewed: 2026-06-25
+changelog:
+  - date: 2026-06-25
+    summary: Added to the catalog from the Protopia AI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: primary
+    note: De-identifies inference inputs into stochastic representations before they reach the model, so the operator never takes custody of plaintext prompts or context on shared infrastructure.
+    source: { url: https://protopia.ai/solutions/ai-factories/, tier: official, title: Protopia AI factories solution, accessed: 2026-06-25, origin: reviewed, quote: "The AI Factory operator never takes custody of plaintext prompts or context. No log, no memory buffer, no temporary file contains raw data." }
+primary_cell: { asset: runtime-ai-data, function: protect }
