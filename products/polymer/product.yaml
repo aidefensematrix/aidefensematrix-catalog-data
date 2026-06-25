@@ -1,0 +1,30 @@
+schema_version: 2
+name: Polymer
+aliases: []
+url: https://www.polymerhq.io/dspm/
+vendor:
+  value: Polymer
+  source: { url: https://www.polymerhq.io/, tier: official, title: Polymer homepage, accessed: 2026-06-25, origin: reviewed }
+description:
+  value: "Polymer: Runtime data-security platform whose browser extension applies real-time DLP controls and monitoring to employee interactions with ChatGPT, Claude, and other LLM tools."
+  source: { url: https://www.polymerhq.io/dspm/, tier: official, title: Polymer DSPM page, accessed: 2026-06-25, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.polymerhq.io/, tier: official, title: Polymer homepage, accessed: 2026-06-25, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.polymerhq.io/pricing/, tier: official, title: Polymer pricing, accessed: 2026-06-25, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type II]
+  source: { url: https://www.polymerhq.io/, tier: official, title: Polymer homepage, accessed: 2026-06-25, origin: reviewed, quote: "SOC 2 Type II compliant" }
+last_reviewed: 2026-06-25
+changelog:
+  - date: 2026-06-25
+    summary: Added to the catalog from the Polymer documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: A browser extension applies real-time controls and inline redaction over employee prompts to ChatGPT, Claude, and other LLM tools, and audits every AI interaction.
+    source: { url: https://www.polymerhq.io/dspm/, tier: official, title: Polymer DSPM page, accessed: 2026-06-25, origin: reviewed, quote: "The Polymer browser extension allows organizations to easily deploy real time controls of all employee interactions with ChatGPT, Claude & other LLM tools." }
+primary_cell: { asset: runtime-ai-data, function: protect }
