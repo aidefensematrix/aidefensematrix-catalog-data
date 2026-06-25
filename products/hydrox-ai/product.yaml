@@ -1,0 +1,32 @@
+schema_version: 2
+name: HydroX AI
+aliases: []
+url: https://www.hydrox.ai/product
+vendor:
+  value: HydroX AI
+  source: { url: https://www.hydrox.ai/about, tier: official, title: HydroX AI about page, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "HydroX AI: Model-agnostic runtime firewall for LLMs and agents that blocks jailbreaks, prompt injection, and data leaks, redacts PII from responses, and red-teams models for vulnerabilities."
+  source: { url: https://www.hydrox.ai/product, tier: official, title: HydroX AI product page, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.hydrox.ai/product, tier: official, title: HydroX AI product page, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.hydrox.ai/product, tier: official, title: HydroX AI product page, accessed: 2026-06-24, origin: reviewed }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the HydroX AI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: A model-agnostic runtime firewall intercepts AI inputs and outputs to block jailbreaks and prompt injection and to redact PII and proprietary data from responses.
+    source: { url: https://www.hydrox.ai/product, tier: official, title: HydroX AI product page, accessed: 2026-06-24, origin: reviewed, quote: "Automatically redacts PII and proprietary internal data from AI responses before they reach the end user." }
+  - asset: ai-model
+    functions: [detect]
+    maturity: secondary
+    note: Adversarial red-teaming and stress-testing uncover model failure modes and vulnerabilities before and after deployment.
+    source: { url: https://www.hydrox.ai/product, tier: official, title: HydroX AI product page, accessed: 2026-06-24, origin: reviewed, quote: "Uncovers failure modes and adversarial risks through targeted stress testing." }
+primary_cell: { asset: runtime-ai-data, function: protect }
