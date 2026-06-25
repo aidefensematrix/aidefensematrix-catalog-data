@@ -1,0 +1,35 @@
+schema_version: 2
+name: Unbound
+aliases: []
+url: https://getunbound.ai/product
+vendor:
+  value: Unbound
+  source: { url: https://getunbound.ai/product, tier: official, title: Unbound product page, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Unbound: Agent access security broker that discovers AI coding agents and MCP servers and enforces policy to audit, warn, block, or require approval on their commands, tool calls, and data egress."
+  source: { url: https://getunbound.ai/product, tier: official, title: Unbound product page, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://getunbound.ai/pricing, tier: official, title: Unbound pricing, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://getunbound.ai/, tier: official, title: Unbound homepage, accessed: 2026-06-24, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2]
+  source: { url: https://getunbound.ai/pricing, tier: official, title: Unbound pricing, accessed: 2026-06-24, origin: reviewed, quote: "SOC 2 compliant. Cloud marketplace available." }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Unbound documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Discovers and inventories AI coding tools, MCP servers, and sub-agents across the organization, and enforces policy to audit, warn, block, or require approval on agent commands and tool calls.
+    source: { url: https://getunbound.ai/product, tier: official, title: Unbound product page, accessed: 2026-06-24, origin: reviewed, quote: "Inventory AI coding tools, MCP servers, sub-agents, agent rules, and risky configurations across the organization." }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: Enforces policy on outbound data egress by agents in real time to block sensitive-data exfiltration.
+    source: { url: https://getunbound.ai/free, tier: official, title: Unbound free plan page, accessed: 2026-06-24, origin: reviewed, quote: "Enforce policy on terminal commands, MCP tool calls, and outbound data egress in real time." }
+primary_cell: { asset: ai-orchestration-tools, function: protect }
