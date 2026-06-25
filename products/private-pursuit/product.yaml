@@ -1,0 +1,32 @@
+schema_version: 2
+name: Private Pursuit
+aliases: [Lorica]
+url: https://lorica.ai/platform/
+vendor:
+  value: Lorica Cybersecurity
+  source: { url: https://lorica.ai/about-us/, tier: official, title: Lorica Cybersecurity about page, accessed: 2026-06-25, origin: reviewed }
+description:
+  value: "Private Pursuit: Lorica Cybersecurity platform that runs confidential AI inference and database queries on encrypted models and data using fully homomorphic encryption, without decrypting them."
+  source: { url: https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform, accessed: 2026-06-25, origin: reviewed }
+deployment:
+  value: [hybrid]
+  source: { url: https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform, accessed: 2026-06-25, origin: reviewed }
+status:
+  value: active
+  source: { url: https://lorica.ai/trial/, tier: official, title: Lorica Private Pursuit trial, accessed: 2026-06-25, origin: reviewed }
+last_reviewed: 2026-06-25
+changelog:
+  - date: 2026-06-25
+    summary: Added to the catalog from the Lorica Cybersecurity documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [protect]
+    maturity: primary
+    note: Runs confidential AI inference directly on sensitive AI models using fully homomorphic encryption, so the model and queries stay encrypted and private during computation.
+    source: { url: https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform, accessed: 2026-06-25, origin: reviewed, quote: "Private Pursuit enables your organization and trusted partners to execute confidential AI inference and database searches on your sensitive AI models and data." }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: Keeps inference and query data encrypted while in use through fully homomorphic encryption, never decrypting it during computation.
+    source: { url: https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform, accessed: 2026-06-25, origin: reviewed, quote: "This advanced technology allows you to offer services using your customers data without the need to decrypt it, thereby maintaining robust data security and privacy throughout its lifecycle." }
+primary_cell: { asset: ai-model, function: protect }
