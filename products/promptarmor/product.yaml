@@ -1,0 +1,31 @@
+schema_version: 2
+name: PromptArmor
+vendor:
+  value: PromptArmor
+  source: { url: https://www.promptarmor.com/, tier: official, title: PromptArmor homepage, accessed: 2026-06-24, origin: reviewed }
+url: https://www.promptarmor.com/
+description:
+  value: "PromptArmor: AI risk intelligence platform that discovers AI in third-party vendors, scores its risk against frameworks, tests for indirect prompt injection, and monitors vendors for AI changes."
+  source: { url: https://www.promptarmor.com/, tier: official, title: PromptArmor homepage, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.promptarmor.com/, tier: official, title: PromptArmor homepage, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.promptarmor.com/, tier: official, title: PromptArmor homepage, accessed: 2026-06-24, origin: reviewed }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the PromptArmor documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: primary
+    note: Discovers and inventories the AI applications, agents, MCP servers, and connectors that vendors run, scores their risk across 26 vectors mapped to NIST AI RMF, the OWASP LLM Top 10, and MITRE ATLAS, and continuously monitors them for new AI features and emerging vulnerabilities.
+    source: { url: https://www.promptarmor.com/, tier: official, title: PromptArmor homepage, accessed: 2026-06-24, origin: reviewed, quote: "Full vendor reports with AI-specific risk scores across 26 risk vectors, mapped to NIST AI RMF, OWASP LLM Top 10, and MITRE Atlas." }
+  - asset: runtime-ai-data
+    functions: [identify, detect]
+    maturity: secondary
+    note: Tests vendor AI applications for indirect prompt injection and the data-exfiltration vectors it creates, and gives visibility into which vendors train on customer data and how data flows into AI subprocessors.
+    source: { url: https://www.promptarmor.com/, tier: official, title: PromptArmor homepage, accessed: 2026-06-24, origin: reviewed, quote: "Assess indirect prompt injection risk across every vendor AI asset: how application construction, connector scope, and data access combine to create vectors for exfiltration and phishing." }
+primary_cell: { asset: ai-orchestration-tools, function: identify }
