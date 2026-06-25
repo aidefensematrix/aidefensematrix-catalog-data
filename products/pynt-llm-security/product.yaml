@@ -1,0 +1,32 @@
+schema_version: 2
+name: Pynt LLM Security
+aliases: []
+url: https://www.pynt.io/product/llm-security
+vendor:
+  value: Pynt
+  source: { url: https://www.pynt.io/, tier: official, title: Pynt homepage, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Pynt LLM Security: API security testing that discovers LLM APIs hidden in code and scans LLM flows for prompt injection and misuse, generating contextual attacks against the API surface."
+  source: { url: https://www.pynt.io/product/llm-security, tier: official, title: Pynt LLM Security page, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.pynt.io/, tier: official, title: Pynt homepage, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.pynt.io/product/llm-security, tier: official, title: Pynt LLM Security page, accessed: 2026-06-24, origin: reviewed }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Pynt documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, detect]
+    maturity: primary
+    note: Discovers and inventories LLM APIs hidden in code, then scans LLM flows for vulnerabilities such as prompt injection and misuse through the API.
+    source: { url: https://www.pynt.io/product/llm-security, tier: official, title: Pynt LLM Security page, accessed: 2026-06-24, origin: reviewed, quote: "Pynt scans LLM flows like any other API, and prevents prompt injection and misuse via APIs." }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    note: Generates synthetic traffic to drive contextual prompt-injection and misuse tests against live LLM request and response flows.
+    source: { url: https://www.pynt.io/product/llm-security, tier: official, title: Pynt LLM Security page, accessed: 2026-06-24, origin: reviewed, quote: "Pynt leverage AI to generate synthetic traffic to enable contextual attacks." }
+primary_cell: { asset: ai-model, function: detect }

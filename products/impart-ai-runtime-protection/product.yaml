@@ -1,0 +1,37 @@
+schema_version: 2
+name: Impart AI Runtime Protection
+aliases: [Impart LLM Protection, Impart MCP Protection, Impart Agent Protection]
+url: https://www.impart.security/product/llm-protection
+vendor:
+  value: Impart Security
+  source: { url: https://www.impart.security/, tier: official, title: Impart Security homepage, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Impart AI Runtime Protection: Inline runtime enforcement for LLMs, MCP servers, and agents that blocks prompt injection, data exfiltration, unsanctioned tool use, and malicious agent behavior."
+  source: { url: https://www.impart.security/product/llm-protection, tier: official, title: Impart LLM Protection page, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [hybrid]
+  source: { url: https://www.impart.security/product/llm-protection, tier: official, title: Impart LLM Protection page, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.impart.security/, tier: official, title: Impart Security homepage, accessed: 2026-06-24, origin: reviewed }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Impart Security documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: LLM Protection inspects prompts in full session context and blocks or modifies prompt injection and data exfiltration inline before inference.
+    source: { url: https://www.impart.security/product/llm-protection, tier: official, title: Impart LLM Protection page, accessed: 2026-06-24, origin: reviewed, quote: "Runtime enforcement for LLMs that stops prompt injection, data exfiltration, and agent misuse before execution." }
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: secondary
+    note: MCP Protection catalogs every MCP server and tool from live traffic and enforces policy on caller, scope, and arguments before a tool call runs.
+    source: { url: https://www.impart.security/product/mcp-protection, tier: official, title: Impart MCP Protection page, accessed: 2026-06-24, origin: reviewed, quote: "Impart stops malicious tool use, unauthorized access, and unsanctioned MCP servers before a single tool call executes." }
+  - asset: ai-agent-identities
+    functions: [protect, detect]
+    maturity: secondary
+    note: Agent Protection fingerprints each agent and runs stateful evaluation of its behavior, blocking privilege escalation and unauthorized tool use inline.
+    source: { url: https://www.impart.security/product/agent-protection, tier: official, title: Impart Agent Protection page, accessed: 2026-06-24, origin: reviewed, quote: "Malicious behavior stops before the action lands. The decision is made inline, in milliseconds." }
+primary_cell: { asset: runtime-ai-data, function: protect }

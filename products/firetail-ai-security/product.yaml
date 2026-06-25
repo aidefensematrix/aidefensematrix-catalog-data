@@ -1,0 +1,32 @@
+schema_version: 2
+name: FireTail AI Security
+aliases: [FireTail AI Security and Governance Platform]
+url: https://www.firetail.ai/ai-security
+vendor:
+  value: FireTail
+  source: { url: https://www.firetail.ai/, tier: official, title: FireTail homepage, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "FireTail AI Security: AI security posture management that discovers AI and LLM integrations, assesses their risk, and detects prompt injection, data leaks, and system-prompt exposure."
+  source: { url: https://www.firetail.ai/ai-security, tier: official, title: FireTail AI security page, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.firetail.ai/, tier: official, title: FireTail homepage, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.firetail.ai/, tier: official, title: FireTail homepage, accessed: 2026-06-24, origin: reviewed }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the FireTail documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, detect]
+    maturity: primary
+    note: An AI security posture management engine automatically discovers AI and LLM integrations across code and cloud and assesses their security risks.
+    source: { url: https://www.firetail.ai/ai-security, tier: official, title: FireTail AI security page, accessed: 2026-06-24, origin: reviewed, quote: "FireTail's AI security posture management engine automatically finds your AI integrations and assesses security risks." }
+  - asset: runtime-ai-data
+    functions: [detect, protect]
+    maturity: secondary
+    note: Detects and helps block prompt injection, sensitive-data leaks, supply-chain risk, and system-prompt exposure with automated threat detection, policy enforcement, and real-time alerts.
+    source: { url: https://www.firetail.ai/ai-security, tier: official, title: FireTail AI security page, accessed: 2026-06-24, origin: reviewed, quote: "FireTail protects against prompt injection, sensitive data leaks, supply chain risks, and system prompt exposure with automated threat detection, policy enforcement, and real-time alerts." }
+primary_cell: { asset: ai-model, function: identify }

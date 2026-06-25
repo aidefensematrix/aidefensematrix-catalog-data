@@ -1,0 +1,32 @@
+schema_version: 2
+name: Jozu
+aliases: [Jozu Hub, KitOps]
+url: https://www.jozu.com/
+vendor:
+  value: Jozu
+  source: { url: https://www.jozu.com/, tier: official, title: Jozu homepage, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Jozu: On-prem AI model registry that secures the model supply chain by scanning, signing, and tamper-proof packaging models, agents, and MCP servers, built on the open-source KitOps project."
+  source: { url: https://www.jozu.com/, tier: official, title: Jozu homepage, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://www.jozu.com/, tier: official, title: Jozu homepage, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://github.com/kitops-ml/kitops, tier: official, title: KitOps GitHub repository, accessed: 2026-06-24, origin: reviewed }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Jozu documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, protect]
+    maturity: primary
+    note: Jozu Hub inventories models as OCI ModelKits and secures the model supply chain by scanning, signing, and tamper-proof packaging them.
+    source: { url: https://www.jozu.com/, tier: official, title: Jozu homepage, accessed: 2026-06-24, origin: reviewed, quote: "Jozu Hub secures your model supply chain with scanning, signing, and tamper-proof packaging." }
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: secondary
+    note: Scans agents and MCP servers for supply-chain vulnerabilities, content-safety issues, prompt-injection susceptibility, and backdoors, attaching signed attestations and gating admission by policy.
+    source: { url: https://www.jozu.com/agent-guard/, tier: official, title: Jozu Agent Guard page, accessed: 2026-06-24, origin: reviewed, quote: "Agents, MCP servers, and models are scanned for supply chain vulnerabilities, content safety issues, prompt injection susceptibility, and backdoor detection. Scan results are attached as signed attestations." }
+primary_cell: { asset: ai-model, function: protect }

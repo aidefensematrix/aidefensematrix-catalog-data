@@ -1,0 +1,30 @@
+schema_version: 2
+name: Symbiotic Security
+aliases: [Symbiotic Flow, Symbiotic Code]
+url: https://www.symbioticsec.ai/products/symbiotic-flow
+vendor:
+  value: Symbiotic Security
+  source: { url: https://www.symbioticsec.ai/, tier: official, title: Symbiotic Security homepage, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Symbiotic Security: In-IDE security for AI-generated code that enforces policy before code is written, detects and auto-fixes vulnerabilities in the editor, and gates pull requests and CI/CD."
+  source: { url: https://www.symbioticsec.ai/products/symbiotic-flow, tier: official, title: Symbiotic Flow product page, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://docs.symbioticsec.ai/privacy, tier: official, title: Symbiotic Security privacy and hosting, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.symbioticsec.ai/, tier: official, title: Symbiotic Security homepage, accessed: 2026-06-24, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type II]
+  source: { url: https://app.vanta.com/symbioticsec.ai/trust/9i8otz182y39g3m5d9ki5, tier: official, title: Symbiotic Security trust center, accessed: 2026-06-24, origin: reviewed, quote: "SOC 2 type II certification" }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Symbiotic Security documentation.
+matrix_coverage:
+  - asset: ai-generated-code
+    functions: [protect, detect]
+    maturity: primary
+    note: Enforces security policy before AI-assisted code is written, detects and auto-fixes vulnerabilities directly in the IDE, and gates pull requests and CI/CD; a code-generation agent remediates before returning code.
+    source: { url: https://www.symbioticsec.ai/products/symbiotic-flow, tier: official, title: Symbiotic Flow product page, accessed: 2026-06-24, origin: reviewed, quote: "It protects your codebase at every stage: enforcing security policies before code is written, detecting and auto-fixing vulnerabilities directly in the IDE, securing your PR and CI/CD pipelines" }
+primary_cell: { asset: ai-generated-code, function: protect }
