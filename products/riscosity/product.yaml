@@ -1,0 +1,35 @@
+schema_version: 2
+name: Riscosity
+aliases: []
+url: https://www.riscosity.com/product
+vendor:
+  value: Riscosity
+  source: { url: https://www.riscosity.com/, tier: official, title: Riscosity homepage, accessed: 2026-06-25, origin: reviewed }
+description:
+  value: "Riscosity: Data-flow firewall that discovers the AI vendors and chatbots applications and employees send data to, and redacts or blocks sensitive data in transit before it reaches them."
+  source: { url: https://www.riscosity.com/product, tier: official, title: Riscosity product page, accessed: 2026-06-25, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://www.riscosity.com/use-cases, tier: official, title: Riscosity use cases, accessed: 2026-06-25, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.riscosity.com/, tier: official, title: Riscosity homepage, accessed: 2026-06-25, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type II]
+  source: { url: https://www.riscosity.com/security, tier: official, title: Riscosity security page, accessed: 2026-06-25, origin: reviewed, quote: "By being SOC 2 Type II compliant, we can assure our customers that we are committed to maintaining the highest standards of information security." }
+last_reviewed: 2026-06-25
+changelog:
+  - date: 2026-06-25
+    summary: Added to the catalog from the Riscosity documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Detects and redacts or redirects sensitive fields in data flowing to AI vendors and chatbots, blocking flows that violate business rules or regulatory requirements before data leaves.
+    source: { url: https://www.riscosity.com/use-cases, tier: official, title: Riscosity use cases, accessed: 2026-06-25, origin: reviewed, quote: "Redact or redirect data flows to AI Vendors and Chatbots that violate business rules or regulatory requirements." }
+  - asset: ai-orchestration-tools
+    functions: [identify]
+    maturity: secondary
+    note: Automatically discovers and catalogs every AI vendor, model, and chatbot that applications and end-users communicate with, surfacing shadow AI.
+    source: { url: https://www.riscosity.com/use-cases, tier: official, title: Riscosity use cases, accessed: 2026-06-25, origin: reviewed, quote: "Discover the AI Vendors and Models your applications are communicating with." }
+primary_cell: { asset: runtime-ai-data, function: protect }

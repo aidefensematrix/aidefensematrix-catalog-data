@@ -1,0 +1,30 @@
+schema_version: 2
+name: Wald AI
+aliases: [Wald AI DLP, Wald LLM Pack]
+url: https://wald.ai/
+vendor:
+  value: Wald AI
+  source: { url: https://wald.ai/, tier: official, title: Wald AI homepage, accessed: 2026-06-25, origin: reviewed }
+description:
+  value: "Wald AI: AI data-loss-prevention and secure LLM-access broker that inspects employee GenAI prompts in real time and uses context-aware redaction to keep sensitive data out of model calls."
+  source: { url: https://wald.ai/, tier: official, title: Wald AI homepage, accessed: 2026-06-25, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://wald.ai/, tier: official, title: Wald AI homepage, accessed: 2026-06-25, origin: reviewed }
+status:
+  value: active
+  source: { url: https://wald.ai/pricing, tier: official, title: Wald AI pricing, accessed: 2026-06-25, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type I, SOC 2 Type II]
+  source: { url: https://wald.ai/, tier: official, title: Wald AI homepage, accessed: 2026-06-25, origin: reviewed, quote: "enterprise-grade safeguards such as SOC 2 Type I and II" }
+last_reviewed: 2026-06-25
+changelog:
+  - date: 2026-06-25
+    summary: Added to the catalog from the Wald AI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Inspects employee prompts in real time with context-aware identification and replaces sensitive data with placeholders before the prompt reaches the model, then restores it locally.
+    source: { url: https://wald.ai/, tier: official, title: Wald AI homepage, accessed: 2026-06-25, origin: reviewed, quote: "It uses Smart Redaction to replace sensitive data with intelligent placeholders" }
+primary_cell: { asset: runtime-ai-data, function: protect }

@@ -1,0 +1,40 @@
+schema_version: 2
+name: Relyance AI-SPM
+aliases: [Relyance AI, Lyo]
+url: https://www.relyance.ai/product/ai-spm
+vendor:
+  value: Relyance AI
+  source: { url: https://www.relyance.ai/, tier: official, title: Relyance AI homepage, accessed: 2026-06-25, origin: reviewed }
+description:
+  value: "Relyance AI-SPM: AI security posture management that discovers AI models, agents, and MCP servers into a unified inventory, maps agent-to-data relationships, and monitors continuously for risk."
+  source: { url: https://www.relyance.ai/product/ai-spm, tier: official, title: Relyance AI-SPM page, accessed: 2026-06-25, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.relyance.ai/product/ai-spm, tier: official, title: Relyance AI-SPM page, accessed: 2026-06-25, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.relyance.ai/product/ai-spm, tier: official, title: Relyance AI-SPM page, accessed: 2026-06-25, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001]
+  source: { url: https://trust.relyance.ai/, tier: official, title: Relyance AI trust center, accessed: 2026-06-25, origin: reviewed, quote: "SOC 2 Type 2 Report" }
+last_reviewed: 2026-06-25
+changelog:
+  - date: 2026-06-25
+    summary: Added to the catalog from the Relyance AI documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify]
+    maturity: primary
+    note: Discovers and inventories first-party and third-party AI models alongside other AI assets in a unified inventory.
+    source: { url: https://www.relyance.ai/product/ai-spm, tier: official, title: Relyance AI-SPM page, accessed: 2026-06-25, origin: reviewed, quote: "it discovers all AI assets including agents, models, MCP servers, and third-party tools alongside non-AI data assets in a unified inventory" }
+  - asset: ai-orchestration-tools
+    functions: [identify]
+    maturity: secondary
+    note: Inventories AI agents, tools, and MCP servers alongside non-AI assets and maps their relationships to data.
+    source: { url: https://www.relyance.ai/product/meet-lyo, tier: official, title: Relyance AI Lyo page, accessed: 2026-06-25, origin: reviewed, quote: "Lyo provides a unified inventory of AI agents, tools, MCP servers, and models alongside your non-AI assets." }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    note: Continuously monitors AI-to-data flows with policy-based alerting and contextual remediation recommendations.
+    source: { url: https://www.relyance.ai/product/ai-spm, tier: official, title: Relyance AI-SPM page, accessed: 2026-06-25, origin: reviewed, quote: "it monitors continuously with 24/7 policy-based alerting and delivers recommendations for remediation that explain the risk context and how to fix it" }
+primary_cell: { asset: ai-model, function: identify }
