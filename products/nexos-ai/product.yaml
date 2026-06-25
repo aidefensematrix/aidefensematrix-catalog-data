@@ -1,0 +1,30 @@
+schema_version: 2
+name: Nexos.ai
+aliases: []
+url: https://nexos.ai/ai-gateway/
+vendor:
+  value: Nexos.ai
+  source: { url: https://nexos.ai/ai-gateway/, tier: official, title: Nexos.ai AI gateway page, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Nexos.ai: Enterprise AI gateway that routes requests across many LLMs through one secure endpoint and enforces security and usage policies, access controls, and budget limits on every interaction."
+  source: { url: https://nexos.ai/ai-gateway/, tier: official, title: Nexos.ai AI gateway page, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://nexos.ai/ai-gateway/, tier: official, title: Nexos.ai AI gateway page, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://nexos.ai/ai-gateway/, tier: official, title: Nexos.ai AI gateway page, accessed: 2026-06-24, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 1, SOC 2 Type 2, ISO/IEC 27001:2022]
+  source: { url: https://trust.nexos.ai/, tier: official, title: Nexos.ai trust center, accessed: 2026-06-24, origin: reviewed, quote: "ISO/IEC 27001:2022" }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Nexos.ai documentation.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [protect, detect]
+    maturity: primary
+    note: A single secure endpoint fronting many LLM providers enforces security and usage policies, access controls, and rate limits, and logs every prompt and response for visibility.
+    source: { url: https://nexos.ai/ai-gateway/, tier: official, title: Nexos.ai AI gateway page, accessed: 2026-06-24, origin: reviewed, quote: "Route traffic to your preferred providers, enforce security and usage policies, and gain full visibility into every LLM interaction." }
+primary_cell: { asset: ai-gateways-routers, function: protect }

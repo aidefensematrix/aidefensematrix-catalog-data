@@ -1,0 +1,35 @@
+schema_version: 2
+name: Credal
+aliases: []
+url: https://www.credal.ai/products/agent-registry
+vendor:
+  value: Credal
+  source: { url: https://www.credal.ai/, tier: official, title: Credal homepage, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Credal: Control plane for enterprise AI agents that consolidates agents and MCP servers into a registry, makes each agent inherit source-system permissions, and applies DLP before data leaves."
+  source: { url: https://www.credal.ai/products/agent-registry, tier: official, title: Credal agent registry page, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.credal.ai/security, tier: official, title: Credal security page, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://docs.credal.ai/user-guide/getting-started/overview, tier: official, title: Credal documentation overview, accessed: 2026-06-24, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://www.credal.ai/, tier: official, title: Credal homepage, accessed: 2026-06-24, origin: reviewed, quote: "Credal infrastructure is SOC 2 Type 2 compliant, tested and verified." }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Credal documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect]
+    maturity: primary
+    note: Consolidates all agents and MCP servers into a registry admins manage, and enforces access by making each agent inherit source-system permissions so users see only authorized data.
+    source: { url: https://www.credal.ai/products/agent-registry, tier: official, title: Credal agent registry page, accessed: 2026-06-24, origin: reviewed, quote: "Every agent automatically inherits source permissions, so users only ever see data they are already authorized to access." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Detects sensitive data and redacts or blocks it from leaving the platform or customer VPC, with full audit logging of every agent action and data access.
+    source: { url: https://www.credal.ai/security, tier: official, title: Credal security page, accessed: 2026-06-24, origin: reviewed, quote: "Automatically detect and either redact or block sensitive data from leaving Credal or your VPC depending on setup." }
+primary_cell: { asset: ai-orchestration-tools, function: protect }

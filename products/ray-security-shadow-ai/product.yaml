@@ -1,0 +1,32 @@
+schema_version: 2
+name: Ray Security Shadow AI
+aliases: []
+url: https://raysecurity.io/use-cases/find-and-manage-shadow-ai/
+vendor:
+  value: Ray Security
+  source: { url: https://raysecurity.io/company/, tier: official, title: Ray Security company page, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Ray Security Shadow AI: Agentless discovery that finds unsanctioned AI tools and agents accessing enterprise data, maps what each accessed, and applies access controls or blocks unsanctioned AI."
+  source: { url: https://raysecurity.io/use-cases/find-and-manage-shadow-ai/, tier: official, title: Ray Security find and manage shadow AI, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://raysecurity.io/platform/, tier: official, title: Ray Security platform page, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://raysecurity.io/, tier: official, title: Ray Security homepage, accessed: 2026-06-24, origin: reviewed }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Ray Security documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, detect, protect]
+    maturity: primary
+    note: Continuously and agentlessly discovers AI agents and shadow-AI tools accessing enterprise data, maps what each accessed, and applies access controls, data restrictions, or blocking to unsanctioned AI.
+    source: { url: https://raysecurity.io/use-cases/find-and-manage-shadow-ai/, tier: official, title: Ray Security find and manage shadow AI, accessed: 2026-06-24, origin: reviewed, quote: "Continuously detect AI tools and agents that are active but unsanctioned, even those outside IT control. No agent required on the data source." }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: Governs what data AI tools and agents can access based on sensitivity, context, and real usage.
+    source: { url: https://raysecurity.io/use-cases/reveal-control-ai-data-exposure/, tier: official, title: Ray Security reveal and control AI data exposure, accessed: 2026-06-24, origin: reviewed, quote: "Define exactly what data AI tools and agents can access, based on sensitivity, context, and real usage." }
+primary_cell: { asset: ai-agent-identities, function: identify }
