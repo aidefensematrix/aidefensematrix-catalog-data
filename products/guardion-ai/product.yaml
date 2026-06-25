@@ -1,0 +1,37 @@
+schema_version: 2
+name: Guardion AI
+aliases: []
+url: https://guardion.ai/
+vendor:
+  value: Guardion AI
+  source: { url: https://guardion.ai/, tier: official, title: Guardion AI homepage, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "Guardion AI: Runtime guardrail platform and inline security gateway that detects and blocks prompt injection, jailbreaks, and unsafe agent actions, and redacts PII across LLM and MCP calls."
+  source: { url: https://guardion.ai/, tier: official, title: Guardion AI homepage, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://guardion.ai/pricing, tier: official, title: Guardion AI pricing, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://guardion.ai/, tier: official, title: Guardion AI homepage, accessed: 2026-06-24, origin: reviewed }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Guardion AI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Runtime guardrails detect and block prompt injection and jailbreaks and redact PII and secrets before prompts or responses leave the organization.
+    source: { url: https://guardion.ai/, tier: official, title: Guardion AI homepage, accessed: 2026-06-24, origin: reviewed, quote: "PII is stripped before it ever leaves your org, backed by a security vault." }
+  - asset: ai-gateways-routers
+    functions: [protect]
+    maturity: secondary
+    note: An inline security gateway enforces guardrails, PII redaction, and policy on every LLM and MCP call, deployable inline or through a guard API.
+    source: { url: https://guardion.ai/, tier: official, title: Guardion AI homepage, accessed: 2026-06-24, origin: reviewed, quote: "Run it inline as a Security Gateway in front of your models, agents, and MCP servers, or call the Guard API directly from your code." }
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: secondary
+    note: Observes, enforces, and responds on every AI agent and MCP action, allowing, blocking, or redacting agent behavior across multi-agent frameworks.
+    source: { url: https://guardion.ai/product, tier: official, title: Guardion AI product page, accessed: 2026-06-24, origin: reviewed, quote: "Observe, enforce, and respond on every AI agent and MCP action" }
+primary_cell: { asset: runtime-ai-data, function: protect }

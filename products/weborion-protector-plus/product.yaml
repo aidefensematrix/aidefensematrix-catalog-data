@@ -1,0 +1,35 @@
+schema_version: 2
+name: WebOrion Protector Plus
+aliases: [GenAI Protector Plus]
+url: https://www.cloudsine.tech/products/weborion-protector-plus/
+vendor:
+  value: Cloudsine
+  source: { url: https://www.cloudsine.tech/products/weborion-protector-plus/, tier: official, title: WebOrion Protector Plus product page, accessed: 2026-06-24, origin: reviewed }
+description:
+  value: "WebOrion Protector Plus: GenAI firewall by Cloudsine that inspects prompts and LLM outputs to block prompt injection and jailbreaks, prevent sensitive-data leakage, and moderate hazardous content."
+  source: { url: https://www.cloudsine.tech/products/weborion-protector-plus/, tier: official, title: WebOrion Protector Plus product page, accessed: 2026-06-24, origin: reviewed }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.cloudsine.tech/products/weborion-protector-plus/, tier: official, title: WebOrion Protector Plus product page, accessed: 2026-06-24, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.cloudsine.tech/products/weborion-protector-plus/, tier: official, title: WebOrion Protector Plus product page, accessed: 2026-06-24, origin: reviewed }
+compliance_attestations:
+  value: [ISO 27001:2022, CSA Cyber Essentials Mark]
+  source: { url: https://www.cloudsine.tech/certifications-awards/, tier: official, title: Cloudsine certifications and awards, accessed: 2026-06-24, origin: reviewed, quote: "ISO 27001:2022 Certification" }
+last_reviewed: 2026-06-24
+changelog:
+  - date: 2026-06-24
+    summary: Added to the catalog from the Cloudsine documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Inspects incoming prompts to filter direct and indirect prompt injection and jailbreaks, blocks PII and sensitive-data leakage in prompts and responses, and moderates hazardous content.
+    source: { url: https://www.cloudsine.tech/products/weborion-protector-plus/, tier: official, title: WebOrion Protector Plus product page, accessed: 2026-06-24, origin: reviewed, quote: "Inspect all incoming prompts and filter out the malicious prompts that are direct or indirect prompt attacks, jailbreaks, etc." }
+  - asset: ai-gateways-routers
+    functions: [protect]
+    maturity: secondary
+    note: Deploys as a GPU-powered firewall positioned as a security control gateway between AI applications and the model backend.
+    source: { url: https://www.cloudsine.tech/products/weborion-protector-plus/, tier: official, title: WebOrion Protector Plus product page, accessed: 2026-06-24, origin: reviewed, quote: "it is powered by a GPU and serves as a security control gateway between your AI applications and potential threats" }
+primary_cell: { asset: runtime-ai-data, function: protect }
