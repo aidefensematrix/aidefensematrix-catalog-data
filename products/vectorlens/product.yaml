@@ -1,0 +1,27 @@
+schema_version: 2
+name: VectorLens
+aliases: [IronCore VectorLens]
+vendor:
+  value: IronCore Labs
+  source: { url: https://ironcorelabs.com/products/vectorlens/, tier: official, title: VectorLens product page, accessed: 2026-07-03, origin: reviewed }
+url: https://ironcorelabs.com/products/vectorlens/
+description:
+  value: "VectorLens: Command-line scanner that classifies personal and other sensitive data hidden inside AI vector embeddings, so security teams can find PII copied into vector stores without the source text."
+  source: { url: https://ironcorelabs.com/products/vectorlens/, tier: official, title: VectorLens product page, accessed: 2026-07-03, origin: reviewed }
+deployment:
+  value: [self-hosted]
+  source: { url: https://ironcorelabs.com/products/vectorlens/, tier: official, title: VectorLens product page, accessed: 2026-07-03, origin: reviewed }
+status:
+  value: active
+  source: { url: https://ironcorelabs.com/products/vectorlens/, tier: official, title: VectorLens product page, accessed: 2026-07-03, origin: reviewed }
+last_reviewed: 2026-07-03
+changelog:
+  - date: 2026-07-03
+    summary: Added to the catalog from the IronCore Labs VectorLens product documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [identify]
+    maturity: primary
+    note: A local command-line tool exports vectors from any store and runs trained classifiers over the embeddings to surface and label the categories of sensitive data they carry, without needing the original source text, so teams can inventory PII that has been copied into vector databases.
+    source: { url: https://ironcorelabs.com/products/vectorlens/, tier: official, title: VectorLens product page, accessed: 2026-07-03, origin: reviewed, quote: "The tool uses trained classifiers to find PII in vectors." }
+primary_cell: { asset: runtime-ai-data, function: identify }
