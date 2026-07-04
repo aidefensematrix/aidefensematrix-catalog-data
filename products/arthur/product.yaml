@@ -18,12 +18,14 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Arthur AI documentation.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Built-in guardrails screen AI interactions to protect applications against misuse, off-brand content, and unsafe prompts and responses.
-    source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI built-in guardrails, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI built-in guardrails, accessed: 2026-07-04, origin: agent, quote: "Leverage guardrails to secure applications against misuse and off-brand interactions." }
   - asset: ai-orchestration-tools
     functions: [identify, detect]
     maturity: secondary
