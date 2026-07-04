@@ -70,6 +70,7 @@ for (const slug of readdirSync(PRODUCTS_DIR).sort()) {
     last_reviewed: String(d.last_reviewed ?? ''),
     cells: coverage.length + (d.compliance_attestations ? 1 : 0),
     hasGovern: coverage.some((c) => Array.isArray(c.functions) && c.functions.includes('govern')),
+    hasWaiver: sources.some((s) => s.quote_unavailable !== undefined),
     hasAgentOrigin: sources.some((s) => s.origin === 'agent'),
   });
 }
@@ -85,7 +86,16 @@ const takeFrom = (poolFilter, n) => {
   const pool = entries.filter((e) => !chosen.includes(e) && poolFilter(e));
   for (let i = 0; i < n && pool.length; i++) chosen.push(pick(pool));
 };
-const byNewest = [...entries].sort((a, b) => (a.last_reviewed < b.last_reviewed ? 1 : -1));
+// Antisymmetric comparator with a slug tiebreak: tie ordering must not depend on
+// the engine's sort internals, or the "same month, same sample" guarantee could
+// drift across Node upgrades.
+const byNewest = [...entries].sort((a, b) =>
+  a.last_reviewed === b.last_reviewed
+    ? (a.slug < b.slug ? -1 : 1)
+    : a.last_reviewed < b.last_reviewed
+      ? 1
+      : -1,
+);
 const quartile = new Set(byNewest.slice(0, Math.max(8, Math.ceil(entries.length / 4))).map((e) => e.slug));
 takeFrom((e) => quartile.has(e.slug), 3);
 takeFrom((e) => e.hasAgentOrigin, 3); // agent-origin population; may select < 3 while it is small
@@ -104,6 +114,8 @@ for (const e of chosen.sort((a, b) => (a.slug < b.slug ? -1 : 1))) {
   out.push(`## ${e.slug} (last_reviewed ${e.last_reviewed}, ${e.cells} sourced cell${e.cells === 1 ? '' : 's'})`);
   out.push('- [ ] Every quote opens and appears on the page its source cites');
   out.push('- [ ] Each quote semantically supports its cell (the asset and functions it anchors), not just the product');
+  if (e.hasWaiver)
+    out.push('- [ ] Each quote_unavailable waiver is still accurate: the cited page genuinely exposes no quotable text');
   if (e.hasGovern)
     out.push('- [ ] Govern rows pass strict-Govern: the note names a policy, standard, registry-of-record, or compliance-evidence artifact');
   out.push('- [ ] Comparative or efficacy claims cite a non-official tier (press, research, regulatory)');
