@@ -24,12 +24,14 @@ changelog:
     summary: Enriched from the Privacera AI Governance documentation; noted the Trust3 AI rebrand.
   - date: 2026-06-09
     summary: Re-slugged from privacera to trust3-ai and recorded the rename to Trust3 AI, announced 2026-03-09.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: training-data
     functions: [identify, protect]
     maturity: primary
     note: Scans and classifies fine-tuning and RAG data and filters vector-database and RAG queries so each user inherits the access controls of the source systems.
-    source: { url: https://privacera.com/newsroom/press-releases/privacera-enhances-ai-governance-solution-with-new-access-control-and-data-filtering-functionality-for-vector-db-rag/, tier: official, title: Privacera vector DB and RAG access control, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://privacera.com/newsroom/press-releases/privacera-enhances-ai-governance-solution-with-new-access-control-and-data-filtering-functionality-for-vector-db-rag/, tier: official, title: Privacera vector DB and RAG access control, accessed: 2026-07-04, origin: agent, quote: "discovering and securing sensitive fine-tuning data, RAG, and user interactions feeding into AI-powered models to model outputs" }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary
