@@ -24,6 +24,8 @@ last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Deepchecks documentation; recorded the Check Point acquisition of the Deepchecks team and intellectual property announced in May 2026 with the close still pending.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [detect]
@@ -34,7 +36,7 @@ matrix_coverage:
     functions: [detect]
     maturity: secondary
     note: The pentest environment generates curated adversarial prompts covering prompt injection, jailbreaks, PII extraction, and bias triggers, runs the LLM pipeline against them, and scores whether the attacks succeeded.
-    source: { url: https://llmdocs.deepchecks.com/docs/pentesting-your-llm-pipeline, tier: official, title: Deepchecks LLM pentesting documentation, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://llmdocs.deepchecks.com/docs/pentesting-your-llm-pipeline, tier: official, title: Deepchecks LLM pentesting documentation, accessed: 2026-07-04, origin: agent, quote: "Test your LLM application against a broad set of adversarial prompts - prompt injections, jailbreaks, PII extraction, bias triggers - and analyze resilience." }
   - asset: ai-orchestration-tools
     functions: [detect]
     maturity: secondary
