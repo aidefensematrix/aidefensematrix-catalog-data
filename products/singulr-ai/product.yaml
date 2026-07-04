@@ -1,0 +1,37 @@
+schema_version: 2
+name: Singulr AI
+aliases: [Singulr, Agent Pulse]
+vendor:
+  value: Singulr AI
+  source: { url: https://singulr.ai/, tier: official, title: Singulr AI homepage, accessed: 2026-07-03, origin: reviewed }
+url: https://singulr.ai/
+description:
+  value: "Singulr AI: Enterprise control plane that discovers AI agents and services, maps their tool and data dependencies, and enforces runtime governance and security policy on AI interactions."
+  source: { url: https://singulr.ai/products/agent-pulse, tier: official, title: Singulr Agent Pulse, accessed: 2026-07-03, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://singulr.ai/, tier: official, title: Singulr AI homepage, accessed: 2026-07-03, origin: reviewed }
+status:
+  value: active
+  source: { url: https://singulr.ai/, tier: official, title: Singulr AI homepage, accessed: 2026-07-03, origin: reviewed }
+last_reviewed: 2026-07-03
+changelog:
+  - date: 2026-07-03
+    summary: Added to the catalog from the Singulr AI Agent Pulse documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect]
+    maturity: primary
+    note: Discovers every AI agent and its tool, data, and MCP dependencies, then defines and enforces policies scoped by agent type, data sensitivity, and tool access.
+    source: { url: https://singulr.ai/products/agent-pulse, tier: official, title: Singulr Agent Pulse, accessed: 2026-07-03, origin: reviewed, quote: "Discover every AI agent in your environment on any platform. We create the context graph of tool connections, data access, MCP servers, and permissions to show how agents interact with your enterprise systems." }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: Runtime control enforces against unapproved AI services, redacts sensitive data before exposure, and controls prompt injection at the browser and endpoint.
+    source: { url: https://singulr.ai/, tier: official, title: Singulr Runtime Control, accessed: 2026-07-03, origin: reviewed, quote: "Enforce against unapproved AI services, redact PII and PHI before exposure, control prompt injection, and bound agent permissions at the browser, the endpoint, and across agentic execution paths." }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: Surfaces control-drift metrics and scans MCP servers for vulnerabilities across the agent topology.
+    source: { url: https://singulr.ai/, tier: official, title: Singulr platform, accessed: 2026-07-03, origin: reviewed, quote: "agent discovery, topology mapping, control-drift metrics, and MCP server vulnerability scanning" }
+primary_cell: { asset: ai-agent-identities, function: identify }

@@ -1,0 +1,32 @@
+schema_version: 2
+name: General Analysis
+aliases: [GeneralAnalysis]
+vendor:
+  value: General Analysis
+  source: { url: https://generalanalysis.com/, tier: official, title: General Analysis homepage, accessed: 2026-07-03, origin: reviewed }
+url: https://generalanalysis.com/
+description:
+  value: "General Analysis: Automated red-teaming platform that runs adversarial tests against LLM apps, RAG systems, MCP servers, and production AI agents to surface prompt injection and data-leakage flaws."
+  source: { url: https://generalanalysis.com/products/automated-ai-red-teaming, tier: official, title: General Analysis AI red teaming, accessed: 2026-07-03, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://generalanalysis.com/, tier: official, title: General Analysis homepage, accessed: 2026-07-03, origin: reviewed }
+status:
+  value: active
+  source: { url: https://generalanalysis.com/, tier: official, title: General Analysis homepage, accessed: 2026-07-03, origin: reviewed }
+last_reviewed: 2026-07-03
+changelog:
+  - date: 2026-07-03
+    summary: Added to the catalog from the General Analysis product documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: primary
+    note: Runs automated adversarial tests over prompts and responses to surface prompt injection, tool misuse, data leakage, and multi-step agent attacks before release.
+    source: { url: https://generalanalysis.com/products/automated-ai-red-teaming, tier: official, title: General Analysis AI red teaming, accessed: 2026-07-03, origin: reviewed, quote: "Test prompt injection, tool misuse, data leakage, unsafe autonomy, and multi-step agent attacks before they reach users." }
+  - asset: ai-orchestration-tools
+    functions: [identify]
+    maturity: secondary
+    note: Discovers the AI systems in the environment, inventorying models, MCP servers, knowledge bases, and agent workflows before testing them.
+    source: { url: https://generalanalysis.com/, tier: official, title: General Analysis homepage, accessed: 2026-07-03, origin: reviewed, quote: "Discover, red-team, and monitor every AI system." }
+primary_cell: { asset: runtime-ai-data, function: detect }

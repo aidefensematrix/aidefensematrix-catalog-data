@@ -1,0 +1,32 @@
+schema_version: 2
+name: Maro
+aliases: [Maro Security]
+vendor:
+  value: Maro
+  source: { url: https://seekmaro.com/, tier: official, title: Maro homepage, accessed: 2026-07-03, origin: reviewed }
+url: https://seekmaro.com/
+description:
+  value: "Maro: Browser-extension platform that discovers employee AI-tool usage and applies semantic data-loss policies at each prompt, coaching or blocking risky sharing across AI tools."
+  source: { url: https://seekmaro.com/pricing, tier: official, title: Maro pricing, accessed: 2026-07-03, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://seekmaro.com/, tier: official, title: Maro homepage, accessed: 2026-07-03, origin: reviewed }
+status:
+  value: active
+  source: { url: https://seekmaro.com/pricing, tier: official, title: Maro pricing, accessed: 2026-07-03, origin: reviewed }
+last_reviewed: 2026-07-03
+changelog:
+  - date: 2026-07-03
+    summary: Added to the catalog from the Maro product documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: primary
+    note: Applies semantic data-loss controls at every prompt and browser interaction, guiding or blocking risky sharing into AI tools in real time.
+    source: { url: https://seekmaro.com/pricing, tier: official, title: Maro pricing, accessed: 2026-07-03, origin: reviewed, quote: "Real-time semantic DLP at every prompt and browser interaction. Guide or block in the moment." }
+  - asset: ai-orchestration-tools
+    functions: [identify]
+    maturity: secondary
+    note: Discovers shadow AI usage across the workforce down to the specific tool, use case, data, and prompt.
+    source: { url: https://seekmaro.com/pricing, tier: official, title: Maro pricing, accessed: 2026-07-03, origin: reviewed, quote: "We surface shadow AI usage down to the tool, use case, data and prompt" }
+primary_cell: { asset: runtime-ai-data, function: protect }

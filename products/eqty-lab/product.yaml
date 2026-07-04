@@ -1,0 +1,37 @@
+schema_version: 2
+name: EQTY Lab
+aliases: [EQTY, AI Integrity Suite]
+vendor:
+  value: EQTY Lab
+  source: { url: https://www.eqtylab.io/, tier: official, title: EQTY Lab homepage, accessed: 2026-07-03, origin: reviewed }
+url: https://www.eqtylab.io/
+description:
+  value: "EQTY Lab: Verifiable AI governance suite that binds policies to AI agents, tracks cryptographic lineage of AI data and models, and collects compliance evidence across frameworks."
+  source: { url: https://www.eqtylab.io/ai-integrity-suite, tier: official, title: EQTY Lab AI Integrity Suite, accessed: 2026-07-03, origin: reviewed }
+deployment:
+  value: [hybrid]
+  source: { url: https://www.eqtylab.io/, tier: official, title: EQTY Lab homepage, accessed: 2026-07-03, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.eqtylab.io/, tier: official, title: EQTY Lab homepage, accessed: 2026-07-03, origin: reviewed }
+last_reviewed: 2026-07-03
+changelog:
+  - date: 2026-07-03
+    summary: Added to the catalog from the EQTY Lab AI Integrity Suite documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [protect, detect]
+    maturity: primary
+    note: AI Guardian binds unified controls to AI agents, detecting agent vulnerabilities and enforcing compliance on how each agent operates.
+    source: { url: https://www.eqtylab.io/guardian, tier: official, title: EQTY Lab AI Guardian, accessed: 2026-07-03, origin: reviewed, quote: "Detect vulnerabilities and enforce compliance for all your AI agents." }
+  - asset: ai-orchestration-tools
+    functions: [govern]
+    maturity: secondary
+    note: Governance Studio provides a policy engine that enforces rules and collects compliance evidence mapped to AI regulatory frameworks.
+    source: { url: https://www.eqtylab.io/, tier: official, title: EQTY Lab governance, accessed: 2026-07-03, origin: reviewed, quote: "Enforce policies and collect evidence across 10+ AI compliance frameworks or set your own low-code rules." }
+  - asset: ai-model
+    functions: [identify]
+    maturity: secondary
+    note: Lineage Explorer maintains and audits an inventory of AI agents, models, and data with verifiable provenance.
+    source: { url: https://www.eqtylab.io/ai-integrity-suite, tier: official, title: EQTY Lab AI Integrity Suite, accessed: 2026-07-03, origin: reviewed, quote: "Maintain and audit your AI agents, models, and data in a simple interface." }
+primary_cell: { asset: ai-agent-identities, function: protect }

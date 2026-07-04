@@ -1,0 +1,32 @@
+schema_version: 2
+name: OneTrust AI Governance
+aliases: [OneTrust]
+vendor:
+  value: OneTrust
+  source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-07-03, origin: reviewed }
+url: https://www.onetrust.com/govern-ai-risk/
+description:
+  value: "OneTrust AI Governance: Catalogs AI systems, assesses their risk against frameworks such as the EU AI Act and NIST AI RMF, and enforces compliance controls across the AI lifecycle."
+  source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-07-03, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-07-03, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-07-03, origin: reviewed }
+last_reviewed: 2026-07-03
+changelog:
+  - date: 2026-07-03
+    summary: Added to the catalog from the OneTrust AI Governance documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [govern, identify]
+    maturity: primary
+    note: Catalogs AI models, datasets, agents, and vendors in a central inventory and maps their risk to control frameworks to maintain ongoing regulatory compliance.
+    source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-07-03, origin: reviewed, quote: "Map risk and control frameworks for risk evaluation and maintaining ongoing compliance" }
+  - asset: ai-orchestration-tools
+    functions: [protect]
+    maturity: secondary
+    note: Applies runtime guardrails including prompt and output filtering and policy-based blocking to enforce compliant AI behavior across platforms.
+    source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-07-03, origin: reviewed, quote: "Enforce safe and compliant AI behavior across AI platforms." }
+primary_cell: { asset: ai-model, function: govern }
