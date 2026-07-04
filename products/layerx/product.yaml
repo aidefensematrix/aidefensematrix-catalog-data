@@ -18,13 +18,16 @@ acquisition:
   acquirer: Akamai
   announced: 2026-05-14
   post_acquisition_status: folded
-  source: { url: https://www.globenewswire.com/news-release/2026/07/02/3321349/0/en/Akamai-Completes-Acquisition-of-Secure-Enterprise-Browser-Provider-LayerX.html, tier: official, title: Akamai completes LayerX acquisition, accessed: 2026-07-03, origin: reviewed }
+  new_name: Akamai Workforce Protector
+  source: { url: https://www.akamai.com/products/akamai-workforce-protector, tier: official, title: Akamai Workforce Protector product page, accessed: 2026-07-03, origin: reviewed, quote: "Akamai Workforce Protector (Formerly LayerX)" }
 last_reviewed: 2026-07-03
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the LayerX use-case documentation; Akamai announced a definitive agreement to acquire LayerX on 2026-05-14, with the close expected in the third quarter of 2026.
   - date: 2026-07-03
     summary: Recorded completion of the Akamai acquisition, which closed on 2026-07-02.
+  - date: 2026-07-03
+    summary: Recorded the post-acquisition product name (Akamai Workforce Protector).
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
