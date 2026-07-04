@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-07-03, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO/IEC 27001]
+  source: { url: https://www.onetrust.com/trust/, tier: official, title: OneTrust Trust Center, accessed: 2026-07-03, origin: reviewed, quote: "Information Security Management System Certification" }
 last_reviewed: 2026-07-03
 changelog:
   - date: 2026-07-03
