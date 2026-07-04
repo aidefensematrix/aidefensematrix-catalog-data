@@ -118,7 +118,17 @@ function checkSource(slug, label, source) {
     checkLen(slug, `${label} source.quote`, source.quote, 10, 300);
     checkNoAngleBrackets(slug, `${label} source.quote`, source.quote);
   }
-  const extraKeys = Object.keys(source).filter((k) => !['url', 'tier', 'title', 'accessed', 'origin', 'quote'].includes(k));
+  // Waiver: a stated reason why no verbatim quote can be captured from the cited
+  // page (bot wall, JS-rendered page whose text is absent from the HTML, PDF-only
+  // source). Mutually exclusive with quote — a source states its evidence or
+  // states why it cannot, never both. Length parity with the site schema.
+  if (source.quote_unavailable !== undefined) {
+    checkLen(slug, `${label} source.quote_unavailable`, source.quote_unavailable, 10, 120);
+    checkNoAngleBrackets(slug, `${label} source.quote_unavailable`, source.quote_unavailable);
+  }
+  if (source.quote !== undefined && source.quote_unavailable !== undefined)
+    err(slug, `${label} source has both quote and quote_unavailable — state the evidence or the waiver, not both`);
+  const extraKeys = Object.keys(source).filter((k) => !['url', 'tier', 'title', 'accessed', 'origin', 'quote', 'quote_unavailable'].includes(k));
   if (extraKeys.length)
     err(slug, `${label} source has unexpected keys (${extraKeys.join(', ')}) — likely an unquoted comma in the title; wrap the value in quotes`);
   // Provenance lock. Origin is mandatory and explicit so the review state of every
