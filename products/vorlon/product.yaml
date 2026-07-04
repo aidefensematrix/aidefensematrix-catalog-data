@@ -20,12 +20,14 @@ last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Vorlon documentation.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [detect, respond]
     maturity: primary
     note: The Flight Recorder stitches each agent action across connected apps into a queryable forensic record; the Action Center flags behavioral anomalies against agent usage patterns, routes findings to owners, and tracks remediation through SIEM, SOAR, and ITSM workflows.
-    source: { url: https://vorlon.io/ai-security/ai-agent-flight-recorder-action-center/, tier: official, title: Vorlon AI Agent Flight Recorder and Action Center announcement, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://vorlon.io/ai-security/ai-agent-flight-recorder-action-center/, tier: official, title: Vorlon AI Agent Flight Recorder and Action Center announcement, accessed: 2026-07-04, origin: agent, quote: "An immutable, query-able, forensically complete audit trail of every AI agent action across your entire agentic ecosystem." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: secondary
