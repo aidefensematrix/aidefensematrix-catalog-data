@@ -23,6 +23,8 @@ changelog:
     summary: Added to the catalog from the Citadel AI website.
   - date: 2026-06-14
     summary: Updated compliance attestation source quote.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: ai-model
     functions: [detect]
@@ -33,7 +35,7 @@ matrix_coverage:
     functions: [detect]
     maturity: secondary
     note: Lens for LLMs evaluates LLM application outputs with built-in metrics for factual consistency, toxicity, and jailbreak detection. Evaluation and monitoring only, with no documented inline blocking guardrail.
-    source: { url: https://citadel-ai.com/news/2024/09/30/lens-for-llms-launch/, tier: official, title: Lens for LLMs launch announcement, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://citadel-ai.com/news/2024/09/30/lens-for-llms-launch/, tier: official, title: Lens for LLMs launch announcement, accessed: 2026-07-04, origin: agent, quote: "allowing you to automatically evaluate factual consistency, answer relevancy, toxicity, jailbreak detection, and more" }
   - asset: training-data
     functions: [detect]
     maturity: secondary
