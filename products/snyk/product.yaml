@@ -16,11 +16,13 @@ status:
   source: { url: https://snyk.io, tier: official, title: Snyk AI Security Fabric homepage, accessed: 2026-06-08, origin: reviewed }
 compliance_attestations:
   value: [SOC 2 Type II, ISO 27001, ISO 27017]
-  source: { url: https://snyk.io/security/, tier: official, title: Snyk Secure by Design, accessed: 2026-06-08, origin: reviewed }
+  source: { url: https://snyk.io/security/, tier: official, title: Snyk Secure by Design, accessed: 2026-07-04, origin: agent, quote: "which includes both the controls set for ISO27001 and ISO27017." }
 last_reviewed: 2026-06-08
 changelog:
   - date: 2026-06-08
     summary: Enriched from Snyk primary sources; added coverage for MCP tooling and agent guardrails plus compliance attestations.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: ai-generated-code
     functions: [identify, protect]
