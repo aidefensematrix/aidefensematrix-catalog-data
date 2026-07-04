@@ -1,0 +1,27 @@
+schema_version: 2
+name: Symmetry AIGuard
+aliases: [AIGuard, Symmetry Systems AIGuard]
+vendor:
+  value: Symmetry Systems
+  source: { url: https://www.symmetry-systems.com/news/symmetry-systems-launches-symmetry-aiguard/, tier: official, title: Symmetry Systems launches AIGuard, accessed: 2026-07-03, origin: reviewed }
+url: https://www.symmetry-systems.com/news/symmetry-systems-launches-symmetry-aiguard/
+description:
+  value: "Symmetry AIGuard: Treats AI agent identities as first-class security principals, inventorying each agent, mapping the sensitive data it can reach, and enforcing access policy on it."
+  source: { url: https://www.symmetry-systems.com/news/symmetry-systems-launches-symmetry-aiguard/, tier: official, title: Symmetry Systems launches AIGuard, accessed: 2026-07-03, origin: reviewed }
+deployment:
+  value: [hybrid]
+  source: { url: https://www.symmetry-systems.com/news/symmetry-systems-launches-symmetry-aiguard/, tier: official, title: Symmetry Systems launches AIGuard, accessed: 2026-07-03, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.symmetry-systems.com/news/symmetry-systems-launches-symmetry-aiguard/, tier: official, title: Symmetry Systems launches AIGuard, accessed: 2026-07-03, origin: reviewed }
+last_reviewed: 2026-07-03
+changelog:
+  - date: 2026-07-03
+    summary: Added to the catalog from the Symmetry AIGuard launch announcement, in public preview since 2026-02-25; Symmetry Systems has announced a pending acquisition by Zscaler.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Inventories every AI agent with type classification and registry, maps each agent permissions, data scope, and blast radius and enforces its policy, and surfaces high-risk agents.
+    source: { url: https://www.symmetry-systems.com/news/symmetry-systems-launches-symmetry-aiguard/, tier: official, title: Symmetry Systems launches AIGuard, accessed: 2026-07-03, origin: reviewed, quote: "For every agent, Symmetry AIGuard maps its permissions, data scope, and blast radius and enforces its policy." }
+primary_cell: { asset: ai-agent-identities, function: protect }

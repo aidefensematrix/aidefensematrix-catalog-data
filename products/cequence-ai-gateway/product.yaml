@@ -1,0 +1,32 @@
+schema_version: 2
+name: Cequence AI Gateway
+aliases: [Cequence Security]
+vendor:
+  value: Cequence Security
+  source: { url: https://www.cequence.ai/products/ai-gateway/, tier: official, title: Cequence AI Gateway, accessed: 2026-07-03, origin: reviewed }
+url: https://www.cequence.ai/products/ai-gateway/
+description:
+  value: "Cequence AI Gateway: Agentic-AI security layer that authenticates AI agents, exposes enterprise APIs as MCP tools, and enforces authorization and monitoring policy inline on every agent tool call."
+  source: { url: https://www.cequence.ai/products/ai-gateway/, tier: official, title: Cequence AI Gateway, accessed: 2026-07-03, origin: reviewed }
+deployment:
+  value: [hybrid]
+  source: { url: https://www.cequence.ai/products/ai-gateway/, tier: official, title: Cequence AI Gateway, accessed: 2026-07-03, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.cequence.ai/products/ai-gateway/, tier: official, title: Cequence AI Gateway, accessed: 2026-07-03, origin: reviewed }
+last_reviewed: 2026-07-03
+changelog:
+  - date: 2026-07-03
+    summary: Added to the catalog from the Cequence AI Gateway documentation.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [protect, detect]
+    maturity: primary
+    note: Enforces authorization policy inline on every agent tool call for the full session and provides real-time visibility into AI-API traffic with full audit logging.
+    source: { url: https://www.cequence.ai/products/ai-gateway/, tier: official, title: Cequence AI Gateway, accessed: 2026-07-03, origin: reviewed, quote: "The gateway enforces policy inline in the request path, for the full session, on every tool call." }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: Provides token lifecycle management and identity-based access for AI agents, preventing unauthorized agent access to systems and data.
+    source: { url: https://www.cequence.ai/products/ai-gateway/, tier: official, title: Cequence AI Gateway authentication, accessed: 2026-07-03, origin: reviewed, quote: "Built-in token lifecycle management provides appropriate identity-based access to systems and data while preventing unauthorized AI agent access." }
+primary_cell: { asset: ai-gateways-routers, function: protect }

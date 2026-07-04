@@ -1,0 +1,27 @@
+schema_version: 2
+name: Salt Agentic Security Platform
+aliases: [Salt Security, Salt Agentic Security]
+vendor:
+  value: Salt Security
+  source: { url: https://salt.security/, tier: official, title: Salt Security homepage, accessed: 2026-07-03, origin: reviewed }
+url: https://salt.security/platform
+description:
+  value: "Salt Agentic Security Platform: Discovers and maps the agents, MCP servers, and APIs across an environment, then monitors their runtime behavior to detect and stop abusive agent activity."
+  source: { url: https://salt.security/, tier: official, title: Salt Security homepage, accessed: 2026-07-03, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://salt.security/, tier: official, title: Salt Security homepage, accessed: 2026-07-03, origin: reviewed }
+status:
+  value: active
+  source: { url: https://salt.security/, tier: official, title: Salt Security homepage, accessed: 2026-07-03, origin: reviewed }
+last_reviewed: 2026-07-03
+changelog:
+  - date: 2026-07-03
+    summary: Added to the catalog from the Salt Agentic Security Platform documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Discovers and maps every AI agent, MCP server, and API across the environment, stops agents that overstep, and detects abuse and active attacks in real time across the full graph.
+    source: { url: https://salt.security/, tier: official, title: Salt Security agentic discovery, accessed: 2026-07-03, origin: reviewed, quote: "Salt automatically discovers every agent, MCP server and API across your environment, including the shadow and zombie APIs nobody knows are there." }
+primary_cell: { asset: ai-orchestration-tools, function: identify }
