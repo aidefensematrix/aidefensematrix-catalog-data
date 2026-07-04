@@ -1,0 +1,36 @@
+schema_version: 2
+name: Alice
+aliases: [ActiveFence, WonderFence, WonderBuild, WonderCheck]
+vendor:
+  value: Alice
+  source: { url: https://alice.io/, tier: official, title: Alice homepage, accessed: 2026-07-03, origin: reviewed }
+url: https://alice.io/
+description:
+  value: "Alice: Enterprise AI security suite that red-teams customer-facing AI apps and agents before launch, enforces runtime guardrails on their inputs and outputs, and re-tests them continuously."
+  source: { url: https://alice.io/wonderfence, tier: official, title: Alice WonderFence, accessed: 2026-07-03, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://alice.io/wonderfence, tier: official, title: Alice WonderFence, accessed: 2026-07-03, origin: reviewed }
+status:
+  value: active
+  source: { url: https://alice.io/, tier: official, title: Alice homepage, accessed: 2026-07-03, origin: reviewed }
+renamed_from:
+  name: ActiveFence
+  date: 2026-01-14
+  source: { url: https://www.prnewswire.com/news-releases/the-secret-sauce-protecting-the-internet-is-now-securing-ai-activefence-is-now-alice-302660532.html, tier: official, title: ActiveFence is now Alice, accessed: 2026-07-03, origin: reviewed }
+last_reviewed: 2026-07-03
+changelog:
+  - date: 2026-07-03
+    summary: Added to the catalog from the Alice WonderSuite documentation; the company rebranded from ActiveFence on 2026-01-14.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: WonderFence inspects every prompt and response inline, blocking harmful inputs and outputs in real time and monitoring which detections triggered across agents and applications.
+    source: { url: https://alice.io/wonderfence, tier: official, title: Alice WonderFence, accessed: 2026-07-03, origin: reviewed, quote: "WonderFence reviews every prompt coming in and every response going out. Harmful inputs are blocked before hitting your LLM, keeping your token costs down and your model clean." }
+  - asset: ai-model
+    functions: [detect]
+    maturity: secondary
+    note: WonderBuild red-teams customer-facing AI models, apps, and agents before launch to surface prompt injection, jailbreaking, and data-poisoning weaknesses.
+    source: { url: https://alice.io/products/wonderbuild, tier: official, title: Alice WonderBuild, accessed: 2026-07-03, origin: reviewed, quote: "WonderBuild red teaming surfaces weaknesses such as susceptibility to prompt injection and jailbreaking, and risks of PII leakage and data poisoning." }
+primary_cell: { asset: runtime-ai-data, function: protect }
