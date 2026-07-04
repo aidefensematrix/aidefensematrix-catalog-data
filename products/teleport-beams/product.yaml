@@ -21,15 +21,17 @@ last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Teleport Beams product page and launch press release.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: ai-workload-platforms
     functions: [protect, detect]
     maturity: primary
     note: Runs each agent in an isolated Firecracker micro-VM with an ephemeral filesystem wiped at session end and policy-controlled egress to allowlisted domains; every access event is recorded immutably for audit visibility into what agents reach.
-    source: { url: https://www.beams.run/, tier: official, title: Teleport Beams product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.beams.run/, tier: official, title: Teleport Beams product page, accessed: 2026-07-04, origin: agent, quote: "Beams runs each agent in an isolated Firecracker VM with built-in identity." }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: primary
     note: Issues a short-lived identity certificate to each beam, scoped to the services it may reach, so agents authenticate to infrastructure and inference endpoints without static secrets; access policy is enforced per beam at the proxy.
-    source: { url: https://www.beams.run/, tier: official, title: Teleport Beams product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.beams.run/, tier: official, title: Teleport Beams product page, accessed: 2026-07-04, origin: agent, quote: "Issues a short-lived identity certificate to each beam. No static keys." }
 primary_cell: { asset: ai-workload-platforms, function: protect }
