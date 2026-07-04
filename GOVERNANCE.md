@@ -73,6 +73,15 @@ project-health convention on top:
   undisclosed vendor employees to their own or rival entries may be declined.
 - **One product per PR**, so edits stay independent. Git and the maintainer resolve
   concurrent edits to the same entry, and a human edit wins over an automated proposal.
+- **Errata**: when a shipped value proves wrong (a mis-mapped cell, a quote that does
+  not support its claim, a stale fact), the fix lands as a normal PR whose changelog
+  entry reads `Corrected <field> (erratum): ...` and references the triggering issue
+  or audit when one exists. The entry keeps its history; the erratum line is the
+  public record of the correction.
+- **Monthly accuracy audit**: the scheduled sample-audit workflow files a checklist
+  issue over a deterministic sample of entries each month. Findings are corrections
+  like any other and fix via PRs referencing the audit issue; the issue's closing
+  comment records findings per sampled cell, the catalog's measured error rate.
 
 ### Reports outside GitHub
 
