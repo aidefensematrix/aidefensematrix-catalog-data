@@ -17,6 +17,8 @@ last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the MintMCP documentation.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [protect, detect]
@@ -27,7 +29,7 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: Applies enterprise SSO and RBAC controls to MCP access with fine-grained permissions and instant revocation; API keys stay within the gateway so AI clients never hold them.
-    source: { url: https://www.mintmcp.com/security-governance, tier: official, title: MintMCP security and governance page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.mintmcp.com/security-governance, tier: official, title: MintMCP security and governance page, accessed: 2026-07-04, origin: agent, quote: "API keys never exposed to clients Enterprise SSO and RBAC controls" }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: secondary
