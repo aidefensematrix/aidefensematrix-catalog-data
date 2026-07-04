@@ -22,20 +22,22 @@ changelog:
     summary: Added to the catalog from the Rubrik documentation.
   - date: 2026-06-12
     summary: Refined matrix coverage and primary function.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes and a quote waiver to coverage and compliance citations.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, recover]
     maturity: primary
     note: Agent Monitor discovers deployed agents and tracks how they interact with data, identities, and applications. Agent Rewind undoes unwanted or destructive agent actions.
-    source: { url: https://www.rubrik.com/products/rubrik-agent-cloud, tier: official, title: Rubrik Agent Cloud product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.rubrik.com/products/rubrik-agent-cloud, tier: official, title: Rubrik Agent Cloud product page, accessed: 2026-06-10, origin: agent, quote_unavailable: "Bot wall (HTTP 403) on vendor page, 2026-07" }
   - asset: runtime-ai-data
     functions: [detect, protect]
     maturity: primary
     note: The SAGE engine, unveiled at RSAC 2026, uses a custom small language model to interpret natural language policies, semantically evaluate agent interactions in real time, detect policy violations, and enforce safe boundaries on agent behavior.
-    source: { url: https://www.rubrik.com/company/newsroom/press-releases/26/rubrik-rolls-out-industrys-first-semantic-ai-governance-engine, tier: official, title: Rubrik press release on the SAGE governance engine, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.rubrik.com/company/newsroom/press-releases/26/rubrik-rolls-out-industrys-first-semantic-ai-governance-engine, tier: official, title: Rubrik press release on the SAGE governance engine, accessed: 2026-06-10, origin: agent, quote_unavailable: "Bot wall (HTTP 403) on vendor page, 2026-07" }
   - asset: ai-generated-code
     functions: [recover]
     maturity: secondary
     note: Agent Cloud for Claude, generally available as of June 2026, rolls back unintended Claude agent actions and recovers affected code along with the agent configuration, including for Claude Code.
-    source: { url: https://siliconangle.com/2026/06/09/rubrik-brings-agent-cloud-claude-launches-rubrik-ai-automate-recovery/, tier: press, title: SiliconANGLE on Rubrik Agent Cloud for Claude, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://siliconangle.com/2026/06/09/rubrik-brings-agent-cloud-claude-launches-rubrik-ai-automate-recovery/, tier: press, title: SiliconANGLE on Rubrik Agent Cloud for Claude, accessed: 2026-07-04, origin: agent, quote: "reverses unintended actions from any agent, including those built in Claude Code and Cowork" }
 primary_cell: { asset: runtime-ai-data, function: protect }
