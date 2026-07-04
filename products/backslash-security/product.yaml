@@ -17,15 +17,17 @@ last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Backslash Security documentation.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes and a quote waiver to coverage and compliance citations.
 matrix_coverage:
   - asset: ai-generated-code
     functions: [protect, detect]
     maturity: primary
     note: Centralized guardrails on developer workstations restrict unapproved models, private accounts, and unsafe configurations for AI coding agents, with real-time detection of prompt injection, data exfiltration, and anomalous agent behavior in vibe coding workflows.
-    source: { url: https://www.backslash.security/agentic-endpoint-security, tier: official, title: Backslash agentic endpoint security page, accessed: 2026-06-10, origin: reviewed, quote: "MCP and Skills Minimize the risk caused by unsafe, overly permissive, vulnerable or malicious MCPs and Skills, blocking Vet, allowlist and monitor MCPs at tool level." }
+    source: { url: https://www.backslash.security/agentic-endpoint-security, tier: official, title: Backslash agentic endpoint security page, accessed: 2026-07-04, origin: agent, quote: "Protect developer workstation and citizen-developer endpoints against software supply chain risks, private account use, and unapproved models." }
   - asset: ai-orchestration-tools
     functions: [identify, protect]
     maturity: primary
     note: Vets, allowlists, and monitors MCP servers at the tool level, blocking unsafe or malicious components; a visibility graph inventories agents, MCPs, skills, hooks, and plugins, and the public MCP Server Security Hub maintains a risk database covering tens of thousands of MCP servers.
-    source: { url: https://mcp.backslash.security/, tier: official, title: Backslash MCP Server Security Hub, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://mcp.backslash.security/, tier: official, title: Backslash MCP Server Security Hub, accessed: 2026-06-10, origin: agent, quote_unavailable: "JS-rendered MCP hub; text absent from HTML fetch, 2026-07" }
 primary_cell: { asset: ai-generated-code, function: protect }
