@@ -14,6 +14,9 @@ deployment:
 status:
   value: active
   source: { url: https://singulr.ai/, tier: official, title: Singulr AI homepage, accessed: 2026-07-03, origin: reviewed }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO/IEC 27001]
+  source: { url: https://www.singulr.ai/blog/new-security-certifications, tier: official, title: Singulr AI security certifications, accessed: 2026-07-03, origin: reviewed, quote: "Singulr AI is officially ISO/IEC 27001:2022 certified." }
 last_reviewed: 2026-07-03
 changelog:
   - date: 2026-07-03

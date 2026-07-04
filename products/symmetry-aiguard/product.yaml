@@ -12,12 +12,17 @@ deployment:
   value: [hybrid]
   source: { url: https://www.symmetry-systems.com/news/symmetry-systems-launches-symmetry-aiguard/, tier: official, title: Symmetry Systems launches AIGuard, accessed: 2026-07-03, origin: reviewed }
 status:
-  value: active
-  source: { url: https://www.symmetry-systems.com/news/symmetry-systems-launches-symmetry-aiguard/, tier: official, title: Symmetry Systems launches AIGuard, accessed: 2026-07-03, origin: reviewed }
+  value: acquired
+  source: { url: https://www.zscaler.com/press/ai-announcement, tier: official, title: Zscaler to acquire Symmetry Systems, accessed: 2026-07-03, origin: reviewed }
+acquisition:
+  acquirer: Zscaler
+  announced: 2026-05-21
+  post_acquisition_status: folded
+  source: { url: https://www.zscaler.com/press/ai-announcement, tier: official, title: Zscaler to acquire Symmetry Systems, accessed: 2026-07-03, origin: reviewed, quote: "Symmetry Systems gives Zscaler the foundational visibility required to govern AI agent communication at scale and unlock the next phase of Zero Trust" }
 last_reviewed: 2026-07-03
 changelog:
   - date: 2026-07-03
-    summary: Added to the catalog from the Symmetry AIGuard launch announcement, in public preview since 2026-02-25; Symmetry Systems has announced a pending acquisition by Zscaler.
+    summary: Added to the catalog from the Symmetry AIGuard launch announcement, in public preview since 2026-02-25; Zscaler announced a definitive agreement to acquire Symmetry Systems on 2026-05-21.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
