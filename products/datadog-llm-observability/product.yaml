@@ -18,12 +18,14 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Enriched from the Datadog LLM Observability documentation.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [detect, protect]
     maturity: primary
     note: Evaluations inspect prompts and responses to flag prompt injection, unsafe output, and PII exposure, and a Sensitive Data Scanner integration redacts sensitive data.
-    source: { url: https://docs.datadoghq.com/llm_observability/evaluations/, tier: official, title: Datadog LLM Observability evaluations, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://docs.datadoghq.com/llm_observability/evaluations/, tier: official, title: Datadog LLM Observability evaluations, accessed: 2026-07-04, origin: agent, quote: "which helps prevent data leakage by identifying and redacting any sensitive information" }
   - asset: ai-orchestration-tools
     functions: [identify, detect]
     maturity: secondary
