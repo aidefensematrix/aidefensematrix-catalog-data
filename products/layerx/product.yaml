@@ -13,17 +13,18 @@ deployment:
   source: { url: https://layerxsecurity.com/, tier: official, title: LayerX homepage, accessed: 2026-06-10, origin: reviewed }
 status:
   value: acquired
-  source: { url: https://www.akamai.com/newsroom/press-release/akamai-technologies-announces-intent-to-acquire-layerx-advancing-its-workforce-security-strategy-with-ai-usage-control, tier: official, title: Akamai intent-to-acquire press release, accessed: 2026-06-10, origin: reviewed }
+  source: { url: https://www.globenewswire.com/news-release/2026/07/02/3321349/0/en/Akamai-Completes-Acquisition-of-Secure-Enterprise-Browser-Provider-LayerX.html, tier: official, title: Akamai completes LayerX acquisition, accessed: 2026-07-03, origin: reviewed }
 acquisition:
   acquirer: Akamai
   announced: 2026-05-14
   post_acquisition_status: folded
-  pending_close: true
-  source: { url: https://www.akamai.com/newsroom/press-release/akamai-technologies-announces-intent-to-acquire-layerx-advancing-its-workforce-security-strategy-with-ai-usage-control, tier: official, title: Akamai intent-to-acquire press release, accessed: 2026-06-10, origin: reviewed }
-last_reviewed: 2026-06-10
+  source: { url: https://www.globenewswire.com/news-release/2026/07/02/3321349/0/en/Akamai-Completes-Acquisition-of-Secure-Enterprise-Browser-Provider-LayerX.html, tier: official, title: Akamai completes LayerX acquisition, accessed: 2026-07-03, origin: reviewed }
+last_reviewed: 2026-07-03
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the LayerX use-case documentation; Akamai announced a definitive agreement to acquire LayerX on 2026-05-14, with the close expected in the third quarter of 2026.
+  - date: 2026-07-03
+    summary: Recorded completion of the Akamai acquisition, which closed on 2026-07-02.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
