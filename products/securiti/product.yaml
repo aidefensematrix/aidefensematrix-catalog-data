@@ -21,15 +21,17 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Securiti documentation.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: training-data
     functions: [identify, protect]
     maturity: primary
     note: Discovers and classifies sensitive data across cloud and SaaS, including shadow assets, and governs how that data is used in AI.
-    source: { url: https://securiti.ai/dspm/, tier: official, title: Securiti Data Security Posture Management, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://securiti.ai/dspm/, tier: official, title: Securiti Data Security Posture Management, accessed: 2026-07-04, origin: agent, quote: "Automatically discover cloud-native, shadow, and dark data assets across multiple clouds" }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary
     note: Context-aware LLM firewalls inspect prompts, retrieval, and responses to protect AI interactions.
-    source: { url: https://securiti.ai/, tier: official, title: Securiti Data and AI security, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://securiti.ai/, tier: official, title: Securiti Data and AI security, accessed: 2026-07-04, origin: agent, quote: "Context-aware LLM Firewalls Protect AI interactions with intelligent retrieval, response, and prompt firewalls" }
 primary_cell: { asset: training-data, function: protect }
