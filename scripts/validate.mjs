@@ -77,7 +77,7 @@ function checkComparativeTier(slug, where, text, tier) {
   for (const re of COMPARATIVE_PATTERNS) {
     const m = text.match(re);
     if (m) {
-      warn(slug, `${where} carries a comparative or efficacy claim ("${m[0]}") on a first-party source — cite a non-official tier (press, research, regulatory) or soften the text`);
+      warn(slug, `${where} carries a comparative or efficacy claim ("${m[0]}") on a first-party source — cite a non-official tier (press, research, regulatory), soften authored text, or for a verbatim quote replace it with a neutral line`);
       return;
     }
   }
