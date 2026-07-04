@@ -22,12 +22,14 @@ changelog:
     summary: Added to the catalog from the Frontegg documentation. Frontegg.ai is in public beta and free to all users per the vendor product page.
   - date: 2026-06-12
     summary: Refined matrix coverage.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [protect]
     maturity: primary
     note: Provides the identity layer for agent products, with multi-tenant user onboarding, least-privilege authorization, and managed third-party OAuth tokens with token rotation, so agents act with scoped refreshable credentials.
-    source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-07-04, origin: agent, quote: "Frontegg securely manages OAuth tokens and handles all consent and connection flows on your behalf" }
   - asset: ai-orchestration-tools
     functions: [protect, detect]
     maturity: secondary
