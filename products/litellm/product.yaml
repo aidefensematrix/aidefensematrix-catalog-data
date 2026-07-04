@@ -19,15 +19,17 @@ changelog:
     summary: Added to the catalog from the LiteLLM documentation.
   - date: 2026-06-12
     summary: Refined matrix coverage.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: ai-gateways-routers
     functions: [identify, protect]
     maturity: primary
     note: Routes 100+ LLM providers behind virtual keys with per-team and per-key budgets, rate limits, and RBAC. The enterprise tier adds SSO, audit logs, secret management, and key rotation.
-    source: { url: https://www.litellm.ai/enterprise, tier: official, title: LiteLLM Enterprise, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://www.litellm.ai/enterprise, tier: official, title: LiteLLM Enterprise, accessed: 2026-07-04, origin: agent, quote: "LiteLLM Enterprise adds: SSO, SCIM 24/7 Support OIDC/JWT-Auth Live upgrade assistance Team/Org Admins Key/Team-based Guardrails Secret Managers Key Rotations" }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary
     note: Configurable guardrails screen prompts and responses for PII (Presidio masking and blocking) and prompt injection, with pre-call and post-call moderation hooks.
-    source: { url: https://docs.litellm.ai/docs/proxy/guardrails/quick_start, tier: official, title: LiteLLM Guardrails Quick Start, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://docs.litellm.ai/docs/proxy/guardrails/quick_start, tier: official, title: LiteLLM Guardrails Quick Start, accessed: 2026-07-04, origin: agent, quote: "Setup Prompt Injection Detection, PII Masking on LiteLLM Proxy (AI Gateway)" }
 primary_cell: { asset: ai-gateways-routers, function: protect }
