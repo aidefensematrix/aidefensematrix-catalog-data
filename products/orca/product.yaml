@@ -21,6 +21,8 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Enriched from the Orca AI-SPM documentation.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, detect]
@@ -31,5 +33,5 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: secondary
     note: Detects sensitive data in AI models and training data and surfaces data-poisoning risk from editable or replaceable training data.
-    source: { url: https://orca.security/resources/press-releases/orca-ai-chatbot-ai-spm-detections/, tier: official, title: Orca AI-SPM detections, accessed: 2026-06-09, origin: reviewed }
+    source: { url: https://orca.security/resources/press-releases/orca-ai-chatbot-ai-spm-detections/, tier: official, title: Orca AI-SPM detections, accessed: 2026-07-04, origin: agent, quote: "new detections for sensitive data in training models, risk of data poisoning due to editable or replaceable AI training data" }
 primary_cell: { asset: ai-model, function: identify }
