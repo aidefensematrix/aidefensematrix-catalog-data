@@ -75,7 +75,7 @@ function checkLen(slug, where, text, min, max) {
     err(slug, `${where} must be ${min}-${max} characters (is ${text.length}); the site schema enforces this`);
 }
 const STUB = /pending maintainer review|^TODO|\bTODO\b/i;
-const ORIGINS = new Set(['seeded', 'reviewed', 'auto']);
+const ORIGINS = new Set(['seeded', 'reviewed', 'auto', 'agent']);
 
 const todayUTC = () => {
   const n = new Date();
@@ -123,11 +123,13 @@ function checkSource(slug, label, source) {
     err(slug, `${label} source has unexpected keys (${extraKeys.join(', ')}) — likely an unquoted comma in the title; wrap the value in quotes`);
   // Provenance lock. Origin is mandatory and explicit so the review state of every
   // value is always recorded; the site schema's default('reviewed') stays as a
-  // belt-and-braces fallback, but data merged here must state it.
+  // belt-and-braces fallback, but data merged here must state it. `reviewed` means
+  // a human verified the value; `agent` means an automated contributor verified it
+  // and a maintainer has not yet promoted it to `reviewed`.
   if (source.origin === undefined)
-    err(slug, `${label} source is missing origin — set seeded, reviewed, or auto`);
+    err(slug, `${label} source is missing origin — set seeded, reviewed, auto, or agent`);
   else if (!ORIGINS.has(source.origin))
-    err(slug, `${label} source.origin must be seeded, reviewed, or auto (got "${source.origin}")`);
+    err(slug, `${label} source.origin must be seeded, reviewed, auto, or agent (got "${source.origin}")`);
 }
 
 function checkSourced(slug, label, field) {
@@ -136,9 +138,9 @@ function checkSourced(slug, label, field) {
     return;
   }
   checkSource(slug, label, field.source);
-  // A reviewed value should be a real value, not a leftover seed stub.
-  if (field.source?.origin === 'reviewed' && typeof field.value === 'string' && STUB.test(field.value))
-    warn(slug, `${label} is origin: reviewed but its value is still a stub — verify it or set origin: seeded`);
+  // A verified value (human- or agent-verified) should be real, not a seed stub.
+  if ((field.source?.origin === 'reviewed' || field.source?.origin === 'agent') && typeof field.value === 'string' && STUB.test(field.value))
+    warn(slug, `${label} is origin: ${field.source.origin} but its value is still a stub — verify it or set origin: seeded`);
 }
 
 const productDirs = existsSync(PRODUCTS_DIR)
@@ -359,10 +361,10 @@ for (const slug of productDirs) {
     p.matrix_coverage.forEach((c, i) => {
       if (c?.source) originPairs.push([`matrix_coverage[${i}]`, c.source]);
     });
-  if (originPairs.some(([, s]) => s.origin === 'reviewed'))
+  if (originPairs.some(([, s]) => s.origin === 'reviewed' || s.origin === 'agent'))
     for (const [lbl, s] of originPairs)
       if (s.origin === 'seeded')
-        warn(slug, `${lbl} is still origin: seeded on an otherwise-reviewed entry — set origin: reviewed once verified`);
+        warn(slug, `${lbl} is still origin: seeded on an otherwise-verified entry — verify it (agent or reviewed) or leave the entry a pure stub`);
 
 }
 

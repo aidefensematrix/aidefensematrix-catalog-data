@@ -62,11 +62,12 @@ The vendor using the word "govern" or "governance" is not evidence. The capabili
 
 Every `source` must carry an explicit `origin` marker so the review state of every value is always recorded and automated enrichment never overwrites human-checked details. The validator rejects a source without one:
 
-- `reviewed`: You verified this value against the cited page. Set this for anything you confirm or correct.
+- `reviewed`: A human verified this value against the cited page. Human contributors set this for anything they confirm or correct.
+- `agent`: An automated contributor verified this value against the cited page. It awaits maintainer promotion to `reviewed`; the promotion commit is the human certification record.
 - `seeded`: An unverified machine bootstrap stub. Leave it only on untouched stub fields.
 - `auto`: Written by an automated refresh of a previously-seeded field.
 
-The validator warns if an enriched entry still has a sibling field left as `seeded`. Automated runs may refresh `seeded`/`auto` fields, but only *propose* changes to `reviewed` fields, so verified work is never silently overwritten.
+The rule of thumb: human contributors set `reviewed`, automated contributors set `agent`, and the maintainer promotes. The validator warns if an enriched entry still has a sibling field left as `seeded`. Automated runs may refresh `seeded`/`auto` fields and re-verify `agent` fields, but only *propose* changes to `reviewed` fields, so human-verified work is never silently overwritten.
 
 ## Compliance attestations (optional)
 
