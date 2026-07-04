@@ -17,20 +17,22 @@ last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Runlayer documentation.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: Gateway and private registry for MCP servers, skills, and agents. Scans each server release for vulnerabilities and permission drift before approval, screens calls in real time for tool poisoning, rug pulls, and command injection, and keeps complete audit trails.
-    source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed, quote: "02 Every call protected in real time Multi-tier security detectors catching policy, compliance, and data-leak risks before they reach your tools." }
+    source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-07-04, origin: agent, quote: "Publish useful capabilities with identity, policy, runtime security, and audit attached." }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
     note: Replaces personal API keys with SSO, SCIM, and group sync through Okta or Entra, applying conditional access, revocation, and fine-grained permissions to user, team, and agent connections to MCP servers.
-    source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed }
+    source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-07-04, origin: agent, quote: "Control what users and agents can reach by identity, OAuth grant, client, tool, system, and runtime context, with usage and spend visible." }
   - asset: runtime-ai-data
     functions: [detect, protect]
     maturity: secondary
     note: Multi-tier detectors inspect tool-call traffic in real time and flag policy, compliance, and data-leak risks before requests reach downstream tools.
-    source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-06-10, origin: reviewed, quote: "02 Every call protected in real time Multi-tier security detectors catching policy, compliance, and data-leak risks before they reach your tools." }
+    source: { url: https://www.runlayer.com/security, tier: official, title: Runlayer MCP security page, accessed: 2026-07-04, origin: agent, quote: "Security models scan requests to tools, outputs, intent signals, and sensitive data at runtime before risky actions reach company systems." }
 primary_cell: { asset: ai-orchestration-tools, function: protect }
