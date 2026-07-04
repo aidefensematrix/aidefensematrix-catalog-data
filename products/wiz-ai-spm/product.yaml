@@ -15,7 +15,7 @@ status:
   source: { url: https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/wiz-acquisition/, tier: official, title: Google completes acquisition of Wiz, accessed: 2026-06-07, origin: reviewed }
 compliance_attestations:
   value: [SOC 2 Type II, SOC 3, ISO 27001, ISO 27017, ISO 27018, ISO 27701, PCI DSS v4.0.1, HIPAA]
-  source: { url: https://www.wiz.io/trust-center, tier: official, title: Wiz Public Trust Center, accessed: 2026-06-08, origin: reviewed }
+  source: { url: https://www.wiz.io/trust-center, tier: official, title: Wiz Public Trust Center, accessed: 2026-07-04, origin: agent, quote: "Our SOC 2 Type II + HIPAA report and our SOC 3 report are available in the Customer Trust Center below." }
 acquisition:
   acquirer: Google (Alphabet)
   announced: 2026-03-11
@@ -27,6 +27,8 @@ changelog:
     summary: Verified details and recorded the completed Google acquisition (March 2026).
   - date: 2026-06-08
     summary: Added compliance attestations from the Wiz public trust center with a source.
+  - date: 2026-07-04
+    summary: Added verbatim source quotes to coverage and compliance citations.
 matrix_coverage:
   - asset: ai-workload-platforms
     functions: [identify]
