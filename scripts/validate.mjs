@@ -57,6 +57,31 @@ const SUPERLATIVE_PATTERNS = [
   /\b(world|industry|market)['’]?s\s+(first|only|best|leading|largest)\b/i,
 ];
 const hasSuperlative = (s) => typeof s === 'string' && SUPERLATIVE_PATTERNS.some((re) => re.test(s));
+// Comparative/efficacy claims anchored to a first-party source (warn-only, forever).
+// The lexicon is deliberately distinct from SUPERLATIVE_PATTERNS above so the error
+// surface stays fixed; this heuristic never fails a build. An `official` (or
+// defaulted) tier carrying a comparative claim means the claim needs a non-vendor
+// source or softer text.
+const COMPARATIVE_PATTERNS = [
+  /\bthe\s+(first|only)\b/i,
+  /\bindustry[-\s]leading\b/i,
+  /\bbest[-\s]in[-\s]class\b/i,
+  /\bfastest\b/i,
+  /\bmost\s+(accurate|advanced|effective|secure)\b/i,
+  /\bmore\s+(accurate|effective|secure|reliable)\s+than\b/i,
+  /\b\d+(?:\.\d+)?%\s+(?:faster|fewer|reduction|more)\b/i,
+];
+function checkComparativeTier(slug, where, text, tier) {
+  if (typeof text !== 'string') return;
+  if ((tier ?? 'official') !== 'official') return;
+  for (const re of COMPARATIVE_PATTERNS) {
+    const m = text.match(re);
+    if (m) {
+      warn(slug, `${where} carries a comparative or efficacy claim ("${m[0]}") on a first-party source — cite a non-official tier (press, research, regulatory) or soften the text`);
+      return;
+    }
+  }
+}
 // Cheap stored-XSS gate (defense-in-depth, mirrors the schema's freeText guard):
 // no "<" or ">" in any human-authored free-text field. These feed rendered prose
 // and the compare-page JSON data island, so an angle bracket has no legitimate use.
@@ -209,10 +234,13 @@ for (const slug of productDirs) {
   // each listed attestation also runs the angle-bracket gate.
   if (p.compliance_attestations) {
     checkSourced(slug, 'compliance_attestations', p.compliance_attestations);
-    // Warn-only (never blocks a PR): a quote is the claim-to-source anchor for the
-    // attestation list — the line on the cited page that names these certifications.
-    if (p.compliance_attestations.source && p.compliance_attestations.source.quote === undefined)
-      warn(slug, 'compliance_attestations source has no quote — add the line on the cited page that lists these attestations');
+    // Blocking: a quote is the claim-to-source anchor for the attestation list —
+    // the line on the cited page that names these certifications. When the page
+    // exposes no quotable text (bot wall, JS-rendered, PDF), state a
+    // quote_unavailable waiver instead.
+    if (p.compliance_attestations.source && p.compliance_attestations.source.quote === undefined && p.compliance_attestations.source.quote_unavailable === undefined)
+      err(slug, 'compliance_attestations source has no quote — add the line on the cited page that lists these attestations, or state a quote_unavailable waiver');
+    checkComparativeTier(slug, 'compliance_attestations source.quote', p.compliance_attestations.source?.quote, p.compliance_attestations.source?.tier);
     checkNoAngleBrackets(slug, 'compliance_attestations source.title', p.compliance_attestations.source?.title);
     if (Array.isArray(p.compliance_attestations.value))
       p.compliance_attestations.value.forEach((a, i) => {
@@ -228,6 +256,7 @@ for (const slug of productDirs) {
   }
   if (hasSuperlative(p.description?.value))
     err(slug, 'description contains a marketing superlative presented as fact');
+  checkComparativeTier(slug, 'description', p.description?.value, p.description?.source?.tier);
   if (p.description?.value && STUB.test(p.description.value))
     warn(slug, 'description is a seed stub; replace with a sourced one-liner');
 
@@ -306,11 +335,15 @@ for (const slug of productDirs) {
   if (Array.isArray(p.matrix_coverage)) {
     p.matrix_coverage.forEach((c, i) => {
       checkSource(slug, `matrix_coverage[${i}]`, c.source);
-      // Warn-only (never blocks a PR): the quote anchors WHY this cell is claimed —
-      // the sentence on the page that shows the capability. It is the burden-of-
-      // evidence a reviewer uses to adjudicate the asset/function mapping.
-      if (c.source && c.source.quote === undefined)
-        warn(slug, `matrix_coverage[${i}] source has no quote — add the line on the cited page that supports this asset/function mapping`);
+      // Blocking: the quote anchors WHY this cell is claimed — the sentence on the
+      // page that shows the capability. It is the burden-of-evidence a reviewer
+      // uses to adjudicate the asset/function mapping. When the page exposes no
+      // quotable text (bot wall, JS-rendered, PDF), state a quote_unavailable
+      // waiver instead.
+      if (c.source && c.source.quote === undefined && c.source.quote_unavailable === undefined)
+        err(slug, `matrix_coverage[${i}] source has no quote — add the line on the cited page that supports this asset/function mapping, or state a quote_unavailable waiver`);
+      checkComparativeTier(slug, `matrix_coverage[${i}].note`, c.note, c.source?.tier);
+      checkComparativeTier(slug, `matrix_coverage[${i}] source.quote`, c.source?.quote, c.source?.tier);
       checkNoAngleBrackets(slug, `matrix_coverage[${i}].note`, c.note);
       checkNoAngleBrackets(slug, `matrix_coverage[${i}] source.title`, c.source?.title);
       if (hasSuperlative(c.note)) err(slug, `matrix_coverage[${i}].note contains a marketing superlative`);
