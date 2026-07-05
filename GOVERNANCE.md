@@ -78,10 +78,9 @@ project-health convention on top:
   entry reads `Corrected <field> (erratum): ...` and references the triggering issue
   or audit when one exists. The entry keeps its history; the erratum line is the
   public record of the correction.
-- **Monthly accuracy audit**: the scheduled sample-audit workflow files a checklist
-  issue over a deterministic sample of entries each month. Findings are corrections
-  like any other and fix via PRs referencing the audit issue; the issue's closing
-  comment records findings per sampled cell, the catalog's measured error rate.
+- **Periodic accuracy review**: the maintainer periodically re-verifies a sample of
+  entries against their cited sources. Findings are corrections like any other and
+  land as errata PRs.
 
 ### Reports outside GitHub
 
