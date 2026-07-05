@@ -11,14 +11,21 @@ deployment:
   value: [saas]
   source: { url: https://astrix.security/product/ai-agent-discovery/, tier: official, title: Astrix agentless onboarding, accessed: 2026-06-07, origin: reviewed }
 status:
-  value: active
-  source: { url: https://www.inforisktoday.com/astrixs-45m-series-b-targets-non-human-identity-security-a-27006, tier: press, title: Astrix Series B funding, accessed: 2026-06-07, origin: reviewed }
+  value: acquired
+  source: { url: https://blogs.cisco.com/news/cisco-announces-intent-to-acquire-astrix-security, tier: official, title: "Cisco announces intent to acquire Astrix Security", accessed: 2026-07-05, origin: agent }
+acquisition:
+  acquirer: Cisco
+  announced: 2026-05-04
+  post_acquisition_status: standalone
+  source: { url: https://blogs.cisco.com/news/cisco-announces-intent-to-acquire-astrix-security, tier: official, title: "Cisco announces intent to acquire Astrix Security", accessed: 2026-07-05, origin: agent }
 last_reviewed: 2026-06-07
 changelog:
   - date: 2026-06-07
     summary: Verified details from primary sources and recorded the Series B funding.
   - date: 2026-06-12
     summary: Refined matrix coverage.
+  - date: 2026-07-05
+    summary: Recorded the Cisco acquisition of Astrix Security, completed on 2026-06-29.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect, detect, respond]
