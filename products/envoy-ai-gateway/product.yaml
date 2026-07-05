@@ -1,0 +1,32 @@
+schema_version: 2
+name: Envoy AI Gateway
+vendor:
+  value: Envoy AI Gateway community
+  source: { url: https://aigateway.envoyproxy.io/, tier: official, title: Envoy AI Gateway, accessed: 2026-07-05, origin: agent, quote: "Envoy AI Gateway is the result of the community coming together to address GenAI traffic handling needs using Envoy." }
+aliases: [AIGW]
+url: https://aigateway.envoyproxy.io/
+description:
+  value: "Envoy AI Gateway: Open-source gateway on CNCF Envoy that routes traffic to many LLM providers behind one OpenAI-compatible API, with token quotas, provider failover, and an MCP gateway."
+  source: { url: https://tetrate.io/blog/envoy-ai-gateway-v1-0-release, tier: official, title: Envoy AI Gateway reaches 1.0, accessed: 2026-07-05, origin: agent, quote: "the first stable, production-ready release of the open source AI gateway built on CNCF's Envoy Gateway" }
+deployment:
+  value: [self-hosted]
+  source: { url: https://aigateway.envoyproxy.io/docs/capabilities/, tier: official, title: Envoy AI Gateway capabilities, accessed: 2026-07-05, origin: agent, quote: "Configure multiple controller replicas and horizontal pod autoscaling for production deployments" }
+status:
+  value: active
+  source: { url: https://tetrate.io/blog/envoy-ai-gateway-v1-0-release, tier: official, title: Envoy AI Gateway reaches 1.0, accessed: 2026-07-05, origin: agent, quote: "Today, Envoy AI Gateway 1.0 is generally available" }
+last_reviewed: 2026-07-05
+changelog:
+  - date: 2026-07-05
+    summary: Added to the catalog from the Envoy AI Gateway documentation and release notes.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [identify, protect]
+    maturity: primary
+    note: Routes AI traffic to multiple LLM providers behind one API, enforcing token-based quotas and provider failover while producing unified observability across the fleet.
+    source: { url: https://github.com/envoyproxy/ai-gateway, tier: official, title: envoyproxy/ai-gateway, accessed: 2026-07-05, origin: agent, quote: "Manages Unified Access to Generative AI Services built on Envoy Gateway" }
+  - asset: ai-orchestration-tools
+    functions: [identify, protect]
+    maturity: secondary
+    note: MCP gateway mediates how agents reach tools, adding server multiplexing, tool routing, OAuth authentication, and observability for MCP workloads.
+    source: { url: https://aigateway.envoyproxy.io/docs/capabilities/, tier: official, title: Envoy AI Gateway MCP capabilities, accessed: 2026-07-05, origin: agent, quote: "Server multiplexing, tool routing, OAuth authentication, and observability for MCP workloads" }
+primary_cell: { asset: ai-gateways-routers, function: protect }

@@ -1,0 +1,37 @@
+schema_version: 2
+name: Tetrate Agent Router Service
+vendor:
+  value: Tetrate
+  source: { url: https://tetrate.io/agent-router-product, tier: official, title: Tetrate Agent Router product, accessed: 2026-07-05, origin: agent }
+aliases: [Tetrate Agent Router, TARS, Tetrate Agent Operations Director]
+url: https://tetrate.io/agent-router-product
+description:
+  value: "Tetrate Agent Router Service: Hosted AI gateway built on Envoy AI Gateway that routes agent and model traffic across providers with token budgets, failover, an MCP gateway, and runtime guardrails."
+  source: { url: https://tetrate.io/agent-router-product, tier: official, title: Tetrate Agent Router product, accessed: 2026-07-05, origin: agent, quote: "Built on Envoy AI Gateway by its creators" }
+deployment:
+  value: [saas]
+  source: { url: https://router.tetrate.ai, tier: official, title: Tetrate Agent Router Service sign-in, accessed: 2026-07-05, origin: agent, quote: "Get started with Tetrate Agent Router Service" }
+status:
+  value: active
+  source: { url: https://tetrate.io/agent-router-product, tier: official, title: Tetrate Agent Router product, accessed: 2026-07-05, origin: agent, quote: "Get Started with Tetrate Agent Router Service" }
+last_reviewed: 2026-07-05
+changelog:
+  - date: 2026-07-05
+    summary: Added to the catalog from the Tetrate Agent Router documentation; the former Tetrate Agent Operations Director product page now redirects here.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [identify, protect]
+    maturity: primary
+    note: Routes LLM traffic across agents and providers, enforcing per-team token budgets and automatic failover while producing unified logs for attribution.
+    source: { url: https://tetrate.io/agent-router-product, tier: official, title: Tetrate Agent Router AI gateway, accessed: 2026-07-05, origin: agent, quote: "Routes all LLM traffic across your agents, handles provider failover, enforces token budgets, and produces unified logs across every team and provider." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Runtime AI guardrails redact PII, filter prompts and responses, and block transactions across model and tool traffic.
+    source: { url: https://tetrate.io/agent-router-product, tier: official, title: Tetrate Agent Router AI guardrails, accessed: 2026-07-05, origin: agent, quote: "Runtime policy enforcement across both model and tool traffic. PII redaction, prompt filtering, and transaction blocking before damage is done." }
+  - asset: ai-orchestration-tools
+    functions: [protect]
+    maturity: secondary
+    note: MCP gateway governs how agents connect to tools, with centrally curated server catalogs and per-team, per-role, or per-agent access profiles.
+    source: { url: https://tetrate.io/agent-router-product, tier: official, title: Tetrate Agent Router MCP gateway, accessed: 2026-07-05, origin: agent, quote: "Access profiles by team, role, or agent" }
+primary_cell: { asset: ai-gateways-routers, function: protect }
