@@ -1,13 +1,13 @@
 schema_version: 2
-name: WebOrion Protector Plus
-aliases: [GenAI Protector Plus]
-url: https://www.cloudsine.tech/products/weborion-protector-plus/
+name: GenAI Protector Plus
+aliases: [WebOrion Protector Plus]
+url: https://www.cloudsine.tech/products/genai-protector-plus/
 vendor:
   value: Cloudsine
   source: { url: https://www.cloudsine.tech/products/weborion-protector-plus/, tier: official, title: WebOrion Protector Plus product page, accessed: 2026-06-24, origin: reviewed }
 description:
-  value: "WebOrion Protector Plus: GenAI firewall by Cloudsine that inspects prompts and LLM outputs to block prompt injection and jailbreaks, prevent sensitive-data leakage, and moderate hazardous content."
-  source: { url: https://www.cloudsine.tech/products/weborion-protector-plus/, tier: official, title: WebOrion Protector Plus product page, accessed: 2026-06-24, origin: reviewed }
+  value: "GenAI Protector Plus: GenAI firewall by Cloudsine that inspects prompts and LLM outputs to block prompt injection and jailbreaks, prevent sensitive-data leakage, and moderate hazardous content."
+  source: { url: https://www.cloudsine.tech/products/genai-protector-plus/, tier: official, title: GenAI Protector Plus product page, accessed: 2026-07-05, origin: agent, quote: "GenAI Protector Plus is an advanced GenAI firewall designed to secure your GenAI applications with intelligent GenAI guardrails." }
 deployment:
   value: [saas, self-hosted]
   source: { url: https://www.cloudsine.tech/products/weborion-protector-plus/, tier: official, title: WebOrion Protector Plus product page, accessed: 2026-06-24, origin: reviewed }
@@ -21,6 +21,8 @@ last_reviewed: 2026-06-24
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Cloudsine documentation.
+  - date: 2026-07-05
+    summary: Renamed to GenAI Protector Plus; the product was previously listed as WebOrion Protector Plus.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
