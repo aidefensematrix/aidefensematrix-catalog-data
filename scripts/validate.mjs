@@ -160,7 +160,7 @@ function checkSource(slug, label, source) {
   // value is always recorded; the site schema's default('reviewed') stays as a
   // belt-and-braces fallback, but data merged here must state it. `reviewed` means
   // a human verified the value; `agent` means an automated contributor verified it
-  // and a maintainer has not yet promoted it to `reviewed`.
+  // against the cited page.
   if (source.origin === undefined)
     err(slug, `${label} source is missing origin — set seeded, reviewed, auto, or agent`);
   else if (!ORIGINS.has(source.origin))
