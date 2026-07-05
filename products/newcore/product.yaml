@@ -1,0 +1,26 @@
+schema_version: 2
+name: NewCore
+vendor:
+  value: NewCore
+  source: { url: https://newcore.com/, tier: official, title: NewCore identity platform, accessed: 2026-07-05, origin: agent }
+url: https://newcore.com/
+description:
+  value: "NewCore: Identity security platform that discovers, maps, and governs every human, machine, and AI-agent identity, provisioning agents with least-privilege access and full lifecycle control."
+  source: { url: https://newcore.com/, tier: official, title: NewCore identity platform, accessed: 2026-07-05, origin: agent, quote: "The security-first identity platform built for humans and AI agents." }
+deployment:
+  value: [saas]
+  source: { url: https://newcore.com/, tier: official, title: NewCore identity platform, accessed: 2026-07-05, origin: agent }
+status:
+  value: active
+  source: { url: https://newcore.com/, tier: official, title: NewCore identity platform, accessed: 2026-07-05, origin: agent }
+last_reviewed: 2026-07-05
+changelog:
+  - date: 2026-07-05
+    summary: Added to the catalog from the NewCore documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, govern]
+    maturity: primary
+    note: Continuously discovers and maps every human, machine, and agent identity across the enterprise, provisions agents with least-privilege access before they operate, and governs the full issue-to-revoke lifecycle.
+    source: { url: https://newcore.com/, tier: official, title: NewCore agentic governance, accessed: 2026-07-05, origin: agent, quote: "It discovers, maps, and governs every identity from a single scalable platform." }
+primary_cell: { asset: ai-agent-identities, function: protect }

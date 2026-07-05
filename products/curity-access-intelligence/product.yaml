@@ -1,0 +1,32 @@
+schema_version: 2
+name: Curity Access Intelligence
+vendor:
+  value: Curity
+  source: { url: https://curity.io/product/access-intelligence/, tier: official, title: Curity Access Intelligence, accessed: 2026-07-05, origin: agent }
+aliases: [Curity]
+url: https://curity.io/product/access-intelligence/
+description:
+  value: "Curity Access Intelligence: Runtime authorization for AI agents and machines that issues scoped ephemeral tokens and allows, limits, or denies every agent API and tool call in real time."
+  source: { url: https://curity.io/product/access-intelligence/, tier: official, title: Curity Access Intelligence, accessed: 2026-07-05, origin: agent, quote: "Access Intelligence gives you runtime control over what every agent, service and machine can do" }
+deployment:
+  value: [self-hosted]
+  source: { url: https://curity.io/product/access-intelligence/, tier: official, title: Curity Access Intelligence, accessed: 2026-07-05, origin: agent }
+status:
+  value: active
+  source: { url: https://curity.io/product/access-intelligence/, tier: official, title: Curity Access Intelligence, accessed: 2026-07-05, origin: agent }
+last_reviewed: 2026-07-05
+changelog:
+  - date: 2026-07-05
+    summary: Added to the catalog from the Curity Access Intelligence documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: primary
+    note: Issues scoped, ephemeral tokens to agents and machines and evaluates every request against identity, context, policy, and risk to allow, limit, or deny it at runtime.
+    source: { url: https://curity.io/product/access-intelligence/, tier: official, title: Curity runtime authorization, accessed: 2026-07-05, origin: agent, quote: "Every request is assessed against identity, context, policy and risk, and can be allowed, limited or denied in real time." }
+  - asset: ai-orchestration-tools
+    functions: [protect]
+    maturity: secondary
+    note: Gates the API and tool calls agents make across chains of actions, carrying user and agent identity together and requiring human approval for high-stakes actions.
+    source: { url: https://curity.io/product/access-intelligence/, tier: official, title: Curity agent tool-call control, accessed: 2026-07-05, origin: agent, quote: "Access Intelligence gives you runtime control over what every agent, service and machine can do" }
+primary_cell: { asset: ai-agent-identities, function: protect }

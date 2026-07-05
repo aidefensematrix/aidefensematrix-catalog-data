@@ -1,0 +1,27 @@
+schema_version: 2
+name: OrcaRouter
+vendor:
+  value: Continuum AI
+  source: { url: https://www.orcarouter.ai/, tier: official, title: OrcaRouter AI gateway, accessed: 2026-07-05, origin: agent }
+aliases: [Continuum AI]
+url: https://www.orcarouter.ai/
+description:
+  value: "OrcaRouter: AI gateway by Continuum AI that routes prompts across many models through one OpenAI-compatible endpoint, with guardrails and a risk-scored firewall gating agent tool and MCP calls."
+  source: { url: https://www.orcarouter.ai/, tier: official, title: OrcaRouter AI gateway, accessed: 2026-07-05, origin: agent, quote: "OrcaRouter grades every prompt and routes it intelligently." }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.orcarouter.ai/, tier: official, title: OrcaRouter AI gateway, accessed: 2026-07-05, origin: agent }
+status:
+  value: active
+  source: { url: https://www.orcarouter.ai/, tier: official, title: OrcaRouter AI gateway, accessed: 2026-07-05, origin: agent }
+last_reviewed: 2026-07-05
+changelog:
+  - date: 2026-07-05
+    summary: Added to the catalog from the OrcaRouter documentation.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [protect, detect]
+    maturity: primary
+    note: Routes prompts across models through one OpenAI-compatible endpoint and runs a risk-scored agent firewall that grades every tool and MCP call and flags anomalies before actions run.
+    source: { url: https://www.orcarouter.ai/, tier: official, title: OrcaRouter agent firewall, accessed: 2026-07-05, origin: agent, quote: "Every tool and MCP call is graded ALLOW, REVIEW, or BLOCK before it runs, and anomaly detection flags rate and cost spikes against learned hour-of-week baselines." }
+primary_cell: { asset: ai-gateways-routers, function: protect }

@@ -1,0 +1,26 @@
+schema_version: 2
+name: ZeroDrift
+vendor:
+  value: ZeroDrift
+  source: { url: https://www.zerodrift.ai/, tier: official, title: ZeroDrift compliance firewall, accessed: 2026-07-05, origin: agent }
+url: https://www.zerodrift.ai/
+description:
+  value: "ZeroDrift: Compliance firewall for AI that checks every model and agent output against regulations and firm policy, then rewrites or blocks anything that fails before it ships."
+  source: { url: https://www.zerodrift.ai/, tier: official, title: ZeroDrift compliance firewall, accessed: 2026-07-05, origin: agent, quote: "The compliance firewall for AI." }
+deployment:
+  value: [saas]
+  source: { url: https://www.zerodrift.ai/, tier: official, title: ZeroDrift compliance firewall, accessed: 2026-07-05, origin: agent }
+status:
+  value: active
+  source: { url: https://www.zerodrift.ai/, tier: official, title: ZeroDrift compliance firewall, accessed: 2026-07-05, origin: agent }
+last_reviewed: 2026-07-05
+changelog:
+  - date: 2026-07-05
+    summary: Added to the catalog from the ZeroDrift documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: primary
+    note: Validates every AI message and agent output against regulations, firm policy, and security controls, then rewrites or blocks anything that fails before it reaches a customer, employee, or regulator.
+    source: { url: https://www.zerodrift.ai/, tier: official, title: ZeroDrift output enforcement, accessed: 2026-07-05, origin: agent, quote: "ZeroDrift validates every AI message, agent output, and communication against your regulations, firm policies, and security controls. Anything that fails is rewritten or blocked before it reaches a customer, employee, or regulator." }
+primary_cell: { asset: runtime-ai-data, function: protect }
