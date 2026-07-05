@@ -1,0 +1,32 @@
+schema_version: 2
+name: Phala Confidential AI Cloud
+vendor:
+  value: Phala
+  source: { url: https://phala.com/, tier: official, title: Phala Confidential AI Cloud, accessed: 2026-07-05, origin: agent }
+aliases: [Phala Network]
+url: https://phala.com/
+description:
+  value: "Phala Confidential AI Cloud: Runs agents, private LLM inference, and GPU jobs inside hardware-backed TEEs, keeping prompts and model weights private with verifiable attestation."
+  source: { url: https://phala.com/, tier: official, title: Phala Confidential AI Cloud, accessed: 2026-07-05, origin: agent, quote: "Run agents, private LLM models, and GPU jobs inside hardware-backed TEEs. Keep secrets private, and prove what ran." }
+deployment:
+  value: [saas]
+  source: { url: https://phala.com/, tier: official, title: Phala Confidential AI Cloud, accessed: 2026-07-05, origin: agent }
+status:
+  value: active
+  source: { url: https://phala.com/, tier: official, title: Phala Confidential AI Cloud, accessed: 2026-07-05, origin: agent }
+last_reviewed: 2026-07-05
+changelog:
+  - date: 2026-07-05
+    summary: Added to the catalog from the Phala documentation.
+matrix_coverage:
+  - asset: ai-workload-platforms
+    functions: [protect]
+    maturity: primary
+    note: Confidential-compute platform that runs agents, private LLM inference, and GPU jobs inside hardware-backed trusted execution environments, with attestation that proves what code ran.
+    source: { url: https://phala.com/, tier: official, title: Phala confidential compute platform, accessed: 2026-07-05, origin: agent, quote: "Run agents, private LLM models, and GPU jobs inside hardware-backed TEEs. Keep secrets private, and prove what ran." }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: Runs agent backends in confidential VMs with sealed keys and private memory so prompts, secrets, and inference data stay protected in use.
+    source: { url: https://phala.com/, tier: official, title: Phala confidential inference, accessed: 2026-07-05, origin: agent, quote: "Run agent backends in a confidential VM with sealed keys, private memory, and verifiable execution." }
+primary_cell: { asset: ai-workload-platforms, function: protect }
