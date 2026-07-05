@@ -1,0 +1,27 @@
+schema_version: 2
+name: Cisco DefenseClaw
+vendor:
+  value: Cisco
+  source: { url: https://github.com/cisco-ai-defense/defenseclaw, tier: official, title: cisco-ai-defense/defenseclaw, accessed: 2026-07-05, origin: agent }
+aliases: [DefenseClaw]
+url: https://github.com/cisco-ai-defense/defenseclaw
+description:
+  value: "Cisco DefenseClaw: Open-source security for agentic AI runtimes that scans agent skills, MCP servers, plugins, and code before use, inspects runtime traffic, and blocks unsafe actions by policy."
+  source: { url: https://github.com/cisco-ai-defense/defenseclaw, tier: official, title: cisco-ai-defense/defenseclaw, accessed: 2026-07-05, origin: agent, quote: "Security governance for OpenClaw and agentic AI runtimes." }
+deployment:
+  value: [self-hosted]
+  source: { url: https://github.com/cisco-ai-defense/defenseclaw, tier: official, title: cisco-ai-defense/defenseclaw, accessed: 2026-07-05, origin: agent }
+status:
+  value: active
+  source: { url: https://github.com/cisco-ai-defense/defenseclaw, tier: official, title: cisco-ai-defense/defenseclaw, accessed: 2026-07-05, origin: agent }
+last_reviewed: 2026-07-05
+changelog:
+  - date: 2026-07-05
+    summary: Added to the catalog from the DefenseClaw repository; open source under Apache-2.0, distinct from the commercial Cisco AI Defense platform.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Admission control scans skills, MCP servers, plugins, and generated code before they run, runtime guardrails inspect prompts and tool calls, and unsafe capabilities are blocked by policy with durable audit evidence.
+    source: { url: https://github.com/cisco-ai-defense/defenseclaw, tier: official, title: DefenseClaw admission control, accessed: 2026-07-05, origin: agent, quote: "untrusted agent capabilities are scanned, governed, logged, and blocked when policy says they are unsafe." }
+primary_cell: { asset: ai-orchestration-tools, function: protect }
