@@ -4,7 +4,7 @@ aliases: [Databricks Unity AI Gateway, Mosaic AI Gateway]
 vendor:
   value: Databricks
   source: { url: https://www.databricks.com/product/artificial-intelligence/ai-gateway, tier: official, title: Databricks Unity AI Gateway product page, accessed: 2026-06-10, origin: reviewed }
-url: https://www.databricks.com/product/artificial-intelligence/ai-gateway
+url: https://www.databricks.com/product/artificial-intelligence/unity-ai-gateway
 description:
   value: "Unity AI Gateway: Databricks control plane governing access to LLM endpoints, coding agents, and MCP servers, with guardrails for PII and unsafe content, plus permissions, rate limits, and logging."
   source: { url: https://www.databricks.com/product/artificial-intelligence/ai-gateway, tier: official, title: Databricks Unity AI Gateway product page, accessed: 2026-06-14, origin: reviewed }

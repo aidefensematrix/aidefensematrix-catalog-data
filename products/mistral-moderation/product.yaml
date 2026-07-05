@@ -3,7 +3,7 @@ name: Mistral Moderation
 vendor:
   value: Mistral AI
   source: { url: https://docs.mistral.ai/, tier: official, title: Mistral AI documentation home, accessed: 2026-06-10, origin: reviewed }
-url: https://docs.mistral.ai/capabilities/guardrailing/
+url: https://docs.mistral.ai/studio-api/conversations/moderation/
 description:
   value: "Mistral Moderation: Classifier service that scores prompts and responses across policy categories and applies blocking guardrails in Mistral API requests."
   source: { url: https://docs.mistral.ai/capabilities/guardrailing/, tier: official, title: Mistral AI moderation and guardrailing documentation, accessed: 2026-06-10, origin: reviewed }

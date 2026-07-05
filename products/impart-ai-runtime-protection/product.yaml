@@ -1,7 +1,7 @@
 schema_version: 2
 name: Impart AI Runtime Protection
 aliases: [Impart LLM Protection, Impart MCP Protection, Impart Agent Protection]
-url: https://www.impart.security/product/llm-protection
+url: https://impart.ai/product/llm-protection
 vendor:
   value: Impart Security
   source: { url: https://www.impart.security/, tier: official, title: Impart Security homepage, accessed: 2026-06-24, origin: reviewed }

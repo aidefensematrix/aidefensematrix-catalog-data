@@ -4,7 +4,7 @@ vendor:
   value: Datadog
   source: { url: https://docs.datadoghq.com/llm_observability/, tier: official, title: Datadog LLM Observability documentation, accessed: 2026-06-09, origin: reviewed }
 aliases: [LLM Observability, Datadog Agent Observability]
-url: https://www.datadoghq.com/product/llm-observability/
+url: https://www.datadoghq.com/products/ai/agent-observability/
 description:
   value: Observability for LLM and agent applications that traces prompts, responses, and tool calls, with evaluations that flag prompt injection, unsafe output, and exposure of sensitive data.
   source: { url: https://docs.datadoghq.com/llm_observability/, tier: official, title: Datadog LLM Observability documentation, accessed: 2026-06-09, origin: reviewed }

@@ -1,7 +1,7 @@
 schema_version: 2
 name: Cloudflare AI Security for Apps
 aliases: [Firewall for AI]
-url: https://www.cloudflare.com/application-services/products/ai-security-for-apps/
+url: https://www.cloudflare.com/products/ai-security-for-apps/
 vendor:
   value: Cloudflare
   source: { url: https://www.cloudflare.com/application-services/products/ai-security-for-apps/, tier: official, title: Cloudflare AI Security for Apps, accessed: 2026-06-13, origin: reviewed }

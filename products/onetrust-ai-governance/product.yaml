@@ -4,7 +4,7 @@ aliases: [OneTrust]
 vendor:
   value: OneTrust
   source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-07-03, origin: reviewed }
-url: https://www.onetrust.com/govern-ai-risk/
+url: https://www.onetrust.com/solutions/ai-governance/
 description:
   value: "OneTrust AI Governance: Catalogs AI systems, assesses their risk against frameworks such as the EU AI Act and NIST AI RMF, and enforces compliance controls across the AI lifecycle."
   source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-07-03, origin: reviewed }
