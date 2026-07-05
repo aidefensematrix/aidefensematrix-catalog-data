@@ -28,5 +28,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: Keeps inference and query data encrypted while in use through fully homomorphic encryption, never decrypting it during computation.
-    source: { url: https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform, accessed: 2026-06-25, origin: reviewed, quote: "This advanced technology allows you to offer services using your customers data without the need to decrypt it, thereby maintaining robust data security and privacy throughout its lifecycle." }
+    source: { url: https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform, accessed: 2026-07-05, origin: agent, quote: "FHE protects data even during computation." }
 primary_cell: { asset: ai-model, function: protect }

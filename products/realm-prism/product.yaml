@@ -23,7 +23,7 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: Deep Neural Inspection maps model internals and reads activity during inference, catching drift, manipulation, and silent failures while they are still inside the inference loop rather than judging output strings after the fact.
-    source: { url: https://www.realmlabs.ai/platform-overview, tier: official, title: Realm Labs platform overview, accessed: 2026-06-10, origin: reviewed, quote: "DNI inspects against OpenAI, Anthropic, Gemini, and self-hosted models out of the same instance." }
+    source: { url: https://www.realmlabs.ai/realmguard, tier: official, title: Realm Labs Realmguard, accessed: 2026-07-05, origin: agent, quote: "Realmguard is powered by DNI which reads AI internal thinking and builds patterns on them." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: primary

@@ -27,10 +27,10 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovers installed agents and MCP servers across workstations, hosts MCP servers in sandboxed cloud workspaces backed by a vetted pre-scanned catalog, intercepts MCP traffic to block prompt injection and rogue MCP servers, and enforces centralized runtime policies with audit trails.
-    source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-06-10, origin: reviewed, quote: "Autonomous secures and governs desktop AI agents with unprecedented visibility and controls." }
+    source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-07-05, origin: agent, quote: "Continuously discover shadow AI, assess risks, remediate, and enforce real-time guardrails all in one place." }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
     note: A centralized token vault stores the credentials that agents and MCP connections use, moving secrets out of local files and environment variables on developer machines.
-    source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-06-10, origin: reviewed, quote: "Autonomous secures and governs desktop AI agents with unprecedented visibility and controls." }
+    source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-07-05, origin: agent, quote: "Move MCP servers and credentials out of unmanaged local environments and into a secure, isolated cloud." }
 primary_cell: { asset: ai-orchestration-tools, function: protect }

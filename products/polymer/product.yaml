@@ -26,5 +26,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: A browser extension applies real-time controls and inline redaction over employee prompts to ChatGPT, Claude, and other LLM tools, and audits every AI interaction.
-    source: { url: https://www.polymerhq.io/dspm/, tier: official, title: Polymer DSPM page, accessed: 2026-06-25, origin: reviewed, quote: "The Polymer browser extension allows organizations to easily deploy real time controls of all employee interactions with ChatGPT, Claude & other LLM tools." }
+    source: { url: https://www.polymerhq.io/dspm/, tier: official, title: Polymer DSPM page, accessed: 2026-07-05, origin: agent, quote: "The Polymer browser extension allows organizations to easily deploy real time controls of all employee interactions with ChatGPT" }
 primary_cell: { asset: runtime-ai-data, function: protect }

@@ -22,7 +22,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: TrustGate is a distributed AI gateway that fronts model providers with routing, rate limiting, threat detection, and plugin-based security controls; core gateway functionality is available under an open-source license.
-    source: { url: https://neuraltrust.ai/ai-gateway, tier: official, title: NeuralTrust AI gateway page, accessed: 2026-06-10, origin: reviewed, quote: "NeuralTrust is a high-performance, distributed AI gateway that outperforms all alternatives on the market in both execution speed and detection accuracy." }
+    source: { url: https://neuraltrust.ai/, tier: official, title: NeuralTrust homepage, accessed: 2026-07-05, origin: agent, quote: "Infrastructure-level security is a centralized gateway that applies one policy across all apps and models with unified visibility and compliance." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
@@ -32,5 +32,5 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: Automated red teaming runs a continuously updated adversarial attack catalog informed by OWASP and MITRE ATLAS research, with domain-specific test generation and scheduled reruns when the model or knowledge base changes.
-    source: { url: https://neuraltrust.ai/red-teaming, tier: official, title: NeuralTrust red teaming page, accessed: 2026-06-10, origin: reviewed, quote: "Use a continuously updated catalog of adversarial attacks, including OWASP, MITRE ATLAS, and our own research." }
+    source: { url: https://neuraltrust.ai/red-teaming, tier: official, title: NeuralTrust red teaming page, accessed: 2026-07-05, origin: agent, quote: "algorithmic probes run adversarial attacks to test robustness and safety." }
 primary_cell: { asset: ai-gateways-routers, function: protect }

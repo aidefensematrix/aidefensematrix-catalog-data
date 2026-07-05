@@ -27,7 +27,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Manages and monitors access to model serving endpoints with permissions, rate limits, usage tracking through system tables, fallbacks, and traffic splitting across model backends.
-    source: { url: https://docs.databricks.com/aws/en/ai-gateway/overview-serving-endpoints, tier: official, title: Unity AI Gateway serving endpoints documentation, accessed: 2026-06-10, origin: reviewed, quote: "Unity AI Gateway for serving endpoints, which governs and monitors access to supported generative AI models and their associated model-serving endpoints." }
+    source: { url: https://docs.databricks.com/aws/en/ai-gateway/overview-serving-endpoints, tier: official, title: Unity AI Gateway serving endpoints documentation, accessed: 2026-07-05, origin: agent, quote: "It is a centralized service that brings governance, monitoring, and production readiness to model serving endpoints." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary
@@ -37,5 +37,5 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: secondary
     note: Governs MCP servers as the enterprise control plane, with centralized view and management of all MCP servers, access control through Unity Catalog permissions and managed-OAuth credentials, and activity monitoring across servers.
-    source: { url: https://docs.databricks.com/aws/en/generative-ai/agent-framework/mcp, tier: official, title: Model Context Protocol (MCP) on Databricks, accessed: 2026-06-14, origin: reviewed, quote: "MCP servers are governed through Unity AI Gateway, the enterprise control plane that governs access and monitors activity across MCP servers and LLM endpoints." }
+    source: { url: https://docs.databricks.com/aws/en/generative-ai/agent-framework/mcp, tier: official, title: Model Context Protocol (MCP) on Databricks, accessed: 2026-07-05, origin: agent, quote: "Connect to MCP servers hosted outside Databricks using managed connections, and register them as Unity Catalog securables to govern access, filter tools, and apply service policies." }
 primary_cell: { asset: ai-gateways-routers, function: protect }

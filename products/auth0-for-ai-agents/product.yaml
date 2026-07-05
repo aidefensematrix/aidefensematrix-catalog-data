@@ -28,5 +28,5 @@ matrix_coverage:
     functions: [protect]
     maturity: primary
     note: Gives AI agents dedicated identities and brokered access. A Token Vault stores and refreshes third-party API tokens, asynchronous authorization gets user approval for agent actions, and fine-grained authorization (Auth0 FGA) limits what RAG retrieval can reach.
-    source: { url: https://auth0.com/ai, tier: official, title: Auth0 for AI Agents, accessed: 2026-06-09, origin: reviewed, quote: "AI-native workflows Auth0 supports dedicated AI agent identities, persistent user memory, and async authorization." }
+    source: { url: https://auth0.com/ai, tier: official, title: Auth0 for AI Agents, accessed: 2026-07-05, origin: agent, quote: "Control what your agents can see and do with fine-grained permissions and short-lived access tokens." }
 primary_cell: { asset: ai-agent-identities, function: protect }
