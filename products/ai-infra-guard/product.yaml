@@ -1,0 +1,37 @@
+schema_version: 2
+name: AI-Infra-Guard
+vendor:
+  value: Tencent
+  source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: Tencent/AI-Infra-Guard, accessed: 2026-07-05, origin: agent }
+aliases: [A.I.G]
+url: https://github.com/Tencent/AI-Infra-Guard
+description:
+  value: "AI-Infra-Guard: Open-source AI red-team scanner by Tencent that scans MCP servers, agent skills, and AI-infra components for CVEs and evaluates models for jailbreak robustness."
+  source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: Tencent/AI-Infra-Guard, accessed: 2026-07-05, origin: agent, quote: "It thoroughly detects 14 major categories of security risks. The detection applies to both MCP Servers and Agent Skills." }
+deployment:
+  value: [self-hosted]
+  source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: Tencent/AI-Infra-Guard, accessed: 2026-07-05, origin: agent }
+status:
+  value: active
+  source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: Tencent/AI-Infra-Guard, accessed: 2026-07-05, origin: agent }
+last_reviewed: 2026-07-05
+changelog:
+  - date: 2026-07-05
+    summary: Added to the catalog from the AI-Infra-Guard repository; open source, actively maintained.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, detect]
+    maturity: primary
+    note: Scans MCP servers, agent skills, and agent workflows for security risks and identifies AI-framework CVEs across more than 100 components such as Ollama, vLLM, and Triton.
+    source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: AI-Infra-Guard MCP and agent scanning, accessed: 2026-07-05, origin: agent, quote: "It thoroughly detects 14 major categories of security risks. The detection applies to both MCP Servers and Agent Skills." }
+  - asset: ai-model
+    functions: [detect]
+    maturity: secondary
+    note: Jailbreak evaluation tests model prompt-security robustness with multiple attack methods and cross-model comparison.
+    source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: AI-Infra-Guard jailbreak evaluation, accessed: 2026-07-05, origin: agent, quote: "It assesses prompt security risks using carefully curated datasets. The evaluation applies multiple attack methods to test robustness." }
+  - asset: ai-workload-platforms
+    functions: [identify, detect]
+    maturity: secondary
+    note: Fingerprints AI-serving frameworks such as Ollama, vLLM, and Triton and flags known CVE vulnerabilities across more than 100 components.
+    source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: AI-Infra-Guard AI-infra CVE scan, accessed: 2026-07-05, origin: agent, quote: "This scanner precisely identifies over 100 AI framework components. It covers more than 1900 known CVE vulnerabilities." }
+primary_cell: { asset: ai-orchestration-tools, function: detect }

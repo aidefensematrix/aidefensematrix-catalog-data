@@ -1,0 +1,27 @@
+schema_version: 2
+name: Obot MCP Gateway
+vendor:
+  value: Obot
+  source: { url: https://obot.ai/mcp-gateway-platform/, tier: official, title: Obot MCP Gateway, accessed: 2026-07-05, origin: agent }
+aliases: [Obot]
+url: https://obot.ai/mcp-gateway-platform/
+description:
+  value: "Obot MCP Gateway: Open-source MCP gateway between AI clients and any MCP server that enforces OAuth and access policies, audits every tool call, and offers a curated catalog of trusted servers."
+  source: { url: https://obot.ai/mcp-gateway-platform/, tier: official, title: Obot MCP Gateway, accessed: 2026-07-05, origin: agent, quote: "Centralize OAuth, govern access, audit every tool call, and ship a curated catalog of MCP servers your enterprise can actually trust." }
+deployment:
+  value: [self-hosted, saas]
+  source: { url: https://github.com/obot-platform/obot, tier: official, title: obot-platform/obot, accessed: 2026-07-05, origin: agent }
+status:
+  value: active
+  source: { url: https://obot.ai/mcp-gateway-platform/, tier: official, title: Obot MCP Gateway, accessed: 2026-07-05, origin: agent }
+last_reviewed: 2026-07-05
+changelog:
+  - date: 2026-07-05
+    summary: Added to the catalog from the Obot documentation; open source under MIT, with a managed cloud option.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Sits between AI clients and any MCP server, enforcing OAuth and access policies on tool access, auditing every call, and curating a catalog of trusted MCP servers and skills.
+    source: { url: https://obot.ai/mcp-gateway-platform/, tier: official, title: Obot MCP gateway controls, accessed: 2026-07-05, origin: agent, quote: "It enforces OAuth, applies access policies, audits every call, and gives users a curated catalog of safe MCP servers and skills." }
+primary_cell: { asset: ai-orchestration-tools, function: protect }
