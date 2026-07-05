@@ -4,7 +4,7 @@ vendor:
   value: Orca Security
   source: { url: https://orca.security/platform/ai-security-posture-management/, tier: official, title: Orca AI-SPM, accessed: 2026-06-09, origin: reviewed }
 aliases: [Orca Cloud Security Platform, Orca AI-SPM]
-url: https://orca.security/platform/ai-security-posture-management/
+url: https://orca.security/platform/ai-security/ai-spm/
 description:
   value: Agentless AI security posture management in the Orca cloud platform that discovers AI models including shadow AI, inventories them, and flags misconfigurations and exposed data.
   source: { url: https://orca.security/platform/ai-security-posture-management/, tier: official, title: Orca AI-SPM, accessed: 2026-06-09, origin: reviewed }

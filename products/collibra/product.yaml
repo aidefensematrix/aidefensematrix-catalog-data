@@ -4,7 +4,7 @@ vendor:
   value: Collibra
   source: { url: https://www.collibra.com/products/ai-governance, tier: official, title: Collibra AI Governance, accessed: 2026-06-09, origin: reviewed }
 aliases: [Collibra AI Governance, Collibra AI Command Center]
-url: https://www.collibra.com/products/ai-governance
+url: https://www.collibra.com/products/ai-command-center
 description:
   value: Data and AI catalog that inventories AI models, use cases, and agents across their lifecycle, ties them to trusted lineage-tracked data, and maps them to compliance and data policies.
   source: { url: https://www.collibra.com/products/ai-governance, tier: official, title: Collibra AI Governance, accessed: 2026-06-09, origin: reviewed }

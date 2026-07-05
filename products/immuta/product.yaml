@@ -4,7 +4,7 @@ vendor:
   value: Immuta
   source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed }
 aliases: [Immuta Data Security Platform]
-url: https://www.immuta.com/solutions/data-security-ai/
+url: https://www.immuta.com/product/data-security-ai/
 description:
   value: Data security platform that discovers and classifies sensitive data, enforces attribute-based access policies and masking at the data layer for AI and RAG workloads, and monitors data usage for risk.
   source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed }

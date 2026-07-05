@@ -1,7 +1,7 @@
 schema_version: 2
 name: White Circle
 aliases: []
-url: https://whitecircle.ai/
+url: https://whitecircle.com/
 vendor:
   value: White Circle
   source: { url: https://whitecircle.ai/, tier: official, title: White Circle, accessed: 2026-06-14, origin: reviewed }
