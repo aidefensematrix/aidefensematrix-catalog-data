@@ -1,13 +1,13 @@
 schema_version: 2
-name: Realm Prism
-aliases: [Prism]
+name: RealmGuard
+aliases: [Realm Prism, Prism]
 vendor:
   value: Realm Labs
   source: { url: https://www.realmlabs.ai/platform-overview, tier: official, title: Realm Labs platform overview, accessed: 2026-06-10, origin: reviewed }
-url: https://www.realmlabs.ai/platform-overview
+url: https://www.realmlabs.ai/realmguard
 description:
-  value: "Realm Prism: Runtime observability that inspects model internals during inference to detect hallucinations, prompt injection, and policy drift in production AI calls."
-  source: { url: https://www.realmlabs.ai/security-grc, tier: official, title: Realm Labs security and GRC, accessed: 2026-06-10, origin: reviewed }
+  value: "RealmGuard: AI guardrails that read model internal reasoning (Deep Neural Inspection) to catch harmful content, prompt injection, and policy violations across prompts and responses."
+  source: { url: https://www.realmlabs.ai/realmguard, tier: official, title: Realm Labs RealmGuard, accessed: 2026-07-05, origin: agent, quote: "Realmguard is powered by DNI which reads AI internal thinking and builds patterns on them." }
 deployment:
   value: [self-hosted]
   source: { url: https://www.realmlabs.ai/platform-overview, tier: official, title: Realm Labs platform overview, accessed: 2026-06-10, origin: reviewed }
@@ -18,6 +18,8 @@ last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Realm Labs documentation.
+  - date: 2026-07-05
+    summary: Renamed to RealmGuard; the product was previously listed as Realm Prism.
 matrix_coverage:
   - asset: ai-model
     functions: [detect]
