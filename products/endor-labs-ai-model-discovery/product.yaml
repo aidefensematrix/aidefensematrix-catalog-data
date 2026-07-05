@@ -23,5 +23,5 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: primary
     note: Discovers open-source AI models from Hugging Face and scores them across security, activity, popularity, and operational integrity to surface model risk.
-    source: { url: https://docs.endorlabs.com/ai/, tier: official, title: Endor Labs Secure AI Coding, accessed: 2026-06-13, origin: reviewed, quote: "Search and evaluate AI models from Hugging Face across security, activity, popularity, and operational integrity." }
+    source: { url: https://docs.endorlabs.com/ai/, tier: official, title: Endor Labs Secure AI Coding, accessed: 2026-07-05, origin: agent, quote: "Discover and evaluate AI models from Hugging Face with comprehensive scoring." }
 primary_cell: { asset: ai-model, function: identify }

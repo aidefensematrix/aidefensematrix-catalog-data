@@ -22,7 +22,7 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Runtime detection and response for AI threats identifies unsafe AI usage, detects suspicious activity, and stops malicious activity in cloud native AI workloads without code changes; AI-SPM configuration checks assess the posture of cloud-based AI services.
-    source: { url: https://www.aquasec.com/news/full-lifecycle-security-for-ai-applications/, tier: official, title: Aqua Secure AI launch press release, accessed: 2026-06-10, origin: reviewed, quote: "This latest enhancement builds on that foundation, making the Aqua Platform the only cloud native security solution offering full lifecycle protection for AI workloads from code commit to runtime." }
+    source: { url: https://www.aquasec.com/news/full-lifecycle-security-for-ai-applications/, tier: official, title: Aqua Secure AI launch press release, accessed: 2026-07-05, origin: agent, quote: "Operationalizing AI Security: Protecting Workloads Where AI Runs" }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary

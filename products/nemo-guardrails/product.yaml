@@ -28,5 +28,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: Execution rails screen the input and output of the custom actions and tools that an LLM calls, and the guardrail catalog includes agentic security checks.
-    source: { url: https://docs.nvidia.com/nemo/guardrails/latest/index.html, tier: official, title: NVIDIA NeMo Guardrails Library Developer Guide, accessed: 2026-06-09, origin: reviewed, quote: "It intercepts inputs and outputs, applies configurable safety checks, and blocks or modifies content based on defined policies." }
+    source: { url: https://docs.nvidia.com/nemo/guardrails/latest/index.html, tier: official, title: NVIDIA NeMo Guardrails Library Developer Guide, accessed: 2026-07-05, origin: agent, quote: "Inspect and control user inputs, retrieved content, tool calls, and model outputs in one guardrails workflow." }
 primary_cell: { asset: runtime-ai-data, function: protect }

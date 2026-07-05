@@ -41,5 +41,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: Agent runtime controls and MCP gateway security over what agents can do.
-    source: { url: https://prompt.security, tier: official, title: "Prompt Security: AI agent security", accessed: 2026-06-07, origin: reviewed, quote: "Meet compliance AI Agent Foundry WAITLIST Secure, governed instance for all your AI agents." }
+    source: { url: https://prompt.security, tier: official, title: "Prompt Security: AI agent security", accessed: 2026-07-05, origin: agent, quote: "Monitor, govern, and secure your AI agents" }
 primary_cell: { asset: runtime-ai-data, function: protect }

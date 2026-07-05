@@ -23,5 +23,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: In-IDE scanning of AI-generated and human-written code for vulnerabilities, secrets, and unsafe APIs, with automated fixes delivered as developers type.
-    source: { url: https://xygeni.io/dev-ai/, tier: official, title: Xygeni DevAI, accessed: 2026-06-13, origin: reviewed, quote: "DevAI runs continuously as developers type. It performs incremental SAST scanning, detects vulnerable patterns, exposed secrets, and unsafe APIs, including in AI-generated code, and explains the real attack path behind each finding." }
+    source: { url: https://xygeni.io/dev-ai/, tier: official, title: Xygeni DevAI, accessed: 2026-07-05, origin: agent, quote: "It analyzes human and AI-generated code in real time, explains exploit paths, and delivers safe, automated fixes without breaking developer flow." }
 primary_cell: { asset: ai-generated-code, function: detect }

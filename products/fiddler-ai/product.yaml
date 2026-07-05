@@ -25,7 +25,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Fiddler Guardrails screen prompts and responses in real time, blocking harmful or jailbreaking content across eleven safety dimensions, detecting and redacting PII and PHI, and flagging hallucinated RAG responses.
-    source: { url: https://docs.fiddler.ai/product-guide/llm-monitoring/guardrails, tier: official, title: Fiddler Guardrails documentation, accessed: 2026-06-10, origin: reviewed, quote: "For real-time guardrails, a threshold of 0.1 provides sufficient sensitivity for blocking potentially harmful content." }
+    source: { url: https://docs.fiddler.ai/product-guide/llm-monitoring/guardrails, tier: official, title: Fiddler Guardrails documentation, accessed: 2026-07-05, origin: agent, quote: "For PII/PHI moderation, Fiddler Guardrails use the Centor Model for PII/PHI, which detects, flags, and redacts PII leakage in both user inputs and model responses." }
   - asset: ai-orchestration-tools
     functions: [detect]
     maturity: secondary

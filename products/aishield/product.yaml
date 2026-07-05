@@ -27,5 +27,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Guardian GenAI Guardrails screen LLM inputs and outputs in real time, mitigating prompt injection, jailbreaks, and sensitive data exposure with content filtering and PII anonymization.
-    source: { url: https://www.boschaishield.com/products/aishield-guardian/, tier: official, title: AIShield Guardian product page, accessed: 2026-06-10, origin: reviewed, quote: "Protect Your AI/ML and LLM Applications post Deployment in Real-Time with Industry-Leading Security." }
+    source: { url: https://www.boschaishield.com/products/aishield-guardian/, tier: official, title: AIShield Guardian product page, accessed: 2026-07-05, origin: agent, quote: "Designed for seamless integration, Guardian enables real-time threat detection, compliance enforcement, and advanced content filtering." }
 primary_cell: { asset: ai-model, function: detect }

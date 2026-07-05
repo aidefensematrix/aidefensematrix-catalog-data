@@ -31,5 +31,5 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: secondary
     note: Discovers the MCP servers and tools agents use and gates agent access to them through the Agent Access Gateway.
-    source: { url: https://saviynt.com/products/identity-security-for-ai, tier: official, title: Saviynt Identity Security for AI, accessed: 2026-06-14, origin: reviewed, quote: "Automatically discover agents across the entire AI ecosystem, including MCP servers and tools, with actionable risk insights." }
+    source: { url: https://saviynt.com/products/identity-security-for-ai, tier: official, title: Saviynt Identity Security for AI, accessed: 2026-07-05, origin: agent, quote: "Visualize how your AI agents interact with critical applications, data, and tools." }
 primary_cell: { asset: ai-agent-identities, function: govern }

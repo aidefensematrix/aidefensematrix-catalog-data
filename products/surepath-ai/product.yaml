@@ -25,10 +25,10 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Inspects AI inputs and outputs in real time and redacts sensitive information before it reaches models, agents, or connected systems, then logs every interaction across public and private models to provide audit trails.
-    source: { url: https://www.surepath.ai/platform, tier: official, title: SurePath AI platform, accessed: 2026-06-15, origin: reviewed, quote: "Our system acts as a smart filter across all AI interactions by inspecting inputs and outputs in real time. It identifies and redacts sensitive information, ensuring teams get the answers they need without exposing data to models, agents, or connected systems." }
+    source: { url: https://www.surepath.ai/, tier: official, title: SurePath AI homepage, accessed: 2026-07-05, origin: agent, quote: "Detect and redact sensitive info, ensuring secure, user-friendly outputs." }
   - asset: ai-gateways-routers
     functions: [identify, protect]
     maturity: secondary
     note: Captures AI traffic at the network level without endpoint agents to reveal which AI services are in use, and enforces role- and group-based access policies controlling which models, tools, and data each user can reach.
-    source: { url: https://www.surepath.ai/platform, tier: official, title: SurePath AI platform, accessed: 2026-06-15, origin: reviewed, quote: "A flexible policy system enforces granular, group-based controls across models, agents, tools, and applications so you control what AI can access, what it can do, and how it interacts with your data." }
+    source: { url: https://www.surepath.ai/, tier: official, title: SurePath AI homepage, accessed: 2026-07-05, origin: agent, quote: "Complete, real-time visibility and control over every AI action." }
 primary_cell: { asset: runtime-ai-data, function: protect }

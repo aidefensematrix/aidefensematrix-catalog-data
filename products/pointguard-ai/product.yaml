@@ -23,7 +23,7 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovers AI agents and MCP, enforces runtime guardrails via the Agent Control Plane and MCP Security Gateway, and applies centralized policy enforcement across the AI stack.
-    source: { url: https://pointguardai.com/, tier: official, title: PointGuard AI Application Security and Governance, accessed: 2026-06-13, origin: reviewed, quote: "The PointGuard AI Security Platform delivers comprehensive protection for AI agents, MCP infrastructure, models, and data through the Agent Control Plane, the zero-trust MCP Security Gateway, integrated Runtime Guardrails" }
+    source: { url: https://pointguardai.com/, tier: official, title: PointGuard AI Application Security and Governance, accessed: 2026-07-05, origin: agent, quote: "Intelligent guardrails enforce security policies across agent prompts, responses, and tool interactions in real time." }
   - asset: ai-model
     functions: [identify, detect]
     maturity: secondary

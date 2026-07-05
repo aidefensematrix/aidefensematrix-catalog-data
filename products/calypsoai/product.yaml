@@ -35,5 +35,5 @@ matrix_coverage:
     functions: [identify, protect]
     maturity: primary
     note: "Red teaming hunts vulnerabilities across AI models, applications, and agents."
-    source: { url: https://www.f5.com/products/ai-red-team, tier: official, title: F5 AI Red Team product page, accessed: 2026-06-07, origin: reviewed, quote: "Validate resilience and performance Identify AI performance limits under real-world pressure to prevent downtime and keep models stable, secure, and scalable." }
+    source: { url: https://www.f5.com/products/ai-red-team, tier: official, title: F5 AI Red Team product page, accessed: 2026-07-05, origin: agent, quote: "Define the attack surface and command a swarm of agents designed to hunt and attack vulnerabilities in AI models, applications, and agents." }
 primary_cell: { asset: runtime-ai-data, function: protect }
