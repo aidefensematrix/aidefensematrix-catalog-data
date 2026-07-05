@@ -1,0 +1,32 @@
+schema_version: 2
+name: Wallarm AI Hypervisor
+vendor:
+  value: Wallarm
+  source: { url: https://www.wallarm.com/product/ai-hypervisor, tier: official, title: Wallarm AI Hypervisor, accessed: 2026-07-05, origin: agent }
+aliases: [Wallarm AI Control Platform]
+url: https://www.wallarm.com/product/ai-hypervisor
+description:
+  value: "Wallarm AI Hypervisor: Kernel-level eBPF runtime layer for enterprise AI agents that observes every agent decision, data boundary, and external call, and blocks the ones that violate policy inline."
+  source: { url: https://www.wallarm.com/product/ai-hypervisor, tier: official, title: Wallarm AI Hypervisor, accessed: 2026-07-05, origin: agent, quote: "AI Hypervisor is the runtime enforcement layer for enterprise AI agents." }
+deployment:
+  value: [self-hosted]
+  source: { url: https://www.wallarm.com/product/ai-hypervisor, tier: official, title: Wallarm AI Hypervisor deployment, accessed: 2026-07-05, origin: agent, quote: "Deploy as a DaemonSet in minutes on EKS or any Kubernetes cluster." }
+status:
+  value: active
+  source: { url: https://www.wallarm.com/product/ai-hypervisor, tier: official, title: Wallarm AI Hypervisor, accessed: 2026-07-05, origin: agent, quote: "AI Hypervisor deploys as a Kubernetes DaemonSet on EKS and instruments every labeled pod at the kernel using patented eBPF analysis." }
+last_reviewed: 2026-07-05
+changelog:
+  - date: 2026-07-05
+    summary: Added to the catalog from the Wallarm AI Hypervisor documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, detect, protect]
+    maturity: primary
+    note: Kernel-level eBPF instrumentation observes every agent decision, data boundary, and external call at runtime, and blocks the actions that violate policy inline.
+    source: { url: https://www.wallarm.com/product/ai-hypervisor, tier: official, title: Wallarm AI Hypervisor runtime enforcement, accessed: 2026-07-05, origin: agent, quote: "See every decision your agents make, every data boundary they cross, every external call they initiate, and block the ones that violate policy." }
+  - asset: runtime-ai-data
+    functions: [identify, protect]
+    maturity: secondary
+    note: Surfaces sensitive data in motion across agent calls and can stop policy-violating data-boundary crossings inline.
+    source: { url: https://www.wallarm.com/product/ai-hypervisor, tier: official, title: Wallarm AI Hypervisor data visibility, accessed: 2026-07-05, origin: agent, quote: "You see every AI decision, every outbound call, every piece of sensitive data in motion. And you can stop any of it inline." }
+primary_cell: { asset: ai-orchestration-tools, function: protect }
