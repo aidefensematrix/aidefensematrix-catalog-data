@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-// Lists every source still carrying `origin: agent` (machine-verified, awaiting
-// maintainer promotion to `reviewed`). Offline and read-only: the promotion pass
-// reviews a batch against the cited pages and flips origins in a normal PR.
+// Lists every source carrying `origin: agent` (machine-verified against the
+// cited page). Offline and read-only: useful for spot-checking a batch against
+// the cited pages; a human who confirms a value may set `reviewed` in a normal PR.
 // Usage: node scripts/list-agent-origin.mjs [slug ...]
 
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
@@ -42,5 +42,5 @@ if (!rows.length) {
     const d = r.accessed instanceof Date ? r.accessed.toISOString().slice(0, 10) : r.accessed;
     console.log(`${r.slug}\t${r.field}\t${r.url}\t${d}`);
   }
-  console.log(`\n${rows.length} agent-verified source(s) awaiting promotion across ${new Set(rows.map((r) => r.slug)).size} entr${new Set(rows.map((r) => r.slug)).size === 1 ? 'y' : 'ies'}.`);
+  console.log(`\n${rows.length} machine-verified source(s) across ${new Set(rows.map((r) => r.slug)).size} entr${new Set(rows.map((r) => r.slug)).size === 1 ? 'y' : 'ies'}.`);
 }
