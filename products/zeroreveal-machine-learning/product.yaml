@@ -21,6 +21,8 @@ last_reviewed: 2026-07-08
 changelog:
   - date: 2026-07-08
     summary: Added to the catalog from the Enveil documentation.
+  - date: 2026-07-08
+    summary: Refined matrix coverage.
 matrix_coverage:
   - asset: ai-model
     functions: [protect]
@@ -32,4 +34,9 @@ matrix_coverage:
     maturity: primary
     note: Encrypted training based on secure multiparty computation protects training data and the model development process in cross-silo federated learning.
     source: { url: https://www.enveil.com/products/, tier: official, title: Enveil products page, accessed: 2026-07-08, origin: agent, quote: "protecting the model development process, the data used for training, as well as the interests and intent of the parties involved" }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: Query results and derived insights remain encrypted during evaluation, protecting runtime AI data as it moves across organizational and jurisdictional boundaries.
+    source: { url: https://www.enveil.com/products/, tier: official, title: Enveil products page, accessed: 2026-07-08, origin: agent, quote: "AI/ML models and the associated results remain encrypted throughout the entire evaluation lifecycle" }
 primary_cell: { asset: ai-model, function: protect }
