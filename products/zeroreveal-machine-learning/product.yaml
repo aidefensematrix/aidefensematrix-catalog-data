@@ -1,0 +1,35 @@
+schema_version: 2
+name: ZeroReveal Machine Learning
+vendor:
+  value: Enveil
+  source: { url: https://www.enveil.com/products/, tier: official, title: Enveil products page, accessed: 2026-07-08, origin: agent }
+url: https://www.enveil.com/products/
+aliases: [ZeroReveal ML, Enveil ZeroReveal ML, ZMET]
+description:
+  value: "ZeroReveal Machine Learning: Privacy-enhancing technology product that keeps machine learning models encrypted during evaluation and enables encrypted federated training across data silos."
+  source: { url: https://www.enveil.com/products/, tier: official, title: Enveil products page, accessed: 2026-07-08, origin: agent }
+deployment:
+  value: [self-hosted]
+  source: { url: https://www.enveil.com/enveil-delivers-zeroreveal-machine-learning-for-secure-advanced-decisioning/, tier: official, title: Enveil ZeroReveal ML launch announcement, accessed: 2026-07-08, origin: agent }
+status:
+  value: active
+  source: { url: https://www.enveil.com/products/, tier: official, title: Enveil products page, accessed: 2026-07-08, origin: agent }
+compliance_attestations:
+  value: [NIAP Common Criteria]
+  source: { url: https://www.enveil.com/enveil-achieves-niap-common-criteria-certification/, tier: official, title: Enveil NIAP Common Criteria certification announcement, accessed: 2026-07-08, origin: agent, quote: "Enveil Achieves NIAP Common Criteria Certification" }
+last_reviewed: 2026-07-08
+changelog:
+  - date: 2026-07-08
+    summary: Added to the catalog from the Enveil documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [protect]
+    maturity: primary
+    note: Encrypted evaluation and inference keep machine learning models and their results encrypted while in use, protecting model confidentiality across third-party and jurisdictional boundaries.
+    source: { url: https://www.enveil.com/products/, tier: official, title: Enveil products page, accessed: 2026-07-08, origin: agent, quote: "AI/ML models and the associated results remain encrypted throughout the entire evaluation lifecycle" }
+  - asset: training-data
+    functions: [protect]
+    maturity: primary
+    note: Encrypted training based on secure multiparty computation protects training data and the model development process in cross-silo federated learning.
+    source: { url: https://www.enveil.com/products/, tier: official, title: Enveil products page, accessed: 2026-07-08, origin: agent, quote: "protecting the model development process, the data used for training, as well as the interests and intent of the parties involved" }
+primary_cell: { asset: ai-model, function: protect }
