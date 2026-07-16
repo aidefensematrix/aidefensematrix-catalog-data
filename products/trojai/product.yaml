@@ -11,12 +11,19 @@ deployment:
   value: [self-hosted]
   source: { url: https://troj.ai/, tier: official, title: TrojAI homepage, accessed: 2026-06-10, origin: reviewed }
 status:
-  value: active
-  source: { url: https://troj.ai/, tier: official, title: TrojAI homepage, accessed: 2026-06-10, origin: reviewed }
-last_reviewed: 2026-06-10
+  value: acquired
+  source: { url: https://www.a10networks.com/news/press-releases/a10-networks-acquires-trojai-inc-expanding-ai-roadmap/, tier: official, title: A10 Networks acquires TrojAI, accessed: 2026-07-16, origin: agent }
+acquisition:
+  acquirer: A10 Networks
+  announced: 2026-06-15
+  post_acquisition_status: standalone
+  source: { url: https://www.a10networks.com/news/press-releases/a10-networks-acquires-trojai-inc-expanding-ai-roadmap/, tier: official, title: A10 Networks acquires TrojAI, accessed: 2026-07-16, origin: agent }
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the TrojAI documentation.
+  - date: 2026-07-16
+    summary: Recorded the A10 Networks acquisition, announced 2026-06-15.
 matrix_coverage:
   - asset: ai-model
     functions: [detect]
