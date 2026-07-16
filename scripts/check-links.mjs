@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Weekly link check over catalog source/product URLs. SSRF-guarded: refuses
+// Link check over catalog source/product URLs. SSRF-guarded: refuses
 // non-http(s) and private/loopback/link-local/metadata targets, and does NOT
 // auto-follow redirects into them (redirect: manual). Read-only, non-blocking;
 // writes `dead` to $GITHUB_OUTPUT only for unambiguously-gone links (404/410, or

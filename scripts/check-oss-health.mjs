@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Weekly health guard for open-source entries: every GitHub repository cited in the
+// Health guard for open-source entries: every GitHub repository cited in the
 // catalog (the top-level `url` or any `source.url`, root form only) should still
 // exist, live at the cited org/repo, not be archived, and show recent activity.
 // Read-only, tolerant of API outages and rate limits (those skip, never report).
@@ -98,7 +98,7 @@ if (flags.length) {
     'A cited GitHub repository needs a maintainer look (see GOVERNANCE "Open-source project health").',
     ...flags,
     '',
-    'Source: the GitHub repositories API, checked weekly.',
+    'Source: the GitHub repositories API.',
   ].join('\n');
   console.log(body);
   setOut('health', body);
