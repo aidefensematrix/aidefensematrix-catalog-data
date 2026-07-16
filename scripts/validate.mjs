@@ -184,6 +184,13 @@ const productDirs = existsSync(PRODUCTS_DIR)
 
 const seenSlugs = new Set(productDirs);
 const urlKeys = new Map(); // host+path -> slug
+// Names and aliases are the catalog's search and compare handles, so a string that
+// resolves to two products is ambiguous wherever it is typed. Collected here and
+// cross-checked after the loop: a name may be defined later than an alias that
+// collides with it, so a single pass cannot see both ends.
+const nameKeys = new Map(); // normalized name -> slug
+const aliasKeys = new Map(); // normalized alias -> [slug, ...]
+const normLabel = (s) => String(s).trim().toLowerCase();
 
 for (const slug of productDirs) {
   const dir = join(PRODUCTS_DIR, slug);
@@ -263,9 +270,15 @@ for (const slug of productDirs) {
   // Free-text length parity with the site schema (titles are covered in checkSource).
   checkLen(slug, 'name', p.name, 2, 80);
   checkLen(slug, 'vendor.value', p.vendor?.value, 2, 80);
+  if (typeof p.name === 'string') nameKeys.set(normLabel(p.name), slug);
   if (Array.isArray(p.aliases)) {
     if (p.aliases.length > 20) err(slug, `aliases has ${p.aliases.length} entries; the site schema caps it at 20`);
     p.aliases.forEach((a, i) => checkLen(slug, `aliases[${i}]`, a, 2, 80));
+    for (const a of p.aliases)
+      if (typeof a === 'string') {
+        const k = normLabel(a);
+        aliasKeys.set(k, [...(aliasKeys.get(k) ?? []), slug]);
+      }
   }
   if (Array.isArray(p.compliance_attestations?.value)) {
     if (p.compliance_attestations.value.length > 15)
@@ -409,6 +422,20 @@ for (const slug of productDirs) {
       if (s.origin === 'seeded')
         warn(slug, `${lbl} is still origin: seeded on an otherwise-verified entry — verify it (agent or reviewed) or leave the entry a pure stub`);
 
+}
+
+// ---- Name and alias collisions ----------------------------------------------
+// A label that resolves to two products is ambiguous in search and compare. Two
+// distinct shapes: an alias shared by two entries, and an alias that shadows some
+// other entry's product name (the likelier miss — a vendor named "Manifest" and an
+// unrelated product aliased "Manifest" read identically to a reader).
+for (const [key, slugs] of aliasKeys) {
+  const uniq = [...new Set(slugs)];
+  if (uniq.length > 1)
+    err(uniq[0], `alias "${key}" is also an alias of ${uniq.slice(1).map((s) => `"${s}"`).join(', ')} — an alias must resolve to one product`);
+  const nameOwner = nameKeys.get(key);
+  if (nameOwner && !uniq.includes(nameOwner))
+    err(uniq[0], `alias "${key}" is the product name of "${nameOwner}" — an alias must not shadow another entry's name`);
 }
 
 // ---- Report -----------------------------------------------------------------
