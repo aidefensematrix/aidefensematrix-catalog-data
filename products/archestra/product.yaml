@@ -6,8 +6,8 @@ vendor:
   value: Archestra
   source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-06-24, origin: reviewed }
 description:
-  value: "Archestra: Open-source MCP platform that runs MCP servers in isolated containers, applies deterministic guardrails against prompt injection, and adds a private registry with team-based access control."
-  source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-06-24, origin: reviewed }
+  value: "Archestra: Open-source, self-hosted AI platform that runs MCP servers in isolated Kubernetes containers behind an approval-flow catalog, with deterministic anti-exfiltration guardrails at the proxy."
+  source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-07-16, origin: agent }
 deployment:
   value: [self-hosted]
   source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-06-24, origin: reviewed }
@@ -20,6 +20,8 @@ changelog:
     summary: Added to the catalog from the Archestra documentation.
   - date: 2026-07-16
     summary: "Corrected matrix coverage source quotes (erratum) after a homepage revision."
+  - date: 2026-07-16
+    summary: Updated the description to match the current homepage.
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [identify, protect, detect]
