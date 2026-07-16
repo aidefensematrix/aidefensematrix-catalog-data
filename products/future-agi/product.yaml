@@ -1,0 +1,34 @@
+schema_version: 2
+name: Future AGI
+vendor:
+  value: Future AGI
+  source: { url: https://futureagi.com/, tier: official, title: Future AGI, accessed: 2026-07-16, origin: agent }
+url: https://futureagi.com/
+description:
+  value: "Future AGI: AI evaluation and observability platform with a Protect guardrails layer that screens prompts and responses in real time, blocking prompt injection, PII exposure, and hallucinations."
+  source: { url: https://futureagi.com/, tier: official, title: Future AGI, accessed: 2026-07-16, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://futureagi.com/pricing, tier: official, title: Future AGI Pricing, accessed: 2026-07-16, origin: agent }
+status:
+  value: active
+  source: { url: https://futureagi.com/, tier: official, title: Future AGI, accessed: 2026-07-16, origin: agent }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, HIPAA, GDPR, CCPA]
+  source: { url: https://futureagi.com/security, tier: official, title: Future AGI Security and Compliance, accessed: 2026-07-16, origin: agent, quote: "SOC 2 Type II Certified" }
+last_reviewed: 2026-07-16
+changelog:
+  - date: 2026-07-16
+    summary: Added to the catalog from the Future AGI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [detect, protect]
+    maturity: primary
+    note: Evaluation and observability for LLM applications and agents with an inline Guard layer of 18+ pre- and post-processing guardrail types (PII, prompt injection, content moderation, hallucination checks, data leakage) and per-rule enforce, monitor, or log modes.
+    source: { url: https://futureagi.com/platform/guard/, tier: official, title: Future AGI Guard, accessed: 2026-07-16, origin: agent, quote: "Each guardrail rule has its own enforcement mode. Enforce blocks the request (403). Monitor lets it through but logs a warning." }
+  - asset: ai-orchestration-tools
+    functions: [detect, protect]
+    maturity: secondary
+    note: Agent evaluation (tool selection, tracing) plus guard types scoped to the agent tool layer, including tool permissions and MCP security checks.
+    source: { url: https://futureagi.com/platform/guard/, tier: official, title: Future AGI Guard, accessed: 2026-07-16, origin: agent, quote: "system prompt protection, tool permissions, input validation, MCP security, custom expression rules" }
+primary_cell: { asset: runtime-ai-data, function: detect }

@@ -1,0 +1,31 @@
+schema_version: 2
+name: Rein Security
+vendor:
+  value: Rein Security
+  source: { url: https://reinsec.io/, tier: official, title: Rein Security, accessed: 2026-07-16, origin: agent }
+url: https://reinsec.io/
+description:
+  value: "Rein Security: Enterprise AI-agent security platform whose sidecar traces the full execution chain of agent actions and enforces dynamic guardrails against attacks, errors, and hallucinations."
+  source: { url: https://reinsec.io/platform, tier: official, title: Enterprise Agent Security Platform, accessed: 2026-07-16, origin: agent }
+deployment:
+  value: [self-hosted]
+  source: { url: https://reinsec.io/platform, tier: official, title: Enterprise Agent Security Platform, accessed: 2026-07-16, origin: agent }
+status:
+  value: active
+  source: { url: https://reinsec.io/, tier: official, title: Rein Security, accessed: 2026-07-16, origin: agent }
+last_reviewed: 2026-07-16
+changelog:
+  - date: 2026-07-16
+    summary: Added to the catalog from the Rein Security platform documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [detect, protect, identify]
+    maturity: primary
+    note: A sidecar monitors enterprise agents at runtime, capturing the full execution chain (prompts, service calls, tool invocations, resources touched) and enforcing learned-baseline guardrails on deviations. Includes real-time agent inventory and shadow AI detection with auto-discovery.
+    source: { url: https://reinsec.io/platform, tier: official, title: Enterprise Agent Security Platform, accessed: 2026-07-16, origin: agent, quote: "One simple to deploy sidecar, and Rein is monitoring and protecting any business risk." }
+  - asset: runtime-ai-data
+    functions: [detect, protect]
+    maturity: secondary
+    note: Screens agent interactions for prompt injection, misconfigured tools, user mistakes, and AI hallucinations, enforcing guardrails on deviations from learned normal behavior rather than known threat signatures.
+    source: { url: https://reinsec.io/platform, tier: official, title: Enterprise Agent Security Platform, accessed: 2026-07-16, origin: agent, quote: "Whether it’s a prompt injection, a misconfigured tool, a user mistake, or an AI hallucination- nothing slips through the cracks." }
+primary_cell: { asset: ai-orchestration-tools, function: detect }

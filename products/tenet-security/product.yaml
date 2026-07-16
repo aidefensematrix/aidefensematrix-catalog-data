@@ -1,0 +1,26 @@
+schema_version: 2
+name: Tenet Security
+vendor:
+  value: Tenet Security
+  source: { url: https://www.tenetsecurity.ai/, tier: official, title: Tenet Security, accessed: 2026-07-16, origin: agent }
+url: https://www.tenetsecurity.ai/
+description:
+  value: "Tenet Security: Runtime defense for AI agents that simulates where each agent action leads before it executes, preventing dangerous actions from inside the agent runtime without gateways or proxies."
+  source: { url: https://tenetsecurity.ai/product, tier: official, title: Tenet Security Platform, accessed: 2026-07-16, origin: agent }
+deployment:
+  value: [self-hosted]
+  source: { url: https://tenetsecurity.ai/product, tier: official, title: Tenet Security Platform, accessed: 2026-07-16, origin: agent }
+status:
+  value: active
+  source: { url: https://www.tenetsecurity.ai/, tier: official, title: Tenet Security, accessed: 2026-07-16, origin: agent }
+last_reviewed: 2026-07-16
+changelog:
+  - date: 2026-07-16
+    summary: Added to the catalog from the Tenet Security product documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [protect, detect, identify]
+    maturity: primary
+    note: Agent-side simulation across OS, network and API, and LLM-reasoning layers runs inside the agent runtime, projecting where each action leads and preventing dangerous actions before execution. Also maps every AI agent, MCP, and tool integration in the environment via lightweight traffic metadata.
+    source: { url: https://tenetsecurity.ai/product, tier: official, title: Tenet Security Platform, accessed: 2026-07-16, origin: agent, quote: "If it leads somewhere dangerous, Tenet prevents it before it ever executes." }
+primary_cell: { asset: ai-orchestration-tools, function: protect }
