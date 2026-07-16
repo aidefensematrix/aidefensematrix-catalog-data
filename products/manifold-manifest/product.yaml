@@ -1,0 +1,27 @@
+schema_version: 2
+name: Manifold Manifest
+aliases: []
+url: https://manifest.manifold.security
+vendor:
+  value: Manifold Security
+  source: { url: https://www.manifold.security/blog/manifest-ai-supply-chain-intelligence, tier: official, title: Introducing Manifest, accessed: 2026-07-15, origin: agent }
+description:
+  value: "Manifold Manifest: Free intelligence index that scores AI agent skills and plugins for supply chain risk, mapping what each one executes and who published it."
+  source: { url: https://www.manifold.security/blog/manifest-ai-supply-chain-intelligence, tier: official, title: Introducing Manifest, accessed: 2026-07-15, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://www.manifold.security/blog/manifest-ai-supply-chain-intelligence, tier: official, title: Introducing Manifest, accessed: 2026-07-15, origin: agent }
+status:
+  value: active
+  source: { url: https://www.manifold.security/blog/manifest-ai-supply-chain-intelligence, tier: official, title: Introducing Manifest, accessed: 2026-07-15, origin: agent }
+last_reviewed: 2026-07-15
+changelog:
+  - date: 2026-07-15
+    summary: Added to the catalog from the Manifold Security product announcement. Open-access tier covers skills and plugins; extension and MCP server intelligence is an enterprise capability.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify]
+    maturity: primary
+    note: Indexes agent skills and plugins from public registries and issues a per-asset security verdict from an execution graph of what the component runs and an environment graph of its publisher. Assessment only, with no enforcement. Extension and MCP server intelligence is enterprise-only.
+    source: { url: https://www.manifold.security/blog/manifest-ai-supply-chain-intelligence, tier: official, title: Introducing Manifest, accessed: 2026-07-15, origin: agent, quote: "Security verdict for each skill, informed by graph context" }
+primary_cell: { asset: ai-orchestration-tools, function: identify }
