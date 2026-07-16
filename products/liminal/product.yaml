@@ -17,10 +17,12 @@ status:
 compliance_attestations:
   value: [SOC 2 Type 1, SOC 2 Type 2]
   source: { url: https://www.liminal.ai/platform, tier: official, title: Liminal platform page, accessed: 2026-06-24, origin: reviewed, quote: "HIPAA Compliant SOC 2 Type 1 SOC 2 Type 2" }
-last_reviewed: 2026-06-24
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Liminal documentation.
+  - date: 2026-07-16
+    summary: "Corrected a coverage source quote (erratum) to the current page wording."
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
@@ -31,5 +33,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: Acts as a centralized multi-model gateway routing employee AI traffic and enforcing data-security policy and access privileges on every interaction.
-    source: { url: https://www.liminal.ai/platform, tier: official, title: Liminal platform page, accessed: 2026-06-24, origin: reviewed, quote: "Confidently enforce data security policies and access privileges in conversations with any generative AI model." }
+    source: { url: https://www.liminal.ai/platform, tier: official, title: Liminal platform page, accessed: 2026-07-16, origin: agent, quote: "Granular security controls allow organizations to fine-tune rule sets and policies across all AI interactions." }
 primary_cell: { asset: runtime-ai-data, function: protect }

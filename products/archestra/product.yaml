@@ -14,19 +14,21 @@ deployment:
 status:
   value: active
   source: { url: https://github.com/archestra-ai/archestra, tier: official, title: Archestra GitHub repository, accessed: 2026-06-24, origin: reviewed }
-last_reviewed: 2026-06-24
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Archestra documentation.
+  - date: 2026-07-16
+    summary: "Corrected matrix coverage source quotes (erratum) after a homepage revision."
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Runs MCP servers in isolated Kubernetes containers with audit trails, applies deterministic guardrails against data exfiltration and prompt injection, and inventories approved servers in a private registry.
-    source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-06-24, origin: reviewed, quote: "Run MCP servers in Kubernetes with enterprise-grade isolation, audit trails, and centralized governance across your entire organization." }
+    source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-07-16, origin: agent, quote: "Static guardrails preventing data exfiltration" }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
     note: Enforces per-team and per-user access to MCP servers and LLMs through RBAC, SSO, and OAuth on-behalf-of user-delegated access.
-    source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-06-24, origin: reviewed, quote: "Granular permissions and team-based access control" }
+    source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-07-16, origin: agent, quote: "Each environment has its own credentials and network egress policy. No tokens pasted into env vars." }
 primary_cell: { asset: ai-orchestration-tools, function: protect }

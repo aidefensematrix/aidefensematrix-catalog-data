@@ -17,7 +17,7 @@ status:
 compliance_attestations:
   value: [SOC 2 Type 2, HIPAA]
   source: { url: https://trust.whitecircle.com/, tier: official, title: White Circle Trust Center, accessed: 2026-07-16, origin: agent, quote_unavailable: "JS-rendered trust center; SOC 2 Type 2 and HIPAA confirmed in the rendered page, 2026-07" }
-last_reviewed: 2026-06-14
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-14
     summary: Added to the catalog from the White Circle documentation.

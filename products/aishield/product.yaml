@@ -13,7 +13,7 @@ deployment:
 status:
   value: active
   source: { url: https://www.boschaishield.com/, tier: official, title: AIShield homepage, accessed: 2026-06-10, origin: reviewed }
-last_reviewed: 2026-06-10
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the AIShield documentation.

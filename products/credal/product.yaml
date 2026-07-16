@@ -16,11 +16,13 @@ status:
   source: { url: https://docs.credal.ai/user-guide/getting-started/overview, tier: official, title: Credal documentation overview, accessed: 2026-06-24, origin: reviewed }
 compliance_attestations:
   value: [SOC 2 Type 2]
-  source: { url: https://www.credal.ai/, tier: official, title: Credal homepage, accessed: 2026-06-24, origin: reviewed, quote: "Credal infrastructure is SOC 2 Type 2 compliant, tested and verified." }
-last_reviewed: 2026-06-24
+  source: { url: https://www.credal.ai/security, tier: official, title: Credal security page, accessed: 2026-07-16, origin: agent, quote: "All of Credal’s infrastructure, including its UI and API and chat integrations, is SOC 2 Type 2 compliant." }
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Credal documentation.
+  - date: 2026-07-16
+    summary: "Corrected the compliance citation (erratum) to the security page."
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [identify, protect]

@@ -16,16 +16,18 @@ status:
 compliance_attestations:
   value: [SOC 2 Type 2]
   source: { url: https://www.credo.ai/legal/soc-2-type-ii-compliance, tier: official, title: Credo AI SOC 2 Type II compliance, accessed: 2026-06-13, origin: reviewed, quote: "Credo AI has received a SOC 2 Type II report demonstrating that our product has been reviewed and has met all requirements" }
-last_reviewed: 2026-06-07
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-07
     summary: Replaced seed stub with sourced details and matrix coverage from primary and press sources.
+  - date: 2026-07-16
+    summary: "Corrected two matrix coverage source quotes (erratum): replaced quotes with lines that support the cited cells."
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [govern, identify]
     maturity: primary
     note: Centralized registry of AI apps and agents with governance workflows and approval gates.
-    source: { url: https://www.credo.ai/product, tier: official, title: AI Registry and Discovery, accessed: 2026-06-07, origin: reviewed, quote: "AI oversight has moved beyond principles into a discipline requiring centralized inventory, risk management, and continuous monitoring." }
+    source: { url: https://www.credo.ai/product, tier: official, title: AI Registry and Discovery, accessed: 2026-07-16, origin: agent, quote: "Pre-built policy packs, automated evidence generation, and audit-ready documentation for every major AI regulation." }
   - asset: ai-model
     functions: [govern, identify]
     maturity: primary
@@ -35,5 +37,5 @@ matrix_coverage:
     functions: [govern]
     maturity: secondary
     note: Agent registry with agent cards covering purpose, tools, data sources, and guardrails.
-    source: { url: https://www.credo.ai/product, tier: official, title: Agent Registry, accessed: 2026-06-07, origin: reviewed, quote: "Continuous evaluation of agent traces to detect policy violations, drift, and unsafe behavior, with human-in-the-loop escalation." }
+    source: { url: https://www.credo.ai/product, tier: official, title: Agent Registry, accessed: 2026-07-16, origin: agent, quote: "Agent Registry with agent cards (purpose, tools, data sources, guardrails)" }
 primary_cell: { asset: ai-orchestration-tools, function: govern }

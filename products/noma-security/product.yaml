@@ -14,14 +14,16 @@ status:
   value: active
   source: { url: https://noma.security, tier: official, title: Noma Security (independent), accessed: 2026-06-07, origin: reviewed }
 compliance_attestations:
-  value: [SOC 2 Type 2, ISO 27001, HIPAA, GDPR]
-  source: { url: https://trust.noma.security/, tier: official, title: Noma Security Trust Center, accessed: 2026-07-04, origin: agent, quote: "HIPAA SOC 2 Type II EY ISO 27001 GPDR" }
-last_reviewed: 2026-06-07
+  value: [SOC 2 Type 2, ISO 27001, ISO 42001, HIPAA, GDPR]
+  source: { url: https://trust.noma.security/, tier: official, title: Noma Security Trust Center, accessed: 2026-07-16, origin: agent, quote_unavailable: "JS-rendered trust portal; the listed certifications confirmed in the rendered page, 2026-07" }
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-07
     summary: Verified details; independent as of review, with a Series B announced in July 2025.
   - date: 2026-07-04
     summary: Added verbatim source quotes to coverage and compliance citations.
+  - date: 2026-07-16
+    summary: Updated the compliance attestation list from the trust center and replaced its quote with a waiver.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
