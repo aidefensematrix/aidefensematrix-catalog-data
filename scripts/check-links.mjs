@@ -52,10 +52,18 @@ const dirs = existsSync(PRODUCTS)
 // those entries — handy for verifying the links of entries you just added or edited.
 const only = process.argv.slice(2);
 const selected = only.length ? dirs.filter((d) => only.includes(d)) : dirs;
+const skippedDiscontinued = [];
 for (const slug of selected) {
   const f = join(PRODUCTS, slug, 'product.yaml');
   if (!existsSync(f)) continue;
-  try { collect(slug, parse(readFileSync(f, 'utf8'))); } catch { /* validate.mjs reports parse errors */ }
+  try {
+    const doc = parse(readFileSync(f, 'utf8'));
+    // Discontinued products keep their entries as a historical record, so their
+    // cited pages are expected to go away; a dead link there is not a data
+    // defect. Skip them instead of re-reporting known-gone links.
+    if (doc?.status?.value === 'discontinued') { skippedDiscontinued.push(slug); continue; }
+    collect(slug, doc);
+  } catch { /* validate.mjs reports parse errors */ }
 }
 
 // A link check running from a CI datacenter IP can prove a link is GONE (404/410,
@@ -65,6 +73,14 @@ for (const slug of selected) {
 // So only unambiguous "gone" signals land in `dead` (which opens an issue);
 // everything else is logged as "unverified" and never blocks.
 const DEAD_STATUS = new Set([404, 410]);
+
+// Hosts whose pages are client-side rendered apps that serve error statuses
+// (including 404) to non-browser HTTP clients even when the page exists. A
+// "dead" result here proves nothing, so it is demoted to unverified; confirm
+// these in a real browser before treating them as gone.
+const BROWSER_ONLY_HOSTS = new Set([
+  'developer.salesforce.com',
+]);
 const LINK_UA = 'aidefensematrix-catalog-linkcheck/1.0';
 const BROWSER_UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36';
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -99,11 +115,13 @@ for (const [url, slugs] of urls) {
   if (u.protocol !== 'http:' && u.protocol !== 'https:') { blocked.push(`${url} (non-http)`); continue; }
   if (isBlockedHost(u.hostname)) { blocked.push(`${url} (blocked host)`); continue; }
   const r = await classify(url, [...slugs].join(', '));
-  if (r?.dead) dead.push(r.dead);
+  if (r?.dead && BROWSER_ONLY_HOSTS.has(u.hostname)) unverified.push(`${r.dead} [browser-only host]`);
+  else if (r?.dead) dead.push(r.dead);
   else if (r?.unverified) unverified.push(r.unverified);
   await sleep(250); // politeness gap; avoids self-inflicted 429s on rate-limited hosts
 }
 
+if (skippedDiscontinued.length) console.log(`Skipped ${skippedDiscontinued.length} discontinued entr${skippedDiscontinued.length === 1 ? 'y' : 'ies'}: ${skippedDiscontinued.join(', ')}`);
 if (blocked.length) console.log(`Refused ${blocked.length} SSRF-unsafe URL(s):\n  ${blocked.join('\n  ')}`);
 if (unverified.length) console.log(`Could not verify ${unverified.length} link(s) — bot wall, rate limit, or transient; not reported as dead:\n  ${unverified.join('\n  ')}`);
 if (dead.length) {
