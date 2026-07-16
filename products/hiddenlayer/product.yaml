@@ -13,7 +13,7 @@ deployment:
 status:
   value: active
   source: { url: https://hiddenlayer.com/company/, tier: official, title: HiddenLayer About Us, accessed: 2026-06-07, origin: reviewed }
-last_reviewed: 2026-06-07
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-07
     summary: Verified details from primary sources and replaced the seed stub.

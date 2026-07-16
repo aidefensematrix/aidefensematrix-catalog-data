@@ -14,18 +14,20 @@ deployment:
 status:
   value: active
   source: { url: https://www.databricks.com/product/unity-catalog, tier: official, title: Databricks Unity Catalog, accessed: 2026-06-09, origin: reviewed }
-last_reviewed: 2026-06-09
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-09
     summary: Enriched from the Databricks Unity Catalog documentation.
   - date: 2026-06-14
     summary: Refined product description wording.
+  - date: 2026-07-16
+    summary: "Corrected a coverage source quote (erratum) to the current page wording."
 matrix_coverage:
   - asset: ai-model
     functions: [identify, protect]
     maturity: primary
     note: Manages registered ML models, agent-tool functions, and MCP connections as securable objects with grant and revoke privileges, lineage, and audit.
-    source: { url: https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/ai-governance, tier: official, title: Unity Catalog AI governance, accessed: 2026-07-05, origin: agent, quote: "Register Azure Databricks-hosted and external models, MCP services, and agents in Unity Catalog, then grant access with standard Unity Catalog privileges." }
+    source: { url: https://learn.microsoft.com/en-us/azure/databricks/data-governance/unity-catalog/ai-governance, tier: official, title: Unity Catalog AI governance, accessed: 2026-07-16, origin: agent, quote: "Register AI assets as Unity Catalog securable objects, then grant and revoke access with the same privileges you use for tables and volumes." }
   - asset: training-data
     functions: [identify, protect]
     maturity: secondary

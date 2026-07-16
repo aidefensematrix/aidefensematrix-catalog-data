@@ -16,7 +16,7 @@ status:
 compliance_attestations:
   value: [SOC 2 Type 2, SOC 1 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, ISO 42001, HIPAA, HITRUST, GDPR]
   source: { url: https://www.rubrik.com/compliance-program, tier: official, title: Rubrik Security Compliance Program, accessed: 2026-07-05, origin: agent, quote: "At Rubrik, we are SOC 2 Type II certified against the security, confidentiality and availability criteria." }
-last_reviewed: 2026-06-10
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Rubrik documentation.

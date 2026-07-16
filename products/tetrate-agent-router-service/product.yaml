@@ -13,11 +13,13 @@ deployment:
   source: { url: https://router.tetrate.ai, tier: official, title: Tetrate Agent Router Service sign-in, accessed: 2026-07-05, origin: agent, quote: "Get started with Tetrate Agent Router Service" }
 status:
   value: active
-  source: { url: https://tetrate.io/agent-router-product, tier: official, title: Tetrate Agent Router product, accessed: 2026-07-05, origin: agent, quote: "Get Started with Tetrate Agent Router Service" }
-last_reviewed: 2026-07-05
+  source: { url: https://tetrate.io/agent-router-product, tier: official, title: Tetrate Agent Router product, accessed: 2026-07-16, origin: agent, quote: "Tetrate-hosted. Fastest way to get started. No infrastructure to manage." }
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-07-05
     summary: Added to the catalog from the Tetrate Agent Router documentation; the former Tetrate Agent Operations Director product page now redirects here.
+  - date: 2026-07-16
+    summary: "Corrected the status source quote (erratum) to the current page wording."
 matrix_coverage:
   - asset: ai-gateways-routers
     functions: [identify, protect]

@@ -18,10 +18,12 @@ deployment:
 status:
   value: active
   source: { url: https://a16y.ai/blog/from-mcptotal-to-autonomous-security-a-name-for-the-ai-era, tier: official, title: Autonomous Security rebrand announcement, accessed: 2026-06-10, origin: reviewed }
-last_reviewed: 2026-06-10
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Autonomous Security documentation; the vendor rebranded from MCPTotal in May 2026.
+  - date: 2026-07-16
+    summary: "Corrected an agent-identities coverage row (erratum) to match the current homepage."
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [identify, protect, detect]
@@ -29,8 +31,8 @@ matrix_coverage:
     note: Discovers installed agents and MCP servers across workstations, hosts MCP servers in sandboxed cloud workspaces backed by a vetted pre-scanned catalog, intercepts MCP traffic to block prompt injection and rogue MCP servers, and enforces centralized runtime policies with audit trails.
     source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-07-05, origin: agent, quote: "Continuously discover shadow AI, assess risks, remediate, and enforce real-time guardrails all in one place." }
   - asset: ai-agent-identities
-    functions: [protect]
+    functions: [identify]
     maturity: secondary
-    note: A centralized token vault stores the credentials that agents and MCP connections use, moving secrets out of local files and environment variables on developer machines.
-    source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-07-05, origin: agent, quote: "Move MCP servers and credentials out of unmanaged local environments and into a secure, isolated cloud." }
+    note: Exposure analysis surfaces exposed configurations and hardcoded secrets that AI agents accumulate on workstations, mapping the credential sprawl agentic activity creates.
+    source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-07-16, origin: agent, quote: "Identify exposed configs and hardcoded secrets instantly" }
 primary_cell: { asset: ai-orchestration-tools, function: protect }

@@ -20,7 +20,7 @@ acquisition:
   post_acquisition_status: unknown
   pending_close: true
   source: { url: https://www.checkpoint.com/press-releases/check-point-launches-agentic-network-security-orchestration-platform-turning-months-of-manual-policy-work-into-minutes-of-verified-action/, tier: official, title: Check Point press release noting the Deepchecks definitive agreement, accessed: 2026-06-10, origin: reviewed }
-last_reviewed: 2026-06-10
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Deepchecks documentation; recorded the Check Point acquisition of the Deepchecks team and intellectual property announced in May 2026 with the close still pending.
