@@ -12,12 +12,20 @@ deployment:
   value: [saas]
   source: { url: https://www.pynt.io/, tier: official, title: Pynt homepage, accessed: 2026-06-24, origin: reviewed }
 status:
-  value: active
-  source: { url: https://www.pynt.io/product/llm-security, tier: official, title: Pynt LLM Security page, accessed: 2026-06-24, origin: reviewed }
-last_reviewed: 2026-06-24
+  value: acquired
+  source: { url: https://www.globenewswire.com/news-release/2026/01/26/3225432/0/en/radware-acquires-pynt-to-strengthen-full-lifecycle-api-security.html, tier: official, title: Radware Acquires Pynt to Strengthen Full-Lifecycle API Security, accessed: 2026-07-16, origin: agent }
+acquisition:
+  acquirer: Radware
+  acquirer_slug: radware-agentic-ai-protection
+  announced: 2026-01-26
+  post_acquisition_status: standalone
+  source: { url: https://www.globenewswire.com/news-release/2026/01/26/3225432/0/en/radware-acquires-pynt-to-strengthen-full-lifecycle-api-security.html, tier: official, title: Radware Acquires Pynt to Strengthen Full-Lifecycle API Security, accessed: 2026-07-16, origin: agent }
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Pynt documentation.
+  - date: 2026-07-16
+    summary: Recorded the Radware acquisition, announced as completed 2026-01-26.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, detect]
