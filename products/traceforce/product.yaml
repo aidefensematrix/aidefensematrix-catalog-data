@@ -14,14 +14,16 @@ status:
   value: active
   source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: reviewed }
 compliance_attestations:
-  value: [ISO 27001, SOC 2 Type 1]
-  source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: agent, quote_unavailable: "Cert names rendered as logo images; ISO/SOC text absent from HTML fetch, 2026-07" }
+  value: [ISO 27001, SOC 2]
+  source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-07-16, origin: agent, quote_unavailable: "Certs shown only as logo images, no text or alt; ISO 27001 and SOC 2 badges confirmed via image filenames, 2026-07" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the TraceForce documentation.
   - date: 2026-07-04
     summary: Added verbatim source quotes and a quote waiver to coverage and compliance citations.
+  - date: 2026-07-16
+    summary: Refreshed the compliance attestation detail against the cited page.
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [identify, detect]
