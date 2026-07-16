@@ -1,0 +1,36 @@
+schema_version: 2
+name: Bifrost
+aliases:
+  - Bifrost AI Gateway
+vendor:
+  value: Maxim AI
+  source: { url: https://www.getmaxim.ai/bifrost, tier: official, title: Bifrost Enterprise AI Gateway, accessed: 2026-07-16, origin: agent }
+url: https://www.getmaxim.ai/bifrost
+description:
+  value: "Bifrost: Open-source AI gateway that unifies many LLM providers behind virtual keys with budgets, rate limits, and RBAC, plus enterprise guardrails screening prompts and responses in real time."
+  source: { url: https://github.com/maximhq/bifrost, tier: official, title: Bifrost GitHub repository, accessed: 2026-07-16, origin: agent }
+deployment:
+  value: [self-hosted]
+  source: { url: https://docs.getbifrost.ai/deployment-guides/enterprise/on-premise, tier: official, title: Bifrost On-Premise Deployment, accessed: 2026-07-16, origin: agent }
+status:
+  value: active
+  source: { url: https://github.com/maximhq/bifrost, tier: official, title: Bifrost GitHub repository, accessed: 2026-07-16, origin: agent }
+compliance_attestations:
+  value: [SOC 2, ISO 27001, HIPAA, GDPR]
+  source: { url: https://trust.getmaxim.ai/, tier: official, title: Maxim AI Trust Center, accessed: 2026-07-16, origin: agent, quote_unavailable: "Bot-walled trust center (403 to plain fetch), certification names verified via proxy in July 2026" }
+last_reviewed: 2026-07-16
+changelog:
+  - date: 2026-07-16
+    summary: Added to the catalog from the Bifrost documentation.
+matrix_coverage:
+  - asset: ai-gateways-routers
+    functions: [identify, protect]
+    maturity: primary
+    note: Open-source gateway unifying access to 20+ model providers behind virtual keys that control access permissions, budgets, rate limits, and routing per consumer. The enterprise tier adds OIDC and SCIM provisioning, RBAC, audit logs, and clustering.
+    source: { url: https://docs.getbifrost.ai/, tier: official, title: Bifrost AI Gateway documentation, accessed: 2026-07-16, origin: agent, quote: "The primary governance entity. Control access permissions, budgets, rate limits, and routing per consumer." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Enterprise guardrails validate prompts and responses in real time using CEL rules and provider profiles (native regex and secrets detection plus Presidio, Azure AI Language PII, AWS Bedrock, Azure Content Safety, Google Model Armor, CrowdStrike AIDR, GraySwan, and Patronus AI).
+    source: { url: https://docs.getbifrost.ai/enterprise/guardrails, tier: official, title: Bifrost Guardrails, accessed: 2026-07-16, origin: agent, quote: "The system validates inputs and outputs in real-time against your specified policies, ensuring responsible AI deployment with protection against harmful content, prompt injection, PII leakage, credential leakage, and policy violations." }
+primary_cell: { asset: ai-gateways-routers, function: protect }

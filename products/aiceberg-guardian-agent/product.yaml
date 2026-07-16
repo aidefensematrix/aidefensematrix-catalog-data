@@ -1,0 +1,39 @@
+schema_version: 2
+name: Aiceberg Guardian Agent
+aliases:
+  - Aiceberg
+vendor:
+  value: Aiceberg
+  source: { url: https://www.aiceberg.ai/, tier: official, title: Aiceberg, accessed: 2026-07-16, origin: agent }
+url: https://www.aiceberg.ai/
+description:
+  value: "Aiceberg Guardian Agent: Agentic AI security platform that examines prompts, responses, and agent activity in real time, blocking or redacting policy violations with explainable ML risk signals."
+  source: { url: https://www.aiceberg.ai/, tier: official, title: Aiceberg, accessed: 2026-07-16, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://docs.aiceberg.ai/getting-started/logging-into-aiceberg, tier: official, title: Logging into Aiceberg, accessed: 2026-07-16, origin: agent }
+status:
+  value: acquired
+  source: { url: https://cranium.ai/resources/press-release/cranium-ai-acquires-aiceberg-to-strengthen-its-end-to-end-ai-security-governance-and-agentic-ai-platform/, tier: official, title: Cranium AI Acquires Aiceberg, accessed: 2026-07-16, origin: agent }
+acquisition:
+  acquirer: Cranium AI
+  acquirer_slug: cranium
+  announced: 2026-05-21
+  post_acquisition_status: standalone
+  source: { url: https://cranium.ai/resources/press-release/cranium-ai-acquires-aiceberg-to-strengthen-its-end-to-end-ai-security-governance-and-agentic-ai-platform/, tier: official, title: Cranium AI Acquires Aiceberg, accessed: 2026-07-16, origin: agent }
+last_reviewed: 2026-07-16
+changelog:
+  - date: 2026-07-16
+    summary: Added to the catalog from the Aiceberg documentation, recording the Cranium AI acquisition announced 2026-05-21 with the product operating standalone.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: The Guardian Agent examines prompts and LLM responses in real time and blocks, redacts, or passes them per configured Profile policies (Listen and Enforce modes), with ML-based safety and security signals covering prompt injection and sensitive-information exposure.
+    source: { url: https://docs.aiceberg.ai/getting-started/start-here, tier: official, title: Aiceberg Docs Start here, accessed: 2026-07-16, origin: agent, quote: "Aiceberg will examine your prompt and signal results and either block, redact, or send it to the LLM, based on the policies you configure in your Profile." }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: Monitors agentic AI decisions and actions, including information an agent pulls via RAG, tool use, and memory, with explainable and traceable risk detection across connected AI systems.
+    source: { url: https://www.aiceberg.ai/, tier: official, title: Aiceberg, accessed: 2026-07-16, origin: agent, quote: "Identify exposure of sensitive information whenever an agent pulls information via RAG, Tool use, Memory, etc.." }
+primary_cell: { asset: runtime-ai-data, function: protect }
