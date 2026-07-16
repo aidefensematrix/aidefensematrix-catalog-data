@@ -1,6 +1,6 @@
 schema_version: 2
 name: Manifold Manifest
-aliases: [Manifest]
+aliases: []
 url: https://manifest.manifold.security
 vendor:
   value: Manifold Security
