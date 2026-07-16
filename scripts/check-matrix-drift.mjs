@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Weekly drift guard: confirm the companion's PUBLISHED matrix artifact still uses
+// Drift guard: confirm the companion's PUBLISHED matrix artifact still uses
 // the same asset/function ids we hold in matrix-ids.json. Read-only,
 // tolerant of an unreachable companion (the companion may not be deployed yet).
 // Writes `drift` to $GITHUB_OUTPUT only when ids actually diverge.

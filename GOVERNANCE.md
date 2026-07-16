@@ -71,7 +71,8 @@ project-health convention on top:
   on the product page.
 - All reports and PRs follow the same **affiliation-disclosure** rules. Edits by
   undisclosed vendor employees to their own or rival entries may be declined.
-- **One product per PR**, so edits stay independent. Git and the maintainer resolve
+- **One product per PR**, so edits stay independent. The maintainer may batch related
+  maintenance edits across products in a single PR. Git and the maintainer resolve
   concurrent edits to the same entry, and a human edit wins over an automated proposal.
 - **Errata**: when a shipped value proves wrong (a mis-mapped cell, a quote that does
   not support its claim, a stale fact), the fix lands as a normal PR whose changelog
