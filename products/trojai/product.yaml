@@ -22,7 +22,7 @@ matrix_coverage:
     functions: [detect]
     maturity: primary
     note: TrojAI Detect runs automated red teaming with more than 150 built-in security and safety tests, finding model weaknesses such as prompt injection, data leakage, and PII exposure before deployment.
-    source: { url: https://troj.ai/products/detect, tier: official, title: TrojAI Detect product page, accessed: 2026-07-05, origin: agent, quote: "Find security weaknesses before they can be exploited." }
+    source: { url: https://troj.ai/products/detect, tier: official, title: TrojAI Detect product page, accessed: 2026-07-15, origin: agent, quote: "Test AI agents and models to reveal unsafe behavior and security risks." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
