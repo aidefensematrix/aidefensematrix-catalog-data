@@ -12,12 +12,14 @@ deployment:
   value: [saas]
   source: { url: https://modelred.ai/, tier: official, title: ModelRed AI Security and Red Teaming Platform, accessed: 2026-06-13, origin: reviewed }
 status:
-  value: active
-  source: { url: https://modelred.ai/, tier: official, title: ModelRed AI Security and Red Teaming Platform, accessed: 2026-06-13, origin: reviewed }
-last_reviewed: 2026-06-13
+  value: discontinued
+  source: { url: https://modelred.ai/, tier: official, title: ModelRed site returns a deployment-not-found error, accessed: 2026-07-16, origin: agent, quote_unavailable: "site offline, deployment not found, 2026-07" }
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-13
     summary: Added to the catalog from the ModelRed documentation.
+  - date: 2026-07-16
+    summary: Status set to discontinued after the vendor site went offline and its certificates lapsed.
 matrix_coverage:
   - asset: ai-model
     functions: [detect]

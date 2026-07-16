@@ -12,17 +12,24 @@ deployment:
   value: [saas]
   source: { url: https://securiti.ai/, tier: official, title: Securiti Data and AI security, accessed: 2026-06-09, origin: reviewed }
 status:
-  value: active
-  source: { url: https://securiti.ai/, tier: official, title: Securiti Data and AI security, accessed: 2026-06-09, origin: reviewed }
+  value: acquired
+  source: { url: https://www.veeam.com/company/press-release/veeam-to-acquire-securiti-ai.html, tier: official, title: Veeam to acquire Securiti AI, accessed: 2026-07-16, origin: agent }
+acquisition:
+  acquirer: Veeam
+  announced: 2025-10-21
+  post_acquisition_status: standalone
+  source: { url: https://www.veeam.com/company/press-release/veeam-to-acquire-securiti-ai.html, tier: official, title: Veeam to acquire Securiti AI, accessed: 2026-07-16, origin: agent }
 compliance_attestations:
   value: [SOC 2 Type 2, ISO 27001, ISO 27701]
   source: { url: https://securiti.ai/security/, tier: official, title: Securiti Security and Compliance, accessed: 2026-06-13, origin: reviewed, quote: "Securiti is SOC2 Type II certified." }
-last_reviewed: 2026-06-09
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Securiti documentation.
   - date: 2026-07-04
     summary: Added verbatim source quotes to coverage and compliance citations.
+  - date: 2026-07-16
+    summary: Recorded the Veeam acquisition, announced 2025-10-21 and closed 2025-12-11.
 matrix_coverage:
   - asset: training-data
     functions: [identify, protect]

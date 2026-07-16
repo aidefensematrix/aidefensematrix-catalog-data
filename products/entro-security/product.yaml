@@ -12,14 +12,22 @@ deployment:
   value: [saas]
   source: { url: https://entro.security/, tier: official, title: Entro Security platform, accessed: 2026-06-09, origin: reviewed }
 status:
-  value: active
-  source: { url: https://entro.security/, tier: official, title: Entro Security platform, accessed: 2026-06-09, origin: reviewed }
-last_reviewed: 2026-06-09
+  value: acquired
+  source: { url: https://www.sailpoint.com/press-releases/sailpoint-closes-entro-security-acquisition, tier: official, title: SailPoint completes acquisition of Entro Security, accessed: 2026-07-16, origin: agent }
+acquisition:
+  acquirer: SailPoint
+  acquirer_slug: sailpoint-agent-identity-security
+  announced: 2026-06-15
+  post_acquisition_status: standalone
+  source: { url: https://www.sailpoint.com/press-releases/sailpoint-closes-entro-security-acquisition, tier: official, title: SailPoint completes acquisition of Entro Security, accessed: 2026-07-16, origin: agent }
+last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Entro Security documentation.
   - date: 2026-06-12
     summary: Refined matrix coverage.
+  - date: 2026-07-16
+    summary: Recorded the SailPoint acquisition, announced 2026-06-15 and closed 2026-06-29.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, detect]
