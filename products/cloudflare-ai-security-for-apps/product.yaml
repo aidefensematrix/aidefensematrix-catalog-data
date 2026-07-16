@@ -1,6 +1,6 @@
 schema_version: 2
 name: Cloudflare AI Security for Apps
-aliases: [Firewall for AI]
+aliases: [Cloudflare Firewall for AI]
 url: https://www.cloudflare.com/products/ai-security-for-apps/
 vendor:
   value: Cloudflare
