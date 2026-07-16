@@ -1,0 +1,46 @@
+schema_version: 2
+name: Confidential AI
+vendor:
+  value: Confidential AI
+  source: { url: https://confidential.ai/, tier: official, title: Confidential AI, accessed: 2026-07-16, origin: agent }
+url: https://confidential.ai/
+description:
+  value: "Confidential AI: Confidential-computing stack that runs AI inference, agents, and training inside hardware-encrypted TEEs, keeping prompts, model weights, credentials, and training data protected."
+  source: { url: https://confidential.ai/, tier: official, title: Confidential AI, accessed: 2026-07-16, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://confidential.ai/pricing, tier: official, title: Confidential AI Pricing, accessed: 2026-07-16, origin: agent }
+status:
+  value: active
+  source: { url: https://confidential.ai/, tier: official, title: Confidential AI, accessed: 2026-07-16, origin: agent }
+last_reviewed: 2026-07-16
+changelog:
+  - date: 2026-07-16
+    summary: Added to the catalog from the Confidential AI documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: primary
+    note: Private inference keeps prompts, responses, and model interactions encrypted in use inside TEEs.
+    source: { url: https://confidential.ai/, tier: official, title: Confidential AI, accessed: 2026-07-16, origin: agent, quote: "Customer prompts, responses, and model interactions are never visible." }
+  - asset: ai-model
+    functions: [protect]
+    maturity: secondary
+    note: Proprietary model weights stay inside hardware-encrypted enclaves during inference, training, and fine-tuning, with attested builds and client-verifiable confidentiality claims.
+    source: { url: https://confidential.ai/, tier: official, title: Confidential AI, accessed: 2026-07-16, origin: agent, quote: "Protect proprietary model weights during inference, training, and fine-tuning." }
+  - asset: ai-workload-platforms
+    functions: [protect]
+    maturity: secondary
+    note: Runs AI workloads (inference, agents, training) in TEEs via confidential VMs and the c8s Confidential Kubernetes platform.
+    source: { url: https://confidential.ai/, tier: official, title: Confidential AI, accessed: 2026-07-16, origin: agent, quote: "We run your AI workloads (inference, agents, training) in hardware-encrypted Trusted Execution Environments (TEEs)." }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: Confidential Agents run inside TEEs with hardware-enforced credential isolation for agent tokens and API keys.
+    source: { url: https://confidential.ai/, tier: official, title: Confidential AI, accessed: 2026-07-16, origin: agent, quote: "Tokens and API keys never exist in plaintext outside a TEE." }
+  - asset: training-data
+    functions: [protect]
+    maturity: secondary
+    note: Private training runs on sensitive data inside TEEs with cryptographic proof of exactly what data was used.
+    source: { url: https://confidential.ai/, tier: official, title: Confidential AI, accessed: 2026-07-16, origin: agent, quote: "Train on sensitive data and cryptographically prove exactly what data was used." }
+primary_cell: { asset: runtime-ai-data, function: protect }

@@ -1,0 +1,34 @@
+schema_version: 2
+name: Flint AI CLI
+aliases:
+  - Flint AI
+  - flintai
+vendor:
+  value: SandboxAQ
+  source: { url: https://flintai.dev/about, tier: official, title: About Flint AI, accessed: 2026-07-16, origin: agent }
+url: https://flintai.dev/
+description:
+  value: "Flint AI CLI: Free local-first CLI that scans AI agent source code for risky tool access and missing guardrails and runs adversarial evals against running agents, with findings mapped to OWASP ASI."
+  source: { url: https://flintai.dev/, tier: official, title: Flint AI CLI, accessed: 2026-07-16, origin: agent }
+deployment:
+  value: [self-hosted]
+  source: { url: https://flintai.dev/, tier: official, title: Flint AI CLI, accessed: 2026-07-16, origin: agent }
+status:
+  value: active
+  source: { url: https://flintai.dev/, tier: official, title: Flint AI CLI, accessed: 2026-07-16, origin: agent }
+last_reviewed: 2026-07-16
+changelog:
+  - date: 2026-07-16
+    summary: Added to the catalog from the Flint AI CLI documentation, scoped to the CLI (the vendor lists a separate Platform as coming soon).
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: primary
+    note: Scans agent source code for security vulnerabilities, misconfigurations, risky tool access, and missing guardrails across major agent frameworks, producing a per-agent reliability score with findings mapped to OWASP ASI and scored with CVSS v4.
+    source: { url: https://flintai.dev/, tier: official, title: Flint AI CLI, accessed: 2026-07-16, origin: agent, quote: "AI-powered analysis finds misconfigurations, risky tool access, missing guardrails, and other issues." }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    note: Sends adversarial and functional prompts (prompt injection, jailbreaks) to a running agent and scores the responses; offline testing with no inline enforcement.
+    source: { url: https://flintai.dev/, tier: official, title: Flint AI CLI, accessed: 2026-07-16, origin: agent, quote: "flintai eval sends adversarial and functional prompts to your running agent and scores the responses." }
+primary_cell: { asset: ai-orchestration-tools, function: detect }

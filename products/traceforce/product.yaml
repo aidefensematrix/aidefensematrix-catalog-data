@@ -24,11 +24,13 @@ changelog:
     summary: Added verbatim source quotes and a quote waiver to coverage and compliance citations.
   - date: 2026-07-16
     summary: Refreshed the compliance attestation detail against the cited page.
+  - date: 2026-07-16
+    summary: Refined matrix coverage.
 matrix_coverage:
   - asset: ai-orchestration-tools
-    functions: [identify, detect]
+    functions: [identify, detect, protect, respond]
     maturity: primary
-    note: Endpoint agents discover the AI tools, MCP servers, and skills running locally on each device and flag risk from how AI is actually used, with automated remediation into the existing security stack.
+    note: Endpoint agents discover the AI tools, MCP servers, and skills running locally on each device and flag risk from how AI is actually used, stopping dangerous tool calls with block and warn rules and remediating by auto-patching AI packages on-device and quarantining malicious MCPs.
     source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-07-04, origin: agent, quote: "Traceforce tracks every tool call from MCPs to CLIs and stops dangerous actions from being run." }
   - asset: ai-agent-identities
     functions: [identify]
