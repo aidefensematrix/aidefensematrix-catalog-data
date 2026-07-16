@@ -1,0 +1,42 @@
+schema_version: 2
+name: MCP Manager
+aliases: [MCP Manager by Usercentrics]
+url: https://mcpmanager.ai/
+vendor:
+  value: Usercentrics
+  source: { url: https://usercentrics.com/press/usercentrics-acquires-mcp-manager/, tier: official, title: Usercentrics acquires MCP Manager, accessed: 2026-07-15, origin: agent }
+description:
+  value: "MCP Manager: Gateway that brokers identity between AI clients and MCP servers, applying access rules, response redaction, and per-hop audit logging."
+  source: { url: https://docs.mcpmanager.ai/, tier: official, title: MCP Manager documentation introduction, accessed: 2026-07-15, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://docs.mcpmanager.ai/, tier: official, title: MCP Manager documentation introduction, accessed: 2026-07-15, origin: agent }
+status:
+  value: acquired
+  source: { url: https://usercentrics.com/press/usercentrics-acquires-mcp-manager/, tier: official, title: Usercentrics acquires MCP Manager, accessed: 2026-07-15, origin: agent }
+acquisition:
+  acquirer: Usercentrics
+  announced: 2026-01-14
+  post_acquisition_status: standalone
+  source: { url: https://usercentrics.com/press/usercentrics-acquires-mcp-manager/, tier: official, title: Usercentrics acquires MCP Manager, accessed: 2026-07-15, origin: agent }
+last_reviewed: 2026-07-15
+changelog:
+  - date: 2026-07-15
+    summary: Added to the catalog from the MCP Manager documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: primary
+    note: Governed gateway sits between AI clients and MCP servers, deciding which servers and tools each caller may reach, running configurable rules on every request, and writing an audit-log entry at each hop.
+    source: { url: https://docs.mcpmanager.ai/, tier: official, title: MCP Manager documentation introduction, accessed: 2026-07-15, origin: agent, quote: "Governance happens synchronously, in the path of every call." }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: The gateway authenticates the caller and forwards each request to the upstream server under a brokered identity, replacing long-lived tokens pasted into local config files; teams and roles decide which gateways a user can reach.
+    source: { url: https://docs.mcpmanager.ai/, tier: official, title: MCP Manager documentation introduction, accessed: 2026-07-15, origin: agent, quote: "decides which servers and tools they may reach" }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Responses returned from MCP servers are inspected and redacted inline before reaching the calling AI application, covering sensitive values such as PII carried in a tool result.
+    source: { url: https://docs.mcpmanager.ai/, tier: official, title: MCP Manager documentation introduction, accessed: 2026-07-15, origin: agent, quote: "inspects and redacts the response" }
+primary_cell: { asset: ai-orchestration-tools, function: protect }
