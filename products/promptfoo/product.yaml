@@ -18,7 +18,7 @@ acquisition:
   announced: 2026-03-09
   post_acquisition_status: standalone
   source: { url: https://www.promptfoo.dev/blog/promptfoo-joining-openai/, tier: official, title: Promptfoo is joining OpenAI, accessed: 2026-06-09, origin: reviewed }
-last_reviewed: 2026-06-09
+last_reviewed: 2026-07-17
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Promptfoo documentation. Recorded the OpenAI acquisition announced in March 2026 and since completed, with the product staying open source.

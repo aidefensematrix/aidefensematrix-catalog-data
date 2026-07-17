@@ -13,7 +13,7 @@ deployment:
 status:
   value: active
   source: { url: https://www.securityweek.com/ai-security-firm-straiker-emerges-from-stealth-with-21m-in-funding/, tier: press, title: "Straiker emerges from stealth with 21M in funding", accessed: 2026-06-07, origin: reviewed }
-last_reviewed: 2026-06-07
+last_reviewed: 2026-07-17
 changelog:
   - date: 2026-06-07
     summary: "Verified details from primary and press sources; mapped the Discover, Ascend, and Defend modules to matrix coverage."

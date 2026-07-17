@@ -19,7 +19,7 @@ acquisition:
   announced: 2025-09-11
   post_acquisition_status: rebranded
   source: { url: https://www.f5.com/company/news/press-releases/f5-to-acquire-calypsoai-to-bring-advanced-ai-guardrails-to-large-enterprises, tier: official, title: F5 to acquire CalypsoAI (announcement), accessed: 2026-06-07, origin: reviewed }
-last_reviewed: 2026-06-07
+last_reviewed: 2026-07-17
 changelog:
   - date: 2026-06-07
     summary: "Verified details from primary sources and recorded the F5 acquisition and rebrand to F5 AI Guardrails and F5 AI Red Team."

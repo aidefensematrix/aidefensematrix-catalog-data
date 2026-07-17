@@ -21,7 +21,7 @@ acquisition:
   announced: 2026-03-11
   post_acquisition_status: standalone
   source: { url: https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/wiz-acquisition/, tier: official, title: Google completes acquisition of Wiz, accessed: 2026-06-07, origin: reviewed }
-last_reviewed: 2026-06-08
+last_reviewed: 2026-07-17
 changelog:
   - date: 2026-06-07
     summary: Verified details and recorded the completed Google acquisition (March 2026).
