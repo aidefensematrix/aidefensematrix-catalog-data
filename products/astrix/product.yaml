@@ -18,7 +18,7 @@ acquisition:
   announced: 2026-05-04
   post_acquisition_status: standalone
   source: { url: https://blogs.cisco.com/news/cisco-announces-intent-to-acquire-astrix-security, tier: official, title: "Cisco announces intent to acquire Astrix Security", accessed: 2026-07-05, origin: agent }
-last_reviewed: 2026-06-07
+last_reviewed: 2026-07-17
 changelog:
   - date: 2026-06-07
     summary: Verified details from primary sources and recorded the Series B funding.

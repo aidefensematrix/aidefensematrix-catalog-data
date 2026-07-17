@@ -17,7 +17,7 @@ status:
 compliance_attestations:
   value: [SOC 2 Type 2]
   source: { url: https://www.lasso.security/blog/lasso-security-certified-with-global-soc2-type-2-compliance, tier: official, title: Lasso Security SOC 2 Type 2 compliance, accessed: 2026-06-13, origin: reviewed, quote: "we are officially SOC 2 Type 2 compliant" }
-last_reviewed: 2026-06-09
+last_reviewed: 2026-07-17
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Lasso Security documentation.

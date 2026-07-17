@@ -14,14 +14,14 @@ status:
   value: acquired
   source: { url: https://cxotoday.com/press-release/check-point-software-technologies-completes-acquisition-of-lakera-to-secure-the-worlds-ai-transformation/, tier: press, title: Check Point completes acquisition of Lakera, accessed: 2026-06-07, origin: reviewed }
 compliance_attestations:
-  value: [SOC 2, GDPR]
-  source: { url: https://www.lakera.ai/security, tier: official, title: Lakera security and privacy overview, accessed: 2026-07-04, origin: agent, quote: "our controls and practices meet stringent SOC-2 requirements. GDPR Our processes comply with GDPR regulations" }
+  value: [SOC 2 Type II, GDPR, HIPAA]
+  source: { url: https://trust.lakera.ai/, tier: official, title: Lakera trust center, accessed: 2026-07-17, origin: agent, quote: "2025 SOC2 Type II Report" }
 acquisition:
   acquirer: Check Point Software Technologies
   announced: 2025-09-16
   post_acquisition_status: standalone
   source: { url: https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/, tier: official, title: Check Point to acquire Lakera (announcement), accessed: 2026-06-07, origin: reviewed }
-last_reviewed: 2026-06-08
+last_reviewed: 2026-07-17
 changelog:
   - date: 2026-06-07
     summary: Verified details from primary sources and recorded the Check Point acquisition.
@@ -29,6 +29,8 @@ changelog:
     summary: Added compliance attestations (SOC 2 and GDPR) with a source.
   - date: 2026-07-04
     summary: Added verbatim source quotes to coverage and compliance citations.
+  - date: 2026-07-17
+    summary: Updated the compliance citation to the current trust portal and refreshed the attestation list.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]

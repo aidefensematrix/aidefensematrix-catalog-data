@@ -16,7 +16,7 @@ status:
 compliance_attestations:
   value: [SOC 2, ISO 27001, PCI DSS, ENS High]
   source: { url: https://www.paloaltonetworks.com/legal-notices/trust-center/compliance, tier: official, title: Palo Alto Networks Trust Center compliance, accessed: 2026-06-13, origin: reviewed, quote: "Palo Alto Networks is Esquema Nacional de Seguridad (ENS) High certified." }
-last_reviewed: 2026-06-07
+last_reviewed: 2026-07-17
 changelog:
   - date: 2026-06-07
     summary: Verified details; product line built in part on acquired Protect AI technology.
