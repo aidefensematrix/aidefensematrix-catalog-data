@@ -18,6 +18,8 @@ last_reviewed: 2026-06-13
 changelog:
   - date: 2026-06-13
     summary: Added to the catalog from the PointGuard AI documentation; the product was formerly named AppSOC.
+  - date: 2026-07-16
+    summary: Added a matrix coverage row from the vendor blog on the MCP Security Gateway.
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [identify, protect, detect]
@@ -29,4 +31,9 @@ matrix_coverage:
     maturity: secondary
     note: Adaptive red teaming and security posture management test agents and models for prompt injection, jailbreaks, and misconfigurations before deployment.
     source: { url: https://pointguardai.com/, tier: official, title: PointGuard AI Application Security and Governance, accessed: 2026-06-13, origin: reviewed, quote: "Adaptive red teaming simulates real-world attacks against agents, models, MCP integrations, and tool workflows to uncover weaknesses before deployment." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: The MCP Security Gateway inspects prompts, tool calls, and responses in real time, blocking unsafe instructions, with integrated AI-native DLP that can block, mask, or redact sensitive data in outbound responses and tool outputs.
+    source: { url: https://www.pointguardai.com/blog/introducing-the-mcp-security-gateway-the-next-generation-of-agentic-security, tier: official, title: Introducing the MCP Security Gateway, accessed: 2026-07-16, origin: agent, quote: "These guardrails detect and block unsafe instructions, preventing agents from executing unintended or harmful actions." }
 primary_cell: { asset: ai-orchestration-tools, function: protect }
