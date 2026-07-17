@@ -5,8 +5,8 @@ vendor:
   source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: reviewed }
 url: https://traceforce.ai/
 description:
-  value: "TraceForce: Endpoint AI security posture management that discovers the AI tools, agents, MCP servers, and skills running on devices, scores context-aware risk, and automates remediation."
-  source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: reviewed }
+  value: "TraceForce: Endpoint AI security that runs on the device to discover browser AI, desktop apps, CLI agents, and MCP connections, stopping dangerous actions and automating remediation."
+  source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-07-16, origin: agent }
 deployment:
   value: [saas]
   source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: reviewed }
@@ -25,7 +25,7 @@ changelog:
   - date: 2026-07-16
     summary: Refreshed the compliance attestation detail against the cited page.
   - date: 2026-07-16
-    summary: Refined matrix coverage.
+    summary: Refined matrix coverage and refreshed the description against the vendor site.
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [identify, detect, protect, respond]
