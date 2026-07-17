@@ -22,12 +22,14 @@ changelog:
     summary: Added to the catalog from the Cranium documentation.
   - date: 2026-07-17
     summary: Refreshed coverage source citations and quotes against the current vendor platform pages.
+  - date: 2026-07-17
+    summary: Refined matrix coverage against the current platform pages.
 matrix_coverage:
   - asset: ai-model
-    functions: [identify, detect]
+    functions: [identify, detect, govern]
     maturity: primary
-    note: Sensors discover internal and third-party AI systems; the platform auto-generates AI BOMs, runs agent-based red teaming via Cranium Arena, and maps systems to the EU AI Act, NIST AI RMF, and ISO frameworks.
-    source: { url: https://cranium.ai/platform/discover/, tier: official, title: Cranium Discover page, accessed: 2026-07-17, origin: agent, quote: "scans source code for models, datasets and AI packages" }
+    note: Sensors discover internal and third-party AI systems; the platform auto-generates AI BOMs, runs agent-based red teaming via Cranium Arena, and authors policy mapped to the EU AI Act, NIST AI RMF, and ISO 42001 through its Govern layer.
+    source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-07-17, origin: agent, quote: "scan your codebases, internal environments, cloud configurations and agentic layer to surface undocumented or unapproved AI systems" }
   - asset: ai-workload-platforms
     functions: [identify, detect]
     maturity: secondary

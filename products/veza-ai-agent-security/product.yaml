@@ -20,14 +20,16 @@ acquisition:
   post_acquisition_status: standalone
   source: { url: https://newsroom.servicenow.com/press-releases/details/2025/ServiceNow-to-Expand-Security-Portfolio-With-Acquisition-of-Vezas-Leading-AI-native-Identity-Security-Platform/default.aspx, tier: official, title: ServiceNow to expand Security portfolio with acquisition of Veza, accessed: 2026-07-16, origin: agent }
 compliance_attestations:
-  value: [SOC 2 Type 2, SOC 1 Type 1, ISO 27001, GDPR]
-  source: { url: https://trust.veza.com/, tier: official, title: Veza Trust Center, accessed: 2026-06-13, origin: reviewed, quote: "aligned to leading standards including SOC 2 Type II, ISO 27001, and GDPR" }
+  value: [SOC 2, ISO 27001]
+  source: { url: https://veza.com/company/trust-and-security/, tier: official, title: Veza trust and security page, accessed: 2026-07-17, origin: agent, quote: "Veza has earned the widely-recognized SOC 2 and ISO 27001 certifications" }
 last_reviewed: 2026-07-16
 changelog:
   - date: 2026-06-13
     summary: Added to the catalog from the Veza AI Agent Security documentation.
   - date: 2026-07-16
     summary: Recorded the ServiceNow acquisition, announced 2025-12-02 and closed 2026-03-02.
+  - date: 2026-07-17
+    summary: Updated the compliance citation to the current public trust page.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
