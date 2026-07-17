@@ -7,7 +7,7 @@ aliases: [Fortanix]
 url: https://www.fortanix.com/platform/confidential-ai
 description:
   value: "Fortanix Confidential AI: Confidential-computing runtime that runs models in a TEE so model weights and inference data stay encrypted and inaccessible to the underlying infrastructure."
-  source: { url: https://www.fortanix.com/platform/confidential-ai, tier: official, title: Fortanix Confidential AI, accessed: 2026-07-05, origin: agent, quote: "keeps both sensitive data and model IP encrypted and inaccessible to the underlying infrastructure" }
+  source: { url: https://www.fortanix.com/platform/confidential-ai, tier: official, title: Fortanix Confidential AI, accessed: 2026-07-17, origin: agent, quote: "Fortanix Confidential AI secures sensitive data, proprietary frontier models, and agents across the full AI lifecycle." }
 deployment:
   value: [self-hosted]
   source: { url: https://www.fortanix.com/platform/confidential-ai, tier: official, title: Fortanix Confidential AI, accessed: 2026-07-05, origin: agent }
@@ -18,15 +18,17 @@ last_reviewed: 2026-07-05
 changelog:
   - date: 2026-07-05
     summary: Added to the catalog from the Fortanix Confidential AI documentation.
+  - date: 2026-07-17
+    summary: Refreshed source quotes against the updated vendor page.
 matrix_coverage:
   - asset: ai-model
     functions: [protect]
     maturity: primary
     note: Runs proprietary models inside a confidential-computing TEE so model IP stays encrypted and inaccessible to the host and cloud operator.
-    source: { url: https://www.fortanix.com/platform/confidential-ai, tier: official, title: Fortanix model IP protection, accessed: 2026-07-05, origin: agent, quote: "keeps both sensitive data and model IP encrypted and inaccessible to the underlying infrastructure" }
+    source: { url: https://www.fortanix.com/platform/confidential-ai, tier: official, title: Fortanix model IP protection, accessed: 2026-07-17, origin: agent, quote: "keeps both data and model IP inaccessible to the underlying infrastructure, with verifiable trust and cryptographic guarantee" }
   - asset: runtime-ai-data
     functions: [protect]
     maturity: secondary
     note: Protects sensitive data and inference in use across the AI lifecycle by keeping it encrypted inside the trusted execution environment.
-    source: { url: https://www.fortanix.com/platform/confidential-ai, tier: official, title: Fortanix inference data protection, accessed: 2026-07-05, origin: agent, quote: "Fortanix Confidential AI delivers end-to-end protection for proprietary frontier models, sensitive data, and inference across the full AI lifecycle." }
+    source: { url: https://www.fortanix.com/platform/confidential-ai, tier: official, title: Fortanix inference data protection, accessed: 2026-07-17, origin: agent, quote: "keeping sensitive data, model weights, and inference protected, even from privileged insiders" }
 primary_cell: { asset: ai-model, function: protect }
