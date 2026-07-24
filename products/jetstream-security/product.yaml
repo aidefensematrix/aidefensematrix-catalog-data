@@ -1,0 +1,40 @@
+schema_version: 2
+name: JetStream Security
+vendor:
+  value: JetStream Security
+  source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent }
+aliases: [JetStream, SAIG Platform]
+url: https://jetstream.security
+description:
+  value: "JetStream Security: AI governance platform that discovers AI agents, models, and MCP servers, binds them to accountable identities, and enforces approved Blueprint designs at runtime."
+  source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent }
+status:
+  value: active
+  source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent }
+compliance_attestations:
+  value: [FedRAMP High]
+  source: { url: https://jetstream.security/executive-order-federal-ai-directive-fedramp/, tier: official, title: Rethinking AI Risk with JetStream, accessed: 2026-07-24, origin: agent, quote: "Build your AI action plan with JetStream, now FedRAMP High certified." }
+last_reviewed: 2026-07-24
+changelog:
+  - date: 2026-07-24
+    summary: Added to the catalog from the JetStream Security platform documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [govern, identify, protect, detect]
+    maturity: primary
+    note: AI Blueprints define the approved models, tools, identities, and guardrails for each workflow as versioned operational contracts; discovery inventories agents, MCP servers, and AI-enabled apps, and runtime drift from the approved design is flagged for approval or shutdown.
+    source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent, quote: "An AI Blueprint™ is a living operational contract that defines approved models, tools, identities, guardrails, and ownership for an AI workflow." }
+  - asset: ai-agent-identities
+    functions: [protect, identify]
+    maturity: primary
+    note: The Identity Broker binds agents, service accounts, and non-human identities to accountable human owners and replaces raw model-provider secrets with scoped, revocable virtual keys that carry least-privilege authorization across agent hand-offs.
+    source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent, quote: "JetStream binds agents, service accounts, and model usage to a provable human owner through the Identity Broker™, ensuring every AI action is attributable and revocable." }
+  - asset: ai-model
+    functions: [protect, detect, identify]
+    maturity: secondary
+    note: Discovers and inventories models across the environment, enforces Blueprint-scoped models at runtime, prevents unapproved model substitutions, and detects drift from the approved design.
+    source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent, quote: "JetStream enforces Blueprint-scoped models, identity delegation chains, and key controls in real time" }
+primary_cell: { asset: ai-orchestration-tools, function: govern }
