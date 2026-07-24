@@ -6,7 +6,7 @@ vendor:
 aliases: [JetStream, SAIG Platform]
 url: https://jetstream.security
 description:
-  value: "JetStream Security: AI governance platform that discovers AI agents, models, and MCP servers, binds them to accountable identities, and enforces approved Blueprint designs at runtime."
+  value: "JetStream Security is a security-first AI governance platform that makes every AI agent, model, workflow, and identity in an enterprise visible, attributed, and governed, continuously, at runtime, across the entire AI estate. AI is ready. Trust isn't. Only 17% of organizations run AI at production scale (UBS Evidence Lab), and the blocker is not the technology but the governance infrastructure most enterprises lack. The JetStream SAIG Platform™ (Security-first AI Governance) closes that gap through five integrated AI Trust Gaps that operate as a single governance loop, not a stack of features: Visibility, Design Control, Runtime Governance, Agentic Identity, and Financial Accountability. Governance is the accelerator, not the brake."
   source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent }
 deployment:
   value: [saas]
@@ -28,13 +28,23 @@ matrix_coverage:
     note: AI Blueprints define the approved models, tools, identities, and guardrails for each workflow as versioned operational contracts; discovery inventories agents, MCP servers, and AI-enabled apps, and runtime drift from the approved design is flagged for approval or shutdown.
     source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent, quote: "An AI Blueprint™ is a living operational contract that defines approved models, tools, identities, guardrails, and ownership for an AI workflow." }
   - asset: ai-agent-identities
-    functions: [protect, identify]
+    functions: [govern, detect, protect, identify, respond]
     maturity: primary
     note: The Identity Broker binds agents, service accounts, and non-human identities to accountable human owners and replaces raw model-provider secrets with scoped, revocable virtual keys that carry least-privilege authorization across agent hand-offs.
     source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent, quote: "JetStream binds agents, service accounts, and model usage to a provable human owner through the Identity Broker™, ensuring every AI action is attributable and revocable." }
   - asset: ai-model
-    functions: [protect, detect, identify]
-    maturity: secondary
+    functions: [protect, detect, identify, govern]
+    maturity: primary
     note: Discovers and inventories models across the environment, enforces Blueprint-scoped models at runtime, prevents unapproved model substitutions, and detects drift from the approved design.
     source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent, quote: "JetStream enforces Blueprint-scoped models, identity delegation chains, and key controls in real time" }
+- asset: ai-gateways-routers
+    functions: [govern, protect, detect, identify, respond]
+    maturity: primary
+    note: AI Hub provides a centralized gateway which introduces model control, mcp access, authentication, and control, inference escrow, and inline guardrails for AI usage in the cloud and on endpoints.
+    source: { url: https://jetstream.security/insights/jetstream-verified-mcp-governance-layer-for-enterprise-ai-agents/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent, quote: "The JetStream AI Hub governs runtime. It gives enterprises a unified control point over MCP and large language model traffic, including authentication, authorization, policy enforcement, and content inspection before and after each call." }
+- asset: runtime-ai-data
+    functions: [protect, detect, identify, govern]
+    maturity: primary
+    note: Runtime governance analyzes and inspects AI inference and activity in real time and controls what AI is actually doing in production, not just what it was designed to do
+    source: { url: https://jetstream.security/platform, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent, quote: "JetStream watches live AI activity and compares that to the approved design" }
 primary_cell: { asset: ai-orchestration-tools, function: govern }
