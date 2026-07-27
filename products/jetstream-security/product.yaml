@@ -23,6 +23,8 @@ changelog:
     summary: Added to the catalog from the JetStream Security platform documentation.
   - date: 2026-07-27
     summary: Extended matrix coverage with two additional rows.
+  - date: 2026-07-27
+    summary: "Corrected matrix coverage (erratum): added a function to one row."
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [govern, identify, protect, detect]
@@ -35,10 +37,10 @@ matrix_coverage:
     note: The Identity Broker binds agents, service accounts, and non-human identities to accountable human owners and replaces raw model-provider secrets with scoped, revocable virtual keys that carry least-privilege authorization across agent hand-offs.
     source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent, quote: "JetStream binds agents, service accounts, and model usage to a provable human owner through the Identity Broker™, ensuring every AI action is attributable and revocable." }
   - asset: ai-model
-    functions: [protect, detect, identify]
+    functions: [protect, detect, identify, govern]
     maturity: secondary
-    note: Discovers and inventories models across the environment, enforces Blueprint-scoped models at runtime, prevents unapproved model substitutions, and detects drift from the approved design.
-    source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent, quote: "JetStream enforces Blueprint-scoped models, identity delegation chains, and key controls in real time" }
+    note: AI Blueprints set the approved-model criteria for each workflow as a versioned operational contract, and the platform discovers and inventories models, enforces Blueprint-scoped models at runtime, prevents unapproved model substitutions, and detects drift from the approved design.
+    source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-27, origin: agent, quote: "An AI Blueprint™ is a living operational contract that defines approved models, tools, identities, guardrails, and ownership for an AI workflow." }
   - asset: ai-gateways-routers
     functions: [protect, detect]
     maturity: secondary

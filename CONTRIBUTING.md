@@ -53,6 +53,7 @@ A product is placed on the cells where it provides a defensive capability, by as
 - Issuing OAuth, brokering credentials, scoping access, or enforcing least privilege is **Protect**, not Govern.
 - A security inventory of discovered agents is **Identify**. A curated registry of record with approval and lifecycle workflows is Govern.
 - Monitoring agent behavior is **Detect**, not Govern.
+- Assign Govern by what an artifact governs, not by where it is implemented. One artifact can earn Govern on more than one row when it sets substantive policy for each asset. The product must own the authoring, approval, and versioning of that policy, not merely consume one that another system sets. Enforcing a policy at runtime is **Protect**, and monitoring against it is **Detect**.
 
 The vendor using the word "govern" or "governance" is not evidence. The capability has to match the cell. Because Govern is mostly a matter of policy and people rather than a product, it is rarely a headline: set `primary_cell` to `govern` only for a purpose-built governance, AI-TRiSM, or data-and-AI-catalog platform a buyer would choose instead of consultants. For any other product that also ships a governance artifact, claim `govern` as a supporting function, not the headline. Every Govern cell needs a `note` that names the artifact so a reviewer can see why it qualifies.
 
