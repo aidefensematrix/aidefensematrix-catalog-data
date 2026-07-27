@@ -17,10 +17,12 @@ status:
 compliance_attestations:
   value: [FedRAMP High]
   source: { url: https://jetstream.security/executive-order-federal-ai-directive-fedramp/, tier: official, title: Rethinking AI Risk with JetStream, accessed: 2026-07-24, origin: agent, quote: "Build your AI action plan with JetStream, now FedRAMP High certified." }
-last_reviewed: 2026-07-24
+last_reviewed: 2026-07-27
 changelog:
   - date: 2026-07-24
     summary: Added to the catalog from the JetStream Security platform documentation.
+  - date: 2026-07-27
+    summary: Extended matrix coverage with two additional rows.
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [govern, identify, protect, detect]
@@ -37,4 +39,14 @@ matrix_coverage:
     maturity: secondary
     note: Discovers and inventories models across the environment, enforces Blueprint-scoped models at runtime, prevents unapproved model substitutions, and detects drift from the approved design.
     source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-24, origin: agent, quote: "JetStream enforces Blueprint-scoped models, identity delegation chains, and key controls in real time" }
+  - asset: ai-gateways-routers
+    functions: [protect, detect]
+    maturity: secondary
+    note: The AI Hub is a single control point for MCP and model traffic, applying authentication, authorization, and policy at the call boundary, and inspecting content before and after each call.
+    source: { url: https://jetstream.security/insights/jetstream-verified-mcp-governance-layer-for-enterprise-ai-agents/, tier: official, title: JetStream Announces Verified MCP Governance Layer for Enterprise AI Agents, accessed: 2026-07-27, origin: agent, quote: "It gives enterprises a unified control point over MCP and large language model traffic, including authentication, authorization, policy enforcement, and content inspection before and after each call." }
+  - asset: runtime-ai-data
+    functions: [detect, protect, govern]
+    maturity: secondary
+    note: Runtime governance compares live AI activity against the approved Blueprint, enforces operational and security guardrails, records conformance evidence, and flags drift from the approved design.
+    source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-27, origin: agent, quote: "It enforces operational and security guardrails, records evidence, and flags drift" }
 primary_cell: { asset: ai-orchestration-tools, function: govern }
