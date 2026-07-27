@@ -20,6 +20,8 @@ last_reviewed: 2026-07-27
 changelog:
   - date: 2026-07-27
     summary: Added to the catalog from the Nudge Security documentation. AI agent discovery is offered as a research preview per the vendor feature page.
+  - date: 2026-07-27
+    summary: Refined matrix coverage.
 matrix_coverage:
   - asset: ai-workload-platforms
     functions: [identify]
@@ -37,8 +39,8 @@ matrix_coverage:
     note: Watches what employees send to AI tools through the browser extension, flagging file uploads, copy and paste of sensitive content, and API key exposure, and applies AI use policies in the browser while allowing risky app-to-AI data integrations to be revoked.
     source: { url: https://www.nudgesecurity.com/use-cases/ai-security, tier: official, title: Nudge Security AI security and governance use case, accessed: 2026-07-27, origin: agent, quote: "Monitor AI chatbot conversations for sensitive data" }
   - asset: ai-orchestration-tools
-    functions: [identify]
+    functions: [identify, protect]
     maturity: adjacent
-    note: Surfaces the integration paths that give AI tools access to business data, including OAuth grants, API connections, and MCP connections into critical SaaS apps.
+    note: Surfaces the integration paths that give AI tools access to business data, including OAuth grants, API connections, and MCP connections into critical SaaS apps, and lets an administrator revoke a risky grant so the connected tool loses access.
     source: { url: https://www.nudgesecurity.com/use-cases/ai-security, tier: official, title: Nudge Security AI security and governance use case, accessed: 2026-07-27, origin: agent, quote: "our API connections into your other critical SaaS apps discovers app-to-app integrations that allow AI tools access to your data, including MCP connections" }
 primary_cell: { asset: ai-workload-platforms, function: identify }
