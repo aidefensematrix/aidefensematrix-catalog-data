@@ -76,7 +76,7 @@ The rule of thumb: human contributors set `reviewed`, automated contributors set
 
 ## Licensing and the DCO
 
-By contributing, you agree your contribution is licensed under **CC BY-NC 4.0** and that you have the right to submit it (inbound equals outbound). You also grant Zeltser Security Corp and Cyber Defense Matrix LLC a non-exclusive, worldwide, royalty-free right to license your contribution for commercial use, which lets the operators answer the commercial-permission requests that the LICENSE invites.
+By contributing, you agree your contribution is licensed under **CC BY-NC 4.0** and that you have the right to submit it (inbound equals outbound). You also grant Zeltser Security Corp and Cyber Defense Matrix LLC a perpetual, irrevocable, non-exclusive, worldwide, royalty-free, transferable license, with the right to sublicense, to use, reproduce, modify, and distribute your contribution, including licensing it for commercial use, which lets the operators answer the commercial-permission requests that the LICENSE invites. The grant covers contributions you previously submitted. To the extent permitted by law, you agree not to assert moral rights against these uses. If this file and the site's terms describe the license differently, this file governs the contribution.
 
 Sign off every commit to certify the [Developer Certificate of Origin](https://developercertificate.org/):
 

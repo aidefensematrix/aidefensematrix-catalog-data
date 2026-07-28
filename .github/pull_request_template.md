@@ -18,3 +18,4 @@ what CI cannot. PRs that fail CI are not reviewed until green.
 - [ ] `last_reviewed` is set to today.
 - [ ] Affiliation disclosed (I do / do not work for or compete with this vendor): __________
 - [ ] Commits are signed off (`git commit -s`) for the DCO.
+- [ ] I agree to the licensing terms in CONTRIBUTING.md, including the license grant to the operators.
