@@ -1,0 +1,32 @@
+schema_version: 2
+name: Manifold
+vendor:
+  value: Manifold Security
+  source: { url: https://www.manifold.security/, tier: official, title: Manifold, accessed: 2026-07-28, origin: reviewed }
+url: https://www.manifold.security/
+aliases: [Manifold AIDR]
+description:
+  value: "Manifold: Endpoint platform that inventories AI agents and the MCP servers, tools, and skills they invoke, maps their privilege paths, and shuts down agent threats at runtime."
+  source: { url: https://www.manifold.security/, tier: official, title: Manifold, accessed: 2026-07-28, origin: reviewed }
+deployment:
+  value: [saas]
+  source: { url: https://www.manifold.security/, tier: official, title: Manifold, accessed: 2026-07-28, origin: reviewed }
+status:
+  value: active
+  source: { url: https://www.manifold.security/, tier: official, title: Manifold, accessed: 2026-07-28, origin: reviewed }
+last_reviewed: 2026-07-28
+changelog:
+  - date: 2026-07-28
+    summary: Added to the catalog as the enterprise platform, distinct from the free Manifest supply chain index already listed.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, detect, protect, respond]
+    maturity: primary
+    note: Inventories the agents, MCP servers, tools, and skills running on each endpoint, detects threats across the agent session as it executes, and acts on them by remediating, quarantining, or terminating the agent on the device.
+    source: { url: https://www.manifold.security/, tier: official, title: Manifold, accessed: 2026-07-28, origin: reviewed, quote: "Real-time detection of active agent threats. From first suspicious action to full attack chain. Remediate, quarantine, or terminate." }
+  - asset: ai-agent-identities
+    functions: [identify, detect, respond]
+    maturity: primary
+    note: Treats each agent as a principal, mapping the access it has accumulated and the delegation chains it acts through, then flags and contains agents whose behavior departs from that baseline.
+    source: { url: https://www.manifold.security/, tier: official, title: Manifold, accessed: 2026-07-28, origin: reviewed, quote: "Manifold surfaces the privilege paths, delegation chains, and capability combinations that create real exposure." }
+primary_cell: { asset: ai-orchestration-tools, function: detect }
