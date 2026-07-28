@@ -1,12 +1,13 @@
 schema_version: 2
-name: TraceForce
+name: Traceforce
 vendor:
-  value: TraceForce
-  source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: reviewed }
+  value: Traceforce
+  source: { url: https://traceforce.ai/, tier: official, title: Traceforce, accessed: 2026-07-28, origin: agent }
+aliases: [TraceForce]
 url: https://traceforce.ai/
 description:
-  value: "TraceForce: Endpoint AI security that runs on the device to discover browser AI, desktop apps, CLI agents, and MCP connections, stopping dangerous actions and automating remediation."
-  source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-07-16, origin: agent }
+  value: "Traceforce: Endpoint AI security that runs on the device to discover browser AI, desktop apps, CLI agents, and MCP connections, stopping dangerous actions and automating remediation."
+  source: { url: https://traceforce.ai/, tier: official, title: Traceforce, accessed: 2026-07-28, origin: agent }
 deployment:
   value: [saas]
   source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-06-09, origin: reviewed }
@@ -26,15 +27,21 @@ changelog:
     summary: Refreshed the compliance attestation detail against the cited page.
   - date: 2026-07-16
     summary: Refined matrix coverage and refreshed the description against the vendor site.
+  - date: 2026-07-28
+    summary: "Corrected the product name stylization (erratum) and recorded the former spelling as an alias."
+  - date: 2026-07-28
+    summary: "Corrected matrix coverage (erratum): removed the AI agent identities row and moved the primary cell to protect."
+  - date: 2026-07-28
+    summary: Added a runtime AI data coverage row sourced to the vendor launch post.
 matrix_coverage:
   - asset: ai-orchestration-tools
     functions: [identify, detect, protect, respond]
     maturity: primary
     note: Endpoint agents discover the AI tools, MCP servers, and skills running locally on each device and flag risk from how AI is actually used, stopping dangerous tool calls with block and warn rules and remediating by auto-patching AI packages on-device and quarantining malicious MCPs.
     source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-07-04, origin: agent, quote: "Traceforce tracks every tool call from MCPs to CLIs and stops dangerous actions from being run." }
-  - asset: ai-agent-identities
-    functions: [identify]
+  - asset: runtime-ai-data
+    functions: [protect, detect]
     maturity: secondary
-    note: Inventories the AI agents operating on managed devices as part of endpoint AI discovery.
-    source: { url: https://traceforce.ai/, tier: official, title: TraceForce, accessed: 2026-07-04, origin: agent, quote: "Traceforce runs on the device, securing browser AI, desktop apps, and CLI agents with full visibility." }
-primary_cell: { asset: ai-orchestration-tools, function: identify }
+    note: On-device policy rules inspect what employees send to AI apps and warn on or block an unsafe transfer, such as pasting a customer list into a chatbot, before it leaves the device.
+    source: { url: "https://www.ycombinator.com/launches/RxE-traceforce-catch-risky-agent-actions-your-security-gateway-will-never-spot", tier: official, title: Traceforce launch post (Y Combinator), accessed: 2026-07-28, origin: agent, quote: "Real-time controls: warn and block unsafe actions (like uploading a client list to a chatbot) before they happen." }
+primary_cell: { asset: ai-orchestration-tools, function: protect }
