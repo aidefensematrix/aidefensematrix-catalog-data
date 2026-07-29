@@ -1,0 +1,45 @@
+schema_version: 2
+name: QuilrAI Platform
+aliases: [Quilr]
+url: https://quilr.ai/platform
+vendor:
+  value: Quilr
+  source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent }
+description:
+  value: "QuilrAI Platform: Discovers AI agents and shadow AI, then routes every LLM and MCP call through gateways that check identity, redact sensitive data, and block policy violations inline."
+  source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://quilr.ai/security, tier: official, title: QuilrAI Security, accessed: 2026-07-29, origin: agent }
+status:
+  value: active
+  source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent }
+compliance_attestations:
+  value: [SOC 2 Type II]
+  source: { url: https://quilr.ai/security, tier: official, title: QuilrAI Security, accessed: 2026-07-29, origin: agent, quote: "SOC 2 Type II" }
+last_reviewed: 2026-07-29
+changelog:
+  - date: 2026-07-29
+    summary: Added to the catalog from the QuilrAI platform documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Inventories every agent and shadow AI tool found across endpoints, browsers, and MCP chains, records a bill of materials per agent covering tools, permissions, and data flows, and governs tool access through an MCP gateway that decides each call before it executes.
+    source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent, quote: "Scan endpoints, browsers, and MCP chains. Find every agent and shadow AI." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Every prompt and tool call traverses the platform, where purpose alignment and scope checks run alongside PII redaction, and the request is blocked, allowed, or modified before a result returns to the agent.
+    source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent, quote: "Purpose alignment, scope, and PII redaction, enforced inline." }
+  - asset: ai-gateways-routers
+    functions: [identify, protect]
+    maturity: secondary
+    note: A single OpenAI-compatible endpoint fronts a large model catalog, applying identity checks, rate limits, and guardrails to each request before routing it, so model access runs through one governed path rather than direct provider calls.
+    source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent, quote: "One gateway for 200+ models" }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: Each request carries a chain that ties the acting agent back to a user and a task, so an agent operates within the identity and scope granted for that call instead of inheriting broad standing access.
+    source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent, quote: "verified on every single request" }
+primary_cell: { asset: ai-orchestration-tools, function: protect }

@@ -1,0 +1,36 @@
+schema_version: 2
+name: Thales AI Security Fabric
+url: https://cpl.thalesgroup.com/data-security/ai-cybersecurity-solutions
+vendor:
+  value: Thales
+  source: { url: https://cpl.thalesgroup.com/data-security/ai-cybersecurity-solutions, tier: official, title: Thales AI Security Fabric product page, accessed: 2026-07-29, origin: agent }
+description:
+  value: "Thales AI Security Fabric: Runtime security for LLM applications and agents, blocking prompt injection and jailbreaks while protecting the enterprise data that RAG pipelines retrieve."
+  source: { url: https://cpl.thalesgroup.com/data-security/ai-cybersecurity-solutions, tier: official, title: Thales AI Security Fabric product page, accessed: 2026-07-29, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://cpl.thalesgroup.com/about-us/newsroom/thales-launches-ai-security-fabric, tier: official, title: Thales Launches AI Security Fabric, accessed: 2026-07-29, origin: agent }
+status:
+  value: active
+  source: { url: https://cpl.thalesgroup.com/data-security/ai-cybersecurity-solutions, tier: official, title: Thales AI Security Fabric product page, accessed: 2026-07-29, origin: agent }
+last_reviewed: 2026-07-29
+changelog:
+  - date: 2026-07-29
+    summary: Added to the catalog from the Thales AI Security Fabric product page and launch announcement.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Inspects traffic to and from applications built on LLMs at runtime, stopping prompt injection and jailbreak attempts, system prompt leakage, and disclosure of sensitive information, and applying content moderation to responses.
+    source: { url: https://cpl.thalesgroup.com/about-us/newsroom/thales-launches-ai-security-fabric, tier: official, title: Thales Launches AI Security Fabric, accessed: 2026-07-29, origin: agent, quote: "Providing real-time protection for AI-specific threats, including prompt injection, jailbreaking, system prompt leakage, model denial-of-service attacks, sensitive information leakage, and content moderation." }
+  - asset: training-data
+    functions: [identify, protect]
+    maturity: secondary
+    note: Finds sensitive structured and unstructured enterprise data and applies encryption and key management to it before that data is ingested into retrieval-augmented generation pipelines.
+    source: { url: https://cpl.thalesgroup.com/about-us/newsroom/thales-launches-ai-security-fabric, tier: official, title: Thales Launches AI Security Fabric, accessed: 2026-07-29, origin: agent, quote: "discover and secure sensitive structured and unstructured enterprise data before it is ingested into retrieval-augmented applications" }
+  - asset: ai-model
+    functions: [protect]
+    maturity: secondary
+    note: Runtime controls are aimed at model-layer abuse as well as application-layer abuse, covering data poisoning and model manipulation alongside denial-of-service attacks directed at the model.
+    source: { url: https://cpl.thalesgroup.com/data-security/ai-cybersecurity-solutions, tier: official, title: Thales AI Security Fabric product page, accessed: 2026-07-29, origin: agent, quote: "From reducing the risk of data poisoning and model manipulation" }
+primary_cell: { asset: runtime-ai-data, function: protect }
