@@ -1,0 +1,40 @@
+schema_version: 2
+name: Golf Gateway
+aliases: [Golf]
+url: https://docs.golf.dev/gateway/overview/golf-gateway
+vendor:
+  value: Golf
+  source: { url: https://golf.dev/, tier: official, title: Golf, accessed: 2026-07-29, origin: agent }
+description:
+  value: "Golf Gateway: Protocol-aware proxy between AI agents and MCP servers that brokers upstream credentials, applies role-based tool access, redacts PII, and logs every call."
+  source: { url: https://docs.golf.dev/gateway/overview/golf-gateway, tier: official, title: Golf Gateway overview, accessed: 2026-07-29, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://docs.golf.dev/gateway/overview/golf-gateway, tier: official, title: Golf Gateway overview, accessed: 2026-07-29, origin: agent }
+status:
+  value: active
+  source: { url: https://docs.golf.dev/gateway/overview/golf-gateway, tier: official, title: Golf Gateway overview, accessed: 2026-07-29, origin: agent }
+compliance_attestations:
+  value: [SOC 2 Type II]
+  source: { url: https://golf.dev/, tier: official, title: Golf, accessed: 2026-07-29, origin: agent, quote: "SOC 2 Type II" }
+last_reviewed: 2026-07-29
+changelog:
+  - date: 2026-07-29
+    summary: Added to the catalog from the Golf Gateway documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Runs inline as a transparent proxy between MCP clients and MCP servers, surfacing which servers and tools each agent reaches, enforcing access policy per server, tool, and resource, and recording every interaction in an audit trail that exports to Elasticsearch, Sentinel, or OTLP.
+    source: { url: https://docs.golf.dev/gateway/overview/golf-gateway, tier: official, title: Golf Gateway overview, accessed: 2026-07-29, origin: agent, quote: "Golf Gateway applies multiple security controls on every MCP request." }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: Agents authenticate once to the gateway, which injects the upstream API keys and OAuth tokens for each MCP server on their behalf, so long-lived credentials are not distributed into local agent configuration files.
+    source: { url: https://docs.golf.dev/gateway/overview/golf-gateway, tier: official, title: Golf Gateway overview, accessed: 2026-07-29, origin: agent, quote: "Centralized RBAC for non-human identities." }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: Responses returned by MCP servers are matched against configurable sensitive field lists and entity recognizers, and matching values are replaced before the response reaches the calling agent or the audit log.
+    source: { url: https://docs.golf.dev/gateway/guides/security/configure-pii-scrubbing, tier: official, title: Configure PII Scrubbing, accessed: 2026-07-29, origin: agent, quote: "automatically redact sensitive information from MCP responses" }
+primary_cell: { asset: ai-orchestration-tools, function: protect }

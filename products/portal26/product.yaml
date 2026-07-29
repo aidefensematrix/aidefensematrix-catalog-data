@@ -1,0 +1,31 @@
+schema_version: 2
+name: Portal26
+url: https://portal26.ai/generative-ai-trism-platform/
+vendor:
+  value: Portal26
+  source: { url: https://portal26.ai/generative-ai-trism-platform/, tier: official, title: Portal26 AI TRiSM Platform, accessed: 2026-07-29, origin: agent }
+description:
+  value: "Portal26: AI TRiSM platform that finds shadow AI and agent usage on the network, inspects prompts inline, and enforces AI usage policy with a forensic audit trail."
+  source: { url: https://portal26.ai/generative-ai-trism-platform/, tier: official, title: Portal26 AI TRiSM Platform, accessed: 2026-07-29, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://portal26.ai/generative-ai-trism-platform/, tier: official, title: Portal26 AI TRiSM Platform, accessed: 2026-07-29, origin: agent }
+status:
+  value: active
+  source: { url: https://portal26.ai/generative-ai-trism-platform/, tier: official, title: Portal26 AI TRiSM Platform, accessed: 2026-07-29, origin: agent }
+last_reviewed: 2026-07-29
+changelog:
+  - date: 2026-07-29
+    summary: Added to the catalog from the Portal26 platform pages.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, govern]
+    maturity: primary
+    note: Evaluates domains appearing on the network to detect AI tools and agents in use, including AI embedded inside other applications, and gives the organization a place to author AI and agent usage policy and enforce it against what the discovery engine finds.
+    source: { url: https://portal26.ai/generative-ai-trism-platform/, tier: official, title: Portal26 AI TRiSM Platform, accessed: 2026-07-29, origin: agent, quote: "Get immediate and real-time visibility into AI & agent usage, prompts, and productivity across all phases of your transformation." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Prompts and responses moving to and from AI tools are inspected inline for sensitive data, attack patterns are recognized as they occur, and the interaction record is retained in a certified audit vault for later investigation.
+    source: { url: https://portal26.ai/generative-ai-trism-platform/, tier: official, title: Portal26 AI TRiSM Platform, accessed: 2026-07-29, origin: agent, quote: "With inline data security, attack recognition, NIST certified forensic vaulting, compliance reporting, audit, and incident management" }
+primary_cell: { asset: ai-orchestration-tools, function: identify }

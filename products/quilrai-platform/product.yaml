@@ -1,0 +1,50 @@
+schema_version: 2
+name: QuilrAI Platform
+aliases: [Quilr]
+url: https://quilr.ai/platform
+vendor:
+  value: Quilr
+  source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent }
+description:
+  value: "QuilrAI Platform: Discovers AI agents and shadow AI, then routes every LLM and MCP call through gateways that check identity, redact sensitive data, and block policy violations inline."
+  source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://quilr.ai/security, tier: official, title: QuilrAI Security, accessed: 2026-07-29, origin: agent }
+status:
+  value: active
+  source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent }
+compliance_attestations:
+  value: [SOC 2 Type II]
+  source: { url: https://quilr.ai/security, tier: official, title: QuilrAI Security, accessed: 2026-07-29, origin: agent, quote: "SOC 2 Type II" }
+last_reviewed: 2026-07-29
+changelog:
+  - date: 2026-07-29
+    summary: Added to the catalog from the QuilrAI platform documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [govern, identify, protect, detect]
+    maturity: primary
+    note: Inventories every agent and shadow AI tool across endpoints, browsers, and MCP chains. Policy is authored in the product as a Guardian Agent definition covering permissions, redaction, and scope, then enforced on each tool call by an MCP gateway that decides the call before it executes.
+    source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent, quote: "set what each one is allowed to do, and block violations at runtime" }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Every prompt and tool call traverses the platform, where purpose alignment and scope checks run alongside PII redaction, and the request is blocked, allowed, or modified before a result returns to the agent.
+    source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent, quote: "Purpose alignment, scope, and PII redaction, enforced inline." }
+  - asset: ai-gateways-routers
+    functions: [protect, detect]
+    maturity: secondary
+    note: A single OpenAI-compatible endpoint fronts a large model catalog, applying identity checks, rate limits, and guardrails to each request before routing it, and the same guardrails scan the provider response on the return path so a violation is caught in both directions.
+    source: { url: https://quilr.ai/platform/for-engineers, tier: official, title: QuilrAI for Engineers, accessed: 2026-07-29, origin: agent, quote: "Responses are scanned on the way back" }
+  - asset: ai-agent-identities
+    functions: [identify, protect]
+    maturity: secondary
+    note: Maintains the record of which agents exist and what scope each holds, then ties every request to a chain running from user to agent to task, so an agent operates within the identity granted for that call instead of inheriting broad standing access.
+    source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent, quote: "verified on every single request" }
+  - asset: ai-model
+    functions: [identify]
+    maturity: adjacent
+    note: Discovery covers the model connections in use alongside agents and MCP servers, so unsanctioned model endpoints reached from endpoints or cloud are surfaced. Inventory only, with no control applied to the model itself.
+    source: { url: https://quilr.ai/platform, tier: official, title: QuilrAI Platform, accessed: 2026-07-29, origin: agent, quote: "Find every agent, model connection, MCP server, and copilot across endpoints and cloud" }
+primary_cell: { asset: ai-orchestration-tools, function: protect }
