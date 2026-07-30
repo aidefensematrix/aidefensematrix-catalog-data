@@ -11,12 +11,20 @@ deployment:
   value: [saas]
   source: { url: https://permiso.io/product, tier: official, title: Permiso product page, accessed: 2026-06-10, origin: reviewed }
 status:
-  value: active
-  source: { url: https://securityboulevard.com/2026/05/permiso-security-adds-ability-to-discover-and-secure-ai-agents/, tier: press, title: Security Boulevard on Permiso AI agent security launch, accessed: 2026-06-10, origin: reviewed }
-last_reviewed: 2026-06-10
+  value: acquired
+  source: { url: https://www.okta.com/newsroom/press-releases/okta-signs-definitive-agreement-to-acquire-permiso-security/, tier: official, title: Okta press release on the Permiso Security acquisition, accessed: 2026-07-30, origin: agent, quote: "Okta announced it has signed a definitive agreement to acquire Permiso Security" }
+acquisition:
+  acquirer: Okta
+  announced: 2026-07-30
+  pending_close: true
+  post_acquisition_status: standalone
+  source: { url: https://www.okta.com/newsroom/press-releases/okta-signs-definitive-agreement-to-acquire-permiso-security/, tier: official, title: Okta press release on the Permiso Security acquisition, accessed: 2026-07-30, origin: agent, quote: "Okta announced it has signed a definitive agreement to acquire Permiso Security" }
+last_reviewed: 2026-07-30
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Permiso documentation.
+  - date: 2026-07-30
+    summary: Recorded the announced acquisition by Okta, with the close still pending.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, detect, respond]
