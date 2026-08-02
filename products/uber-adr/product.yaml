@@ -1,0 +1,34 @@
+schema_version: 2
+name: Uber ADR
+aliases:
+  - ADR
+  - Agentic AI Detection and Response
+vendor:
+  value: Uber
+  source: { url: https://github.com/uber/ADR, tier: official, title: ADR repository on GitHub, accessed: 2026-08-02, origin: agent }
+url: https://github.com/uber/ADR
+description:
+  value: "Uber ADR: Open-source agentic AI security system from Uber that captures agent telemetry, benchmarks defenses, and detects risky agent behavior with a two-tier detector."
+  source: { url: https://github.com/uber/ADR/blob/main/README.md, tier: official, title: ADR README in the uber/ADR repository, accessed: 2026-08-02, origin: agent }
+deployment:
+  value: [self-hosted]
+  source: { url: https://github.com/uber/ADR/blob/main/README.md, tier: official, title: ADR README in the uber/ADR repository, accessed: 2026-08-02, origin: agent }
+status:
+  value: active
+  source: { url: https://github.com/uber/ADR, tier: official, title: ADR repository on GitHub, accessed: 2026-08-02, origin: agent }
+last_reviewed: 2026-08-02
+changelog:
+  - date: 2026-08-02
+    summary: Added to the catalog from the Uber ADR repository documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: primary
+    note: The ADR Detector monitors agent sessions with a two-tier architecture that combines high-recall triage with deeper agentic reasoning, surfacing risky behavior such as prompt injection across coding and support agents. ADR-Bench supplies 303 tasks covering 17 agent attack techniques.
+    source: { url: https://github.com/uber/ADR/blob/main/README.md, tier: official, title: ADR README in the uber/ADR repository, accessed: 2026-08-02, origin: agent, quote: "Its two-tier architecture combines high-recall triage with deeper agentic reasoning for suspicious sessions." }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: The ADR Sensor collects and normalizes telemetry on agent intent, tool use, and execution traces from AI coding tools such as Claude Code, Cursor, and Codex, as well as internal automation, giving security teams visibility into what enterprise AI agents are doing.
+    source: { url: https://github.com/uber/ADR/blob/main/README.md, tier: official, title: ADR README in the uber/ADR repository, accessed: 2026-08-02, origin: agent, quote: "ADR captures agent intent, tool use, and execution traces across 7+ AI coding tools on macOS, Linux, and Windows" }
+primary_cell: { asset: runtime-ai-data, function: detect }
