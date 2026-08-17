@@ -18,6 +18,8 @@ last_reviewed: 2026-08-17
 changelog:
   - date: 2026-08-17
     summary: Added to the catalog from the Anjuna documentation.
+  - date: 2026-08-17
+    summary: Extended matrix coverage with runtime AI data and AI agent identity rows.
 matrix_coverage:
   - asset: ai-model
     functions: [protect]
@@ -39,4 +41,14 @@ matrix_coverage:
     maturity: secondary
     note: Isolates agent runtimes and MCP servers in trusted execution environments so only attested code executes, with agent credentials and working data kept encrypted from the underlying cloud operator.
     source: { url: https://www.anjuna.io/solution/agentic-ai, tier: official, title: Anjuna agentic AI security, accessed: 2026-08-17, origin: agent, quote: "Seaglass ensures agents and MCP servers run only trusted code inside TEEs, with data and credentials protected even from cloud admins." }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: Runs AI workloads under always-on encryption inside the enclave, so inference inputs and working data stay encrypted in memory while the model is serving and remain unreadable to the host and its operators.
+    source: { url: https://www.anjuna.io/product/seaglass, tier: official, title: Anjuna Seaglass always-on encryption, accessed: 2026-08-17, origin: agent, quote: "running your workloads in a confidential environment with always-on encryption: in-use, at-rest, and in-transit" }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: Gives each agent workload a hardware-rooted attested identity and releases secrets and credentials to it only after attestation succeeds, so an agent proves what it is before it can reach data or tools.
+    source: { url: https://www.anjuna.io/solution/agentic-ai, tier: official, title: Anjuna agentic AI identity attestation, accessed: 2026-08-17, origin: agent, quote: "Immutable identity: agents prove exactly what they are before access" }
 primary_cell: { asset: ai-workload-platforms, function: protect }
