@@ -1,0 +1,27 @@
+schema_version: 2
+name: NOVA Framework
+aliases: [NOVA]
+url: https://novahunting.ai
+vendor:
+  value: SecurityBreak
+  source: { url: https://securitybreak.io/research/projects, tier: official, title: Open Research Projects, accessed: 2026-08-20, origin: agent }
+description:
+  value: "NOVA Framework: Open source rule engine that matches prompts against YARA-style rules combining keywords, semantic similarity, and LLM scoring to detect adversarial prompt content."
+  source: { url: https://github.com/Nova-Hunting/nova-framework, tier: official, title: "NOVA: The Prompt Pattern Matching", accessed: 2026-08-20, origin: agent }
+deployment:
+  value: [self-hosted]
+  source: { url: https://github.com/Nova-Hunting/nova-framework, tier: official, title: "NOVA: The Prompt Pattern Matching", accessed: 2026-08-20, origin: agent }
+status:
+  value: active
+  source: { url: https://github.com/Nova-Hunting/nova-framework, tier: official, title: "NOVA: The Prompt Pattern Matching", accessed: 2026-08-20, origin: agent }
+last_reviewed: 2026-08-20
+changelog:
+  - date: 2026-08-20
+    summary: Added to the catalog from the NOVA Framework repository and documentation. Open source under MIT, distributed as the nova-hunting Python package with a CLI and an application SDK.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [detect, protect]
+    maturity: primary
+    note: Rule engine for prompt content. YARA-inspired rules combine keyword and regex matching, semantic similarity with configurable thresholds, and LLM-scored conditions, run over prompts by the novarun CLI. The Python SDK adds a per-rule policy that blocks or redacts before the model call.
+    source: { url: https://github.com/Nova-Hunting/nova-framework, tier: official, title: "NOVA: The Prompt Pattern Matching", accessed: 2026-08-20, origin: agent, quote: "NOVA is an open-source prompt pattern matching system combining keyword detection, semantic similarity, and LLM-based evaluation to analyze and detect prompt content." }
+primary_cell: { asset: runtime-ai-data, function: detect }
