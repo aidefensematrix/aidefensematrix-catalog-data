@@ -9,7 +9,7 @@ description:
   value: "Advai Platform: Independent AI testing and monitoring that benchmarks candidate models, runs adversarial tests to set go-live thresholds, and watches deployed systems for drift and policy breaches."
   source: { url: https://www.advai.com/platform, tier: official, title: Advai Platform, accessed: 2026-08-20, origin: agent }
 deployment:
-  value: [saas]
+  value: [unknown]
   source: { url: https://www.advai.com/platform, tier: official, title: Advai Platform, accessed: 2026-08-20, origin: agent }
 status:
   value: active
@@ -21,6 +21,8 @@ last_reviewed: 2026-08-20
 changelog:
   - date: 2026-08-20
     summary: Added to the catalog from the Advai platform documentation.
+  - date: 2026-08-20
+    summary: "Corrected deployment (erratum): changed SaaS to unknown, because the vendor documentation does not state a deployment model."
 matrix_coverage:
   - asset: ai-model
     functions: [detect, govern]
