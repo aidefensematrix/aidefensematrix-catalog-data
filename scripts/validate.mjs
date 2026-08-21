@@ -34,9 +34,9 @@ const warnings = [];
 // rarely a vendor-primary cell, so these are listed for periodic confirmation —
 // informational only, never a build failure.
 const governHeadlines = [];
-// Slugs recording deployment as "unknown" (the vendor's own documentation states no
-// deployment model). Informational, never a build failure, but listed every run so the
-// value stays a last resort rather than a habit.
+// Slugs recording deployment as "unknown" (no deployment model found in the sources
+// checked). Informational, never a build failure, but listed every run so the value
+// stays a last resort rather than a habit.
 const unknownDeployments = [];
 // Mirrors the deployment enum in the site's Zod schema (src/content.config.ts), which
 // is authoritative. Duplicated here so the public repo's CI can reject a bad value on
@@ -243,7 +243,7 @@ for (const slug of productDirs) {
   checkSourced(slug, 'vendor', p.vendor);
   checkSourced(slug, 'description', p.description);
   checkSourced(slug, 'deployment', p.deployment);
-  // 'unknown' means the vendor publishes no deployment detail. It is a statement
+  // 'unknown' means no deployment model was found in the sources checked. It is a statement
   // about the evidence, so pairing it with a real value would contradict itself.
   // Deployment shape and vocabulary. The site's Zod schema is the authoritative gate,
   // but it runs only in the code repo, so without this the public repo's CI would merge
@@ -505,9 +505,9 @@ if (governHeadlines.length) {
 // Informational only. Deployment is normally sourceable, so the entries that fall
 // back to "unknown" are listed to keep the value a last resort rather than a habit.
 if (unknownDeployments.length) {
-  lines.push(`## ℹ️ Deployment not published (${unknownDeployments.length})`);
+  lines.push(`## ℹ️ Deployment not found (${unknownDeployments.length})`);
   lines.push(
-    'These entries record deployment as "unknown" because the vendor publishes none. Recheck periodically; a vendor that later documents its deployment model should be updated:',
+    'These entries record deployment as "unknown" because a search of the vendor materials did not turn one up. That is a statement about the search, not about the vendor, so recheck periodically and set a real value once one is found:',
   );
   for (const s of unknownDeployments) lines.push(`- ${s}`);
   lines.push('');

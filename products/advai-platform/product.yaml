@@ -22,7 +22,7 @@ changelog:
   - date: 2026-08-20
     summary: Added to the catalog from the Advai platform documentation.
   - date: 2026-08-20
-    summary: "Corrected deployment (erratum): changed SaaS to unknown, because the vendor documentation does not state a deployment model."
+    summary: "Corrected deployment (erratum): changed SaaS to unknown, recording that no deployment model was found in the sources checked."
 matrix_coverage:
   - asset: ai-model
     functions: [detect, govern]
