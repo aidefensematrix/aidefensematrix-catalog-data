@@ -1,0 +1,37 @@
+schema_version: 2
+name: Starfort
+aliases: [AIM Starfort, AIM Intelligence Starfort]
+url: https://www.aim-intelligence.com/starfort
+vendor:
+  value: AIM Intelligence
+  source: { url: https://www.aim-intelligence.com/starfort, tier: official, title: Starfort real-time AI guardrail, accessed: 2026-08-20, origin: agent }
+description:
+  value: "Starfort: Real-time AI guardrail that inspects prompts, responses, tool calls, and agent actions inline, masking sensitive data and enforcing policy across proxy, API, and endpoint deployments."
+  source: { url: https://www.aim-intelligence.com/starfort, tier: official, title: Starfort real-time AI guardrail, accessed: 2026-08-20, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.aim-intelligence.com/starfort, tier: official, title: Starfort deployment options, accessed: 2026-08-20, origin: agent }
+status:
+  value: active
+  source: { url: https://www.aim-intelligence.com/starfort, tier: official, title: Starfort real-time AI guardrail, accessed: 2026-08-20, origin: agent }
+last_reviewed: 2026-08-20
+changelog:
+  - date: 2026-08-20
+    summary: Added to the catalog from the AIM Intelligence product documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Inline guardrail over prompts and responses that blocks malicious input and masks sensitive data, using layered detection across regular expressions, named-entity recognition, context, and keywords, extending masking to attached files. Policies are authored from natural-language examples.
+    source: { url: https://www.aim-intelligence.com/, tier: official, title: AIM Intelligence guardrail platform, accessed: 2026-08-20, origin: agent, quote: "Proxy-level blocking of malicious prompts and real-time masking of sensitive data." }
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: secondary
+    note: Guardrail coverage extends past prompt and response text to the agent action path, inspecting tool calls, function arguments, and agent decisions in line, with request-level logging and audit trails in a central dashboard.
+    source: { url: https://www.aim-intelligence.com/starfort, tier: official, title: Starfort agent action control, accessed: 2026-08-20, origin: agent, quote: "Intercepts tool calls, API invocations, and agent actions in real time" }
+  - asset: ai-gateways-routers
+    functions: [protect, detect]
+    maturity: secondary
+    note: Enforcement can be placed at the model access layer as a server proxy inside the customer infrastructure, inspecting and controlling requests to managed model services and to self-hosted models reached through a routing layer.
+    source: { url: https://www.aim-intelligence.com/starfort, tier: official, title: Starfort integration modes, accessed: 2026-08-20, origin: agent, quote: "Deploy as a server proxy within your infrastructure. Supports AWS Bedrock, Azure AI, Vertex AI, and local models via LiteLLM or Kong AI Gateway." }
+primary_cell: { asset: runtime-ai-data, function: protect }

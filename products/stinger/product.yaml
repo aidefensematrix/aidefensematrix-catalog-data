@@ -1,0 +1,37 @@
+schema_version: 2
+name: Stinger
+aliases: [AIM Stinger, AIM Intelligence Stinger]
+url: https://www.aim-intelligence.com/stinger
+vendor:
+  value: AIM Intelligence
+  source: { url: https://www.aim-intelligence.com/stinger, tier: official, title: Stinger AI red teaming platform, accessed: 2026-08-20, origin: agent }
+description:
+  value: "Stinger: AI red teaming platform that generates and runs automated adversarial scenarios against models, agents, and live applications across text, image, audio, video, and physical AI."
+  source: { url: https://www.aim-intelligence.com/stinger, tier: official, title: Stinger AI red teaming platform, accessed: 2026-08-20, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.aim-intelligence.com/, tier: official, title: AIM Intelligence platform deployment, accessed: 2026-08-20, origin: agent }
+status:
+  value: active
+  source: { url: https://www.aim-intelligence.com/stinger, tier: official, title: Stinger AI red teaming platform, accessed: 2026-08-20, origin: agent }
+last_reviewed: 2026-08-20
+changelog:
+  - date: 2026-08-20
+    summary: Added to the catalog from the AIM Intelligence product documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [detect]
+    maturity: primary
+    note: Automated red teaming that generates adversarial scenarios across text, image, audio, video, and physical AI, spanning single-prompt and multi-turn jailbreak techniques, with a configurable judge and reporting that maps attack technique against vulnerability.
+    source: { url: https://www.aim-intelligence.com/stinger, tier: official, title: Stinger attack coverage, accessed: 2026-08-20, origin: agent, quote: "From foundation models to autonomous agents and production applications, Stinger finds critical vulnerabilities before attackers do." }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: Tests deployed AI applications and agents end to end rather than at the prompt layer, with target crawling and analysis, session handling for authenticated state, and per-endpoint attack goals.
+    source: { url: https://www.aim-intelligence.com/, tier: official, title: AIM Intelligence agentic red teaming, accessed: 2026-08-20, origin: agent, quote: "End-to-end agentic red teaming beyond prompt-level attacks" }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    note: Exercises retrieval pipelines for indirect prompt injection by planting payloads in documents the application trusts, across several payload types, file formats, and stealth injection techniques.
+    source: { url: https://www.aim-intelligence.com/stinger, tier: official, title: Stinger retrieval pipeline testing, accessed: 2026-08-20, origin: agent, quote: "Attacks targeting RAG pipelines" }
+primary_cell: { asset: ai-model, function: detect }

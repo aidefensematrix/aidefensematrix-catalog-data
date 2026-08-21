@@ -1,0 +1,40 @@
+schema_version: 2
+name: Advai Platform
+aliases: [Advai, Advai Model Arena]
+url: https://www.advai.com/platform
+vendor:
+  value: Advai
+  source: { url: https://www.advai.com/platform, tier: official, title: Advai Platform, accessed: 2026-08-20, origin: agent }
+description:
+  value: "Advai Platform: Independent AI testing and monitoring that benchmarks candidate models, runs adversarial tests to set go-live thresholds, and watches deployed systems for drift and policy breaches."
+  source: { url: https://www.advai.com/platform, tier: official, title: Advai Platform, accessed: 2026-08-20, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://www.advai.com/platform, tier: official, title: Advai Platform, accessed: 2026-08-20, origin: agent }
+status:
+  value: active
+  source: { url: https://www.advai.com/platform, tier: official, title: Advai Platform, accessed: 2026-08-20, origin: agent }
+compliance_attestations:
+  value: [ISO 27001, Cyber Essentials Plus]
+  source: { url: https://www.advai.com/platform, tier: official, title: Advai Platform security and quality, accessed: 2026-08-20, origin: agent, quote: "Certified to ISO 27001 and Cyber Essentials Plus" }
+last_reviewed: 2026-08-20
+changelog:
+  - date: 2026-08-20
+    summary: Added to the catalog from the Advai platform documentation.
+matrix_coverage:
+  - asset: ai-model
+    functions: [detect, govern]
+    maturity: primary
+    note: Adversarial and red-team testing of models before deployment, producing go-live thresholds and an evidence pack for sign-off. Model Arena benchmarks candidate models and configurations under the customer policy, latency, and cost constraints, yielding selection evidence for approvals.
+    source: { url: https://www.advai.com/platform, tier: official, title: Advai Platform testing, accessed: 2026-08-20, origin: agent, quote: "Red Teaming & Adversarial testing you can trust, grounded in repeatable methodology" }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    note: Continuous post-deployment monitoring that assesses AI system logs for performance, risk, and security indicators, raising alerts on policy breaches, data leakage risk, drift, and unexpected cost or tool use.
+    source: { url: https://www.advai.com/platform, tier: official, title: Advai Platform monitoring, accessed: 2026-08-20, origin: agent, quote: "Alerts for policy breaches, security threats, and data leakage risks" }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: Tests agentic systems for multi-step behaviour, tool misuse, and unsafe execution paths before go-live, then monitors tool use and escalation signals once the agents are running.
+    source: { url: https://www.advai.com/platform, tier: official, title: Advai Platform agent coverage, accessed: 2026-08-20, origin: agent, quote: "Test multi-step behaviour, tool misuse, and unsafe execution paths, then monitor real world tool use and escalation signals." }
+primary_cell: { asset: ai-model, function: detect }
