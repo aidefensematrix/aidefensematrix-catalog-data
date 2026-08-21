@@ -30,7 +30,7 @@ description:
   value: TODO one original sentence (20-200 chars) describing what it does.
   source: { url: https://example.com, tier: official, accessed: ${DATE}, origin: reviewed }
 deployment:
-  value: [saas]                    # any of: saas, self-hosted, hybrid
+  value: [saas]                    # any of: saas, self-hosted, hybrid; or unknown alone
   source: { url: https://example.com, tier: official, accessed: ${DATE}, origin: reviewed }
 status:
   value: active                    # active | acquired | discontinued | merged

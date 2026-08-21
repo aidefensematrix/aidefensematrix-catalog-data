@@ -34,6 +34,14 @@ const warnings = [];
 // rarely a vendor-primary cell, so these are listed for periodic confirmation —
 // informational only, never a build failure.
 const governHeadlines = [];
+// Slugs recording deployment as "unknown" (the vendor's own documentation states no
+// deployment model). Informational, never a build failure, but listed every run so the
+// value stays a last resort rather than a habit.
+const unknownDeployments = [];
+// Mirrors the deployment enum in the site's Zod schema (src/content.config.ts), which
+// is authoritative. Duplicated here so the public repo's CI can reject a bad value on
+// the contributor's own PR instead of deferring it to a build they cannot see.
+const DEPLOYMENT_VALUES = ['saas', 'self-hosted', 'hybrid', 'unknown'];
 const err = (slug, msg) => errors.push(`${slug}: ${msg}`);
 const warn = (slug, msg) => warnings.push(`${slug}: ${msg}`);
 
@@ -235,6 +243,36 @@ for (const slug of productDirs) {
   checkSourced(slug, 'vendor', p.vendor);
   checkSourced(slug, 'description', p.description);
   checkSourced(slug, 'deployment', p.deployment);
+  // 'unknown' means the vendor publishes no deployment detail. It is a statement
+  // about the evidence, so pairing it with a real value would contradict itself.
+  // Deployment shape and vocabulary. The site's Zod schema is the authoritative gate,
+  // but it runs only in the code repo, so without this the public repo's CI would merge
+  // a malformed or misspelled deployment and the failure would surface later, in a build
+  // the contributor cannot see.
+  if (!Array.isArray(p.deployment?.value)) {
+    if (p.deployment && 'value' in p.deployment)
+      err(slug, 'deployment value must be a list, for example [saas]');
+  } else {
+    const dep = p.deployment.value;
+    if (!dep.length) err(slug, 'deployment must list at least one value');
+    const unsupported = dep.filter((v) => !DEPLOYMENT_VALUES.includes(v));
+    if (unsupported.length)
+      err(
+        slug,
+        `deployment has unsupported value(s) ${unsupported.join(', ')}; use ${DEPLOYMENT_VALUES.join(', ')}`,
+      );
+    if (new Set(dep).size !== dep.length) err(slug, 'deployment values must be unique');
+    else if (dep.includes('unknown')) {
+      if (dep.length === 1) unknownDeployments.push(slug);
+      else
+        err(
+          slug,
+          `deployment "unknown" must stand alone, not be combined with ${dep
+            .filter((v) => v !== 'unknown')
+            .join(', ')}`,
+        );
+    }
+  }
   checkSourced(slug, 'status', p.status);
 
   // Compliance attestations (optional). checkSourced confirms { value, source };
@@ -462,6 +500,16 @@ if (governHeadlines.length) {
     'Govern is rarely a vendor-primary cell. Confirm each headlines Govern because it is a purpose-built governance, AI-TRiSM, or data-and-AI-catalog platform a buyer would choose instead of consultants (see CONTRIBUTING "Function assignment"):',
   );
   for (const s of governHeadlines) lines.push(`- ${s}`);
+  lines.push('');
+}
+// Informational only. Deployment is normally sourceable, so the entries that fall
+// back to "unknown" are listed to keep the value a last resort rather than a habit.
+if (unknownDeployments.length) {
+  lines.push(`## ℹ️ Deployment not published (${unknownDeployments.length})`);
+  lines.push(
+    'These entries record deployment as "unknown" because the vendor publishes none. Recheck periodically; a vendor that later documents its deployment model should be updated:',
+  );
+  for (const s of unknownDeployments) lines.push(`- ${s}`);
   lines.push('');
 }
 if (!errors.length && !warnings.length) lines.push('All checks passed. ✅');
