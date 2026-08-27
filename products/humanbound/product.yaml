@@ -1,0 +1,37 @@
+schema_version: 2
+name: Humanbound
+vendor:
+  value: Humanbound
+  source: { url: https://www.humanbound.ai/, tier: official, title: Humanbound AI agent security, accessed: 2026-08-27, origin: agent }
+aliases: [Humanbound Firewall]
+url: https://www.humanbound.ai/
+description:
+  value: "Humanbound: Open-source engine that runs adversarial attacks against a live AI agent over its API, scores its security posture, and adds a runtime firewall that blocks prompt injection."
+  source: { url: https://www.humanbound.ai/, tier: official, title: Humanbound AI agent security, accessed: 2026-08-27, origin: agent }
+deployment:
+  value: [self-hosted, saas]
+  source: { url: https://www.humanbound.ai/pricing, tier: official, title: Humanbound pricing, accessed: 2026-08-27, origin: agent }
+status:
+  value: active
+  source: { url: https://github.com/humanbound/humanbound, tier: official, title: Humanbound testing engine repository, accessed: 2026-08-27, origin: agent }
+last_reviewed: 2026-08-27
+changelog:
+  - date: 2026-08-27
+    summary: Added to the catalog from the Humanbound documentation.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: primary
+    note: Points at a running agent over its own HTTP endpoint and drives OWASP-aligned attack chains at the agent and its tool layer, probing tool abuse and scope violations across single-turn, multi-turn, and agentic modes, then grading each conversation with a judge model into a 0 to 100 posture score.
+    source: { url: https://docs.humanbound.ai/, tier: official, title: Humanbound testing modes, accessed: 2026-08-27, origin: agent, quote: "OWASP-aligned attack scenarios: prompt injection, jailbreaks, tool abuse, data exfiltration." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: The companion firewall library sits in front of the agent and blocks or flags injection and out-of-scope input inline before the model sees it, using heuristics, a classifier trained on the agent own test logs, and a judge model, with verdicts available to monitoring and SIEM pipelines.
+    source: { url: https://docs.humanbound.ai/defense/firewall/, tier: official, title: Humanbound Firewall, accessed: 2026-08-27, origin: agent, quote: "The Humanbound Firewall is a runtime defense layer for LLM agents that inspects every user message and blocks prompt injection, policy violations, and out-of-scope requests before they reach the agent." }
+  - asset: ai-model
+    functions: [detect]
+    maturity: secondary
+    note: Attack campaigns surface model-behavior failures such as jailbreaks and disclosure, though they reach the model only through the assembled agent rather than testing a model directly.
+    source: { url: https://www.humanbound.ai/, tier: official, title: Humanbound adversarial testing, accessed: 2026-08-27, origin: agent, quote: "You point Humanbound at the endpoint and it runs attacks against it as a black-box adversary." }
+primary_cell: { asset: ai-orchestration-tools, function: detect }
