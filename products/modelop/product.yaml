@@ -1,0 +1,37 @@
+schema_version: 2
+name: ModelOp
+aliases: [ModelOp Enterprise AI Command Center, MADE]
+vendor:
+  value: ModelOp
+  source: { url: https://www.modelop.com/enterprise-ai-command-center, tier: official, title: "ModelOp Enterprise AI Command Center", accessed: 2026-08-31, origin: agent }
+url: https://www.modelop.com
+description:
+  value: "ModelOp: System of record for the AI an enterprise builds and buys, mapping controls to regulatory frameworks and applying them across the AI lifecycle."
+  source: { url: https://www.modelop.com/enterprise-ai-command-center, tier: official, title: "ModelOp Enterprise AI Command Center", accessed: 2026-08-31, origin: agent }
+deployment:
+  value: [self-hosted, hybrid]
+  source: { url: https://www.modelop.com/ai-delivery-engine, tier: official, title: "ModelOp AI Delivery Engine deployment (on-prem, cloud, or hybrid)", accessed: 2026-08-31, origin: agent }
+status:
+  value: active
+  source: { url: https://www.modelop.com, tier: official, title: "ModelOp", accessed: 2026-08-31, origin: agent }
+last_reviewed: 2026-08-31
+changelog:
+  - date: 2026-08-31
+    summary: "Added to the catalog from the ModelOp product documentation."
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [govern, identify, protect]
+    maturity: primary
+    note: "Controls mapped to regulatory frameworks with audit evidence, over a registry of AI applications and agents that continuously discovers unregistered AI, with workflows that gate non-compliant actions."
+    source: { url: https://www.modelop.com/enterprise-ai-command-center, tier: official, title: "ModelOp Enterprise AI Command Center", accessed: 2026-08-31, origin: agent, quote: "Map controls to frameworks & regulations." }
+  - asset: ai-model
+    functions: [govern, identify, detect]
+    maturity: primary
+    note: "Govern artifact: model cards and validation summaries captured as audit evidence, with risk tiering that decides which controls apply to a model. Inventory synced from registries such as MLflow, Bedrock, SageMaker, Azure ML, and Vertex AI, and continuous monitoring for bias, drift, and performance."
+    source: { url: https://www.modelop.com/enterprise-ai-command-center, tier: official, title: "ModelOp model governance and monitoring", accessed: 2026-08-31, origin: agent, quote: "Defensible model cards, validation summaries, and evidence" }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: "Policy and guardrails applied to live AI traffic through integrations with AI and API gateways at execution time."
+    source: { url: https://www.modelop.com/enterprise-ai-command-center, tier: official, title: "ModelOp runtime policy enforcement", accessed: 2026-08-31, origin: agent, quote: "Enforce runtime policy at the AI gateway." }
+primary_cell: { asset: ai-orchestration-tools, function: govern }
