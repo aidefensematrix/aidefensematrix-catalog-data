@@ -1,0 +1,38 @@
+schema_version: 2
+name: Galileo
+aliases: [Splunk Agent Observability, Galileo Technologies]
+vendor:
+  value: Cisco
+  source: { url: https://www.splunk.com/en_us/about-splunk/acquisitions/galileo.html, tier: official, title: "Splunk Acquires Galileo", accessed: 2026-08-31, origin: agent }
+url: https://galileo.ai
+description:
+  value: "Galileo: Evaluates GenAI and agent behavior offline, then reuses those evaluations as runtime controls that screen model and tool traffic in production."
+  source: { url: https://docs.galileo.ai/what-is-galileo, tier: official, title: "What Is Galileo", accessed: 2026-08-31, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://galileo.ai, tier: official, title: "Galileo deployment options (SaaS, virtual private cloud, on-premises)", accessed: 2026-08-31, origin: agent }
+status:
+  value: acquired
+  source: { url: https://www.splunk.com/en_us/about-splunk/acquisitions/galileo.html, tier: official, title: "Splunk Acquires Galileo", accessed: 2026-08-31, origin: agent }
+acquisition:
+  acquirer: Cisco
+  announced: 2026-04-09
+  post_acquisition_status: folded
+  new_name: Splunk Agent Observability
+  source: { url: https://blogs.cisco.com/news/cisco-announces-the-intent-to-acquire-galileo, tier: official, title: "Cisco announces intent to acquire Galileo", accessed: 2026-08-31, origin: agent }
+last_reviewed: 2026-08-31
+changelog:
+  - date: 2026-08-31
+    summary: "Added to the catalog from the Galileo documentation and the Cisco and Splunk acquisition record."
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: "Agent Control evaluates LLM and tool inputs and outputs during agent execution and blocks unsafe content inline."
+    source: { url: https://docs.galileo.ai/concepts/agent-control/overview, tier: official, title: "Agent Control", accessed: 2026-08-31, origin: agent, quote: "It helps block harmful content, prompt injection, PII leakage, and other risks without requiring changes to agent code." }
+  - asset: ai-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: "Luna-2 evaluation models score agent and LLM application behavior, including multi-step agentic workflows."
+    source: { url: https://docs.galileo.ai/concepts/luna/luna, tier: official, title: "Luna-2 Overview", accessed: 2026-08-31, origin: agent, quote: "Luna-based metrics offer highly accurate and efficient evaluations for AI applications, particularly those with agentic workflows." }
+primary_cell: { asset: runtime-ai-data, function: protect }
