@@ -1,0 +1,32 @@
+schema_version: 2
+name: CloudMatos Prompt Firewall
+aliases: [Prompt Firewall, Matos Prompt Firewall]
+vendor:
+  value: CloudMatos
+  source: { url: https://cloudmatos.ai/solution/prompt-firewall/, tier: official, title: Prompt Firewall, accessed: 2026-09-03, origin: agent }
+url: https://cloudmatos.ai/solution/prompt-firewall/
+description:
+  value: "CloudMatos Prompt Firewall: Inline layer that inspects prompts and model responses for injection, jailbreaks, and sensitive-data leakage across LLM-driven applications."
+  source: { url: https://cloudmatos.ai/solution/prompt-firewall/, tier: official, title: Prompt Firewall, accessed: 2026-09-03, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://cloudmatos.ai/solution/prompt-firewall/, tier: official, title: Prompt Firewall, accessed: 2026-09-03, origin: agent }
+status:
+  value: active
+  source: { url: https://cloudmatos.ai/pricing/, tier: official, title: CloudMatos pricing, accessed: 2026-09-03, origin: agent }
+last_reviewed: 2026-09-03
+changelog:
+  - date: 2026-09-03
+    summary: Added to the catalog from the CloudMatos Prompt Firewall solution page, which is listed with published per-interaction pricing.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Sits between users and the model, classifying prompts against policy before the model sees them, rewriting or refusing unsafe input, and redacting secrets and regulated data from responses. Dashboards track prompt traffic, anomalies, and blocked attempts, with logs retained for audit.
+    source: { url: https://cloudmatos.ai/solution/prompt-firewall/, tier: official, title: Prompt Firewall, accessed: 2026-09-03, origin: agent, quote: "Prompt Firewall acts as an intelligent middle layer between your users and any LLM, inspecting every prompt and response in real-time." }
+  - asset: ai-orchestration-tools
+    functions: [protect]
+    maturity: secondary
+    note: Integrates with agent and retrieval frameworks and with generic API gateways, so the same policy layer applies to calls made through an orchestration framework rather than only to a direct chat surface.
+    source: { url: https://cloudmatos.ai/solution/prompt-firewall/, tier: official, title: Prompt Firewall, accessed: 2026-09-03, origin: agent, quote: "Plug directly into LangChain, LlamaIndex, or any REST API gateway." }
+primary_cell: { asset: runtime-ai-data, function: protect }

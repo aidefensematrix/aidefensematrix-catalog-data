@@ -1,0 +1,47 @@
+schema_version: 2
+name: PrivaSapien PERAI
+aliases: [PERAI, PrivaGalaxy, PrivaSapien]
+vendor:
+  value: PrivaSapien
+  source: { url: https://privasapien.com/, tier: official, title: PrivaSapien, accessed: 2026-09-03, origin: agent }
+url: https://privasapien.com/
+description:
+  value: "PrivaSapien PERAI: Platform pairing privacy-enhancing technologies with AI red teaming, inline inference guardrails, and runtime controls for AI agents and their tool calls."
+  source: { url: https://privasapien.com/, tier: official, title: PrivaSapien, accessed: 2026-09-03, origin: agent }
+deployment:
+  value: [unknown]
+  source: { url: https://privasapien.com/, tier: official, title: PrivaSapien, accessed: 2026-09-03, origin: agent }
+status:
+  value: active
+  source: { url: https://privasapien.com/, tier: official, title: PrivaSapien, accessed: 2026-09-03, origin: agent }
+last_reviewed: 2026-09-03
+changelog:
+  - date: 2026-09-03
+    summary: Added to the catalog from the PrivaSapien product overview.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: The Safe AI Inference tier places small-language-model guardrails inline on prompts and retrieval pipelines, pseudonymizing personal data before it reaches a model and screening prompts for attacks. Named components include FireLM, PrivacyRAI, SecureRAI, ContextRAI, and SafeRAI.
+    source: { url: https://privasapien.com/, tier: official, title: PrivaSapien, accessed: 2026-09-03, origin: agent, quote: "Secure AI inference with real-time control across prompts and RAG pipelines ensuring PII encryption, tokenization, masking, and attack prevention" }
+  - asset: ai-orchestration-tools
+    functions: [protect, detect]
+    maturity: secondary
+    note: The Trusted Agents tier firewalls agent prompts and tool-calling context, checks whether an agent behaves as its description claims, monitors agent-to-model interactions, and routes high-risk actions to a human. Named components include ClawTron, ToolClaw, LLMClaw, ContextClaw, and Claw X-Ray.
+    source: { url: https://privasapien.com/, tier: official, title: PrivaSapien, accessed: 2026-09-03, origin: agent, quote: "Govern AI agents with prompt and tool context firewalls, secure MCP interactions, and human-in-the-loop control for high-risk actions" }
+  - asset: ai-model
+    functions: [identify, detect, govern]
+    maturity: secondary
+    note: Agent Turing runs white-box, black-box, and multi-stage adversarial testing against models for privacy, security, safety, fairness, and explainability, and results populate a catalogue of AI assets with risk ratings. EthicsTron turns findings into impact reports mapped to named AI regulations.
+    source: { url: https://privasapien.com/blog/ai-trism-7-layers-generative-ai-governance, tier: official, title: AI TRiSM and the seven layers of generative AI governance, accessed: 2026-09-03, origin: agent, quote: "EthicsTron generates regulatory-aligned AI impact assessment reports that map product outputs to the specific provisions of DPDP, RBI FREE-AI, India AI Governance Guidelines, EU AI Act, and NIST AI RMF." }
+  - asset: ai-agent-identities
+    functions: [identify, protect]
+    maturity: secondary
+    note: Maintains a listing of trusted tools and agents, analyses an agent description for security problems, and checks at runtime whether an agent is acting within what its description claims before its actions are allowed to proceed.
+    source: { url: https://privasapien.com/, tier: official, title: PrivaSapien, accessed: 2026-09-03, origin: agent, quote: "Identifying trusted and risky agents. Protecting agentic conversations & tool usage inline." }
+  - asset: training-data
+    functions: [protect]
+    maturity: secondary
+    note: Privacy-preserving machine learning supplies training data that has been anonymized or synthesized rather than used raw, drawing on differential privacy, k-anonymity, t-closeness, synthetic generation, and multi-party computation.
+    source: { url: https://privasapien.com/, tier: official, title: PrivaSapien, accessed: 2026-09-03, origin: agent, quote: "Privacy Preserved Data For Model Training" }
+primary_cell: { asset: runtime-ai-data, function: protect }
