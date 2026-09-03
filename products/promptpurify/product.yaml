@@ -1,0 +1,27 @@
+schema_version: 2
+name: PromptPurify
+aliases: [PROMPTPurify, promptpurify]
+vendor:
+  value: SecureLayer7
+  source: { url: https://github.com/securelayer7/PROMPTPurify, tier: official, title: PROMPTPurify repository, accessed: 2026-09-03, origin: agent }
+url: https://github.com/securelayer7/PROMPTPurify
+description:
+  value: "PromptPurify: Open-source prompt-injection guard for LLM chat applications, pairing a compact CPU-only classifier with a deterministic structural firewall."
+  source: { url: https://github.com/securelayer7/PROMPTPurify, tier: official, title: PROMPTPurify repository, accessed: 2026-09-03, origin: agent }
+deployment:
+  value: [self-hosted]
+  source: { url: https://github.com/securelayer7/PROMPTPurify, tier: official, title: PROMPTPurify repository, accessed: 2026-09-03, origin: agent }
+status:
+  value: active
+  source: { url: https://github.com/securelayer7/PROMPTPurify, tier: official, title: PROMPTPurify repository, accessed: 2026-09-03, origin: agent }
+last_reviewed: 2026-09-03
+changelog:
+  - date: 2026-09-03
+    summary: Added to the catalog from the PROMPTPurify repository documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Scores each user message before it reaches the model, returning a value the application uses to hard-block above a high threshold and flag for review below it. A separate deterministic firewall neutralizes Unicode tricks, fences roles, and screens output for exfiltration.
+    source: { url: https://github.com/securelayer7/PROMPTPurify, tier: official, title: PROMPTPurify repository, accessed: 2026-09-03, origin: agent, quote: "Drop-in guard between your user input and your LLM" }
+primary_cell: { asset: runtime-ai-data, function: protect }

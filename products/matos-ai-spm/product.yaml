@@ -1,0 +1,37 @@
+schema_version: 2
+name: Matos AI SPM
+aliases: [Matos AI-SPM, CloudMatos AI Security Posture Management]
+vendor:
+  value: CloudMatos
+  source: { url: https://cloudmatos.ai/solution/ai-spm/, tier: official, title: AI Security Posture Management (AI-SPM), accessed: 2026-09-03, origin: agent }
+url: https://cloudmatos.ai/solution/ai-spm/
+description:
+  value: "Matos AI SPM: Agentless posture management for AI models, training data, and AI services, surfacing misconfigurations and attack paths across AI pipelines."
+  source: { url: https://cloudmatos.ai/solution/ai-spm/, tier: official, title: AI Security Posture Management (AI-SPM), accessed: 2026-09-03, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://cloudmatos.ai/solution/ai-spm/, tier: official, title: AI Security Posture Management (AI-SPM), accessed: 2026-09-03, origin: agent }
+status:
+  value: active
+  source: { url: https://cloudmatos.ai/solution/ai-spm/, tier: official, title: AI Security Posture Management (AI-SPM), accessed: 2026-09-03, origin: agent }
+last_reviewed: 2026-09-03
+changelog:
+  - date: 2026-09-03
+    summary: Added to the catalog from the CloudMatos AI Security Posture Management solution page.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, detect, protect]
+    maturity: primary
+    note: Inventories the models and AI services running in a cloud estate without agents, flags risky configurations against policy, and maps the vulnerability and permission chains that lead to them. Runtime insight covers AI package usage, permissions, and threats against deployed models.
+    source: { url: https://cloudmatos.ai/solution/ai-spm/, tier: official, title: AI Security Posture Management (AI-SPM), accessed: 2026-09-03, origin: agent, quote: "Matos AI SPM safeguards your AI pipelines, detects misconfigurations, and identifies attack vectors targeting your AI services." }
+  - asset: training-data
+    functions: [identify, protect]
+    maturity: secondary
+    note: Scope extends to the data side of the pipeline, covering exposure of training data alongside the models built from it.
+    source: { url: https://cloudmatos.ai/solution/ai-spm/, tier: official, title: AI Security Posture Management (AI-SPM), accessed: 2026-09-03, origin: agent, quote: "Protect sensitive training data and operational models from compromise, ensuring seamless and secure AI adoption." }
+  - asset: ai-workload-platforms
+    functions: [identify, detect]
+    maturity: secondary
+    note: Checks the managed model services an application builds on for insecure configuration, and extends the same scanning to the infrastructure-as-code that provisions them.
+    source: { url: https://cloudmatos.ai/solution/ai-spm/, tier: official, title: AI Security Posture Management (AI-SPM), accessed: 2026-09-03, origin: agent, quote: "Detect misconfigurations in tools like OpenAI and Amazon Bedrock, enforce best practices, and secure your pipeline with IaC scanning" }
+primary_cell: { asset: ai-model, function: identify }
