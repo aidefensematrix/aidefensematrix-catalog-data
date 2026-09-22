@@ -2,11 +2,11 @@ schema_version: 2
 name: Straiker
 vendor:
   value: Straiker
-  source: { url: https://www.straiker.ai/products, tier: official, title: Straiker products overview, accessed: 2026-06-07, origin: reviewed }
+  source: { url: https://www.straiker.ai/, tier: official, title: Straiker homepage, accessed: 2026-09-22, origin: agent }
 url: https://www.straiker.ai
 description:
   value: "AI-native security for agentic apps and AI agents, pairing offensive red-team testing with runtime guardrails that detect and block prompt injection, data exfiltration, and agent manipulation."
-  source: { url: https://www.straiker.ai/products, tier: official, title: Straiker products overview, accessed: 2026-06-07, origin: reviewed }
+  source: { url: https://www.straiker.ai/, tier: official, title: Straiker homepage, accessed: 2026-09-22, origin: agent, quote: "Straiker gives your security team the visibility, testing, and runtime protection to keep up, without becoming a blocker." }
 deployment:
   value: [saas]
   source: { url: https://www.straiker.ai/products/defend-ai, tier: official, title: Straiker Defend AI deployment, accessed: 2026-06-07, origin: reviewed }
@@ -17,6 +17,8 @@ last_reviewed: 2026-07-17
 changelog:
   - date: 2026-06-07
     summary: "Verified details from primary and press sources; mapped the Discover, Ascend, and Defend modules to matrix coverage."
+  - date: 2026-09-22
+    summary: "Re-cited the vendor and description to the Straiker homepage; the products overview page no longer exists."
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
