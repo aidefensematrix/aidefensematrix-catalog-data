@@ -24,18 +24,20 @@ changelog:
     summary: Added verbatim source quotes to coverage and compliance citations.
   - date: 2026-07-16
     summary: Updated the compliance attestation list from the trust center and replaced its quote with a waiver.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovery, posture, and runtime protection for autonomous agents and MCP servers.
-    source: { url: https://noma.security/solutions/ai-agent-security/, tier: official, accessed: 2026-07-04, origin: agent, quote: "Automatically discover every agent within your environment while gaining a deep contextual understanding of their complete profile" }
+    source: { url: https://noma.security/platform, tier: official, title: Noma Security platform page, accessed: 2026-09-22, origin: agent, quote: "Define what each agent is allowed to do and enforce it the moment the agent acts." }
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
     maturity: primary
-    source: { url: https://noma.security/platform/, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "Continuous discovery, testing, and protection across models, datasets, agents, and pipelines." }
+    source: { url: https://noma.security/platform, tier: official, title: Noma Security platform page, accessed: 2026-09-22, origin: agent, quote: "Discover, assess, and govern every MCP server in your organization." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: secondary
-    source: { url: https://noma.security/platform/aispm/, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "Enterprise-grade AI Security Posture Management (AISPM) that continuously discovers, assesses, and governs every AI asset across your environment." }
+    source: { url: https://noma.security/products/ai-dr, tier: official, title: Noma Security AI-DR page, accessed: 2026-09-22, origin: agent, quote: "Detectors include prompt injection (including encoded and obfuscated payloads), sensitive data leakage (PII, PCI, secrets) with inline masking, malicious intent, tool poisoning, and more." }
 primary_cell: { asset: ai-agent-identities, function: protect }

@@ -18,10 +18,12 @@ last_reviewed: 2026-07-05
 changelog:
   - date: 2026-07-05
     summary: Added to the catalog from the DefenseClaw repository; open source under Apache-2.0, distinct from the commercial Cisco AI Defense platform.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Admission control scans skills, MCP servers, plugins, and generated code before they run, runtime guardrails inspect prompts and tool calls, and unsafe capabilities are blocked by policy with durable audit evidence.
-    source: { url: https://github.com/cisco-ai-defense/defenseclaw, tier: official, title: DefenseClaw admission control, accessed: 2026-07-05, origin: agent, quote: "untrusted agent capabilities are scanned, governed, logged, and blocked when policy says they are unsafe." }
+    source: { url: https://cisco-ai-defense.github.io/defenseclaw/, tier: official, title: DefenseClaw documentation site, accessed: 2026-09-22, origin: agent, quote: "Discover, register, scan, and quarantine capabilities before an agent can load them." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

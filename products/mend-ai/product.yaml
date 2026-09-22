@@ -19,12 +19,14 @@ changelog:
     summary: Added to the catalog from the Mend.io documentation.
   - date: 2026-07-04
     summary: Added verbatim source quotes to coverage and compliance citations.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, detect]
     maturity: primary
     note: Builds a continuously updated inventory of AI models and frameworks, including shadow AI, ties risks to models, runs automated red teaming tests for prompt injection, context leakage, and data exfiltration.
-    source: { url: https://www.mend.io/mend-ai/, tier: official, title: Mend AI product page, accessed: 2026-07-04, origin: agent, quote: "Mend AI provides deep visibility to tie risks to models, strengthening your AI supply chain security with mitigation strategies for licensing, vulnerabilities, and malicious packages" }
+    source: { url: https://www.mend.io/mend-ai/, tier: official, title: Mend AI product page, accessed: 2026-09-22, origin: agent, quote: "Maintain comprehensive, real-time inventory of every model, framework, and AI agent across your AI supply chain, including hard-to-detect shadow AI, and the tools and MCPs your agents connect to." }
   - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary

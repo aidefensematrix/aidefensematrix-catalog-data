@@ -21,6 +21,8 @@ last_reviewed: 2026-06-24
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Unbound documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
@@ -31,5 +33,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: Enforces policy on outbound data egress by agents in real time to block sensitive-data exfiltration.
-    source: { url: https://getunbound.ai/free, tier: official, title: Unbound free plan page, accessed: 2026-06-24, origin: reviewed, quote: "Enforce policy on terminal commands, MCP tool calls, and outbound data egress in real time." }
+    source: { url: https://getunbound.ai/product, tier: official, title: Unbound product page, accessed: 2026-09-22, origin: agent, quote: "Use guardrails to detect secrets, PII, regex and keyword matches, document classification, and route or block content." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

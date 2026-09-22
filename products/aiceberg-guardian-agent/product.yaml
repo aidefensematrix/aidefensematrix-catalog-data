@@ -19,12 +19,16 @@ acquisition:
   acquirer: Cranium AI
   acquirer_slug: cranium
   announced: 2026-05-21
-  post_acquisition_status: standalone
+  post_acquisition_status: folded
   source: { url: https://cranium.ai/resources/press-release/cranium-ai-acquires-aiceberg-to-strengthen-its-end-to-end-ai-security-governance-and-agentic-ai-platform/, tier: official, title: Cranium AI Acquires Aiceberg, accessed: 2026-07-16, origin: agent }
 last_reviewed: 2026-07-16
 changelog:
   - date: 2026-07-16
     summary: Added to the catalog from the Aiceberg documentation, recording the Cranium AI acquisition announced 2026-05-21 with the product operating standalone.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Updated the post-acquisition status to folded; the Aiceberg site now redirects to Cranium."
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
@@ -35,5 +39,5 @@ matrix_coverage:
     functions: [detect]
     maturity: secondary
     note: Monitors agentic AI decisions and actions, including information an agent pulls via RAG, tool use, and memory, with explainable and traceable risk detection across connected AI systems.
-    source: { url: https://www.aiceberg.ai/, tier: official, title: Aiceberg, accessed: 2026-07-16, origin: agent, quote: "Identify exposure of sensitive information whenever an agent pulls information via RAG, Tool use, Memory, etc.." }
+    source: { url: https://cranium.ai/platform/observe/, tier: official, title: AI Observability and Runtime Monitoring Cranium, accessed: 2026-09-22, origin: agent, quote: "Sequence diagrams of agent decisions and tool calls" }
 primary_cell: { asset: runtime-ai-data, function: protect }

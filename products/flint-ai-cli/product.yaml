@@ -20,15 +20,17 @@ last_reviewed: 2026-07-16
 changelog:
   - date: 2026-07-16
     summary: Added to the catalog from the Flint AI CLI documentation, scoped to the CLI (the vendor lists a separate Platform as coming soon).
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: primary
     note: Scans agent source code for security vulnerabilities, misconfigurations, risky tool access, and missing guardrails across major agent frameworks, producing a per-agent reliability score with findings mapped to OWASP ASI and scored with CVSS v4.
-    source: { url: https://flintai.dev/, tier: official, title: Flint AI CLI, accessed: 2026-07-16, origin: agent, quote: "AI-powered analysis finds misconfigurations, risky tool access, missing guardrails, and other issues." }
+    source: { url: https://www.flintai.dev/products/cli, tier: official, title: Flint AI CLI product page, accessed: 2026-09-22, origin: agent, quote: "Find misconfigurations, risky tool access, missing guardrails, and other issues in your Python agent code." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: secondary
     note: Sends adversarial and functional prompts (prompt injection, jailbreaks) to a running agent and scores the responses; offline testing with no inline enforcement.
-    source: { url: https://flintai.dev/, tier: official, title: Flint AI CLI, accessed: 2026-07-16, origin: agent, quote: "flintai eval sends adversarial and functional prompts to your running agent and scores the responses." }
+    source: { url: https://www.flintai.dev/products/cli, tier: official, title: Flint AI CLI product page, accessed: 2026-09-22, origin: agent, quote: "flintai eval sends adversarial and functional prompts to your running agent and scores the responses." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: detect }

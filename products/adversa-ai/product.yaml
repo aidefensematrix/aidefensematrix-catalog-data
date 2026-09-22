@@ -20,15 +20,17 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Adversa AI documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: primary
     note: Continuous red teaming engineered for proprietary AI agents, covering more than 60 vulnerability classes across the agent, model, and MCP layers, with re-scans triggered by every model, prompt, or tool update and remediation playbooks in real time.
-    source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed, quote: "Compare results across scans to track security posture over time." }
+    source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: AI Red Teaming Services Adversa AI, accessed: 2026-09-22, origin: agent, quote: "Adversa AI validates that your AI agents behave correctly in your specific business context — across every stack layer, from models and agentic cognition to application APIs and infrastructure including MCP." }
   - asset: ai-model
     functions: [detect]
     maturity: secondary
     note: Autonomous red teaming campaigns cover the OWASP LLM and agentic AI Top 10 lists and run on every model update and prompt change.
-    source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed, quote: "We test the foundation model specifically within the context of your application to prevent jailbreaks, data exfiltration, or context poisoning." }
+    source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: AI Red Teaming Services Adversa AI, accessed: 2026-09-22, origin: agent, quote: "Test adversarial prompts, jailbreaks, data extraction, and poisoning detection." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: detect }

@@ -17,6 +17,8 @@ last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the DeepKeep documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
@@ -32,5 +34,5 @@ matrix_coverage:
     functions: [detect]
     maturity: secondary
     note: Automated red teaming continuously simulates prompt injection, jailbreak, and data leakage attacks against custom AI applications and agents, with findings tied to remediation guidance and firewall guardrail updates.
-    source: { url: https://www.deepkeep.ai/capabilities/ai-red-teaming, tier: official, title: DeepKeep AI red teaming page, accessed: 2026-06-10, origin: reviewed, quote: "With DeepKeep, you can automatically test your applications, agents and models under real-world conditions without relying on manual red teaming cycles." }
+    source: { url: https://www.deepkeep.ai/capabilities/ai-red-teaming, tier: official, title: DeepKeep AI red teaming page, accessed: 2026-09-22, origin: agent, quote: "Challenge your AI systems and evaluate how your custom AI applications, models, and agents respond to prompt injection, jailbreaks, data leakage attempts, and unsafe output generation." }
 primary_cell: { asset: runtime-ai-data, function: protect }

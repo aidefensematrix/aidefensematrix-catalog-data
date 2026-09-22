@@ -21,6 +21,8 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Cyera documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: training-data
     functions: [identify, protect]
@@ -31,5 +33,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: secondary
     note: Prevents sensitive-data leakage to AI in the moment through AI-aware data-loss controls.
-    source: { url: https://www.cyera.com/, tier: official, title: Cyera AI security platform, accessed: 2026-06-09, origin: reviewed, quote: "One platform to secure AI - from data to access to real-time protection." }
+    source: { url: https://www.cyera.com/platform/agent-guardian, tier: official, title: Cyera Agent Guardian, accessed: 2026-09-22, origin: agent, quote: "Prevent sensitive data leakage to public models while stopping unethical use and unauthorized data access even within your perimeter." }
 primary_cell: { asset: training-data, function: protect }

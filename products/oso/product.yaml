@@ -20,6 +20,10 @@ changelog:
     summary: Added to the catalog from the Oso documentation.
   - date: 2026-06-12
     summary: Refined matrix coverage.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Updated a coverage note against the current vendor page."
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, detect]
@@ -29,6 +33,6 @@ matrix_coverage:
   - asset: runtime-ai-data
     functions: [detect]
     maturity: primary
-    note: Captures prompts, completions, and tool calls for monitored agent sessions and scans them with built-in and custom patterns for secrets and PII such as API keys and credentials.
-    source: { url: https://www.osohq.com/docs/oso-for-agents/alerts, tier: official, title: Oso alerts documentation, accessed: 2026-06-10, origin: reviewed, quote: "Oso monitors agent activity and generates alerts when it detects unsanctioned usage or sensitive data." }
+    note: Captures prompts, completions, and tool calls for monitored agent sessions and scans them with configurable patterns for secrets and PII such as API keys and credentials.
+    source: { url: https://www.osohq.com/docs/oso-for-agents/alerts, tier: official, title: Oso alerts documentation, accessed: 2026-09-22, origin: agent, quote: "A policy with a Resource condition on a content type and an Alert response fires when that pattern is detected in a monitored session - secrets like API keys and credentials, PII like names and social security numbers, or a custom regex pattern specific to your organization." }
 primary_cell: { asset: ai-agent-identities, function: identify }

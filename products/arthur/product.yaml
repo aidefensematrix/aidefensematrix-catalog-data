@@ -20,15 +20,17 @@ changelog:
     summary: Added to the catalog from the Arthur AI documentation.
   - date: 2026-07-04
     summary: Added verbatim source quotes to coverage and compliance citations.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
-    note: Built-in guardrails screen AI interactions to protect applications against misuse, off-brand content, and unsafe prompts and responses.
-    source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI built-in guardrails, accessed: 2026-07-04, origin: agent, quote: "Leverage guardrails to secure applications against misuse and off-brand interactions." }
+    note: Guardrails evaluate every request and response for prompt injection, PII exposure, restricted models, and off-policy tool use, and return a verdict the application enforces inline.
+    source: { url: https://www.arthur.ai/discover-and-govern-agents, tier: official, title: "Agent Security and Governance, Arthur", accessed: 2026-09-22, origin: agent, quote: "Guardrails evaluate every request and response for prompt injection, PII exposure, restricted models, and off-policy tool use, and return a verdict your application enforces inline." }
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
     maturity: secondary
     note: Monitors models and agent applications across the AI lifecycle, surfacing performance and reliability issues.
-    source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI platform, accessed: 2026-06-09, origin: reviewed, quote: "Evaluate Performance Across the AI Lifecycle Gain visibility and reliability of your model through continuous evals." }
+    source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI platform, accessed: 2026-09-22, origin: agent, quote: "Every agent found wherever it runs, with guardrails and anomaly alerting in real time." }
 primary_cell: { asset: runtime-ai-data, function: protect }

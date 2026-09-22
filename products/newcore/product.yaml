@@ -5,8 +5,8 @@ vendor:
   source: { url: https://newcore.com/, tier: official, title: NewCore identity platform, accessed: 2026-07-05, origin: agent }
 url: https://newcore.com/
 description:
-  value: "NewCore: Identity security platform that discovers, maps, and governs every human, machine, and AI-agent identity, provisioning agents with least-privilege access and full lifecycle control."
-  source: { url: https://newcore.com/, tier: official, title: NewCore identity platform, accessed: 2026-07-05, origin: agent, quote: "The security-first identity platform built for humans and AI agents." }
+  value: "NewCore: Identity platform for humans and AI agents that maps every identity and access path in one live graph and applies one policy and audit trail to both."
+  source: { url: https://newcore.com/, tier: official, title: NewCore Next-Gen IdP for Humans and Agents, accessed: 2026-09-22, origin: agent, quote: "Apply one policy grammar, one enforcement layer, and one audit trail across humans and AI agents." }
 deployment:
   value: [saas]
   source: { url: https://newcore.com/, tier: official, title: NewCore identity platform, accessed: 2026-07-05, origin: agent }
@@ -17,10 +17,14 @@ last_reviewed: 2026-07-05
 changelog:
   - date: 2026-07-05
     summary: Added to the catalog from the NewCore documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Updated the description against the current vendor page."
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect, govern]
     maturity: primary
     note: Continuously discovers and maps every human, machine, and agent identity across the enterprise, provisions agents with least-privilege access before they operate, and governs the full issue-to-revoke lifecycle.
-    source: { url: https://newcore.com/, tier: official, title: NewCore agentic governance, accessed: 2026-07-05, origin: agent, quote: "It discovers, maps, and governs every identity from a single scalable platform." }
+    source: { url: https://newcore.com/platform/agent-guardian, tier: official, title: NewCore Agent Guardian, accessed: 2026-09-22, origin: agent, quote: "The Agent Guardian mints short-lived, scoped credentials, evaluates real-time policy per call, and ties every action back to an accountable human." }
 primary_cell: { asset: ai-agent-identities, function: protect }

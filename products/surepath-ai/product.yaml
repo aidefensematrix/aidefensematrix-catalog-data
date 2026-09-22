@@ -17,26 +17,27 @@ acquisition:
   acquirer: F5
   announced: 2026-06-22
   post_acquisition_status: folded
-  new_name: F5 AI Security Platform
+  new_name: F5 Workforce AI Security
   source: { url: https://www.f5.com/company/news/press-releases/f5-ai-security-platform-control-enterprise-risk, tier: official, title: "F5 acquires SurePath AI to enhance new AI Security Platform", accessed: 2026-07-05, origin: agent }
-compliance_attestations:
-  value: [SOC 2 Type 1]
-  source: { url: https://www.surepath.ai/blog/soc-2-type-1-certified, tier: official, title: SurePath AI SOC 2 Type 1 certification, accessed: 2026-06-15, origin: reviewed, quote: "SurePath AI is SOC 2 Type 1 Certified" }
 last_reviewed: 2026-06-15
 changelog:
   - date: 2026-06-15
     summary: Added to the catalog from the SurePath AI documentation.
   - date: 2026-07-05
     summary: Recorded the F5 acquisition, folding SurePath AI into the F5 AI Security Platform.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Corrected compliance attestations (erratum): removed the SOC 2 Type 1 entry; updated the post-acquisition name to F5 Workforce AI Security."
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Inspects AI inputs and outputs in real time and redacts sensitive information before it reaches models, agents, or connected systems, then logs every interaction across public and private models to provide audit trails.
-    source: { url: https://www.surepath.ai/, tier: official, title: SurePath AI homepage, accessed: 2026-07-05, origin: agent, quote: "Detect and redact sensitive info, ensuring secure, user-friendly outputs." }
+    source: { url: https://www.f5.com/products/workforce-ai-security, tier: official, title: F5 Workforce AI Security, accessed: 2026-09-22, origin: agent, quote: "It identifies and automatically redacts sensitive information like PII, financial data, or intellectual property based on predefined and custom policies." }
   - asset: ai-traffic
     functions: [identify, protect]
     maturity: secondary
     note: Captures AI traffic at the network level without endpoint agents to reveal which AI services are in use, and enforces role- and group-based access policies controlling which models, tools, and data each user can reach.
-    source: { url: https://www.surepath.ai/, tier: official, title: SurePath AI homepage, accessed: 2026-07-05, origin: agent, quote: "Complete, real-time visibility and control over every AI action." }
+    source: { url: https://www.f5.com/products/workforce-ai-security, tier: official, title: F5 Workforce AI Security, accessed: 2026-09-22, origin: agent, quote: "Enforce context-aware policies that route requests to approved enterprise models, block high-risk or prohibited services, and protect sensitive data before it reaches a model." }
 primary_cell: { asset: runtime-ai-data, function: protect }

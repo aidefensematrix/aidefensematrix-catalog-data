@@ -22,15 +22,17 @@ changelog:
     summary: "Corrected matrix coverage source quotes (erratum) after a homepage revision."
   - date: 2026-07-16
     summary: Updated the description to match the current homepage.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Runs MCP servers in isolated Kubernetes containers with audit trails, applies deterministic guardrails against data exfiltration and prompt injection, and inventories approved servers in a private registry.
-    source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-07-16, origin: agent, quote: "Static guardrails preventing data exfiltration" }
+    source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-09-22, origin: agent, quote: "Control tool access, approvals, isolation, and network egress." }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
-    note: Enforces per-team and per-user access to MCP servers and LLMs through RBAC, SSO, and OAuth on-behalf-of user-delegated access.
-    source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-07-16, origin: agent, quote: "Each environment has its own credentials and network egress policy. No tokens pasted into env vars." }
+    note: Resolves upstream MCP server authentication at execution time from the caller identity, the tool assignment, and configured credentials, so each call runs with the access its caller holds.
+    source: { url: https://archestra.ai/docs/mcp-authentication, tier: official, title: Archestra MCP Authentication docs, accessed: 2026-09-22, origin: agent, quote: "Archestra resolves upstream MCP server authentication separately at execution time, using the caller identity, the gateway or Agent tool assignment, and the installed MCP server credential configuration." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

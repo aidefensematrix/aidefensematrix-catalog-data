@@ -21,6 +21,10 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Enriched from the Netskope generative AI security documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Updated a coverage note against the current vendor page."
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [identify, protect, detect]
@@ -30,6 +34,6 @@ matrix_coverage:
   - asset: ai-model
     functions: [identify, detect]
     maturity: secondary
-    note: Assesses the risk of generative-AI apps and MCP servers and runs automated red-team testing of private LLMs to find vulnerabilities.
-    source: { url: https://www.netskope.com/products/ai-security, tier: official, title: Netskope AI Security, accessed: 2026-06-09, origin: reviewed, quote: "Automate risk assessment of genAI apps and MCP servers, secure data, and automate vulnerability testing for private LLMs." }
+    note: Assesses the risk of generative-AI apps and runs automated red-team testing of private LLMs to find vulnerabilities.
+    source: { url: https://www.netskope.com/products/ai-red-teaming, tier: official, title: Netskope AI Red Teaming, accessed: 2026-09-22, origin: agent, quote: "Continuously test your LLMs using a library of over 18,000 adversarial scenarios and seed prompts." }
 primary_cell: { asset: runtime-ai-data, function: protect }

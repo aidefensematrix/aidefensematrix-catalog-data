@@ -1,13 +1,13 @@
 schema_version: 2
-name: Unity AI Gateway
-aliases: [Databricks Unity AI Gateway, Mosaic AI Gateway]
+name: Unity Gateway
+aliases: [Unity AI Gateway, Databricks Unity Gateway, Databricks Unity AI Gateway, Mosaic AI Gateway]
 vendor:
   value: Databricks
   source: { url: https://www.databricks.com/product/artificial-intelligence/ai-gateway, tier: official, title: Databricks Unity AI Gateway product page, accessed: 2026-06-10, origin: reviewed }
-url: https://www.databricks.com/product/artificial-intelligence/unity-ai-gateway
+url: https://www.databricks.com/product/artificial-intelligence/unity-gateway
 description:
-  value: "Unity AI Gateway: Databricks control plane governing access to LLM endpoints, coding agents, and MCP servers, with guardrails for PII and unsafe content, plus permissions, rate limits, and logging."
-  source: { url: https://www.databricks.com/product/artificial-intelligence/ai-gateway, tier: official, title: Databricks Unity AI Gateway product page, accessed: 2026-06-14, origin: reviewed }
+  value: "Unity Gateway: Databricks control plane governing access to LLM endpoints, coding agents, and MCP servers, with guardrails for PII and unsafe content, plus permissions, rate limits, and logging."
+  source: { url: https://docs.databricks.com/aws/en/ai-gateway/, tier: official, title: AI governance with Unity Gateway, accessed: 2026-09-22, origin: agent, quote: "Unity Gateway is the Databricks governance solution for enterprise AI." }
 deployment:
   value: [saas]
   source: { url: https://docs.databricks.com/aws/en/ai-gateway/overview-serving-endpoints, tier: official, title: Unity AI Gateway serving endpoints documentation, accessed: 2026-06-10, origin: reviewed }
@@ -22,6 +22,10 @@ changelog:
     summary: Refined matrix coverage and primary function.
   - date: 2026-06-14
     summary: Refreshed description and added MCP-server coverage; product is in beta.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Renamed to Unity Gateway, the name Databricks now uses; Unity AI Gateway is kept as an alias."
 matrix_coverage:
   - asset: ai-traffic
     functions: [protect, detect]
@@ -37,5 +41,5 @@ matrix_coverage:
     functions: [identify, protect, detect]
     maturity: secondary
     note: Governs MCP servers as the enterprise control plane, with centralized view and management of all MCP servers, access control through Unity Catalog permissions and managed-OAuth credentials, and activity monitoring across servers.
-    source: { url: https://docs.databricks.com/aws/en/generative-ai/agent-framework/mcp, tier: official, title: Model Context Protocol (MCP) on Databricks, accessed: 2026-07-05, origin: agent, quote: "Connect to MCP servers hosted outside Databricks using managed connections, and register them as Unity Catalog securables to govern access, filter tools, and apply service policies." }
+    source: { url: https://docs.databricks.com/aws/en/agents/mcp-tools, tier: official, title: MCPs and agent tools Databricks on AWS, accessed: 2026-09-22, origin: agent, quote: "Register external MCP servers as Unity Catalog securables, or use built-in system.ai services for SaaS tools like Slack, GitHub, and Google Drive, with governed access through Unity Gateway." }
 primary_cell: { asset: ai-traffic, function: protect }

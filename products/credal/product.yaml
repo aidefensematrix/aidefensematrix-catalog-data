@@ -23,12 +23,16 @@ changelog:
     summary: Added to the catalog from the Credal documentation.
   - date: 2026-07-16
     summary: "Corrected the compliance citation (erratum) to the security page."
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Updated a coverage note against the current vendor page."
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect]
     maturity: primary
-    note: Consolidates all agents and MCP servers into a registry admins manage, and enforces access by making each agent inherit source-system permissions so users see only authorized data.
-    source: { url: https://www.credal.ai/products/agent-registry, tier: official, title: Credal agent registry page, accessed: 2026-06-24, origin: reviewed, quote: "Every agent automatically inherits source permissions, so users only ever see data they are already authorized to access." }
+    note: Consolidates all agents and MCP servers into a registry admins manage, and enforces an org-level access policy that sets use, edit, and publish rights by team or role.
+    source: { url: https://credal.ai/products/agent-registry, tier: official, title: Agent Registry Credal, accessed: 2026-09-22, origin: agent, quote: "Discover what exists, trust what’s verified, control who can use it, and roll back anything, for every agent on every surface." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary

@@ -18,12 +18,14 @@ last_reviewed: 2026-06-25
 changelog:
   - date: 2026-06-25
     summary: Added to the catalog from the DataKrypto documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [protect]
     maturity: primary
     note: Encrypts model weights, parameters, and architecture with fully homomorphic encryption so they stay in ciphertext in memory and on GPU cores throughout execution.
-    source: { url: https://www.datakrypto.ai/, tier: official, title: DataKrypto FHEnom for AI page, accessed: 2026-06-25, origin: reviewed, quote: "Model weights, parameters, and architecture are encrypted using FHE. Existing pre-trained models or new foundation models can be encrypted and deployed to any infrastructure" }
+    source: { url: https://www.datakrypto.ai/, tier: official, title: DataKrypto FHEnom for AI page, accessed: 2026-09-22, origin: agent, quote: "Model weights, parameters, tensors, and architecture are encrypted using FHE." }
   - asset: runtime-ai-data
     functions: [protect]
     maturity: secondary

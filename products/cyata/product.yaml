@@ -3,7 +3,7 @@ name: Cyata
 vendor:
   value: Cyata
   source: { url: https://cyata.ai/, tier: official, title: Cyata homepage, accessed: 2026-06-10, origin: reviewed }
-url: https://cyata.ai
+url: https://www.checkpoint.com/ai-security/ai-agent-security/
 description:
   value: "Cyata: Agentic identity control plane that discovers AI agents across SaaS and cloud environments, records each agent interaction for forensics, and enforces least-privilege access policies."
   source: { url: https://cyata.ai/, tier: official, title: Cyata homepage, accessed: 2026-06-10, origin: reviewed }
@@ -16,7 +16,8 @@ status:
 acquisition:
   acquirer: Check Point Software Technologies
   announced: 2026-02-12
-  post_acquisition_status: standalone
+  post_acquisition_status: folded
+  new_name: Check Point AI Defense Plane
   source: { url: https://www.calcalistech.com/ctechnews/article/rjnbhfipwl, tier: press, title: CTech on Check Point acquiring Cyclops and Cyata, accessed: 2026-06-10, origin: reviewed }
 last_reviewed: 2026-06-10
 changelog:
@@ -24,10 +25,12 @@ changelog:
     summary: Added to the catalog from the Cyata documentation; recorded the Check Point acquisition announced in February 2026.
   - date: 2026-06-12
     summary: Refined matrix coverage.
+  - date: 2026-09-22
+    summary: "Updated the post-acquisition status to folded into the Check Point AI Defense Plane and re-cited coverage to the Check Point AI Agent Security page."
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
     maturity: primary
-    note: Maps AI agents across SaaS, cloud, and identity infrastructure, including shadow, orphaned, and overly privileged agents; logs every agent interaction for audit and forensics; assigns dynamic identities and enforces least-privilege policy on agent access.
-    source: { url: https://cyata.ai/, tier: official, title: Cyata homepage, accessed: 2026-06-10, origin: reviewed, quote: "Cyata doesn't replace your NHI we extend it into the agent era with real-time posture, observability, and access control." }
+    note: Check Point AI Agent Security, which absorbed Cyata, identifies agents across cloud and low-code platforms, enforces policy on what agents can access, call, and do, and detects agent actions outside user intent or policy.
+    source: { url: https://www.checkpoint.com/ai-security/ai-agent-security/, tier: official, title: Check Point AI Agent Security, accessed: 2026-09-22, origin: agent, quote: "Identify agents running across supported cloud and low-code platforms and build a clearer view of the enterprise agent estate." }
 primary_cell: { asset: ai-agent-identities, function: identify }

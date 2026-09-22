@@ -21,6 +21,8 @@ last_reviewed: 2026-06-24
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Permit.io documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect]
@@ -31,7 +33,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: secondary
     note: An MCP gateway proxy authorizes every agent tool call against fine-grained policy, blocks denied calls before they reach the server, and logs each decision.
-    source: { url: https://docs.permit.io/permit-mcp-gateway/overview, tier: official, title: Permit MCP Gateway overview, accessed: 2026-06-24, origin: reviewed, quote: "every tool call is checked against policy; denied calls are blocked before reaching the upstream server" }
+    source: { url: https://docs.permit.io/permit-mcp-gateway/overview, tier: official, title: Permit MCP Gateway overview, accessed: 2026-09-22, origin: agent, quote: "the gateway checks each tool call against policy and blocks denied calls before they reach the upstream server." }
   - asset: runtime-ai-data
     functions: [protect]
     maturity: secondary

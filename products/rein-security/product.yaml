@@ -17,12 +17,16 @@ last_reviewed: 2026-07-16
 changelog:
   - date: 2026-07-16
     summary: Added to the catalog from the Rein Security platform documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Corrected matrix coverage (erratum): removed Identify from the orchestration-tools row."
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
-    functions: [detect, protect, identify]
+    functions: [detect, protect]
     maturity: primary
-    note: A sidecar monitors enterprise agents at runtime, capturing the full execution chain (prompts, service calls, tool invocations, resources touched) and enforcing learned-baseline guardrails on deviations. Includes real-time agent inventory and shadow AI detection with auto-discovery.
-    source: { url: https://reinsec.io/platform, tier: official, title: Enterprise Agent Security Platform, accessed: 2026-07-16, origin: agent, quote: "One simple to deploy sidecar, and Rein is monitoring and protecting any business risk." }
+    note: A sidecar monitors enterprise agents at runtime, capturing the full execution chain (prompts, service calls, tool invocations, resources touched) and enforcing learned-baseline guardrails on deviations.
+    source: { url: https://reinsec.io/platform/, tier: official, title: Enterprise Agent Security Platform Rein Security, accessed: 2026-09-22, origin: agent, quote: "See what every agent, MCP, and tool are actually doing in real time and connect it to business outcomes, with 100% execution visibility into everything they do at the AI-Native Runtime." }
   - asset: runtime-ai-data
     functions: [detect, protect]
     maturity: secondary

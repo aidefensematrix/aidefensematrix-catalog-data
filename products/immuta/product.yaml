@@ -6,8 +6,8 @@ vendor:
 aliases: [Immuta Data Security Platform]
 url: https://www.immuta.com/product/data-security-ai/
 description:
-  value: Data security platform that discovers and classifies sensitive data, enforces attribute-based access policies and masking at the data layer for AI and RAG workloads, and monitors data usage for risk.
-  source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed }
+  value: "Immuta: Data security platform that discovers and classifies sensitive data, enforces attribute-based access policies and masking at the data layer, and monitors data usage for risk."
+  source: { url: https://www.immuta.com/platform/govern, tier: official, title: Immuta Govern, accessed: 2026-09-22, origin: agent, quote: "Access controls, masking, and redaction are applied in real time without delays, manual updates, or gaps in enforcement." }
 deployment:
   value: [saas]
   source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed }
@@ -18,15 +18,17 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Enriched from the Immuta data security documentation.
+  - date: 2026-09-22
+    summary: "Corrected matrix coverage (erratum): moved the data-layer row from Training Data to Runtime AI Data and updated the description."
 matrix_coverage:
-  - asset: training-data
+  - asset: runtime-ai-data
     functions: [identify, protect, detect]
     maturity: primary
-    note: Discovers and classifies sensitive data and enforces attribute-based access controls and masking at the data layer for RAG and AI workloads, monitoring queries for unusual access.
-    source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed, quote: "Unifying data discovery, policy enforcement, activity monitoring, and auditing in a single, integrated plane makes it easy to mitigate risk without slowing the pace of AI innovation." }
+    note: Discovers and classifies sensitive data and applies attribute-based access controls, masking, and redaction in real time to the data that users and AI agents query, monitoring access for unusual activity.
+    source: { url: https://www.immuta.com/platform/govern, tier: official, title: Immuta Govern, accessed: 2026-09-22, origin: agent, quote: "Access controls, masking, and redaction are applied in real time without delays, manual updates, or gaps in enforcement." }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
     note: Vends short-lived, attribute-based database roles to AI agents so a prompt-injected agent stays bound to its permitted data, and access can be revoked instantly.
     source: { url: https://www.immuta.com/agentic-data-access/, tier: official, title: Immuta Agentic Data Access, accessed: 2026-06-09, origin: reviewed, quote: "Whether you add 1 agent or 100, they all automatically follow the same enterprise guardrails without a single additional database role being manually created." }
-primary_cell: { asset: training-data, function: protect }
+primary_cell: { asset: runtime-ai-data, function: protect }
