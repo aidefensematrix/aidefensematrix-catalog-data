@@ -9,7 +9,7 @@ description:
   source: { url: https://www.paloaltonetworks.com/ai-security/ai-runtime-security, tier: official, title: Prisma AIRS AI Runtime Security, accessed: 2026-09-22, origin: agent, quote: "Prisma AIRS AI Runtime Security applies inspection, policy enforcement and threat prevention directly to live AI interactions." }
 deployment:
   value: [saas, self-hosted]
-  source: { url: https://protectai.com/guardian, tier: official, title: Guardian CI/CD scanning, accessed: 2026-06-07, origin: reviewed }
+  source: { url: https://www.paloaltonetworks.com/ai-security/ai-runtime-security, tier: official, title: Prisma AIRS AI Runtime Security, accessed: 2026-09-22, origin: agent }
 status:
   value: acquired
   source: { url: https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-completes-acquisition-of-protect-ai, tier: official, title: Palo Alto completes Protect AI acquisition, accessed: 2026-06-07, origin: reviewed }
@@ -32,6 +32,8 @@ changelog:
     summary: "Corrected matrix coverage (erratum): removed the training-data row."
   - date: 2026-09-22
     summary: "Updated the description and coverage notes to the current Prisma AIRS product names."
+  - date: 2026-09-22
+    summary: "Re-cited the deployment field to the current Prisma AIRS page; the Protect AI Guardian page no longer exists."
 matrix_coverage:
   - asset: ai-model
     functions: [identify, protect]
