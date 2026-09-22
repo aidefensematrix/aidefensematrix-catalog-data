@@ -30,6 +30,8 @@ changelog:
     summary: Recorded the product as operating standalone while the acquisition close remains pending.
   - date: 2026-09-22
     summary: "Refreshed a coverage citation and note against the current vendor page."
+  - date: 2026-09-22
+    summary: "Re-cited two coverage rows to archived copies of the vendor documentation, which the vendor has taken offline."
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [detect]
@@ -40,10 +42,10 @@ matrix_coverage:
     functions: [detect]
     maturity: secondary
     note: The pentest environment generates curated adversarial prompts covering prompt injection, jailbreaks, PII extraction, and bias triggers, runs the LLM pipeline against them, and scores whether the attacks succeeded.
-    source: { url: https://llmdocs.deepchecks.com/docs/pentesting-your-llm-pipeline, tier: official, title: Deepchecks LLM pentesting documentation, accessed: 2026-07-04, origin: agent, quote: "Test your LLM application against a broad set of adversarial prompts - prompt injections, jailbreaks, PII extraction, bias triggers - and analyze resilience." }
+    source: { url: https://web.archive.org/web/20260512150722/https://llmdocs.deepchecks.com/docs/pentesting-your-llm-pipeline, tier: official, title: "Deepchecks LLM pentesting documentation (archived 2026-05-12)", accessed: 2026-09-22, origin: agent, quote: "Test your LLM application against a broad set of adversarial prompts - prompt injections, jailbreaks, PII extraction, bias triggers - and analyze resilience." }
   - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: Evaluates each layer of an agentic pipeline independently, scoring individual agents, tools, and LLM calls to isolate underperforming or failing components.
-    source: { url: https://llmdocs.deepchecks.com/docs/agent-evaluation-use-case, tier: official, title: Deepchecks agent evaluation documentation, accessed: 2026-06-10, origin: reviewed, quote: "an end-to-end testing and evaluation pipeline that takes you from a deployed agent to a full diagnostic report." }
+    source: { url: https://web.archive.org/web/20260512160428/https://llmdocs.deepchecks.com/docs/agent-evaluation-use-case, tier: official, title: "Deepchecks agent evaluation documentation (archived 2026-05-12)", accessed: 2026-09-22, origin: agent, quote: "an end-to-end testing and evaluation pipeline that takes you from a deployed agent to a full diagnostic report." }
 primary_cell: { asset: runtime-ai-data, function: detect }
