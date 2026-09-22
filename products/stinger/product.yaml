@@ -24,7 +24,7 @@ matrix_coverage:
     maturity: primary
     note: Automated red teaming that generates adversarial scenarios across text, image, audio, video, and physical AI, spanning single-prompt and multi-turn jailbreak techniques, with a configurable judge and reporting that maps attack technique against vulnerability.
     source: { url: https://www.aim-intelligence.com/stinger, tier: official, title: Stinger attack coverage, accessed: 2026-08-20, origin: agent, quote: "From foundation models to autonomous agents and production applications, Stinger finds critical vulnerabilities before attackers do." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: Tests deployed AI applications and agents end to end rather than at the prompt layer, with target crawling and analysis, session handling for authenticated state, and per-endpoint attack goals.

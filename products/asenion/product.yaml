@@ -30,7 +30,7 @@ matrix_coverage:
     maturity: primary
     note: Continuously assesses and governs AI models for risk and regulatory compliance across the lifecycle, with automated controls mapped to the EU AI Act, ISO/IEC 42001, and NIST AI RMF.
     source: { url: https://asenion.ai/ai-governance-platform, tier: official, title: Asenion AI Governance Platform for Enterprise, accessed: 2026-07-04, origin: agent, quote: "automated controls that continuously assess, test, and govern your AI systems and agents" }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [govern]
     maturity: secondary
     note: Extends the same assessment and governance controls to AI systems and agents at the application and orchestration layer.

@@ -34,7 +34,7 @@ matrix_coverage:
     maturity: secondary
     note: Continuous post-deployment monitoring that assesses AI system logs for performance, risk, and security indicators, raising alerts on policy breaches, data leakage risk, drift, and unexpected cost or tool use.
     source: { url: https://www.advai.com/platform, tier: official, title: Advai Platform monitoring, accessed: 2026-08-20, origin: agent, quote: "Alerts for policy breaches, security threats, and data leakage risks" }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: Tests agentic systems for multi-step behaviour, tool misuse, and unsafe execution paths before go-live, then monitors tool use and escalation signals once the agents are running.

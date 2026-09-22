@@ -25,7 +25,7 @@ changelog:
   - date: 2026-07-05
     summary: "Refreshed source links and coverage to the current Highflame platform, adding agent-identity coverage and narrowing one row (erratum)."
 matrix_coverage:
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [protect]
     maturity: primary
     note: Acts as a centralized control layer across LLM, MCP, A2A, and A2P interactions, enforcing Cedar-based access, safety, and compliance policies inline and generating audit-ready reports.
@@ -35,7 +35,7 @@ matrix_coverage:
     maturity: primary
     note: Inline controls inspect prompts and responses and block malicious inputs such as prompt injection, and strip PII and secrets before they reach the model or any tool.
     source: { url: https://www.highflame.com/platform, tier: official, title: Highflame platform runtime controls, accessed: 2026-07-05, origin: agent, quote: "Blocking an injection and pausing a drifting agent are the same kind of decision." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: Enforces one Cedar policy across MCP, tool-gateway, and agent-to-agent traffic, and its signal engine flags tool-risk and MCP poisoning inline.

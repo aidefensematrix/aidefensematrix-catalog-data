@@ -18,7 +18,7 @@ changelog:
   - date: 2026-06-07
     summary: "Verified details from primary and press sources; mapped the Discover, Ascend, and Defend modules to matrix coverage."
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: "Discover AI inventories agents and tools; Defend AI screens agentic app traffic inline."

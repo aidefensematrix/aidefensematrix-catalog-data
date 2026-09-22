@@ -19,9 +19,9 @@ changelog:
   - date: 2026-07-05
     summary: Added to the catalog from the OrcaRouter documentation.
 matrix_coverage:
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [protect, detect]
     maturity: primary
     note: Routes prompts across models through one OpenAI-compatible endpoint and runs a risk-scored agent firewall that grades every tool and MCP call and flags anomalies before actions run.
     source: { url: https://www.orcarouter.ai/, tier: official, title: OrcaRouter agent firewall, accessed: 2026-07-05, origin: agent, quote: "Every tool and MCP call is graded ALLOW, REVIEW, or BLOCK before it runs, and anomaly detection flags rate and cost spikes against learned hour-of-week baselines." }
-primary_cell: { asset: ai-gateways-routers, function: protect }
+primary_cell: { asset: ai-traffic, function: protect }

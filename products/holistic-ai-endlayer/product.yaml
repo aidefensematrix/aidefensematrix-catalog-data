@@ -19,7 +19,7 @@ changelog:
   - date: 2026-09-21
     summary: Added to the catalog from the Holistic AI Endlayer product pages.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, detect, protect, govern]
     maturity: primary
     note: A device agent inventories AI apps, coding agents, and MCP servers, tracks which agents act unattended, blocks agent and MCP requests that break policy, and grades tools against versioned rules mapped to EU AI Act, ISO/IEC 42001, and NIST AI RMF clauses.
@@ -29,7 +29,7 @@ matrix_coverage:
     maturity: secondary
     note: Guardrails score prompts before they run and redact or block secrets and personal data on the way out. Govern artifact is the versioned rule on what may leave in a prompt, mapped to GDPR personal-data clauses.
     source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent, quote: "prompts are scored before they run, and secrets and personal data are warned on, redacted or blocked on the way out." }
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [identify, detect, protect, govern]
     maturity: secondary
     note: Maps the AI sites and MCP hosts each device reaches, watches agent-to-agent and agent-to-MCP calls on the machine, and blocks those that break policy. Govern artifact is the versioned rule on which MCP hosts an agent may reach.
@@ -44,4 +44,4 @@ matrix_coverage:
     maturity: adjacent
     note: Local models running on managed machines appear in the same device inventory as the other AI tools.
     source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent, quote: "It inventories every AI tool, local model, agent, extension and MCP server on the machine, and the AI sites it reaches, then grades all of it against deterministic policy." }
-primary_cell: { asset: ai-orchestration-tools, function: identify }
+primary_cell: { asset: ai-coding-orchestration-tools, function: identify }

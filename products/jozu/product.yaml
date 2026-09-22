@@ -26,7 +26,7 @@ matrix_coverage:
     maturity: primary
     note: Jozu Hub inventories models as OCI ModelKits and secures the model supply chain by scanning, signing, and tamper-proof packaging them.
     source: { url: https://www.jozu.com/, tier: official, title: Jozu homepage, accessed: 2026-06-24, origin: reviewed, quote: "Jozu Hub secures your model supply chain with scanning, signing, and tamper-proof packaging." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: secondary
     note: Scans agents and MCP servers for supply-chain vulnerabilities, content-safety issues, prompt-injection susceptibility, and backdoors, attaching signed attestations and gating admission by policy.

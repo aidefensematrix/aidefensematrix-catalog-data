@@ -24,7 +24,7 @@ matrix_coverage:
     maturity: primary
     note: Sits between users and the model, classifying prompts against policy before the model sees them, rewriting or refusing unsafe input, and redacting secrets and regulated data from responses. Dashboards track prompt traffic, anomalies, and blocked attempts, with logs retained for audit.
     source: { url: https://cloudmatos.ai/solution/prompt-firewall/, tier: official, title: Prompt Firewall, accessed: 2026-09-03, origin: agent, quote: "Prompt Firewall acts as an intelligent middle layer between your users and any LLM, inspecting every prompt and response in real-time." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect]
     maturity: secondary
     note: Integrates with agent and retrieval frameworks and with generic API gateways, so the same policy layer applies to calls made through an orchestration framework rather than only to a direct chat surface.

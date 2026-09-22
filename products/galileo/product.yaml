@@ -30,7 +30,7 @@ matrix_coverage:
     maturity: primary
     note: "Agent Control evaluates LLM and tool inputs and outputs during agent execution and blocks unsafe content inline."
     source: { url: https://docs.galileo.ai/concepts/agent-control/overview, tier: official, title: "Agent Control", accessed: 2026-08-31, origin: agent, quote: "It helps block harmful content, prompt injection, PII leakage, and other risks without requiring changes to agent code." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: "Luna-2 evaluation models score agent and LLM application behavior, including multi-step agentic workflows."

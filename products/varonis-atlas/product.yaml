@@ -22,7 +22,7 @@ changelog:
   - date: 2026-06-13
     summary: Added to the catalog from the Varonis AI Security documentation.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Inventories AI systems including shadow AI, monitors AI usage, and enforces runtime guardrails via an in-path AI gateway across chatbots, custom LLMs, MCP, and agentic frameworks.
@@ -37,4 +37,4 @@ matrix_coverage:
     maturity: secondary
     note: The AI gateway inspects prompts and model responses in real time to detect and block sensitive-data leakage and malicious use.
     source: { url: https://www.varonis.com/platform/ai-security, tier: official, title: Varonis AI Security (Atlas), accessed: 2026-06-13, origin: reviewed, quote: "Enforce real-time policies that prevent sensitive data leakage and block malicious and non-compliant use of any AI asset." }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

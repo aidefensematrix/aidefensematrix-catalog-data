@@ -32,7 +32,7 @@ matrix_coverage:
     maturity: primary
     note: Guardian scans models from registries and hubs for unsafe code and threats.
     source: { url: https://protectai.com/guardian, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "Protect your most sensitive intellectual property with distributed, on-premises, and local scanning." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
     maturity: primary
     note: Recon runs automated red teaming against AI applications and agents.

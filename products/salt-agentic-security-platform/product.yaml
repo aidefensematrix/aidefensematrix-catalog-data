@@ -19,9 +19,9 @@ changelog:
   - date: 2026-07-03
     summary: Added to the catalog from the Salt Agentic Security Platform documentation.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovers and maps every AI agent, MCP server, and API across the environment, stops agents that overstep, and detects abuse and active attacks in real time across the full graph.
     source: { url: https://salt.security/, tier: official, title: Salt Security agentic discovery, accessed: 2026-07-03, origin: reviewed, quote: "Salt automatically discovers every agent, MCP server and API across your environment, including the shadow and zombie APIs nobody knows are there." }
-primary_cell: { asset: ai-orchestration-tools, function: identify }
+primary_cell: { asset: ai-coding-orchestration-tools, function: identify }

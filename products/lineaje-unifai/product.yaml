@@ -19,7 +19,7 @@ changelog:
   - date: 2026-06-13
     summary: Added to the catalog from the Lineaje UnifAI documentation; the product was introduced in 2026.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, govern, protect]
     maturity: primary
     note: Discovers the AI inventory of agentic applications, derives security and compliance policies, and enforces them with built-in runtime guardrails.
@@ -29,4 +29,4 @@ matrix_coverage:
     maturity: secondary
     note: Continuously discovers AI models in the inventory and applies the derived security and governance policies.
     source: { url: https://www.lineaje.com/unifai, tier: official, title: Lineaje UnifAI, accessed: 2026-06-13, origin: reviewed, quote: "Autonomously Derives AI Policies for Security, Development and GRC" }
-primary_cell: { asset: ai-orchestration-tools, function: govern }
+primary_cell: { asset: ai-coding-orchestration-tools, function: govern }

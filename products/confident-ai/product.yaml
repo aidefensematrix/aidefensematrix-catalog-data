@@ -32,7 +32,7 @@ matrix_coverage:
     maturity: primary
     note: DeepTeam red teaming simulates jailbreaking, prompt injection, and multi-turn exploitation attacks to uncover model vulnerabilities such as bias, PII leakage, and prompt leakage, drawing on more than 50 vulnerability types.
     source: { url: https://github.com/confident-ai/deepteam, tier: official, title: DeepTeam repository on GitHub, accessed: 2026-06-10, origin: reviewed, quote: "DeepTeam is a framework to red team LLMs and AI agents." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: Red teaming extends to AI agents, RAG pipelines, and chatbots, probing agentic vulnerabilities such as goal theft, recursive hijacking, excessive agency, and tool orchestration abuse.

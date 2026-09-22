@@ -21,7 +21,7 @@ changelog:
   - date: 2026-06-12
     summary: Refined matrix coverage.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: MCP gateway routes agent tool calls to MCP servers through one endpoint with per-agent access control, tool groups, hardened tool variants, and OAuth and API key auth; audit logs record tool usage and configuration changes.
@@ -36,4 +36,4 @@ matrix_coverage:
     maturity: secondary
     note: The enterprise edition inspects MCP requests and responses inline to redact sensitive data before it leaves the deployment environment.
     source: { url: https://www.lunar.dev/product/mcp, tier: official, title: Lunar MCP gateway product page, accessed: 2026-06-10, origin: reviewed, quote: "It intercepts, authenticates, and governs traffic using policies defined by the organization." }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

@@ -19,7 +19,7 @@ changelog:
   - date: 2026-07-03
     summary: Added to the catalog from the Cequence AI Gateway documentation.
 matrix_coverage:
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [protect, detect]
     maturity: primary
     note: Enforces authorization policy inline on every agent tool call for the full session and provides real-time visibility into AI-API traffic with full audit logging.
@@ -29,4 +29,4 @@ matrix_coverage:
     maturity: secondary
     note: Provides token lifecycle management and identity-based access for AI agents, preventing unauthorized agent access to systems and data.
     source: { url: https://www.cequence.ai/products/ai-gateway/, tier: official, title: Cequence AI Gateway authentication, accessed: 2026-07-03, origin: reviewed, quote: "Built-in token lifecycle management provides appropriate identity-based access to systems and data while preventing unauthorized AI agent access." }
-primary_cell: { asset: ai-gateways-routers, function: protect }
+primary_cell: { asset: ai-traffic, function: protect }

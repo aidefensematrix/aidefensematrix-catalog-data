@@ -26,7 +26,7 @@ changelog:
   - date: 2026-06-13
     summary: Added a company-level SOC 2 Type 2 attestation cited to the Knostic trust center.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: "Inspects MCP connections in real time and monitors IDE extensions and plugins, blocking untrusted or risky components."
@@ -41,4 +41,4 @@ matrix_coverage:
     maturity: secondary
     note: "Redacts and guards sensitive data inside the IDE against prompt injection and oversharing."
     source: { url: https://www.getkirin.com, tier: official, title: "Kirin guards sensitive data inside the IDE", accessed: 2026-06-11, origin: reviewed, quote: "Kirin automatically redacts and guards sensitive data inside your IDE." }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

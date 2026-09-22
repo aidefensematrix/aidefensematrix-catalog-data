@@ -21,7 +21,7 @@ changelog:
   - date: 2026-07-04
     summary: "Corrected matrix_coverage (erratum): narrowed the orchestration and identity row functions and re-anchored the identity and runtime coverage quotes to the repository."
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect, respond]
     maturity: primary
     note: The policy engine evaluates every governed agent tool call against YAML, OPA, or Cedar rules with fail-closed deny and approval workflows; the MCP Security Gateway detects tool poisoning, drift, and hidden instructions, with privilege rings, a kill switch, and Merkle audit logs.
@@ -36,4 +36,4 @@ matrix_coverage:
     maturity: adjacent
     note: The PromptDefense evaluator and the agt red-team scan command audit prompt files for injection across twelve vectors as an offline check rather than an inline guardrail.
     source: { url: https://github.com/microsoft/agent-governance-toolkit, tier: official, title: Agent Governance Toolkit repository, accessed: 2026-07-04, origin: agent, quote: "PromptDefense Evaluator 12-vector prompt injection audit" }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

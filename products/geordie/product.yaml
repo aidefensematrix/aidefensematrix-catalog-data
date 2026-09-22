@@ -22,7 +22,7 @@ changelog:
   - date: 2026-06-14
     summary: Refined product description wording.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: primary
     note: Discovers agents across cloud, code, and endpoint environments and maps each agent configuration, including tool and MCP connections, plugins, system prompts, and models, with findings mapped to OWASP, NIST, ISO 42001, and the EU AI Act.
@@ -37,4 +37,4 @@ matrix_coverage:
     maturity: secondary
     note: Maps agent permissions, user mappings, and system access, and updates the picture as connections and authorizations change.
     source: { url: https://www.geordie.ai/product, tier: official, title: Geordie agent security platform, accessed: 2026-06-10, origin: reviewed, quote: "Discovery requires no reconfiguration or instrumentation of your existing agents." }
-primary_cell: { asset: ai-orchestration-tools, function: identify }
+primary_cell: { asset: ai-coding-orchestration-tools, function: identify }

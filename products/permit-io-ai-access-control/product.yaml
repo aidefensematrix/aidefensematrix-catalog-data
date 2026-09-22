@@ -27,7 +27,7 @@ matrix_coverage:
     maturity: primary
     note: Assigns machine identities to AI agents and enforces per-agent authorization and consent over their access to tools and resources, with humans delegating bounded authority.
     source: { url: https://www.permit.io/ai-access-control, tier: official, title: Permit.io AI Access Control page, accessed: 2026-06-24, origin: reviewed, quote: "Assign machine identities to AI agents to track and manage their access to external tools and resources." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: secondary
     note: An MCP gateway proxy authorizes every agent tool call against fine-grained policy, blocks denied calls before they reach the server, and logs each decision.

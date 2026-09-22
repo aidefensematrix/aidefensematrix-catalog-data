@@ -24,7 +24,7 @@ matrix_coverage:
     maturity: primary
     note: Issues scoped, ephemeral tokens to agents and machines and evaluates every request against identity, context, policy, and risk to allow, limit, or deny it at runtime.
     source: { url: https://curity.io/product/access-intelligence/, tier: official, title: Curity runtime authorization, accessed: 2026-07-05, origin: agent, quote: "Every request is assessed against identity, context, policy and risk, and can be allowed, limited or denied in real time." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect]
     maturity: secondary
     note: Gates the API and tool calls agents make across chains of actions, carrying user and agent identity together and requiring human approval for high-stakes actions.

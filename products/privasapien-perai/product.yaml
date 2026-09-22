@@ -24,7 +24,7 @@ matrix_coverage:
     maturity: primary
     note: The Safe AI Inference tier places small-language-model guardrails inline on prompts and retrieval pipelines, pseudonymizing personal data before it reaches a model and screening prompts for attacks. Named components include FireLM, PrivacyRAI, SecureRAI, ContextRAI, and SafeRAI.
     source: { url: https://privasapien.com/, tier: official, title: PrivaSapien, accessed: 2026-09-03, origin: agent, quote: "Secure AI inference with real-time control across prompts and RAG pipelines ensuring PII encryption, tokenization, masking, and attack prevention" }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: secondary
     note: The Trusted Agents tier firewalls agent prompts and tool-calling context, checks whether an agent behaves as its description claims, monitors agent-to-model interactions, and routes high-risk actions to a human. Named components include ClawTron, ToolClaw, LLMClaw, ContextClaw, and Claw X-Ray.

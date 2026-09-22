@@ -23,7 +23,7 @@ changelog:
   - date: 2026-07-16
     summary: Added to the catalog from the Bifrost documentation.
 matrix_coverage:
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [identify, protect]
     maturity: primary
     note: Open-source gateway unifying access to 20+ model providers behind virtual keys that control access permissions, budgets, rate limits, and routing per consumer. The enterprise tier adds OIDC and SCIM provisioning, RBAC, audit logs, and clustering.
@@ -33,4 +33,4 @@ matrix_coverage:
     maturity: secondary
     note: Enterprise guardrails validate prompts and responses in real time using CEL rules and provider profiles (native regex and secrets detection plus Presidio, Azure AI Language PII, AWS Bedrock, Azure Content Safety, Google Model Armor, CrowdStrike AIDR, GraySwan, and Patronus AI).
     source: { url: https://docs.getbifrost.ai/enterprise/guardrails, tier: official, title: Bifrost Guardrails, accessed: 2026-07-16, origin: agent, quote: "The system validates inputs and outputs in real-time against your specified policies, ensuring responsible AI deployment with protection against harmful content, prompt injection, PII leakage, credential leakage, and policy violations." }
-primary_cell: { asset: ai-gateways-routers, function: protect }
+primary_cell: { asset: ai-traffic, function: protect }

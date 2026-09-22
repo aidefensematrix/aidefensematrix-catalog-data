@@ -24,7 +24,7 @@ matrix_coverage:
     maturity: primary
     note: Runs automated adversarial tests over prompts and responses to surface prompt injection, tool misuse, data leakage, and multi-step agent attacks before release.
     source: { url: https://generalanalysis.com/products/automated-ai-red-teaming, tier: official, title: General Analysis AI red teaming, accessed: 2026-07-03, origin: reviewed, quote: "Test prompt injection, tool misuse, data leakage, unsafe autonomy, and multi-step agent attacks before they reach users." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary
     note: Discovers the AI systems in the environment, inventorying models, MCP servers, knowledge bases, and agent workflows before testing them.

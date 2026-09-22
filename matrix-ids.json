@@ -1,14 +1,18 @@
 {
-  "_comment": "Canonical AI Defense Matrix identifiers — the source of truth for this data repo. The validator checks every product's matrix_coverage and primary_cell against these. An automated drift check may compare them against the companion's published artifact (https://aidefensematrix.com/ai-defense-matrix.yaml).",
+  "_comment": "Canonical AI Defense Matrix identifiers — the source of truth for this data repo. The validator checks every product's matrix_coverage and primary_cell against these. An automated drift check may compare them against the companion's published artifact (https://aidefensematrix.com/ai-defense-matrix.yaml). retired_asset_ids maps each asset id that was renamed to its current id, so the validator can name the replacement.",
   "asset_ids": [
     "ai-workload-platforms",
-    "ai-orchestration-tools",
+    "ai-coding-orchestration-tools",
     "ai-generated-code",
-    "ai-gateways-routers",
+    "ai-traffic",
     "ai-model",
     "training-data",
     "runtime-ai-data",
     "ai-agent-identities"
   ],
+  "retired_asset_ids": {
+    "ai-gateways-routers": "ai-traffic",
+    "ai-orchestration-tools": "ai-coding-orchestration-tools"
+  },
   "function_ids": ["govern", "identify", "protect", "detect", "respond", "recover"]
 }

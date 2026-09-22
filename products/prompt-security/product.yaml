@@ -32,7 +32,7 @@ matrix_coverage:
     maturity: primary
     note: Inline screening of prompts and responses for prompt injection, jailbreaks, and data leakage, with blocking and redaction.
     source: { url: https://prompt.security, tier: official, title: Prompt Security runtime AI security, accessed: 2026-06-07, origin: reviewed, quote: "Whether you're evaluating popular AI tools or assessing MCP servers, our platform provides transparent risk scores, parameter breakdowns, and certification status checks." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: Protection for homegrown LLM applications via API, SDKs, and a centralized gateway.

@@ -26,7 +26,7 @@ changelog:
   - date: 2026-07-27
     summary: "Corrected matrix coverage (erratum): added a function to one row."
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [govern, identify, protect, detect]
     maturity: primary
     note: AI Blueprints define the approved models, tools, identities, and guardrails for each workflow as versioned operational contracts; discovery inventories agents, MCP servers, and AI-enabled apps, and runtime drift from the approved design is flagged for approval or shutdown.
@@ -41,7 +41,7 @@ matrix_coverage:
     maturity: secondary
     note: AI Blueprints set the approved-model criteria for each workflow as a versioned operational contract, and the platform discovers and inventories models, enforces Blueprint-scoped models at runtime, prevents unapproved model substitutions, and detects drift from the approved design.
     source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-27, origin: agent, quote: "An AI Blueprint™ is a living operational contract that defines approved models, tools, identities, guardrails, and ownership for an AI workflow." }
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [protect, detect]
     maturity: secondary
     note: The AI Hub is a single control point for MCP and model traffic, applying authentication, authorization, and policy at the call boundary, and inspecting content before and after each call.
@@ -51,4 +51,4 @@ matrix_coverage:
     maturity: secondary
     note: Runtime governance compares live AI activity against the approved Blueprint, enforces operational and security guardrails, records conformance evidence, and flags drift from the approved design.
     source: { url: https://jetstream.security/platform/, tier: official, title: Security-First AI Governance Platform, accessed: 2026-07-27, origin: agent, quote: "It enforces operational and security guardrails, records evidence, and flags drift" }
-primary_cell: { asset: ai-orchestration-tools, function: govern }
+primary_cell: { asset: ai-coding-orchestration-tools, function: govern }

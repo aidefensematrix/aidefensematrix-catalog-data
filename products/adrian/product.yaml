@@ -20,9 +20,9 @@ changelog:
   - date: 2026-07-16
     summary: Added to the catalog from the Adrian documentation.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: Monitors agent actions and chain-of-thought reasoning traces at runtime, detects malicious, misaligned, or out-of-remit actions classified by severity, and can pause or block specific actions before execution with optional human-in-the-loop approval.
     source: { url: https://docs.adrian.secureagentics.ai/, tier: official, title: Adrian Documentation Introduction, accessed: 2026-07-16, origin: agent, quote: "Pause or block specific actions, with optional human-in-the-loop approval." }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

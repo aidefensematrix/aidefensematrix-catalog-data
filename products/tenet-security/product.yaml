@@ -18,9 +18,9 @@ changelog:
   - date: 2026-07-16
     summary: Added to the catalog from the Tenet Security product documentation.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect, identify]
     maturity: primary
     note: Agent-side simulation across OS, network and API, and LLM-reasoning layers runs inside the agent runtime, projecting where each action leads and preventing dangerous actions before execution. Also maps every AI agent, MCP, and tool integration in the environment via lightweight traffic metadata.
     source: { url: https://tenetsecurity.ai/product, tier: official, title: Tenet Security Platform, accessed: 2026-07-16, origin: agent, quote: "If it leads somewhere dangerous, Tenet prevents it before it ever executes." }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

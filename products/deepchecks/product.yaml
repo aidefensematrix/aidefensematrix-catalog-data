@@ -39,7 +39,7 @@ matrix_coverage:
     maturity: secondary
     note: The pentest environment generates curated adversarial prompts covering prompt injection, jailbreaks, PII extraction, and bias triggers, runs the LLM pipeline against them, and scores whether the attacks succeeded.
     source: { url: https://llmdocs.deepchecks.com/docs/pentesting-your-llm-pipeline, tier: official, title: Deepchecks LLM pentesting documentation, accessed: 2026-07-04, origin: agent, quote: "Test your LLM application against a broad set of adversarial prompts - prompt injections, jailbreaks, PII extraction, bias triggers - and analyze resilience." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: Evaluates each layer of an agentic pipeline independently, scoring individual agents, tools, and LLM calls to isolate underperforming or failing components.

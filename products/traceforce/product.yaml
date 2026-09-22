@@ -36,7 +36,7 @@ changelog:
   - date: 2026-07-28
     summary: Refreshed the compliance attestation citation to the vendor legal and compliance page.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, detect, protect, respond]
     maturity: primary
     note: Endpoint agents discover the AI tools, MCP servers, and skills running locally on each device and flag risk from how AI is actually used, stopping dangerous tool calls with block and warn rules and remediating by auto-patching AI packages on-device and quarantining malicious MCPs.
@@ -46,4 +46,4 @@ matrix_coverage:
     maturity: secondary
     note: On-device policy rules inspect what employees send to AI apps and warn on or block an unsafe transfer, such as pasting a customer list into a chatbot, before it leaves the device.
     source: { url: "https://www.ycombinator.com/launches/RxE-traceforce-catch-risky-agent-actions-your-security-gateway-will-never-spot", tier: official, title: Traceforce launch post (Y Combinator), accessed: 2026-07-28, origin: agent, quote: "Real-time controls: warn and block unsafe actions (like uploading a client list to a chatbot) before they happen." }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

@@ -27,7 +27,7 @@ matrix_coverage:
     maturity: primary
     note: Catalogs AI models, datasets, agents, and vendors in a central inventory and maps their risk to control frameworks to maintain ongoing regulatory compliance.
     source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-07-03, origin: reviewed, quote: "Map risk and control frameworks for risk evaluation and maintaining ongoing compliance" }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect]
     maturity: secondary
     note: Applies runtime guardrails including prompt and output filtering and policy-based blocking to enforce compliant AI behavior across platforms.

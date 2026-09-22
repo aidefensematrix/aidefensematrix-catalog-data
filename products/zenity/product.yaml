@@ -33,7 +33,7 @@ matrix_coverage:
     maturity: primary
     note: AIDR monitors step-level agent execution at runtime, detects direct and indirect prompt injection, and blocks sensitive data leakage through agent conversations, tool calls, and memory.
     source: { url: https://zenity.io/platform/ai-security-platform/aidr, tier: official, title: Zenity AI detection and response, accessed: 2026-06-10, origin: reviewed, quote: "AIDR enables security teams to detect and stop risky behavior before it impacts systems or data." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: secondary
     note: MCP security provides visibility into MCP connections, blocks unauthorized agent actions, and enforces security policies over MCP-enabled agents.

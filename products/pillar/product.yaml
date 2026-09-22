@@ -27,7 +27,7 @@ matrix_coverage:
     maturity: primary
     note: Adaptive runtime guardrails inspect AI inputs and outputs, detect malicious intent, and use taint analysis to block PII and secret egress in real time.
     source: { url: https://www.pillar.security/platform, tier: official, title: Pillar Security Platform, accessed: 2026-06-09, origin: reviewed, quote: "Detects shadow coding agents, personal automation platforms connected to corporate data." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
     maturity: secondary
     note: Discovers and inventories agents, models, MCP servers, and tools including shadow AI, maps the permissions and connections of each agent, and red-teams them for exploitable flaws.

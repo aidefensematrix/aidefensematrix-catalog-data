@@ -19,7 +19,7 @@ changelog:
   - date: 2026-06-09
     summary: Enriched from the Kong AI Gateway documentation.
 matrix_coverage:
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [identify, protect, detect]
     maturity: primary
     note: Proxies traffic to many LLM providers and enforces allow and deny lists, prompt guards, and content-safety policies, with visibility over AI usage.
@@ -29,4 +29,4 @@ matrix_coverage:
     maturity: secondary
     note: Plugins inspect prompts and responses, redacting PII and filtering unsafe or off-topic content before it reaches a model or user.
     source: { url: https://developer.konghq.com/ai-gateway/, tier: official, title: Kong AI Gateway documentation, accessed: 2026-06-09, origin: reviewed, quote: "It also provides built-in PII sanitization, automatically detecting and redacting sensitive data across 20 categories and 9 languages." }
-primary_cell: { asset: ai-gateways-routers, function: protect }
+primary_cell: { asset: ai-traffic, function: protect }

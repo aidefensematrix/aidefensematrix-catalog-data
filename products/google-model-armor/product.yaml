@@ -27,7 +27,7 @@ matrix_coverage:
     maturity: primary
     note: Screens AI prompts and responses in real time, blocking prompt injection, jailbreaks, malicious URLs, and sensitive-data leaks.
     source: { url: https://cloud.google.com/security/products/model-armor, tier: official, title: Google Model Armor, accessed: 2026-07-05, origin: agent, quote: "Model Armor screens AI prompts, responses, and agent interactions to provide runtime security for AI, constantly protecting from threats." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect]
     maturity: secondary
     note: Provides in-line protection for agent interactions across agent platforms and frameworks such as Vertex and LangChain.

@@ -23,7 +23,7 @@ changelog:
   - date: 2026-07-16
     summary: "Corrected two matrix coverage source quotes (erratum): replaced quotes with lines that support the cited cells."
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [govern, identify]
     maturity: primary
     note: Centralized registry of AI apps and agents with governance workflows and approval gates.
@@ -38,4 +38,4 @@ matrix_coverage:
     maturity: secondary
     note: Agent registry with agent cards covering purpose, tools, data sources, and guardrails.
     source: { url: https://www.credo.ai/product, tier: official, title: Agent Registry, accessed: 2026-07-16, origin: agent, quote: "Agent Registry with agent cards (purpose, tools, data sources, guardrails)" }
-primary_cell: { asset: ai-orchestration-tools, function: govern }
+primary_cell: { asset: ai-coding-orchestration-tools, function: govern }

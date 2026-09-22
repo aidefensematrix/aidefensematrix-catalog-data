@@ -24,7 +24,7 @@ matrix_coverage:
     maturity: primary
     note: AI Guardian binds unified controls to AI agents, detecting agent vulnerabilities and enforcing compliance on how each agent operates.
     source: { url: https://www.eqtylab.io/guardian, tier: official, title: EQTY Lab AI Guardian, accessed: 2026-07-03, origin: reviewed, quote: "Detect vulnerabilities and enforce compliance for all your AI agents." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [govern]
     maturity: secondary
     note: Governance Studio provides a policy engine that enforces rules and collects compliance evidence mapped to AI regulatory frameworks.

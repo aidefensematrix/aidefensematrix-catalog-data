@@ -35,7 +35,7 @@ matrix_coverage:
     maturity: primary
     note: TrojAI Defend is a runtime AI firewall that monitors, alerts, blocks, redacts, and logs, filtering inputs and outputs to AI applications to stop prompt injection, sensitive information disclosure, and other adversarial attacks.
     source: { url: https://troj.ai/products/defend, tier: official, title: TrojAI Defend product page, accessed: 2026-07-05, origin: agent, quote: "TrojAI Defend delivers real-time visibility and control over AI systems, helping you detect, block, and contain threats before they impact users, data, or connected systems." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: TrojAI Defend for MCP applies MCP-specific policies that inspect, audit, and enforce security on MCP traffic in real time, blocking unregistered or rogue servers in agentic workflows.

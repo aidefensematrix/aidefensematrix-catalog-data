@@ -27,7 +27,7 @@ changelog:
   - date: 2026-07-16
     summary: Updated the description to match the current homepage.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovers installed agents and MCP servers across workstations, hosts MCP servers in sandboxed cloud workspaces backed by a vetted pre-scanned catalog, intercepts MCP traffic to block prompt injection and rogue MCP servers, and enforces centralized runtime policies with audit trails.
@@ -37,4 +37,4 @@ matrix_coverage:
     maturity: secondary
     note: Exposure analysis surfaces exposed configurations and hardcoded secrets that AI agents accumulate on workstations, mapping the credential sprawl agentic activity creates.
     source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-07-16, origin: agent, quote: "Identify exposed configs and hardcoded secrets instantly" }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

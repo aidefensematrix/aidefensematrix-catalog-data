@@ -29,7 +29,7 @@ matrix_coverage:
     maturity: primary
     note: Simulates enterprise user queries against Copilot, Glean, and Gemini to find inference-based oversharing where the assistant recombines data across security boundaries, then applies role-based access policies and automated labeling to constrain what the assistant answers.
     source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed, quote: "Identifies inference-based exposures where AI combines data inappropriately across security boundaries." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
     maturity: secondary
     note: Audits enterprise AI assistants including Copilot, Glean, and Gemini, mapping their knowledge-access patterns and producing an audit trail of inferred access for safe rollout.

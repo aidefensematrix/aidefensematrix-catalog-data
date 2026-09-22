@@ -22,9 +22,9 @@ changelog:
   - date: 2026-06-13
     summary: Added to the catalog from the Cloudflare AI Security for Apps documentation; the product was formerly named Firewall for AI.
 matrix_coverage:
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [identify, protect, detect]
     maturity: primary
     note: Built into the WAF in front of LLM-powered apps, discovering AI endpoints and detecting and mitigating prompt injection, sensitive-data exposure, and unbounded consumption. Threat detection is an Enterprise add-on.
     source: { url: https://www.cloudflare.com/application-services/products/ai-security-for-apps/, tier: official, title: Cloudflare AI Security for Apps, accessed: 2026-06-13, origin: reviewed, quote: "AI Security for Apps provides advanced detection and mitigation of threats such as prompt injections, PII exposure, and toxic topics." }
-primary_cell: { asset: ai-gateways-routers, function: protect }
+primary_cell: { asset: ai-traffic, function: protect }

@@ -31,7 +31,7 @@ matrix_coverage:
     maturity: primary
     note: The Guardian Agent examines prompts and LLM responses in real time and blocks, redacts, or passes them per configured Profile policies (Listen and Enforce modes), with ML-based safety and security signals covering prompt injection and sensitive-information exposure.
     source: { url: https://docs.aiceberg.ai/getting-started/start-here, tier: official, title: Aiceberg Docs Start here, accessed: 2026-07-16, origin: agent, quote: "Aiceberg will examine your prompt and signal results and either block, redact, or send it to the LLM, based on the policies you configure in your Profile." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: Monitors agentic AI decisions and actions, including information an agent pulls via RAG, tool use, and memory, with explainable and traceable risk detection across connected AI systems.

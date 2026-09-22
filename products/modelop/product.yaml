@@ -19,7 +19,7 @@ changelog:
   - date: 2026-08-31
     summary: "Added to the catalog from the ModelOp product documentation."
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [govern, identify, protect]
     maturity: primary
     note: "Controls mapped to regulatory frameworks with audit evidence, over a registry of AI applications and agents that continuously discovers unregistered AI, with workflows that gate non-compliant actions."
@@ -34,4 +34,4 @@ matrix_coverage:
     maturity: secondary
     note: "Policy and guardrails applied to live AI traffic through integrations with AI and API gateways at execution time."
     source: { url: https://www.modelop.com/enterprise-ai-command-center, tier: official, title: "ModelOp runtime policy enforcement", accessed: 2026-08-31, origin: agent, quote: "Enforce runtime policy at the AI gateway." }
-primary_cell: { asset: ai-orchestration-tools, function: govern }
+primary_cell: { asset: ai-coding-orchestration-tools, function: govern }

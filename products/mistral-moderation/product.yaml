@@ -23,7 +23,7 @@ matrix_coverage:
     maturity: primary
     note: The moderation service classifies raw text and conversational content across policy categories including jailbreaking, while custom guardrails declared in chat completions and conversations requests enforce per-category thresholds and block violating content with a 403 response.
     source: { url: https://docs.mistral.ai/capabilities/guardrailing/, tier: official, title: Mistral AI moderation and guardrailing documentation, accessed: 2026-06-10, origin: reviewed, quote: "When a guardrail is triggered, the request is blocked and a 403 error is returned." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: secondary
     note: Agent-level guardrails attach moderation rules to an agent at creation time, and all conversations using that agent automatically inherit the configured thresholds and blocking action.
