@@ -11,12 +11,20 @@ deployment:
   value: [saas, self-hosted]
   source: { url: https://www.virtueai.com/, tier: official, title: Virtue AI, accessed: 2026-06-24, origin: reviewed }
 status:
-  value: active
-  source: { url: https://www.virtueai.com/, tier: official, title: Virtue AI, accessed: 2026-06-24, origin: reviewed }
-last_reviewed: 2026-06-24
+  value: acquired
+  source: { url: https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2026/fortinet-advances-continuous-ai-protection-with-the-acquisition-of-virtue-ai, tier: official, title: Fortinet Advances Continuous AI Protection with the Acquisition of Virtue AI, accessed: 2026-09-22, origin: agent }
+acquisition:
+  acquirer: Fortinet
+  acquirer_slug: fortiaigate
+  announced: 2026-08-17
+  post_acquisition_status: standalone
+  source: { url: https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2026/fortinet-advances-continuous-ai-protection-with-the-acquisition-of-virtue-ai, tier: official, title: Fortinet Advances Continuous AI Protection with the Acquisition of Virtue AI, accessed: 2026-09-22, origin: agent, quote: "Financial terms of the transaction are not disclosed, and the amount paid by Fortinet as consideration is immaterial to Fortinet’s business." }
+last_reviewed: 2026-09-22
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Virtue AI documentation.
+  - date: 2026-09-22
+    summary: Recorded the Fortinet acquisition, announced as completed 2026-08-17.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]

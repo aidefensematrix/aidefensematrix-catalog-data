@@ -11,9 +11,16 @@ deployment:
   value: [saas]
   source: { url: https://www.oasis.security/product, tier: official, title: "Oasis product overview (connects to cloud, SaaS, and on-prem environments)", accessed: 2026-06-07, origin: reviewed }
 status:
-  value: active
-  source: { url: https://www.securityweek.com/oasis-security-raises-120-million-for-agentic-access-management/, tier: press, title: "Oasis Security raises 120 million for agentic access management", accessed: 2026-06-07, origin: reviewed }
-last_reviewed: 2026-07-16
+  value: acquired
+  source: { url: https://securitybrief.co.uk/story/cyera-completes-usd-1-billion-oasis-security-deal, tier: press, title: "Cyera completes USD $1 billion Oasis Security deal", accessed: 2026-09-22, origin: agent }
+acquisition:
+  acquirer: Cyera
+  acquirer_slug: cyera
+  announced: 2026-07-28
+  post_acquisition_status: folded
+  new_name: Cyera Identity
+  source: { url: https://securitybrief.co.uk/story/cyera-completes-usd-1-billion-oasis-security-deal, tier: press, title: "Cyera completes USD $1 billion Oasis Security deal", accessed: 2026-09-22, origin: agent, quote: "The acquired business will operate as Cyera Identity, a dedicated identity unit within Cyera's wider platform." }
+last_reviewed: 2026-09-22
 changelog:
   - date: 2026-06-07
     summary: "Replaced seed stub with sourced details; set category to agent-security; recorded the 120 million Series B."
@@ -21,6 +28,8 @@ changelog:
     summary: Refined matrix coverage and primary function.
   - date: 2026-06-13
     summary: Refined matrix coverage.
+  - date: 2026-09-22
+    summary: Recorded the Cyera acquisition, announced 2026-07-28 and completed, with the business now operating as Cyera Identity.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
