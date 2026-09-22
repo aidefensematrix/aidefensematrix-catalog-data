@@ -21,10 +21,12 @@ last_reviewed: 2026-06-15
 changelog:
   - date: 2026-06-15
     summary: Added to the catalog from the Arnica documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-generated-code
     functions: [protect, detect]
     maturity: primary
     note: Arnie AI enforces version-controlled secure-coding rules inside AI coding agents (Copilot, Cursor, Claude Code) to prevent insecure code at generation, and its AI SAST engine scans AI-generated code to detect vulnerabilities across repositories and branches.
-    source: { url: https://www.arnica.io/, tier: official, title: Arnica, accessed: 2026-06-15, origin: reviewed, quote: "inject your security policy directly into Copilot, Cursor, and Claude Code at the point of generation. Then, AI SAST scans for meaning and intent, and developer-native workflows means the right owner gets the right fix at the right time" }
+    source: { url: https://www.arnica.io/, tier: official, title: Arnica, accessed: 2026-09-22, origin: agent, quote: "Inject your security policy directly into Copilot, Cursor, and Claude Code at the point of generation." }
 primary_cell: { asset: ai-generated-code, function: protect }

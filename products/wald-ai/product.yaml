@@ -15,12 +15,16 @@ status:
   value: active
   source: { url: https://wald.ai/pricing, tier: official, title: Wald AI pricing, accessed: 2026-06-25, origin: reviewed }
 compliance_attestations:
-  value: [SOC 2 Type I, SOC 2 Type II]
-  source: { url: https://wald.ai/, tier: official, title: Wald AI homepage, accessed: 2026-07-05, origin: agent, quote: "SOC2 TYPE II Trusted By 55+ Regulated Organizations" }
+  value: [SOC 2 Type II]
+  source: { url: https://wald.ai/, tier: official, title: Wald AI homepage, accessed: 2026-09-22, origin: agent, quote: "SOC2 TYPE II" }
 last_reviewed: 2026-06-25
 changelog:
   - date: 2026-06-25
     summary: Added to the catalog from the Wald AI documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Corrected compliance attestations (erratum): SOC 2 Type II only."
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]

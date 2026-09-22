@@ -21,12 +21,14 @@ last_reviewed: 2026-07-03
 changelog:
   - date: 2026-07-03
     summary: Added to the catalog from the Singulr AI Agent Pulse documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect]
     maturity: primary
     note: Discovers every AI agent and its tool, data, and MCP dependencies, then defines and enforces policies scoped by agent type, data sensitivity, and tool access.
-    source: { url: https://singulr.ai/products/agent-pulse, tier: official, title: Singulr Agent Pulse, accessed: 2026-07-03, origin: reviewed, quote: "Discover every AI agent in your environment on any platform. We create the context graph of tool connections, data access, MCP servers, and permissions to show how agents interact with your enterprise systems." }
+    source: { url: https://singulr.ai/products/agent-pulse, tier: official, title: Singulr Agent Pulse, accessed: 2026-09-22, origin: agent, quote: "Discover every AI agent in your environment on any platform, and the MCP servers and tools they rely on." }
   - asset: runtime-ai-data
     functions: [protect]
     maturity: secondary

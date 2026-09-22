@@ -20,12 +20,16 @@ changelog:
     summary: Added to the catalog from the Jozu documentation.
   - date: 2026-07-17
     summary: Refreshed a coverage source against the updated vendor page.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Updated a coverage note against the current vendor page."
 matrix_coverage:
   - asset: ai-model
     functions: [identify, protect]
     maturity: primary
-    note: Jozu Hub inventories models as OCI ModelKits and secures the model supply chain by scanning, signing, and tamper-proof packaging them.
-    source: { url: https://www.jozu.com/, tier: official, title: Jozu homepage, accessed: 2026-06-24, origin: reviewed, quote: "Jozu Hub secures your model supply chain with scanning, signing, and tamper-proof packaging." }
+    note: Jozu Hub inventories models as OCI ModelKits and secures the model supply chain by scanning, signing, and tamper-evident packaging.
+    source: { url: https://jozu.com/security/, tier: official, title: "AI Supply Chain Security and Governance, Jozu", accessed: 2026-09-22, origin: agent, quote: "Models with critical CVEs, license conflicts, or missing signatures cannot deploy, eliminating the visibility and security gaps that cause production incidents." }
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: secondary

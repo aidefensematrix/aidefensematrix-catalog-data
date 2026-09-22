@@ -3,7 +3,7 @@ name: TrojAI
 vendor:
   value: TrojAI
   source: { url: https://troj.ai/, tier: official, title: TrojAI homepage, accessed: 2026-06-10, origin: reviewed }
-url: https://troj.ai/
+url: https://www.a10networks.com/products/trojai-by-a10/
 description:
   value: "TrojAI: Tools that red team AI models at build time and apply a runtime firewall against prompt injection, data leakage, and rogue MCP servers."
   source: { url: https://troj.ai/, tier: official, title: TrojAI homepage, accessed: 2026-06-10, origin: reviewed }
@@ -24,20 +24,22 @@ changelog:
     summary: Added to the catalog from the TrojAI documentation.
   - date: 2026-07-16
     summary: Recorded the A10 Networks acquisition, announced 2026-06-15.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [detect]
     maturity: primary
-    note: TrojAI Detect runs automated red teaming with more than 150 built-in security and safety tests, finding model weaknesses such as prompt injection, data leakage, and PII exposure before deployment.
-    source: { url: https://troj.ai/products/detect, tier: official, title: TrojAI Detect product page, accessed: 2026-07-15, origin: agent, quote: "Test AI agents and models to reveal unsafe behavior and security risks." }
+    note: TrojAI Detect runs continuous, agent-led red teaming against AI models and agents, simulating single-turn, multi-turn, and agentic attacks to find weaknesses such as prompt injection, data leakage, and PII exposure before deployment.
+    source: { url: https://www.a10networks.com/products/trojai-by-a10/, tier: official, title: TrojAI by A10 Networks product page, accessed: 2026-09-22, origin: agent, quote: "Detect runs continuous, agent-led red teaming against your AI models and agents, simulating single-turn, multi-turn, and agentic attacks to uncover unsafe behavior before deployment, with findings mapped to OWASP, MITRE, and NIST frameworks." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: TrojAI Defend is a runtime AI firewall that monitors, alerts, blocks, redacts, and logs, filtering inputs and outputs to AI applications to stop prompt injection, sensitive information disclosure, and other adversarial attacks.
-    source: { url: https://troj.ai/products/defend, tier: official, title: TrojAI Defend product page, accessed: 2026-07-05, origin: agent, quote: "TrojAI Defend delivers real-time visibility and control over AI systems, helping you detect, block, and contain threats before they impact users, data, or connected systems." }
+    source: { url: https://www.a10networks.com/products/trojai-by-a10/, tier: official, title: TrojAI by A10 Networks product page, accessed: 2026-09-22, origin: agent, quote: "Defend blocks prompt injection, jailbreaking, data leakage, and toxic content in real time, enforcing security policies across every AI agent and application in production, and streaming insights into your existing SIEM, SOAR, and ticketing platforms." }
   - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: TrojAI Defend for MCP applies MCP-specific policies that inspect, audit, and enforce security on MCP traffic in real time, blocking unregistered or rogue servers in agentic workflows.
-    source: { url: https://troj.ai/products/defend-mcp, tier: official, title: TrojAI Defend for MCP product page, accessed: 2026-07-05, origin: agent, quote: "TrojAI Defend uses layered AI-driven detections to identify and stop threats in real time across prompts, responses, and agent interactions, delivering complete runtime protection." }
+    source: { url: https://www.a10networks.com/products/trojai-by-a10/, tier: official, title: TrojAI by A10 Networks product page, accessed: 2026-09-22, origin: agent, quote: "Discovers rogue or misconfigured MCP servers and tools, enforces policy on agent-to-model-to-server communications, and blocks malicious or suspicious MCP traffic in real time." }
 primary_cell: { asset: runtime-ai-data, function: protect }

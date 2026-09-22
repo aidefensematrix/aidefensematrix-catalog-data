@@ -26,6 +26,8 @@ changelog:
     summary: Re-slugged from privacera to trust3-ai and recorded the rename to Trust3 AI, announced 2026-03-09.
   - date: 2026-07-04
     summary: Added verbatim source quotes to coverage and compliance citations.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: training-data
     functions: [identify, protect]
@@ -36,5 +38,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: secondary
     note: Applies real-time controls to generative AI prompts and responses with end-to-end observability and audit.
-    source: { url: https://privacera.com/products/ai-governance/, tier: official, title: Privacera AI Governance, accessed: 2026-06-09, origin: reviewed, quote: "Full-fidelity traces with real-time drift and injection detection One-click audit evidence for EU AI Act, HIPAA, NIST 03 / SECURE Authorize every action." }
+    source: { url: https://trust3.ai/platform/agent-observability/, tier: official, title: Trust3 AI agent observability, accessed: 2026-09-22, origin: agent, quote: "Every prompt, every tool call, every A2A handoff is logged with the originating user identity attached." }
 primary_cell: { asset: training-data, function: protect }

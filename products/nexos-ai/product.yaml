@@ -21,10 +21,12 @@ last_reviewed: 2026-06-24
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Nexos.ai documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-traffic
     functions: [protect, detect]
     maturity: primary
     note: A single secure endpoint fronting many LLM providers enforces security and usage policies, access controls, and rate limits, and logs every prompt and response for visibility.
-    source: { url: https://nexos.ai/ai-gateway/, tier: official, title: Nexos.ai AI gateway page, accessed: 2026-06-24, origin: reviewed, quote: "Route traffic to your preferred providers, enforce security and usage policies, and gain full visibility into every LLM interaction." }
+    source: { url: https://nexos.ai/ai-gateway/, tier: official, title: Nexos.ai AI gateway page, accessed: 2026-09-22, origin: agent, quote: "Route traffic to your preferred providers, enforce security and usage policies, and gain full visibility into every LLM interaction." }
 primary_cell: { asset: ai-traffic, function: protect }

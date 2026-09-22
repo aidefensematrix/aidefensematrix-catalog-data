@@ -1,12 +1,12 @@
 schema_version: 2
-name: Saviynt Identity Security for AI Agents
-aliases: [Saviynt Identity Security for AI]
-url: https://saviynt.com/products/identity-security-for-ai
+name: Saviynt Zuma
+aliases: [Zuma, Saviynt Identity Security for AI Agents, Saviynt Identity Security for AI]
+url: https://saviynt.com/products/zuma
 vendor:
   value: Saviynt
   source: { url: https://saviynt.com/products/identity-security-for-ai, tier: official, title: Saviynt Identity Security for AI, accessed: 2026-06-14, origin: reviewed }
 description:
-  value: "Saviynt Identity Security for AI Agents: Identity control plane that discovers AI agents and MCP servers, governs their lifecycle and ownership, and enforces real-time authorization for agent access."
+  value: "Saviynt Zuma: Identity control plane that discovers AI agents and MCP servers, governs their lifecycle and ownership, and enforces real-time authorization for agent access."
   source: { url: https://saviynt.com/products/identity-security-for-ai, tier: official, title: Saviynt Identity Security for AI, accessed: 2026-06-14, origin: reviewed }
 deployment:
   value: [saas]
@@ -21,6 +21,8 @@ last_reviewed: 2026-06-14
 changelog:
   - date: 2026-06-14
     summary: Added to the catalog from the Saviynt Identity Security for AI documentation.
+  - date: 2026-09-22
+    summary: "Renamed to Saviynt Zuma, the product name Saviynt launched on 2026-07-28; the earlier names are kept as aliases."
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, govern, protect]

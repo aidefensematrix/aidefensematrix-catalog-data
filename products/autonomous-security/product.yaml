@@ -26,12 +26,14 @@ changelog:
     summary: "Corrected an agent-identities coverage row (erratum) to match the current homepage."
   - date: 2026-07-16
     summary: Updated the description to match the current homepage.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovers installed agents and MCP servers across workstations, hosts MCP servers in sandboxed cloud workspaces backed by a vetted pre-scanned catalog, intercepts MCP traffic to block prompt injection and rogue MCP servers, and enforces centralized runtime policies with audit trails.
-    source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-07-05, origin: agent, quote: "Continuously discover shadow AI, assess risks, remediate, and enforce real-time guardrails all in one place." }
+    source: { url: https://a16y.ai/#runtime-enforcement, tier: official, title: "Enterprise Agentic Security Platform, Autonomous", accessed: 2026-09-22, origin: agent, quote: "Secure your environment by auto-blocking rogue MCPs and malicious skills" }
   - asset: ai-agent-identities
     functions: [identify]
     maturity: secondary

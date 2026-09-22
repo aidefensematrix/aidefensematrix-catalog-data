@@ -18,17 +18,19 @@ last_reviewed: 2026-08-20
 changelog:
   - date: 2026-08-20
     summary: Added to the catalog from the AGAT Software Pragatix documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [identify, protect, detect]
     maturity: primary
     note: Prompt Guardian is an in-line proxy over public and private AI services that inspects prompts and responses, classifies sensitive or regulated data, and applies risk-based policy per user, department, and data sensitivity. It also surfaces unsanctioned AI tool usage across the organization.
-    source: { url: https://agatsoftware.com/ai-security-overview/prompt-guardian/, tier: official, title: Pragatix Prompt Guardian, accessed: 2026-08-20, origin: agent, quote: "Prompt Guardian inspects AI interactions before data leaves the organization and applies risk-based policies such as allowing, warning, redacting, blocking, or logging." }
+    source: { url: https://agatsoftware.com/security-page/ai-security-suite/prompt-guardian/, tier: official, title: Pragatix Prompt Guardian, accessed: 2026-09-22, origin: agent, quote: "Real-time AI proxy that inspects prompts and responses, detects sensitive data and enforces usage policies across public and private AI services." }
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect, protect]
     maturity: primary
     note: Guardian Agent discovers AI agents across SaaS, homegrown, embedded, endpoint, and developer environments, maps them to their connected tools and systems, traces their decisions and data access, and blocks or requires approval for high-risk actions at runtime.
-    source: { url: https://agatsoftware.com/ai-security-overview/guardian-agent/, tier: official, title: Pragatix Guardian Agent, accessed: 2026-08-20, origin: agent, quote: "Guardian Agent provides an independent oversight layer that maps agent activity, evaluates risk and enforces policy before agents perform unsafe actions." }
+    source: { url: https://agatsoftware.com/security-page/ai-security-suite/guardian-agent/, tier: official, title: Pragatix Guardian Agent, accessed: 2026-09-22, origin: agent, quote: "Discover, monitor, and control AI agents, MCP tools, and system action in runtime across SaaS, homegrown, embedded, endpoint, and developer environments." }
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
     maturity: secondary
@@ -43,5 +45,5 @@ matrix_coverage:
     functions: [identify, detect, protect]
     maturity: secondary
     note: Model Guardian inventories internal, external, and open-source models, checks their provenance, licensing, and exposure, red teams them against jailbreak and misuse scenarios, and gates their use behind an approval workflow that records the supporting evidence.
-    source: { url: https://agatsoftware.com/ai-security-overview/model-guardian/, tier: official, title: Pragatix Model Guardian, accessed: 2026-08-20, origin: agent, quote: "Model Guardian combines model inventory, static analysis, provenance checks and red teaming to approve, restrict or block models based on enterprise risk policy." }
+    source: { url: https://agatsoftware.com/security-page/ai-security-suite/model-guardian/, tier: official, title: Pragatix Model Guardian, accessed: 2026-09-22, origin: agent, quote: "Risk Engine that evaluates AI models using source intelligence and static & dynamic red teaming for vulnerability assessments." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

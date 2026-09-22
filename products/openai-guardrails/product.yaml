@@ -17,15 +17,17 @@ last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the OpenAI documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Built-in checks screen prompts and model outputs inline through drop-in OpenAI client wrappers, covering moderation, jailbreak detection, PII detection, URL filtering, hallucination detection, off-topic prompts, and custom LLM-based checks configured via a no-code wizard.
-    source: { url: https://github.com/openai/openai-guardrails-python, tier: official, title: OpenAI Guardrails Python repository, accessed: 2026-06-10, origin: reviewed, quote: "enabling automatic input/output validation and moderation using a wide range of guardrails." }
+    source: { url: https://openai.github.io/openai-guardrails-python/tripwires/, tier: official, title: "Tripwires, OpenAI Guardrails Python", accessed: 2026-09-22, origin: agent, quote: "When a guardrail detects a violation, it triggers a tripwire that blocks execution by default." }
   - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: secondary
     note: GuardrailAgent applies configured checks to OpenAI Agents SDK agents and raises input and output tripwire exceptions that halt the run when a check fires.
-    source: { url: https://github.com/openai/openai-guardrails-python, tier: official, title: OpenAI Guardrails Python repository, accessed: 2026-06-10, origin: reviewed, quote: "a package for adding configurable safety and compliance guardrails to LLM applications." }
+    source: { url: https://github.com/openai/openai-guardrails-python, tier: official, title: OpenAI Guardrails Python repository, accessed: 2026-09-22, origin: agent, quote: "OpenAI Guardrails wraps the OpenAI Python client to validate inputs and outputs, and integrates with the OpenAI Agents SDK." }
 primary_cell: { asset: runtime-ai-data, function: protect }

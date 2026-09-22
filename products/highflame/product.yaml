@@ -24,6 +24,8 @@ changelog:
     summary: Added to the catalog from the Highflame product pages; the vendor rebranded from Javelin in early 2026.
   - date: 2026-07-05
     summary: "Refreshed source links and coverage to the current Highflame platform, adding agent-identity coverage and narrowing one row (erratum)."
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-traffic
     functions: [protect]
@@ -39,7 +41,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: Enforces one Cedar policy across MCP, tool-gateway, and agent-to-agent traffic, and its signal engine flags tool-risk and MCP poisoning inline.
-    source: { url: https://www.highflame.com/platform, tier: official, title: Highflame platform signal engine, accessed: 2026-07-05, origin: agent, quote: "150+ prebuilt detectors emit hundreds of typed signals per run (across prompts, tool calls, and responses), mapped to one taxonomy and fed to the policy." }
+    source: { url: https://www.highflame.com/platform, tier: official, title: Platform The Agent Control Fabric Highflame, accessed: 2026-09-22, origin: agent, quote: "One Cedar policy, authored once, enforced across model traffic, the IDE, the tool gateway, and A2A, not three languages for three products." }
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
     maturity: primary

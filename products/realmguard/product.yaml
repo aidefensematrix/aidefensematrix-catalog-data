@@ -7,7 +7,7 @@ vendor:
 url: https://www.realmlabs.ai/realmguard
 description:
   value: "RealmGuard: AI guardrails that read model internal reasoning (Deep Neural Inspection) to catch harmful content, prompt injection, and policy violations across prompts and responses."
-  source: { url: https://www.realmlabs.ai/realmguard, tier: official, title: Realm Labs RealmGuard, accessed: 2026-07-05, origin: agent, quote: "Realmguard is powered by DNI which reads AI internal thinking and builds patterns on them." }
+  source: { url: https://www.realmlabs.ai/realmguard, tier: official, title: Realm Labs RealmGuard, accessed: 2026-09-22, origin: agent, quote: "RealmGuard is an accurate, explainable, customizable guardrails model powered by Realm Labs’ Deep Neural Inspection (DNI): it reads the model’s intent in real time, detecting 100+ hazards across 30+regulatory frameworks in under 15 ms, over streaming, multi-turn conversations." }
 deployment:
   value: [self-hosted]
   source: { url: https://www.realmlabs.ai/platform-overview, tier: official, title: Realm Labs platform overview, accessed: 2026-06-10, origin: reviewed }
@@ -20,15 +20,19 @@ changelog:
     summary: Added to the catalog from the Realm Labs documentation.
   - date: 2026-07-05
     summary: Renamed to RealmGuard; the product was previously listed as Realm Prism.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Updated a coverage note against the current vendor page."
 matrix_coverage:
   - asset: ai-model
     functions: [detect]
     maturity: primary
     note: Deep Neural Inspection maps model internals and reads activity during inference, catching drift, manipulation, and silent failures while they are still inside the inference loop rather than judging output strings after the fact.
-    source: { url: https://www.realmlabs.ai/realmguard, tier: official, title: Realm Labs Realmguard, accessed: 2026-07-05, origin: agent, quote: "Realmguard is powered by DNI which reads AI internal thinking and builds patterns on them." }
+    source: { url: https://www.realmlabs.ai/technology, tier: official, title: Realm Labs Deep Neural Inspection technology, accessed: 2026-09-22, origin: agent, quote: "it extracts internal thought patterns from a model during inference and produces a unified signal stream that powers continuous and realtime observability, inline enforcement, and agent-runtime control from a single inspection surface." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
-    note: Guardrails inspect prompts and responses in real time and block harmful content, prompt injection, and policy violations before they reach users, across 20-plus categories and multiple modalities.
-    source: { url: https://www.realmlabs.ai/realmguard, tier: official, title: Realm Labs RealmGuard, accessed: 2026-07-05, origin: agent, quote: "Stop AI from surfacing harmful content to users, damaging your brand, or being controlled by attackers." }
+    note: Guardrails inspect prompts and responses in real time and block harmful content, prompt injection, and policy violations before they reach users, across 100-plus categories and multiple modalities.
+    source: { url: https://www.realmlabs.ai/realmguard, tier: official, title: Realm Labs RealmGuard, accessed: 2026-09-22, origin: agent, quote: "Inspect prompts and stream responses inline, with full multi-turn context." }
 primary_cell: { asset: ai-model, function: detect }

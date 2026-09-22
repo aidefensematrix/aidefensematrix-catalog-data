@@ -1,12 +1,13 @@
 schema_version: 2
-name: Frontegg.ai
+name: Agen.co
+aliases: [Frontegg.ai, Frontegg AI, AgentLink]
 vendor:
   value: Frontegg
-  source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-06-10, origin: reviewed }
-url: https://frontegg.com/product/frontegg-ai
+  source: { url: https://agen.co/, tier: official, title: Agen homepage, accessed: 2026-09-22, origin: agent, quote: "Built by the team behind Frontegg, the identity platform hundreds of B2B enterprises run on." }
+url: https://agen.co/platform
 description:
-  value: "Frontegg.ai: Identity management for AI agent builders, with user authentication, least-privilege authorization, token rotation, and managed OAuth tokens for third-party tool access."
-  source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-06-10, origin: reviewed }
+  value: "Agen.co: Identity-native governance platform for AI agents, built by the Frontegg team, that gives each agent a machine identity with rotating secrets and short-lived tokens."
+  source: { url: https://agen.co/identity, tier: official, title: Identity Foundation for Every AI Agent, accessed: 2026-09-22, origin: agent, quote: "Each agent gets a first-class machine identity: client ID, rotating secrets, short-lived tokens. No standing credentials to steal." }
 deployment:
   value: [saas]
   source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-06-10, origin: reviewed }
@@ -24,15 +25,19 @@ changelog:
     summary: Refined matrix coverage.
   - date: 2026-07-04
     summary: Added verbatim source quotes to coverage and compliance citations.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Renamed from Frontegg.ai to Agen.co, the current product name; the earlier names are kept as aliases."
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [protect]
     maturity: primary
     note: Provides the identity layer for agent products, with multi-tenant user onboarding, least-privilege authorization, and managed third-party OAuth tokens with token rotation, so agents act with scoped refreshable credentials.
-    source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-07-04, origin: agent, quote: "Frontegg securely manages OAuth tokens and handles all consent and connection flows on your behalf" }
+    source: { url: https://agen.co/identity, tier: official, title: Agen.co identity foundation page, accessed: 2026-09-22, origin: agent, quote: "Each agent gets a first-class machine identity: client ID, rotating secrets, short-lived tokens. No standing credentials to steal." }
   - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: secondary
     note: The AgentLink companion product creates a hosted MCP server that translates SaaS APIs into MCP tools, enforces agent-specific guardrails on every action, and keeps audit trails plus analytics of agent tool usage and anomalies.
-    source: { url: https://frontegg.com/product/agentlink, tier: official, title: AgentLink by Frontegg product page, accessed: 2026-06-10, origin: reviewed, quote: "AgentLink is a low-code communications and control layer that lets you embrace this new entry point into your product without the risk." }
+    source: { url: https://agen.co/identity, tier: official, title: Agen.co identity foundation page, accessed: 2026-09-22, origin: agent, quote: "Your APIs become governed MCP tools with policy, identity, and audit built in." }
 primary_cell: { asset: ai-agent-identities, function: protect }

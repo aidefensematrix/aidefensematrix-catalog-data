@@ -21,10 +21,12 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Azure AI Content Safety documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Prompt Shields detects and blocks user-prompt jailbreaks and indirect (cross-prompt) injection in prompts and grounding documents in real time, and content filters screen prompts and responses for harmful content.
-    source: { url: https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection, tier: official, title: Prompt Shields in Azure AI Content Safety, accessed: 2026-06-09, origin: reviewed, quote: "If a prompt or document is detected as likely to generate inappropriate educational content, the shield blocks it and suggests alternative, safe inputs." }
+    source: { url: https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection, tier: official, title: Prompt Shields in Azure AI Content Safety, accessed: 2026-09-22, origin: agent, quote: "Prompt Shields detects and blocks adversarial inputs to large language models (LLMs)." }
 primary_cell: { asset: runtime-ai-data, function: protect }

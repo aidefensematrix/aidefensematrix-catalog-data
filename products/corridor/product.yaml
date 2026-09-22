@@ -20,15 +20,17 @@ last_reviewed: 2026-06-24
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Corridor documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-generated-code
     functions: [identify, protect, detect]
     maturity: primary
     note: An MCP server and agent hooks scan AI coding-tool edits in real time to block insecure code at generation (protect), automated reviews flag vulnerabilities on every pull request (detect), and a dashboard tracks AI-generated code across tools and developers (identify).
-    source: { url: https://www.corridor.dev/, tier: official, title: Corridor, accessed: 2026-06-24, origin: reviewed, quote: "Corridor’s MCP server and agent hooks integrate directly with your coding tools, preventing vulnerabilities before they’re even written." }
+    source: { url: https://www.corridor.dev/, tier: official, title: Corridor Secure AI Coding at the Source, accessed: 2026-09-22, origin: agent, quote: "Corridor integrates with your coding agent, local or remote, to prevent vulnerabilities before they ever make it to the pull request." }
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
     maturity: secondary
     note: Discovers and monitors the MCP servers developers connect to AI coding tools and surfaces security-policy violations across the organization.
-    source: { url: https://www.corridor.dev/, tier: official, title: Corridor, accessed: 2026-06-24, origin: reviewed, quote: "Monitor MCP servers and security policy violations" }
+    source: { url: https://www.corridor.dev/, tier: official, title: Corridor Secure AI Coding at the Source, accessed: 2026-09-22, origin: agent, quote: "Agent governance: which agents ran, what they were allowed to call, and the audit trail behind it" }
 primary_cell: { asset: ai-generated-code, function: protect }

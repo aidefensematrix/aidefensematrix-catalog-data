@@ -16,20 +16,22 @@ status:
   source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-07-03, origin: reviewed }
 compliance_attestations:
   value: [SOC 2 Type 2, ISO/IEC 27001]
-  source: { url: https://www.onetrust.com/trust/, tier: official, title: OneTrust Trust Center, accessed: 2026-07-03, origin: reviewed, quote: "Information Security Management System Certification" }
+  source: { url: https://www.onetrust.com/trust/, tier: official, title: OneTrust Trust Center, accessed: 2026-09-22, origin: agent, quote: "Audit Reports - SOC 2 Type II" }
 last_reviewed: 2026-07-03
 changelog:
   - date: 2026-07-03
     summary: Added to the catalog from the OneTrust AI Governance documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [govern, identify]
     maturity: primary
     note: Catalogs AI models, datasets, agents, and vendors in a central inventory and maps their risk to control frameworks to maintain ongoing regulatory compliance.
-    source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-07-03, origin: reviewed, quote: "Map risk and control frameworks for risk evaluation and maintaining ongoing compliance" }
+    source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-09-22, origin: agent, quote: "Bring AI systems, agents, models, datasets, vendors, and projects into one governance program center to streamline intake, assign ownership, and right-size oversight from the start." }
   - asset: ai-coding-orchestration-tools
     functions: [protect]
     maturity: secondary
     note: Applies runtime guardrails including prompt and output filtering and policy-based blocking to enforce compliant AI behavior across platforms.
-    source: { url: https://www.onetrust.com/govern-ai-risk/, tier: official, title: OneTrust AI Governance, accessed: 2026-07-03, origin: reviewed, quote: "Enforce safe and compliant AI behavior across AI platforms." }
+    source: { url: https://www.onetrust.com/solutions/ai-governance/, tier: official, title: "AI Governance Software, OneTrust", accessed: 2026-09-22, origin: agent, quote: "Enforce MCP policies with audit logs." }
 primary_cell: { asset: ai-model, function: govern }

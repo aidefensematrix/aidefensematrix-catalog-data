@@ -21,12 +21,14 @@ changelog:
     summary: Refined matrix coverage.
   - date: 2026-07-04
     summary: Added verbatim source quotes to coverage and compliance citations.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-traffic
     functions: [identify, protect]
     maturity: primary
     note: Routes 100+ LLM providers behind virtual keys with per-team and per-key budgets, rate limits, and RBAC. The enterprise tier adds SSO, audit logs, secret management, and key rotation.
-    source: { url: https://www.litellm.ai/enterprise, tier: official, title: LiteLLM Enterprise, accessed: 2026-07-04, origin: agent, quote: "LiteLLM Enterprise adds: SSO, SCIM 24/7 Support OIDC/JWT-Auth Live upgrade assistance Team/Org Admins Key/Team-based Guardrails Secret Managers Key Rotations" }
+    source: { url: https://www.litellm.ai/enterprise, tier: official, title: Enterprise AI Gateway for Secure LLM Access LiteLLM, accessed: 2026-09-22, origin: agent, quote: "Deploy the open-source gateway in an afternoon, with spend tracked and capped on every request." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary

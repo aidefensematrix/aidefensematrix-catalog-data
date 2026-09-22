@@ -28,12 +28,14 @@ changelog:
     summary: Added verbatim source quotes to coverage and compliance citations.
   - date: 2026-07-16
     summary: Recorded the product as operating standalone while the acquisition close remains pending.
+  - date: 2026-09-22
+    summary: "Refreshed a coverage citation and note against the current vendor page."
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [detect]
     maturity: primary
-    note: Monitors deployed LLM applications in production by sampling interactions and tracking annotation trends and property scores to detect degradation automatically. Scoring is offline evaluation with no documented inline blocking.
-    source: { url: https://llmdocs.deepchecks.com/docs/set-up-production-monitoring, tier: official, title: Deepchecks production monitoring documentation, accessed: 2026-06-10, origin: reviewed, quote: "Deepchecks can monitor its quality in production over time - tracking annotation trends, property scores, and detecting degradation automatically." }
+    note: Monitors deployed LLM applications in production and tests them within CI/CD. Scoring is offline evaluation with no documented inline blocking.
+    source: { url: https://deepchecks.com/, tier: official, title: Deepchecks homepage, accessed: 2026-09-22, origin: agent, quote: "Test LLM apps within the CI/CD and monitor them in production" }
   - asset: ai-model
     functions: [detect]
     maturity: secondary

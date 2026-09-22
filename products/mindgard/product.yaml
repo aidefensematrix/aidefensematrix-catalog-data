@@ -18,10 +18,12 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Mindgard documentation.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, detect]
     maturity: primary
     note: Maps the AI attack surface including shadow AI, then runs continuous automated red teaming that chains attack techniques across multi-step interactions to find prompt injection, jailbreak, and model-manipulation flaws.
-    source: { url: https://mindgard.ai/automated-ai-red-teaming, tier: official, title: Mindgard automated AI red teaming, accessed: 2026-06-09, origin: reviewed, quote: "Automated AI Red Teaming Tool - Mindgard Platform Platform Research Led." }
+    source: { url: https://mindgard.ai/automated-ai-red-teaming, tier: official, title: Mindgard automated AI red teaming, accessed: 2026-09-22, origin: agent, quote: "Mindgard continuously red teams AI systems as they evolve, identifying new attack paths, behavioral weaknesses, and exploit opportunities introduced by model updates, configuration changes, or expanded capabilities." }
 primary_cell: { asset: ai-model, function: detect }

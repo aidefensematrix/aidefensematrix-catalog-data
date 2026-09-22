@@ -18,18 +18,22 @@ acquisition:
   acquirer: CrowdStrike
   announced: 2025-09-16
   post_acquisition_status: folded
-  new_name: CrowdStrike Falcon AIDR
+  new_name: CrowdStrike Falcon Guardian
   source: { url: https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-pangea-to-secure-every-layer-of-enterprise-ai/, tier: official, title: CrowdStrike to acquire Pangea, accessed: 2026-06-09, origin: reviewed }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Enriched from Pangea documentation; recorded the CrowdStrike acquisition announced in September 2025.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Updated the post-acquisition name to CrowdStrike Falcon Guardian."
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Inspects prompts and responses to detect prompt injection, redact sensitive data, and block malicious content.
-    source: { url: https://pangea.cloud/services/prompt-guard/, tier: official, title: Pangea Prompt Guard, accessed: 2026-06-09, origin: reviewed, quote: "Organizations can confidently deploy AI, knowing that the guardrails are working behind the scenes to catch threats and prevent data exposure." }
+    source: { url: https://www.crowdstrike.com/en-us/platform/falcon-guardian-aidr/, tier: official, title: CrowdStrike Falcon AIDR, accessed: 2026-09-22, origin: agent, quote: "Detect and stop malicious interactions and protect sensitive data in transit without disrupting legitimate AI workflows." }
   - asset: ai-agent-identities
     functions: [protect, detect]
     maturity: secondary

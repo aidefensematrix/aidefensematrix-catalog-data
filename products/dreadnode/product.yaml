@@ -17,15 +17,19 @@ last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: "Added to the catalog from the Dreadnode documentation."
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-09-22
+    summary: "Updated coverage notes against the current vendor pages."
 matrix_coverage:
   - asset: ai-model
     functions: [detect]
     maturity: primary
-    note: "AI Red Teaming probes foundation models and traditional ML models with 45+ attack strategies including jailbreaks and adversarial algorithms, mapping findings to OWASP MITRE ATLAS and NIST AI RMF."
-    source: { url: https://docs.dreadnode.io/ai-red-teaming/reference/attacks/, tier: official, title: "Attacks Reference (45+ attack strategies)", accessed: 2026-06-10, origin: reviewed, quote: "Dreadnode provides 45+ attack strategies across four categories: LLM jailbreaks, advanced adversarial algorithms, image adversarial attacks, and multimodal probing." }
+    note: "AI Red Teaming probes foundation models and traditional ML models with 70+ attack strategies including jailbreaks and adversarial algorithms, mapping findings to OWASP MITRE ATLAS and NIST AI RMF."
+    source: { url: https://docs.dreadnode.io/ai-red-teaming/reference/attacks/, tier: official, title: Attacks Reference (70+ attack strategies), accessed: 2026-09-22, origin: agent, quote: "Dreadnode provides 70+ attack strategies spanning generative AI and traditional ML: LLM jailbreaks, advanced adversarial algorithms, traditional-ML attacks (evasion, model extraction, membership inference, model inversion), image adversarial attacks, and multimodal probing." }
   - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary
-    note: "Custom Targets red teams agentic systems including agent loops RAG pipelines and AI applications not just standard model endpoints."
-    source: { url: https://docs.dreadnode.io/ai-red-teaming/custom-endpoints/, tier: official, title: "Custom Targets (red team any AI system)", accessed: 2026-06-10, origin: reviewed, quote: "You can test any AI system that accepts text input and returns text output: Azure OpenAI deployments, custom agent APIs, RAG pipelines, self-hosted models, multi-turn conversational agents, and more." }
+    note: "Custom HTTP Targets red teams agentic systems including agent loops RAG pipelines and AI applications not just standard model endpoints."
+    source: { url: https://docs.dreadnode.io/ai-red-teaming/how-to/agentic-red-teaming/, tier: official, title: "Agentic Red Teaming Overview, Dreadnode", accessed: 2026-09-22, origin: agent, quote: "A finding is recorded only when the agent performs an action that violates policy, established from the tool calls the target actually made and the arguments it used." }
 primary_cell: { asset: ai-model, function: detect }

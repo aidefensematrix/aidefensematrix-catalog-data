@@ -18,6 +18,8 @@ last_reviewed: 2026-07-05
 changelog:
   - date: 2026-07-05
     summary: Added to the catalog from the AI-Infra-Guard repository; open source, actively maintained.
+  - date: 2026-09-22
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
@@ -33,5 +35,5 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: secondary
     note: Fingerprints AI-serving frameworks such as Ollama, vLLM, and Triton and flags known CVE vulnerabilities across more than 100 components.
-    source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: AI-Infra-Guard AI-infra CVE scan, accessed: 2026-07-05, origin: agent, quote: "This scanner precisely identifies over 100 AI framework components. It covers more than 1900 known CVE vulnerabilities." }
+    source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: GitHub Tencent AI-Infra-Guard, accessed: 2026-09-22, origin: agent, quote: "This scanner precisely identifies over 100 AI framework components." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: detect }
