@@ -1,0 +1,47 @@
+schema_version: 2
+name: Holistic AI Endlayer
+aliases: [EndLayer, Endlayer]
+url: https://www.holisticai.com/endlayer
+vendor:
+  value: Holistic AI
+  source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent }
+description:
+  value: "Holistic AI Endlayer: Device agent that inventories AI tools, coding agents, local models, and MCP servers, grades them against versioned policy, and blocks unsafe prompts and secrets on the machine."
+  source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent }
+status:
+  value: active
+  source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent }
+last_reviewed: 2026-09-21
+changelog:
+  - date: 2026-09-21
+    summary: Added to the catalog from the Holistic AI Endlayer product pages.
+matrix_coverage:
+  - asset: ai-orchestration-tools
+    functions: [identify, detect, protect, govern]
+    maturity: primary
+    note: A device agent inventories AI apps, coding agents, and MCP servers, tracks which agents act unattended, blocks agent and MCP requests that break policy, and grades tools against versioned rules mapped to EU AI Act, ISO/IEC 42001, and NIST AI RMF clauses.
+    source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent, quote: "A searchable inventory of what is actually installed: AI apps, coding agents, local models, accounts, credentials and the MCP servers your fleet can reach." }
+  - asset: runtime-ai-data
+    functions: [protect, detect, govern]
+    maturity: secondary
+    note: Guardrails score prompts before they run and redact or block secrets and personal data on the way out. Govern artifact is the versioned rule on what may leave in a prompt, mapped to GDPR personal-data clauses.
+    source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent, quote: "prompts are scored before they run, and secrets and personal data are warned on, redacted or blocked on the way out." }
+  - asset: ai-gateways-routers
+    functions: [identify, detect, protect, govern]
+    maturity: secondary
+    note: Maps the AI sites and MCP hosts each device reaches, watches agent-to-agent and agent-to-MCP calls on the machine, and blocks those that break policy. Govern artifact is the versioned rule on which MCP hosts an agent may reach.
+    source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent, quote: "It sees one agent call another, an agent reach an MCP server, or a tool ask for a permission it was never granted" }
+  - asset: ai-agent-identities
+    functions: [identify, detect, protect]
+    maturity: secondary
+    note: Finds the accounts, API keys, and credential-bearing MCP servers each AI tool uses, flags personal logins and exposed keys, and blocks a tool that requests a permission it was never granted.
+    source: { url: https://www.endlayer.ai/, tier: official, title: EndLayer Guardian Agents for AI, accessed: 2026-09-21, origin: agent, quote: "An unprivileged agent on every machine finds the AI apps, coding agents, MCP servers, local models, browser AI usage, accounts and exposed credentials, without being told they exist." }
+  - asset: ai-model
+    functions: [identify]
+    maturity: adjacent
+    note: Local models running on managed machines appear in the same device inventory as the other AI tools.
+    source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent, quote: "It inventories every AI tool, local model, agent, extension and MCP server on the machine, and the AI sites it reaches, then grades all of it against deterministic policy." }
+primary_cell: { asset: ai-orchestration-tools, function: identify }
