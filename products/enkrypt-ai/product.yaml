@@ -31,7 +31,7 @@ matrix_coverage:
     maturity: primary
     note: Agent Red Teaming runs adversarial tests against models, agents, RAG systems, and tools, covering prompt injection and jailbreaks, with CI/CD regression suites and compliance mapping to NIST, OWASP, and the EU AI Act.
     source: { url: https://www.enkryptai.com/product/agent-red-teaming, tier: official, title: Enkrypt AI Agent Red Teaming product page, accessed: 2026-06-10, origin: reviewed, quote: "Red team multimodal and multilingual agents" }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: MCP Gateway, an open-source control plane, sits inline between agents and MCP servers to approve, modify, or block tool calls, enforcing least privilege and producing an audit evidence trail.

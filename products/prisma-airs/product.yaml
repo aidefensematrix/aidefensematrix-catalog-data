@@ -28,7 +28,7 @@ matrix_coverage:
     maturity: primary
     note: Inline inspection of prompts and responses for injection, leakage, and unsafe output.
     source: { url: https://www.paloaltonetworks.com/resources/datasheets/ai-runtime-security, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "Beat back prompt injections, malicious code, toxic content, sensitive data leaks, resource overload, hallucination attacks and more." }
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [protect]
     maturity: primary
     note: API and network intercept for AI traffic.

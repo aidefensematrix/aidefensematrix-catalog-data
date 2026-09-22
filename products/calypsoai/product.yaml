@@ -31,7 +31,7 @@ matrix_coverage:
     maturity: primary
     note: "Inline guardrails screen prompts and responses for prompt injection, jailbreaks, and sensitive data flows."
     source: { url: https://www.f5.com/products/ai-guardrails, tier: official, title: F5 AI Guardrails real-time protection, accessed: 2026-06-07, origin: reviewed, quote: "Secure AI data Detect and prevent data leakage, compliance failures, and policy violations at runtime." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, protect]
     maturity: primary
     note: "Red teaming hunts vulnerabilities across AI models, applications, and agents."

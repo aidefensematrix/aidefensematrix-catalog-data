@@ -30,7 +30,7 @@ matrix_coverage:
     maturity: primary
     note: Provides the identity layer for agent products, with multi-tenant user onboarding, least-privilege authorization, and managed third-party OAuth tokens with token rotation, so agents act with scoped refreshable credentials.
     source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-07-04, origin: agent, quote: "Frontegg securely manages OAuth tokens and handles all consent and connection flows on your behalf" }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: secondary
     note: The AgentLink companion product creates a hosted MCP server that translates SaaS APIs into MCP tools, enforces agent-specific guardrails on every action, and keeps audit trails plus analytics of agent tool usage and anomalies.

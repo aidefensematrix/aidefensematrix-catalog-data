@@ -24,7 +24,7 @@ changelog:
   - date: 2026-07-15
     summary: Added to the catalog from the MCP Manager documentation.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: Governed gateway sits between AI clients and MCP servers, deciding which servers and tools each caller may reach, running configurable rules on every request, and writing an audit-log entry at each hop.
@@ -39,4 +39,4 @@ matrix_coverage:
     maturity: secondary
     note: Responses returned from MCP servers are inspected and redacted inline before reaching the calling AI application, covering sensitive values such as PII carried in a tool result.
     source: { url: https://docs.mcpmanager.ai/, tier: official, title: MCP Manager documentation introduction, accessed: 2026-07-15, origin: agent, quote: "inspects and redacts the response" }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

@@ -24,7 +24,7 @@ matrix_coverage:
     maturity: primary
     note: Gives each AI agent its own identity and issues short-lived, scoped credentials per tool, API, and data request through runtime policy, blocking disallowed actions and recording every authorization decision.
     source: { url: https://keycard.ai/docs, tier: official, title: Keycard Docs, accessed: 2026-06-14, origin: reviewed, quote: "Every agent gets an identity. Every tool call gets a credential. Every action gets a log." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect]
     maturity: secondary
     note: Adds OAuth-based authentication to MCP servers and agent-to-agent calls so each tool call is tied to a verified identity, scoped to explicit permissions, and logged.

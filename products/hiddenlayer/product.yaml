@@ -33,7 +33,7 @@ matrix_coverage:
     maturity: secondary
     note: Agentic and MCP protection within the runtime module.
     source: { url: https://docs.hiddenlayer.ai/, tier: official, title: "HiddenLayer documentation: AI Runtime Security", accessed: 2026-06-07, origin: reviewed, quote: "AI Runtime Security detects malicious input prompts and undesired output, and can block content from being sent to the LLM or returned to the user." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary
     note: Automated discovery and inventory of AI assets, applications, datasets, and dependencies.

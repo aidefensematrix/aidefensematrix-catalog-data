@@ -26,7 +26,7 @@ matrix_coverage:
     maturity: primary
     note: Discovers AI assets, runs 100+ evaluations mapped to 20+ frameworks such as the EU AI Act and NIST, scans for vulnerabilities via automated red-teaming aligned with OWASP and MITRE, and continuously monitors risk for audit-ready governance evidence.
     source: { url: https://latticeflow.ai/platform, tier: official, title: LatticeFlow AI platform page, accessed: 2026-07-05, origin: agent, quote: "LatticeFlow AI includes 20+ customizable governance frameworks and 100+ ready-to-run evaluations mapped to standards like OWASP and MITRE." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [govern]
     maturity: secondary
     note: Discovers, evaluates, and governs risk for autonomous agentic AI systems alongside foundation models and custom generative AI applications.

@@ -36,7 +36,7 @@ matrix_coverage:
     maturity: secondary
     note: Processes training datasets inside the trusted execution environment and in confidential clean rooms, so fine-tuning and model training run on data that is never exposed in the clear to the operator or to collaborating parties.
     source: { url: https://www.anjuna.io/solution/secure-ai, tier: official, title: Anjuna Secure AI training privacy, accessed: 2026-08-17, origin: agent, quote: "Enables AI training without compromising privacy by processing confidentially on encrypted data." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect]
     maturity: secondary
     note: Isolates agent runtimes and MCP servers in trusted execution environments so only attested code executes, with agent credentials and working data kept encrypted from the underlying cloud operator.

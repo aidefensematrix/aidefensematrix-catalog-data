@@ -27,6 +27,13 @@ const IDS = JSON.parse(
 );
 const ASSET_IDS = new Set(IDS.asset_ids);
 const FUNCTION_IDS = new Set(IDS.function_ids);
+// Asset ids that were renamed, mapped to their current ids. An entry that still
+// uses one gets an error naming the replacement.
+const RETIRED_ASSET_IDS = IDS.retired_asset_ids ?? {};
+const unknownAsset = (id) =>
+  Object.prototype.hasOwnProperty.call(RETIRED_ASSET_IDS, id)
+    ? `"${id}" was renamed. Use "${RETIRED_ASSET_IDS[id]}"`
+    : `"${id}"`;
 
 const errors = [];
 const warnings = [];
@@ -408,7 +415,7 @@ for (const slug of productDirs) {
       if (c.maturity && !['primary', 'secondary', 'adjacent'].includes(c.maturity))
         err(slug, `matrix_coverage[${i}].maturity must be primary, secondary, or adjacent (got "${c.maturity}")`);
       if (c.asset !== undefined && !ASSET_IDS.has(c.asset))
-        err(slug, `matrix_coverage[${i}].asset is not a known asset id: "${c.asset}"`);
+        err(slug, `matrix_coverage[${i}].asset is not a known asset id: ${unknownAsset(c.asset)}`);
       if (Array.isArray(c.functions))
         c.functions.forEach((fn, j) => {
           if (!FUNCTION_IDS.has(fn))
@@ -420,7 +427,7 @@ for (const slug of productDirs) {
   // primary_cell (optional) must name known ids.
   if (p.primary_cell) {
     if (!ASSET_IDS.has(p.primary_cell.asset))
-      err(slug, `primary_cell.asset is not a known asset id: "${p.primary_cell.asset}"`);
+      err(slug, `primary_cell.asset is not a known asset id: ${unknownAsset(p.primary_cell.asset)}`);
     if (!FUNCTION_IDS.has(p.primary_cell.function))
       err(slug, `primary_cell.function is not a known CSF function id: "${p.primary_cell.function}"`);
     if (p.primary_cell.function === 'govern') governHeadlines.push(slug);

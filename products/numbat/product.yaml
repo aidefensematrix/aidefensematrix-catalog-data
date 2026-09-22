@@ -19,9 +19,9 @@ changelog:
   - date: 2026-07-30
     summary: Added to the catalog from the Numbat repository documentation, released under Apache 2.0 and at an early version.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect, respond]
     maturity: primary
     note: Observes desktop, CLI, IDE, and gateway agents through local hooks, plugins, OTLP logs, and session artifacts, inventories them with the scan and timeline commands, evaluates activity with a local CEL rule engine, optionally blocks at pre-action hooks, and builds forensic case bundles.
     source: { url: https://github.com/perplexityai/numbat, tier: official, title: Numbat repository, accessed: 2026-07-30, origin: agent, quote: "Endpoint visibility into AI agent activity, with local detection, optional pre-action blocking, and forensic reconstruction." }
-primary_cell: { asset: ai-orchestration-tools, function: detect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: detect }

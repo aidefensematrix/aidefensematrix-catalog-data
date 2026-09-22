@@ -27,7 +27,7 @@ matrix_coverage:
     maturity: primary
     note: Discovers and inventories AI agents, governs their lifecycle and human ownership with audit-ready compliance, and enforces real-time authorization for agent access to applications and data from one control plane.
     source: { url: https://saviynt.com/products/identity-security-for-ai, tier: official, title: Saviynt Identity Security for AI, accessed: 2026-06-14, origin: reviewed, quote: "Discover. Govern. Protect AI agents from a single control plane." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, protect]
     maturity: secondary
     note: Discovers the MCP servers and tools agents use and gates agent access to them through the Agent Access Gateway.

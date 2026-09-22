@@ -19,7 +19,7 @@ changelog:
   - date: 2026-07-05
     summary: Added to the catalog from the Wallarm AI Hypervisor documentation.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, detect, protect]
     maturity: primary
     note: Kernel-level eBPF instrumentation observes every agent decision, data boundary, and external call at runtime, and blocks the actions that violate policy inline.
@@ -29,4 +29,4 @@ matrix_coverage:
     maturity: secondary
     note: Surfaces sensitive data in motion across agent calls and can stop policy-violating data-boundary crossings inline.
     source: { url: https://www.wallarm.com/product/ai-hypervisor, tier: official, title: Wallarm AI Hypervisor data visibility, accessed: 2026-07-05, origin: agent, quote: "You see every AI decision, every outbound call, every piece of sensitive data in motion. And you can stop any of it inline." }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

@@ -32,7 +32,7 @@ matrix_coverage:
     maturity: secondary
     note: Runtime control enforces against unapproved AI services, redacts sensitive data before exposure, and controls prompt injection at the browser and endpoint.
     source: { url: https://singulr.ai/, tier: official, title: Singulr Runtime Control, accessed: 2026-07-03, origin: reviewed, quote: "Enforce against unapproved AI services, redact PII and PHI before exposure, control prompt injection, and bound agent permissions at the browser, the endpoint, and across agentic execution paths." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: Surfaces control-drift metrics and scans MCP servers for vulnerabilities across the agent topology.

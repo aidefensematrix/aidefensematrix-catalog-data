@@ -24,12 +24,12 @@ matrix_coverage:
     maturity: primary
     note: Inline guardrail over prompts and responses that blocks malicious input and masks sensitive data, using layered detection across regular expressions, named-entity recognition, context, and keywords, extending masking to attached files. Policies are authored from natural-language examples.
     source: { url: https://www.aim-intelligence.com/, tier: official, title: AIM Intelligence guardrail platform, accessed: 2026-08-20, origin: agent, quote: "Proxy-level blocking of malicious prompts and real-time masking of sensitive data." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: secondary
     note: Guardrail coverage extends past prompt and response text to the agent action path, inspecting tool calls, function arguments, and agent decisions in line, with request-level logging and audit trails in a central dashboard.
     source: { url: https://www.aim-intelligence.com/starfort, tier: official, title: Starfort agent action control, accessed: 2026-08-20, origin: agent, quote: "Intercepts tool calls, API invocations, and agent actions in real time" }
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [protect, detect]
     maturity: secondary
     note: Enforcement can be placed at the model access layer as a server proxy inside the customer infrastructure, inspecting and controlling requests to managed model services and to self-hosted models reached through a routing layer.

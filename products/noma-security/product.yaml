@@ -30,7 +30,7 @@ matrix_coverage:
     maturity: primary
     note: Discovery, posture, and runtime protection for autonomous agents and MCP servers.
     source: { url: https://noma.security/solutions/ai-agent-security/, tier: official, accessed: 2026-07-04, origin: agent, quote: "Automatically discover every agent within your environment while gaining a deep contextual understanding of their complete profile" }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
     maturity: primary
     source: { url: https://noma.security/platform/, tier: official, accessed: 2026-06-07, origin: reviewed, quote: "Continuous discovery, testing, and protection across models, datasets, agents, and pipelines." }

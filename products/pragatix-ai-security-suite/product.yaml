@@ -24,7 +24,7 @@ matrix_coverage:
     maturity: primary
     note: Prompt Guardian is an in-line proxy over public and private AI services that inspects prompts and responses, classifies sensitive or regulated data, and applies risk-based policy per user, department, and data sensitivity. It also surfaces unsanctioned AI tool usage across the organization.
     source: { url: https://agatsoftware.com/ai-security-overview/prompt-guardian/, tier: official, title: Pragatix Prompt Guardian, accessed: 2026-08-20, origin: agent, quote: "Prompt Guardian inspects AI interactions before data leaves the organization and applies risk-based policies such as allowing, warning, redacting, blocking, or logging." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, detect, protect]
     maturity: primary
     note: Guardian Agent discovers AI agents across SaaS, homegrown, embedded, endpoint, and developer environments, maps them to their connected tools and systems, traces their decisions and data access, and blocks or requires approval for high-risk actions at runtime.
@@ -34,7 +34,7 @@ matrix_coverage:
     maturity: secondary
     note: The MCP Gateway brokers agent identities and permissions, granting policy-based access only to approved tools, data, and systems, with just-in-time access and intent-based authorization. Agent ownership is inventoried centrally and agent tool use is tracked in audit trails.
     source: { url: https://agatsoftware.com/ai-security-overview/guardian-agent/, tier: official, title: Pragatix agent identity and access control, accessed: 2026-08-20, origin: agent, quote: "Broker agent identities and permissions through the MCP Gateway, allowing policy-based access only to approved tools, data, and systems." }
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [protect, detect]
     maturity: secondary
     note: The AI Gateway concentrates AI API traffic through one access layer, applying policy over which services may be reached and by whom, managing provider credentials across hosted and local model services, and tracking consumption per user, team, project, and model.
@@ -44,4 +44,4 @@ matrix_coverage:
     maturity: secondary
     note: Model Guardian inventories internal, external, and open-source models, checks their provenance, licensing, and exposure, red teams them against jailbreak and misuse scenarios, and gates their use behind an approval workflow that records the supporting evidence.
     source: { url: https://agatsoftware.com/ai-security-overview/model-guardian/, tier: official, title: Pragatix Model Guardian, accessed: 2026-08-20, origin: agent, quote: "Model Guardian combines model inventory, static analysis, provenance checks and red teaming to approve, restrict or block models based on enterprise risk policy." }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

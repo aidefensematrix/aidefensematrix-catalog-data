@@ -32,7 +32,7 @@ matrix_coverage:
     maturity: primary
     note: Authenticates AI agents and enforces identity-aware, attribute-based authorization with delegated permissions and Cedar policy, plus a full audit trail of every tool call.
     source: { url: https://natoma.ai/, tier: official, title: Natoma agent authorization, accessed: 2026-06-09, origin: reviewed, quote: "Natoma is a fully managed platform that enables AI agents to securely connect to enterprise data and tools." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary
     note: Provides a hosted gateway for MCP servers and tools, discovers shadow AI and unmanaged MCP connections, and controls which tools each agent may call.

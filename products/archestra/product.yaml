@@ -23,7 +23,7 @@ changelog:
   - date: 2026-07-16
     summary: Updated the description to match the current homepage.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Runs MCP servers in isolated Kubernetes containers with audit trails, applies deterministic guardrails against data exfiltration and prompt injection, and inventories approved servers in a private registry.
@@ -33,4 +33,4 @@ matrix_coverage:
     maturity: secondary
     note: Enforces per-team and per-user access to MCP servers and LLMs through RBAC, SSO, and OAuth on-behalf-of user-delegated access.
     source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-07-16, origin: agent, quote: "Each environment has its own credentials and network egress policy. No tokens pasted into env vars." }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

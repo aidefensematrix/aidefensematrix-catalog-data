@@ -28,7 +28,7 @@ matrix_coverage:
     maturity: primary
     note: Model scanning combines multi-engine static analysis with dynamic testing to surface embedded malware, vulnerable dependencies, tampering, and unsafe behaviors, and builds model inventories using SBOM and MLBOM frameworks.
     source: { url: https://www.deepkeep.ai/capabilities/model-scanning, tier: official, title: DeepKeep model scanning page, accessed: 2026-06-10, origin: reviewed, quote: "Scan models before deployment, so you can identify threats early and avoid surprises later." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: Automated red teaming continuously simulates prompt injection, jailbreak, and data leakage attacks against custom AI applications and agents, with findings tied to remediation guidance and firewall guardrail updates.

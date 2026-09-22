@@ -26,7 +26,7 @@ matrix_coverage:
     maturity: primary
     note: Evaluations inspect prompts and responses to flag prompt injection, unsafe output, and PII exposure, and a Sensitive Data Scanner integration redacts sensitive data.
     source: { url: https://docs.datadoghq.com/llm_observability/evaluations/, tier: official, title: Datadog LLM Observability evaluations, accessed: 2026-07-04, origin: agent, quote: "which helps prevent data leakage by identifying and redacting any sensitive information" }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
     maturity: secondary
     note: Auto-instruments frameworks such as LangChain to trace agent workflows across model calls, retrieval, and tool calls, surfacing failures and anomalies.

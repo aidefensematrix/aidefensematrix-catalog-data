@@ -29,7 +29,7 @@ matrix_coverage:
     maturity: secondary
     note: Auto-discovers AI agents including shadow ones, classifies their behaviors and PII exposure, and detects and stops agent loops and unauthorized tool calls.
     source: { url: https://www.akto.io/ai-security, tier: official, title: Akto AI Security, accessed: 2026-06-14, origin: reviewed, quote: "Auto-detect APIs interacting with AI Agents, including hidden and shadow ones." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: Red-teams agent and MCP integrations with thousands of probes for injection, escalation, data leakage, and tool misuse, runnable in CI/CD.

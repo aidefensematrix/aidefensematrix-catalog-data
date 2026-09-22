@@ -26,7 +26,7 @@ matrix_coverage:
     maturity: primary
     note: Detects and blocks prompt injections and unauthenticated or unauthorized AI behavior in real time across live AI applications and agents, with in-line enforcement and auto-redaction rather than offline scoring.
     source: { url: https://www.operant.ai/platform/ai-gatekeeper, tier: official, title: Operant AI Gatekeeper product page, accessed: 2026-07-04, origin: agent, quote: "Block prompt injections that take many shapes and forms, stop lateral movement and reduce the blast radius of compromised AI interfaces" }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: Covers Model Context Protocol tooling with detection and access control, defending agent tools built on MCP frameworks across both the runtime and API access layers.

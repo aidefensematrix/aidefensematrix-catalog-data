@@ -29,7 +29,7 @@ matrix_coverage:
     maturity: primary
     note: Inspects incoming prompts to filter direct and indirect prompt injection and jailbreaks, blocks PII and sensitive-data leakage in prompts and responses, and moderates hazardous content.
     source: { url: https://www.cloudsine.tech/products/weborion-protector-plus/, tier: official, title: WebOrion Protector Plus product page, accessed: 2026-06-24, origin: reviewed, quote: "Inspect all incoming prompts and filter out the malicious prompts that are direct or indirect prompt attacks, jailbreaks, etc." }
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [protect]
     maturity: secondary
     note: Deploys as a GPU-powered firewall positioned as a security control gateway between AI applications and the model backend.

@@ -24,7 +24,7 @@ changelog:
   - date: 2026-06-12
     summary: Refined matrix coverage.
 matrix_coverage:
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [protect]
     maturity: primary
     note: Centralized AI gateway that secures, monitors, and routes LLM requests to providers such as OpenAI, Anthropic, and Google. Tailscale identity authenticates users in place of distributed API keys, with controls over reachable models and per-user spending limits.
@@ -39,4 +39,4 @@ matrix_coverage:
     maturity: secondary
     note: Identifies connecting users and coding agents such as Claude Code, Codex, and Gemini CLI through Tailscale identities, tying LLM usage to the identity that generated each request rather than shared API keys.
     source: { url: https://tailscale.com/use-cases/securing-ai, tier: official, title: Tailscale securing AI use case, accessed: 2026-06-10, origin: reviewed, quote: "Access by identity, not shared credentials Authenticate with Tailscale's network identity, not credentials you need to distribute and manually rotate that may leak." }
-primary_cell: { asset: ai-gateways-routers, function: protect }
+primary_cell: { asset: ai-traffic, function: protect }

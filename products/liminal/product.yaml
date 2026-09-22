@@ -29,7 +29,7 @@ matrix_coverage:
     maturity: primary
     note: Detects PII, PHI, PCI, and organization-specific data in prompts before submission to any model, masks or redacts it per policy, and rehydrates protected terms in returned outputs.
     source: { url: https://www.liminal.ai/platform, tier: official, title: Liminal platform page, accessed: 2026-06-24, origin: reviewed, quote: "Outputs are reviewed upon return, and the protected terms are rehydrated back to their submission state." }
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [protect]
     maturity: secondary
     note: Acts as a centralized multi-model gateway routing employee AI traffic and enforcing data-security policy and access privileges on every interaction.

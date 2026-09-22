@@ -26,7 +26,7 @@ matrix_coverage:
     maturity: primary
     note: The ADR Detector monitors agent sessions with a two-tier architecture that combines high-recall triage with deeper agentic reasoning, surfacing risky behavior such as prompt injection across coding and support agents. ADR-Bench supplies 303 tasks covering 17 agent attack techniques.
     source: { url: https://github.com/uber/ADR/blob/main/README.md, tier: official, title: ADR README in the uber/ADR repository, accessed: 2026-08-02, origin: agent, quote: "Its two-tier architecture combines high-recall triage with deeper agentic reasoning for suspicious sessions." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: The ADR Sensor collects and normalizes telemetry on agent intent, tool use, and execution traces from AI coding tools such as Claude Code, Cursor, and Codex, as well as internal automation, giving security teams visibility into what enterprise AI agents are doing.

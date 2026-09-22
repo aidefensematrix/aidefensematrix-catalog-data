@@ -27,7 +27,7 @@ matrix_coverage:
     maturity: primary
     note: Discovers and inventories first-party and third-party AI models alongside other AI assets in a unified inventory.
     source: { url: https://www.relyance.ai/product/ai-spm, tier: official, title: Relyance AI-SPM page, accessed: 2026-06-25, origin: reviewed, quote: "it discovers all AI assets including agents, models, MCP servers, and third-party tools alongside non-AI data assets in a unified inventory" }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary
     note: Inventories AI agents, tools, and MCP servers alongside non-AI assets and maps their relationships to data.

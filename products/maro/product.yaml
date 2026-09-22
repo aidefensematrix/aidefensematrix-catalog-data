@@ -24,7 +24,7 @@ matrix_coverage:
     maturity: primary
     note: Applies semantic data-loss controls at every prompt and browser interaction, guiding or blocking risky sharing into AI tools in real time.
     source: { url: https://seekmaro.com/pricing, tier: official, title: Maro pricing, accessed: 2026-07-03, origin: reviewed, quote: "Real-time semantic DLP at every prompt and browser interaction. Guide or block in the moment." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary
     note: Discovers shadow AI usage across the workforce down to the specific tool, use case, data, and prompt.

@@ -29,7 +29,7 @@ matrix_coverage:
     maturity: primary
     note: The AI Bill of Materials inventories machine learning models detected in repositories, whether self-hosted or referenced from model hubs, as part of a continuously updated AI and ML inventory.
     source: { url: https://cycode.com/blog/mapping-shadow-ai-sdlc-visibility/, tier: official, title: Cycode blog on mapping AI tools in the SDLC, accessed: 2026-06-10, origin: reviewed, quote: "organizes every detected AI component into a continuously updated, categorized inventory." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary
     note: AIBOM discovery also catalogs MCP integrations, AI code assistants, LLM gateways, and orchestration frameworks found across the software factory, mapped to repositories and Cycode Projects.

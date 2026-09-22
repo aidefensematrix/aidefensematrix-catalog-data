@@ -27,7 +27,7 @@ matrix_coverage:
     maturity: primary
     note: Discovers every AI agent, tool, and MCP server including unapproved ones, issues each agent a governed scoped credential tied to a real user with role-based least-privilege, and logs and contains agent activity with an org-wide kill switch.
     source: { url: https://withwillow.ai/platform/identity-access, tier: official, title: Willow Identity and Access, accessed: 2026-06-14, origin: reviewed, quote: "Each agent receives a governed credential, scoped, time-bound, tied to a real user. Provision, suspend, and audit agents individually." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect]
     maturity: secondary
     note: Provides a governed MCP gateway that brokers a single approved connection between agents and the tools they use.

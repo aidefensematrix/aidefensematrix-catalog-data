@@ -30,7 +30,7 @@ matrix_coverage:
     maturity: primary
     note: Discovers AI models, workflows, and MCP servers into an AI-BOM, continuously red-teams AI systems for vulnerabilities, and applies runtime security and governance across the AI lifecycle.
     source: { url: https://splx.ai/, tier: official, title: SPLX, accessed: 2026-06-14, origin: reviewed, quote: "From red teaming and runtime security to governance and remediation, SPLX delivers full-stack security tooling needed to safely build, deploy, and scale AI systems." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary
     note: Discovers and inventories AI models, workflows, MCP servers, and guardrails into a complete AI-BOM.

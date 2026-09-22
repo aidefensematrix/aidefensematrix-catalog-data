@@ -31,7 +31,7 @@ matrix_coverage:
     maturity: primary
     note: Discovers AI agents in cloud workloads and code repositories, attributes every run, event, and tool call to a human, non-human, or AI identity through the Universal Identity Graph, detects anomalous agent behavior, and enforces containment including kill switches.
     source: { url: https://permiso.io/ai-security, tier: official, title: Permiso AI security product page, accessed: 2026-06-10, origin: reviewed, quote: "Comprehensive visibility, prioritized risk reduction, and proactive threat defense for all identities." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
     maturity: secondary
     note: Monitors MCP invocations and tool calls tied to agent identities; the SandyClaw sandbox analyzes agent skills before they run in the environment, recording actions, tool calls, and downstream requests.

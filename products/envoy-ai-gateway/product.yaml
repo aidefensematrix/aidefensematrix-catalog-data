@@ -19,14 +19,14 @@ changelog:
   - date: 2026-07-05
     summary: Added to the catalog from the Envoy AI Gateway documentation and release notes.
 matrix_coverage:
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [identify, protect]
     maturity: primary
     note: Routes AI traffic to multiple LLM providers behind one API, enforcing token-based quotas and provider failover while producing unified observability across the fleet.
     source: { url: https://github.com/envoyproxy/ai-gateway, tier: official, title: envoyproxy/ai-gateway, accessed: 2026-07-05, origin: agent, quote: "Manages Unified Access to Generative AI Services built on Envoy Gateway" }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, protect]
     maturity: secondary
     note: MCP gateway mediates how agents reach tools, adding server multiplexing, tool routing, OAuth authentication, and observability for MCP workloads.
     source: { url: https://aigateway.envoyproxy.io/docs/capabilities/, tier: official, title: Envoy AI Gateway MCP capabilities, accessed: 2026-07-05, origin: agent, quote: "Server multiplexing, tool routing, OAuth authentication, and observability for MCP workloads" }
-primary_cell: { asset: ai-gateways-routers, function: protect }
+primary_cell: { asset: ai-traffic, function: protect }

@@ -23,7 +23,7 @@ matrix_coverage:
     maturity: primary
     note: Built-in checks screen prompts and model outputs inline through drop-in OpenAI client wrappers, covering moderation, jailbreak detection, PII detection, URL filtering, hallucination detection, off-topic prompts, and custom LLM-based checks configured via a no-code wizard.
     source: { url: https://github.com/openai/openai-guardrails-python, tier: official, title: OpenAI Guardrails Python repository, accessed: 2026-06-10, origin: reviewed, quote: "enabling automatic input/output validation and moderation using a wide range of guardrails." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: secondary
     note: GuardrailAgent applies configured checks to OpenAI Agents SDK agents and raises input and output tripwire exceptions that halt the run when a check fires.

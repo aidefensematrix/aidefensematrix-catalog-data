@@ -18,7 +18,7 @@ changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Fortinet documentation.
 matrix_coverage:
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [protect, detect]
     maturity: primary
     note: Deploys as a containerized proxy between the app and the model, with API gateway, DDoS protection, intelligent traffic steering, output caching, and visibility mapped to the OWASP Top 10 for LLM Applications.
@@ -33,4 +33,4 @@ matrix_coverage:
     maturity: secondary
     note: The inline DLP engine monitors inbound and outbound traffic to prevent model extraction, and input guardrails detect model poisoning and manipulation attempts.
     source: { url: https://www.fortinet.com/products/fortiaigate, tier: official, title: FortiAIGate product page, accessed: 2026-06-10, origin: reviewed, quote: "Accelerate AI adoption and enforce security guardrails on large language models." }
-primary_cell: { asset: ai-gateways-routers, function: protect }
+primary_cell: { asset: ai-traffic, function: protect }

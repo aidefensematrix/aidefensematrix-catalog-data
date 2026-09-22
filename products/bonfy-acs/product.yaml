@@ -24,7 +24,7 @@ matrix_coverage:
     maturity: primary
     note: Applies entity-aware analysis to data entering prompts, content leaving via email or AI outputs, and data agents process. Contextual Data Enforcement intercepts AI retrieval requests and blocks, redacts, or flags sensitive content before it reaches AI clients like Claude or Copilot Studio.
     source: { url: https://www.bonfy.ai/product, tier: official, title: Bonfy ACS product page, accessed: 2026-06-10, origin: reviewed, quote: "Bonfy ACS solves the needs for data in motion and data at rest risks, and provides the options to use the solution either inline, offline, and/or in retrospective modes." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [detect, protect]
     maturity: secondary
     note: Ships an MCP server, API, and agent framework support that agents call during reasoning to evaluate content against policy, enabling workflows to revise, redact, block, or route output for review before data reaches external services.

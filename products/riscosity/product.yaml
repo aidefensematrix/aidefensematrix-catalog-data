@@ -27,7 +27,7 @@ matrix_coverage:
     maturity: primary
     note: Detects and redacts or redirects sensitive fields in data flowing to AI vendors and chatbots, blocking flows that violate business rules or regulatory requirements before data leaves.
     source: { url: https://www.riscosity.com/use-cases, tier: official, title: Riscosity use cases, accessed: 2026-06-25, origin: reviewed, quote: "Redact or redirect data flows to AI Vendors and Chatbots that violate business rules or regulatory requirements." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary
     note: Automatically discovers and catalogs every AI vendor, model, and chatbot that applications and end-users communicate with, surfacing shadow AI.

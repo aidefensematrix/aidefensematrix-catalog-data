@@ -22,7 +22,7 @@ changelog:
   - date: 2026-07-29
     summary: Added to the catalog from the Golf Gateway documentation.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Runs inline as a transparent proxy between MCP clients and MCP servers, surfacing which servers and tools each agent reaches, enforcing access policy per server, tool, and resource, and recording every interaction in an audit trail that exports to Elasticsearch, Sentinel, or OTLP.
@@ -37,4 +37,4 @@ matrix_coverage:
     maturity: secondary
     note: Responses returned by MCP servers are matched against configurable sensitive field lists and entity recognizers, and matching values are replaced before the response reaches the calling agent or the audit log.
     source: { url: https://docs.golf.dev/gateway/guides/security/configure-pii-scrubbing, tier: official, title: Configure PII Scrubbing, accessed: 2026-07-29, origin: agent, quote: "automatically redact sensitive information from MCP responses" }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

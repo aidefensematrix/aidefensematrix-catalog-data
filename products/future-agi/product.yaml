@@ -26,7 +26,7 @@ matrix_coverage:
     maturity: primary
     note: Evaluation and observability for LLM applications and agents with an inline Guard layer of 18+ pre- and post-processing guardrail types (PII, prompt injection, content moderation, hallucination checks, data leakage) and per-rule enforce, monitor, or log modes.
     source: { url: https://futureagi.com/platform/guard/, tier: official, title: Future AGI Guard, accessed: 2026-07-16, origin: agent, quote: "Each guardrail rule has its own enforcement mode. Enforce blocks the request (403). Monitor lets it through but logs a warning." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [detect, protect]
     maturity: secondary
     note: Agent evaluation (tool selection, tracing) plus guard types scoped to the agent tool layer, including tool permissions and MCP security checks.

@@ -21,7 +21,7 @@ changelog:
   - date: 2026-07-16
     summary: "Corrected the status source quote (erratum) to the current page wording."
 matrix_coverage:
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [identify, protect]
     maturity: primary
     note: Routes LLM traffic across agents and providers, enforcing per-team token budgets and automatic failover while producing unified logs for attribution.
@@ -31,9 +31,9 @@ matrix_coverage:
     maturity: secondary
     note: Runtime AI guardrails redact PII, filter prompts and responses, and block transactions across model and tool traffic.
     source: { url: https://tetrate.io/agent-router-product, tier: official, title: Tetrate Agent Router AI guardrails, accessed: 2026-07-05, origin: agent, quote: "Runtime policy enforcement across both model and tool traffic. PII redaction, prompt filtering, and transaction blocking before damage is done." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect]
     maturity: secondary
     note: MCP gateway governs how agents connect to tools, with centrally curated server catalogs and per-team, per-role, or per-agent access profiles.
     source: { url: https://tetrate.io/agent-router-product, tier: official, title: Tetrate Agent Router MCP gateway, accessed: 2026-07-05, origin: agent, quote: "Access profiles by team, role, or agent" }
-primary_cell: { asset: ai-gateways-routers, function: protect }
+primary_cell: { asset: ai-traffic, function: protect }

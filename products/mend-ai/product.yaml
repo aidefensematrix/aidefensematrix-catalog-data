@@ -25,7 +25,7 @@ matrix_coverage:
     maturity: primary
     note: Builds a continuously updated inventory of AI models and frameworks, including shadow AI, ties risks to models, runs automated red teaming tests for prompt injection, context leakage, and data exfiltration.
     source: { url: https://www.mend.io/mend-ai/, tier: official, title: Mend AI product page, accessed: 2026-07-04, origin: agent, quote: "Mend AI provides deep visibility to tie risks to models, strengthening your AI supply chain security with mitigation strategies for licensing, vulnerabilities, and malicious packages" }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary
     note: AI-BOM discovery extends beyond models to MCPs and RAG pipelines, inventorying orchestration components alongside frameworks in SPDX and CycloneDX machine-readable formats.

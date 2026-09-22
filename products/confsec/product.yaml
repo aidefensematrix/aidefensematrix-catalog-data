@@ -24,7 +24,7 @@ matrix_coverage:
     maturity: primary
     note: Keeps prompts, outputs, and logs confidential through encryption and attestation, so prompts are never logged, retained, used for training, or sent to third parties.
     source: { url: https://confident.security/tech, tier: official, title: Confident Security technology page, accessed: 2026-06-25, origin: reviewed, quote: "Prompts are never logged or retained" }
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [protect]
     maturity: secondary
     note: Sits in front of AI models as a verifiably-private inference API, routing requests through Oblivious HTTP so operators cannot link or read individual requests.

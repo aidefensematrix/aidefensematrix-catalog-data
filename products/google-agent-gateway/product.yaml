@@ -22,7 +22,7 @@ changelog:
   - date: 2026-06-13
     summary: Added to the catalog from the Google Cloud documentation; the feature is in public preview per the documentation.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: Acts as the network entry and exit point for agent interactions, enforcing least-privilege access policies across agent-to-agent and agent-to-tool connections and parsing MCP request attributes to authorize access to specific tools, with Model Armor guardrails against MCP prompt injection.
@@ -32,4 +32,4 @@ matrix_coverage:
     maturity: secondary
     note: Uses each agent identity as the principal for authorization decisions and secures agent-to-tool connectivity with automatic mTLS handshakes and OAuth 2.0 handling.
     source: { url: https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/gateways/agent-gateway-overview, tier: official, title: Google Agent Gateway overview, accessed: 2026-06-13, origin: reviewed, quote: "Automatically handles mTLS handshakes and termination to ensure encrypted connectivity between agents and tools without developer effort." }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

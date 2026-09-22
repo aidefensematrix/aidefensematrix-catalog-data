@@ -25,7 +25,7 @@ matrix_coverage:
     maturity: primary
     note: Centralized guardrails on developer workstations restrict unapproved models, private accounts, and unsafe configurations for AI coding agents, with real-time detection of prompt injection, data exfiltration, and anomalous agent behavior in vibe coding workflows.
     source: { url: https://www.backslash.security/agentic-endpoint-security, tier: official, title: Backslash agentic endpoint security page, accessed: 2026-07-04, origin: agent, quote: "Protect developer workstation and citizen-developer endpoints against software supply chain risks, private account use, and unapproved models." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, protect]
     maturity: primary
     note: Vets, allowlists, and monitors MCP servers at the tool level, blocking unsafe or malicious components; a visibility graph inventories agents, MCPs, skills, hooks, and plugins, and the public MCP Server Security Hub maintains a risk database covering tens of thousands of MCP servers.

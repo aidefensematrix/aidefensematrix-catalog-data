@@ -26,7 +26,7 @@ matrix_coverage:
     maturity: primary
     note: An MCP server and agent hooks scan AI coding-tool edits in real time to block insecure code at generation (protect), automated reviews flag vulnerabilities on every pull request (detect), and a dashboard tracks AI-generated code across tools and developers (identify).
     source: { url: https://www.corridor.dev/, tier: official, title: Corridor, accessed: 2026-06-24, origin: reviewed, quote: "Corridor’s MCP server and agent hooks integrate directly with your coding tools, preventing vulnerabilities before they’re even written." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
     maturity: secondary
     note: Discovers and monitors the MCP servers developers connect to AI coding tools and surfaces security-policy violations across the organization.

@@ -23,12 +23,12 @@ changelog:
   - date: 2026-07-30
     summary: Added an AI gateway coverage row, refined functions on the orchestration and model rows, and updated the primary cell.
 matrix_coverage:
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [govern, identify, protect, detect, respond]
     maturity: primary
     note: Discovers sanctioned and shadow AI agents, monitors activity with anomaly detection and session replay, lets teams author natural language policies mapped to frameworks such as the EU AI Act, enforces them by sanctioning tools and controlling MCP access, and remediates via the Guardian Agent.
     source: { url: https://onyx.security/platform, tier: official, title: Onyx platform page, accessed: 2026-07-30, origin: agent, quote: "Sanction approved tools and control MCP server access" }
-  - asset: ai-gateways-routers
+  - asset: ai-traffic
     functions: [protect, detect]
     maturity: secondary
     note: The Onyx AI Gateway and MCP Gateway centralize cross-provider model traffic and agent tool calls on an inline path, inspecting each request and enforcing tool-call policy, data-class controls, and agent behavior guardrails through alert, block, mask, steer, or ask modes.
@@ -43,4 +43,4 @@ matrix_coverage:
     maturity: secondary
     note: Detects shadow AI usage and unapproved model deployments, identifies supply chain risks in agents, MCP servers, models, and AI assets, and probes agents and models for vulnerabilities with automated red teaming.
     source: { url: https://onyx.security/platform, tier: official, title: Onyx platform page, accessed: 2026-07-30, origin: agent, quote: "Spot vulnerabilities in agents and models with automated red teaming" }
-primary_cell: { asset: ai-orchestration-tools, function: protect }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

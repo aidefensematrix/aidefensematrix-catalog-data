@@ -26,7 +26,7 @@ matrix_coverage:
     maturity: primary
     note: LLM Protection inspects prompts in full session context and blocks or modifies prompt injection and data exfiltration inline before inference.
     source: { url: https://www.impart.ai/product/llm-protection, tier: official, title: Impart LLM Protection page, accessed: 2026-07-16, origin: agent, quote: "Runtime enforcement for LLMs that stops prompt injection, data exfiltration, and agent misuse before execution." }
-  - asset: ai-orchestration-tools
+  - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: secondary
     note: MCP Protection catalogs every MCP server and tool from live traffic and enforces policy on caller, scope, and arguments before a tool call runs.
