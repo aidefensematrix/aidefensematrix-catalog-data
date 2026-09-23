@@ -1,0 +1,57 @@
+schema_version: 2
+name: AccuKnox AI Security
+vendor:
+  value: AccuKnox
+  source: { url: https://accuknox.com/platform/ai-security, tier: official, title: AccuKnox AI Security platform page, accessed: 2026-09-23, origin: agent }
+aliases: [AccuKnox AI-SPM, ModelKnox]
+url: https://accuknox.com/platform/ai-security
+description:
+  value: "AccuKnox AI Security: AI-SPM platform that inventories cloud AI assets, scans models and datasets, red-teams LLMs, sandboxes agents with eBPF, and runs a stateful prompt firewall."
+  source: { url: https://accuknox.com/platform/ai-security, tier: official, title: AccuKnox AI Security platform page, accessed: 2026-09-23, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://help.accuknox.com/how-to/aiml-saas-vs-onprem/, tier: official, title: AI-SPM SaaS vs On-Prem Deployment, accessed: 2026-09-23, origin: agent }
+status:
+  value: active
+  source: { url: https://accuknox.com/platform/ai-security, tier: official, title: AccuKnox AI Security platform page, accessed: 2026-09-23, origin: agent }
+last_reviewed: 2026-09-23
+changelog:
+  - date: 2026-09-23
+    summary: Added to the catalog from the AccuKnox product pages and help documentation.
+matrix_coverage:
+  - asset: ai-workload-platforms
+    functions: [identify, protect, detect, respond]
+    maturity: primary
+    note: AI-SPM connects agentlessly to AWS, Azure, and GCP and inventories models, datasets, and compute in Bedrock, SageMaker, Vertex AI, and Azure AI. AI-DR watches control-plane logs and auto-remediates exposed endpoints. An eBPF and LSM sandbox confines inference workloads.
+    source: { url: https://accuknox.com/platform/ai-security, tier: official, title: AccuKnox AI Security platform page, accessed: 2026-09-23, origin: agent, quote: "Builds a live, agentless inventory of every model, agent, dataset, and pipeline, spanning cloud and on-prem, in one dashboard." }
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Discovers agents on Azure AI Foundry, Copilot Studio, and AWS Bedrock, confines agent processes, files, and network at the kernel with eBPF, enforces per-agent tool access, budgets, and egress allowlists, and audits agent behavior at runtime.
+    source: { url: https://accuknox.com/solutions/agentic-ai-security, tier: official, title: AccuKnox Agentic AI Security, accessed: 2026-09-23, origin: agent, quote: "Enforce least-privilege at every agent step. Kernel-level sandboxing via eBPF." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Inspects each prompt and response against per-application policies for prompt injection, jailbreaks, PII, secrets, and toxicity, then blocks, masks, or logs it. The engine is stateful, so it scores the whole conversation and catches a jailbreak spread across many turns.
+    source: { url: https://help.accuknox.com/use-cases/prompt-firewall-overview/, tier: official, title: AccuKnox Prompt Firewall documentation, accessed: 2026-09-23, origin: agent, quote: "AccuKnox Prompt Firewall is a real-time inline security layer that sits between your users and your LLM." }
+  - asset: ai-model
+    functions: [detect]
+    maturity: primary
+    note: Static scans check Pickle, HDF5, TensorFlow SavedModel, checkpoint, and ONNX files from Hugging Face or GitHub for deserialization attacks and tampering. LLM scans run 150+ probes for injection, hallucination, and unsafe code. Findings map to OWASP LLM Top 10 and MITRE ATLAS.
+    source: { url: https://accuknox.com/solutions/ai-model-dataset, tier: official, title: AccuKnox AI Model and Dataset Security, accessed: 2026-09-23, origin: agent, quote: "Scans all five major model formats for tampering and deserialization attacks." }
+  - asset: training-data
+    functions: [detect]
+    maturity: secondary
+    note: Scans training datasets for PII and PHI before use and re-scans them on a set schedule, so sensitive records surface before a fine-tune carries them into a model.
+    source: { url: https://accuknox.com/solutions/ai-model-dataset, tier: official, title: AccuKnox AI Model and Dataset Security, accessed: 2026-09-23, origin: agent, quote: "Scans datasets for sensitive data before it becomes a compliance incident." }
+  - asset: ai-traffic
+    functions: [protect]
+    maturity: secondary
+    note: The Prompt Firewall plugs into AI gateways such as LiteLLM, Bifrost, AWS APIM, and Azure APIM, or embeds in the application as an SDK, so one policy set filters LLM traffic at the gateway in SaaS and on-prem installs.
+    source: { url: https://help.accuknox.com/how-to/aiml-saas-vs-onprem/, tier: official, title: AI-SPM SaaS vs On-Prem Deployment, accessed: 2026-09-23, origin: agent, quote: "Connect the Prompt Firewall to an AI Gateway (LiteLLM, Bifrost, AWS APIM, Azure APIM)." }
+  - asset: ai-generated-code
+    functions: [detect]
+    maturity: adjacent
+    note: Red-team probes test whether a model invents PyPI, npm, RubyGems, or Crates packages or writes unsafe code, which flags models likely to emit hallucinated dependencies. The probes test the model and do not scan committed code.
+    source: { url: https://accuknox.com/solutions/ai-red-teaming, tier: official, title: AccuKnox AI Red Teaming, accessed: 2026-09-23, origin: agent, quote: "Package hallucination - PyPI, npm, RubyGems, Crates" }
+primary_cell: { asset: ai-workload-platforms, function: identify }
