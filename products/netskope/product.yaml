@@ -17,7 +17,7 @@ status:
 compliance_attestations:
   value: [SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, CSA STAR Level 2, HIPAA, GDPR]
   source: { url: https://compliance.netskope.com/, tier: official, title: Netskope Trust Portal, accessed: 2026-06-13, origin: reviewed, quote: "SOC 2 Type 2" }
-last_reviewed: 2026-06-09
+last_reviewed: 2026-10-03
 changelog:
   - date: 2026-06-09
     summary: Enriched from the Netskope generative AI security documentation.
@@ -25,15 +25,22 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-09-22
     summary: "Updated a coverage note against the current vendor page."
+  - date: 2026-10-03
+    summary: "Corrected matrix coverage (erratum): added AI app discovery to the AI Traffic row and refreshed a source quote."
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovers generative-AI and shadow-AI use and inspects prompts and responses inline with DLP and guardrails to block sensitive-data leakage.
-    source: { url: https://www.netskope.com/products/securing-generative-ai, tier: official, title: Securing Generative AI with Netskope One, accessed: 2026-06-09, origin: reviewed, quote: "Netskope One DSPM identifies and flags at-risk data across SaaS, IaaS, PaaS, and on-prem sources." }
+    source: { url: https://www.netskope.com/products/securing-generative-ai, tier: official, title: Securing Generative AI with Netskope One, accessed: 2026-10-03, origin: agent, quote: "Netskope One DLP and Netskope One AI Guardrails inspect every prompt and response in real time to prevent sensitive data" }
   - asset: ai-model
     functions: [identify, detect]
     maturity: secondary
     note: Assesses the risk of generative-AI apps and runs automated red-team testing of private LLMs to find vulnerabilities.
     source: { url: https://www.netskope.com/products/ai-red-teaming, tier: official, title: Netskope AI Red Teaming, accessed: 2026-09-22, origin: agent, quote: "Continuously test your LLMs using a library of over 18,000 adversarial scenarios and seed prompts." }
+  - asset: ai-traffic
+    functions: [identify]
+    maturity: primary
+    note: Discovers generative AI use, including unsanctioned use, across managed and unmanaged SaaS applications.
+    source: { url: https://www.netskope.com/products/securing-generative-ai, tier: official, title: Netskope generative AI security, accessed: 2026-10-03, origin: agent, quote: "Identify AI use across all managed and unmanaged Saas applications." }
 primary_cell: { asset: runtime-ai-data, function: protect }
