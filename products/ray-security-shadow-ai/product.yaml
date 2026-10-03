@@ -14,10 +14,12 @@ deployment:
 status:
   value: active
   source: { url: https://raysecurity.io/, tier: official, title: Ray Security homepage, accessed: 2026-06-24, origin: reviewed }
-last_reviewed: 2026-06-24
+last_reviewed: 2026-10-03
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Ray Security documentation.
+  - date: 2026-10-03
+    summary: "Corrected matrix coverage (erratum): added AI app discovery to the AI Traffic row."
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, detect, protect]
@@ -29,4 +31,9 @@ matrix_coverage:
     maturity: secondary
     note: Governs what data AI tools and agents can access based on sensitivity, context, and real usage.
     source: { url: https://raysecurity.io/use-cases/reveal-control-ai-data-exposure/, tier: official, title: Ray Security reveal and control AI data exposure, accessed: 2026-06-24, origin: reviewed, quote: "Define exactly what data AI tools and agents can access, based on sensitivity, context, and real usage." }
+  - asset: ai-traffic
+    functions: [identify]
+    maturity: primary
+    note: Discovers shadow AI tools that access enterprise data, including tools outside IT control.
+    source: { url: https://raysecurity.io/use-cases/find-and-manage-shadow-ai/, tier: official, title: Ray Security shadow AI use case, accessed: 2026-10-03, origin: agent, quote: "Discover shadow AI tools accessing your data" }
 primary_cell: { asset: ai-agent-identities, function: identify }
