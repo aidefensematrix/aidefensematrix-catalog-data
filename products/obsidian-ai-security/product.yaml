@@ -1,0 +1,50 @@
+schema_version: 2
+name: Obsidian AI Security
+aliases: [Obsidian AI Agent Security]
+vendor:
+  value: Obsidian Security
+  source: { url: https://www.obsidiansecurity.com/news/unlocking-ai-potential-securely, tier: official, title: Obsidian Security Series D announcement, accessed: 2026-10-03, origin: agent }
+url: https://www.obsidiansecurity.com/ai-security
+description:
+  value: "Obsidian AI Security: inventories AI agents, MCP servers, and shadow AI tools across enterprise apps, enforces runtime guardrails on agent actions, and blocks sensitive data in AI prompts."
+  source: { url: https://www.obsidiansecurity.com/ai-security, tier: official, title: Obsidian AI Security solution page, accessed: 2026-10-03, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://www.obsidiansecurity.com/trust, tier: official, title: Obsidian Security enterprise trust page, accessed: 2026-10-03, origin: agent }
+status:
+  value: active
+  source: { url: https://www.obsidiansecurity.com/news/unlocking-ai-potential-securely, tier: official, title: Obsidian Security Series D announcement, accessed: 2026-10-03, origin: agent }
+compliance_attestations:
+  value: [SOC 2, ISO 27001, ISO 27701, ISO 42001, IRAP]
+  source: { url: https://trust.obsidiansecurity.com/, tier: official, title: Obsidian Security trust center, accessed: 2026-10-03, origin: agent, quote: "ISO/IEC 42001:2023" }
+last_reviewed: 2026-10-03
+changelog:
+  - date: 2026-10-03
+    summary: Added to the catalog from the Obsidian Security documentation.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Discovers agents on platforms such as Copilot Studio, Agentforce, Bedrock, and n8n and maps each to its owner, apps, MCP servers, models, and permissions, baselines agent behavior to flag deviations, and applies runtime policies that block policy-violating executions.
+    source: { url: https://www.obsidiansecurity.com/ai-agent-security, tier: official, title: Obsidian AI Agent Security page, accessed: 2026-10-03, origin: agent, quote: "Discover all agents across your enterprise, observe what they can do, and stop high-risk actions at runtime, before damage is done." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: A browser extension inspects prompts and file uploads sent to generative AI tools, including personal accounts, and warns or blocks the user under configured policies, recording who submitted the prompt and which tool was used.
+    source: { url: https://www.obsidiansecurity.com/prompt-security, tier: official, title: Obsidian prompt security page, accessed: 2026-10-03, origin: agent, quote: "Detect sensitive text in prompts and block it before it is submitted." }
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, detect]
+    maturity: secondary
+    note: Inventories the MCP servers in use across agent platforms, traces each to the agents and users invoking it and the executions run through it, and alerts on agents connecting to risky or unauthenticated servers.
+    source: { url: https://www.obsidiansecurity.com/mcp-security, tier: official, title: Obsidian MCP security page, accessed: 2026-10-03, origin: agent, quote: "Get a complete, always-current inventory of every MCP server active in your environment, fully traced to the agents invoking them" }
+  - asset: ai-workload-platforms
+    functions: [identify]
+    maturity: secondary
+    note: Discovers sanctioned and unsanctioned AI tools and browser extensions through browser-level discovery, including use on personal accounts and unmanaged devices.
+    source: { url: https://www.obsidiansecurity.com/ai-security, tier: official, title: Obsidian AI Security solution page, accessed: 2026-10-03, origin: agent, quote: "Get a continuous inventory of every tool and agent in use, including the ones IT never approved." }
+  - asset: ai-model
+    functions: [identify]
+    maturity: adjacent
+    note: Records which LLMs the discovered agents run on as part of the AI inventory.
+    source: { url: https://www.obsidiansecurity.com/ai-security, tier: official, title: Obsidian AI Security solution page, accessed: 2026-10-03, origin: agent, quote: "Get a continuous, authoritative view of every AI tool, agent, LLM, and MCP server operating across your environment" }
+primary_cell: { asset: ai-agent-identities, function: identify }
