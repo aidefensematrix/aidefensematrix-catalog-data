@@ -1,0 +1,50 @@
+schema_version: 2
+name: Island Enterprise AI
+aliases: [Island AI Services, Island AI Protect]
+vendor:
+  value: Island
+  source: { url: https://www.island.io/press/island-announces-400-million-series-f-bringing-valuation-to-6-4-billion, tier: official, title: Island Series F announcement, accessed: 2026-10-03, origin: agent }
+url: https://www.island.io/ai
+description:
+  value: "Island Enterprise AI: discovers AI agents, MCP servers, skills, and non-human identities, inspects prompts and tool calls inline to block prompt injection and data leakage, and limits agent actions."
+  source: { url: https://www.island.io/ai, tier: official, title: Island Enterprise AI page, accessed: 2026-10-03, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://www.island.io/solutions/vdi-and-daas, tier: official, title: Island VDI and DaaS solution page, accessed: 2026-10-03, origin: agent }
+status:
+  value: active
+  source: { url: https://www.island.io/press/island-announces-400-million-series-f-bringing-valuation-to-6-4-billion, tier: official, title: Island Series F announcement, accessed: 2026-10-03, origin: agent }
+compliance_attestations:
+  value: [SOC 2, SOC 1, ISO 27001, PCI DSS, Cyber Essentials, TX-RAMP]
+  source: { url: https://trust.island.io/, tier: official, title: Island trust center, accessed: 2026-10-03, origin: agent, quote: "Cyber Essentials" }
+last_reviewed: 2026-10-03
+changelog:
+  - date: 2026-10-03
+    summary: Added to the catalog from the Island documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Inspects prompts, responses, tool calls, and files inline with classifiers for prompt injection, jailbreaks, malicious URLs, and data leakage, applies DLP and PII redaction, blocks threats, and surfaces risky sessions across the organization.
+    source: { url: https://www.island.io/ai, tier: official, title: Island Enterprise AI page, accessed: 2026-10-03, origin: agent, quote: "Inspects every prompt, tool call, and file, blocks threats inline, and tells the agent or the user why so it corrects course instead of just failing." }
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: secondary
+    note: Discovers MCP servers, skills, and extensions running on endpoints, including those used by coding agents, flags compromised MCP servers and skills with threat intelligence, and removes risky components.
+    source: { url: https://www.island.io/ai, tier: official, title: Island Enterprise AI page, accessed: 2026-10-03, origin: agent, quote: "Discovers every MCP server, skill, and extension running on the endpoint, and removes the ones flagged as risky." }
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: secondary
+    note: Inventories the non-human identities agents run as, maps them to users, sessions, and access paths, analyzes their activity to surface risk, and issues task-scoped just-in-time credentials with per-tool read, write, or execute limits.
+    source: { url: https://www.island.io/ai, tier: official, title: Island Enterprise AI page, accessed: 2026-10-03, origin: agent, quote: "Inventories every non-human identity in use, analyzes its risk, and issues just-in-time access instead of standing credentials." }
+  - asset: ai-traffic
+    functions: [protect, detect]
+    maturity: secondary
+    note: An MCP gateway sits between agents and the tools they call, applying identity, per-source policy, and audit to each call and inspecting or blocking malicious tool calls during a live session.
+    source: { url: https://www.island.io/blog/expanding-island-to-govern-your-ai-workforce, tier: official, title: Island blog on governing the AI workforce, accessed: 2026-10-03, origin: agent, quote: "Our MCP Gateway sits inline on live calls and can inspect or block a malicious tool call mid session." }
+  - asset: ai-model
+    functions: [identify]
+    maturity: adjacent
+    note: Records the models in use alongside the agents, MCP servers, and skills in the AI inventory.
+    source: { url: https://www.island.io/ai, tier: official, title: Island Enterprise AI page, accessed: 2026-10-03, origin: agent, quote: "Inventory MCP servers, coding agents, skills, and models with risk-scores" }
+primary_cell: { asset: runtime-ai-data, function: protect }
