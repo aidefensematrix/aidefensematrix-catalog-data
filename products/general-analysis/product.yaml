@@ -6,27 +6,44 @@ vendor:
   source: { url: https://generalanalysis.com/, tier: official, title: General Analysis homepage, accessed: 2026-07-03, origin: reviewed }
 url: https://generalanalysis.com/
 description:
-  value: "General Analysis: Automated red-teaming platform that runs adversarial tests against LLM apps, RAG systems, MCP servers, and production AI agents to surface prompt injection and data-leakage flaws."
-  source: { url: https://generalanalysis.com/products/automated-ai-red-teaming, tier: official, title: General Analysis AI red teaming, accessed: 2026-07-03, origin: reviewed }
+  value: "General Analysis: Security platform for AI agents that inventories AI assets, red-teams agents, enforces runtime guardrails on prompts and tool calls, and contains risky agent behavior."
+  source: { url: https://generalanalysis.com/, tier: official, title: General Analysis homepage, accessed: 2026-10-03, origin: agent }
 deployment:
   value: [saas]
   source: { url: https://generalanalysis.com/, tier: official, title: General Analysis homepage, accessed: 2026-07-03, origin: reviewed }
 status:
   value: active
   source: { url: https://generalanalysis.com/, tier: official, title: General Analysis homepage, accessed: 2026-07-03, origin: reviewed }
-last_reviewed: 2026-07-03
+last_reviewed: 2026-10-03
 changelog:
   - date: 2026-07-03
     summary: Added to the catalog from the General Analysis product documentation.
+  - date: 2026-10-03
+    summary: Expanded the description and matrix coverage to the detection and response, asset management, and runtime guardrails modules.
 matrix_coverage:
-  - asset: runtime-ai-data
-    functions: [detect]
-    maturity: primary
-    note: Runs automated adversarial tests over prompts and responses to surface prompt injection, tool misuse, data leakage, and multi-step agent attacks before release.
-    source: { url: https://generalanalysis.com/products/automated-ai-red-teaming, tier: official, title: General Analysis AI red teaming, accessed: 2026-07-03, origin: reviewed, quote: "Test prompt injection, tool misuse, data leakage, unsafe autonomy, and multi-step agent attacks before they reach users." }
   - asset: ai-coding-orchestration-tools
+    functions: [identify, protect, detect, respond]
+    maturity: primary
+    note: Runs on managed endpoints to inventory coding agents, IDE assistants, and MCP servers, detects prompt injection, tool result poisoning, and MCP misuse during sessions, blocks or holds risky tool calls and commands, and quarantines sessions with the trace preserved.
+    source: { url: https://generalanalysis.com/products/ai-detection-and-response, tier: official, title: General Analysis AI Detection and Response, accessed: 2026-10-03, origin: agent, quote: "General Analysis monitors coding agents, internal copilots, MCP servers, enterprise production agents, and shadow AI at the execution layer." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Wraps model calls, agent loops, and MCP servers with SDK middleware or API wrappers that inspect prompts, retrieved context, model output, and tool arguments, then block, flag, or escalate jailbreaks, prompt injection, and data leaks inline.
+    source: { url: https://generalanalysis.com/products/ai-runtime-security, tier: official, title: General Analysis Runtime Guardrails, accessed: 2026-10-03, origin: agent, quote: "Block, flag, or escalate inline without slowing your AI stack down." }
+  - asset: ai-agent-identities
+    functions: [identify, detect, respond]
+    maturity: secondary
+    note: Attributes managed and shadow agents to an owner, user, identity, and tool permissions, monitors their behavior, and responds by reducing permissions, revoking a token, or quarantining the session.
+    source: { url: https://generalanalysis.com/products/ai-detection-and-response, tier: official, title: General Analysis AI Detection and Response, accessed: 2026-10-03, origin: agent, quote: "Find enterprise-managed and shadow agents, then attach owner, user, identity, platform, data access, tool permissions, and business context." }
+  - asset: ai-traffic
     functions: [identify]
     maturity: secondary
-    note: Discovers the AI systems in the environment, inventorying models, MCP servers, knowledge bases, and agent workflows before testing them.
-    source: { url: https://generalanalysis.com/, tier: official, title: General Analysis homepage, accessed: 2026-07-03, origin: reviewed, quote: "Discover, red-team, and monitor every AI system." }
-primary_cell: { asset: runtime-ai-data, function: detect }
+    note: Discovers shadow AI usage, hosted models, provider accounts, and app endpoints by connecting to cloud accounts and code repositories.
+    source: { url: https://generalanalysis.com/products/ai-security-asset-management, tier: official, title: General Analysis Asset Management, accessed: 2026-10-03, origin: agent, quote: "Catalog hosted models, provider accounts, app endpoints, embedded assistants, and shadow AI usage across cloud and code repositories." }
+  - asset: ai-model
+    functions: [identify]
+    maturity: secondary
+    note: Keeps a continuously refreshed inventory of the models, MCP servers, knowledge bases, tools, and permissions in an AI stack.
+    source: { url: https://generalanalysis.com/products/ai-security-asset-management, tier: official, title: General Analysis Asset Management, accessed: 2026-10-03, origin: agent, quote: "Continuous discovery of every model, MCP, knowledge base, tool, and permission across your AI stack." }
+primary_cell: { asset: ai-coding-orchestration-tools, function: detect }
