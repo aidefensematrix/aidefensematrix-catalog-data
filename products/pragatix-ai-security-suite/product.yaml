@@ -14,33 +14,37 @@ deployment:
 status:
   value: active
   source: { url: https://agatsoftware.com/ai-security-suite/, tier: official, title: Pragatix AI Security Suite, accessed: 2026-08-20, origin: agent }
-last_reviewed: 2026-08-20
+last_reviewed: 2026-10-03
 changelog:
   - date: 2026-08-20
     summary: Added to the catalog from the AGAT Software Pragatix documentation.
   - date: 2026-09-22
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-10-03
+    summary: "Corrected matrix coverage (erratum): added AI app discovery to the AI Traffic row."
+  - date: 2026-10-03
+    summary: Refreshed two source quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [identify, protect, detect]
     maturity: primary
     note: Prompt Guardian is an in-line proxy over public and private AI services that inspects prompts and responses, classifies sensitive or regulated data, and applies risk-based policy per user, department, and data sensitivity. It also surfaces unsanctioned AI tool usage across the organization.
-    source: { url: https://agatsoftware.com/security-page/ai-security-suite/prompt-guardian/, tier: official, title: Pragatix Prompt Guardian, accessed: 2026-09-22, origin: agent, quote: "Real-time AI proxy that inspects prompts and responses, detects sensitive data and enforces usage policies across public and private AI services." }
+    source: { url: https://agatsoftware.com/security-page/ai-security-suite/prompt-guardian/, tier: official, title: Pragatix Prompt Guardian, accessed: 2026-10-03, origin: agent, quote: "Automatically detects and classifies sensitive, confidential, or regulated data, then blocks, redacts, or warns based on policy." }
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect, protect]
     maturity: primary
     note: Guardian Agent discovers AI agents across SaaS, homegrown, embedded, endpoint, and developer environments, maps them to their connected tools and systems, traces their decisions and data access, and blocks or requires approval for high-risk actions at runtime.
-    source: { url: https://agatsoftware.com/security-page/ai-security-suite/guardian-agent/, tier: official, title: Pragatix Guardian Agent, accessed: 2026-09-22, origin: agent, quote: "Discover, monitor, and control AI agents, MCP tools, and system action in runtime across SaaS, homegrown, embedded, endpoint, and developer environments." }
+    source: { url: https://agatsoftware.com/security-page/ai-security-suite/guardian-agent/, tier: official, title: Pragatix Guardian Agent, accessed: 2026-10-03, origin: agent, quote: "Provides real-time visibility and policy control over endpoint AI agents, coding assistants, and applications before they access data, use tools, or take action." }
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
     maturity: secondary
     note: The MCP Gateway brokers agent identities and permissions, granting policy-based access only to approved tools, data, and systems, with just-in-time access and intent-based authorization. Agent ownership is inventoried centrally and agent tool use is tracked in audit trails.
     source: { url: https://agatsoftware.com/ai-security-overview/guardian-agent/, tier: official, title: Pragatix agent identity and access control, accessed: 2026-08-20, origin: agent, quote: "Broker agent identities and permissions through the MCP Gateway, allowing policy-based access only to approved tools, data, and systems." }
   - asset: ai-traffic
-    functions: [protect, detect]
+    functions: [identify, protect, detect]
     maturity: secondary
-    note: The AI Gateway concentrates AI API traffic through one access layer, applying policy over which services may be reached and by whom, managing provider credentials across hosted and local model services, and tracking consumption per user, team, project, and model.
-    source: { url: https://agatsoftware.com/ai-security-overview/ai-gateway/, tier: official, title: Pragatix AI Gateway, accessed: 2026-08-20, origin: agent, quote: "Route all AI API calls through a single gateway to enforce governance and standardize access to external AI providers." }
+    note: Prompt Guardian maps which AI tools and services are in use across the organization, including unauthorized and unmanaged ones, shows who uses them, and enforces AI usage by user, department, and data sensitivity with block, alert, sanitize, or log responses at a real-time proxy.
+    source: { url: https://agatsoftware.com/security-page/ai-security-suite/prompt-guardian/, tier: official, title: Pragatix Prompt Guardian, accessed: 2026-10-03, origin: agent, quote: "Provides enterprise-wide visibility into unauthorized and unmanaged AI tool usage, with mapping of AI services across the organization." }
   - asset: ai-model
     functions: [identify, detect, protect]
     maturity: secondary

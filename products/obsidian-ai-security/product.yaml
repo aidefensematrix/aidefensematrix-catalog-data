@@ -21,6 +21,8 @@ last_reviewed: 2026-10-03
 changelog:
   - date: 2026-10-03
     summary: Added to the catalog from the Obsidian Security documentation.
+  - date: 2026-10-03
+    summary: "Corrected matrix coverage (erratum): moved AI app discovery to the AI Traffic row."
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
@@ -37,7 +39,7 @@ matrix_coverage:
     maturity: secondary
     note: Inventories the MCP servers in use across agent platforms, traces each to the agents and users invoking it and the executions run through it, and alerts on agents connecting to risky or unauthenticated servers.
     source: { url: https://www.obsidiansecurity.com/mcp-security, tier: official, title: Obsidian MCP security page, accessed: 2026-10-03, origin: agent, quote: "Get a complete, always-current inventory of every MCP server active in your environment, fully traced to the agents invoking them" }
-  - asset: ai-workload-platforms
+  - asset: ai-traffic
     functions: [identify]
     maturity: secondary
     note: Discovers sanctioned and unsanctioned AI tools and browser extensions through browser-level discovery, including use on personal accounts and unmanaged devices.

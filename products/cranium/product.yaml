@@ -16,7 +16,7 @@ status:
 compliance_attestations:
   value: [SOC 2 Type 2]
   source: { url: https://cranium.ai/resources/press-release/cranium-is-now-soc-2-type-2-compliant/, tier: official, title: Cranium SOC 2 Type 2, accessed: 2026-06-13, origin: reviewed, quote: "Cranium has a positive SOC 2 Type 2 attestation report" }
-last_reviewed: 2026-07-17
+last_reviewed: 2026-10-03
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Cranium documentation.
@@ -24,6 +24,8 @@ changelog:
     summary: Refreshed coverage source citations and quotes against the current vendor platform pages.
   - date: 2026-07-17
     summary: Refined matrix coverage against the current platform pages.
+  - date: 2026-10-03
+    summary: "Corrected matrix coverage (erratum): moved shadow AI discovery to the AI Traffic row."
 matrix_coverage:
   - asset: ai-model
     functions: [identify, detect, govern]
@@ -33,8 +35,13 @@ matrix_coverage:
   - asset: ai-workload-platforms
     functions: [identify, detect]
     maturity: secondary
-    note: CloudSensor integrates with cloud environments to discover security alerts, monitor unauthorized changes, and assess role-based access controls; Detect AI scans internal environments for shadow AI.
+    note: CloudSensor integrates with cloud environments to discover security alerts, monitor unauthorized changes, and assess role-based access controls.
     source: { url: https://cranium.ai/platform/discover/, tier: official, title: Cranium Discover page, accessed: 2026-07-17, origin: agent, quote: "monitors cloud changes, alerts and access controls" }
+  - asset: ai-traffic
+    functions: [identify]
+    maturity: secondary
+    note: Detect AI scans the environment for shadow AI, surfacing AI tools and services in use that security teams have not approved.
+    source: { url: https://cranium.ai/platform/discover/, tier: official, title: Cranium Discover page, accessed: 2026-10-03, origin: agent, quote: "reveals shadow AI across your environment" }
   - asset: ai-agent-identities
     functions: [identify]
     maturity: secondary
