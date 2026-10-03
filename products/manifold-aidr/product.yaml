@@ -1,0 +1,30 @@
+schema_version: 2
+name: Manifold AIDR
+aliases: []
+url: https://www.manifold.security/
+vendor:
+  value: Manifold Security
+  source: { url: https://www.manifold.security/blog/manifold-raises-8m-seed-funding, tier: official, title: Manifold Raises $8M to Secure AI Agents on Endpoints, accessed: 2026-10-03, origin: agent }
+description:
+  value: "Manifold AIDR: Runtime detection and response for AI agents on endpoints that maps each agent to its MCP servers and tools and flags anomalous behavior."
+  source: { url: https://www.manifold.security/blog/manifold-raises-8m-seed-funding, tier: official, title: Manifold Raises $8M to Secure AI Agents on Endpoints, accessed: 2026-10-03, origin: agent }
+deployment:
+  value: [unknown]
+  source: { url: https://www.manifold.security/, tier: official, title: Manifold homepage, accessed: 2026-10-03, origin: agent }
+status:
+  value: active
+  source: { url: https://www.manifold.security/blog/agent-consent-enforcement, tier: official, title: Ask policy response for AI coding agents, accessed: 2026-10-03, origin: agent }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://trust.manifold.security/, tier: official, title: Manifold Security Trust Center, accessed: 2026-10-03, origin: agent, quote: "Manifold SOC 2 Type II" }
+last_reviewed: 2026-10-03
+changelog:
+  - date: 2026-10-03
+    summary: Added to the catalog from the Manifold Security product pages.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, detect, respond]
+    maturity: primary
+    note: Inventories the coding agents running on endpoints along with the MCP servers, tools, and skills they use, detects active agent threats in real time, and supports remediating, quarantining, or terminating them.
+    source: { url: https://www.manifold.security/, tier: official, title: Manifold homepage, accessed: 2026-10-03, origin: agent, quote: "Real-time detection of active agent threats." }
+primary_cell: { asset: ai-coding-orchestration-tools, function: detect }
