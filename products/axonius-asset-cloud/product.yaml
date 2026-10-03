@@ -17,19 +17,21 @@ status:
 compliance_attestations:
   value: [ISO/IEC 27001:2022, SOC 2, HIPAA, IRAP, CSA STAR, FedRAMP Certified Class C, TX-RAMP Level 2]
   source: { url: https://trust.axonius.com/, tier: official, title: Axonius Trust Center, accessed: 2026-07-08, origin: agent, quote_unavailable: "JS-rendered SafeBase trust center, 2026-07" }
-last_reviewed: 2026-07-08
+last_reviewed: 2026-10-03
 changelog:
   - date: 2026-07-08
     summary: Added to the catalog from the Axonius documentation.
+  - date: 2026-10-03
+    summary: "Corrected matrix coverage (erratum): moved AI app discovery to the AI Coding and Orchestration Tools row."
 matrix_coverage:
-  - asset: ai-workload-platforms
+  - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary
     note: Inventories AI tools as managed assets by pulling Claude Enterprise usage into the asset inventory and comparing installs against the managed user population to surface shadow AI.
-    source: { url: https://www.globenewswire.com/news-release/2026/06/09/3309184/0/en/axonius-extends-asset-intelligence-into-ai-security-starting-with-claude-enterprise.html, tier: official, title: Axonius press release on extending asset intelligence into AI security, accessed: 2026-07-08, origin: agent, quote: "Axonius detects where Claude is installed across devices and compares that against the managed user population." }
+    source: { url: https://www.globenewswire.com/news-release/2026/06/09/3309184/0/en/axonius-extends-asset-intelligence-into-ai-security-starting-with-claude-enterprise.html, tier: official, title: Axonius press release on extending asset intelligence into AI security, accessed: 2026-10-03, origin: agent, quote: "Axonius detects where Claude is installed across devices and compares that against the managed user population." }
   - asset: ai-agent-identities
     functions: [identify]
     maturity: secondary
     note: Inventories Claude Enterprise API keys, users, roles, and groups, surfacing expired, inactive, or orphaned keys for lifecycle review.
     source: { url: https://docs.axonius.com/docs/anthropic, tier: official, title: Axonius Anthropic adapter documentation, accessed: 2026-07-08, origin: agent, quote: "Provides a complete inventory of all API keys issued within the organization." }
-primary_cell: { asset: ai-workload-platforms, function: identify }
+primary_cell: { asset: ai-coding-orchestration-tools, function: identify }
