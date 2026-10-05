@@ -12,12 +12,19 @@ deployment:
   value: [self-hosted]
   source: { url: https://github.com/guardrails-ai/guardrails, tier: official, title: Guardrails repository, accessed: 2026-06-09, origin: reviewed }
 status:
-  value: active
-  source: { url: https://www.guardrailsai.com/, tier: official, title: Guardrails AI, accessed: 2026-06-09, origin: reviewed }
+  value: acquired
+  source: { url: https://www.harvey.ai/blog/guardrails-ai-joins-harvey, tier: official, title: Guardrails AI joins Harvey, accessed: 2026-10-05, origin: agent, quote: "Harvey today announced its acquisition of San Francisco-based Guardrails AI" }
+acquisition:
+  acquirer: Harvey
+  announced: 2026-09-09
+  post_acquisition_status: unknown
+  source: { url: https://www.harvey.ai/blog/guardrails-ai-joins-harvey, tier: official, title: Guardrails AI joins Harvey, accessed: 2026-10-05, origin: agent, quote: "Harvey today announced its acquisition of San Francisco-based Guardrails AI" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Guardrails AI documentation.
+  - date: 2026-10-05
+    summary: Recorded the acquisition by Harvey, announced on 2026-09-09.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]

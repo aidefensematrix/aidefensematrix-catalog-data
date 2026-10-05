@@ -11,8 +11,13 @@ deployment:
   value: [saas, self-hosted]
   source: { url: https://www.enkryptai.com/pricing, tier: official, title: Enkrypt AI pricing page, accessed: 2026-06-10, origin: reviewed }
 status:
-  value: active
-  source: { url: https://www.enkryptai.com/, tier: official, title: Enkrypt AI homepage, accessed: 2026-06-10, origin: reviewed }
+  value: acquired
+  source: { url: https://www.anaconda.com/blog/anaconda-acquires-enkrypt-ai, tier: official, title: Anaconda acquires Enkrypt AI, accessed: 2026-10-05, origin: agent, quote: "Anaconda Acquires Enkrypt AI" }
+acquisition:
+  acquirer: Anaconda
+  announced: 2026-08-04
+  post_acquisition_status: standalone
+  source: { url: https://www.anaconda.com/blog/anaconda-acquires-enkrypt-ai, tier: official, title: Anaconda acquires Enkrypt AI, accessed: 2026-10-05, origin: agent, quote: "Anaconda Acquires Enkrypt AI" }
 compliance_attestations:
   value: [SOC 2 Type 2]
   source: { url: https://www.enkryptai.com/blog/enkrypt-ai-announces-soc-2-type-2-compliance-certification, tier: official, title: Enkrypt AI SOC 2 Type 2 certification, accessed: 2026-06-13, origin: reviewed, quote: "Enkrypt AI is proud to announce our SOC 2 Type 2 compliance certification." }
@@ -20,6 +25,8 @@ last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Enkrypt AI documentation.
+  - date: 2026-10-05
+    summary: Recorded the acquisition by Anaconda, announced on 2026-08-04; the product remains available under its own name.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]

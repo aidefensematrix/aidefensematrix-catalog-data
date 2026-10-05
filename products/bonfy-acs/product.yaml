@@ -12,14 +12,21 @@ deployment:
   value: [saas]
   source: { url: https://www.bonfy.ai/product, tier: official, title: Bonfy ACS product page, accessed: 2026-06-10, origin: reviewed }
 status:
-  value: active
-  source: { url: https://blog.bonfy.ai/news-room/press-release-bonfy-unveils-first-data-security-platform-for-ai-agents-shadow-ai-and-enterprise-genai-workflows, tier: official, title: Bonfy ACS 2.0 press release, accessed: 2026-06-10, origin: reviewed }
+  value: acquired
+  source: { url: https://www.kiteworks.com/company/press-releases/kiteworks-acquires-bonfy-ai/, tier: official, title: Kiteworks acquires Bonfy.AI, accessed: 2026-10-05, origin: agent, quote: "Kiteworks will continue to offer Bonfy.AI to customers as a separate solution" }
+acquisition:
+  acquirer: Kiteworks
+  announced: 2026-09-08
+  post_acquisition_status: standalone
+  source: { url: https://www.kiteworks.com/company/press-releases/kiteworks-acquires-bonfy-ai/, tier: official, title: Kiteworks acquires Bonfy.AI, accessed: 2026-10-05, origin: agent, quote: "Kiteworks will continue to offer Bonfy.AI to customers as a separate solution" }
 last_reviewed: 2026-10-03
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Bonfy.AI documentation.
   - date: 2026-10-03
     summary: "Corrected matrix coverage (erratum): moved AI app discovery to the AI Traffic row."
+  - date: 2026-10-05
+    summary: Recorded the acquisition by Kiteworks, announced on 2026-09-08; the product remains available as a separate offering.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
