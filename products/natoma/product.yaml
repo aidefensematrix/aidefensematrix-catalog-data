@@ -17,15 +17,16 @@ status:
 acquisition:
   acquirer: Snowflake
   announced: 2026-05-27
-  pending_close: true
   post_acquisition_status: folded
-  source: { url: https://www.snowflake.com/en/news/press-releases/snowflake-announces-intent-to-acquire-natoma-providing-secure-connectivity-for-the-agentic-enterprise/, tier: official, title: Snowflake to acquire Natoma, accessed: 2026-06-09, origin: reviewed }
+  source: { url: https://www.sec.gov/Archives/edgar/data/1640147/000164014726000037/snow-20260731.htm, tier: regulatory, title: Snowflake Form 10-Q for the quarter ended July 31 2026, accessed: 2026-10-05, origin: agent, quote: "On June 3, 2026, the Company acquired all of the outstanding capital stock of Natoma Labs" }
 last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Enriched from Natoma documentation; recorded the Snowflake acquisition announced in May 2026, pending close.
   - date: 2026-06-13
     summary: Refined matrix coverage.
+  - date: 2026-10-05
+    summary: Recorded completion of the Snowflake acquisition, which closed on 2026-06-03.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [protect]

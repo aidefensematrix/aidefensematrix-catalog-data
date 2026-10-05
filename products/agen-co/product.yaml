@@ -3,17 +3,17 @@ name: Agen.co
 aliases: [Frontegg.ai, Frontegg AI, AgentLink]
 vendor:
   value: Frontegg
-  source: { url: https://agen.co/, tier: official, title: Agen homepage, accessed: 2026-09-22, origin: agent, quote: "Built by the team behind Frontegg, the identity platform hundreds of B2B enterprises run on." }
+  source: { url: https://agen.co/platform, tier: official, title: Agen.co platform overview, accessed: 2026-10-05, origin: agent, quote: "Agen.co by Frontegg" }
 url: https://agen.co/platform
 description:
   value: "Agen.co: Identity-native governance platform for AI agents, built by the Frontegg team, that gives each agent a machine identity with rotating secrets and short-lived tokens."
   source: { url: https://agen.co/identity, tier: official, title: Identity Foundation for Every AI Agent, accessed: 2026-09-22, origin: agent, quote: "Each agent gets a first-class machine identity: client ID, rotating secrets, short-lived tokens. No standing credentials to steal." }
 deployment:
-  value: [saas]
-  source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-06-10, origin: reviewed }
+  value: [saas, hybrid]
+  source: { url: https://agen.co/platform, tier: official, title: Agen.co platform overview, accessed: 2026-10-05, origin: agent, quote: "SaaS, hybrid, or on-prem data plane" }
 status:
   value: active
-  source: { url: https://frontegg.com/product/frontegg-ai, tier: official, title: Frontegg.ai product page, accessed: 2026-06-10, origin: reviewed }
+  source: { url: https://agen.co/platform, tier: official, title: Agen.co platform overview, accessed: 2026-10-05, origin: agent }
 compliance_attestations:
   value: [SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701]
   source: { url: https://frontegg.com/trust-center, tier: official, title: Frontegg Trust Center, accessed: 2026-06-13, origin: reviewed, quote: "Frontegg complies with world-class compliance and security standards, including SOC 2 Type II and ISO 27001." }
@@ -29,6 +29,8 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-09-22
     summary: "Renamed from Frontegg.ai to Agen.co, the current product name; the earlier names are kept as aliases."
+  - date: 2026-10-05
+    summary: Updated the deployment options and the vendor and status source citations.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [protect]
