@@ -8,8 +8,8 @@ description:
   value: "Adversa AI: Continuous AI red teaming platform for custom AI agents that tests for vulnerability classes across agents, models, and MCP, re-scanning on every model, prompt, or tool update."
   source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed }
 deployment:
-  value: [saas]
-  source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed }
+  value: [saas, hybrid, self-hosted]
+  source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-10-05, origin: agent }
 status:
   value: active
   source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Adversa AI continuous red teaming platform, accessed: 2026-06-09, origin: reviewed }
@@ -22,6 +22,8 @@ changelog:
     summary: Added to the catalog from the Adversa AI documentation.
   - date: 2026-09-22
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-10-05
+    summary: Updated the deployment options.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [detect]

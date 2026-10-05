@@ -3,7 +3,7 @@ name: Alation
 vendor:
   value: Alation
   source: { url: https://www.alation.com/solutions/artificial-intelligence/, tier: official, title: Alation AI Governance, accessed: 2026-06-09, origin: reviewed }
-aliases: [Alation AI Governance, Alation Data Intelligence Platform]
+aliases: [Alation AI Governance, Alation Data Intelligence Platform, Alation AIOS]
 url: https://www.alation.com/solutions/artificial-intelligence/
 description:
   value: Data intelligence platform that inventories AI models, agents, and tools, traces their data lineage, and curates trusted, compliant data for AI development.
@@ -20,12 +20,14 @@ changelog:
     summary: Enriched from the Alation AI Governance documentation.
   - date: 2026-06-14
     summary: Refined product description wording.
+  - date: 2026-10-05
+    summary: Added a governance function to the AI model coverage row, updated its source citation, and added an alias.
 matrix_coverage:
   - asset: ai-model
-    functions: [identify]
+    functions: [identify, govern]
     maturity: primary
-    note: Documents and inventories AI models with model cards, end-to-end AI lineage, and compliance evidence for auditability.
-    source: { url: https://www.alation.com/news-and-press/alation-ai-governance-solution/, tier: official, title: Alation AI Governance launch, accessed: 2026-06-09, origin: reviewed, quote: "Auditable AI Lineage and Traceability: Alation delivers end-to-end lineage from datasets to AI models, offering full visibility into the AI lifecycle." }
+    note: Registers AI models and agents with model cards and lineage, maps each AI asset to the regulatory frameworks that apply (EU AI Act, NIST AI RMF, ISO 42001), decomposes those frameworks into specific requirements, and produces compliance evidence on demand.
+    source: { url: https://www.alation.com/solutions/ai-governance/, tier: official, title: Alation AI governance, accessed: 2026-10-05, origin: agent, quote: "Alation registers every AI asset, maps it to the regulations that apply, and proves compliance on demand" }
   - asset: training-data
     functions: [identify]
     maturity: secondary
