@@ -17,12 +17,14 @@ status:
 compliance_attestations:
   value: [SOC 2 Type 2, ISO 27001]
   source: { url: https://aembit.io/blog/aembit-achieves-iso-27001-certification/, tier: official, title: Aembit ISO 27001 and SOC 2 Type II certification, accessed: 2026-06-13, origin: reviewed, quote: "With both ISO 27001 and SOC 2 Type II certifications in place" }
-last_reviewed: 2026-06-09
+last_reviewed: 2026-10-05
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Aembit documentation; IAM for Agentic AI reached general availability in 2026.
   - date: 2026-06-12
     summary: Refined matrix coverage.
+  - date: 2026-10-05
+    summary: Updated a coverage source quote.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect]
@@ -33,5 +35,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: Gates and brokers agent access to custom and third-party MCP servers and the enterprise systems behind them.
-    source: { url: https://aembit.io/iam-for-agentic-ai/, tier: official, title: Aembit IAM for Agentic AI, accessed: 2026-06-09, origin: reviewed, quote: "Everything you need to govern AI agent access to MCP servers, from user authentication through to per-request credential exchange and audit logging." }
+    source: { url: https://aembit.io/iam-for-agentic-ai/, tier: official, title: Aembit IAM for Agentic AI, accessed: 2026-10-05, origin: agent, quote: "The MCP Identity Gateway takes over for every subsequent MCP request, validating tokens, enforcing policy, filtering tools, and exchanging credentials in real time." }
 primary_cell: { asset: ai-agent-identities, function: protect }

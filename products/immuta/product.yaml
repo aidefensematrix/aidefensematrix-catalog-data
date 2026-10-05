@@ -2,24 +2,26 @@ schema_version: 2
 name: Immuta
 vendor:
   value: Immuta
-  source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed }
-aliases: [Immuta Data Security Platform]
-url: https://www.immuta.com/product/data-security-ai/
+  source: { url: https://www.immuta.com/, tier: official, title: Immuta Data Authorization Platform, accessed: 2026-10-05, origin: agent, quote: "Immuta is the authorization layer for data access." }
+aliases: [Immuta Data Security Platform, Immuta Data Authorization Platform]
+url: https://www.immuta.com/
 description:
   value: "Immuta: Data security platform that discovers and classifies sensitive data, enforces attribute-based access policies and masking at the data layer, and monitors data usage for risk."
   source: { url: https://www.immuta.com/platform/govern, tier: official, title: Immuta Govern, accessed: 2026-09-22, origin: agent, quote: "Access controls, masking, and redaction are applied in real time without delays, manual updates, or gaps in enforcement." }
 deployment:
   value: [saas]
-  source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed }
+  source: { url: https://documentation.immuta.com/saas, tier: official, title: Immuta Documentation SaaS, accessed: 2026-10-05, origin: agent }
 status:
   value: active
-  source: { url: https://www.immuta.com/solutions/data-security-ai/, tier: official, title: Immuta Data Security for AI, accessed: 2026-06-09, origin: reviewed }
-last_reviewed: 2026-06-09
+  source: { url: https://www.immuta.com/, tier: official, title: Immuta Data Authorization Platform, accessed: 2026-10-05, origin: agent }
+last_reviewed: 2026-10-05
 changelog:
   - date: 2026-06-09
     summary: Enriched from the Immuta data security documentation.
   - date: 2026-09-22
     summary: "Corrected matrix coverage (erratum): moved the data-layer row from Training Data to Runtime AI Data and updated the description."
+  - date: 2026-10-05
+    summary: Updated the product page citations and aliases.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [identify, protect, detect]

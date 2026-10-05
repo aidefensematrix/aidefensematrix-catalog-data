@@ -15,14 +15,16 @@ status:
   value: active
   source: { url: https://www.globenewswire.com/news-release/2026/06/09/3309184/0/en/axonius-extends-asset-intelligence-into-ai-security-starting-with-claude-enterprise.html, tier: official, title: Axonius press release on extending asset intelligence into AI security, accessed: 2026-07-08, origin: agent }
 compliance_attestations:
-  value: [ISO/IEC 27001:2022, SOC 2, HIPAA, IRAP, CSA STAR, FedRAMP Certified Class C, TX-RAMP Level 2]
-  source: { url: https://trust.axonius.com/, tier: official, title: Axonius Trust Center, accessed: 2026-07-08, origin: agent, quote_unavailable: "JS-rendered SafeBase trust center, 2026-07" }
-last_reviewed: 2026-10-03
+  value: [ISO/IEC 27001:2022, SOC 2, HIPAA, IRAP, CSA STAR, FedRAMP Moderate, TX-RAMP Level 2, C5]
+  source: { url: https://trust.axonius.com/, tier: official, title: Axonius Trust Center, accessed: 2026-10-05, origin: agent, quote: "ISO/IEC 27001:2022" }
+last_reviewed: 2026-10-05
 changelog:
   - date: 2026-07-08
     summary: Added to the catalog from the Axonius documentation.
   - date: 2026-10-03
     summary: "Corrected matrix coverage (erratum): moved AI app discovery to the AI Coding and Orchestration Tools row."
+  - date: 2026-10-05
+    summary: Updated compliance attestations and added a compliance source quote.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify]
