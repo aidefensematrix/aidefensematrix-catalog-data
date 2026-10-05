@@ -1,13 +1,13 @@
 schema_version: 2
-name: GenAI Protector Plus
-aliases: [WebOrion Protector Plus]
-url: https://www.cloudsine.tech/products/genai-protector-plus/
+name: TraceCtrl LLM Guards
+aliases: [GenAI Protector Plus, WebOrion Protector Plus]
+url: https://www.cloudsine.tech/products/tracectrl-llm-guards/
 vendor:
   value: Cloudsine
   source: { url: https://www.cloudsine.tech/products/weborion-protector-plus/, tier: official, title: WebOrion Protector Plus product page, accessed: 2026-06-24, origin: reviewed }
 description:
-  value: "GenAI Protector Plus: GenAI firewall by Cloudsine that inspects prompts and LLM outputs to block prompt injection and jailbreaks, prevent sensitive-data leakage, and moderate hazardous content."
-  source: { url: https://www.cloudsine.tech/products/genai-protector-plus/, tier: official, title: GenAI Protector Plus product page, accessed: 2026-10-05, origin: agent, quote: "As a GenAI firewall, it is powered by a GPU and serves as a security control gateway between your AI applications and potential threats such as prompt injection attacks, system prompt leakage, sensitive data leakage and other OWASP Top 10 for LLM threats." }
+  value: "TraceCtrl LLM Guards: GenAI firewall by Cloudsine that inspects prompts and LLM outputs to block prompt injection and jailbreaks, prevent sensitive-data leakage, and moderate hazardous content."
+  source: { url: https://www.cloudsine.tech/products/tracectrl-llm-guards/, tier: official, title: TraceCtrl LLM Guards product page, accessed: 2026-10-05, origin: agent, quote: "As a GenAI firewall, it is powered by a GPU and serves as a security control gateway between your AI applications and potential threats such as prompt injection attacks, system prompt leakage, sensitive data leakage and other OWASP Top 10 for LLM threats." }
 deployment:
   value: [saas, self-hosted]
   source: { url: https://www.cloudsine.tech/products/weborion-protector-plus/, tier: official, title: WebOrion Protector Plus product page, accessed: 2026-06-24, origin: reviewed }
@@ -24,7 +24,7 @@ changelog:
   - date: 2026-07-05
     summary: Renamed to GenAI Protector Plus; the product was previously listed as WebOrion Protector Plus.
   - date: 2026-10-05
-    summary: Refreshed the description source quote.
+    summary: Renamed to TraceCtrl LLM Guards (previously GenAI Protector Plus) and refreshed the description source citation.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]

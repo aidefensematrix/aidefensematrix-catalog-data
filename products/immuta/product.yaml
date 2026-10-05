@@ -9,11 +9,14 @@ description:
   value: "Immuta: Data security platform that discovers and classifies sensitive data, enforces attribute-based access policies and masking at the data layer, and monitors data usage for risk."
   source: { url: https://www.immuta.com/platform/govern, tier: official, title: Immuta Govern, accessed: 2026-09-22, origin: agent, quote: "Access controls, masking, and redaction are applied in real time without delays, manual updates, or gaps in enforcement." }
 deployment:
-  value: [saas]
-  source: { url: https://documentation.immuta.com/saas, tier: official, title: Immuta Documentation SaaS, accessed: 2026-10-05, origin: agent }
+  value: [saas, self-hosted]
+  source: { url: https://documentation.immuta.com/latest, tier: official, title: Immuta documentation, accessed: 2026-10-05, origin: agent, quote: "Install Immuta and optimize the deployment in your Kubernetes environment." }
 status:
   value: active
   source: { url: https://www.immuta.com/, tier: official, title: Immuta Data Authorization Platform, accessed: 2026-10-05, origin: agent }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001, FedRAMP Moderate]
+  source: { url: https://www.immuta.com/, tier: official, title: Immuta certifications and frameworks, accessed: 2026-10-05, origin: agent, quote: "Audited annually for security, availability and confidentiality." }
 last_reviewed: 2026-10-05
 changelog:
   - date: 2026-06-09
@@ -22,6 +25,8 @@ changelog:
     summary: "Corrected matrix coverage (erratum): moved the data-layer row from Training Data to Runtime AI Data and updated the description."
   - date: 2026-10-05
     summary: Updated the product page citations and aliases.
+  - date: 2026-10-05
+    summary: Updated the deployment options and added compliance attestations.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [identify, protect, detect]

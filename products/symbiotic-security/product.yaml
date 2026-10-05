@@ -23,10 +23,17 @@ changelog:
     summary: Added to the catalog from the Symbiotic Security documentation.
   - date: 2026-10-05
     summary: Updated the product page citation and refreshed source quotes.
+  - date: 2026-10-05
+    summary: Added an AI coding and orchestration tools coverage row.
 matrix_coverage:
   - asset: ai-generated-code
     functions: [protect, detect]
     maturity: primary
     note: Enforces security policy before AI-assisted code is written, detects and auto-fixes vulnerabilities directly in the IDE, and gates pull requests and CI/CD; a code-generation agent remediates before returning code.
     source: { url: https://www.symbioticsec.ai/symbiotic-code, tier: official, title: Symbiotic Code product page, accessed: 2026-10-05, origin: agent, quote: "Symbiotic Code keeps AI coding in check. It enforces your security policies, fixes vulnerabilities as code is written, and blocks malicious intent." }
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: secondary
+    note: Inventories the skills, MCP servers, and plugins a coding agent uses, scans them automatically, and applies control policies to them inside a sandboxed agent harness.
+    source: { url: https://www.symbioticsec.ai/symbiotic-code, tier: official, title: Symbiotic Code product page, accessed: 2026-10-05, origin: agent, quote: "Every skill, MCP server, and plugin inventoried, with auto-scan capabilities and control policies." }
 primary_cell: { asset: ai-generated-code, function: protect }
