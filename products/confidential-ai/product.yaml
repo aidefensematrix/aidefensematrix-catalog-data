@@ -21,12 +21,14 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-09-22
     summary: "Corrected matrix coverage (erratum): removed the agent-identities row and updated the training-data citation."
+  - date: 2026-10-05
+    summary: Refreshed a matrix coverage source quote.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect]
     maturity: primary
     note: Private inference keeps prompts, responses, and model interactions encrypted in use inside TEEs.
-    source: { url: https://confidential.ai/pricing, tier: official, title: Confidential AI pricing, accessed: 2026-09-22, origin: agent, quote: "Prompts and responses stay invisible to us, with an attestation on every response." }
+    source: { url: https://confidential.ai/pricing, tier: official, title: Confidential AI pricing, accessed: 2026-10-05, origin: agent, quote: "Pay per token. OpenAI-compatible API, open-weight models in TEEs. Prompts and responses stay invisible to us." }
   - asset: ai-model
     functions: [protect]
     maturity: secondary

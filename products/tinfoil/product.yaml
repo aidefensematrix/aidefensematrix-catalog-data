@@ -25,6 +25,8 @@ changelog:
     summary: Refreshed the compliance citation against the current trust portal.
   - date: 2026-07-17
     summary: Recorded the attestation type listed on the trust portal.
+  - date: 2026-10-05
+    summary: Refreshed source citations.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect]
@@ -35,5 +37,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: Loads and runs model weights inside the secure enclave so they are not exposed to the host or other parties during inference.
-    source: { url: https://www.tinfoil.sh/, tier: official, title: Tinfoil homepage, accessed: 2026-06-25, origin: reviewed, quote: "the auditor brings the eval, the lab brings its weights, and both get cryptographic proof of exactly what ran, without the weights ever leaving the enclave." }
+    source: { url: https://www.tinfoil.sh/, tier: official, title: Tinfoil homepage, accessed: 2026-10-05, origin: agent, quote: "Tinfoil runs AI models inside secure hardware enclaves." }
 primary_cell: { asset: runtime-ai-data, function: protect }

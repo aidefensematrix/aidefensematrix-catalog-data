@@ -1,32 +1,34 @@
 schema_version: 2
 name: HydroX AI
 aliases: []
-url: https://www.hydrox.ai/product
+url: https://www.hydrox.ai/
 vendor:
   value: HydroX AI
-  source: { url: https://www.hydrox.ai/about, tier: official, title: HydroX AI about page, accessed: 2026-06-24, origin: reviewed }
+  source: { url: https://www.hydrox.ai/, tier: official, title: HydroX AI homepage, accessed: 2026-10-05, origin: agent }
 description:
-  value: "HydroX AI: Model-agnostic runtime firewall for LLMs and agents that blocks jailbreaks, prompt injection, and data leaks, redacts PII from responses, and red-teams models for vulnerabilities."
-  source: { url: https://www.hydrox.ai/product, tier: official, title: HydroX AI product page, accessed: 2026-06-24, origin: reviewed }
+  value: "HydroX AI: AI safety platform that red-teams and evaluates models and LLM applications and runs a real-time Safety Firewall that blocks prompt injection, jailbreaks, and data leakage."
+  source: { url: https://www.hydrox.ai/, tier: official, title: HydroX AI homepage, accessed: 2026-10-05, origin: agent }
 deployment:
   value: [saas]
-  source: { url: https://www.hydrox.ai/product, tier: official, title: HydroX AI product page, accessed: 2026-06-24, origin: reviewed }
+  source: { url: https://knowyourai.hydrox.ai/, tier: official, title: HydroX KnowYourAI platform sign-up page, accessed: 2026-10-05, origin: agent }
 status:
   value: active
-  source: { url: https://www.hydrox.ai/product, tier: official, title: HydroX AI product page, accessed: 2026-06-24, origin: reviewed }
+  source: { url: https://www.hydrox.ai/, tier: official, title: HydroX AI homepage, accessed: 2026-10-05, origin: agent }
 last_reviewed: 2026-06-24
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the HydroX AI documentation.
+  - date: 2026-10-05
+    summary: Updated the product page citations and the description.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
-    note: A model-agnostic runtime firewall intercepts AI inputs and outputs to block jailbreaks and prompt injection and to redact PII and proprietary data from responses.
-    source: { url: https://www.hydrox.ai/product, tier: official, title: HydroX AI product page, accessed: 2026-06-24, origin: reviewed, quote: "Automatically redacts PII and proprietary internal data from AI responses before they reach the end user." }
+    note: The Safety Firewall intercepts requests to AI systems in real time and blocks threats such as prompt injection, jailbreaks, and data leakage.
+    source: { url: https://www.hydrox.ai/, tier: official, title: HydroX AI homepage, accessed: 2026-10-05, origin: agent, quote: "Discover vulnerabilities with KnowYourAI red-teaming, and block threats in real-time with our Safety Firewall." }
   - asset: ai-model
     functions: [detect]
     maturity: secondary
     note: Adversarial red-teaming and stress-testing uncover model failure modes and vulnerabilities before and after deployment.
-    source: { url: https://www.hydrox.ai/product, tier: official, title: HydroX AI product page, accessed: 2026-06-24, origin: reviewed, quote: "Uncovers failure modes and adversarial risks through targeted stress testing." }
+    source: { url: https://www.hydrox.ai/, tier: official, title: HydroX AI homepage, accessed: 2026-10-05, origin: agent, quote: "Assess how models and AI features behave before they meet real users, regulators, or adversaries." }
 primary_cell: { asset: runtime-ai-data, function: protect }

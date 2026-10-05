@@ -19,12 +19,14 @@ changelog:
     summary: Added to the catalog from the DeepKeep documentation.
   - date: 2026-09-22
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-10-05
+    summary: Refreshed a matrix coverage source quote.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: The AI Firewall inspects prompts and responses in real time and can block, redact, or alert on prompt injection, jailbreaks, data leakage, and unsafe outputs, deployed inline or out-of-band.
-    source: { url: https://www.deepkeep.ai/capabilities/ai-firewall, tier: official, title: DeepKeep AI firewall page, accessed: 2026-06-10, origin: reviewed, quote: "If something violates your standards, we block or redact it before it causes harm." }
+    source: { url: https://www.deepkeep.ai/capabilities/ai-firewall, tier: official, title: DeepKeep AI firewall page, accessed: 2026-10-05, origin: agent, quote: "The AI Firewall inspects every interaction as it happens. If something violates your standards, we block, redact or mask it before it turns into a real risk." }
   - asset: ai-model
     functions: [identify, detect]
     maturity: primary

@@ -24,6 +24,8 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-09-22
     summary: "Updated a coverage note against the current vendor page."
+  - date: 2026-10-05
+    summary: Refreshed source citations and a coverage note.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, protect]
@@ -33,6 +35,6 @@ matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: secondary
-    note: Scans agents and MCP servers for supply-chain vulnerabilities, content-safety issues, prompt-injection susceptibility, and backdoors, attaching signed attestations and gating admission by policy.
-    source: { url: https://www.jozu.com/agent-guard/, tier: official, title: Jozu Agent Guard page, accessed: 2026-07-17, origin: agent, quote_unavailable: "JS-rendered page, not machine-verifiable (2026-07)" }
+    note: Scans agents and MCP servers across AI-specific vulnerability classes before they run, attaches the results as signed attestations, and runs agents in isolated microVMs where each tool call is checked against policy.
+    source: { url: https://www.jozu.com/agent-guard/, tier: official, title: Jozu Agent Guard page, accessed: 2026-10-05, origin: agent, quote: "Jozu Hub scans every model, agent, and MCP server across nine vulnerability classes before any of it runs, and attaches the results to the artifact itself as signed attestations" }
 primary_cell: { asset: ai-model, function: protect }

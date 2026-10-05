@@ -22,6 +22,8 @@ last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Kanopy documentation; the company rebranded from Nokod Security in spring 2026 and nokodsecurity.com now redirects to kanopysecurity.com.
+  - date: 2026-10-05
+    summary: Refreshed source citations.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, detect, protect]
@@ -32,7 +34,7 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: secondary
     note: Adaptive guardrails monitor agent actions at runtime, detect prompt injection and manipulation attempts, and stop sensitive data from leaving approved paths in real time, with coverage for Microsoft Copilot Studio environments.
-    source: { url: https://kanopysecurity.com/ai-governance/adaptive-agents-security/, tier: official, title: Kanopy adaptive agent security page, accessed: 2026-06-10, origin: reviewed, quote: "Real-time protection for agents that move fast, think fast, and occasionally misbehave." }
+    source: { url: https://kanopysecurity.com/ai-governance/adaptive-agents-security/, tier: official, title: Kanopy adaptive agent security page, accessed: 2026-10-05, origin: agent, quote: "Kanopy monitors every AI-driven action, applies your security policies automatically, and adds behavioral analysis to catch what static rules miss, stopping unwanted and malicious behavior before it lands." }
   - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary
