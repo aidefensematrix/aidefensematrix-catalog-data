@@ -28,10 +28,12 @@ changelog:
     summary: Refined matrix coverage.
   - date: 2026-07-16
     summary: Recorded the SailPoint acquisition, announced 2026-06-15 and closed 2026-06-29.
+  - date: 2026-10-05
+    summary: Updated a matrix coverage source citation.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, detect]
     maturity: primary
     note: Discovers AI agents, non-human identities, and their secrets, continuously monitors agent behavior and intent for anomalies and threats, and attributes each identity to a human owner.
-    source: { url: https://entro.security/, tier: official, title: Entro Security platform, accessed: 2026-07-05, origin: agent, quote: "Detect and fix unsanctioned agent deployments, rogue MCP servers, and other unwanted behaviors before they escalate." }
+    source: { url: https://www.sailpoint.com/products/agentic-ai-security, tier: official, title: SailPoint agentic AI security, accessed: 2026-10-05, origin: agent, quote: "Because agent actions flow through NHIs, we detect behavioral anomalies directly at the identity layer." }
 primary_cell: { asset: ai-agent-identities, function: detect }
