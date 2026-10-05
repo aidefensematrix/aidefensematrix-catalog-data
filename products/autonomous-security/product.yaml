@@ -28,15 +28,17 @@ changelog:
     summary: Updated the description to match the current homepage.
   - date: 2026-09-22
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-10-05
+    summary: "Corrected matrix coverage (erratum): the AI agent identities row now records access control. Updated coverage source citations."
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovers installed agents and MCP servers across workstations, hosts MCP servers in sandboxed cloud workspaces backed by a vetted pre-scanned catalog, intercepts MCP traffic to block prompt injection and rogue MCP servers, and enforces centralized runtime policies with audit trails.
-    source: { url: https://a16y.ai/#runtime-enforcement, tier: official, title: "Enterprise Agentic Security Platform, Autonomous", accessed: 2026-09-22, origin: agent, quote: "Secure your environment by auto-blocking rogue MCPs and malicious skills" }
+    source: { url: https://a16y.ai/#runtime-enforcement, tier: official, title: "Enterprise Agentic Security Platform, Autonomous", accessed: 2026-10-05, origin: agent, quote_unavailable: "JS-rendered tab content, confirmed in a rendered browser (2026-10)" }
   - asset: ai-agent-identities
-    functions: [identify]
+    functions: [protect]
     maturity: secondary
-    note: Exposure analysis surfaces exposed configurations and hardcoded secrets that AI agents accumulate on workstations, mapping the credential sprawl agentic activity creates.
-    source: { url: https://a16y.ai/, tier: official, title: Autonomous Security homepage, accessed: 2026-07-16, origin: agent, quote: "Identify exposed configs and hardcoded secrets instantly" }
+    note: Controls agent access to tools and systems through managed identities, secure gateways, and a token vault.
+    source: { url: "https://a16y.ai/#secure-mcp", tier: official, title: Autonomous Security secure MCP, accessed: 2026-10-05, origin: agent, quote_unavailable: "JS-rendered tab content, confirmed in a rendered browser (2026-10)" }
 primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

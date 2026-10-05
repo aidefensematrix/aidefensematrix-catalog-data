@@ -26,6 +26,8 @@ changelog:
     summary: Refined matrix coverage.
   - date: 2026-10-03
     summary: "Corrected matrix coverage (erratum): moved AI app discovery to the AI Traffic row."
+  - date: 2026-10-05
+    summary: Refreshed source citations.
 matrix_coverage:
   - asset: ai-traffic
     functions: [identify]
@@ -36,7 +38,7 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: primary
     note: Maps every AI agent to an owner and a risk score, flags overpermissioned and orphaned agent identities, supports least privilege across the agent fleet, and surfaces policy violations.
-    source: { url: https://www.reco.ai/, tier: official, title: Reco homepage, accessed: 2026-06-10, origin: reviewed, quote: "Know exactly what every agent in your environment can access, who owns it, and where the risk is." }
+    source: { url: https://www.reco.ai/, tier: official, title: Reco homepage, accessed: 2026-10-05, origin: agent, quote: "View one live map of your entire third-party ecosystem: every agent, every app, every connection between them." }
   - asset: runtime-ai-data
     functions: [identify, detect]
     maturity: secondary

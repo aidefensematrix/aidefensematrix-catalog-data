@@ -24,15 +24,17 @@ changelog:
     summary: Added to the catalog from the Asenion documentation. Formerly Fairly AI, which acquired Anch.AI and rebranded to Asenion, announced 2025-06-18.
   - date: 2026-07-04
     summary: Added verbatim source quotes to coverage and compliance citations.
+  - date: 2026-10-05
+    summary: Refreshed matrix coverage source citations.
 matrix_coverage:
   - asset: ai-model
     functions: [govern]
     maturity: primary
     note: Continuously assesses and governs AI models for risk and regulatory compliance across the lifecycle, with automated controls mapped to the EU AI Act, ISO/IEC 42001, and NIST AI RMF.
-    source: { url: https://asenion.ai/ai-governance-platform, tier: official, title: Asenion AI Governance Platform for Enterprise, accessed: 2026-07-04, origin: agent, quote: "automated controls that continuously assess, test, and govern your AI systems and agents" }
+    source: { url: https://asenion.ai/ai-control-system, tier: official, title: Asenion AI Control System, accessed: 2026-10-05, origin: agent, quote: "Asenion AI Control System transforms regulatory and organizational intent into context-aware, machine-executable controls that can be assessed throughout the AI lifecycle, verified before deployment, and governed at runtime." }
   - asset: ai-coding-orchestration-tools
     functions: [govern]
     maturity: secondary
     note: Extends the same assessment and governance controls to AI systems and agents at the application and orchestration layer.
-    source: { url: https://asenion.ai/ai-governance-platform, tier: official, title: Asenion AI Governance Platform for Enterprise, accessed: 2026-07-04, origin: agent, quote: "AI Policy Management Select preconfigured policies and controls or create custom policies and controls using Fairly ControlGen" }
+    source: { url: https://asenion.ai/ai-control-system, tier: official, title: Asenion AI Control System, accessed: 2026-10-05, origin: agent, quote: "Use Policy Packs to govern AI agents and their actions at runtime." }
 primary_cell: { asset: ai-model, function: govern }

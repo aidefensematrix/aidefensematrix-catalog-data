@@ -6,24 +6,26 @@ vendor:
 aliases: [DefenseClaw]
 url: https://github.com/cisco-ai-defense/defenseclaw
 description:
-  value: "Cisco DefenseClaw: Open-source security for agentic AI runtimes that scans agent skills, MCP servers, plugins, and code before use, inspects runtime traffic, and blocks unsafe actions by policy."
-  source: { url: https://github.com/cisco-ai-defense/defenseclaw, tier: official, title: cisco-ai-defense/defenseclaw, accessed: 2026-07-05, origin: agent, quote: "Security governance for OpenClaw and agentic AI runtimes." }
+  value: "Cisco DefenseClaw: Open-source security for AI coding agents that scans skills and MCP servers before use, inspects runtime traffic, blocks risky tool calls by policy, and keeps an audit trail."
+  source: { url: https://github.com/cisco-ai-defense/defenseclaw, tier: official, title: cisco-ai-defense/defenseclaw, accessed: 2026-10-05, origin: agent, quote: "Security governance for AI coding agents and agentic runtimes." }
 deployment:
   value: [self-hosted]
   source: { url: https://github.com/cisco-ai-defense/defenseclaw, tier: official, title: cisco-ai-defense/defenseclaw, accessed: 2026-07-05, origin: agent }
 status:
   value: active
   source: { url: https://github.com/cisco-ai-defense/defenseclaw, tier: official, title: cisco-ai-defense/defenseclaw, accessed: 2026-07-05, origin: agent }
-last_reviewed: 2026-07-05
+last_reviewed: 2026-10-05
 changelog:
   - date: 2026-07-05
     summary: Added to the catalog from the DefenseClaw repository; open source under Apache-2.0, distinct from the commercial Cisco AI Defense platform.
   - date: 2026-09-22
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-10-05
+    summary: Updated the description and refreshed source quotes.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
-    note: Admission control scans skills, MCP servers, plugins, and generated code before they run, runtime guardrails inspect prompts and tool calls, and unsafe capabilities are blocked by policy with durable audit evidence.
-    source: { url: https://cisco-ai-defense.github.io/defenseclaw/, tier: official, title: DefenseClaw documentation site, accessed: 2026-09-22, origin: agent, quote: "Discover, register, scan, and quarantine capabilities before an agent can load them." }
+    note: Admission control scans skills and MCP servers before an agent loads them, discovery finds the agents, local models, MCP servers, and skills on a machine, and runtime guardrails inspect tool calls and block risky ones by policy with an audit trail.
+    source: { url: https://cisco-ai-defense.github.io/defenseclaw/, tier: official, title: DefenseClaw documentation site, accessed: 2026-10-05, origin: agent, quote: "Scan skills and MCP servers, block risky tool calls and keep an audit trail for Claude Code, Codex, Copilot, Cursor and 8 more" }
 primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

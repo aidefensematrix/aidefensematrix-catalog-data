@@ -16,17 +16,19 @@ status:
   source: { url: https://www.sailpoint.com/products/agent-identity-security, tier: official, title: SailPoint Agent Identity Security, accessed: 2026-06-13, origin: reviewed }
 compliance_attestations:
   value: [SOC 1, SOC 2, SOC 3, ISO 27001, ISO 27017, ISO 27018, ISO 27701, CSA STAR Level 1]
-  source: { url: https://www.sailpoint.com/why-us/trust, tier: official, title: SailPoint trust and certifications page, accessed: 2026-07-17, origin: agent, quote_unavailable: "JS-rendered page, not machine-verifiable (2026-07)" }
+  source: { url: https://www.sailpoint.com/why-us/trust, tier: official, title: SailPoint trust and certifications page, accessed: 2026-10-05, origin: agent, quote: "ISO 27001:2022" }
 last_reviewed: 2026-06-13
 changelog:
   - date: 2026-06-13
     summary: Added to the catalog from the SailPoint Agent Identity Security documentation.
   - date: 2026-07-17
     summary: Updated the compliance citation to the current certifications page.
+  - date: 2026-10-05
+    summary: Refreshed source citations.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, govern]
     maturity: primary
     note: Aggregates AI agents across clouds and agent platforms as governed identities, aligns ownership with role changes, and reviews and revokes their access.
-    source: { url: https://www.sailpoint.com/products/agent-identity-security, tier: official, title: SailPoint Agent Identity Security, accessed: 2026-06-13, origin: reviewed, quote: "Agent Identity Security brings AI agents, their users, and the tools they access together in one governed view." }
+    source: { url: https://www.sailpoint.com/products/agent-identity-security, tier: official, title: SailPoint Agent Identity Security, accessed: 2026-10-05, origin: agent, quote: "Each agent is registered with a unique identity enriched with full business and access context, enabling rapid governance and security from day one." }
 primary_cell: { asset: ai-agent-identities, function: govern }

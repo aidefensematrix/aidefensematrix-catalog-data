@@ -18,6 +18,8 @@ last_reviewed: 2026-09-21
 changelog:
   - date: 2026-09-21
     summary: Added to the catalog from the Holistic AI Endlayer product pages.
+  - date: 2026-10-05
+    summary: Refreshed a matrix coverage source quote.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect, protect, govern]
@@ -38,7 +40,7 @@ matrix_coverage:
     functions: [identify, detect, protect]
     maturity: secondary
     note: Finds the accounts, API keys, and credential-bearing MCP servers each AI tool uses, flags personal logins and exposed keys, and blocks a tool that requests a permission it was never granted.
-    source: { url: https://www.endlayer.ai/, tier: official, title: EndLayer Guardian Agents for AI, accessed: 2026-09-21, origin: agent, quote: "An unprivileged agent on every machine finds the AI apps, coding agents, MCP servers, local models, browser AI usage, accounts and exposed credentials, without being told they exist." }
+    source: { url: https://www.endlayer.ai/, tier: official, title: EndLayer Guardian Agents for AI, accessed: 2026-10-05, origin: agent, quote: "Personal logins on work tools, API keys left in files, agents allowed to act on their own. Each one comes with a person, a machine and what it costs." }
   - asset: ai-model
     functions: [identify]
     maturity: adjacent

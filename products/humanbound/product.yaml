@@ -18,6 +18,8 @@ last_reviewed: 2026-08-27
 changelog:
   - date: 2026-08-27
     summary: Added to the catalog from the Humanbound documentation.
+  - date: 2026-10-05
+    summary: Refreshed source citations.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [detect]
@@ -28,10 +30,10 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: primary
     note: The companion firewall library sits in front of the agent and blocks or flags injection and out-of-scope input inline before the model sees it, using heuristics, a classifier trained on the agent own test logs, and a judge model, with verdicts available to monitoring and SIEM pipelines.
-    source: { url: https://docs.humanbound.ai/defense/firewall/, tier: official, title: Humanbound Firewall, accessed: 2026-08-27, origin: agent, quote: "The Humanbound Firewall is a runtime defense layer for LLM agents that inspects every user message and blocks prompt injection, policy violations, and out-of-scope requests before they reach the agent." }
+    source: { url: https://docs.humanbound.ai/defense/firewall/, tier: official, title: Humanbound Firewall, accessed: 2026-10-05, origin: agent, quote: "blocks prompt injection, policy violations, and out-of-scope requests before the model sees them." }
   - asset: ai-model
     functions: [detect]
     maturity: secondary
     note: Attack campaigns surface model-behavior failures such as jailbreaks and disclosure, though they reach the model only through the assembled agent rather than testing a model directly.
-    source: { url: https://www.humanbound.ai/, tier: official, title: Humanbound adversarial testing, accessed: 2026-08-27, origin: agent, quote: "You point Humanbound at the endpoint and it runs attacks against it as a black-box adversary." }
+    source: { url: https://www.humanbound.ai/, tier: official, title: Humanbound adversarial testing, accessed: 2026-10-05, origin: agent, quote: "prompt injection, jailbreaks, data exfiltration, tool abuse. Attacks adapt across single-turn, multi-turn, and agentic modes to find what static tests miss." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: detect }
