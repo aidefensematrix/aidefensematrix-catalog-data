@@ -21,20 +21,22 @@ last_reviewed: 2026-06-25
 changelog:
   - date: 2026-06-25
     summary: Added to the catalog from the Relyance AI documentation.
+  - date: 2026-10-12
+    summary: Refreshed source citations.
 matrix_coverage:
   - asset: ai-model
     functions: [identify]
     maturity: primary
-    note: Discovers and inventories first-party and third-party AI models alongside other AI assets in a unified inventory.
-    source: { url: https://www.relyance.ai/product/ai-spm, tier: official, title: Relyance AI-SPM page, accessed: 2026-06-25, origin: reviewed, quote: "it discovers all AI assets including agents, models, MCP servers, and third-party tools alongside non-AI data assets in a unified inventory" }
+    note: "Discovers models called from code and cloud-hosted models, listing each with its provider and processing region in a unified AI inventory."
+    source: { url: https://www.relyance.ai/use-cases/ai-governance, tier: official, title: "AI Governance and Data Posture Management", accessed: 2026-10-12, origin: agent, quote: "Each model is listed with its provider and where it processes data." }
   - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary
-    note: Inventories AI agents, tools, and MCP servers alongside non-AI assets and maps their relationships to data.
-    source: { url: https://www.relyance.ai/product/meet-lyo, tier: official, title: Relyance AI Lyo page, accessed: 2026-06-25, origin: reviewed, quote: "Lyo provides a unified inventory of AI agents, tools, MCP servers, and models alongside your non-AI assets." }
+    note: "Inventories AI agents, RAG pipelines, and MCP servers from code and traffic, with the tools each exposes and the data each one touches."
+    source: { url: https://www.relyance.ai/use-cases/ai-governance, tier: official, title: "AI Governance and Data Posture Management", accessed: 2026-10-12, origin: agent, quote: "Agents, models, RAG pipelines, and MCP servers inventoried by source and traffic, with the customer data each one touches." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: secondary
-    note: Continuously monitors AI-to-data flows with policy-based alerting and contextual remediation recommendations.
-    source: { url: https://www.relyance.ai/product/ai-spm, tier: official, title: Relyance AI-SPM page, accessed: 2026-06-25, origin: reviewed, quote: "it monitors continuously with 24/7 policy-based alerting and delivers recommendations for remediation that explain the risk context and how to fix it" }
+    note: "Monitors AI systems continuously for risk, drift, and policy violations and records which person or AI read or changed sensitive data."
+    source: { url: https://www.relyance.ai/use-cases/ai-governance, tier: official, title: "AI Governance and Data Posture Management", accessed: 2026-10-12, origin: agent, quote: "Every time sensitive data is read or changed, you see which person or AI did it and why." }
 primary_cell: { asset: ai-model, function: identify }
