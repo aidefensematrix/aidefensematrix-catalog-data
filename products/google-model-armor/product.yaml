@@ -23,6 +23,8 @@ changelog:
     summary: Added to the catalog from the Google Model Armor documentation.
   - date: 2026-09-22
     summary: "Refreshed the compliance citation against the current Google Cloud SOC 2 page."
+  - date: 2026-10-12
+    summary: Refreshed source citations.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
@@ -32,6 +34,6 @@ matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [protect]
     maturity: secondary
-    note: Provides in-line protection for agent interactions across agent platforms and frameworks such as Vertex and LangChain.
-    source: { url: https://cloud.google.com/security/products/model-armor, tier: official, title: Google Model Armor, accessed: 2026-06-09, origin: reviewed, quote: "Model Armor now offers in-line protection for Gemini Enterprise Agent Platform, Langchain, and more." }
+    note: "Screens agent interactions in-line, with integrations for the Gemini platform, Google MCP servers, and frameworks such as LangChain."
+    source: { url: https://cloud.google.com/security/products/model-armor, tier: official, title: "Google Model Armor", accessed: 2026-10-12, origin: agent, quote: "includes API and inline usage with Gemini platform, Google MCP servers, Service Extentions, Apigee, Firebase, Langchain, and other integrations" }
 primary_cell: { asset: runtime-ai-data, function: protect }

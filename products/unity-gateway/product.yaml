@@ -26,6 +26,8 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-09-22
     summary: "Renamed to Unity Gateway, the name Databricks now uses; Unity AI Gateway is kept as an alias."
+  - date: 2026-10-12
+    summary: Refreshed source citations.
 matrix_coverage:
   - asset: ai-traffic
     functions: [protect, detect]
@@ -40,6 +42,6 @@ matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: secondary
-    note: Governs MCP servers as the enterprise control plane, with centralized view and management of all MCP servers, access control through Unity Catalog permissions and managed-OAuth credentials, and activity monitoring across servers.
-    source: { url: https://docs.databricks.com/aws/en/agents/mcp-tools, tier: official, title: MCPs and agent tools Databricks on AWS, accessed: 2026-09-22, origin: agent, quote: "Register external MCP servers as Unity Catalog securables, or use built-in system.ai services for SaaS tools like Slack, GitHub, and Google Drive, with governed access through Unity Gateway." }
+    note: "Lists available and registered MCP servers, controls access through Unity Catalog permissions, manages credentials, and monitors usage."
+    source: { url: https://docs.databricks.com/aws/en/agents/mcp-tools, tier: official, title: "MCPs and agent tools Databricks on AWS", accessed: 2026-10-12, origin: agent, quote: "Databricks-provided and registered MCPs use Unity Catalog permissions. Use Unity Gateway to control access, manage credentials, and monitor usage." }
 primary_cell: { asset: ai-traffic, function: protect }

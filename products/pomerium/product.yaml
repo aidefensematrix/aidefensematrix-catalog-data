@@ -18,10 +18,12 @@ last_reviewed: 2026-06-14
 changelog:
   - date: 2026-06-14
     summary: Added to the catalog from the Pomerium documentation.
+  - date: 2026-10-12
+    summary: Refreshed source citations.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [protect]
     maturity: primary
-    note: Brokers identity-aware, context-based, least-privilege access for AI agents and LLM systems, replacing static long-lived credentials with policy-driven scoped access enforced in the customer environment.
-    source: { url: https://www.pomerium.com/secure-ai-agent-access, tier: official, title: Pomerium Secure AI Agent Access, accessed: 2026-06-14, origin: reviewed, quote: "Policy-driven, self-hosted access control for agents, scripts, and LLM systems." }
+    note: "Authenticates each agent through a delegated user identity or a service account, applies policy to every request, and restricts which named MCP tools the caller can use."
+    source: { url: https://www.pomerium.com/secure-ai-agent-access, tier: official, title: "Pomerium Secure AI Agent Access", accessed: 2026-10-12, origin: agent, quote: "Authenticate each user or service account, apply policy to every request, limit named MCP tools, and manage upstream OAuth when the server requires it." }
 primary_cell: { asset: ai-agent-identities, function: protect }

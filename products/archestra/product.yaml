@@ -24,6 +24,8 @@ changelog:
     summary: Updated the description to match the current homepage.
   - date: 2026-09-22
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-10-12
+    summary: Refreshed source citations.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
@@ -33,6 +35,6 @@ matrix_coverage:
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
-    note: Resolves upstream MCP server authentication at execution time from the caller identity, the tool assignment, and configured credentials, so each call runs with the access its caller holds.
-    source: { url: https://archestra.ai/docs/mcp-authentication, tier: official, title: Archestra MCP Authentication docs, accessed: 2026-09-22, origin: agent, quote: "Archestra resolves upstream MCP server authentication separately at execution time, using the caller identity, the gateway or Agent tool assignment, and the installed MCP server credential configuration." }
+    note: "Picks the credential for each MCP tool call at call time, whether the caller’s own account, a shared bot account, or a company identity, and stores the credentials so clients never see them."
+    source: { url: https://archestra.ai/docs/mcp-authentication, tier: official, title: "Archestra MCP Authentication docs", accessed: 2026-10-12, origin: agent, quote: "Sign in to Archestra once, and every tool call runs as you, in every app." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

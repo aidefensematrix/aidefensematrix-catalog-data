@@ -18,15 +18,17 @@ last_reviewed: 2026-06-14
 changelog:
   - date: 2026-06-14
     summary: Added to the catalog from the Keycard documentation.
+  - date: 2026-10-12
+    summary: Refreshed source citations.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
     maturity: primary
     note: Gives each AI agent its own identity and issues short-lived, scoped credentials per tool, API, and data request through runtime policy, blocking disallowed actions and recording every authorization decision.
-    source: { url: https://keycard.ai/docs, tier: official, title: Keycard Docs, accessed: 2026-06-14, origin: reviewed, quote: "Every agent gets an identity. Every tool call gets a credential. Every action gets a log." }
+    source: { url: https://keycard.ai/, tier: official, title: "Keycard homepage", accessed: 2026-10-12, origin: agent, quote: "Keycard verifies each request, evaluates it against policy, and makes authorization decisions for your agents and whatever they need to access." }
   - asset: ai-coding-orchestration-tools
     functions: [protect]
     maturity: secondary
-    note: Adds OAuth-based authentication to MCP servers and agent-to-agent calls so each tool call is tied to a verified identity, scoped to explicit permissions, and logged.
-    source: { url: https://keycard.ai/docs, tier: official, title: Keycard Docs, accessed: 2026-06-14, origin: reviewed, quote: "Add OAuth-based authentication to a custom MCP server so every tool call is tied to a verified user, scoped to explicit permissions, and logged for audit." }
+    note: "Adds OAuth caller verification to MCP servers and APIs and applies gateway policy to individual tool calls."
+    source: { url: https://docs.keycard.ai/, tier: official, title: "Keycard Docs", accessed: 2026-10-12, origin: agent, quote: "Bring multiple MCP servers together and apply policy to individual tool calls." }
 primary_cell: { asset: ai-agent-identities, function: protect }
