@@ -16,21 +16,23 @@ status:
 compliance_attestations:
   value: [SOC 2 Type 2, ISO 27001:2022]
   source: { url: https://trust.pluto.security/, tier: official, title: Pluto Security Trust Center, accessed: 2026-07-28, origin: agent, quote: "ISO 27001:2022" }
-last_reviewed: 2026-06-15
+last_reviewed: 2026-10-13
 changelog:
   - date: 2026-06-15
     summary: Added to the catalog from the Pluto Security documentation.
   - date: 2026-07-28
     summary: Added compliance attestations from the vendor trust center.
+  - date: 2026-10-13
+    summary: Refreshed the primary coverage row source and set the primary function to protect, from the vendor site.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
-    functions: [identify, protect, detect]
+    functions: [protect, identify, detect]
     maturity: primary
-    note: Connects agentlessly to existing security and infrastructure systems to discover which AI builders, agents, MCP servers, plugins, and IDEs are in use, scores their risk, and enforces real-time guardrails on AI building activity.
-    source: { url: https://innovatecybersecurity.com/press/pluto-security-wins-inaugural-best-emerging-technology-award-at-2026-innovate-cybersecurity-summit/, tier: press, title: Pluto Security capabilities, accessed: 2026-06-15, origin: reviewed, quote: "Pluto connects agentlessly to existing security and infrastructure systems to uncover which AI builders are in use" }
+    note: Enforces real-time policies on the AI tools employees use, such as allowing trusted MCP servers while quarantining the rest and blocking risky skills. Also discovers the AI tools, agents, and add-ons in use and triages each against its own risk research.
+    source: { url: https://pluto.security/, tier: official, title: Pluto Security homepage, accessed: 2026-10-13, origin: agent, quote: "Allow trusted MCPs. Quarantine the rest." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: secondary
     note: Integrates with Claude Enterprise through the Anthropic Compliance API so security and compliance teams can monitor and risk-score enterprise AI assistant activity inside Pluto.
     source: { url: https://pluto.security/blog/claude-enterprise-meets-ai-security-platform/, tier: official, title: Pluto Claude Enterprise integration, accessed: 2026-06-15, origin: reviewed, quote: "Security and compliance teams can now monitor Claude Enterprise activity directly in Pluto" }
-primary_cell: { asset: ai-coding-orchestration-tools, function: identify }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }
