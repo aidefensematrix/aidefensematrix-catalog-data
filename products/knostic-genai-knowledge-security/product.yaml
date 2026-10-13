@@ -1,19 +1,19 @@
 schema_version: 2
 name: Knostic GenAI Knowledge Security
 aliases: [GenAI Knowledge Security Platform, Knostic Knowledge Security]
-url: https://www.knostic.ai/the-genai-knowledge-security-platform
+url: https://aws.amazon.com/marketplace/pp/prodview-getagmcc7jdbo
 vendor:
   value: Knostic
-  source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed }
+  source: { url: https://aws.amazon.com/marketplace/pp/prodview-getagmcc7jdbo, tier: official, title: "Knostic AI Copilot Readiness listing on AWS Marketplace", accessed: 2026-10-12, origin: agent }
 description:
-  value: "Knostic GenAI Knowledge Security: Detects where AI assistants like Copilot, Glean, and Gemini overshare sensitive knowledge and enforces need-to-know access controls on their answers."
-  source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed }
+  value: "Knostic GenAI Knowledge Security: Detects where AI assistants such as Microsoft 365 Copilot and Glean overshare sensitive data and enforces need-to-know access controls on their answers."
+  source: { url: https://aws.amazon.com/marketplace/pp/prodview-getagmcc7jdbo, tier: official, title: "Knostic AI Copilot Readiness listing on AWS Marketplace", accessed: 2026-10-12, origin: agent }
 deployment:
   value: [saas]
-  source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed }
+  source: { url: https://aws.amazon.com/marketplace/pp/prodview-getagmcc7jdbo, tier: official, title: "Knostic AI Copilot Readiness listing on AWS Marketplace", accessed: 2026-10-12, origin: agent }
 status:
   value: active
-  source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed }
+  source: { url: https://aws.amazon.com/marketplace/pp/prodview-getagmcc7jdbo, tier: official, title: "Knostic AI Copilot Readiness listing on AWS Marketplace", accessed: 2026-10-12, origin: agent }
 compliance_attestations:
   value: [SOC 2 Type 2]
   source: { url: https://security.knostic.ai/, tier: official, title: Knostic Trust Center, accessed: 2026-06-13, origin: reviewed, quote: "SOC 2 Type 2" }
@@ -23,15 +23,14 @@ changelog:
     summary: Added to the catalog from the Knostic documentation.
   - date: 2026-06-13
     summary: Added a company-level SOC 2 Type 2 attestation cited to the Knostic trust center.
+  - date: 2026-10-12
+    summary: Refreshed source citations to the vendor AWS Marketplace listing and updated the description.
+  - date: 2026-10-12
+    summary: "Corrected matrix coverage (erratum): removed the AI coding and orchestration tools row."
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [detect, protect]
     maturity: primary
-    note: Simulates enterprise user queries against Copilot, Glean, and Gemini to find inference-based oversharing where the assistant recombines data across security boundaries, then applies role-based access policies and automated labeling to constrain what the assistant answers.
-    source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed, quote: "Identifies inference-based exposures where AI combines data inappropriately across security boundaries." }
-  - asset: ai-coding-orchestration-tools
-    functions: [identify, detect]
-    maturity: secondary
-    note: Audits enterprise AI assistants including Copilot, Glean, and Gemini, mapping their knowledge-access patterns and producing an audit trail of inferred access for safe rollout.
-    source: { url: https://www.knostic.ai/the-genai-knowledge-security-platform, tier: official, title: Knostic GenAI Knowledge Security Platform, accessed: 2026-06-13, origin: reviewed, quote: "Ensure safe rollout of Copilot, Glean, and Gemini enterprise-wide with granular control over AI answers." }
+    note: "Emulates user-role queries against enterprise AI search tools such as Microsoft 365 Copilot and Glean to find oversharing, detects policy drift, and lets customers adjust access so answers stay within each user’s need to know."
+    source: { url: https://aws.amazon.com/marketplace/pp/prodview-getagmcc7jdbo, tier: official, title: "Knostic AI Copilot Readiness listing on AWS Marketplace", accessed: 2026-10-12, origin: agent, quote: "Knostic offers an AWS-compatible solution that prevents both oversharing of sensitive data and undersharing of valuable business information in enterprise AI search tools through need-to-know access controls." }
 primary_cell: { asset: runtime-ai-data, function: detect }

@@ -1,18 +1,23 @@
 schema_version: 2
-name: MintMCP
+name: Mintive
+aliases: [MintMCP]
 vendor:
-  value: MintMCP
-  source: { url: https://www.mintmcp.com/, tier: official, title: MintMCP homepage, accessed: 2026-06-10, origin: reviewed }
+  value: Mintive
+  source: { url: https://www.mintmcp.com/, tier: official, title: "Mintive homepage", accessed: 2026-10-12, origin: agent }
 url: https://www.mintmcp.com/
 description:
-  value: "MintMCP: Managed MCP gateway that authenticates AI clients to MCP servers, enforces access policies, and logs every tool call for audit."
-  source: { url: https://docs.mintmcp.com/, tier: official, title: MintMCP documentation introduction, accessed: 2026-06-10, origin: reviewed }
+  value: "Mintive: Managed MCP gateway that authenticates AI clients to MCP servers, enforces access policies, and logs every tool call for audit."
+  source: { url: https://www.mintmcp.com/docs/intro, tier: official, title: "Mintive documentation introduction", accessed: 2026-10-12, origin: agent }
 deployment:
   value: [saas]
   source: { url: https://docs.mintmcp.com/, tier: official, title: MintMCP documentation introduction, accessed: 2026-06-10, origin: reviewed }
 status:
   value: active
   source: { url: https://www.mintmcp.com/, tier: official, title: MintMCP homepage, accessed: 2026-06-10, origin: reviewed }
+renamed_from:
+  name: MintMCP
+  date: 2026-10-12
+  source: { url: https://www.mintmcp.com/blog/meet-mintive, tier: official, title: "Meet Mintive", accessed: 2026-10-12, origin: agent }
 compliance_attestations:
   value: [SOC 2 Type 2]
   source: { url: https://www.mintmcp.com/, tier: official, title: MintMCP homepage, accessed: 2026-10-05, origin: agent, quote: "SOC 2 Type II audited, compliant with HIPAA standards" }
@@ -24,12 +29,14 @@ changelog:
     summary: Added verbatim source quotes to coverage and compliance citations.
   - date: 2026-10-05
     summary: Added inline protection to the runtime AI data coverage row and added compliance attestations.
+  - date: 2026-10-12
+    summary: Renamed from MintMCP to Mintive per the vendor announcement and refreshed one coverage citation.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: Enterprise MCP gateway between AI clients and MCP servers that handles authentication, enforces access policies, and logs every tool call; admins curate a catalog of approved servers with preconfigured credentials, role-based tool sets, and centralized credential management.
-    source: { url: https://docs.mintmcp.com/, tier: official, title: MintMCP documentation introduction, accessed: 2026-06-10, origin: reviewed, quote: "It sits between your AI clients and MCP servers, handling authentication, logging every tool call, and enforcing access policies." }
+    source: { url: https://www.mintmcp.com/docs/intro, tier: official, title: "Mintive documentation introduction", accessed: 2026-10-12, origin: agent, quote: "Approve the MCP servers your team can use and bundle tools by role, so agents reach only what you permit" }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
