@@ -18,7 +18,9 @@ const setOut = (k, v) => {
 // Block obvious SSRF targets by host. (DNS-rebinding to a private IP is a deeper
 // hardening item; tracked in SECURITY.md.)
 function isBlockedHost(host) {
-  const h = host.toLowerCase();
+  // URL.hostname keeps the brackets of an IPv6 literal ("[::1]"); strip them so
+  // the address checks below see the bare address.
+  const h = host.toLowerCase().replace(/^\[|\]$/g, '');
   if (h === 'localhost' || h.endsWith('.localhost') || h.endsWith('.local') || h.endsWith('.internal')) return true;
   if (h === '169.254.169.254' || h === 'metadata.google.internal') return true;
   // IPv4 literal in private/loopback/link-local ranges
@@ -27,7 +29,14 @@ function isBlockedHost(host) {
     const [a, b] = [Number(m[1]), Number(m[2])];
     if (a === 10 || a === 127 || (a === 169 && b === 254) || (a === 192 && b === 168) || (a === 172 && b >= 16 && b <= 31) || a === 0) return true;
   }
-  if (h === '::1' || h.startsWith('fc') || h.startsWith('fd') || h.startsWith('fe80')) return true;
+  if (h === '::1' || h === '::' || h.startsWith('fc') || h.startsWith('fd') || h.startsWith('fe80')) return true;
+  // IPv4-mapped IPv6 ("::ffff:7f00:1" is how the URL parser spells
+  // ::ffff:127.0.0.1): check the embedded IPv4 address.
+  const mapped = h.match(/^::ffff:([0-9a-f]{1,4}):([0-9a-f]{1,4})$/);
+  if (mapped) {
+    const n = (parseInt(mapped[1], 16) << 16) | parseInt(mapped[2], 16);
+    return isBlockedHost(`${(n >>> 24) & 255}.${(n >>> 16) & 255}.${(n >>> 8) & 255}.${n & 255}`);
+  }
   return false;
 }
 
