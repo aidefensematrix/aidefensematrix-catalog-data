@@ -1,32 +1,34 @@
 schema_version: 2
 name: Private Pursuit
 aliases: [Lorica]
-url: https://lorica.ai/platform/
+url: https://web.archive.org/web/20251122004110/https://lorica.ai/platform/
 vendor:
   value: Lorica Cybersecurity
-  source: { url: https://lorica.ai/about-us/, tier: official, title: Lorica Cybersecurity about page, accessed: 2026-06-25, origin: reviewed }
+  source: { url: https://web.archive.org/web/20260202145904/https://lorica.ai/about-us/, tier: official, title: Lorica Cybersecurity about page (archived 2026-02-02), accessed: 2026-10-26, origin: agent }
 description:
   value: "Private Pursuit: Lorica Cybersecurity platform that runs confidential AI inference and database queries on encrypted models and data using fully homomorphic encryption, without decrypting them."
-  source: { url: https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform, accessed: 2026-06-25, origin: reviewed }
+  source: { url: https://web.archive.org/web/20251122004110/https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform (archived 2025-11-22), accessed: 2026-10-26, origin: agent }
 deployment:
   value: [hybrid]
-  source: { url: https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform, accessed: 2026-06-25, origin: reviewed }
+  source: { url: https://web.archive.org/web/20251122004110/https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform (archived 2025-11-22), accessed: 2026-10-26, origin: agent }
 status:
-  value: active
-  source: { url: https://lorica.ai/trial/, tier: official, title: Lorica Private Pursuit trial, accessed: 2026-06-25, origin: reviewed }
-last_reviewed: 2026-06-25
+  value: discontinued
+  source: { url: https://lorica.ai/, tier: official, title: Lorica site offline with its domain no longer resolving, accessed: 2026-10-26, origin: agent, quote_unavailable: "site offline, domain no longer resolves, 2026-10" }
+last_reviewed: 2026-10-26
 changelog:
   - date: 2026-06-25
     summary: Added to the catalog from the Lorica Cybersecurity documentation.
+  - date: 2026-10-26
+    summary: Status set to discontinued after the vendor site went offline, and links to retired pages now point to archived copies.
 matrix_coverage:
   - asset: ai-model
     functions: [protect]
     maturity: primary
     note: Runs confidential AI inference directly on sensitive AI models using fully homomorphic encryption, so the model and queries stay encrypted and private during computation.
-    source: { url: https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform, accessed: 2026-06-25, origin: reviewed, quote: "Private Pursuit enables your organization and trusted partners to execute confidential AI inference and database searches on your sensitive AI models and data." }
+    source: { url: https://web.archive.org/web/20251122004110/https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform (archived 2025-11-22), accessed: 2026-10-26, origin: agent, quote: "Private Pursuit enables your organization and trusted partners to execute confidential AI inference and database searches on your sensitive AI models and data." }
   - asset: runtime-ai-data
     functions: [protect]
     maturity: secondary
     note: Keeps inference and query data encrypted while in use through fully homomorphic encryption, never decrypting it during computation.
-    source: { url: https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform, accessed: 2026-07-05, origin: agent, quote: "FHE protects data even during computation." }
+    source: { url: https://web.archive.org/web/20251122004110/https://lorica.ai/platform/, tier: official, title: Lorica Private Pursuit platform (archived 2025-11-22), accessed: 2026-10-26, origin: agent, quote: "FHE protects data even during computation." }
 primary_cell: { asset: ai-model, function: protect }
