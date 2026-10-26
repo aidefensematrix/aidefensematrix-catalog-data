@@ -17,7 +17,7 @@ acquisition:
   acquirer: Fortinet
   acquirer_slug: fortiaigate
   announced: 2026-08-17
-  post_acquisition_status: standalone
+  post_acquisition_status: unknown
   source: { url: https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2026/fortinet-advances-continuous-ai-protection-with-the-acquisition-of-virtue-ai, tier: official, title: Fortinet Advances Continuous AI Protection with the Acquisition of Virtue AI, accessed: 2026-09-22, origin: agent, quote: "Financial terms of the transaction are not disclosed, and the amount paid by Fortinet as consideration is immaterial to Fortinet’s business." }
 last_reviewed: 2026-09-22
 changelog:
@@ -25,20 +25,22 @@ changelog:
     summary: Added to the catalog from the Virtue AI documentation.
   - date: 2026-09-22
     summary: Recorded the Fortinet acquisition, announced as completed 2026-08-17.
+  - date: 2026-10-26
+    summary: Refreshed source links and quotes against the current vendor pages, and set the post-acquisition status to unknown.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: VirtueGuard applies real-time multimodal guardrails that inspect prompts and responses and block harmful or out-of-policy content across text, image, audio, video, and code.
-    source: { url: https://www.virtueai.com/virtueguard, tier: official, title: VirtueGuard, accessed: 2026-06-24, origin: reviewed, quote: "VirtueGuard is VirtueAI’s family of real-time AI security models and policy guardrails designed to keep inputs and outputs secure." }
+    source: { url: https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2026/fortinet-advances-continuous-ai-protection-with-the-acquisition-of-virtue-ai, tier: official, title: Fortinet Advances Continuous AI Protection with the Acquisition of Virtue AI, accessed: 2026-10-26, origin: agent, quote: "Enforces customizable policies across text, images, video, audio, and AI-generated code to prevent harmful content, sensitive data, jailbreaks, and vulnerable code from reaching users or downstream systems." }
   - asset: ai-agent-identities
     functions: [protect, detect]
     maturity: primary
     note: AgentSuite-Blue judges every agent tool call and blocks unsafe or out-of-policy actions before they execute (ActionGuard), and scans MCP tools and source for injections and data-leakage paths (MCP Guard).
-    source: { url: https://www.virtueai.com/agentsuite, tier: official, title: AgentSuite, accessed: 2026-06-24, origin: reviewed, quote: "Prevent unsafe, malicious, or out-of-policy actions before they execute. ActionGuard judges every tool call in full context, catches multi-step attacks, and enforces compliance frameworks like the EU AI Act and FINRA" }
+    source: { url: https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2026/fortinet-advances-continuous-ai-protection-with-the-acquisition-of-virtue-ai, tier: official, title: Fortinet Advances Continuous AI Protection with the Acquisition of Virtue AI, accessed: 2026-10-26, origin: agent, quote: "Provides full visibility into agents and AI tools running in their environment, discovers unsanctioned AI applications and agents, scans MCP tools and source code for hidden risks, monitors agent behavior, and blocks malicious tool calls before they act." }
   - asset: ai-model
     functions: [detect]
     maturity: secondary
     note: VirtueRed runs continuous automated red-teaming against AI models and chatbots to surface vulnerabilities and produce audit-ready evidence.
-    source: { url: https://www.virtueai.com/virtuered, tier: official, title: VirtueRed, accessed: 2026-06-24, origin: reviewed, quote: "Uncover hidden risks early and generate audit-ready evidence for security and compliance reviews." }
+    source: { url: https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2026/fortinet-advances-continuous-ai-protection-with-the-acquisition-of-virtue-ai, tier: official, title: Fortinet Advances Continuous AI Protection with the Acquisition of Virtue AI, accessed: 2026-10-26, origin: agent, quote: "Identifies new risks across every model update and fine-tuning of policies, while generating audit-ready evidence to support security and compliance reviews." }
 primary_cell: { asset: runtime-ai-data, function: protect }

@@ -19,20 +19,22 @@ changelog:
     summary: Added to the catalog from the Fortinet documentation.
   - date: 2026-09-22
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-10-26
+    summary: Refreshed source links, quotes, and coverage notes against the current vendor pages.
 matrix_coverage:
   - asset: ai-traffic
     functions: [protect, detect]
     maturity: primary
-    note: Deploys as a containerized proxy between the app and the model, with API gateway, DDoS protection, intelligent traffic steering, output caching, and visibility mapped to the OWASP Top 10 for LLM Applications.
-    source: { url: https://www.fortinet.com/products/fortiaigate, tier: official, title: FortiAIgate Secure AI Workloads and LLMs, accessed: 2026-09-22, origin: agent, quote: "Deployed between the app and the model, it manages traffic flows and applies guardrails on the model input and output, preventing model manipulations, MCP scanning, prompt injections, excessive consumption, and data leakage." }
+    note: Operates as a self-hosted AI gateway between applications, agents, models, and MCP tools, identifying users, AI services, and content and blocking requests or masking sensitive data.
+    source: { url: https://www.fortinet.com/products/fortiaigate, tier: official, title: FortiAIGate AI Security and Governance Gateway, accessed: 2026-10-26, origin: agent, quote: "FortiGate sends the AI traffic it detects to FortiAIGate, which identifies the user, the AI service, and the content, then blocks the request or masks sensitive data." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Guardrails inspect input to each LLM endpoint to detect prompt injection, jailbreaking, and excessive consumption, while a context-aware DLP engine in the critical path blocks PII and sensitive data leakage in both directions.
-    source: { url: https://www.fortinet.com/products/fortiaigate, tier: official, title: FortiAIgate Secure AI Workloads and LLMs, accessed: 2026-09-22, origin: agent, quote: "A context-aware DLP engine in the critical path, monitors inbound and outbound traffic to prevent extraction of PII and sensitive data, and model extraction." }
+    source: { url: https://www.fortinet.com/products/fortiaigate, tier: official, title: FortiAIGate AI Security and Governance Gateway, accessed: 2026-10-26, origin: agent, quote: "When a request carries a prompt injection or attempts data exfiltration, FortiAIGate blocks the activity and logs the attempt." }
   - asset: ai-model
     functions: [protect]
     maturity: secondary
-    note: The inline DLP engine monitors inbound and outbound traffic to prevent model extraction, and input guardrails detect model poisoning and manipulation attempts.
-    source: { url: https://www.fortinet.com/products/fortiaigate, tier: official, title: FortiAIGate product page, accessed: 2026-06-10, origin: reviewed, quote: "Accelerate AI adoption and enforce security guardrails on large language models." }
+    note: Protects LLMs against prompt injection, data leakage, model poisoning, and excessive resource consumption.
+    source: { url: https://www.fortinet.com/blog/security-operations/fortiaigate-optimizing-and-protecting-ai-workloads, tier: official, title: "FortiAIGate Optimizing and Protecting AI Workloads, Fortinet Blog", accessed: 2026-10-26, origin: agent, quote: "FortiAIGate safeguards LLMs from prompt injections, data leakage, model poisoning, excessive resource consumption, and other emerging AI-specific risks." }
 primary_cell: { asset: ai-traffic, function: protect }

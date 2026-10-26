@@ -24,12 +24,14 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-10-05
     summary: Updated the deployment options.
+  - date: 2026-10-26
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: primary
     note: Continuous red teaming engineered for proprietary AI agents, covering more than 60 vulnerability classes across the agent, model, and MCP layers, with re-scans triggered by every model, prompt, or tool update and remediation playbooks in real time.
-    source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: AI Red Teaming Services Adversa AI, accessed: 2026-09-22, origin: agent, quote: "Adversa AI validates that your AI agents behave correctly in your specific business context — across every stack layer, from models and agentic cognition to application APIs and infrastructure including MCP." }
+    source: { url: https://adversa.ai/ai-red-teaming-agentic-ai/, tier: official, title: Agentic AI Red Teaming Services Adversa AI, accessed: 2026-10-26, origin: agent, quote: "Adversa AI validates that your AI agents behave correctly in your specific business context, across every stack layer, from models and agentic cognition to application APIs and infrastructure including MCP." }
   - asset: ai-model
     functions: [detect]
     maturity: secondary

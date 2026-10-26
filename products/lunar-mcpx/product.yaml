@@ -30,6 +30,8 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-09-22
     summary: "Recorded the Boomi acquisition, announced 2026-05-13 and completed 2026-07-27; MCPX now ships as the Boomi MCP Gateway."
+  - date: 2026-10-26
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
@@ -45,5 +47,5 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: The enterprise edition inspects MCP requests and responses inline to redact sensitive data before it leaves the deployment environment.
-    source: { url: https://www.lunar.dev/product/mcp, tier: official, title: Lunar MCP gateway product page, accessed: 2026-06-10, origin: reviewed, quote: "It intercepts, authenticates, and governs traffic using policies defined by the organization." }
+    source: { url: https://boomi.com/platform/ai-gateway/, tier: official, title: Boomi AI Gateway, accessed: 2026-10-26, origin: agent, quote: "Detect and redact sensitive data, including PII, in every request before it reaches a model, and in every response before it reaches your users." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

@@ -21,20 +21,22 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the BigID documentation.
+  - date: 2026-10-26
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: training-data
     functions: [identify, protect]
     maturity: primary
     note: Discovers and classifies sensitive data across many sources, finds shadow AI and unauthorized data use, and cleanses and secures the data pipeline that feeds AI training.
-    source: { url: https://bigid.com/, tier: official, title: BigID data security and AI governance, accessed: 2026-06-09, origin: reviewed, quote: "Unmatched Coverage: Discover and secure data across 100s of sources cloud, SaaS, on-prem, and development environments." }
+    source: { url: https://bigid.com/ai-security-governance/, tier: official, title: BigID AI Security and Governance Platform, accessed: 2026-10-26, origin: agent, quote: "Discover, classify, cleanse, and govern the data used for AI training, tuning, retrieval, and inference." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary
     note: Governs employee AI access by labeling data, applying guardrails, intercepting risky prompts, and enforcing role-based access.
-    source: { url: https://bigid.com/, tier: official, title: BigID data security and AI governance, accessed: 2026-06-09, origin: reviewed, quote: "Agentless DLP Detect, prevent, and remediate data leaks no agency, no latency, full SaaS." }
+    source: { url: https://bigid.com/ai-security-governance/, tier: official, title: BigID AI Security and Governance Platform, accessed: 2026-10-26, origin: agent, quote: "Monitor and govern sensitive data in prompts and responses while enforcing controls across AI interactions." }
   - asset: ai-model
     functions: [identify, detect]
     maturity: secondary
     note: AI security posture management assesses AI risk and flags model and agent vulnerabilities and unusual access.
-    source: { url: https://bigid.com/, tier: official, title: BigID data security and AI governance, accessed: 2026-06-09, origin: reviewed, quote: "AI Security Management: Assess AI risk posture (AISPM), detect model and agent vulnerabilities, control access, and flag sensitive data use within AI systems." }
+    source: { url: https://bigid.com/ai-security-governance/, tier: official, title: BigID AI Security and Governance Platform, accessed: 2026-10-26, origin: agent, quote: "Assess AI risk across models, agents, prompts, data, access, usage, ownership, and policy violations." }
 primary_cell: { asset: training-data, function: protect }
