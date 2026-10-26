@@ -9,8 +9,8 @@ description:
   value: "HydroX AI: AI safety platform that red-teams and evaluates models and LLM applications and runs a real-time Safety Firewall that blocks prompt injection, jailbreaks, and data leakage."
   source: { url: https://www.hydrox.ai/, tier: official, title: HydroX AI homepage, accessed: 2026-10-05, origin: agent }
 deployment:
-  value: [saas]
-  source: { url: https://knowyourai.hydrox.ai/, tier: official, title: HydroX KnowYourAI platform sign-up page, accessed: 2026-10-05, origin: agent }
+  value: [unknown]
+  source: { url: https://www.hydrox.ai/, tier: official, title: HydroX AI homepage, accessed: 2026-10-26, origin: agent }
 status:
   value: active
   source: { url: https://www.hydrox.ai/, tier: official, title: HydroX AI homepage, accessed: 2026-10-05, origin: agent }
@@ -20,6 +20,8 @@ changelog:
     summary: Added to the catalog from the HydroX AI documentation.
   - date: 2026-10-05
     summary: Updated the product page citations and the description.
+  - date: 2026-10-26
+    summary: Set deployment to unknown after the cited sign-up page went offline.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]

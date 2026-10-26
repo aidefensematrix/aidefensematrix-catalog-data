@@ -28,12 +28,14 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-10-05
     summary: Refreshed the compliance citation.
+  - date: 2026-10-26
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovery, posture, and runtime protection for autonomous agents and MCP servers.
-    source: { url: https://noma.security/platform, tier: official, title: Noma Security platform page, accessed: 2026-09-22, origin: agent, quote: "Define what each agent is allowed to do and enforce it the moment the agent acts." }
+    source: { url: https://noma.security/platform, tier: official, title: Noma Security platform page, accessed: 2026-10-26, origin: agent, quote: "Noma understands the runtime context of every agent action so risky actions are avoided even when they seem legitimate." }
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
     maturity: primary
@@ -41,5 +43,5 @@ matrix_coverage:
   - asset: runtime-ai-data
     functions: [detect]
     maturity: secondary
-    source: { url: https://noma.security/products/ai-dr, tier: official, title: Noma Security AI-DR page, accessed: 2026-09-22, origin: agent, quote: "Detectors include prompt injection (including encoded and obfuscated payloads), sensitive data leakage (PII, PCI, secrets) with inline masking, malicious intent, tool poisoning, and more." }
+    source: { url: https://noma.security/products/ai-dr, tier: official, title: Noma Security AI-DR page, accessed: 2026-10-26, origin: agent, quote: "AI-DR detects prompt injection, including encoded and indirect injection through tool responses, sensitive data leakage with inline masking, tool poisoning, scope violations, malicious intent, and rogue agents drifting from their intended behavior or baseline." }
 primary_cell: { asset: ai-agent-identities, function: protect }

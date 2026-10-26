@@ -7,7 +7,7 @@ aliases: [A.I.G]
 url: https://github.com/Tencent/AI-Infra-Guard
 description:
   value: "AI-Infra-Guard: Open-source AI red-team scanner by Tencent that scans MCP servers, agent skills, and AI-infra components for CVEs and evaluates models for jailbreak robustness."
-  source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: Tencent/AI-Infra-Guard, accessed: 2026-07-05, origin: agent, quote: "It thoroughly detects 14 major categories of security risks. The detection applies to both MCP Servers and Agent Skills." }
+  source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: Tencent/AI-Infra-Guard, accessed: 2026-10-26, origin: agent, quote: "A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, AI Infra scan and LLM jailbreak evaluation." }
 deployment:
   value: [self-hosted]
   source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: Tencent/AI-Infra-Guard, accessed: 2026-07-05, origin: agent }
@@ -20,20 +20,22 @@ changelog:
     summary: Added to the catalog from the AI-Infra-Guard repository; open source, actively maintained.
   - date: 2026-09-22
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-10-26
+    summary: Refreshed source links, quotes, and coverage notes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
     maturity: primary
-    note: Scans MCP servers, agent skills, and agent workflows for security risks and identifies AI-framework CVEs across more than 100 components such as Ollama, vLLM, and Triton.
-    source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: AI-Infra-Guard MCP and agent scanning, accessed: 2026-07-05, origin: agent, quote: "It thoroughly detects 14 major categories of security risks. The detection applies to both MCP Servers and Agent Skills." }
+    note: Scans MCP servers, agent skills, and agent workflows for security risks such as tool poisoning and code vulnerabilities, and identifies known CVEs in AI frameworks such as Ollama and ComfyUI.
+    source: { url: https://tencent.github.io/AI-Infra-Guard/, tier: official, title: A.I.G (AI-Infra-Guard) documentation, accessed: 2026-10-26, origin: agent, quote: "MCP Scan: Utilizes AI Agents to intelligently identify security threats in MCP Servers, such as tool poisoning and code vulnerabilities, assisting MCP developers and app marketplaces in completing security certification before release." }
   - asset: ai-model
     functions: [detect]
     maturity: secondary
     note: Jailbreak evaluation tests model prompt-security robustness with multiple attack methods and cross-model comparison.
-    source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: AI-Infra-Guard jailbreak evaluation, accessed: 2026-07-05, origin: agent, quote: "It assesses prompt security risks using carefully curated datasets. The evaluation applies multiple attack methods to test robustness." }
+    source: { url: https://tencent.github.io/AI-Infra-Guard/, tier: official, title: A.I.G (AI-Infra-Guard) documentation, accessed: 2026-10-26, origin: agent, quote: "Jailbreak Evaluation: Employs high-quality and diverse evaluation datasets to automatically evaluate the overall security of different large language models when faced with malicious, adversarial, or deceptive prompt inputs." }
   - asset: ai-workload-platforms
     functions: [identify, detect]
     maturity: secondary
-    note: Fingerprints AI-serving frameworks such as Ollama, vLLM, and Triton and flags known CVE vulnerabilities across more than 100 components.
-    source: { url: https://github.com/Tencent/AI-Infra-Guard, tier: official, title: GitHub Tencent AI-Infra-Guard, accessed: 2026-09-22, origin: agent, quote: "This scanner precisely identifies over 100 AI framework components." }
+    note: Fingerprints the web services of AI frameworks and components such as Ollama and ComfyUI and flags known CVE vulnerabilities.
+    source: { url: https://tencent.github.io/AI-Infra-Guard/, tier: official, title: A.I.G (AI-Infra-Guard) documentation, accessed: 2026-10-26, origin: agent, quote: "AI Infra Scan: Detects known CVE vulnerabilities in the web services of various frameworks and components (e.g., Ollama, ComfyUI) used in AI training, deployment, and application building, through precise fingerprinting." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: detect }

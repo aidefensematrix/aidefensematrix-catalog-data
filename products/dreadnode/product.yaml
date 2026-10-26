@@ -23,12 +23,14 @@ changelog:
     summary: "Updated coverage notes against the current vendor pages."
   - date: 2026-10-05
     summary: Refreshed a matrix coverage source quote.
+  - date: 2026-10-26
+    summary: Refreshed source links, quotes, and coverage notes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [detect]
     maturity: primary
-    note: "AI Red Teaming probes foundation models and traditional ML models with 70+ attack strategies including jailbreaks and adversarial algorithms, mapping findings to OWASP MITRE ATLAS and NIST AI RMF."
-    source: { url: https://docs.dreadnode.io/ai-red-teaming/reference/attacks/, tier: official, title: Attacks Reference (70+ attack strategies), accessed: 2026-10-05, origin: agent, quote: "Reference for the 70+ adversarial attacks Dreadnode AI red teaming runs across generative AI and traditional ML, from LLM jailbreaks to evasion, extraction, membership inference, inversion, and multimodal probing." }
+    note: "AI Red Teaming probes foundation models and traditional ML models with 100+ attack strategies including jailbreaks and adversarial algorithms, mapping findings to OWASP, MITRE ATLAS, and NIST AI RMF."
+    source: { url: https://docs.dreadnode.io/ai-red-teaming/reference/attacks/, tier: official, title: Dreadnode Attacks Reference (100+ adversarial attacks), accessed: 2026-10-26, origin: agent, quote: "Reference for the 100+ adversarial attacks Dreadnode AI red teaming runs across generative AI and traditional ML, from LLM jailbreaks to evasion, extraction, membership inference, inversion, and multimodal probing." }
   - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary

@@ -34,12 +34,14 @@ changelog:
     summary: "Updated the description and coverage notes to the current Prisma AIRS product names."
   - date: 2026-09-22
     summary: "Re-cited the deployment field to the current Prisma AIRS page; the Protect AI Guardian page no longer exists."
+  - date: 2026-10-26
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, protect]
     maturity: primary
     note: Prisma AIRS AI Model Security inspects each layer of a model, including architecture, weights, operators, and embedded code, for hidden vulnerabilities and threats.
-    source: { url: https://www.paloaltonetworks.com/ai-security/ai-model-security, tier: official, title: Prisma AIRS AI Model Security, accessed: 2026-09-22, origin: agent, quote: "Use API-first integration to embed model scanning into build, test and deployment workflows, enabling continuous protection and consistent enforcement without manual ticketing between security and data science teams." }
+    source: { url: https://www.paloaltonetworks.com/ai-security/ai-supply-chain-security, tier: official, title: Prisma AIRS AI Supply Chain Security, accessed: 2026-10-26, origin: agent, quote: "Set rules once for licenses, sources and versions, and block unsafe models and skills before production." }
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect]
     maturity: primary

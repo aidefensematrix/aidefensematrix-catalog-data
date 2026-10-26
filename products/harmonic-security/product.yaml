@@ -22,12 +22,14 @@ changelog:
     summary: Added to the catalog from the Harmonic Security documentation.
   - date: 2026-10-03
     summary: "Corrected matrix coverage (erratum): added AI app discovery to the AI Traffic row, added protect to the AI Coding and Orchestration Tools row, and refreshed a source quote."
+  - date: 2026-10-26
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [identify, protect, detect]
     maturity: primary
     note: Inspects employee prompts on the device via browser extension and desktop client, classifies the sensitive data they contain in under 200 ms, and, per configured policy, logs, warns, coaches, or blocks the sharing.
-    source: { url: https://www.harmonic.security/, tier: official, title: Harmonic Security homepage, accessed: 2026-10-03, origin: agent, quote: "You can block in real time, warn the employee with context about why the action is risky, or log silently for security team review." }
+    source: { url: https://www.harmonic.security/, tier: official, title: Harmonic Security homepage, accessed: 2026-10-26, origin: agent, quote: "It discovers how employees and agents use AI, classifies the data and business context involved, and applies inline controls where the surface supports them." }
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect, protect]
     maturity: secondary
@@ -37,5 +39,5 @@ matrix_coverage:
     functions: [identify]
     maturity: primary
     note: Builds an inventory of the AI tools employees use across the organization from the browser extension and desktop client.
-    source: { url: https://www.harmonic.security/, tier: official, title: Harmonic Security homepage, accessed: 2026-10-03, origin: agent, quote: "On day one you get a full inventory of AI tools in use across your organization." }
+    source: { url: https://www.harmonic.security/solutions/shadow-ai-detection, tier: official, title: Harmonic Shadow AI Detection and Monitoring, accessed: 2026-10-26, origin: agent, quote: "Continuously discover and categorise every AI tool in use." }
 primary_cell: { asset: runtime-ai-data, function: protect }

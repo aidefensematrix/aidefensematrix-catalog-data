@@ -7,7 +7,7 @@ vendor:
   source: { url: https://www.dbta.com/Editorial/News-Flashes/Cloudsmith-Releases-ML-Model-Registry-to-Support-Enterprise-Governance-and-Security-for-Models-and-Datasets-171320.aspx, tier: press, title: Cloudsmith releases ML Model Registry, accessed: 2026-06-13, origin: reviewed }
 description:
   value: "Cloudsmith Hugging Face Registry: Private, policy-governed registry that proxies and caches Hugging Face models and datasets, applying scanning and access controls before teams use them."
-  source: { url: https://cloudsmith.com/product/hugging-face-registry, tier: official, title: Cloudsmith Hugging Face Registry, accessed: 2026-07-05, origin: agent, quote: "Cloudsmith extends artifact management to AI/ML, giving your teams a secure, private registry for models and datasets." }
+  source: { url: https://cloudsmith.com/product/hugging-face-registry, tier: official, title: Cloudsmith AI Model Registry, accessed: 2026-10-26, origin: agent, quote: "Cloudsmith extends artifact management to AI, giving your teams a secure, private registry for models and datasets." }
 deployment:
   value: [saas]
   source: { url: https://www.dbta.com/Editorial/News-Flashes/Cloudsmith-Releases-ML-Model-Registry-to-Support-Enterprise-Governance-and-Security-for-Models-and-Datasets-171320.aspx, tier: press, title: Cloudsmith releases ML Model Registry, accessed: 2026-06-13, origin: reviewed }
@@ -20,6 +20,8 @@ changelog:
     summary: Added to the catalog from the launch coverage; the ML Model Registry is in early access.
   - date: 2026-07-05
     summary: Renamed to Cloudsmith Hugging Face Registry; the product was previously listed as Cloudsmith ML Model Registry.
+  - date: 2026-10-26
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, protect]

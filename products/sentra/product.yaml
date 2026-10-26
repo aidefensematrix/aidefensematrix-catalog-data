@@ -22,10 +22,12 @@ changelog:
     summary: Added to the catalog from the Sentra documentation.
   - date: 2026-06-12
     summary: Refined matrix coverage.
+  - date: 2026-10-26
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: training-data
     functions: [identify, detect]
     maturity: primary
     note: Discovers and classifies sensitive data across cloud and on-prem at petabyte scale without copying it out of the environment, controls access to it, and adds data detection and response across the datasets AI and Copilot or Bedrock can reach.
-    source: { url: https://www.sentra.io/product, tier: official, title: Sentra Platform Overview, accessed: 2026-06-09, origin: reviewed, quote: "Continuous discovery, classification, hygiene, and access governance - at petabyte scale, in your environment." }
+    source: { url: https://www.sentra.io/product, tier: official, title: Sentra Platform Overview, accessed: 2026-10-26, origin: agent, quote: "It finds every sensitive dataset across cloud, SaaS, on-prem and AI services, shows which people and AI agents can reach it, and keeps it locked down as AI spreads." }
 primary_cell: { asset: training-data, function: identify }

@@ -20,12 +20,14 @@ changelog:
     summary: Added to the catalog from the Repello AI documentation.
   - date: 2026-09-22
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-10-26
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, detect]
     maturity: primary
     note: Discovers AI assets and runs ARTEMIS adversarial attack simulations against models and applications across RAG and agent workflows.
-    source: { url: https://repello.ai/inventory, tier: official, title: Repello AI Asset Inventory, accessed: 2026-09-22, origin: agent, quote: "ARTEMIS continuously red-teams your AI stack — probing agents, models, and connectors for real-world vulnerabilities like prompt injection, data leaks, and privilege escalation." }
+    source: { url: https://repello.ai/inventory, tier: official, title: Repello AI Asset Inventory, accessed: 2026-10-26, origin: agent, quote: "ARTEMIS continuously red-teams your AI stack — probing AI agents, models, and connectors for real-world vulnerabilities like prompt injection, data leaks, and privilege escalation." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary
