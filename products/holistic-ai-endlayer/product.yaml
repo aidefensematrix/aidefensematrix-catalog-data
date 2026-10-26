@@ -21,7 +21,7 @@ changelog:
   - date: 2026-10-05
     summary: Refreshed a matrix coverage source quote.
   - date: 2026-10-26
-    summary: Refreshed source links and quotes against the current vendor pages.
+    summary: Refreshed source links, quotes, and coverage notes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect, protect, govern]
@@ -41,7 +41,7 @@ matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, detect, protect]
     maturity: secondary
-    note: Finds the accounts, API keys, and credential-bearing MCP servers each AI tool uses, flags personal logins and exposed keys, and blocks a tool that requests a permission it was never granted.
+    note: Finds the account type, declared access, and API-key presence for each AI tool and MCP connection without exposing secret values, and enforces policy on supported interactions as they happen.
     source: { url: https://www.endlayer.ai/, tier: official, title: EndLayer Guardian Agents for AI, accessed: 2026-10-26, origin: agent, quote: "See account type, declared access and API-key presence without exposing secret values." }
   - asset: ai-model
     functions: [identify]
