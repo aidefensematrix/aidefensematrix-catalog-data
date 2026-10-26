@@ -1,0 +1,31 @@
+schema_version: 2
+name: Silverfort AI Agent Security
+vendor:
+  value: Silverfort
+  source: { url: https://www.silverfort.com/, tier: official, title: Silverfort, accessed: 2026-10-26, origin: agent }
+url: https://www.silverfort.com/platform/ai-agent-security/
+description:
+  value: "Silverfort AI Agent Security: Discovers AI agents across cloud and SaaS, maps each to its human owner, and enforces least-privilege policy at runtime through platform integrations and an MCP gateway."
+  source: { url: https://www.silverfort.com/use-cases/secure-ai-agents/, tier: official, title: Secure AI Agents at runtime, accessed: 2026-10-26, origin: agent }
+deployment:
+  value: [unknown]
+  source: { url: https://www.silverfort.com/platform/ai-agent-security/, tier: official, title: Silverfort AI Agent Security, accessed: 2026-10-26, origin: agent }
+status:
+  value: active
+  source: { url: https://www.silverfort.com/blog/silverfort-secures-ai-agents-on-google-cloud-in-runtime-with-agent-gateway-integration/, tier: official, title: Silverfort Secures AI Agents on Google Cloud Agent Gateway, accessed: 2026-10-26, origin: agent }
+last_reviewed: 2026-10-26
+changelog:
+  - date: 2026-10-26
+    summary: Added at the request of a contributor affiliated with Silverfort, from the Silverfort product pages and blog.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Discovers agents across cloud and SaaS and maps each to its human owner. Scores risk from privileges, data sensitivity, and behavioral anomalies. Enforces least privilege before an agent acts, natively in Copilot Studio and Google Cloud Agent Gateway, with human approval for sensitive actions.
+    source: { url: https://www.silverfort.com/use-cases/secure-ai-agents/, tier: official, title: Secure AI Agents at runtime, accessed: 2026-10-26, origin: agent, quote: "Enforcement is delivered via MCP Gateway for broad coverage, and via native integrations with leading agentic platforms for deep, platform-level control." }
+  - asset: ai-traffic
+    functions: [protect]
+    maturity: secondary
+    note: MCP Gateway sits inline between agents and the MCP servers they call, ties each agent session to a human through IdP sign-on, and blocks tool calls outside the authorized scope. Can require human approval before sensitive tool actions run.
+    source: { url: https://www.silverfort.com/platform/ai-agent-security/, tier: official, title: Silverfort AI Agent Security, accessed: 2026-10-26, origin: agent, quote: "Silverfort evaluates against Authorization Planes and Scopes, and denied calls are blocked at the gateway." }
+primary_cell: { asset: ai-agent-identities, function: protect }
