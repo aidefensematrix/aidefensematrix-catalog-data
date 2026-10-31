@@ -1,0 +1,32 @@
+schema_version: 2
+name: Superagent Guardrails
+aliases: [Superagent Agent Guardrails, Superagent SDK, safety-agent]
+vendor:
+  value: Superagent
+  source: { url: https://www.superagent.sh/, tier: official, title: Superagent homepage, accessed: 2026-10-31, origin: agent }
+url: https://www.superagent.sh/docs/features/agent-guardrails
+description:
+  value: "Superagent Guardrails: Open-source SDK and hosted API that block prompt injection and redact PII in AI apps, plus endpoint rules that monitor or block coding-agent actions."
+  source: { url: https://github.com/superagent-ai/superagent, tier: official, title: Superagent SDK repository, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://github.com/superagent-ai/superagent, tier: official, title: Superagent SDK repository, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://github.com/superagent-ai/superagent, tier: official, title: Superagent SDK repository, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Superagent GitHub repository and documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: The MIT-licensed SDK, CLI, and MCP server classify inputs to block prompt injections, malicious instructions, and unsafe tool calls, and redact PII, PHI, and secrets from text. The guard model can run on customer infrastructure.
+    source: { url: https://github.com/superagent-ai/superagent, tier: official, title: Superagent SDK repository, accessed: 2026-10-31, origin: agent, quote: "Detect and block prompt injections, malicious instructions, and unsafe tool calls at runtime." }
+  - asset: ai-coding-orchestration-tools
+    functions: [protect, detect]
+    maturity: secondary
+    note: Runtime Guardrails install hooks for coding agents such as Claude Code, Cursor, and Codex on each endpoint, evaluate events locally against YAML rules, and record a finding or deny the action per rule, with alerts sent to webhooks.
+    source: { url: https://www.superagent.sh/docs/features/agent-guardrails/runtime, tier: official, title: Superagent Runtime Guardrails documentation, accessed: 2026-10-31, origin: agent, quote: "Monitor or block risky coding-agent actions with endpoint-local rules." }
+primary_cell: { asset: runtime-ai-data, function: protect }

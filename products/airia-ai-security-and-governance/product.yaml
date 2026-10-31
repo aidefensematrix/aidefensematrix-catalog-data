@@ -1,0 +1,50 @@
+schema_version: 2
+name: Airia AI Security and Governance
+aliases: [Airia AI Security & Governance Platform]
+vendor:
+  value: Airia
+  source: { url: https://airia.com/, tier: official, title: Airia homepage, accessed: 2026-10-31, origin: agent }
+url: https://airia.com/ai-platform/security/
+description:
+  value: "Airia AI Security and Governance: Discovers AI agents, models, and MCP servers, enforces guardrails and agent tool limits at runtime, and maps governance evidence to AI regulations."
+  source: { url: https://airia.com/, tier: official, title: Airia homepage, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas, self-hosted, hybrid]
+  source: { url: https://airia.com/ai-platform/deployment/, tier: official, title: Airia deployment options, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://airia.com/, tier: official, title: Airia homepage, accessed: 2026-10-31, origin: agent }
+compliance_attestations:
+  value: [ISO 27001, SOC 2 Type 2, HIPAA]
+  source: { url: https://trust.airia.com/, tier: official, title: Airia Trust Center, accessed: 2026-10-31, origin: agent, quote_unavailable: "Trust portal renders its compliance list only with JavaScript (Oct 2026)" }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Airia website, documentation, and trust center.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [govern, identify, protect, detect]
+    maturity: primary
+    note: Stops unauthorized agent actions at the execution layer before a tool call runs, including for agents built outside Airia. Finds AI tools, agents, and MCP servers across the organization and generates governance documentation mapped to the EU AI Act, NIST AI RMF, SR 11-7, and ISO 42001.
+    source: { url: https://airia.com/, tier: official, title: Airia homepage, accessed: 2026-10-31, origin: agent, quote: "Stop unauthorized agent actions at the execution layer, before the tool call fires, before the email sends, before the database query runs." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Guardrails inspect prompts before they reach the model and responses before they reach users, blocking prompt injection and jailbreak attempts, masking regulated data, and applying configurable content thresholds.
+    source: { url: https://airia.com/ai-platform/guardrails/, tier: official, title: Airia AI guardrails, accessed: 2026-10-31, origin: agent, quote: "Block prompt injection, jailbreak attempts, and manipulation patterns before they reach the model." }
+  - asset: ai-traffic
+    functions: [identify, protect]
+    maturity: secondary
+    note: Discovers AI agents, LLM API calls, MCP servers, browser AI tools, and endpoint AI apps through identity, browser, network, and code repository signals into one inventory, and can block, warn, redirect, or audit browser AI activity.
+    source: { url: https://airia.com/ai-platform/ai-discovery/, tier: official, title: Airia AI Discovery, accessed: 2026-10-31, origin: agent, quote: "Airia identifies AI agents, LLM API calls, and MCP servers wherever they operate, then records them in a centralized inventory your team can govern." }
+  - asset: ai-agent-identities
+    functions: [identify]
+    maturity: secondary
+    note: Connects to identity, network, SaaS, and browser signals to find approved and unapproved agents and maps each one to owners, permissions, and data exposure.
+    source: { url: https://airia.com/, tier: official, title: Airia homepage, accessed: 2026-10-31, origin: agent, quote: "maps each agent to owners, permissions, and data exposure" }
+  - asset: ai-model
+    functions: [identify]
+    maturity: adjacent
+    note: The governance module keeps one inventory of the agents, models, and tools in use, with risk classification.
+    source: { url: https://airia.com/, tier: official, title: Airia homepage, accessed: 2026-10-31, origin: agent, quote: "One complete inventory of every agent, model, and tool in use." }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

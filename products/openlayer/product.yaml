@@ -1,0 +1,44 @@
+schema_version: 2
+name: Openlayer
+vendor:
+  value: Openlayer
+  source: { url: https://www.openlayer.com/, tier: official, title: Openlayer homepage, accessed: 2026-10-31, origin: agent }
+url: https://www.openlayer.com/
+description:
+  value: "Openlayer: Testing, monitoring, and governance for models and agents, with runtime guardrails that block prompt injection and sensitive data and evidence mapped to AI frameworks."
+  source: { url: https://www.openlayer.com/, tier: official, title: Openlayer homepage, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.openlayer.com/pricing, tier: official, title: Openlayer pricing, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://www.openlayer.com/pricing, tier: official, title: Openlayer pricing, accessed: 2026-10-31, origin: agent }
+compliance_attestations:
+  value: [SOC 2 Type 2, GDPR, HIPAA]
+  source: { url: https://www.openlayer.com/security, tier: official, title: Openlayer security, accessed: 2026-10-31, origin: agent, quote: "SOC 2 Type II compliance is monitored continuously with Vanta." }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Openlayer website and product pages.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Runtime guardrails inspect prompts and responses and block, redact, or escalate prompt injection, jailbreaks, PII and PHI, and harmful content, reusing the test definitions from evaluation and monitoring and keeping each decision as evidence.
+    source: { url: https://www.openlayer.com/product/guardrails, tier: official, title: Openlayer Guardrails, accessed: 2026-10-31, origin: agent, quote: "Block prompt injection, jailbreaks, sensitive-data exposure, and harmful content at the moment they occur." }
+  - asset: ai-coding-orchestration-tools
+    functions: [detect]
+    maturity: secondary
+    note: Runs a library of tests in CI/CD against AI systems for quality, safety, security, and compliance failures, stops releases that fail, and keeps the same tests running in production.
+    source: { url: https://www.openlayer.com/product/testing, tier: official, title: Openlayer Testing, accessed: 2026-10-31, origin: agent, quote: "Run 175+ tests in your development workflow and automatically block releases that fail quality, safety, security, or compliance requirements." }
+  - asset: ai-model
+    functions: [govern, identify, detect]
+    maturity: secondary
+    note: Keeps a registry of AI systems, built or bought, with owner, use case, and risk level, maps controls to frameworks such as the EU AI Act, ISO/IEC 42001, and NIST AI RMF, and produces audit-ready evidence. Monitors drift on live traffic.
+    source: { url: https://www.openlayer.com/product/governance, tier: official, title: Openlayer Governance, accessed: 2026-10-31, origin: agent, quote: "With leading frameworks already mapped, teams can identify coverage gaps, apply the right controls, and begin governing AI in days" }
+  - asset: ai-traffic
+    functions: [identify, protect, detect, respond]
+    maturity: secondary
+    note: A gateway routes model calls across approved providers, identifies the applications, models, teams, and keys behind the traffic, flags unapproved models, and enforces budgets and real-time guardrails. Flags unapproved models and can disable a misused key.
+    source: { url: https://www.openlayer.com/product/gateway, tier: official, title: Openlayer Gateway, accessed: 2026-10-31, origin: agent, quote: "Automatically identify the applications, models, providers, teams, and keys generating traffic through the gateway." }
+primary_cell: { asset: runtime-ai-data, function: protect }
