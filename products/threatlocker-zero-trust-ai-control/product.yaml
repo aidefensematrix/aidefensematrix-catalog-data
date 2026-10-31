@@ -1,0 +1,32 @@
+schema_version: 2
+name: ThreatLocker Zero Trust AI Control
+aliases: [ZTAIC, Zero Trust AI Control]
+vendor:
+  value: ThreatLocker
+  source: { url: https://www.threatlocker.com/capabilities/zero-trust-ai-control, tier: official, title: ThreatLocker Zero Trust AI Control page, accessed: 2026-10-31, origin: agent }
+url: https://www.threatlocker.com/capabilities/zero-trust-ai-control
+description:
+  value: "ThreatLocker Zero Trust AI Control: Endpoint policy layer that limits which files, applications, scripts, and internet destinations AI agents, and the processes they start, can reach."
+  source: { url: https://www.threatlocker.com/capabilities/zero-trust-ai-control, tier: official, title: ThreatLocker Zero Trust AI Control page, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [unknown]
+  source: { url: https://www.threatlocker.com/capabilities/zero-trust-ai-control, tier: official, title: ThreatLocker Zero Trust AI Control page, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://www.threatlocker.com/press-release/threatlocker-launches-zero-trust-ai-control-to-give-security-teams-command-over-ai-agents, tier: official, title: ThreatLocker launches Zero Trust AI Control, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the ThreatLocker product page and press release.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Applies pre-built, adjustable endpoint policies that set which files an agent can read or change and which applications, scripts, and destinations it can reach, and keeps those limits on child processes like PowerShell. A dashboard lists deployed agents, the files they touch, and gaps in coverage.
+    source: { url: https://www.threatlocker.com/capabilities/zero-trust-ai-control, tier: official, title: ThreatLocker Zero Trust AI Control page, accessed: 2026-10-31, origin: agent, quote: "Decide which applications, scripts, internet destinations, and administrative tools an AI agent can reach, launch, or interact with." }
+  - asset: ai-traffic
+    functions: [protect]
+    maturity: secondary
+    note: Endpoint policy limits which internet destinations an AI agent, and the applications it launches, can reach.
+    source: { url: https://www.threatlocker.com/capabilities/zero-trust-ai-control, tier: official, title: ThreatLocker Zero Trust AI Control page, accessed: 2026-10-31, origin: agent, quote: "The workflow gets access to approved resources while unrelated files, systems, applications, and internet destinations stay out of reach." }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }
