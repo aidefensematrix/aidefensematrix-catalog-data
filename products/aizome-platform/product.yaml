@@ -1,0 +1,42 @@
+schema_version: 2
+name: aizome Platform
+aliases: [aizome, Aizome Platform]
+vendor:
+  value: aizome
+  source: { url: https://www.aizome.ai/, tier: official, title: aizome homepage, accessed: 2026-10-31, origin: agent }
+url: https://www.aizome.ai/
+description:
+  value: "aizome Platform: Identity-led control for enterprise AI agents that discovers agents and MCP servers, scopes each agent to its user permissions, and checks each action against intent before it runs."
+  source: { url: https://www.aizome.ai/how-it-works, tier: official, title: How aizome works, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://aws.amazon.com/marketplace/pp/prodview-q42id3ier32ee, tier: official, title: Aizome Platform on AWS Marketplace, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://aws.amazon.com/marketplace/pp/prodview-q42id3ier32ee, tier: official, title: Aizome Platform on AWS Marketplace, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the aizome website and its AWS Marketplace listing.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Inventories registered and shadow agents from existing identity, endpoint, and network tools and scores each by risk. Each agent inherits the identity of the user it acts for, scoped to least privilege and checked per action, and actions that drift from the stated intent are blocked.
+    source: { url: https://www.aizome.ai/how-it-works, tier: official, title: How aizome works, accessed: 2026-10-31, origin: agent, quote: "It inherits the identity of the user it acts for, scoped down to least privilege." }
+  - asset: ai-traffic
+    functions: [identify, protect]
+    maturity: secondary
+    note: Discovers AI apps and unmanaged MCP servers across the environment, and an MCP gateway federates MCP servers behind one governed endpoint with brokered credentials and policy checks before and after each tool call.
+    source: { url: https://www.aizome.ai/how-it-works, tier: official, title: How aizome works, accessed: 2026-10-31, origin: agent, quote: "Configure which tools each gateway exposes, point any MCP client at one URL, and aizome handles OAuth brokering, token rotation, and pre/post tool-call policy enforcement." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: An LLM gateway inspects prompts and responses, blocks prompt injection attempts, and blocks or redacts personal and regulated data in agent inputs and outputs.
+    source: { url: https://www.aizome.ai/solutions/control-governance, tier: official, title: aizome control and governance, accessed: 2026-10-31, origin: agent, quote: "Examine prompts flowing in and out of agent systems, detecting and blocking injection attempts before they redirect an agent." }
+  - asset: ai-coding-orchestration-tools
+    functions: [identify]
+    maturity: secondary
+    note: Discovery maps the AI agents, MCP servers, and skills in an environment, including ones no one registered.
+    source: { url: https://www.aizome.ai/, tier: official, title: aizome homepage, accessed: 2026-10-31, origin: agent, quote: "Every AI agent, every MCP, every skill in your environment mapped within hours - including the ones no one knew existed." }
+primary_cell: { asset: ai-agent-identities, function: protect }

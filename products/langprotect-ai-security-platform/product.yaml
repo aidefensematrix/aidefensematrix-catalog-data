@@ -1,0 +1,37 @@
+schema_version: 2
+name: LangProtect AI Security Platform
+aliases: [LangProtect Guardia, LangProtect Armor, LangProtect Vector]
+vendor:
+  value: LangProtect
+  source: { url: https://www.langprotect.com/, tier: official, title: LangProtect homepage, accessed: 2026-10-31, origin: agent }
+url: https://www.langprotect.com/
+description:
+  value: "LangProtect AI Security Platform: Inline guardrails for employee AI use, in-house LLM apps, and AI agents that block prompt injection and sensitive data leaks and gate MCP tool calls by policy."
+  source: { url: https://www.langprotect.com/pricing, tier: official, title: LangProtect pricing, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.langprotect.com/free-trial, tier: official, title: LangProtect free trial, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://www.langprotect.com/free-trial, tier: official, title: LangProtect free trial, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the LangProtect product, pricing, and free trial pages.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Armor sits inline with in-house LLM applications and allows, restricts, or blocks prompts and outputs that carry prompt injection, sensitive data, or policy violations. Guardia scans employee prompts and uploads to tools such as ChatGPT in the browser and blocks sensitive content.
+    source: { url: https://www.langprotect.com/armor-for-ai-apps, tier: official, title: LangProtect Armor for AI apps, accessed: 2026-10-31, origin: agent, quote: "It enforces policy decisions on prompts, model outputs, and execution paths at runtime, before AI systems access internal data, tools, or downstream services." }
+  - asset: ai-traffic
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Vector discovers AI agents and local MCP servers on the corporate network and sits inline between agents and MCP servers to allow, block, or redact each request. Guardia adds visibility into unsanctioned AI tools and browser extensions used by employees.
+    source: { url: https://www.langprotect.com/vector, tier: official, title: LangProtect Vector for agents and MCP, accessed: 2026-10-31, origin: agent, quote: "Vector automatically discovers and inventories every AI agent and local MCP server running inside your corporate network" }
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: secondary
+    note: Vector applies role-based permissions that limit which tools, APIs, and databases each agent may reach, and blocks actions outside that scope.
+    source: { url: https://www.langprotect.com/vector, tier: official, title: LangProtect Vector for agents and MCP, accessed: 2026-10-31, origin: agent, quote: "Limit which agents can access specific tools or databases based on their assigned role." }
+primary_cell: { asset: runtime-ai-data, function: protect }

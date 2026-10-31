@@ -1,0 +1,37 @@
+schema_version: 2
+name: Datawiza Agent Gateway
+aliases: [Datawiza MCP Gateway]
+vendor:
+  value: Datawiza
+  source: { url: https://www.datawiza.com/products/agent-gateway, tier: official, title: Datawiza Agent Gateway product page, accessed: 2026-10-31, origin: agent }
+url: https://www.datawiza.com/products/agent-gateway
+description:
+  value: "Datawiza Agent Gateway: Inline gateway between AI agents and the MCP servers, APIs, and SaaS tools they call that checks user and agent identity per action, brokers credentials, and applies DLP."
+  source: { url: https://docs.datawiza.com/agent-gateway/introduction.html, tier: official, title: Datawiza Agent Gateway documentation introduction, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas, self-hosted, hybrid]
+  source: { url: https://www.datawiza.com/products/agent-gateway, tier: official, title: Datawiza Agent Gateway product page, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://www.datawiza.com/news/introducing-datawiza-agent-gateway, tier: official, title: Datawiza introduces Agent Gateway, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Datawiza product page, documentation, and launch announcement.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: primary
+    note: Evaluates each agent request against the agent identity and the real user identity from Entra ID, Okta, or another OIDC or SAML provider, scopes access to tools, actions, and resources with deny by default, and exchanges or injects downstream credentials so the agent never holds them.
+    source: { url: https://docs.datawiza.com/agent-gateway/introduction.html, tier: official, title: Datawiza Agent Gateway documentation introduction, accessed: 2026-10-31, origin: agent, quote: "Control what each agent can do at the tool, action, endpoint, or resource level." }
+  - asset: ai-traffic
+    functions: [protect]
+    maturity: primary
+    note: Routes agent API, MCP, and A2A traffic through one enforcement point that allows, denies, limits, or holds requests for approval, including tool-level policy across MCP servers.
+    source: { url: https://www.datawiza.com/products/agent-gateway, tier: official, title: Datawiza Agent Gateway product page, accessed: 2026-10-31, origin: agent, quote: "Use Datawiza Agent Gateway as an identity-aware MCP Gateway for centralized authentication, tool policy, DLP, PII protection, credential brokering, approvals, rate controls, and audit across MCP servers." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Inspects agent requests and tool results for personal data, credentials, and confidential content and blocks or redacts matches according to DLP policy.
+    source: { url: https://www.datawiza.com/products/agent-gateway, tier: official, title: Datawiza Agent Gateway product page, accessed: 2026-10-31, origin: agent, quote: "Detect PII, credentials, and confidential data, then block or redact sensitive content according to policy." }
+primary_cell: { asset: ai-agent-identities, function: protect }

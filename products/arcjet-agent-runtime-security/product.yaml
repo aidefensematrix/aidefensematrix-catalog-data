@@ -1,0 +1,45 @@
+schema_version: 2
+name: Arcjet Agent Runtime Security
+aliases: [Arcjet Guards, Arcjet Runtime Security for Coding Agents, Arcjet for coding agents]
+vendor:
+  value: Arcjet
+  source: { url: https://arcjet.com/, tier: official, title: Arcjet homepage, accessed: 2026-10-31, origin: agent }
+url: https://arcjet.com/
+description:
+  value: "Arcjet Agent Runtime Security: Checks each action a custom agent or coding agent takes against policy before it runs, screens for prompt injection and sensitive data, and records every decision."
+  source: { url: https://docs.arcjet.com/guards, tier: official, title: Arcjet agent guards documentation, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://docs.arcjet.com/guards, tier: official, title: Arcjet agent guards documentation, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://arcjet.com/pricing, tier: official, title: Arcjet pricing, accessed: 2026-10-31, origin: agent }
+compliance_attestations:
+  value: [SOC 2 Type 2]
+  source: { url: https://arcjet.com/, tier: official, title: Arcjet homepage, accessed: 2026-10-31, origin: agent, quote: "SOC 2 Type II, unqualified opinion." }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Arcjet website, documentation, and blog.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: SDK guard calls placed before a model or tool call detect prompt injection in user input and tool output and detect or redact personal data before it enters model context or leaves in a tool call, returning a decision the code acts on.
+    source: { url: https://arcjet.com/, tier: official, title: Arcjet homepage, accessed: 2026-10-31, origin: agent, quote: "Catch hostile instructions in user input, API responses, and tool output, before either reaches the model." }
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Hooks in Claude Code, Cursor, GitHub Copilot, OpenAI Codex, and Muse Code send each tool call and prompt to Rego policies that can deny destructive commands, credential reads, and unapproved MCP servers or domains. Sessions are recorded, and coding agents are discovered across developer endpoints.
+    source: { url: https://docs.arcjet.com/coding-agents, tier: official, title: Arcjet secure coding agents documentation, accessed: 2026-10-31, origin: agent, quote: "Block risky tool calls before they run, such as destructive shell commands or reads of credential files." }
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: secondary
+    note: Guard policies scope which tool actions an agent may take by actor, role, route, and typed inputs, and deny the call before the tool runs.
+    source: { url: https://arcjet.com/, tier: official, title: Arcjet homepage, accessed: 2026-10-31, origin: agent, quote: "Scope what every agent may do by identity, role, route and typed input, then enforce it at the moment the tool is called rather than in the prompt that asks for it." }
+  - asset: ai-traffic
+    functions: [identify, protect, detect]
+    maturity: adjacent
+    note: An optional endpoint agent for macOS reports AI connections from each device for shadow AI discovery and can block unmanaged connections.
+    source: { url: https://arcjet.com/blog/introducing-arcjet-for-coding-agents, tier: official, title: Introducing Arcjet for coding agents, accessed: 2026-10-31, origin: agent, quote: "An optional Arcjet agent can also be installed onto each endpoint to report AI connections and correlate with identities and controls, blocking unmanaged connections if required." }
+primary_cell: { asset: runtime-ai-data, function: protect }

@@ -1,0 +1,42 @@
+schema_version: 2
+name: Gurucul AI Risk and Response
+aliases: [AI Risk and Response]
+vendor:
+  value: Gurucul
+  source: { url: https://www.prnewswire.com/news-releases/gurucul-launches-ai-risk-and-response-to-detect-and-stop-risky-ai-behavior-before-it-escalates-302888502.html, tier: official, title: Gurucul AI Risk and Response launch press release, accessed: 2026-10-31, origin: agent }
+url: https://gurucul.com/products/gurucul-ai-risk-and-response/
+description:
+  value: "Gurucul AI Risk and Response: Behavioral analytics that inventory AI apps, agents, and models from existing telemetry, detect shadow AI and risky agent behavior, and guide analyst-approved response."
+  source: { url: https://www.prnewswire.com/news-releases/gurucul-launches-ai-risk-and-response-to-detect-and-stop-risky-ai-behavior-before-it-escalates-302888502.html, tier: official, title: Gurucul AI Risk and Response launch press release, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [unknown]
+  source: { url: https://www.prnewswire.com/news-releases/gurucul-launches-ai-risk-and-response-to-detect-and-stop-risky-ai-behavior-before-it-escalates-302888502.html, tier: official, title: Gurucul AI Risk and Response launch press release, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://www.prnewswire.com/news-releases/gurucul-launches-ai-risk-and-response-to-detect-and-stop-risky-ai-behavior-before-it-escalates-302888502.html, tier: official, title: Gurucul AI Risk and Response launch press release, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Gurucul product page and launch press release. Runtime prevention is in preview per the vendor.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, detect, respond]
+    maturity: primary
+    note: Treats each AI agent as an entity with its own baseline, links it to its owner, identities, and permissions, flags excessive access and behavior drift, and runs automated or approval-gated playbooks that contain risk through connected identity, endpoint, and network controls.
+    source: { url: https://www.prnewswire.com/news-releases/gurucul-launches-ai-risk-and-response-to-detect-and-stop-risky-ai-behavior-before-it-escalates-302888502.html, tier: official, title: Gurucul AI Risk and Response launch press release, accessed: 2026-10-31, origin: agent, quote: "it analyzes users and autonomous agents as persistent entities to reveal shadow AI, excessive access and emerging behavioral risk." }
+  - asset: ai-traffic
+    functions: [identify, detect, respond]
+    maturity: secondary
+    note: Finds sanctioned and unsanctioned AI use from proxy, EDR, identity, cloud, and AI-platform telemetry, and builds an inventory of agents, models, tools, and hosts.
+    source: { url: https://www.prnewswire.com/news-releases/gurucul-launches-ai-risk-and-response-to-detect-and-stop-risky-ai-behavior-before-it-escalates-302888502.html, tier: official, title: Gurucul AI Risk and Response launch press release, accessed: 2026-10-31, origin: agent, quote: "Organizations can identify sanctioned and unsanctioned AI use, build an inventory of agents, models, tools and hosts, and connect that activity to owners, permissions and accessible resources." }
+  - asset: runtime-ai-data
+    functions: [detect]
+    maturity: secondary
+    note: Detections cover sensitive data shared with or produced by AI services and prompt-injection indicators, mapped to MITRE ATLAS and the OWASP Top 10 for LLM Applications.
+    source: { url: https://www.prnewswire.com/news-releases/gurucul-launches-ai-risk-and-response-to-detect-and-stop-risky-ai-behavior-before-it-escalates-302888502.html, tier: official, title: Gurucul AI Risk and Response launch press release, accessed: 2026-10-31, origin: agent, quote: "Behavioral AI and deterministic detection logic work together to identify Shadow AI, sensitive data exposure, risky autonomous agents, excessive access, AI supply-chain risk and changes in behavior that fixed rules may miss." }
+  - asset: ai-model
+    functions: [identify]
+    maturity: adjacent
+    note: Builds an inventory of the AI models in use alongside agents, tools, and hosts from existing telemetry.
+    source: { url: https://www.prnewswire.com/news-releases/gurucul-launches-ai-risk-and-response-to-detect-and-stop-risky-ai-behavior-before-it-escalates-302888502.html, tier: official, title: Gurucul AI Risk and Response launch press release, accessed: 2026-10-31, origin: agent, quote: "Organizations can identify sanctioned and unsanctioned AI use, build an inventory of agents, models, tools and hosts, and connect that activity to owners, permissions and accessible resources." }
+primary_cell: { asset: ai-agent-identities, function: detect }

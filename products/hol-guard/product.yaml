@@ -1,0 +1,37 @@
+schema_version: 2
+name: HOL Guard
+aliases: [hol-guard, Guard Cloud]
+vendor:
+  value: Hashgraph Online
+  source: { url: https://hol.org/, tier: official, title: HOL homepage, accessed: 2026-10-31, origin: agent }
+url: https://hol.org/guard
+description:
+  value: "HOL Guard: Open-source, local-first control for AI coding agents that reviews shell commands, secret access, package installs, and MCP tool calls before they run, and blocks or asks per policy."
+  source: { url: https://github.com/hashgraph-online/hol-guard, tier: official, title: HOL Guard GitHub repository, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [self-hosted, saas]
+  source: { url: https://hol.org/guard, tier: official, title: HOL Guard product page, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://github.com/hashgraph-online/hol-guard, tier: official, title: HOL Guard GitHub repository, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the HOL Guard repository and the HOL website.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Native hooks and managed MCP proxies in Codex, Claude Code, Cursor, and other agents send each action to local policy that allows, blocks, or asks for approval. It inventories local plugins, skills, and MCP servers, exports an AI bill of materials, and reviews changed tools before launch.
+    source: { url: https://github.com/hashgraph-online/hol-guard, tier: official, title: HOL Guard GitHub repository, accessed: 2026-10-31, origin: agent, quote: "HOL Guard reviews agent actions before they run: shell commands, file access, package installs, and MCP tool calls." }
+  - asset: runtime-ai-data
+    functions: [detect, protect]
+    maturity: secondary
+    note: Screens supported prompt and tool-result events for prompt injection and sensitive content and can pause or block the next supported action. The vendor states it is not a complete prompt-injection preventer.
+    source: { url: https://github.com/hashgraph-online/hol-guard, tier: official, title: HOL Guard GitHub repository, accessed: 2026-10-31, origin: agent, quote: "Screens supported events for prompt injection and sensitive content." }
+  - asset: ai-traffic
+    functions: [protect]
+    maturity: secondary
+    note: Inspects MCP server configuration and reviews MCP tool calls through supported hooks and managed proxies before they run.
+    source: { url: https://github.com/hashgraph-online/hol-guard, tier: official, title: HOL Guard GitHub repository, accessed: 2026-10-31, origin: agent, quote: "Inspects server configuration and reviews tool calls through supported hooks and managed proxies." }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }
