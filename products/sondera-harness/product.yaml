@@ -1,0 +1,32 @@
+schema_version: 2
+name: Sondera Harness
+aliases: [Sondera Coding Agent Hooks]
+vendor:
+  value: Sondera
+  source: { url: https://docs.sondera.ai/, tier: official, title: Sondera Harness documentation, accessed: 2026-10-31, origin: agent }
+url: https://docs.sondera.ai/
+description:
+  value: "Sondera Harness: Open-source harness that checks Cedar policies before AI agent actions run, with hooks that apply the same checks to coding agents such as Claude Code and Cursor."
+  source: { url: https://github.com/sondera-ai/sondera-coding-agent-hooks, tier: official, title: Sondera coding agent hooks repository, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [self-hosted]
+  source: { url: https://docs.sondera.ai/deployment/, tier: official, title: Sondera Harness deployment documentation, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://github.com/sondera-ai/sondera-coding-agent-hooks, tier: official, title: Sondera coding agent hooks repository, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Sondera documentation and GitHub repositories.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [protect, detect, respond]
+    maturity: primary
+    note: Hook binaries for Claude Code, Cursor, GitHub Copilot, Gemini CLI, and other agents send each shell command, file operation, and web request to a local harness that combines YARA signature scanning with Cedar policy evaluation and returns allow, deny, or escalate, failing closed.
+    source: { url: https://github.com/sondera-ai/sondera-coding-agent-hooks, tier: official, title: Sondera coding agent hooks repository, accessed: 2026-10-31, origin: agent, quote: "Rust hook binaries and Cedar policies intercept every shell command, file operation, and web request to forbid exfiltration and destructive behaviors, and enforce information flow control." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Policies attach to six stages of the agent loop, including before and after each model call and tool call, for prompt injection defense, output filtering, and removal of sensitive data from tool results.
+    source: { url: https://docs.sondera.ai/concepts/stages/, tier: official, title: Sondera Harness stages documentation, accessed: 2026-10-31, origin: agent, quote: "POST_TOOL After tool execution Result sanitization, prompt injection defense" }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

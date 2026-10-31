@@ -1,0 +1,42 @@
+schema_version: 2
+name: agentsh
+aliases: [AgentSH, Agent Shell]
+vendor:
+  value: Canyon Road
+  source: { url: https://www.canyonroad.ai/products/agentsh/, tier: official, title: Canyon Road agentsh product page, accessed: 2026-10-31, origin: agent }
+url: https://www.agentsh.org/
+description:
+  value: "agentsh: Open-source runtime that intercepts the file, network, and process activity of AI agents at the syscall level and allows, blocks, or redirects each action by policy."
+  source: { url: https://www.agentsh.org/docs/, tier: official, title: agentsh documentation, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [self-hosted]
+  source: { url: https://github.com/canyonroad/agentsh, tier: official, title: agentsh repository, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://github.com/canyonroad/agentsh, tier: official, title: agentsh repository, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the agentsh documentation, GitHub repository, and Canyon Road website.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [protect, detect]
+    maturity: primary
+    note: Runs under an agent or harness and intercepts file I/O, network connections, process spawning, and signals, including subprocess trees. Applies YAML or JSON policy with allow, deny, approve, redirect, and soft-delete decisions and emits structured audit events and session reports.
+    source: { url: https://www.agentsh.org/docs/, tier: official, title: agentsh documentation, accessed: 2026-10-31, origin: agent, quote: "The agent never sees the enforcement; it simply cannot perform operations that policy does not permit." }
+  - asset: ai-traffic
+    functions: [protect, detect]
+    maturity: secondary
+    note: An embedded LLM proxy extracts MCP tool calls from model responses and applies tool allowlists, version pinning against changed tool definitions, rate limits, and cross-server exfiltration detection before the agent runs them.
+    source: { url: https://www.agentsh.org/docs/mcp-security/, tier: official, title: agentsh MCP security documentation, accessed: 2026-10-31, origin: agent, quote: "agentsh intercepts every tool call at the LLM proxy layer, evaluates it against configurable policies, detects cross-server attack patterns, and blocks or permits execution with full audit trails." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: The same proxy routes agent requests to model providers and redacts PII such as email addresses, phone numbers, and API keys before the request leaves. Tool definitions and results are scanned for poisoning.
+    source: { url: https://www.agentsh.org/docs/features/, tier: official, title: agentsh features documentation, accessed: 2026-10-31, origin: agent, quote: "DLP redaction: PII (emails, phone numbers, API keys) is redacted before reaching providers" }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: A secrets layer pulls credentials from Vault, AWS, GCP, Azure, 1Password, or the OS keyring and hands the agent only a paired fake credential, which the daemon replaces with the real value at the network edge.
+    source: { url: https://www.agentsh.org/docs/secrets/, tier: official, title: agentsh secrets documentation, accessed: 2026-10-31, origin: agent, quote: "The agent only ever sees the fake; the daemon swaps in the real value at the network edge." }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

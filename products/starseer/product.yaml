@@ -1,0 +1,50 @@
+schema_version: 2
+name: Starseer
+aliases: [Starseer AI-Verify]
+vendor:
+  value: Starseer
+  source: { url: https://starseer.ai/home, tier: official, title: Starseer homepage, accessed: 2026-10-31, origin: agent }
+url: https://starseer.ai/platform
+description:
+  value: "Starseer: Interpretability-based checks that scan models for backdoors and tampering before deployment, watch agents at runtime, and enforce prompt policy at a gateway."
+  source: { url: https://starseer.ai/platform, tier: official, title: Starseer platform overview, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://starseer.ai/ai-model-vulnerability-scan, tier: official, title: Starseer Model Vulnerability Scan, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://starseer.ai/pricing, tier: official, title: Starseer pricing, accessed: 2026-10-31, origin: agent }
+compliance_attestations:
+  value: [SOC 2]
+  source: { url: https://starseer.ai/legal, tier: official, title: Starseer legal policies, accessed: 2026-10-31, origin: agent, quote: "SOC 2 report available to paying customers under NDA." }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Starseer website and pricing page.
+matrix_coverage:
+  - asset: ai-model
+    functions: [identify, detect]
+    maturity: primary
+    note: Compares the weights, activations, and architecture of a model against an approved baseline and uses activation analysis and circuit tracing to surface backdoors, tampering, and fine-tune drift. Runs as a CI/CD gate that approves or quarantines each model before it serves traffic.
+    source: { url: https://starseer.ai/ai-model-vulnerability-scan, tier: official, title: Starseer Model Vulnerability Scan, accessed: 2026-10-31, origin: agent, quote: "Surfaces trigger-conditioned behavior through activation analysis and circuit tracing, including triggers absent from every test you run." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: A gateway classifies each prompt before inference and blocks injection, jailbreak, and exfiltration attempts against rules the customer writes, logging each decision as a trace sent to the SIEM.
+    source: { url: https://starseer.ai/ai-gateway, tier: official, title: Starseer AI Gateway, accessed: 2026-10-31, origin: agent, quote: "Injection, jailbreak, and exfiltration attempts stop here rather than in the response." }
+  - asset: ai-traffic
+    functions: [protect]
+    maturity: secondary
+    note: The gateway sends model calls only to approved endpoints across frontier, open-weight, and self-hosted models, applies one policy to every provider, and routes each request to a model sized for the task.
+    source: { url: https://starseer.ai/ai-gateway, tier: official, title: Starseer AI Gateway, accessed: 2026-10-31, origin: agent, quote: "Only endpoints you have approved receive traffic, so a team cannot quietly point production at a model nobody reviewed." }
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, detect, respond]
+    maturity: secondary
+    note: Builds a behavioral baseline per model and agent from activations and decision-to-action chains, fires YARA-X detections mapped to MITRE ATLAS, and throttles or isolates a compromised session. Also catalogs models and agents running on endpoints and servers.
+    source: { url: https://starseer.ai/ai-runtime-monitoring, tier: official, title: Starseer AI Detection and Response, accessed: 2026-10-31, origin: agent, quote: "Throttle or isolate the session in milliseconds, with prompt lineage preserved from origin to final input." }
+  - asset: ai-workload-platforms
+    functions: [protect]
+    maturity: secondary
+    note: A CI/CD pipeline gate blocks unverified models from reaching production and sets each approved model as the baseline that runtime monitoring measures against.
+    source: { url: https://starseer.ai/platform, tier: official, title: Starseer platform, accessed: 2026-10-31, origin: agent, quote: "An unverified model does not reach production, and an approved one becomes the baseline runtime measures against." }
+primary_cell: { asset: ai-model, function: detect }
