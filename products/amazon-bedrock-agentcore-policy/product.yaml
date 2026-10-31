@@ -1,0 +1,35 @@
+schema_version: 2
+name: Amazon Bedrock AgentCore Policy
+aliases: [AgentCore Policy, Policy in Amazon Bedrock AgentCore]
+vendor:
+  value: Amazon Web Services
+  source: { url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html, tier: official, title: Policy in Amazon Bedrock AgentCore documentation, accessed: 2026-10-31, origin: agent }
+url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html
+description:
+  value: "Amazon Bedrock AgentCore Policy: Managed policy engines, written in Cedar or plain English, that check each agent tool call passing through an AgentCore Gateway and allow or deny it."
+  source: { url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html, tier: official, title: Policy in Amazon Bedrock AgentCore documentation, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-agentcore-policy-guardrails-generally-available/, tier: official, title: Amazon Bedrock AgentCore now supports Bedrock Guardrails in policy, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://aws.amazon.com/about-aws/whats-new/2026/03/policy-amazon-bedrock-agentcore-generally-available/, tier: official, title: Policy in Amazon Bedrock AgentCore is now generally available, accessed: 2026-10-31, origin: agent }
+compliance_attestations:
+  value: [SOC 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701, ISO 22301, FedRAMP, CSA STAR]
+  source: { url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/compliance-validation.html, tier: official, title: Compliance validation for Amazon Bedrock AgentCore, accessed: 2026-10-31, origin: agent, quote: "Amazon Bedrock AgentCore is HIPAA eligible and FedRAMP (Class C and Class D), SOC 2 and ISO (27001:2022, 27017:2015, 27018:2019, 27701:2019, 22301:2019, 20000-1:2018, 9001:2015) and CSA STAR compliant." }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Amazon Web Services documentation and announcements.
+matrix_coverage:
+  - asset: ai-traffic
+    functions: [protect]
+    maturity: primary
+    note: Policy engines attached to AgentCore Gateways intercept agent-to-tool traffic and permit or forbid each call against deterministic Cedar or Dogwood policies, including session-aware temporal rules and Bedrock Guardrails scores, with every decision logged to CloudWatch.
+    source: { url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html, tier: official, title: Policy in Amazon Bedrock AgentCore documentation, accessed: 2026-10-31, origin: agent, quote: "Policy in AgentCore intercepts all agent traffic through Amazon Bedrock AgentCore Gateways and evaluates each request against defined policies in the policy engine before allowing tool access." }
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: secondary
+    note: Scopes what each agent may do by conditioning tool access on the calling user identity and the tool input parameters, and natural-language authoring flags overly permissive or unsatisfiable policies before they are enforced.
+    source: { url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/policy.html, tier: official, title: Policy in Amazon Bedrock AgentCore documentation, accessed: 2026-10-31, origin: agent, quote: "Policy in AgentCore supports fine-grained permissions based on user identity and tool input parameters, making it possible to safely deploy autonomous agents at enterprise scale." }
+primary_cell: { asset: ai-traffic, function: protect }

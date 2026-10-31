@@ -1,0 +1,34 @@
+schema_version: 2
+name: Okta for AI Agents
+vendor:
+  value: Okta
+  source: { url: https://www.okta.com/products/govern-ai-agent-identity/, tier: official, title: Okta for AI Agents product page, accessed: 2026-10-31, origin: agent }
+url: https://www.okta.com/products/govern-ai-agent-identity/
+description:
+  value: "Okta for AI Agents: Workforce identity for AI agents that discovers and registers agents with human owners, enforces least-privilege policy on each tool call, and revokes access with a kill switch."
+  source: { url: https://www.okta.com/products/govern-ai-agent-identity/, tier: official, title: Okta for AI Agents product page, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://www.okta.com/products/govern-ai-agent-identity/, tier: official, title: Okta for AI Agents product page, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://www.okta.com/blog/ai/okta-for-ai-agents-general-availability/, tier: official, title: Okta for AI Agents is now generally available, accessed: 2026-10-31, origin: agent }
+compliance_attestations:
+  value: [FedRAMP High, FedRAMP Moderate, DoD IL5]
+  source: { url: https://www.okta.com/products/govern-ai-agent-identity/, tier: official, title: Okta for AI Agents product page, accessed: 2026-10-31, origin: agent, quote: "FedRAMP Moderate/High and DoD Impact Level 5 environments: The Okta for AI Agents - Core SKU delivers centralized agent registration in Universal Directory" }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Okta product page, blog, and press release.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect, respond]
+    maturity: primary
+    note: Discovers sanctioned and shadow agents and registers them in Universal Directory with human owners. Issues short-lived scoped credentials, enforces least-privilege policy and access reviews, monitors runtime access, and deactivates rogue agents with a kill switch.
+    source: { url: https://www.okta.com/products/govern-ai-agent-identity/, tier: official, title: Okta for AI Agents product page, accessed: 2026-10-31, origin: agent, quote: "Put identity, policy, and audit controls in the path of every tool call." }
+  - asset: ai-traffic
+    functions: [identify, protect]
+    maturity: secondary
+    note: Agent Gateway sits in the path of agent tool calls, verifies the agent, brokers credentials at runtime, filters the MCP tools an agent can see, and logs each call. Shadow AI discovery scans browsers and endpoints for unapproved OAuth consent grants.
+    source: { url: https://www.okta.com/products/govern-ai-agent-identity/, tier: official, title: Okta for AI Agents product page, accessed: 2026-10-31, origin: agent, quote: "Verify the agent, broker credentials at runtime, and log each tool call without making code changes to your agents or tools." }
+primary_cell: { asset: ai-agent-identities, function: protect }

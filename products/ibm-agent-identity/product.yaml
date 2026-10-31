@@ -1,0 +1,26 @@
+schema_version: 2
+name: IBM Agent Identity
+vendor:
+  value: IBM
+  source: { url: https://www.ibm.com/products/agent-identity, tier: official, title: IBM Agent Identity product page, accessed: 2026-10-31, origin: agent }
+url: https://www.ibm.com/products/agent-identity
+description:
+  value: "IBM Agent Identity: Identity control plane for AI agents that registers each agent with an owner and risk class, preserves delegated authority, and grants short-lived, task-scoped access at runtime."
+  source: { url: https://www.ibm.com/products/agent-identity, tier: official, title: IBM Agent Identity product page, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://community.ibm.com/community/user/blogs/dinesh-jain/2026/09/01/ibm-agent-identity-public-preview, tier: official, title: IBM Agent Identity public preview announcement, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://www.ibm.com/new/announcements/ibm-agent-identity-is-now-generally-available-building-trust-for-the-agentic-era, tier: official, title: IBM Agent Identity is now generally available, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the IBM product page and announcements.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Registers agents with owner, risk class, approved tools, and lifecycle state. Preserves on-behalf-of delegation, issues short-lived task-scoped OAuth tokens, evaluates risk continuously with runtime policy decisions, and works with HashiCorp Vault for just-in-time credentials.
+    source: { url: https://www.ibm.com/products/agent-identity, tier: official, title: IBM Agent Identity product page, accessed: 2026-10-31, origin: agent, quote: "Continuously evaluate risk, apply policy decisions at runtime and reduce credential exposure through short-lived, purpose-specific access controls." }
+primary_cell: { asset: ai-agent-identities, function: protect }

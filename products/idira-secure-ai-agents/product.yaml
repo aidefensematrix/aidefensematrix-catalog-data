@@ -1,0 +1,32 @@
+schema_version: 2
+name: Idira Secure AI Agents
+aliases: [CyberArk Secure AI Agents, Idira Agentic Identity Security]
+vendor:
+  value: Palo Alto Networks
+  source: { url: https://www.paloaltonetworks.com/idira/agentic, tier: official, title: Idira agentic identity security product page, accessed: 2026-10-31, origin: agent }
+url: https://www.paloaltonetworks.com/idira/agentic
+description:
+  value: "Idira Secure AI Agents: Agent identity security that discovers agents across SaaS, cloud, and developer environments, brokers task-scoped access to tools, and logs what each agent does."
+  source: { url: https://www.paloaltonetworks.com/idira/agentic, tier: official, title: Idira agentic identity security product page, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [unknown]
+  source: { url: https://www.paloaltonetworks.com/idira/agentic, tier: official, title: Idira agentic identity security product page, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://www.paloaltonetworks.com/idira, tier: official, title: Idira identity security platform page, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Palo Alto Networks Idira product pages and blog.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect, respond]
+    maturity: primary
+    note: Discovers agents in SaaS, cloud, and developer environments and enriches each with owner, purpose, status, and permissions. An Agent Identity Broker grants just-in-time access for one task, flags anomalous behavior, acts as a kill switch, and logs each action with the user it ran for.
+    source: { url: https://www.paloaltonetworks.com/idira/agentic, tier: official, title: Idira agentic identity security product page, accessed: 2026-10-31, origin: agent, quote: "Idira acts as a dynamic enforcement point, granting agents access only for the duration of a specific task." }
+  - asset: ai-traffic
+    functions: [protect]
+    maturity: secondary
+    note: Agent requests to MCP servers route through the Agent Identity Broker, which authenticates the agent, limits it to approved systems and permitted actions, and revokes access when the task ends.
+    source: { url: https://www.paloaltonetworks.com/blog/identity-security/securing-claude-ai-agents-idira/, tier: official, title: Securing Claude AI agents with Idira, accessed: 2026-10-31, origin: agent, quote: "Agent Identity Broker authenticates Claude-built agents and provides auditable, JIT access through MCP servers to approved enterprise resources, revoking access when the task is complete." }
+primary_cell: { asset: ai-agent-identities, function: protect }
