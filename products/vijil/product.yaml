@@ -1,0 +1,47 @@
+schema_version: 2
+name: Vijil
+aliases: [Vijil Dome, Vijil Diamond]
+vendor:
+  value: Vijil
+  source: { url: https://www.vijil.ai/, tier: official, title: Vijil homepage, accessed: 2026-10-31, origin: agent }
+url: https://www.vijil.ai/
+description:
+  value: "Vijil: Evaluates AI agents for reliability, security, and safety with behavioral and red-team tests, guards their inputs and outputs at runtime, and discovers agents running across an estate."
+  source: { url: https://docs.vijil.ai/concepts/welcome, tier: official, title: Welcome to Vijil, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.vijil.ai/pricing/, tier: official, title: Vijil pricing, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://www.vijil.ai/pricing/, tier: official, title: Vijil pricing, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Vijil website and documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Dome sits between users and an agent and intercepts inputs and outputs in real time, combining pattern matching, classifiers, embedding similarity, and LLM checks in configurable guardrails. The guardrail engine is open source under Apache-2.0.
+    source: { url: https://docs.vijil.ai/concepts/platform/dome, tier: official, title: Vijil Dome, accessed: 2026-10-31, origin: agent, quote: "It sits between the user and the agent, intercepting both inputs and outputs as they happen." }
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, detect]
+    maturity: secondary
+    note: Diamond tests registered agents before production with behavioral probes for prompt injection and unsafe requests, plus adaptive red-team engagements. An endpoint collector in Discover finds AI applications on macOS, Linux, and Windows machines.
+    source: { url: https://docs.vijil.ai/concepts/platform/diamond, tier: official, title: Vijil Diamond, accessed: 2026-10-31, origin: agent, quote: "In a behavioral evaluation, Diamond challenges the Agent with Probes that simulate real risks like prompt injection, unsafe requests, or edge-case failures." }
+  - asset: ai-agent-identities
+    functions: [identify, protect]
+    maturity: secondary
+    note: Discover builds one inventory of agents across code, cloud, and endpoints and gives each agent a SPIFFE identity it can prove.
+    source: { url: https://www.vijil.ai/, tier: official, title: Vijil homepage, accessed: 2026-10-31, origin: agent, quote: "Every agent in your estate, with an identity it can prove." }
+  - asset: ai-model
+    functions: [identify]
+    maturity: secondary
+    note: Discover collectors find and classify models and managed AI services, including Bedrock, SageMaker, and AgentCore through cloud APIs.
+    source: { url: https://docs.vijil.ai/concepts/platform/discover, tier: official, title: Vijil Discover, accessed: 2026-10-31, origin: agent, quote: "It finds the AI agents, models, and services running across your estate and classifies each one." }
+  - asset: ai-traffic
+    functions: [identify]
+    maturity: adjacent
+    note: A network scanner collector finds AI services running on private networks.
+    source: { url: https://docs.vijil.ai/concepts/platform/discover, tier: official, title: Vijil Discover, accessed: 2026-10-31, origin: agent, quote: "Network scanner Private-network services" }
+primary_cell: { asset: runtime-ai-data, function: protect }
