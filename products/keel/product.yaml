@@ -1,0 +1,37 @@
+schema_version: 2
+name: Keel
+aliases: [Keel API]
+vendor:
+  value: Keel
+  source: { url: https://docs.keelapi.com, tier: official, title: Keel documentation, accessed: 2026-10-31, origin: agent }
+url: https://keelapi.com/
+description:
+  value: "Keel: Hosted authorization layer that checks each AI agent model call, MCP tool call, or payment against policy and budget before it runs and records the decision as verifiable evidence."
+  source: { url: https://docs.keelapi.com, tier: official, title: Keel documentation, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://docs.keelapi.com/egress-controlled-deployments, tier: official, title: Keel egress-controlled deployments documentation, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://keelapi.com/pricing, tier: official, title: Keel pricing, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Keel website and documentation.
+matrix_coverage:
+  - asset: ai-traffic
+    functions: [protect]
+    maturity: primary
+    note: Sits in the request path for supported AI provider calls and enrolled MCP tools, evaluating policy, budget caps, routing, and approval rules before dispatch, and returning allow, deny, throttle, or review decisions recorded as signed permits.
+    source: { url: https://docs.keelapi.com, tier: official, title: Keel documentation, accessed: 2026-10-31, origin: agent, quote: "It evaluates policy, budget, routing, delegation and approval before dispatching supported actions, records the result in an AI Permit, and produces route-appropriate evidence for later review." }
+  - asset: ai-agent-identities
+    functions: [protect, respond]
+    maturity: secondary
+    note: Binds runtime keys to a specific agent principal so policies can enforce per-agent scope, and revoking or suspending the agent stops every key issued for it.
+    source: { url: https://docs.keelapi.com/authority/verify-agent, tier: official, title: Keel agent verification documentation, accessed: 2026-10-31, origin: agent, quote: "An Authority runtime key is a project API key bound to one specific Agent principal." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: A prompt firewall scans request payloads for sensitive text and metadata before the provider call, with baseline rules in block mode that projects can extend but not relax. The vendor describes it as a deterministic pattern layer, not a prompt-injection defense.
+    source: { url: https://docs.keelapi.com/prompt-firewall, tier: official, title: Keel prompt firewall documentation, accessed: 2026-10-31, origin: agent, quote: "The Prompt Firewall is a route-attached inspection layer that scans request payloads for sensitive text and metadata before any provider call." }
+primary_cell: { asset: ai-traffic, function: protect }

@@ -1,0 +1,42 @@
+schema_version: 2
+name: Agentic Fabriq
+aliases: [Fabriq, Fabriq Enterprise]
+vendor:
+  value: Agentic Fabriq
+  source: { url: https://www.agenticfabriq.com/, tier: official, title: Agentic Fabriq homepage, accessed: 2026-10-31, origin: agent }
+url: https://www.agenticfabriq.com/
+description:
+  value: "Agentic Fabriq: Identity and access gateway for AI agents that limits each tool call to the scopes both the agent and its user hold, keeps credentials in a vault, and logs every decision."
+  source: { url: https://www.agenticfabriq.com/, tier: official, title: Agentic Fabriq homepage, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://www.agenticfabriq.com/pricing, tier: official, title: Agentic Fabriq pricing, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://www.agenticfabriq.com/pricing, tier: official, title: Agentic Fabriq pricing, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Agentic Fabriq website.
+matrix_coverage:
+  - asset: ai-agent-identities
+    functions: [protect]
+    maturity: primary
+    note: Gives each agent its own identity, carries the acting user identity from Okta or Entra ID through each request, resolves effective access as the overlap of agent grants and user permissions at the tool boundary, and issues short-lived tokens while provider credentials stay in a vault.
+    source: { url: https://www.agenticfabriq.com/, tier: official, title: Agentic Fabriq homepage, accessed: 2026-10-31, origin: agent, quote: "Create a unique identity for every agent." }
+  - asset: ai-traffic
+    functions: [identify, protect]
+    maturity: secondary
+    note: Agents reach tools and MCP servers through one gateway where policy firewall rules allow, hold for approval, or deny each call, and egress logs from a proxy, firewall, or SIEM are matched against gateway records to surface AI traffic that bypassed it.
+    source: { url: https://www.agenticfabriq.com/, tier: official, title: Agentic Fabriq homepage, accessed: 2026-10-31, origin: agent, quote: "Instead of agents connecting directly to every system, they route through Fabriq." }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: On the Enterprise plan, the policy firewall detects PII, PHI, and PCI in tool-call results and redacts them before they reach the agent.
+    source: { url: https://www.agenticfabriq.com/product/agent-permissions, tier: official, title: Agentic Fabriq policy firewall, accessed: 2026-10-31, origin: agent, quote: "PII, PHI and PCI are caught and redacted before they reach the agent." }
+  - asset: ai-coding-orchestration-tools
+    functions: [protect, respond]
+    maturity: adjacent
+    note: Coding agents such as Claude Code, Cursor, and Codex call tools through the broker under the developer identity, so out-of-scope tools are never offered, provider keys stay off the laptop, and revoking a session from the console closes it.
+    source: { url: https://www.agenticfabriq.com/product/coding-agents, tier: official, title: Agentic Fabriq coding agents, accessed: 2026-10-31, origin: agent, quote: "give them brokered, revocable access instead of raw keys." }
+primary_cell: { asset: ai-agent-identities, function: protect }

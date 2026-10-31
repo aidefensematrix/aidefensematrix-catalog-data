@@ -1,0 +1,32 @@
+schema_version: 2
+name: SUPERWISE Sentinel
+aliases: [Sentinel]
+vendor:
+  value: SUPERWISE
+  source: { url: https://docs.superwise.ai/docs/what-is-sentinel, tier: official, title: What is SUPERWISE Sentinel, accessed: 2026-10-31, origin: agent }
+url: https://superwise.ai/sentinel/
+description:
+  value: "SUPERWISE Sentinel: AI gateway that runs on a PC or in a company network and redacts secrets and personal data from prompts, or blocks the request, before it reaches the model provider."
+  source: { url: https://docs.superwise.ai/docs/what-is-sentinel, tier: official, title: What is SUPERWISE Sentinel, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [hybrid]
+  source: { url: https://docs.superwise.ai/docs/architecture, tier: official, title: SUPERWISE Sentinel architecture, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://superwise.ai/sentinel/, tier: official, title: SUPERWISE Sentinel product page, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the SUPERWISE website and documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: primary
+    note: Guardrails check each outgoing prompt where the gateway runs, replacing secrets, credentials, and formatted personal data such as card numbers with a placeholder or blocking the request, and live activity shows what each guardrail caught. Responses are not checked, per the vendor.
+    source: { url: https://docs.superwise.ai/docs/guardrails, tier: official, title: SUPERWISE Sentinel guardrails, accessed: 2026-10-31, origin: agent, quote: "On a match, a guardrail either replaces the matched content with a placeholder and forwards the request, or blocks the request so it never reaches the model." }
+  - asset: ai-traffic
+    functions: [protect]
+    maturity: secondary
+    note: A gateway on a PC (Windows app or CLI) or in a team cloud or Kubernetes deployment intercepts traffic from coding tools, apps, and browser chat to OpenAI, Anthropic, Gemini, and compatible endpoints, while a hosted control plane distributes policy and collects metadata.
+    source: { url: https://docs.superwise.ai/docs/architecture, tier: official, title: SUPERWISE Sentinel architecture, accessed: 2026-10-31, origin: agent, quote: "Sentinel gateways that run on your machine or in your own network, where every AI request is inspected." }
+primary_cell: { asset: runtime-ai-data, function: protect }

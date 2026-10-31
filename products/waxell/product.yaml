@@ -1,0 +1,41 @@
+schema_version: 2
+name: Waxell
+vendor:
+  value: Waxell
+  source: { url: https://waxell.ai/docs/, tier: official, title: Waxell documentation, accessed: 2026-10-31, origin: agent }
+url: https://waxell.ai/
+description:
+  value: "Waxell: Hosted control plane for AI agents that checks policy before each agent run or MCP tool call, redacts sensitive data, records an audit trail, and inventories agents across cloud platforms."
+  source: { url: https://waxell.ai/docs/, tier: official, title: Waxell documentation, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://waxell.ai/docs/security, tier: official, title: Waxell security documentation, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://waxell.ai/pricing, tier: official, title: Waxell pricing, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Waxell website and documentation, in public beta per the vendor documentation.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, protect, detect, respond]
+    maturity: primary
+    note: An SDK for LangChain, CrewAI, and custom Python agents checks policy with the control plane before each run, returning allow, redact, block, or approval actions, and traces model and tool calls. Waxell Endpoints finds AI apps on devices, and agents can be auto-disabled on a block violation.
+    source: { url: https://waxell.ai/docs/observe/features/governance, tier: official, title: Waxell policy and governance documentation, accessed: 2026-10-31, origin: agent, quote: "Waxell Observe provides a policy enforcement layer that checks whether an agent is allowed to execute before it runs." }
+  - asset: ai-traffic
+    functions: [protect, detect]
+    maturity: secondary
+    note: An MCP gateway fronts the upstream MCP servers a tenant installs behind one endpoint, applying deny, redact, approval, rate-limit, and cost-cap rules before the upstream call, logging every call, and fingerprinting tools to catch silent behavior changes.
+    source: { url: https://waxell.ai/docs/mcp-gateway/overview, tier: official, title: Waxell MCP Gateway documentation, accessed: 2026-10-31, origin: agent, quote: "Deny, redact, require approval, rate-limit, and cost-cap rules evaluate before the upstream call happens" }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Scans MCP tool-call arguments and results for PII and credentials, masking matches with typed placeholders or blocking the call, and records each decision in the audit log.
+    source: { url: https://waxell.ai/docs/observe/mcp-governance/overview, tier: official, title: Waxell MCP governance documentation, accessed: 2026-10-31, origin: agent, quote: "Every tool call passes through policy checks, PII scanning, approval workflows, and audit recording" }
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: secondary
+    note: Read-only connectors to Copilot Studio, Azure AI Foundry, Bedrock AgentCore, and Vertex AI inventory the agents running there with owner and posture, list policy findings per agent, and bind gateway OAuth tokens to a specific agent and its tools.
+    source: { url: https://waxell.ai/docs/agent-discovery/overview, tier: official, title: Waxell Agent Discovery documentation, accessed: 2026-10-31, origin: agent, quote: "Agent Discovery is the neutral, cross-platform inventory of those agents." }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }
