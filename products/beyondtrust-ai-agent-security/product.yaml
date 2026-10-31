@@ -1,0 +1,32 @@
+schema_version: 2
+name: BeyondTrust AI Agent Security
+aliases: []
+vendor:
+  value: BeyondTrust
+  source: { url: https://docs.beyondtrust.com/bt-docs/docs/ai-agent-security, tier: official, title: BeyondTrust AI Agent Security documentation, accessed: 2026-10-31, origin: agent }
+url: https://www.beyondtrust.com/products/ai-agent-security
+description:
+  value: "BeyondTrust AI Agent Security: Discovers AI coding agents, desktop AI apps, MCP servers, and skills on endpoints, and applies per-agent policy that blocks, audits, or holds risky actions for approval."
+  source: { url: https://docs.beyondtrust.com/bt-docs/docs/ai-agent-security, tier: official, title: BeyondTrust AI Agent Security documentation, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://docs.beyondtrust.com/bt-docs/docs/ai-agent-security, tier: official, title: BeyondTrust AI Agent Security documentation, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://docs.beyondtrust.com/bt-docs/docs/ai-agent-security, tier: official, title: BeyondTrust AI Agent Security documentation, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the BeyondTrust AI Agent Security documentation.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: An endpoint agent on Windows and macOS discovers AI coding agents, desktop AI apps, their MCP servers, LLM endpoints, and skills. Policy allows, audits, holds for approval, or blocks each action before it runs, and AI sessions record prompts, commands, files, and findings by severity.
+    source: { url: https://docs.beyondtrust.com/bt-docs/docs/ai-agent-security, tier: official, title: BeyondTrust AI Agent Security documentation, accessed: 2026-10-31, origin: agent, quote: "Policy determines whether an action is allowed, audited, held for approval, or blocked before it executes, rather than reporting it afterward." }
+  - asset: ai-traffic
+    functions: [identify, protect]
+    maturity: secondary
+    note: Discovery covers the LLM endpoints each agent calls, and MCP and network controls run on the endpoint itself, so they apply whether or not the agent routes through a gateway.
+    source: { url: https://docs.beyondtrust.com/bt-docs/docs/ai-agent-security, tier: official, title: BeyondTrust AI Agent Security documentation, accessed: 2026-10-31, origin: agent, quote: "Because control is applied on the endpoint, MCP and network controls do not depend on the agent being routed through a particular ecosystem." }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }
