@@ -1,0 +1,37 @@
+schema_version: 2
+name: Pipelock
+aliases: [PipeLab Pipelock]
+vendor:
+  value: PipeLab
+  source: { url: https://pipelab.org/, tier: official, title: PipeLab homepage, accessed: 2026-10-31, origin: agent }
+url: https://pipelab.org/
+description:
+  value: "Pipelock: Open-source firewall for AI agent egress that mediates MCP, HTTP, and WebSocket traffic, scans it for prompt injection, exfiltration, and SSRF, and issues signed action receipts."
+  source: { url: https://github.com/pipelab-org/pipelock, tier: official, title: Pipelock GitHub repository, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [self-hosted]
+  source: { url: https://github.com/pipelab-org/pipelock, tier: official, title: Pipelock GitHub repository, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://github.com/pipelab-org/pipelock, tier: official, title: Pipelock GitHub repository, accessed: 2026-10-31, origin: agent }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the PipeLab website and the Pipelock repository.
+matrix_coverage:
+  - asset: ai-traffic
+    functions: [protect, detect, respond]
+    maturity: primary
+    note: Runs at the agent boundary as a mediator for MCP, HTTP, A2A, and WebSocket traffic, wraps stdio MCP servers, enforces egress policy, and signs receipts for each action. A kill switch flips an agent to deny-all. Apache-2.0 core with a paid fleet control plane.
+    source: { url: https://pipelab.org/, tier: official, title: PipeLab homepage, accessed: 2026-10-31, origin: agent, quote: "Pipelock mediates MCP, HTTP, and WebSocket traffic at the agent boundary, wraps stdio MCP servers, and emits signed action receipts any third party can verify offline when receipt signing is configured." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Inspects the traffic it mediates for prompt injection and data exfiltration, so injected instructions and leaking content can be caught before they leave the agent.
+    source: { url: https://github.com/pipelab-org/pipelock, tier: official, title: Pipelock GitHub repository, accessed: 2026-10-31, origin: agent, quote: "Scans mediated HTTP, MCP, A2A, and WebSocket traffic for exfiltration, SSRF, and prompt injection" }
+  - asset: ai-coding-orchestration-tools
+    functions: [protect, detect]
+    maturity: secondary
+    note: Constrains the agent process with Landlock, seccomp, and network namespaces on Linux and sandbox-exec on macOS, and inspects wrapped MCP tools for tool poisoning and rug pulls.
+    source: { url: https://pipelab.org/, tier: official, title: PipeLab homepage, accessed: 2026-10-31, origin: agent, quote: "Stdio subprocess wrapping, tool poisoning detection, rug-pull tracking, policy engine with redirect, session binding, and chain detection." }
+primary_cell: { asset: ai-traffic, function: protect }

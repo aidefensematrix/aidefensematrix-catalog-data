@@ -1,0 +1,40 @@
+schema_version: 2
+name: Ultra Security
+aliases: [Ultra]
+vendor:
+  value: Ultra Security
+  source: { url: https://ultra.security/, tier: official, title: Ultra Security homepage, accessed: 2026-10-31, origin: agent }
+url: https://ultra.security/
+description:
+  value: "Ultra Security: Runtime security layer between AI agents and the tools they call that records every action, enforces governance rules and guardrails inline, and alerts on anomalous agent activity."
+  source: { url: https://docs.ultra.security/introduction, tier: official, title: Ultra documentation introduction, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://ultra.security/pricing, tier: official, title: Ultra Security pricing, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://ultra.security/pricing, tier: official, title: Ultra Security pricing, accessed: 2026-10-31, origin: agent }
+compliance_attestations:
+  value: [ISO 27001, SOC 2 Type 2, ISO 42001]
+  source: { url: https://ultra.security/, tier: official, title: Ultra Security homepage, accessed: 2026-10-31, origin: agent, quote: "ISO 27001:2022 SOC 2 Type 2 ISO/IEC 42001:2023" }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Ultra Security website and documentation.
+matrix_coverage:
+  - asset: ai-traffic
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Sits between agents and the connectors and tools they call, records each action in an audit trail, and applies per-agent governance rules down to individual tools before an action runs. Inventories agents and connectors and alerts on unusual access, data movement, or tool use.
+    source: { url: https://docs.ultra.security/introduction, tier: official, title: Ultra documentation introduction, accessed: 2026-10-31, origin: agent, quote: "Ultra sits between your agents and the tools they call, so every action is recorded, checked against your policy, and routed to the right connector." }
+  - asset: runtime-ai-data
+    functions: [protect]
+    maturity: secondary
+    note: Pre-built guardrails on every action stop tool poisoning, prompt injection, credential exposure, and rug pulls, with custom guardrails on paid tiers.
+    source: { url: https://ultra.security/, tier: official, title: Ultra Security homepage, accessed: 2026-10-31, origin: agent, quote: "Pre-built guardrails stop tool poisoning, prompt injection, credential exposure, and rug pulls on every action." }
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, protect, detect]
+    maturity: secondary
+    note: Installs on developer and employee devices, including through MDM, discovers the agents and connectors in use there such as Claude and Cursor, denies chosen connectors, tools, or agents, and alerts on anomalous agent behavior.
+    source: { url: https://ultra.security/, tier: official, title: Ultra Security homepage, accessed: 2026-10-31, origin: agent, quote: "Ultra finds every agent and connector in your environment, including those built into Claude, Cursor, and the other agents your team uses." }
+primary_cell: { asset: ai-traffic, function: protect }
