@@ -1,0 +1,50 @@
+schema_version: 2
+name: Speakeasy AI Control Plane
+aliases: [Speakeasy]
+vendor:
+  value: Speakeasy
+  source: { url: https://www.speakeasy.com/docs/ai-control-plane, tier: official, title: Speakeasy AI Control Plane documentation, accessed: 2026-10-31, origin: agent }
+url: https://www.speakeasy.com/docs/ai-control-plane
+description:
+  value: "Speakeasy AI Control Plane: Hosted MCP gateway and policy layer that scans agent sessions for secrets and prompt injection, inventories unsanctioned AI tools, and gives agents scoped identities."
+  source: { url: https://www.speakeasy.com/docs/ai-control-plane, tier: official, title: Speakeasy AI Control Plane documentation, accessed: 2026-10-31, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://www.speakeasy.com/docs/ai-control-plane/reference/platform-security, tier: official, title: Speakeasy AI Control Plane platform security, accessed: 2026-10-31, origin: agent }
+status:
+  value: active
+  source: { url: https://www.speakeasy.com/pricing, tier: official, title: Speakeasy pricing, accessed: 2026-10-31, origin: agent }
+compliance_attestations:
+  value: [SOC 2 Type 2, ISO 27001]
+  source: { url: https://www.speakeasy.com/docs/ai-control-plane/reference/platform-security, tier: official, title: Speakeasy AI Control Plane platform security, accessed: 2026-10-31, origin: agent, quote: "The platform maintains the following security certifications and compliance standards: SOC 2 Type II" }
+last_reviewed: 2026-10-31
+changelog:
+  - date: 2026-10-31
+    summary: Added to the catalog from the Speakeasy website and documentation.
+matrix_coverage:
+  - asset: ai-traffic
+    functions: [identify, protect, detect]
+    maturity: primary
+    note: Routes agent tool calls through an MCP gateway with a registry of approved servers, applies block policies that reject matching requests and withhold matching results, and builds an inventory of shadow MCP servers seen in agent traffic with approve or deny reviews.
+    source: { url: https://www.speakeasy.com/docs/ai-control-plane/secure/guardrails, tier: official, title: Speakeasy guardrails documentation, accessed: 2026-10-31, origin: agent, quote: "A matching request is rejected before it reaches the server, and a matching result is withheld from the client." }
+  - asset: runtime-ai-data
+    functions: [protect, detect, respond]
+    maturity: primary
+    note: Guardrail policies scan prompts and tool calls in agent sessions for secrets, sensitive data, prompt injection, and destructive tool use, then flag, warn, deny, or quarantine the session until an admin releases it. Findings feed a ranked risk dashboard and a per-finding event log.
+    source: { url: https://www.speakeasy.com/docs/ai-control-plane/secure, tier: official, title: Speakeasy security and policy documentation, accessed: 2026-10-31, origin: agent, quote: "Policies scan session interactions for secrets, sensitive data, prompt injection, destructive tool use, and unsanctioned MCP servers, then flag or block what they find." }
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, protect]
+    maturity: secondary
+    note: A device agent on enrolled machines reports installed and running coding harnesses, AI assistants, and local models, and admins record an allow or block decision for each MCP-speaking tool at the gateway.
+    source: { url: https://www.speakeasy.com/docs/ai-control-plane/secure/shadow-ai, tier: official, title: Speakeasy shadow AI documentation, accessed: 2026-10-31, origin: agent, quote: "The Harnesses tab lists every agentic coding tool and AI IDE that enrolled devices have reported." }
+  - asset: ai-agent-identities
+    functions: [identify, protect, respond]
+    maturity: secondary
+    note: Each agent gets its own identity with a human owner and a capped policy checked on every request, an identities roster gathers risk findings and kill switches, and credentials can be suspended or revoked independently.
+    source: { url: https://www.speakeasy.com/docs/ai-control-plane/identity/agents, tier: official, title: Speakeasy agent identity documentation, accessed: 2026-10-31, origin: agent, quote: "The agent and owner policies are read live on every request, so removing a permission from either takes effect immediately." }
+  - asset: ai-model
+    functions: [identify]
+    maturity: adjacent
+    note: The device agent lists open models that enrolled machines run locally, such as Ollama or LM Studio.
+    source: { url: https://www.speakeasy.com/docs/ai-control-plane/secure/shadow-ai, tier: official, title: Speakeasy AI Control Plane shadow AI discovery, accessed: 2026-10-31, origin: agent, quote: "The Local Models tab lists open models that enrolled devices run locally, such as Ollama or LM Studio." }
+primary_cell: { asset: ai-traffic, function: protect }
