@@ -15,14 +15,16 @@ status:
   value: active
   source: { url: https://bigid.com/, tier: official, title: BigID data security and AI governance, accessed: 2026-06-09, origin: reviewed }
 compliance_attestations:
-  value: [SOC 2, SOC 3, CSA STAR Level 1, PCI DSS]
-  source: { url: https://bigid.com/certifications-and-assessments/, tier: official, title: BigID Certifications and Assessments, accessed: 2026-06-13, origin: reviewed, quote: "BigID is SOC 2" }
-last_reviewed: 2026-06-09
+  value: [SOC 2 Type 2, SOC 3, CSA STAR Level 1, PCI DSS, TX-RAMP Level 2]
+  source: { url: https://bigid.com/certifications-and-assessments/, tier: official, title: BigID Certifications and Assessments, accessed: 2026-11-02, origin: agent, quote: "BigID is SOC 2 certified, demonstrating that the platform and its supporting processes, people, and controls are designed to help keep customer data secure." }
+last_reviewed: 2026-11-02
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the BigID documentation.
   - date: 2026-10-26
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-11-02
+    summary: Updated the compliance list to match the current certifications page.
 matrix_coverage:
   - asset: training-data
     functions: [identify, protect]

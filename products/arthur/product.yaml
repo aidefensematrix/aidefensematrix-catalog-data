@@ -14,7 +14,7 @@ deployment:
 status:
   value: active
   source: { url: https://www.arthur.ai/, tier: official, title: Arthur AI platform, accessed: 2026-06-09, origin: reviewed }
-last_reviewed: 2026-06-09
+last_reviewed: 2026-11-02
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Arthur AI documentation.

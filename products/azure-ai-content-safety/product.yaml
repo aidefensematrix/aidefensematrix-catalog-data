@@ -3,7 +3,7 @@ name: Azure AI Content Safety
 vendor:
   value: Microsoft
   source: { url: https://azure.microsoft.com/en-us/products/ai-services/ai-content-safety, tier: official, title: Azure AI Content Safety, accessed: 2026-06-09, origin: reviewed }
-aliases: [Azure Prompt Shields, Azure AI Content Safety Prompt Shields]
+aliases: [Azure Prompt Shields, Azure AI Content Safety Prompt Shields, Content Safety in Foundry Control Plane]
 url: https://azure.microsoft.com/en-us/products/ai-services/ai-content-safety
 description:
   value: Microsoft content-safety service for generative AI that uses Prompt Shields to detect and block jailbreaks and indirect prompt injection, and filters prompts and responses across harm categories.
@@ -17,7 +17,7 @@ status:
 compliance_attestations:
   value: [SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, ISO 27701]
   source: { url: https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-soc-2, tier: official, title: Microsoft Azure SOC 2 compliance offering, accessed: 2026-06-13, origin: reviewed, quote: "see the Azure SOC 2 Type 2 attestation report or Cloud services in audit scope" }
-last_reviewed: 2026-06-09
+last_reviewed: 2026-11-02
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Azure AI Content Safety documentation.
@@ -25,6 +25,8 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-10-26
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-11-02
+    summary: Added the Content Safety in Foundry Control Plane alias.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]

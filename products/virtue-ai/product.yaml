@@ -17,9 +17,9 @@ acquisition:
   acquirer: Fortinet
   acquirer_slug: fortiaigate
   announced: 2026-08-17
-  post_acquisition_status: unknown
-  source: { url: https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2026/fortinet-advances-continuous-ai-protection-with-the-acquisition-of-virtue-ai, tier: official, title: Fortinet Advances Continuous AI Protection with the Acquisition of Virtue AI, accessed: 2026-09-22, origin: agent, quote: "Financial terms of the transaction are not disclosed, and the amount paid by Fortinet as consideration is immaterial to Fortinet’s business." }
-last_reviewed: 2026-09-22
+  post_acquisition_status: folded
+  source: { url: https://www.fortinet.com/corporate/about-us/newsroom/press-releases/2026/fortinet-advances-continuous-ai-protection-with-the-acquisition-of-virtue-ai, tier: official, title: Fortinet Advances Continuous AI Protection with the Acquisition of Virtue AI, accessed: 2026-11-02, origin: agent, quote: "This acquisition complements FortiAIGate and further strengthens Fortinet" }
+last_reviewed: 2026-11-02
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Virtue AI documentation.
@@ -27,6 +27,8 @@ changelog:
     summary: Recorded the Fortinet acquisition, announced as completed 2026-08-17.
   - date: 2026-10-26
     summary: Refreshed source links and quotes against the current vendor pages, and set the post-acquisition status to unknown.
+  - date: 2026-11-02
+    summary: Updated the post-acquisition status to folded; the Virtue AI site now redirects to the Fortinet FortiAIGate page.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
