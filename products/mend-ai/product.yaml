@@ -21,6 +21,8 @@ changelog:
     summary: Added verbatim source quotes to coverage and compliance citations.
   - date: 2026-09-22
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-11-02
+    summary: Refreshed a source quote against the current vendor page and updated a coverage note to the current AI-BOM export formats.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, detect]
@@ -30,6 +32,6 @@ matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify]
     maturity: secondary
-    note: AI-BOM discovery extends beyond models to MCPs and RAG pipelines, inventorying orchestration components alongside frameworks in SPDX and CycloneDX machine-readable formats.
-    source: { url: https://www.mend.io/ai-bom/, tier: official, title: Mend.io AI-BOM management page, accessed: 2026-07-04, origin: agent, quote: "frameworks, MCPs, and RAG pipelines. It automatically scans your applications to build a comprehensive, machine-readable AI asset inventory in SPDX and CycloneDX formats" }
+    note: AI-BOM discovery extends beyond models to MCPs and RAG pipelines, inventorying orchestration components alongside frameworks, with AI component data exportable to CSV and AI inventory reports in JSON, XML, or Excel.
+    source: { url: https://www.mend.io/ai-bom/, tier: official, title: Mend.io AI-BOM management page, accessed: 2026-11-02, origin: agent, quote: "Build a continuous AI component inventory by automatically discovering every Shadow AI component, model, framework, MCP, and RAG pipeline across your stack." }
 primary_cell: { asset: ai-model, function: identify }

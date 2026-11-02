@@ -25,6 +25,8 @@ changelog:
     summary: "Verified details from Cisco primary sources and recorded the Cisco acquisition and integration into AI Defense."
   - date: 2026-06-09
     summary: "Recorded the post-acquisition product name (Cisco AI Defense)."
+  - date: 2026-11-02
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, protect]
@@ -40,5 +42,5 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: adjacent
     note: "Supply chain scanning of model files, repositories, and MCP servers and tools."
-    source: { url: https://www.cisco.com/c/en/us/products/collateral/security/ai-defense/ai-defense-ds.html, tier: official, title: "Cisco AI Defense data sheet (supply chain scanning)", accessed: 2026-06-07, origin: reviewed, quote: "AI Cloud Visibility automatically detects MCP servers and agent processes alongside models and applications." }
+    source: { url: https://www.cisco.com/c/en/us/products/collateral/security/ai-defense/ai-defense-ds.html, tier: official, title: "Cisco AI Defense data sheet (supply chain scanning)", accessed: 2026-11-02, origin: agent, quote: "AI Inventory automatically detects MCP servers and agent processes alongside models and applications." }
 primary_cell: { asset: ai-model, function: protect }

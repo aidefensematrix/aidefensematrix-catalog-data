@@ -19,6 +19,8 @@ changelog:
     summary: Added to the catalog from the Aqua Security documentation.
   - date: 2026-09-22
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-11-02
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-workload-platforms
     functions: [identify, protect, detect]
@@ -29,10 +31,10 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: secondary
     note: Prompt-level runtime protection detects prompt injection, jailbreaks, and risky model behavior, enforcing policy in real time and blocking post-compromise activity without additional agents, code changes, or SDKs.
-    source: { url: https://www.aquasec.com/solutions/ai-application-security/, tier: official, title: Aqua AI application security solution page, accessed: 2026-06-10, origin: reviewed, quote: "Protect it with Secure AI Defend the Runtime Layer Defend the Runtime Layer Others Miss Stop prompt-based AI threats and post-compromise activity where AI applications actually run." }
+    source: { url: https://www.aquasec.com/solutions/ai-application-security/, tier: official, title: Aqua AI application security solution page, accessed: 2026-11-02, origin: agent, quote: "Aqua evaluates supported prompts and responses for injection, jailbreak attempts, sensitive data exposure and model misuse, and blocks the interaction before it executes." }
   - asset: ai-model
     functions: [identify]
     maturity: secondary
     note: Discovers which AI models, platforms, and versions are running, where they are used, and whether usage aligns with policy, monitoring in real time at the application layer across SaaS, managed, and self-hosted AI workloads.
-    source: { url: https://www.aquasec.com/solutions/ai-application-security/, tier: official, title: Aqua AI application security solution page, accessed: 2026-06-10, origin: reviewed, quote: "Apply assurance policies based on the OWASP Top 10 LLM Risks to strengthen your LLM security posture during development." }
+    source: { url: https://www.aquasec.com/solutions/ai-application-security/, tier: official, title: Aqua AI application security solution page, accessed: 2026-11-02, origin: agent, quote: "Aqua maps LLM use, model types, platforms and versions across environments and shows which applications communicate with which AI services." }
 primary_cell: { asset: ai-workload-platforms, function: protect }

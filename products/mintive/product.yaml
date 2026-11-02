@@ -20,7 +20,7 @@ renamed_from:
   source: { url: https://www.mintmcp.com/blog/meet-mintive, tier: official, title: "Meet Mintive", accessed: 2026-10-12, origin: agent }
 compliance_attestations:
   value: [SOC 2 Type 2]
-  source: { url: https://www.mintmcp.com/, tier: official, title: MintMCP homepage, accessed: 2026-10-05, origin: agent, quote: "SOC 2 Type II audited, compliant with HIPAA standards" }
+  source: { url: https://www.mintmcp.com/, tier: official, title: MintMCP homepage, accessed: 2026-11-02, origin: agent, quote: "SOC 2 Type II audited Compliant with HIPAA standards" }
 last_reviewed: 2026-06-10
 changelog:
   - date: 2026-06-10
@@ -31,6 +31,8 @@ changelog:
     summary: Added inline protection to the runtime AI data coverage row and added compliance attestations.
   - date: 2026-10-12
     summary: Renamed from MintMCP to Mintive per the vendor announcement and refreshed one coverage citation.
+  - date: 2026-11-02
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
@@ -46,5 +48,5 @@ matrix_coverage:
     functions: [detect, protect]
     maturity: secondary
     note: Mint Guard inspects agent traffic inline, blocking prompt injection and flagging risky tool calls, and activity logs covering tool invocations and prompt submissions export to SIEM or observability platforms.
-    source: { url: https://www.mintmcp.com/, tier: official, title: MintMCP homepage, accessed: 2026-10-05, origin: agent, quote: "Mint Guard blocks prompt injection and flags risky tool calls inline" }
+    source: { url: https://www.mintmcp.com/, tier: official, title: MintMCP homepage, accessed: 2026-11-02, origin: agent, quote: "Mint Guard screens every call for prompt injection, exposed secrets, and personal data before it reaches your systems." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

@@ -21,15 +21,17 @@ last_reviewed: 2026-06-09
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Protecto documentation.
+  - date: 2026-11-02
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Sits between enterprise data and LLMs, agents, and MCP pipelines, applying dynamic masking at inference and keeping a full audit trail of who accessed what.
-    source: { url: https://www.protecto.ai/, tier: official, title: Protecto context security for agentic AI, accessed: 2026-06-09, origin: reviewed, quote: "It detects sensitive information, masks it in real time, enforces who sees what, and logs everything." }
+    source: { url: https://www.protecto.ai/, tier: official, title: Protecto context security for agentic AI, accessed: 2026-11-02, origin: agent, quote: "Detect, mask, and control sensitive data across every AI interaction." }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
     note: Role-based access for AI agents, so each agent exposes only the data the requesting user is permitted to see.
-    source: { url: https://www.protecto.ai/, tier: official, title: Protecto RBAC for AI agents, accessed: 2026-06-09, origin: reviewed, quote: "It detects sensitive information, masks it in real time, enforces who sees what, and logs everything." }
+    source: { url: https://www.protecto.ai/, tier: official, title: Protecto RBAC for AI agents, accessed: 2026-11-02, origin: agent, quote: "Protecto finds business-confidential context such as deal terms, risk analysis, HR notes, and legal strategy, and CBAC controls who and which agents can see it." }
 primary_cell: { asset: runtime-ai-data, function: protect }
