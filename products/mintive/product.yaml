@@ -3,25 +3,25 @@ name: Mintive
 aliases: [MintMCP]
 vendor:
   value: Mintive
-  source: { url: https://www.mintmcp.com/, tier: official, title: "Mintive homepage", accessed: 2026-10-12, origin: agent }
-url: https://www.mintmcp.com/
+  source: { url: https://www.mintive.com/, tier: official, title: "Mintive homepage", accessed: 2026-11-02, origin: agent }
+url: https://www.mintive.com/
 description:
   value: "Mintive: Managed MCP gateway that authenticates AI clients to MCP servers, enforces access policies, and logs every tool call for audit."
-  source: { url: https://www.mintmcp.com/docs/intro, tier: official, title: "Mintive documentation introduction", accessed: 2026-10-12, origin: agent }
+  source: { url: https://www.mintive.com/docs/intro, tier: official, title: "Mintive documentation introduction", accessed: 2026-11-02, origin: agent }
 deployment:
   value: [saas]
-  source: { url: https://docs.mintmcp.com/, tier: official, title: MintMCP documentation introduction, accessed: 2026-06-10, origin: reviewed }
+  source: { url: https://www.mintive.com/docs/intro, tier: official, title: Mintive documentation introduction, accessed: 2026-11-02, origin: agent }
 status:
   value: active
-  source: { url: https://www.mintmcp.com/, tier: official, title: MintMCP homepage, accessed: 2026-06-10, origin: reviewed }
+  source: { url: https://www.mintive.com/, tier: official, title: Mintive homepage, accessed: 2026-11-02, origin: agent }
 renamed_from:
   name: MintMCP
   date: 2026-10-12
-  source: { url: https://www.mintmcp.com/blog/meet-mintive, tier: official, title: "Meet Mintive", accessed: 2026-10-12, origin: agent }
+  source: { url: https://www.mintive.com/blog/meet-mintive, tier: official, title: "Meet Mintive", accessed: 2026-11-02, origin: agent }
 compliance_attestations:
   value: [SOC 2 Type 2]
-  source: { url: https://www.mintmcp.com/, tier: official, title: MintMCP homepage, accessed: 2026-11-02, origin: agent, quote: "SOC 2 Type II audited Compliant with HIPAA standards" }
-last_reviewed: 2026-06-10
+  source: { url: https://www.mintive.com/, tier: official, title: Mintive homepage, accessed: 2026-11-02, origin: agent, quote: "SOC 2 Type II audited Compliant with HIPAA standards" }
+last_reviewed: 2026-11-02
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the MintMCP documentation.
@@ -33,20 +33,22 @@ changelog:
     summary: Renamed from MintMCP to Mintive per the vendor announcement and refreshed one coverage citation.
   - date: 2026-11-02
     summary: Refreshed source quotes against the current vendor pages.
+  - date: 2026-11-02
+    summary: Updated source links to the mintive.com domain.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: Enterprise MCP gateway between AI clients and MCP servers that handles authentication, enforces access policies, and logs every tool call; admins curate a catalog of approved servers with preconfigured credentials, role-based tool sets, and centralized credential management.
-    source: { url: https://www.mintmcp.com/docs/intro, tier: official, title: "Mintive documentation introduction", accessed: 2026-10-12, origin: agent, quote: "Approve the MCP servers your team can use and bundle tools by role, so agents reach only what you permit" }
+    source: { url: https://www.mintive.com/docs/intro, tier: official, title: "Mintive documentation introduction", accessed: 2026-11-02, origin: agent, quote: "Approve the MCP servers your team can use and bundle tools by role, so agents reach only what you permit" }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary
     note: Applies enterprise SSO and RBAC controls to MCP access with fine-grained permissions and instant revocation; API keys stay within the gateway so AI clients never hold them.
-    source: { url: https://www.mintmcp.com/security-governance, tier: official, title: MintMCP security and governance page, accessed: 2026-07-04, origin: agent, quote: "API keys never exposed to clients Enterprise SSO and RBAC controls" }
+    source: { url: https://www.mintive.com/security-governance, tier: official, title: Mintive security and governance page, accessed: 2026-11-02, origin: agent, quote: "API keys never exposed to clients Enterprise SSO and RBAC controls" }
   - asset: runtime-ai-data
     functions: [detect, protect]
     maturity: secondary
     note: Mint Guard inspects agent traffic inline, blocking prompt injection and flagging risky tool calls, and activity logs covering tool invocations and prompt submissions export to SIEM or observability platforms.
-    source: { url: https://www.mintmcp.com/, tier: official, title: MintMCP homepage, accessed: 2026-11-02, origin: agent, quote: "Mint Guard screens every call for prompt injection, exposed secrets, and personal data before it reaches your systems." }
+    source: { url: https://www.mintive.com/, tier: official, title: Mintive homepage, accessed: 2026-11-02, origin: agent, quote: "Mint Guard screens every call for prompt injection, exposed secrets, and personal data before it reaches your systems." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

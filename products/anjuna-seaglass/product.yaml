@@ -14,7 +14,7 @@ deployment:
 status:
   value: active
   source: { url: https://www.anjuna.io/product/seaglass, tier: official, title: Anjuna Seaglass product page, accessed: 2026-08-17, origin: agent }
-last_reviewed: 2026-08-17
+last_reviewed: 2026-11-02
 changelog:
   - date: 2026-08-17
     summary: Added to the catalog from the Anjuna documentation.

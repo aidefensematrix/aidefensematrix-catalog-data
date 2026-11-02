@@ -18,7 +18,7 @@ renamed_from:
   name: Fairly AI
   date: 2025-06-18
   source: { url: https://asenion.ai/blog/fairly-ai-acquires-anch-ai-to-create-asenion, tier: official, title: Fairly AI acquires Anch.AI to launch Asenion, accessed: 2026-06-09, origin: reviewed }
-last_reviewed: 2026-06-09
+last_reviewed: 2026-11-02
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the Asenion documentation. Formerly Fairly AI, which acquired Anch.AI and rebranded to Asenion, announced 2025-06-18.

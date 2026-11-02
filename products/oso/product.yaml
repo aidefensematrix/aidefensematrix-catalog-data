@@ -12,9 +12,14 @@ deployment:
   value: [saas]
   source: { url: https://www.osohq.com/docs/oso-for-agents/integrations/edge-proxy, tier: official, title: Oso edge proxy documentation, accessed: 2026-06-10, origin: reviewed }
 status:
-  value: active
-  source: { url: https://www.osohq.com/, tier: official, title: Oso for Agents homepage, accessed: 2026-06-10, origin: reviewed }
-last_reviewed: 2026-06-10
+  value: acquired
+  source: { url: https://www.osohq.com/post/oso-has-been-acquired-by-tiny, tier: official, title: Oso has been acquired by Tiny, accessed: 2026-11-02, origin: agent, quote: "Big news at Oso today: we are now a Tiny Company." }
+acquisition:
+  acquirer: Tiny
+  announced: 2026-10-06
+  post_acquisition_status: standalone
+  source: { url: https://www.osohq.com/post/oso-has-been-acquired-by-tiny, tier: official, title: Oso has been acquired by Tiny, accessed: 2026-11-02, origin: agent, quote: "Big news at Oso today: we are now a Tiny Company." }
+last_reviewed: 2026-11-02
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Oso documentation.
@@ -24,6 +29,8 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-09-22
     summary: "Updated a coverage note against the current vendor page."
+  - date: 2026-11-02
+    summary: Recorded the acquisition by Tiny announced in October 2026.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, detect]
