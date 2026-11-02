@@ -18,15 +18,17 @@ last_reviewed: 2026-06-24
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the FireTail documentation.
+  - date: 2026-11-02
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, detect]
     maturity: primary
     note: An AI security posture management engine automatically discovers AI and LLM integrations across code and cloud and assesses their security risks.
-    source: { url: https://www.firetail.ai/ai-security, tier: official, title: FireTail AI security page, accessed: 2026-06-24, origin: reviewed, quote: "FireTail's AI security posture management engine automatically finds your AI integrations and assesses security risks." }
+    source: { url: https://www.firetail.ai/ai-security, tier: official, title: FireTail AI security page, accessed: 2026-11-02, origin: agent, quote: "FireTail inventories every model, agent and integration, traces their behavior, and catches failures before they reach production." }
   - asset: runtime-ai-data
     functions: [detect, protect]
     maturity: secondary
     note: Detects and helps block prompt injection, sensitive-data leaks, supply-chain risk, and system-prompt exposure with automated threat detection, policy enforcement, and real-time alerts.
-    source: { url: https://www.firetail.ai/ai-security, tier: official, title: FireTail AI security page, accessed: 2026-06-24, origin: reviewed, quote: "FireTail protects against prompt injection, sensitive data leaks, supply chain risks, and system prompt exposure with automated threat detection, policy enforcement, and real-time alerts." }
+    source: { url: https://www.firetail.ai/ai-security, tier: official, title: FireTail AI security page, accessed: 2026-11-02, origin: agent, quote: "FireTail discovers every one, flags risky prompts and sensitive data before they leave, and enforces your AI policies." }
 primary_cell: { asset: ai-model, function: identify }

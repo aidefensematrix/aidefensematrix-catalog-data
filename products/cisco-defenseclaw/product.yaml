@@ -22,10 +22,12 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-10-05
     summary: Updated the description and refreshed source quotes.
+  - date: 2026-11-02
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Admission control scans skills and MCP servers before an agent loads them, discovery finds the agents, local models, MCP servers, and skills on a machine, and runtime guardrails inspect tool calls and block risky ones by policy with an audit trail.
-    source: { url: https://cisco-ai-defense.github.io/defenseclaw/, tier: official, title: DefenseClaw documentation site, accessed: 2026-10-05, origin: agent, quote: "Scan skills and MCP servers, block risky tool calls and keep an audit trail for Claude Code, Codex, Copilot, Cursor and 8 more" }
+    source: { url: https://cisco-ai-defense.github.io/defenseclaw/, tier: official, title: DefenseClaw documentation site, accessed: 2026-11-02, origin: agent, quote: "Scan skills and MCP servers, block risky tool calls and keep an audit trail for Claude Code, Codex, Copilot, Cursor" }
 primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

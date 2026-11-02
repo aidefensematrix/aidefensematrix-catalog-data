@@ -1,7 +1,7 @@
 schema_version: 2
 name: Sonatype Repository Firewall
-aliases: []
-url: https://www.sonatype.com/products/sonatype-repository-firewall
+aliases: [Sonatype Firewall]
+url: https://www.sonatype.com/products/sonatype-firewall
 vendor:
   value: Sonatype
   source: { url: https://www.sonatype.com/products/language-support/hugging-face, tier: official, title: Sonatype Hugging Face model support, accessed: 2026-06-13, origin: reviewed }
@@ -21,6 +21,8 @@ last_reviewed: 2026-06-13
 changelog:
   - date: 2026-06-13
     summary: Added to the catalog from the Sonatype Hugging Face model support documentation.
+  - date: 2026-11-02
+    summary: Updated the product link to the current vendor page and added the Sonatype Firewall alias.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, protect]
