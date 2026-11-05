@@ -1,0 +1,27 @@
+schema_version: 2
+name: Beelzebub MCP Deception
+aliases: [Beelzebub MCP Honeypot, Beelzebub MCP Tripwire]
+vendor:
+  value: Beelzebub
+  source: { url: https://github.com/beelzebub-labs/beelzebub, tier: official, title: Beelzebub repository, accessed: 2026-11-04, origin: agent }
+url: https://docs.beelzebub.ai/protocols/mcp
+description:
+  value: "Beelzebub MCP Deception: Decoy MCP tools in the open-source Beelzebub runtime that record unexpected calls by an AI agent, giving evidence of prompt-injection attempts during agent testing."
+  source: { url: https://docs.beelzebub.ai/protocols/mcp, tier: official, title: "MCP Deception, Beelzebub documentation", accessed: 2026-11-04, origin: agent }
+deployment:
+  value: [self-hosted]
+  source: { url: https://github.com/beelzebub-labs/beelzebub, tier: official, title: Beelzebub repository, accessed: 2026-11-04, origin: agent }
+status:
+  value: active
+  source: { url: https://github.com/beelzebub-labs/beelzebub, tier: official, title: Beelzebub repository, accessed: 2026-11-04, origin: agent }
+last_reviewed: 2026-11-04
+changelog:
+  - date: 2026-11-04
+    summary: Added to the catalog from the Beelzebub documentation and repository.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [detect]
+    maturity: primary
+    note: A YAML-configured MCP service exposes bait tools with synthetic handlers. A call to one is recorded as a security event with the tool name, parameters, client, and timestamp, giving evidence of prompt injection or guardrail bypass when testing an isolated agent. It does not block the prompt.
+    source: { url: https://docs.beelzebub.ai/protocols/mcp, tier: official, title: "MCP Deception, Beelzebub documentation", accessed: 2026-11-04, origin: agent, quote: "Expose decoy tools that reveal prompt-injection attempts against AI agents." }
+primary_cell: { asset: ai-coding-orchestration-tools, function: detect }
