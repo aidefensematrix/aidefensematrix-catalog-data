@@ -1,0 +1,35 @@
+schema_version: 2
+name: JFrog AI Security
+aliases: [JFrog AI Catalog]
+url: https://jfrog.com/ai-security/
+vendor:
+  value: JFrog
+  source: { url: https://jfrog.com/ai-security/, tier: official, title: JFrog AI Security product page, accessed: 2026-11-05, origin: agent }
+description:
+  value: "JFrog AI Security: Finds and scans the agent skills, plugins, MCP servers, and models that coding agents use, blocks unapproved ones, and limits agents to approved MCP servers via a local proxy."
+  source: { url: https://jfrog.com/ai-security/, tier: official, title: JFrog AI Security product page, accessed: 2026-11-05, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://docs.jfrog.com/ai-ml/docs/skills-registry, tier: official, title: JFrog Skills Registry documentation, accessed: 2026-11-05, origin: agent }
+status:
+  value: active
+  source: { url: https://jfrog.com/press-room/jfrog-embeds-security-into-the-agentic-workforce/, tier: official, title: JFrog Embeds Security into the Agentic Workforce, accessed: 2026-11-05, origin: agent }
+compliance_attestations:
+  value: [SOC 2 Type 2, SOC 3, ISO 27001, ISO 27701, ISO 27017, TISAX, CSA STAR Level 1, Cyber Essentials]
+  source: { url: https://jfrog.com/trust/certificate-program/, tier: official, title: JFrog Certificate Program, accessed: 2026-11-05, origin: agent, quote: "SOC 2 Type II Report" }
+last_reviewed: 2026-11-05
+changelog:
+  - date: 2026-11-05
+    summary: Added to the catalog from the JFrog AI Security product page and documentation.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [protect, identify, detect]
+    maturity: primary
+    note: Blocks unapproved agent skills, plugins, and MCP servers, and routes coding agents through the Agent Guard local proxy so they reach only approved MCP servers. Also inventories the skills, MCP servers, and plugins on developer machines and scans skills and plugins for malicious instructions.
+    source: { url: https://jfrog.com/ai-security/, tier: official, title: JFrog AI Security product page, accessed: 2026-11-05, origin: agent, quote: "It detects agent skills, plugins, MCP servers, and models, scans them for risk, and blocks anything you have not approved." }
+  - asset: ai-model
+    functions: [identify, protect]
+    maturity: secondary
+    note: Shadow AI detection keeps a per-organization inventory of AI models found in JFrog repositories, by project, repository, and path. Administrators can allow or block each model, and JFrog Curation enforces a block on later downloads. Scanning models for malicious code is a JFrog Xray capability.
+    source: { url: https://docs.jfrog.com/ai-ml/docs/detect-shadow-ai, tier: official, title: JFrog Detect Shadow AI documentation, accessed: 2026-11-05, origin: agent, quote: "Block prevents the model from being downloaded or used going forward." }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }
