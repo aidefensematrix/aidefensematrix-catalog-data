@@ -1,31 +1,39 @@
 schema_version: 2
 name: AIShield
+aliases: [Bosch AIShield]
 vendor:
-  value: Bosch
-  source: { url: https://www.boschaishield.com/, tier: official, title: AIShield homepage, accessed: 2026-06-10, origin: reviewed }
-url: https://www.boschaishield.com/
+  value: AIShield
+  source: { url: https://aishield.security/about-us/, tier: official, title: About AIShield, accessed: 2026-11-07, origin: agent }
+url: https://aishield.security/
 description:
-  value: "AIShield: Bosch product line pairing AISpectra model vulnerability scanning and red teaming with Guardian runtime guardrails and an ML firewall for GenAI and ML apps."
-  source: { url: https://www.boschaishield.com/, tier: official, title: AIShield homepage, accessed: 2026-06-10, origin: reviewed }
+  value: "AIShield: AISpectra Model Scanner and AISpectra Red Teaming test models and LLM apps before deployment, and the AIGuardian AI Firewall applies runtime guardrails to LLMs and AI agents."
+  source: { url: https://aishield.security/, tier: official, title: AIShield homepage, accessed: 2026-11-07, origin: agent }
 deployment:
   value: [saas, self-hosted]
-  source: { url: https://www.boschaishield.com/products/aishield-aispectra/, tier: official, title: AIShield AISpectra product page, accessed: 2026-06-10, origin: reviewed }
+  source: { url: https://aishield.security/, tier: official, title: AIShield homepage, accessed: 2026-11-07, origin: agent }
 status:
-  value: active
-  source: { url: https://www.boschaishield.com/, tier: official, title: AIShield homepage, accessed: 2026-06-10, origin: reviewed }
-last_reviewed: 2026-07-16
+  value: acquired
+  source: { url: https://www.business-standard.com/technology/artificial-intelligence/protectt-ai-majority-stake-aishield-bosch-ai-security-126102700868_1.html, tier: press, title: Protectt.ai makes majority stake investment in security firm AIShield, accessed: 2026-11-07, origin: agent }
+acquisition:
+  acquirer: Protectt.ai
+  announced: 2026-10-27
+  post_acquisition_status: standalone
+  source: { url: https://www.business-standard.com/technology/artificial-intelligence/protectt-ai-majority-stake-aishield-bosch-ai-security-126102700868_1.html, tier: press, title: Protectt.ai makes majority stake investment in security firm AIShield, accessed: 2026-11-07, origin: agent }
+last_reviewed: 2026-11-07
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the AIShield documentation.
+  - date: 2026-11-07
+    summary: Changed the vendor from Bosch to AIShield after its December 2025 spin-off, recorded the Protectt.ai majority stake announced 2026-10-27, renamed Guardian to AIGuardian, removed protect from the AI Model row, and re-sourced the entry to aishield.security.
 matrix_coverage:
   - asset: ai-model
-    functions: [identify, detect, protect]
+    functions: [identify, detect]
     maturity: primary
-    note: AISpectra discovers models and notebooks across cloud platforms and CI/CD pipelines and runs vulnerability assessments and red teaming against ML models and LLMs; Guardian ML Firewall shields deployed models from extraction, evasion, and poisoning attempts with real-time intrusion detection.
-    source: { url: https://www.boschaishield.com/products/aishield-aispectra/, tier: official, title: AIShield AISpectra product page, accessed: 2026-06-10, origin: reviewed, quote: "Scan your AI assets for vulnerabilities and perform Red Teaming for ML models and LLMs." }
+    note: AISpectra Model Scanner discovers models and notebooks in repositories such as GitHub, Hugging Face, and AWS S3 and scans them for serialization attacks, malicious code, and hardcoded secrets; AISpectra Red Teaming runs automated attack simulations against LLMs and AI apps before deployment.
+    source: { url: https://aishield.security/aispectra-model-scanner/, tier: official, title: AISpectra Model Scanner, accessed: 2026-11-07, origin: agent, quote: "Identifies issues such as hardcoded secrets, model serialization attacks, and unsafe operations." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
-    note: Guardian GenAI Guardrails screen LLM inputs and outputs in real time, mitigating prompt injection, jailbreaks, and sensitive data exposure with content filtering and PII anonymization.
-    source: { url: https://www.boschaishield.com/products/aishield-guardian/, tier: official, title: AIShield Guardian product page, accessed: 2026-07-05, origin: agent, quote: "Designed for seamless integration, Guardian enables real-time threat detection, compliance enforcement, and advanced content filtering." }
+    note: AIGuardian AI Firewall screens LLM and agent traffic in real time, blocking prompt injection, filtering toxic content, and redacting sensitive information, with audit and block modes and monitoring of API interactions.
+    source: { url: https://aishield.security/aiguardian-ai-firewall/, tier: official, title: AIGuardian AI Firewall, accessed: 2026-11-07, origin: agent, quote: "Guardian combines dynamic content policies, privacy controls, and advanced threat detection to protect LLMs and AI agents in real time." }
 primary_cell: { asset: ai-model, function: detect }

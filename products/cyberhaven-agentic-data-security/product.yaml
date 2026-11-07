@@ -1,0 +1,39 @@
+schema_version: 2
+name: Cyberhaven Agentic Data Security
+aliases: [Cyberhaven AI Security, Agentic AI Security]
+url: https://www.cyberhaven.com/product/ai-security
+vendor:
+  value: Cyberhaven
+  source: { url: https://www.cyberhaven.com/product/ai-security, tier: official, title: Cyberhaven AI Data Security for Apps and Agents, accessed: 2026-11-07, origin: agent }
+description:
+  value: "Cyberhaven Agentic Data Security: Inventories AI apps, agents, and MCP servers across endpoints and SaaS, traces their data use with lineage, and blocks, warns, or redacts sensitive data in real time."
+  source: { url: https://www.cyberhaven.com/product/ai-security, tier: official, title: Cyberhaven AI Data Security for Apps and Agents, accessed: 2026-11-07, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://www.cyberhaven.com/legal/security-policy, tier: official, title: Cyberhaven Security and Privacy Policy, accessed: 2026-11-07, origin: agent }
+status:
+  value: active
+  source: { url: https://www.cyberhaven.com/press-releases/cyberhaven-delivers-agentic-data-security, tier: official, title: Cyberhaven Delivers Agentic Data Security, accessed: 2026-11-07, origin: agent, quote: "ADS is available for purchase today." }
+last_reviewed: 2026-11-07
+changelog:
+  - date: 2026-06-13
+    summary: Added to the catalog from the Cyberhaven AI Security documentation.
+  - date: 2026-11-07
+    summary: Renamed to Cyberhaven Agentic Data Security, refreshed the description, sources, and coverage notes, moved the AI tool inventory coverage to AI Coding and Orchestration Tools, and added AI Traffic discovery coverage.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [identify, detect, protect]
+    maturity: primary
+    note: Endpoint agent inventories AI apps, coding assistants in IDEs and CLIs, agent frameworks, and MCP servers, enforces allow-lists that block shadow MCP servers, and traces AI-generated content back to the originating agent, session, and source data.
+    source: { url: https://www.cyberhaven.com/product/ai-security, tier: official, title: Cyberhaven AI Data Security for Apps and Agents, accessed: 2026-11-07, origin: agent, quote: "Cyberhaven uses an endpoint agent to continuously inventory AI tools as they appear across the organization, including mainstream SaaS generative AI applications, coding assistants running in IDEs and CLIs, open-source agent frameworks, and Model Context Protocol (MCP) servers." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Enforces data-level policies using lineage, blocking, warning, or redacting sensitive data in real time across prompts, responses, and downstream agent data flows based on data context and tool risk.
+    source: { url: https://www.cyberhaven.com/product/ai-security, tier: official, title: Cyberhaven AI Data Security for Apps and Agents, accessed: 2026-11-07, origin: agent, quote: "Cyberhaven can block, warn, or redact in real time based on data context and the risk score of the tool involved. Enforcement operates across the full agentic workflow, including prompts, responses, and downstream data flows." }
+  - asset: ai-traffic
+    functions: [identify]
+    maturity: secondary
+    note: Discovers AI apps and agents in use across endpoints, browsers, and the cloud, including unsanctioned apps, scores each for risk, and categorizes applications as sanctioned, unsanctioned, tolerated, or restricted.
+    source: { url: https://www.cyberhaven.com/product/ai-security, tier: official, title: Cyberhaven AI Data Security for Apps and Agents, accessed: 2026-11-07, origin: agent, quote: "Discover AI tools and agents running across endpoints, browsers, and the cloud, including unsanctioned apps, and score each for risk." }
+primary_cell: { asset: ai-coding-orchestration-tools, function: identify }
