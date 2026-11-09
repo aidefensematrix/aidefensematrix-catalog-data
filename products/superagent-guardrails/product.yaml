@@ -18,6 +18,8 @@ last_reviewed: 2026-10-31
 changelog:
   - date: 2026-10-31
     summary: Added to the catalog from the Superagent GitHub repository and documentation.
+  - date: 2026-11-09
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
@@ -28,5 +30,5 @@ matrix_coverage:
     functions: [protect, detect]
     maturity: secondary
     note: Runtime Guardrails install hooks for coding agents such as Claude Code, Cursor, and Codex on each endpoint, evaluate events locally against YAML rules, and record a finding or deny the action per rule, with alerts sent to webhooks.
-    source: { url: https://www.superagent.sh/docs/features/agent-guardrails/runtime, tier: official, title: Superagent Runtime Guardrails documentation, accessed: 2026-10-31, origin: agent, quote: "Monitor or block risky coding-agent actions with endpoint-local rules." }
+    source: { url: https://www.superagent.sh/docs/products/runtime-guardrails, tier: official, title: Superagent Runtime Guardrails documentation, accessed: 2026-11-09, origin: agent, quote: "Monitor or block risky agent actions with endpoint-local rules." }
 primary_cell: { asset: runtime-ai-data, function: protect }

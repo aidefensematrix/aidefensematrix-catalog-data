@@ -25,6 +25,8 @@ changelog:
     summary: Refreshed a matrix coverage source quote.
   - date: 2026-10-26
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-11-09
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect]
@@ -40,7 +42,7 @@ matrix_coverage:
     functions: [protect]
     maturity: secondary
     note: Runs AI workloads (inference, agents, training) in TEEs via confidential VMs and the c8s Confidential Kubernetes platform.
-    source: { url: https://confidential.ai/docs/c8s, tier: official, title: Confidential AI c8s Confidential Kubernetes docs, accessed: 2026-09-22, origin: agent, quote: "workloads run in hardware-encrypted memory the host cannot read." }
+    source: { url: https://confidential.ai/docs/c8s/overview, tier: official, title: Confidential AI c8s overview docs, accessed: 2026-11-09, origin: agent, quote: "The TEE isolates execution and encrypts guest memory to protect data in use against host inspection and tampering." }
   - asset: training-data
     functions: [protect]
     maturity: secondary
