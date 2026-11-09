@@ -28,12 +28,14 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-09-22
     summary: "Updated the post-acquisition name to CrowdStrike Falcon Guardian."
+  - date: 2026-11-09
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Inspects prompts and responses to detect prompt injection, redact sensitive data, and block malicious content.
-    source: { url: https://www.crowdstrike.com/en-us/platform/falcon-guardian-aidr/, tier: official, title: CrowdStrike Falcon AIDR, accessed: 2026-09-22, origin: agent, quote: "Detect and stop malicious interactions and protect sensitive data in transit without disrupting legitimate AI workflows." }
+    source: { url: https://www.crowdstrike.com/en-us/platform/falcon-guardian-aidr/, tier: official, title: CrowdStrike Falcon Guardian, accessed: 2026-11-09, origin: agent, quote: "Falcon Guardian identifies sensitive data in supported AI interactions and applies policy-based controls to help prevent inappropriate exposure." }
   - asset: ai-agent-identities
     functions: [protect, detect]
     maturity: secondary

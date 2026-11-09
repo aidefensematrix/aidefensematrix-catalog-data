@@ -23,12 +23,14 @@ changelog:
     summary: Added to the catalog from the Protecto documentation.
   - date: 2026-11-02
     summary: Refreshed source quotes against the current vendor pages.
+  - date: 2026-11-09
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Sits between enterprise data and LLMs, agents, and MCP pipelines, applying dynamic masking at inference and keeping a full audit trail of who accessed what.
-    source: { url: https://www.protecto.ai/, tier: official, title: Protecto context security for agentic AI, accessed: 2026-11-02, origin: agent, quote: "Detect, mask, and control sensitive data across every AI interaction." }
+    source: { url: https://www.protecto.ai/, tier: official, title: Protecto context security for agentic AI, accessed: 2026-11-09, origin: agent, quote: "Protecto masks sensitive data at runtime, so AI stays accurate and real values reach only authorized users." }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary

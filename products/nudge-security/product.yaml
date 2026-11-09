@@ -3,10 +3,10 @@ name: Nudge Security
 vendor:
   value: Nudge Security
   source: { url: https://www.nudgesecurity.com/, tier: official, title: Nudge Security homepage, accessed: 2026-07-27, origin: agent }
-url: https://www.nudgesecurity.com/use-cases/ai-security
+url: https://www.nudgesecurity.com/use-cases/ai-security-3
 description:
   value: "Nudge Security: SaaS security service that inventories shadow AI apps, accounts, and employee-built agents from email and browser signals, then enforces AI use policies in the browser."
-  source: { url: https://www.nudgesecurity.com/use-cases/ai-security, tier: official, title: Nudge Security AI security and governance use case, accessed: 2026-07-27, origin: agent }
+  source: { url: https://www.nudgesecurity.com/use-cases/ai-security-3, tier: official, title: Nudge Security AI security and governance use case, accessed: 2026-11-09, origin: agent }
 deployment:
   value: [saas]
   source: { url: https://www.nudgesecurity.com/pricing, tier: official, title: Nudge Security pricing page, accessed: 2026-07-27, origin: agent }
@@ -24,12 +24,14 @@ changelog:
     summary: Refined matrix coverage.
   - date: 2026-10-03
     summary: "Corrected matrix coverage (erratum): moved AI app discovery to the AI Traffic row."
+  - date: 2026-11-09
+    summary: Updated the product link and refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-traffic
     functions: [identify]
     maturity: primary
     note: Builds a historical and continuous inventory of AI apps and the accounts behind them using email-based discovery, an identity provider integration, and a browser extension, covering tools adopted before deployment.
-    source: { url: https://www.nudgesecurity.com/use-cases/ai-security, tier: official, title: Nudge Security AI security and governance use case, accessed: 2026-10-03, origin: agent, quote: "Nudge Security can discover: AI apps, user accounts, OAuth integrations between AI tools and other apps" }
+    source: { url: https://www.nudgesecurity.com/use-cases/ai-security-3, tier: official, title: Nudge Security AI security and governance use case, accessed: 2026-11-09, origin: agent, quote: "Our patented email-based discovery surfaces all AI apps and accounts, even those created before Nudge Security was deployed." }
   - asset: ai-agent-identities
     functions: [identify]
     maturity: secondary
@@ -39,10 +41,10 @@ matrix_coverage:
     functions: [detect, protect]
     maturity: primary
     note: Watches what employees send to AI tools through the browser extension, flagging file uploads, copy and paste of sensitive content, and API key exposure, and applies AI use policies in the browser while allowing risky app-to-AI data integrations to be revoked.
-    source: { url: https://www.nudgesecurity.com/use-cases/ai-security, tier: official, title: Nudge Security AI security and governance use case, accessed: 2026-07-27, origin: agent, quote: "Monitor AI chatbot conversations for sensitive data" }
+    source: { url: https://www.nudgesecurity.com/use-cases/ai-security-3, tier: official, title: Nudge Security AI security and governance use case, accessed: 2026-11-09, origin: agent, quote: "Monitor AI chatbot conversations for sensitive data" }
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect]
     maturity: adjacent
     note: Surfaces the integration paths that give AI tools access to business data, including OAuth grants, API connections, and MCP connections into critical SaaS apps, and lets an administrator revoke a risky grant so the connected tool loses access.
-    source: { url: https://www.nudgesecurity.com/use-cases/ai-security, tier: official, title: Nudge Security AI security and governance use case, accessed: 2026-07-27, origin: agent, quote: "our API connections into your other critical SaaS apps discovers app-to-app integrations that allow AI tools access to your data, including MCP connections" }
+    source: { url: https://www.nudgesecurity.com/use-cases/ai-security-3, tier: official, title: Nudge Security AI security and governance use case, accessed: 2026-11-09, origin: agent, quote: "our API connections into your other critical SaaS apps discovers app-to-app integrations that allow AI tools access to your data, including MCP connections" }
 primary_cell: { asset: ai-traffic, function: identify }
