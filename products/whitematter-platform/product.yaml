@@ -1,0 +1,56 @@
+schema_version: 2
+name: WhiteMatter Platform
+aliases: [QuilrAI Platform, QuilrAI, Quilr]
+url: https://whitematter.io/platform
+vendor:
+  value: WhiteMatter
+  source: { url: https://whitematter.io/platform, tier: official, title: WhiteMatter platform, accessed: 2026-11-16, origin: agent }
+description:
+  value: "WhiteMatter Platform: Discovers AI agents across endpoints, SaaS, cloud, and code, gives each a signed policy, and enforces it at gateways and endpoints to block, hold, or redact actions."
+  source: { url: https://whitematter.io/platform, tier: official, title: WhiteMatter platform, accessed: 2026-11-16, origin: agent }
+deployment:
+  value: [saas, self-hosted]
+  source: { url: https://whitematter.io/security, tier: official, title: WhiteMatter security and compliance, accessed: 2026-11-16, origin: agent }
+status:
+  value: active
+  source: { url: https://whitematter.io/platform, tier: official, title: WhiteMatter platform, accessed: 2026-11-16, origin: agent }
+renamed_from:
+  name: QuilrAI
+  date: 2026-11-10
+  source: { url: https://www.prnewswire.com/news-releases/whitematter-raises-20m-series-a-to-close-the-growing-gap-between-ai-autonomy-and-enterprise-governance-302934477.html, tier: press, title: WhiteMatter raises Series A, accessed: 2026-11-16, origin: agent, quote: "the company formerly known as QuilrAI" }
+compliance_attestations:
+  value: [SOC 2 Type II]
+  source: { url: https://whitematter.io/security, tier: official, title: WhiteMatter security and compliance, accessed: 2026-11-16, origin: agent, quote: "SOC 2 Type II" }
+last_reviewed: 2026-11-16
+changelog:
+  - date: 2026-07-29
+    summary: Added to the catalog from the QuilrAI platform documentation.
+  - date: 2026-11-16
+    summary: Renamed to WhiteMatter Platform after the vendor renamed itself from QuilrAI to WhiteMatter, and refreshed source links, quotes, and coverage notes against the current vendor pages.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [govern, identify, protect, detect]
+    maturity: primary
+    note: Discovers agents and shadow AI across endpoints, browsers, SaaS, cloud, and CI/CD and maps what each can reach. A Guardian policy per agent, signed by its owner, is enforced wherever the agent acts and can run in monitor mode before it blocks, holds, redacts, or narrows permissions.
+    source: { url: https://whitematter.io/platform/guardian-agent, tier: official, title: WhiteMatter Guardian Agent, accessed: 2026-11-16, origin: agent, quote: "The Guardian acts from build to retirement: it blocks, holds for a person, redacts or narrows permissions, and every decision names the rule behind it." }
+  - asset: runtime-ai-data
+    functions: [protect, detect]
+    maturity: secondary
+    note: Agent requests and tool calls pass through one policy engine that checks data entering and leaving, detects and redacts sensitive data such as payment and health data at the gateway, and holds or denies actions such as sending customer records to an external model.
+    source: { url: https://whitematter.io/security, tier: official, title: WhiteMatter security and compliance, accessed: 2026-11-16, origin: agent, quote: "Payment data detection and redaction at the gateway layer, reducing scope for AI-adjacent systems." }
+  - asset: ai-traffic
+    functions: [protect, detect]
+    maturity: secondary
+    note: An OpenAI-compatible gateway gives applications one address for many model providers and applies access controls, policy checks, and request visibility to each call, blocking or holding requests that carry sensitive data or prompt injection or call a model that is not allowed.
+    source: { url: https://whitematter.io/solutions/mcp-and-llm-gateway, tier: official, title: WhiteMatter MCP and LLM gateway, accessed: 2026-11-16, origin: agent, quote: "WhiteMatter gives applications a consistent way to connect to AI models, with centralized access controls, request visibility, and policy enforcement." }
+  - asset: ai-agent-identities
+    functions: [identify, protect]
+    maturity: secondary
+    note: Records which agents exist and who owns each, ties every agent action to the person it acts for, narrows authority at each hand-off between agents, holds credentials in the gateway and issues a short-lived permission per action, and binds a human approval to one exact call.
+    source: { url: https://whitematter.io/platform/agentic-identity, tier: official, title: WhiteMatter Agentic Identity, accessed: 2026-11-16, origin: agent, quote: "Agentic Identity ties every agent action to the person it was done for, keeps authority from growing as agents hand work to each other, and records who approved what." }
+  - asset: ai-model
+    functions: [identify]
+    maturity: adjacent
+    note: The map built for each discovered agent records the models it uses alongside its tools and data, so model use across the AI estate is inventoried. Inventory only, with no control applied to the model itself.
+    source: { url: https://whitematter.io/solutions/discovery-and-inventory, tier: official, title: WhiteMatter discovery and inventory, accessed: 2026-11-16, origin: agent, quote: "When WhiteMatter finds an agent, it maps what the agent can actually do: the tools it can call, the models it uses, the data it can touch, how far its reach extends, its system prompt, and the identity it acts under." }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }
