@@ -16,22 +16,24 @@ status:
   source: { url: https://getunbound.ai/, tier: official, title: Unbound homepage, accessed: 2026-06-24, origin: reviewed }
 compliance_attestations:
   value: [SOC 2]
-  source: { url: https://getunbound.ai/pricing, tier: official, title: Unbound pricing, accessed: 2026-06-24, origin: reviewed, quote: "SOC 2 compliant. Cloud marketplace available." }
+  source: { url: https://getunbound.ai/faq, tier: official, title: Unbound FAQ, accessed: 2026-11-16, origin: agent, quote: "Yes, Unbound AI is SOC 2 compliant and available on AWS Marketplace." }
 last_reviewed: 2026-06-24
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Unbound documentation.
   - date: 2026-09-22
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-11-16
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovers and inventories AI coding tools, MCP servers, and sub-agents across the organization, and enforces policy to audit, warn, block, or require approval on agent commands and tool calls.
-    source: { url: https://getunbound.ai/product, tier: official, title: Unbound product page, accessed: 2026-06-24, origin: reviewed, quote: "Inventory AI coding tools, MCP servers, sub-agents, agent rules, and risky configurations across the organization." }
+    source: { url: https://getunbound.ai/product, tier: official, title: Unbound product page, accessed: 2026-11-16, origin: agent, quote: "When an agent drifts from the task, Unbound stops it in the terminal and says why in plain words." }
   - asset: runtime-ai-data
     functions: [protect]
     maturity: secondary
-    note: Enforces policy on outbound data egress by agents in real time to block sensitive-data exfiltration.
-    source: { url: https://getunbound.ai/product, tier: official, title: Unbound product page, accessed: 2026-09-22, origin: agent, quote: "Use guardrails to detect secrets, PII, regex and keyword matches, document classification, and route or block content." }
+    note: Guardrails detect PII and secrets such as API keys, connection strings, and cryptographic keys in requests from AI coding tools and can block a request before its content reaches the model provider.
+    source: { url: https://docs.getunbound.ai/policies/security-policies, tier: official, title: Unbound security policies documentation, accessed: 2026-11-16, origin: agent, quote: "Protect sensitive data with guardrails that detect and block PII and secrets before they reach a model" }
 primary_cell: { asset: ai-coding-orchestration-tools, function: protect }

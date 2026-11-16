@@ -1,13 +1,13 @@
 schema_version: 2
 name: Cloudsmith Hugging Face Registry
 aliases: [Cloudsmith, Cloudsmith ML Model Registry]
-url: https://cloudsmith.com/product/hugging-face-registry
+url: https://cloudsmith.com/product/formats/hugging-face
 vendor:
   value: Cloudsmith
   source: { url: https://www.dbta.com/Editorial/News-Flashes/Cloudsmith-Releases-ML-Model-Registry-to-Support-Enterprise-Governance-and-Security-for-Models-and-Datasets-171320.aspx, tier: press, title: Cloudsmith releases ML Model Registry, accessed: 2026-06-13, origin: reviewed }
 description:
   value: "Cloudsmith Hugging Face Registry: Private, policy-governed registry that proxies and caches Hugging Face models and datasets, applying scanning and access controls before teams use them."
-  source: { url: https://cloudsmith.com/product/hugging-face-registry, tier: official, title: Cloudsmith AI Model Registry, accessed: 2026-10-26, origin: agent, quote: "Cloudsmith extends artifact management to AI, giving your teams a secure, private registry for models and datasets." }
+  source: { url: https://cloudsmith.com/product/formats/hugging-face, tier: official, title: Cloudsmith Hugging Face registry, accessed: 2026-11-16, origin: agent, quote: "Cloudsmith gives you a private, fully compatible registry that proxies, caches, and governs those artifacts next to your packages and containers." }
 deployment:
   value: [saas]
   source: { url: https://www.dbta.com/Editorial/News-Flashes/Cloudsmith-Releases-ML-Model-Registry-to-Support-Enterprise-Governance-and-Security-for-Models-and-Datasets-171320.aspx, tier: press, title: Cloudsmith releases ML Model Registry, accessed: 2026-06-13, origin: reviewed }
@@ -22,6 +22,8 @@ changelog:
     summary: Renamed to Cloudsmith Hugging Face Registry; the product was previously listed as Cloudsmith ML Model Registry.
   - date: 2026-10-26
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-11-16
+    summary: Updated the product link and refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, protect]
