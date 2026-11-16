@@ -18,6 +18,8 @@ last_reviewed: 2026-10-31
 changelog:
   - date: 2026-10-31
     summary: Added to the catalog from the LangProtect product, pricing, and free trial pages.
+  - date: 2026-11-16
+    summary: Refreshed source quotes and coverage notes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
@@ -27,11 +29,11 @@ matrix_coverage:
   - asset: ai-traffic
     functions: [identify, protect, detect]
     maturity: primary
-    note: Vector discovers AI agents and local MCP servers on the corporate network and sits inline between agents and MCP servers to allow, block, or redact each request. Guardia adds visibility into unsanctioned AI tools and browser extensions used by employees.
-    source: { url: https://www.langprotect.com/vector, tier: official, title: LangProtect Vector for agents and MCP, accessed: 2026-10-31, origin: agent, quote: "Vector automatically discovers and inventories every AI agent and local MCP server running inside your corporate network" }
+    note: Vector routes agent MCP traffic through one gateway that allows only the servers and tools each policy permits, blocks the rest, and scans tool call content for sensitive data and injected instructions. Guardia adds visibility into unsanctioned AI tools and browser extensions used by employees.
+    source: { url: https://www.langprotect.com/vector, tier: official, title: LangProtect Vector for agents and MCP, accessed: 2026-11-16, origin: agent, quote: "Vector allows only the servers and tools each policy permits, blocks the rest, and scans tool call content for sensitive data and injected instructions before it reaches the server." }
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
     maturity: secondary
-    note: Vector applies role-based permissions that limit which tools, APIs, and databases each agent may reach, and blocks actions outside that scope.
-    source: { url: https://www.langprotect.com/vector, tier: official, title: LangProtect Vector for agents and MCP, accessed: 2026-10-31, origin: agent, quote: "Limit which agents can access specific tools or databases based on their assigned role." }
+    note: Vector inventories AI agents and other non-human identities with their owners and usage, flags over-privileged and dormant access, and binds each agent runtime to its own API key and MCP access policy so actions outside that scope are blocked.
+    source: { url: https://www.langprotect.com/vector, tier: official, title: LangProtect Vector for agents and MCP, accessed: 2026-11-16, origin: agent, quote: "It finds every AI agent and NHI across your stack, flags access with no owner or no use, and enforces policy on every MCP tool call through one gateway." }
 primary_cell: { asset: runtime-ai-data, function: protect }

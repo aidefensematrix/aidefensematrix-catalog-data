@@ -6,8 +6,8 @@ vendor:
 aliases: [Arize AX]
 url: https://arize.com
 description:
-  value: AI observability and evaluation platform with run-time guardrails that screen LLM inputs and outputs, blocking jailbreaks, prompt injection, and PII while flagging hallucinated or unsafe responses.
-  source: { url: https://arize.com/llm-evaluation/production-llm-evaluation/, tier: official, title: Arize production LLM evaluation, accessed: 2026-06-09, origin: reviewed }
+  value: "Arize: AI observability and evaluation platform that traces LLM and agent applications, including the guardrail checks they run on inputs and outputs, and evaluates their outputs."
+  source: { url: https://arize.com/docs/ax/security-and-settings/llm-security/guardrails, tier: official, title: Arize AX guardrails, accessed: 2026-11-16, origin: agent }
 deployment:
   value: [saas, self-hosted]
   source: { url: https://arize.com/products/self-hosted/, tier: official, title: Arize AX self-hosted deployment, accessed: 2026-10-05, origin: agent, quote: "Deploy Arize AX in your own environment" }
@@ -22,7 +22,7 @@ acquisition:
 compliance_attestations:
   value: [SOC 2 Type 2, ISO 27001, HIPAA, PCI DSS, GDPR]
   source: { url: https://arize.com/trust-center/, tier: official, title: Arize AI Trust Center, accessed: 2026-10-05, origin: agent, quote: "Arize AI Announces SOC 2 Type II Certification" }
-last_reviewed: 2026-06-09
+last_reviewed: 2026-11-16
 changelog:
   - date: 2026-06-09
     summary: Enriched from the Arize documentation.
@@ -30,15 +30,17 @@ changelog:
     summary: Recorded the acquisition by Dynatrace, announced on 2026-08-13 and completed on 2026-10-01.
   - date: 2026-10-05
     summary: Updated the deployment options and compliance attestations.
+  - date: 2026-11-16
+    summary: "Corrected the description and matrix coverage (erratum): removed the protect function from the runtime AI data row and set the primary cell to detect."
 matrix_coverage:
   - asset: runtime-ai-data
-    functions: [protect, detect]
+    functions: [detect]
     maturity: primary
-    note: Run-time guardrails screen LLM inputs and outputs, blocking jailbreaks, prompt injection, and PII and correcting toxic or hallucinated responses.
-    source: { url: https://arize.com/docs/ax/security-and-settings/llm-security/guardrails, tier: official, title: Arize AX guardrails, accessed: 2026-06-09, origin: reviewed, quote: "Failed messages trigger corrective actions such as default responses, retries, or blocking outputs entirely." }
+    note: Traces the guardrail checks an application runs on LLM inputs and outputs as their own span kind, so each check and its result is visible. Blocking stays with the application, and an AI provider integration can attach an Amazon Bedrock guardrail.
+    source: { url: https://arize.com/docs/ax/security-and-settings/llm-security/guardrails, tier: official, title: Arize AX guardrails, accessed: 2026-11-16, origin: agent, quote: "When you trace an AI agent that uses guardrails, the guardrail steps appear as their own span kind, so each check is visible in the trace." }
   - asset: ai-coding-orchestration-tools
     functions: [detect]
     maturity: secondary
     note: Evaluations score LLM and agent application outputs in production to flag hallucinations, low quality, and unsafe responses.
     source: { url: https://arize.com/llm-evaluation/production-llm-evaluation/, tier: official, title: Arize production LLM evaluation, accessed: 2026-06-09, origin: reviewed, quote: "LLM guardrails work in real-time to either catch dangerous user inputs or screen model outputs." }
-primary_cell: { asset: runtime-ai-data, function: protect }
+primary_cell: { asset: runtime-ai-data, function: detect }

@@ -18,12 +18,14 @@ last_reviewed: 2026-10-31
 changelog:
   - date: 2026-10-31
     summary: Added to the catalog from the SUPERWISE website and documentation.
+  - date: 2026-11-16
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Guardrails check each outgoing prompt where the gateway runs, replacing secrets, credentials, and formatted personal data such as card numbers with a placeholder or blocking the request, and live activity shows what each guardrail caught. Responses are not checked, per the vendor.
-    source: { url: https://docs.superwise.ai/docs/guardrails, tier: official, title: SUPERWISE Sentinel guardrails, accessed: 2026-10-31, origin: agent, quote: "On a match, a guardrail either replaces the matched content with a placeholder and forwards the request, or blocks the request so it never reaches the model." }
+    source: { url: https://docs.superwise.ai/docs/guardrails, tier: official, title: SUPERWISE Sentinel guardrails, accessed: 2026-11-16, origin: agent, quote: "On a match, a guardrail replaces the matched content with a placeholder and forwards the request, blocks the request so it never reaches the model, or flags the interaction and forwards it unchanged." }
   - asset: ai-traffic
     functions: [protect]
     maturity: secondary

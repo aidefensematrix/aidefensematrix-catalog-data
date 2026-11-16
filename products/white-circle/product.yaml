@@ -23,12 +23,14 @@ changelog:
     summary: Added to the catalog from the White Circle documentation.
   - date: 2026-07-16
     summary: Updated source citations to the vendor domain currently in use, with re-verified quotes and a trust-center compliance citation.
+  - date: 2026-11-16
+    summary: Refreshed source links and quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
-    note: Applies custom low-latency guardrails that block prompt injection, unsafe outputs, and sensitive-data leakage, and monitors AI inputs and outputs for harmful content, abuse, and model drift.
-    source: { url: https://whitecircle.com/, tier: official, title: White Circle, accessed: 2026-07-16, origin: agent, quote: "Automatically block, rewrite, or escalate risky behavior in real time." }
+    note: Enforces custom policies on AI inputs, outputs, and tool calls in real time, blocking prompt injection, jailbreaks, and sensitive-data leakage, and flags harmful or off-policy behavior for analysis.
+    source: { url: https://whitecircle.com/, tier: official, title: White Circle, accessed: 2026-11-16, origin: agent, quote: "Enforce behavior across inputs, outputs, and tools" }
   - asset: ai-model
     functions: [detect]
     maturity: secondary
