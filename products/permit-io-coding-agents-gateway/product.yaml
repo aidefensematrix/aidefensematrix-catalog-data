@@ -1,0 +1,35 @@
+schema_version: 2
+name: Permit.io Coding Agents Gateway
+aliases: [Permit Coding Agents Gateway]
+url: https://www.permit.io/coding-agents-gateway
+vendor:
+  value: Permit.io
+  source: { url: https://www.permit.io/coding-agents-gateway, tier: official, title: Permit Coding Agents Gateway product page, accessed: 2026-11-19, origin: agent }
+description:
+  value: "Permit.io Coding Agents Gateway: An endpoint proxy that checks each outbound call by coding agents such as Claude Code and Cursor against deny-by-default policy and routes risky steps to a person."
+  source: { url: https://www.permit.io/coding-agents-gateway, tier: official, title: Permit Coding Agents Gateway product page, accessed: 2026-11-19, origin: agent }
+deployment:
+  value: [hybrid, self-hosted]
+  source: { url: https://docs.permit.io/software-factory-security/, tier: official, title: Permit Software Factory Security documentation, accessed: 2026-11-19, origin: agent }
+status:
+  value: active
+  source: { url: https://docs.permit.io/software-factory-security/, tier: official, title: Permit Software Factory Security documentation, accessed: 2026-11-19, origin: agent }
+compliance_attestations:
+  value: [SOC 2 Type II]
+  source: { url: https://www.permit.io/coding-agents-gateway, tier: official, title: Permit Coding Agents Gateway product page, accessed: 2026-11-19, origin: agent, quote: "SOC 2 Type II attested: Security, Availability, Confidentiality" }
+last_reviewed: 2026-11-19
+changelog:
+  - date: 2026-11-19
+    summary: Added to the catalog from the Permit.io product page and documentation.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [protect, detect]
+    maturity: primary
+    note: A user-space proxy scoped to coding agent processes blocks outbound calls by default, allows listed destinations, routes risky actions to a human approver, checks the intent behind each call, and monitors session behavior for prompt injection and drift, logging every decision to the SIEM.
+    source: { url: https://www.permit.io/coding-agents-gateway, tier: official, title: Permit Coding Agents Gateway product page, accessed: 2026-11-19, origin: agent, quote: "Every call from Cursor, Claude Code, and Codex has its intent interrogated and is decided by policy." }
+  - asset: ai-agent-identities
+    functions: [protect, detect]
+    maturity: secondary
+    note: Provisions each coding agent identity through the customer IGA and expresses its permissions as relationships to the human who delegated the work, enforcing least privilege on agent actions; guardian agents monitor each session for escalation and drift after access is granted.
+    source: { url: https://www.permit.io/coding-agents-gateway, tier: official, title: Permit Coding Agents Gateway product page, accessed: 2026-11-19, origin: agent, quote: "Agent identities provisioned and governed through your existing IGA" }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }
