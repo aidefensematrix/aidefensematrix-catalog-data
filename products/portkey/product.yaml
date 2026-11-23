@@ -4,7 +4,7 @@ vendor:
   value: Portkey
   source: { url: https://portkey.ai/features/ai-gateway, tier: official, title: Portkey AI Gateway, accessed: 2026-06-09, origin: reviewed }
 aliases: [Portkey AI Gateway]
-url: https://portkey.ai
+url: https://www.paloaltonetworks.com/ai-security/ai-gateway
 description:
   value: AI gateway and control plane that routes requests across many LLM providers and runs guardrails on inputs and outputs to catch prompt injection, PII leaks, and unsafe content.
   source: { url: https://portkey.ai/features/ai-gateway, tier: official, title: Portkey AI Gateway, accessed: 2026-06-09, origin: reviewed }
@@ -18,23 +18,26 @@ acquisition:
   acquirer: Palo Alto Networks
   acquirer_slug: prisma-airs
   announced: 2026-04-30
-  post_acquisition_status: standalone
-  source: { url: https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-portkey-to-secure-ai-agents, tier: official, title: Palo Alto Networks completes acquisition of Portkey, accessed: 2026-07-16, origin: agent }
+  post_acquisition_status: rebranded
+  new_name: Prisma AIRS AI Gateway
+  source: { url: https://portkey.ai/, tier: official, title: Portkey is now Prisma AIRS AI Gateway, accessed: 2026-11-23, origin: agent }
 compliance_attestations:
   value: [SOC 2, ISO 27001, HIPAA, GDPR]
   source: { url: https://portkey.ai/docs/product/enterprise-offering/security-portkey, tier: official, title: Portkey Security, accessed: 2026-06-13, origin: reviewed, quote: "Our platform is compliant with leading security standards, including SOC2, ISO27001, GDPR, and HIPAA" }
-last_reviewed: 2026-07-16
+last_reviewed: 2026-11-23
 changelog:
   - date: 2026-06-09
     summary: Enriched from Portkey product documentation.
   - date: 2026-07-16
     summary: Recorded the Palo Alto Networks acquisition, announced 2026-04-30 and closed 2026-05-29.
+  - date: 2026-11-23
+    summary: Recorded the product name Prisma AIRS AI Gateway, updated the product link, and refreshed a matrix coverage source.
 matrix_coverage:
   - asset: ai-traffic
     functions: [identify, protect, detect]
     maturity: primary
     note: Routes traffic to many LLM providers with input and output guardrails and request-level observability.
-    source: { url: https://portkey.ai/features/ai-gateway, tier: official, title: Portkey AI Gateway, accessed: 2026-06-09, origin: reviewed, quote: "Connect, manage, and secure AI interactions across 3000+ LLMs with centralized control, real-time monitoring, and enterprise-grade governance." }
+    source: { url: https://www.paloaltonetworks.com/ai-security/ai-gateway, tier: official, title: Prisma AIRS AI Gateway, accessed: 2026-11-23, origin: agent, quote: "It gives you complete visibility into all AI activity, governs who and what can access your models, data, and tools, and enforces identity-first security controls on every coding agent, enterprise agent, and copilot, with inline policy enforcement and full auditability built in." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: secondary

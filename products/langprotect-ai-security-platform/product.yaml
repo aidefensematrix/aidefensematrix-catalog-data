@@ -14,18 +14,20 @@ deployment:
 status:
   value: active
   source: { url: https://www.langprotect.com/free-trial, tier: official, title: LangProtect free trial, accessed: 2026-10-31, origin: agent }
-last_reviewed: 2026-10-31
+last_reviewed: 2026-11-23
 changelog:
   - date: 2026-10-31
     summary: Added to the catalog from the LangProtect product, pricing, and free trial pages.
   - date: 2026-11-16
     summary: Refreshed source quotes and coverage notes against the current vendor pages.
+  - date: 2026-11-23
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Armor sits inline with in-house LLM applications and allows, restricts, or blocks prompts and outputs that carry prompt injection, sensitive data, or policy violations. Guardia scans employee prompts and uploads to tools such as ChatGPT in the browser and blocks sensitive content.
-    source: { url: https://www.langprotect.com/armor-for-ai-apps, tier: official, title: LangProtect Armor for AI apps, accessed: 2026-10-31, origin: agent, quote: "It enforces policy decisions on prompts, model outputs, and execution paths at runtime, before AI systems access internal data, tools, or downstream services." }
+    source: { url: https://www.langprotect.com/armor-for-ai-apps, tier: official, title: LangProtect Armor for AI apps, accessed: 2026-11-23, origin: agent, quote: "Prevent sensitive data exposure and enforce security policies before threats reach your models." }
   - asset: ai-traffic
     functions: [identify, protect, detect]
     maturity: primary

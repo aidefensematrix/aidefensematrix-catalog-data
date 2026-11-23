@@ -2,28 +2,30 @@ schema_version: 2
 name: NVIDIA OpenShell
 vendor:
   value: NVIDIA
-  source: { url: https://github.com/NVIDIA/OpenShell, tier: official, title: NVIDIA/OpenShell, accessed: 2026-07-05, origin: agent }
+  source: { url: https://docs.nvidia.com/openshell/latest/, tier: official, title: NVIDIA OpenShell documentation, accessed: 2026-11-23, origin: agent }
 aliases: [OpenShell, NemoClaw]
-url: https://github.com/NVIDIA/OpenShell
+url: https://github.com/ai-openshell/openshell
 description:
   value: "NVIDIA OpenShell: Open-source sandbox runtime for autonomous AI agents that isolates agent execution under declarative policies to protect host data, credentials, and infrastructure."
-  source: { url: https://github.com/NVIDIA/OpenShell, tier: official, title: NVIDIA/OpenShell, accessed: 2026-07-05, origin: agent, quote: "OpenShell is the safe, private runtime for autonomous AI agents." }
+  source: { url: https://github.com/ai-openshell/openshell, tier: official, title: ai-openshell/openshell, accessed: 2026-11-23, origin: agent, quote: "OpenShell is the safe, private runtime for autonomous AI agents." }
 deployment:
   value: [self-hosted]
-  source: { url: https://github.com/NVIDIA/OpenShell, tier: official, title: NVIDIA/OpenShell, accessed: 2026-07-05, origin: agent }
+  source: { url: https://github.com/ai-openshell/openshell, tier: official, title: ai-openshell/openshell, accessed: 2026-11-23, origin: agent }
 status:
   value: active
-  source: { url: https://github.com/NVIDIA/OpenShell, tier: official, title: NVIDIA/OpenShell, accessed: 2026-07-05, origin: agent }
-last_reviewed: 2026-07-05
+  source: { url: https://github.com/ai-openshell/openshell, tier: official, title: ai-openshell/openshell, accessed: 2026-11-23, origin: agent }
+last_reviewed: 2026-11-23
 changelog:
   - date: 2026-07-05
     summary: Added to the catalog from the OpenShell repository; open source under Apache-2.0, alpha stage, with NVIDIA NemoClaw as a reference stack on top.
   - date: 2026-10-05
     summary: Refreshed source citations.
+  - date: 2026-11-23
+    summary: Updated the repository links to ai-openshell/openshell.
 matrix_coverage:
   - asset: ai-workload-platforms
     functions: [protect]
     maturity: primary
     note: Runs each autonomous agent in a sandboxed execution environment governed by declarative YAML policies that prevent unauthorized file access, data exfiltration, and uncontrolled network activity.
-    source: { url: https://github.com/NVIDIA/OpenShell, tier: official, title: OpenShell agent sandbox, accessed: 2026-10-05, origin: agent, quote: "OpenShell gives them that capability without giving them unrestricted access to your data, secrets, or network. You declare what each agent can touch in a policy, and OpenShell enforces it." }
+    source: { url: https://github.com/ai-openshell/openshell, tier: official, title: OpenShell agent sandbox, accessed: 2026-11-23, origin: agent, quote: "OpenShell gives them that capability without giving them unrestricted access to your data, secrets, or network. You declare what each agent can touch in a policy, and OpenShell enforces it." }
 primary_cell: { asset: ai-workload-platforms, function: protect }
