@@ -20,7 +20,7 @@ acquisition:
   post_acquisition_status: folded
   new_name: Prisma AIRS
   source: { url: https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-completes-acquisition-of-protect-ai, tier: official, title: Palo Alto completes Protect AI acquisition, accessed: 2026-06-07, origin: reviewed }
-last_reviewed: 2026-06-09
+last_reviewed: 2026-11-23
 changelog:
   - date: 2026-06-07
     summary: Verified details and recorded the Palo Alto Networks acquisition and fold into Prisma AIRS.
@@ -38,6 +38,8 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-11-16
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-11-23
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, protect]
@@ -48,7 +50,7 @@ matrix_coverage:
     functions: [identify, detect]
     maturity: primary
     note: Prisma AIRS AI Red Teaming runs automated red teaming against AI applications and agents.
-    source: { url: https://www.paloaltonetworks.com/ai-security/ai-red-teaming, tier: official, title: Prisma AIRS AI Red Teaming, accessed: 2026-09-22, origin: agent, quote: "Prisma AIRS combines dynamic agentic profiling with autonomous attack simulation to surface vulnerabilities across your entire AI stack." }
+    source: { url: https://www.paloaltonetworks.com/ai-security/ai-red-teaming, tier: official, title: Prisma AIRS AI Red Teaming, accessed: 2026-11-23, origin: agent, quote: "Assess autonomous agents for privilege escalation, memory manipulation, tool poisoning and multistep attacks." }
   - asset: runtime-ai-data
     functions: [detect]
     maturity: secondary

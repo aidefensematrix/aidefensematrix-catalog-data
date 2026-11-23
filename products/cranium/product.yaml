@@ -16,7 +16,7 @@ status:
 compliance_attestations:
   value: [SOC 2 Type 2]
   source: { url: https://cranium.ai/resources/press-release/cranium-is-now-soc-2-type-2-compliant/, tier: official, title: Cranium SOC 2 Type 2, accessed: 2026-11-02, origin: agent, quote: "Cranium AI has a positive SOC 2 Type 2 attestation report" }
-last_reviewed: 2026-10-03
+last_reviewed: 2026-11-23
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Cranium documentation.
@@ -28,25 +28,27 @@ changelog:
     summary: "Corrected matrix coverage (erratum): moved shadow AI discovery to the AI Traffic row."
   - date: 2026-11-02
     summary: Refreshed source quotes against the current vendor pages.
+  - date: 2026-11-23
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-model
     functions: [identify, detect, govern]
     maturity: primary
     note: Sensors discover internal and third-party AI systems; the platform auto-generates AI BOMs, runs agent-based red teaming via Cranium Arena, and authors policy mapped to the EU AI Act, NIST AI RMF, and ISO 42001 through its Govern layer.
-    source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-07-17, origin: agent, quote: "scan your codebases, internal environments, cloud configurations and agentic layer to surface undocumented or unapproved AI systems" }
+    source: { url: https://cranium.ai/platform/, tier: official, title: Cranium platform overview, accessed: 2026-11-23, origin: agent, quote: "Cranium AI uncovered undocumented models, mapped systems to the EU AI Act and NIST AI RMF, simulated real-world attacks, and verified compliance" }
   - asset: ai-workload-platforms
     functions: [identify, detect]
     maturity: secondary
     note: CloudSensor integrates with cloud environments to discover security alerts, monitor unauthorized changes, and assess role-based access controls.
-    source: { url: https://cranium.ai/platform/discover/, tier: official, title: Cranium Discover page, accessed: 2026-07-17, origin: agent, quote: "monitors cloud changes, alerts and access controls" }
+    source: { url: https://cranium.ai/platform/discover/, tier: official, title: Cranium Discover page, accessed: 2026-11-23, origin: agent, quote: "monitors Azure changes, alerts and access controls" }
   - asset: ai-traffic
     functions: [identify]
     maturity: secondary
     note: Detect AI scans the environment for shadow AI, surfacing AI tools and services in use that security teams have not approved.
-    source: { url: https://cranium.ai/platform/discover/, tier: official, title: Cranium Discover page, accessed: 2026-10-03, origin: agent, quote: "reveals shadow AI across your environment" }
+    source: { url: https://cranium.ai/platform/discover/, tier: official, title: Cranium Discover page, accessed: 2026-11-23, origin: agent, quote: "Cranium ONE provides centralized AI inventory: AI BOMs generated automatically from code repositories, agents and MCP servers found in source code, Azure AI resources through CloudSensor, a Shadow AI view built from connected SIEM activity" }
   - asset: ai-agent-identities
     functions: [identify]
     maturity: secondary
     note: AgentSensor gives visibility into the agentic layer, automatically detecting AI agents, the tools they invoke, and other agents in the network.
-    source: { url: https://cranium.ai/platform/discover/, tier: official, title: Cranium Discover page, accessed: 2026-07-17, origin: agent, quote: "maps agents, the tools they invoke, and the agents they reach" }
+    source: { url: https://cranium.ai/platform/discover/, tier: official, title: Cranium Discover page, accessed: 2026-11-23, origin: agent, quote: "Cranium ONE provides centralized AI inventory: AI BOMs generated automatically from code repositories, agents and MCP servers found in source code, Azure AI resources through CloudSensor, a Shadow AI view built from connected SIEM activity" }
 primary_cell: { asset: ai-model, function: identify }

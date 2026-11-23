@@ -17,14 +17,16 @@ status:
 compliance_attestations:
   value: [SOC 2 Type 2]
   source: { url: https://trust.manifold.security/, tier: official, title: Manifold Security Trust Center, accessed: 2026-10-03, origin: agent, quote: "Manifold SOC 2 Type II" }
-last_reviewed: 2026-10-03
+last_reviewed: 2026-11-23
 changelog:
   - date: 2026-10-03
     summary: Added to the catalog from the Manifold Security product pages.
+  - date: 2026-11-23
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect, respond]
     maturity: primary
     note: Inventories the coding agents running on endpoints along with the MCP servers, tools, and skills they use, detects active agent threats in real time, and supports remediating, quarantining, or terminating them.
-    source: { url: https://www.manifold.security/, tier: official, title: Manifold homepage, accessed: 2026-10-03, origin: agent, quote: "Real-time detection of active agent threats." }
+    source: { url: https://www.manifold.security/, tier: official, title: Manifold homepage, accessed: 2026-11-23, origin: agent, quote: "Enforce policies on every agent action, detect violations, and respond in proportion to the risk." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: detect }

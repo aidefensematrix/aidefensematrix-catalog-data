@@ -18,7 +18,7 @@ deployment:
 status:
   value: active
   source: { url: https://highflame.com/, tier: official, title: Highflame homepage, accessed: 2026-06-10, origin: reviewed }
-last_reviewed: 2026-06-10
+last_reviewed: 2026-11-23
 changelog:
   - date: 2026-06-10
     summary: Added to the catalog from the Highflame product pages; the vendor rebranded from Javelin in early 2026.
@@ -26,25 +26,27 @@ changelog:
     summary: "Refreshed source links and coverage to the current Highflame platform, adding agent-identity coverage and narrowing one row (erratum)."
   - date: 2026-09-22
     summary: Refreshed source links and quotes against the current vendor pages.
+  - date: 2026-11-23
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-traffic
     functions: [protect]
     maturity: primary
     note: Acts as a centralized control layer across LLM, MCP, A2A, and A2P interactions, enforcing Cedar-based access, safety, and compliance policies inline and generating audit-ready reports.
-    source: { url: https://www.highflame.com/platform, tier: official, title: Highflame Agent Gateway, accessed: 2026-07-05, origin: agent, quote: "The Highflame Agent Gateway is the data plane that enforces every decision: a Rust gateway for LLM, MCP, and A2A traffic that binds each request to a verifiable agent identity at the wire." }
+    source: { url: https://www.highflame.com/platform, tier: official, title: Highflame Agent Gateway, accessed: 2026-11-23, origin: agent, quote: "A verified identity and authorization core sends policy to the decision point of four enforcement lanes: model, MCP and agent-to-agent traffic through the Identity-Aware Agent Gateway, and endpoint activity on developer machines." }
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Inline controls inspect prompts and responses and block malicious inputs such as prompt injection, and strip PII and secrets before they reach the model or any tool.
-    source: { url: https://www.highflame.com/platform, tier: official, title: Highflame platform runtime controls, accessed: 2026-07-05, origin: agent, quote: "Blocking an injection and pausing a drifting agent are the same kind of decision." }
+    source: { url: https://www.highflame.com/platform, tier: official, title: Highflame platform runtime controls, accessed: 2026-11-23, origin: agent, quote: "Highflame checks the export against the agent’s identity, task and permissions, blocks it, and records the decision for review." }
   - asset: ai-coding-orchestration-tools
     functions: [protect, detect]
     maturity: primary
     note: Enforces one Cedar policy across MCP, tool-gateway, and agent-to-agent traffic, and its signal engine flags tool-risk and MCP poisoning inline.
-    source: { url: https://www.highflame.com/platform, tier: official, title: Platform The Agent Control Fabric Highflame, accessed: 2026-09-22, origin: agent, quote: "One Cedar policy, authored once, enforced across model traffic, the IDE, the tool gateway, and A2A, not three languages for three products." }
+    source: { url: https://www.highflame.com/platform, tier: official, title: Platform The Agent Control Fabric Highflame, accessed: 2026-11-23, origin: agent, quote: "Enforcement where agents act Consistent policies across models, MCP tools, agent handoffs, and developer environments." }
   - asset: ai-agent-identities
     functions: [identify, protect, detect]
     maturity: primary
     note: Discovers agents across the environment and issues each a verifiable, scoped, just-in-time credential with cascade revocation, then risk-scores every agent identity and monitors for mission drift.
-    source: { url: https://www.highflame.com/platform, tier: official, title: Highflame Agent Identity, accessed: 2026-07-05, origin: agent, quote: "Highflame provides both by enforcing identity, authority, delegation, and revocation at every boundary, in real time." }
+    source: { url: https://www.highflame.com/platform, tier: official, title: Highflame Agent Identity, accessed: 2026-11-23, origin: agent, quote: "Give each agent a verifiable identity, define what it’s allowed to do, and enforce security policies as it acts." }
 primary_cell: { asset: ai-agent-identities, function: protect }

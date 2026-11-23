@@ -14,16 +14,18 @@ deployment:
 status:
   value: active
   source: { url: https://github.com/NVIDIA-NeMo/Guardrails, tier: official, title: NeMo Guardrails repository, accessed: 2026-06-09, origin: reviewed }
-last_reviewed: 2026-06-09
+last_reviewed: 2026-11-23
 changelog:
   - date: 2026-06-09
     summary: Added to the catalog from the NVIDIA NeMo Guardrails documentation.
+  - date: 2026-11-23
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: runtime-ai-data
     functions: [protect, detect]
     maturity: primary
     note: Input, retrieval, and output rails can reject or mask user prompts, retrieved chunks, and model responses. The built-in guardrail library adds self-check moderation, hallucination detection, jailbreak and injection detection, and NVIDIA content and topic safety models.
-    source: { url: https://github.com/NVIDIA-NeMo/Guardrails, tier: official, title: NeMo Guardrails repository, accessed: 2026-06-09, origin: reviewed, quote: "The NeMo Guardrails library enables developers building LLM-based applications to add programmable guardrails between the application code and the LLM." }
+    source: { url: https://github.com/NVIDIA-NeMo/Guardrails, tier: official, title: NeMo Guardrails repository, accessed: 2026-11-23, origin: agent, quote: "Input rails can block a request before it reaches the application LLM." }
   - asset: ai-coding-orchestration-tools
     functions: [protect]
     maturity: secondary

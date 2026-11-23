@@ -14,7 +14,7 @@ deployment:
 status:
   value: active
   source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent }
-last_reviewed: 2026-09-21
+last_reviewed: 2026-11-23
 changelog:
   - date: 2026-09-21
     summary: Added to the catalog from the Holistic AI Endlayer product pages.
@@ -22,22 +22,24 @@ changelog:
     summary: Refreshed a matrix coverage source quote.
   - date: 2026-10-26
     summary: Refreshed source links, quotes, and coverage notes against the current vendor pages.
+  - date: 2026-11-23
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, detect, protect, govern]
     maturity: primary
     note: A device agent inventories AI apps, coding agents, and MCP servers, tracks which agents act unattended, blocks agent and MCP requests that break policy, and grades tools against versioned rules mapped to EU AI Act, ISO/IEC 42001, and NIST AI RMF clauses.
-    source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent, quote: "A searchable inventory of what is actually installed: AI apps, coding agents, local models, accounts, credentials and the MCP servers your fleet can reach." }
+    source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-11-23, origin: agent, quote: "Discover AI tools, agents, models and MCP connections." }
   - asset: runtime-ai-data
     functions: [protect, detect, govern]
     maturity: secondary
     note: Guardrails score prompts before they run and redact or block secrets and personal data on the way out. Govern artifact is the versioned rule on what may leave in a prompt, mapped to GDPR personal-data clauses.
-    source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent, quote: "prompts are scored before they run, and secrets and personal data are warned on, redacted or blocked on the way out." }
+    source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-11-23, origin: agent, quote: "Sensitive data in a prompt ↓ Versioned company policy Allow Warn Redact Block" }
   - asset: ai-traffic
     functions: [identify, detect, protect, govern]
     maturity: secondary
     note: Maps the AI sites and MCP hosts each device reaches, watches agent-to-agent and agent-to-MCP calls on the machine, and blocks those that break policy. Govern artifact is the versioned rule on which MCP hosts an agent may reach.
-    source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent, quote: "It sees one agent call another, an agent reach an MCP server, or a tool ask for a permission it was never granted" }
+    source: { url: https://www.endlayer.ai/solutions/shadow-ai, tier: official, title: EndLayer Shadow AI detection, accessed: 2026-11-23, origin: agent, quote: "They discover every AI tool, agent, model and MCP connection, show what each one reaches and costs, and enforce your policy as it happens, with a versioned evidence record for every decision." }
   - asset: ai-agent-identities
     functions: [identify, detect, protect]
     maturity: secondary
@@ -47,5 +49,5 @@ matrix_coverage:
     functions: [identify]
     maturity: adjacent
     note: Local models running on managed machines appear in the same device inventory as the other AI tools.
-    source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-09-21, origin: agent, quote: "It inventories every AI tool, local model, agent, extension and MCP server on the machine, and the AI sites it reaches, then grades all of it against deterministic policy." }
+    source: { url: https://www.holisticai.com/endlayer, tier: official, title: Holistic AI Endlayer, accessed: 2026-11-23, origin: agent, quote: "Discover AI tools, agents, models and MCP connections." }
 primary_cell: { asset: ai-coding-orchestration-tools, function: identify }

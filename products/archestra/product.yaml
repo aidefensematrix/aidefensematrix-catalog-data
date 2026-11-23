@@ -14,7 +14,7 @@ deployment:
 status:
   value: active
   source: { url: https://github.com/archestra-ai/archestra, tier: official, title: Archestra GitHub repository, accessed: 2026-06-24, origin: reviewed }
-last_reviewed: 2026-07-16
+last_reviewed: 2026-11-23
 changelog:
   - date: 2026-06-24
     summary: Added to the catalog from the Archestra documentation.
@@ -26,12 +26,14 @@ changelog:
     summary: Refreshed source links and quotes against the current vendor pages.
   - date: 2026-10-12
     summary: Refreshed source citations.
+  - date: 2026-11-23
+    summary: Refreshed source quotes against the current vendor pages.
 matrix_coverage:
   - asset: ai-coding-orchestration-tools
     functions: [identify, protect, detect]
     maturity: primary
     note: Runs MCP servers in isolated Kubernetes containers with audit trails, applies deterministic guardrails against data exfiltration and prompt injection, and inventories approved servers in a private registry.
-    source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-09-22, origin: agent, quote: "Control tool access, approvals, isolation, and network egress." }
+    source: { url: https://archestra.ai/, tier: official, title: Archestra homepage, accessed: 2026-11-23, origin: agent, quote: "Archestra puts self-hosted, in-house and third-party MCP servers behind a single gateway" }
   - asset: ai-agent-identities
     functions: [protect]
     maturity: secondary

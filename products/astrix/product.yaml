@@ -2,23 +2,23 @@ schema_version: 2
 name: Astrix
 vendor:
   value: Astrix Security
-  source: { url: https://astrix.security/product/, tier: official, title: Astrix product overview, accessed: 2026-06-07, origin: reviewed }
-url: https://astrix.security
+  source: { url: https://web.archive.org/web/20260917100347/https://astrix.security/product/, tier: official, title: "Astrix product overview (archived 2026-09-17)", accessed: 2026-11-23, origin: agent }
+url: https://www.cisco.com/site/us/en/solutions/security/identity-intelligence/index.html
 description:
   value: "Identity security platform that discovers, secures, and governs AI agents and non-human identities, with posture management and non-human ITDR."
-  source: { url: https://astrix.security/product/, tier: official, title: Astrix product overview, accessed: 2026-06-07, origin: reviewed }
+  source: { url: https://web.archive.org/web/20260917100347/https://astrix.security/product/, tier: official, title: "Astrix product overview (archived 2026-09-17)", accessed: 2026-11-23, origin: agent }
 deployment:
   value: [saas]
-  source: { url: https://astrix.security/product/ai-agent-discovery/, tier: official, title: Astrix agentless onboarding, accessed: 2026-06-07, origin: reviewed }
+  source: { url: https://web.archive.org/web/20260916061344/https://astrix.security/product/ai-agent-discovery/, tier: official, title: "Astrix agentless onboarding (archived 2026-09-16)", accessed: 2026-11-23, origin: agent }
 status:
   value: acquired
   source: { url: https://blogs.cisco.com/news/cisco-announces-intent-to-acquire-astrix-security, tier: official, title: "Cisco announces intent to acquire Astrix Security", accessed: 2026-07-05, origin: agent }
 acquisition:
   acquirer: Cisco
   announced: 2026-05-04
-  post_acquisition_status: standalone
-  source: { url: https://blogs.cisco.com/news/cisco-announces-intent-to-acquire-astrix-security, tier: official, title: "Cisco announces intent to acquire Astrix Security", accessed: 2026-07-05, origin: agent }
-last_reviewed: 2026-07-17
+  post_acquisition_status: unknown
+  source: { url: https://blogs.cisco.com/news/cisco-announces-intent-to-acquire-astrix-security, tier: official, title: "Cisco announces intent to acquire Astrix Security", accessed: 2026-11-23, origin: agent }
+last_reviewed: 2026-11-23
 changelog:
   - date: 2026-06-07
     summary: Verified details from primary sources and recorded the Series B funding.
@@ -26,15 +26,17 @@ changelog:
     summary: Refined matrix coverage.
   - date: 2026-07-05
     summary: Recorded the Cisco acquisition of Astrix Security, completed on 2026-06-29.
+  - date: 2026-11-23
+    summary: Updated the post-acquisition status and the product link, and pointed the Astrix sources at archived copies of the Astrix pages.
 matrix_coverage:
   - asset: ai-agent-identities
     functions: [identify, protect, detect, respond]
     maturity: primary
     note: "Agentless discovery and inventory of agents and non-human identities, posture and lifecycle management, and non-human ITDR for detection and response."
-    source: { url: https://astrix.security/product/, tier: official, title: Astrix product overview, accessed: 2026-06-07, origin: reviewed, quote: "Identify and remediate AI agents and NHIs with excessive privileges, vulnerable configurations, abnormal activity, and policy violations." }
+    source: { url: https://web.archive.org/web/20260917100347/https://astrix.security/product/, tier: official, title: "Astrix product overview (archived 2026-09-17)", accessed: 2026-11-23, origin: agent, quote: "Identify and remediate AI agents and NHIs with excessive privileges, vulnerable configurations, abnormal activity, and policy violations." }
   - asset: runtime-ai-data
     functions: [identify, detect]
     maturity: secondary
     note: "Discovers and monitors secrets and credentials inside and outside vaults that agents and non-human identities use at runtime."
-    source: { url: https://astrix.security/use-cases/non-human-itdr/, tier: official, title: Astrix non-human ITDR, accessed: 2026-06-07, origin: reviewed, quote: "Detect and respond to suspicious NHI activity" }
+    source: { url: https://web.archive.org/web/20260909030220/https://astrix.security/use-cases/non-human-itdr/, tier: official, title: "Astrix non-human ITDR (archived 2026-09-09)", accessed: 2026-11-23, origin: agent, quote: "Detect and respond to suspicious NHI activity" }
 primary_cell: { asset: ai-agent-identities, function: identify }
