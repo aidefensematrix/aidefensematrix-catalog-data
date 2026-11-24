@@ -1,0 +1,42 @@
+schema_version: 2
+name: DAXA Platform
+aliases: []
+vendor:
+  value: DAXA
+  source: { url: https://platform.daxa.ai/, tier: official, title: DAXA Platform product page, accessed: 2026-11-24, origin: agent }
+url: https://platform.daxa.ai/
+description:
+  value: "DAXA Platform: Classifies and enforces data policy on agent prompts, responses, and MCP tool calls through gateways in the customer network, with an endpoint plugin and an agent that scores behavior."
+  source: { url: https://platform.daxa.ai/, tier: official, title: DAXA Platform product page, accessed: 2026-11-24, origin: agent }
+deployment:
+  value: [self-hosted]
+  source: { url: https://platform.daxa.ai/, tier: official, title: DAXA Platform product page, accessed: 2026-11-24, origin: agent }
+status:
+  value: active
+  source: { url: https://platform.daxa.ai/, tier: official, title: DAXA Platform product page, accessed: 2026-11-24, origin: agent }
+last_reviewed: 2026-11-24
+changelog:
+  - date: 2026-11-24
+    summary: Added to the catalog from the DAXA Platform documentation.
+matrix_coverage:
+  - asset: runtime-ai-data
+    functions: [govern, protect, detect]
+    maturity: primary
+    note: Customers write the policy of topics, entities, and rules in the Policy Engine. The Safe Infer gateway classifies every prompt and response against it, then allows, redacts, or blocks it.
+    source: { url: https://platform.daxa.ai/, tier: official, title: DAXA Platform product page, accessed: 2026-11-24, origin: agent, quote: "Classifies and enforces on every prompt and response." }
+  - asset: ai-traffic
+    functions: [govern, protect]
+    maturity: secondary
+    note: Customers centrally define which models agents may use. The SafeInfer gateway enforces that allow list on agent-to-model traffic, and SafeAgent includes an MCP gateway in front of the MCP servers agents call.
+    source: { url: https://www.daxa.ai/homegrown-ai-agents, tier: official, title: DAXA homegrown AI agents page, accessed: 2026-11-24, origin: agent, quote: "Governs agent-to-model traffic with allow-listed models, prompt and completion inspection, and response validation before execution." }
+  - asset: ai-agent-identities
+    functions: [protect, detect, respond]
+    maturity: secondary
+    note: Reasoning-based access control decides whether an agent may take an action on given data, enforced at the gateway and plugin. The Guardian Agent baselines each agent, scores live behavior such as skipped steps and data spikes, and can flag, block, or take an agent offline.
+    source: { url: https://platform.daxa.ai/, tier: official, title: DAXA Platform product page, accessed: 2026-11-24, origin: agent, quote: "Watches behavior across agents. Flags, blocks or takes them offline." }
+  - asset: ai-coding-orchestration-tools
+    functions: [govern, protect]
+    maturity: secondary
+    note: Customers centrally define which actions AI coding assistants may take across repositories. SafeAgent checks permissions and role and project context on MCP tool calls, and its Trust Zone vets and sandboxes the MCP servers agents use.
+    source: { url: https://www.daxa.ai/homegrown-ai-agents, tier: official, title: DAXA homegrown AI agents page, accessed: 2026-11-24, origin: agent, quote: "Centrally define what can be shared, which models are allowed, and which agent actions are permitted, applied consistently across assistants, repos and geos." }
+primary_cell: { asset: runtime-ai-data, function: protect }
