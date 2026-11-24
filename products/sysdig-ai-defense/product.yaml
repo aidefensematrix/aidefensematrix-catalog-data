@@ -1,0 +1,37 @@
+schema_version: 2
+name: Sysdig AI Defense
+aliases: []
+vendor:
+  value: Sysdig
+  source: { url: https://www.sysdig.com/press-releases/sysdig-launches-sysdig-ai-defense-bringing-runtime-security-to-every-action-ai-agents-take, tier: official, title: "Sysdig: Sysdig Launches Sysdig AI Defense", accessed: 2026-11-24, origin: agent }
+url: https://www.sysdig.com/platform/ai-defense
+description:
+  value: "Sysdig AI Defense: Inventories AI agents, MCP servers, skills, and plugins on workstations, checks each agent action against policy, and blocks or holds risky ones, recording every session."
+  source: { url: https://www.sysdig.com/platform/ai-defense, tier: official, title: Sysdig AI Defense product page, accessed: 2026-11-24, origin: agent }
+deployment:
+  value: [saas]
+  source: { url: https://www.sysdig.com/blog/introducing-sysdig-ai-defense, tier: official, title: "Sysdig blog: Introducing Sysdig AI Defense", accessed: 2026-11-24, origin: agent }
+status:
+  value: active
+  source: { url: https://www.sysdig.com/press-releases/sysdig-launches-sysdig-ai-defense-bringing-runtime-security-to-every-action-ai-agents-take, tier: official, title: "Sysdig: Sysdig Launches Sysdig AI Defense", accessed: 2026-11-24, origin: agent }
+last_reviewed: 2026-11-24
+changelog:
+  - date: 2026-11-24
+    summary: Added to the catalog from the Sysdig AI Defense documentation.
+matrix_coverage:
+  - asset: ai-coding-orchestration-tools
+    functions: [govern, identify, protect, detect, respond]
+    maturity: primary
+    note: Inventories agents, harnesses, MCP servers, skills, and plugins on macOS and Windows, blocks unvetted MCP servers, skills, and plugins and risky credential reads, flags drift, and kills a process that gets through. Policy templates map to the OWASP LLM Top 10, with a record of the policies applied.
+    source: { url: https://www.sysdig.com/platform/ai-defense/security, tier: official, title: Sysdig AI Defense security page, accessed: 2026-11-24, origin: agent, quote: "Unvetted MCP servers, skills, and plug-ins are stopped before they run, and risky credential reads are blocked or held for review." }
+  - asset: ai-agent-identities
+    functions: [identify, protect, detect]
+    maturity: secondary
+    note: Each agent is traced to the account and person it acts for, teams can allow, alert on, or deny the identities agents use, and detections flag an agent that widens its own permissions before moving data.
+    source: { url: https://www.sysdig.com/blog/introducing-sysdig-ai-defense, tier: official, title: "Sysdig blog: Introducing Sysdig AI Defense", accessed: 2026-11-24, origin: agent, quote: "It finds the agents, MCP servers, skills and plugins your people use, including the ones nobody approved, and ties each one to the account and the person behind it." }
+  - asset: ai-model
+    functions: [identify]
+    maturity: adjacent
+    note: The runtime inventory includes the models agents call, including models served locally on employee machines.
+    source: { url: https://www.sysdig.com/platform/ai-defense/governance, tier: official, title: Sysdig AI Defense governance page, accessed: 2026-11-24, origin: agent, quote: "Agents, harnesses, models, MCP servers, skills, and plug-ins are discovered from runtime telemetry as they appear." }
+primary_cell: { asset: ai-coding-orchestration-tools, function: protect }
